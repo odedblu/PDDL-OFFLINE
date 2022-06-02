@@ -1,0 +1,65 @@
+
+ff: parsing domain file
+domain 'ROVER' defined
+ ... done.
+ff: parsing problem file
+problem 'ROVERPROB1234' defined
+ ... done.
+
+
+lowest leaf goal distance/initial state f value seen:      7/     7; maxdepth reached:    0
+                                                           7/     7                       1
+                                                           7/     7                       2
+                                                           3/     7                       3
+                                                           2/     7                       4
+                                                           1/     7                       5
+                                                           1/     7                       6
+                                                           1/     7                       7
+                                                           1/     7                       8
+                                                           1/     7                       9
+
+ff: found plan as follows
+-------------------------------------------------
+  0||0 --- CALIBRATE ROVER0 CAMERA0 OBJECTIVE1 WAYPOINT3 --- SON: 1||0
+-------------------------------------------------
+  1||0 --- NAVIGATE ROVER0 WAYPOINT3 WAYPOINT1 CAMERA0 OBJECTIVE1 --- SON: 2||0
+-------------------------------------------------
+  2||0 --- SENSE_VIS ROVER0 OBJECTIVE1 WAYPOINT1 --- TRUESON: 3||0 --- FALSESON: 3||1
+-------------------------------------------------
+  3||0 --- CALIBRATE ROVER0 CAMERA0 OBJECTIVE1 WAYPOINT1 --- SON: 4||0
+  3||1 --- NAVIGATE ROVER0 WAYPOINT1 WAYPOINT3 CAMERA0 OBJECTIVE1 --- SON: 4||1
+-------------------------------------------------
+  4||0 --- TAKE_IMAGE ROVER0 WAYPOINT1 OBJECTIVE1 CAMERA0 HIGH_RES --- SON: 5||0
+  4||1 --- CALIBRATE ROVER0 CAMERA0 OBJECTIVE1 WAYPOINT3 --- SON: 5||1
+-------------------------------------------------
+  5||0 --- COMMUNICATE_IMAGE_DATA ROVER0 GENERAL OBJECTIVE1 HIGH_RES WAYPOINT1 WAYPOINT0 --- SON: 6||-1
+  5||1 --- NAVIGATE ROVER0 WAYPOINT3 WAYPOINT0 CAMERA0 OBJECTIVE1 --- SON: 6||0
+-------------------------------------------------
+  6||0 --- CALIBRATE ROVER0 CAMERA0 OBJECTIVE1 WAYPOINT0 --- SON: 7||0
+-------------------------------------------------
+  7||0 --- TAKE_IMAGE ROVER0 WAYPOINT0 OBJECTIVE1 CAMERA0 HIGH_RES --- SON: 8||0
+-------------------------------------------------
+  8||0 --- NAVIGATE ROVER0 WAYPOINT0 WAYPOINT3 CAMERA0 OBJECTIVE1 --- SON: 9||0
+-------------------------------------------------
+  9||0 --- COMMUNICATE_IMAGE_DATA ROVER0 GENERAL OBJECTIVE1 HIGH_RES WAYPOINT3 WAYPOINT0 --- SON: 10||-1
+-------------------------------------------------
+
+tree layers: 10
+total nr. actions: 13
+
+statistics:    0.00 seconds instantiating 45 easy, 0 hard action templates
+               0.00 seconds reachability analysis, yielding 26 facts and 36 actions
+               0.00 seconds creating final representation with 16 relevant facts (6 max U, 4 CNF max U)
+               final representation has 4 unknown facts and 16 observation actions    
+               0.00 seconds building connectivity graph
+               0.00 seconds (   0.00 pure) evaluating 36 states
+               0.00 seconds in DP for 182 RPG ini state implication checks
+               0.00 seconds in DP for 0 RPlan extract ini state implication checks (0 lits removed)
+               0.00 seconds generating,    0.00 seconds encoding 44 state transition base CNFs
+               0.00 seconds in DP solving 3 state transition CNFs
+               0.00 seconds checking for self-contradictions, including 0 DP calls
+               0.00 seconds checking for stagnating states (7 hits), including 8 DP calls
+                193 total DP calls, 2397 total UP calls,    0.00 sec membership
+              0.00 seconds for remaining searching duties
+               0.00 seconds total time (+    0.01 secs for CNF memory allocation)
+

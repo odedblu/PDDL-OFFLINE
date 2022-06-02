@@ -1,0 +1,42 @@
+1196) dunk_p9_b0_t0
+1197) dunk_p8_b0_t0
+1198) dunk_p7_b0_t0
+1199) dunk_p6_b0_t0
+1200) dunk_p5_b0_t0
+1201) dunk_p4_b0_t0
+1202) dunk_p3_b0_t0
+1203) dunk_p2_b0_t0
+1204) dunk_p1_b0_t0
+1205) dunk_p0_b0_t0
+
+Goals 
+#10 : 
+#
+Union Goals Budget
+#10 : 
+#
+
+
+
+Goals Fault Tolerance
+#0 : 0 : 
+#
+
+
+
+Goals Fault Tolerance
+##
+
+
+
+Simplicitity
+#nodes: 10
+branch: 0
+originalSize: 31
+compreesedSize: 49
+compreesedRatio: 0.63265306122449#
+
+
+
+Simplicitity
+#

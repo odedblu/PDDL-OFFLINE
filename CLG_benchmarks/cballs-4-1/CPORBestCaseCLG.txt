@@ -1,0 +1,47 @@
+Budget 6: Tree CPORBestCase is better than Tree CLG
+Budget 7: Can not compare the trees 
+Budget 8: Can not compare the trees 
+Budget 9: Can not compare the trees 
+Budget 10: Can not compare the trees 
+Budget 11: Can not compare the trees 
+Budget 12: Can not compare the trees 
+Budget 13: Can not compare the trees 
+Budget 14: Can not compare the trees 
+Budget 15: Can not compare the trees 
+Budget 16: Can not compare the trees 
+Budget 17: Can not compare the trees 
+Budget 18: Can not compare the trees 
+Budget 19: Can not compare the trees 
+Budget 20: Can not compare the trees 
+Budget 21: Can not compare the trees 
+Budget 22: Can not compare the trees 
+Budget 23: Can not compare the trees 
+Budget 24: Can not compare the trees 
+Budget 25: Can not compare the trees 
+Budget 26: Can not compare the trees 
+Budget 27: Can not compare the trees 
+Budget 28: Can not compare the trees 
+Budget 29: Can not compare the trees 
+Budget 30: Can not compare the trees 
+Budget 31: Can not compare the trees 
+Budget 32: Can not compare the trees 
+Budget 33: Can not compare the trees 
+Budget 34: Can not compare the trees 
+Budget 35: Tree CPORBestCase is better than Tree CLG
+Budget 36: Tree CPORBestCase is better than Tree CLG
+Budget 37: Tree CPORBestCase is better than Tree CLG
+Budget 38: Tree CPORBestCase is better than Tree CLG
+Budget 39: Tree CPORBestCase is better than Tree CLG
+Budget 40: Tree CPORBestCase is better than Tree CLG
+Budget 41: Tree CPORBestCase is better than Tree CLG
+Budget 42: Tree CPORBestCase is better than Tree CLG
+Budget 43: Tree CPORBestCase is better than Tree CLG
+Budget 44: Tree CPORBestCase is better than Tree CLG
+Budget 45: Tree CPORBestCase is better than Tree CLG
+Budget 46: Tree CPORBestCase is better than Tree CLG
+Budget 47: Tree CPORBestCase is better than Tree CLG
+Budget 48: Tree CPORBestCase is better than Tree CLG
+Budget 49: Tree CPORBestCase is better than Tree CLG
+Budget 50: Tree CPORBestCase is better than Tree CLG
+Budget 51: Tree CPORBestCase is better than Tree CLG
+Budget 52: Equal Trees

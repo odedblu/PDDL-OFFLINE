@@ -1,0 +1,235 @@
+
+          h:                        14            [1]
+          h:                        14  , h_  :   13       
+::::::::::::::::::::::::current action:::LAUNCHA
+
+          h:                        13            [1]
+          h:                        13  , h_  :   12       
+::::::::::::::::::::::::current action:::MOVEA
+
+          h:                        12            [1]
+          h:                        12  , h_  :   11       
+::::::::::::::::::::::::current action:::OBSERVEX_N0
+
+Branching....
+	Popping state:2
+          h:                        10            [1]
+          h:                        10  , h_  :    9       
+::::::::::::::::::::::::current action:::OBSERVEZ_N3
+
+Branching....
+	Popping state:2
+          h:                         7            [1]
+          h:                         7  , h_  :    6       
+::::::::::::::::::::::::current action:::OBSERVEZ_N1
+
+Branching....
+	Popping state:2
+          h:                         8            [1]
+          h:                         8  , h_  :    7       
+::::::::::::::::::::::::current action:::WAITBEFORELAUNCHD
+
+          h:                         7            [1]
+          h:                         7  , h_  :    5       
+::::::::::::::::::::::::current action:::MOVEA
+
+          h:                         5            [1][2]
+          h:                         5  , h_  :    4       
+::::::::::::::::::::::::current action:::LAUNCHD_N0_N2_N4_D3
+
+::::::::::::::::::::::::current action:::OBSERVEZ_N2
+
+Branching....
+	Popping state:2
+          h:                        14            [1]
+          h:                        14  , h_  :   13       
+::::::::::::::::::::::::current action:::OBSERVEZ_N0
+
+Branching....
+	Popping state:2
+          h:                        14            [1]
+          h:                        14  , h_  :   13       
+::::::::::::::::::::::::current action:::OBSERVEY_N0
+
+Branching....
+	Popping state:2
+          h:                        14            [1]
+          h:                        14  , h_  :   13       
+::::::::::::::::::::::::current action:::OBSERVEY_N2
+
+Branching....
+	Popping state:2
+          h:                        14            [1]
+          h:                        14  , h_  :   13       
+::::::::::::::::::::::::current action:::OBSERVEY_N3
+
+Branching....
+	Popping state:2
+          h:                        14            [1]
+          h:                        14  , h_  :   12       
+::::::::::::::::::::::::current action:::MOVED_X_UP_N0_N1
+
+          h:                        12            [1][2]
+          h:                        12  , h_  :   11       
+::::::::::::::::::::::::current action:::MOVEA
+
+::::::::::::::::::::::::current action:::OBSERVEZ_N1
+
+Branching....
+	Popping state:3
+          h:                         9            [1]
+          h:                         9  , h_  :    8       
+::::::::::::::::::::::::current action:::MOVED_Z_DOWN_N4_N3
+
+          h:                         8            [1][2]
+          h:                         8  , h_  :    7       
+::::::::::::::::::::::::current action:::MOVEA
+
+::::::::::::::::::::::::current action:::MOVED_X_UP_N3_N4
+
+          h:                         7            [1]
+          h:                         7  , h_  :    6       
+::::::::::::::::::::::::current action:::MOVEA
+
+          h:                         6            [1]
+          h:                         6  , h_  :    5       
+::::::::::::::::::::::::current action:::MOVED_Y_UP_N2_N3
+
+          h:                         5            [1][2]
+          h:                         5  , h_  :    4       
+::::::::::::::::::::::::current action:::MOVEA
+
+::::::::::::::::::::::::current action:::MOVED_X_UP_N4_N5
+
+          h:                         4            [1][2]
+          h:                         4  , h_  :    3       
+::::::::::::::::::::::::current action:::MOVEA
+
+::::::::::::::::::::::::current action:::MOVED_Y_UP_N3_N4
+
+          h:                         3            [1][2]
+          h:                         3  , h_  :    2       
+::::::::::::::::::::::::current action:::MOVEA
+
+::::::::::::::::::::::::current action:::MOVED_Y_UP_N4_N5
+
+          h:                         2            [1]
+          h:                         2  , h_  :    1       
+::::::::::::::::::::::::current action:::MOVEA
+
+          h:                         1            [1]
+          h:                         1  , h_  :    0       
+::::::::::::::::::::::::current action:::BLOWUP_N1_N5_N4
+
+Goal reached in a branch 
+
+          h:                        12            [1]
+          h:                        12  , h_  :   11       
+::::::::::::::::::::::::current action:::MOVED_Z_DOWN_N4_N3
+
+          h:                        11            [1]
+          h:                        11  , h_  :   10       
+::::::::::::::::::::::::current action:::MOVEA
+
+          h:                        10            [1]
+          h:                        10  , h_  :    9       
+::::::::::::::::::::::::current action:::MOVED_Y_DOWN_N2_N1
+
+          h:                         9            [1][2]
+          h:                         9  , h_  :    8       
+::::::::::::::::::::::::current action:::MOVEA
+
+::::::::::::::::::::::::current action:::MOVED_X_UP_N1_N2
+
+          h:                         8            [1][2]
+          h:                         8  , h_  :    7       
+::::::::::::::::::::::::current action:::MOVEA
+
+::::::::::::::::::::::::current action:::MOVED_X_UP_N3_N4
+
+          h:                         7            [1]
+          h:                         7  , h_  :    6       
+::::::::::::::::::::::::current action:::MOVEA
+
+          h:                         6            [1]
+          h:                         6  , h_  :    5       
+::::::::::::::::::::::::current action:::MOVED_X_UP_N4_N5
+
+          h:                         5            [1][2]
+          h:                         5  , h_  :    4       
+::::::::::::::::::::::::current action:::MOVEA
+
+::::::::::::::::::::::::current action:::MOVED_X_UP_N2_N3
+
+          h:                         4            [1][2]
+          h:                         4  , h_  :    3       
+::::::::::::::::::::::::current action:::MOVEA
+
+::::::::::::::::::::::::current action:::MOVED_X_UP_N5_N6
+
+          h:                         3            [1][2]
+          h:                         3  , h_  :    2       
+::::::::::::::::::::::::current action:::MOVEA
+
+::::::::::::::::::::::::current action:::MOVED_Y_UP_N1_N2
+
+          h:                         2            [1]
+          h:                         2  , h_  :    1       
+::::::::::::::::::::::::current action:::MOVEA
+
+          h:                         1            [1]
+          h:                         1  , h_  :    0       
+::::::::::::::::::::::::current action:::BLOWUP_N6_N2_N4
+
+Goal reached in a branch 
+
+          h:                         4            [1][2][3][4][5][6]
+          h:                         4  , h_  :    3       
+::::::::::::::::::::::::current action:::LAUNCHD_N0_N2_N4_D3
+
+::::::::::::::::::::::::current action:::MOVED_Z_DOWN_N4_N3
+
+::::::::::::::::::::::::current action:::MOVEA
+
+::::::::::::::::::::::::current action:::MOVED_X_UP_N0_N1
+
+::::::::::::::::::::::::current action:::MOVEA
+
+::::::::::::::::::::::::current action:::MOVED_Y_DOWN_N2_N1
+
+          h:                         3            [1][2]
+          h:                         3  , h_  :    2       
+::::::::::::::::::::::::current action:::MOVEA
+
+::::::::::::::::::::::::current action:::MOVED_X_UP_N3_N4
+
+          h:                         2            [1]
+          h:                         2  , h_  :    1       
+::::::::::::::::::::::::current action:::MOVEA
+
+          h:                         1            [1]
+          h:                         1  , h_  :    0       
+::::::::::::::::::::::::current action:::BLOWUP2_N1_N4
+
+Goal reached in a branch 
+root
+
+
+ff: found legal plan as follows
+
+Total branches in this plan: 10 
+Longest branch: 33
+Total spurious branches in this plan: 7
+Total number of actions: 56
+
+
+time spent:    0.66 seconds instantiating 4134 easy, 0 hard action templates
+               0.00 seconds reachability analysis, yielding 1794 facts and 4134 actions
+               0.02 seconds creating final representation with 1685 relevant facts
+               0.08 seconds building connectivity graph
+               0.06 seconds computing closures operations
+               0.96 seconds searching, evaluating 375 states, expanding 303 nodes, to a max depth of 6
+               1.72 seconds total time
+
+
+

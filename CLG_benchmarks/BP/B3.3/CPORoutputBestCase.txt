@@ -1,0 +1,11 @@
+49) move_p3-1_p3-2_a2_t1_t2
+50) no-op_t2_t3
+51) observe-box_p3-2_a2_b1_t3_t4
+branching...
+	53) move_p3-2_p2-2_a2_t4_t5
+	57) no-op_t5_t6
+	58) no-op_t6_t7
+	59) no-op_t7_t8
+)goal
+	52) no-op_t4_t5
+)goal

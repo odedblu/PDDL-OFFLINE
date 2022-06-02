@@ -1,0 +1,57 @@
+Budget 7: Can not compare the trees 
+Budget 8: Can not compare the trees 
+Budget 9: Can not compare the trees 
+Budget 10: Can not compare the trees 
+Budget 11: Can not compare the trees 
+Budget 12: Can not compare the trees 
+Budget 13: Can not compare the trees 
+Budget 14: Can not compare the trees 
+Budget 15: Can not compare the trees 
+Budget 16: Can not compare the trees 
+Budget 17: Can not compare the trees 
+Budget 18: Can not compare the trees 
+Budget 19: Can not compare the trees 
+Budget 20: Can not compare the trees 
+Budget 21: Can not compare the trees 
+Budget 22: Can not compare the trees 
+Budget 23: Can not compare the trees 
+Budget 24: Can not compare the trees 
+Budget 25: Can not compare the trees 
+Budget 26: Can not compare the trees 
+Budget 27: Can not compare the trees 
+Budget 28: Can not compare the trees 
+Budget 29: Can not compare the trees 
+Budget 30: Can not compare the trees 
+Budget 31: Can not compare the trees 
+Budget 32: Can not compare the trees 
+Budget 33: Can not compare the trees 
+Budget 34: Can not compare the trees 
+Budget 35: Can not compare the trees 
+Budget 36: Can not compare the trees 
+Budget 37: Can not compare the trees 
+Budget 38: Can not compare the trees 
+Budget 39: Can not compare the trees 
+Budget 40: Can not compare the trees 
+Budget 41: Can not compare the trees 
+Budget 42: Can not compare the trees 
+Budget 43: Can not compare the trees 
+Budget 44: Can not compare the trees 
+Budget 45: Can not compare the trees 
+Budget 46: Can not compare the trees 
+Budget 47: Can not compare the trees 
+Budget 48: Can not compare the trees 
+Budget 49: Can not compare the trees 
+Budget 50: Can not compare the trees 
+Budget 51: Can not compare the trees 
+Budget 52: Tree CLG is better than Tree CFF
+Budget 53: Tree CLG is better than Tree CFF
+Budget 54: Tree CLG is better than Tree CFF
+Budget 55: Tree CLG is better than Tree CFF
+Budget 56: Tree CLG is better than Tree CFF
+Budget 57: Tree CLG is better than Tree CFF
+Budget 58: Tree CLG is better than Tree CFF
+Budget 59: Tree CLG is better than Tree CFF
+Budget 60: Tree CLG is better than Tree CFF
+Budget 61: Tree CLG is better than Tree CFF
+Budget 62: Tree CLG is better than Tree CFF
+Budget 63: Equal Trees

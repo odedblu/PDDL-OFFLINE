@@ -1,0 +1,16 @@
+move_p1-1_p1-2_a1_t1_t2
+	observe-box_p1-2_a1_b0_t2_t3
+		(f)move_p1-2_p1-1_a1_t3_t4
+		(f)	push_p1-1_p1-2_b0_a1_t4_t5
+		(f)		move_p1-1_p2-1_a1_t5_t6
+		(f)			move_p2-1_p3-1_a1_t6_t7
+		(f)				move_p3-1_p3-2_a1_t7_t8
+		(f)					observe-box_p3-2_a1_b1_t8_t9
+		(f)						(f)move_p3-2_p3-1_a1_t9_t10
+		(f)						(f)	push_p3-1_p3-2_b1_a1_t10_t11
+		(t)move_p1-2_p2-2_a1_t3_t4
+		(t)	move_p2-2_p3-2_a1_t4_t5
+		(t)		observe-box_p3-2_a1_b1_t5_t6
+		(t)			(f)move_p3-2_p3-1_a1_t6_t7
+		(t)			(f)	push_p3-1_p3-2_b1_a1_t7_t8
+

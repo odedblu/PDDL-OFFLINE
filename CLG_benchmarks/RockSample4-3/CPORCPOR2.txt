@@ -1,0 +1,7 @@
+Budget 14: Tree CPOR is better than Tree CPOR2
+Budget 15: Can not compare the trees 
+Budget 16: Can not compare the trees 
+Budget 17: Tree CPOR is better than Tree CPOR2
+Budget 18: Tree CPOR is better than Tree CPOR2
+Budget 19: Tree CPOR is better than Tree CPOR2
+Budget 20: Equal Trees

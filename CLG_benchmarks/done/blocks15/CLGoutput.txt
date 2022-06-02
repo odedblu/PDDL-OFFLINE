@@ -1,0 +1,656 @@
+) ON_B4_B10(-100) ON_B4_B11(-99) ON_B4_B12(-98) ON_B4_B13(-97) ON_B4_B14(-96) ON_B4_B15(-95) ON_B4_B2(-94) ON_B4_B3(-93) ON_B4_B5(-92) ON_B4_B6(-91) ON_B4_B7(-90) ON_B4_B8(-89) ON_B4_B9(-88) ON_B5_B1(-87) ON_B5_B10(-86) ON_B5_B11(-85) ON_B5_B12(-84) ON_B5_B13(-83) ON_B5_B14(-82) ON_B5_B15(-81) ON_B5_B2(-80) ON_B5_B3(-79) ON_B5_B6(-77) ON_B5_B7(-76) ON_B5_B8(-75) ON_B5_B9(-74) ON_B6_B1(-73) ON_B6_B10(-72) ON_B6_B11(-71) ON_B6_B12(-70) ON_B6_B13(-69) ON_B6_B15(-67) ON_B6_B2(-66) ON_B6_B3(-65) ON_B6_B4(-64) ON_B6_B5(-63) ON_B6_B7(-62) ON_B6_B8(-61) ON_B7_B1(-59) ON_B7_B10(-58) ON_B7_B11(-57) ON_B7_B12(-56) ON_B7_B13(-55) ON_B7_B14(-54) ON_B7_B15(-53) ON_B7_B2(-52) ON_B7_B3(-51) ON_B7_B4(-50) ON_B7_B5(-49) ON_B7_B6(-48) ON_B7_B8(-47) ON_B7_B9(-46) ON_B8_B1(-45) ON_B8_B10(-44) ON_B8_B11(-43) ON_B8_B13(-41) ON_B8_B14(-40) ON_B8_B15(-39) ON_B8_B2(-38) ON_B8_B3(-37) ON_B8_B4(-36) ON_B8_B5(-35) ON_B8_B6(-34) ON_B8_B7(-33) ON_B8_B9(-32) ON_B9_B1(-31) ON_B9_B10(-30) ON_B9_B11(-29) ON_B9_B12(-28) ON_B9_B13(-27) ON_B9_B15(-25) ON_B9_B2(-24) ON_B9_B3(-23) ON_B9_B4(-22) ON_B9_B5(-21) ON_B9_B7(-19) ON_B9_B8(-18) CLEAR_B11(-15) CLEAR_B12(-14) CLEAR_B13(-13) CLEAR_B14(-12) CLEAR_B2(-10) CLEAR_B3(-9) CLEAR_B4(-8) CLEAR_B5(-7) CLEAR_B7(-5) CLEAR_B8(-4) FALSE(-1) FOO(2) CLEAR_B1(17) ON_B8_B12(42) ON_B5_B4(78) ON_B2_B5(120) ON_B14_B8(145) ON_B13_B7(160) ON_B12_B3(178) ON_B11_B13(196) ON_B1_B2(221) ON-TABLE_B7(230) ON-TABLE_B4(233) ON-TABLE_B3(234) 
+REGISTER (entering): printNewPDDL()
+Generating PDDL
+printing 29796 actions
+printing 240 observations
+STAT old-Actions: 3150
+STAT old-Atoms: 245
+STAT old-cond-effects: 3151
+STAT old-condicionales: 12180
+STAT KP-NActions: 29796
+STAT KP-NAtoms: 19484
+STAT KP-deleted-NAtoms: 0
+STAT KP-Nconds-effects-and-notused: 237287
+STAT KP-Ncond-effects: 237287
+STAT KP-Numero_lit_en_efectos_condicionales: 1550807
+REGISTER: printNewPDDL() took 15.198 secs
+REGISTER: main() took 121.394 secs
+
+ff: parsing domain file
+domain 'BLOCKSWORLD' defined
+ ... done.
+ff: parsing problem file
+problem 'BW-RAND-15' defined
+ ... done.
+
+STATS quality of hash table of predicates: max_bucket_size = 6, ave_bucket_size = 0.792177
+ff-cond: no description file
+fact T0_FAIL_K0 tagged as 18045  
+
+
+Skipping All searches!
+Starting K procedure.
+
+          h:                        55            [1]
+          h:                        55  , h_  :   54       
+::::::::::::::::::::::::current action:::SENSEON_B2_B1
+
+Branching....
+	Popping state:2
+          h:                        48            [1]
+          h:                        48  , h_  :   47       
+::::::::::::::::::::::::current action:::SENSEON_B15_B10
+
+Branching....
+	Popping state:3
+          h:                        34            [1]
+          h:                        34  , h_  :   33       
+::::::::::::::::::::::::current action:::SENSEON_B6_B9
+
+Branching....
+	Popping state:4
+          h:                        16            [1]
+          h:                        16  , h_  :   15       
+::::::::::::::::::::::::current action:::MOVE-TO-T_B10_B15
+
+          h:                        15            [1]
+          h:                        15  , h_  :   14       
+::::::::::::::::::::::::current action:::MOVE-TO-T_B9_B6
+
+          h:                        14            [1]
+          h:                        14  , h_  :   13       
+::::::::::::::::::::::::current action:::MOVE-TO-T_B1_B2
+
+          h:                        13            [1]
+          h:                        13  , h_  :   12       
+::::::::::::::::::::::::current action:::MOVE-B-TO-B_B15_B11_B10
+
+          h:                        12            [1]
+          h:                        12  , h_  :   11       
+::::::::::::::::::::::::current action:::MOVE-B-TO-B_B6_B14_B15
+
+          h:                        11            [1][2]
+          h:                        11  , h_  :   10       
+::::::::::::::::::::::::current action:::MOVE-TO-T_B11_B13
+
+::::::::::::::::::::::::current action:::MOVE-TO-T_B13_B7
+
+          h:                        10            [1]
+          h:                        10  , h_  :    9       
+::::::::::::::::::::::::current action:::MOVE-B-TO-B_B14_B8_B13
+
+          h:                         9            [1]
+          h:                         9  , h_  :    8       
+::::::::::::::::::::::::current action:::MOVE-TO-T_B8_B12
+
+          h:                         8            [1]
+          h:                         8  , h_  :    7       
+::::::::::::::::::::::::current action:::MOVE-T-TO-B_B11_B14
+
+          h:                         7            [1][2]
+          h:                         7  , h_  :    6       
+::::::::::::::::::::::::current action:::MOVE-B-TO-B_B12_B3_B11
+
+::::::::::::::::::::::::current action:::MOVE-T-TO-B_B3_B7
+
+          h:                         6            [1][2]
+          h:                         6  , h_  :    5       
+::::::::::::::::::::::::current action:::MOVE-B-TO-B_B2_B5_B3
+
+::::::::::::::::::::::::current action:::MOVE-B-TO-B_B5_B4_B8
+
+          h:                         5            [1]
+          h:                         5  , h_  :    4       
+::::::::::::::::::::::::current action:::MOVE-T-TO-B_B4_B6
+
+          h:                         4            [1]
+          h:                         4  , h_  :    3       
+::::::::::::::::::::::::current action:::MOVE-T-TO-B_B9_B4
+
+          h:                         3            [1]
+          h:                         3  , h_  :    2       
+::::::::::::::::::::::::current action:::MOVE-T-TO-B_B1_B5
+
+          h:                         2            [1]
+          h:                         2  , h_  :    1       
+::::::::::::::::::::::::current action:::MOVE-B-TO-B_B2_B3_B1
+
+          h:                         1            [1]
+          h:                         1  , h_  :    0       
+::::::::::::::::::::::::current action:::MOVE-B-TO-B_B12_B11_B2
+
+Goal reached in a branch 
+
+          h:                        17            [1]
+          h:                        17  , h_  :   15       
+::::::::::::::::::::::::current action:::MOVE-TO-T_B10_B15
+
+          h:                        15            [1]
+          h:                        15  , h_  :   14       
+::::::::::::::::::::::::current action:::MOVE-TO-T_B1_B2
+
+          h:                        14            [1]
+          h:                        14  , h_  :   13       
+::::::::::::::::::::::::current action:::MOVE-TO-T_B2_B5
+
+          h:                        13            [1]
+          h:                        13  , h_  :   12       
+::::::::::::::::::::::::current action:::MOVE-TO-T_B5_B4
+
+          h:                        12            [1]
+          h:                        12  , h_  :   11       
+::::::::::::::::::::::::current action:::MOVE-T-TO-B_B1_B5
+
+          h:                        11            [1]
+          h:                        11  , h_  :   10       
+::::::::::::::::::::::::current action:::MOVE-T-TO-B_B2_B1
+
+          h:                        10            [1][2]
+          h:                        10  , h_  :    9       
+::::::::::::::::::::::::current action:::MOVE-TO-T_B6_B9
+
+::::::::::::::::::::::::current action:::MOVE-B-TO-B_B15_B11_B10
+
+          h:                         9            [1]
+          h:                         9  , h_  :    8       
+::::::::::::::::::::::::current action:::MOVE-T-TO-B_B6_B15
+
+          h:                         8            [1]
+          h:                         8  , h_  :    7       
+::::::::::::::::::::::::current action:::MOVE-T-TO-B_B4_B6
+
+          h:                         7            [1]
+          h:                         7  , h_  :    6       
+::::::::::::::::::::::::current action:::MOVE-B-TO-B_B9_B14_B4
+
+          h:                         6            [1][2]
+          h:                         6  , h_  :    5       
+::::::::::::::::::::::::current action:::MOVE-B-TO-B_B11_B13_B9
+
+::::::::::::::::::::::::current action:::MOVE-TO-T_B13_B7
+
+          h:                         5            [1]
+          h:                         5  , h_  :    4       
+::::::::::::::::::::::::current action:::MOVE-B-TO-B_B14_B8_B13
+
+          h:                         4            [1]
+          h:                         4  , h_  :    3       
+::::::::::::::::::::::::current action:::MOVE-TO-T_B8_B12
+
+          h:                         3            [1]
+          h:                         3  , h_  :    2       
+::::::::::::::::::::::::current action:::MOVE-B-TO-B_B12_B3_B2
+
+          h:                         2            [1]
+          h:                         2  , h_  :    1       
+::::::::::::::::::::::::current action:::MOVE-T-TO-B_B3_B7
+
+          h:                         1            [1]
+          h:                         1  , h_  :    0       
+::::::::::::::::::::::::current action:::MOVE-B-TO-B_B11_B9_B14
+
+Goal reached in a branch 
+
+          h:                        33            [1]
+          h:                        33  , h_  :   32       
+::::::::::::::::::::::::current action:::SENSEON_B6_B9
+
+Branching....
+	Popping state:3
+          h:                        16            [1]
+          h:                        16  , h_  :   15       
+::::::::::::::::::::::::current action:::MOVE-TO-T_B1_B2
+
+          h:                        15            [1]
+          h:                        15  , h_  :   14       
+::::::::::::::::::::::::current action:::MOVE-B-TO-B_B2_B5_B9
+
+          h:                        14            [1]
+          h:                        14  , h_  :   13       
+::::::::::::::::::::::::current action:::MOVE-TO-T_B5_B4
+
+          h:                        13            [1]
+          h:                        13  , h_  :   12       
+::::::::::::::::::::::::current action:::MOVE-T-TO-B_B1_B5
+
+          h:                        12            [1]
+          h:                        12  , h_  :   11       
+::::::::::::::::::::::::current action:::MOVE-B-TO-B_B2_B9_B1
+
+          h:                        11            [1][2][3]
+          h:                        11  , h_  :   10       
+::::::::::::::::::::::::current action:::MOVE-TO-T_B15_B10
+
+::::::::::::::::::::::::current action:::MOVE-TO-T_B9_B6
+
+::::::::::::::::::::::::current action:::MOVE-TO-T_B10_B11
+
+          h:                        10            [1]
+          h:                        10  , h_  :    9       
+::::::::::::::::::::::::current action:::MOVE-T-TO-B_B15_B10
+
+          h:                         9            [1]
+          h:                         9  , h_  :    8       
+::::::::::::::::::::::::current action:::MOVE-B-TO-B_B6_B14_B15
+
+          h:                         8            [1]
+          h:                         8  , h_  :    7       
+::::::::::::::::::::::::current action:::MOVE-T-TO-B_B4_B6
+
+          h:                         7            [1]
+          h:                         7  , h_  :    6       
+::::::::::::::::::::::::current action:::MOVE-T-TO-B_B9_B4
+
+          h:                         6            [1][2]
+          h:                         6  , h_  :    5       
+::::::::::::::::::::::::current action:::MOVE-B-TO-B_B11_B13_B9
+
+::::::::::::::::::::::::current action:::MOVE-TO-T_B13_B7
+
+          h:                         5            [1]
+          h:                         5  , h_  :    4       
+::::::::::::::::::::::::current action:::MOVE-B-TO-B_B14_B8_B13
+
+          h:                         4            [1]
+          h:                         4  , h_  :    3       
+::::::::::::::::::::::::current action:::MOVE-TO-T_B8_B12
+
+          h:                         3            [1]
+          h:                         3  , h_  :    2       
+::::::::::::::::::::::::current action:::MOVE-B-TO-B_B12_B3_B2
+
+          h:                         2            [1]
+          h:                         2  , h_  :    1       
+::::::::::::::::::::::::current action:::MOVE-T-TO-B_B3_B7
+
+          h:                         1            [1]
+          h:                         1  , h_  :    0       
+::::::::::::::::::::::::current action:::MOVE-B-TO-B_B11_B9_B14
+
+Goal reached in a branch 
+
+          h:                        16            [1]
+          h:                        16  , h_  :   15       
+::::::::::::::::::::::::current action:::MOVE-TO-T_B1_B2
+
+          h:                        15            [1]
+          h:                        15  , h_  :   14       
+::::::::::::::::::::::::current action:::MOVE-TO-T_B2_B5
+
+          h:                        14            [1]
+          h:                        14  , h_  :   13       
+::::::::::::::::::::::::current action:::MOVE-TO-T_B5_B4
+
+          h:                        13            [1]
+          h:                        13  , h_  :   12       
+::::::::::::::::::::::::current action:::MOVE-T-TO-B_B1_B5
+
+          h:                        12            [1]
+          h:                        12  , h_  :   11       
+::::::::::::::::::::::::current action:::MOVE-T-TO-B_B2_B1
+
+          h:                        11            [1][2][3]
+          h:                        11  , h_  :   10       
+::::::::::::::::::::::::current action:::MOVE-TO-T_B15_B10
+
+::::::::::::::::::::::::current action:::MOVE-TO-T_B6_B9
+
+::::::::::::::::::::::::current action:::MOVE-TO-T_B10_B11
+
+          h:                        10            [1]
+          h:                        10  , h_  :    9       
+::::::::::::::::::::::::current action:::MOVE-T-TO-B_B15_B10
+
+          h:                         9            [1]
+          h:                         9  , h_  :    8       
+::::::::::::::::::::::::current action:::MOVE-T-TO-B_B6_B15
+
+          h:                         8            [1]
+          h:                         8  , h_  :    7       
+::::::::::::::::::::::::current action:::MOVE-T-TO-B_B4_B6
+
+          h:                         7            [1]
+          h:                         7  , h_  :    6       
+::::::::::::::::::::::::current action:::MOVE-B-TO-B_B9_B14_B4
+
+          h:                         6            [1][2]
+          h:                         6  , h_  :    5       
+::::::::::::::::::::::::current action:::MOVE-B-TO-B_B11_B13_B9
+
+::::::::::::::::::::::::current action:::MOVE-TO-T_B13_B7
+
+          h:                         5            [1]
+          h:                         5  , h_  :    4       
+::::::::::::::::::::::::current action:::MOVE-B-TO-B_B14_B8_B13
+
+          h:                         4            [1]
+          h:                         4  , h_  :    3       
+::::::::::::::::::::::::current action:::MOVE-TO-T_B8_B12
+
+          h:                         3            [1]
+          h:                         3  , h_  :    2       
+::::::::::::::::::::::::current action:::MOVE-B-TO-B_B12_B3_B2
+
+          h:                         2            [1]
+          h:                         2  , h_  :    1       
+::::::::::::::::::::::::current action:::MOVE-T-TO-B_B3_B7
+
+          h:                         1            [1]
+          h:                         1  , h_  :    0       
+::::::::::::::::::::::::current action:::MOVE-B-TO-B_B11_B9_B14
+
+Goal reached in a branch 
+
+          h:                        46            [1]
+          h:                        46  , h_  :   45       
+::::::::::::::::::::::::current action:::SENSEON_B15_B10
+
+Branching....
+	Popping state:2
+          h:                        32            [1]
+          h:                        32  , h_  :   31       
+::::::::::::::::::::::::current action:::SENSEON_B6_B9
+
+Branching....
+	Popping state:3
+          h:                        15            [1]
+          h:                        15  , h_  :   14       
+::::::::::::::::::::::::current action:::MOVE-TO-T_B10_B15
+
+          h:                        14            [1]
+          h:                        14  , h_  :   13       
+::::::::::::::::::::::::current action:::MOVE-TO-T_B9_B6
+
+          h:                        13            [1]
+          h:                        13  , h_  :   12       
+::::::::::::::::::::::::current action:::MOVE-B-TO-B_B15_B11_B10
+
+          h:                        12            [1]
+          h:                        12  , h_  :   11       
+::::::::::::::::::::::::current action:::MOVE-B-TO-B_B6_B14_B15
+
+          h:                        11            [1][2]
+          h:                        11  , h_  :   10       
+::::::::::::::::::::::::current action:::MOVE-TO-T_B11_B13
+
+::::::::::::::::::::::::current action:::MOVE-TO-T_B13_B7
+
+          h:                        10            [1]
+          h:                        10  , h_  :    9       
+::::::::::::::::::::::::current action:::MOVE-B-TO-B_B14_B8_B13
+
+          h:                         9            [1]
+          h:                         9  , h_  :    8       
+::::::::::::::::::::::::current action:::MOVE-TO-T_B8_B12
+
+          h:                         8            [1]
+          h:                         8  , h_  :    7       
+::::::::::::::::::::::::current action:::MOVE-T-TO-B_B11_B14
+
+          h:                         7            [1][2]
+          h:                         7  , h_  :    6       
+::::::::::::::::::::::::current action:::MOVE-B-TO-B_B12_B3_B11
+
+::::::::::::::::::::::::current action:::MOVE-T-TO-B_B3_B7
+
+          h:                         6            [1][2][3]
+          h:                         6  , h_  :    5       
+::::::::::::::::::::::::current action:::MOVE-B-TO-B_B2_B1_B3
+
+::::::::::::::::::::::::current action:::MOVE-B-TO-B_B1_B5_B8
+
+::::::::::::::::::::::::current action:::MOVE-TO-T_B5_B4
+
+          h:                         5            [1]
+          h:                         5  , h_  :    4       
+::::::::::::::::::::::::current action:::MOVE-T-TO-B_B4_B6
+
+          h:                         4            [1]
+          h:                         4  , h_  :    3       
+::::::::::::::::::::::::current action:::MOVE-T-TO-B_B9_B4
+
+          h:                         3            [1]
+          h:                         3  , h_  :    2       
+::::::::::::::::::::::::current action:::MOVE-B-TO-B_B1_B8_B5
+
+          h:                         2            [1]
+          h:                         2  , h_  :    1       
+::::::::::::::::::::::::current action:::MOVE-B-TO-B_B2_B3_B1
+
+          h:                         1            [1]
+          h:                         1  , h_  :    0       
+::::::::::::::::::::::::current action:::MOVE-B-TO-B_B12_B11_B2
+
+Goal reached in a branch 
+
+          h:                        16            [1]
+          h:                        16  , h_  :   14       
+::::::::::::::::::::::::current action:::MOVE-TO-T_B10_B15
+
+          h:                        14            [1][2]
+          h:                        14  , h_  :   13       
+::::::::::::::::::::::::current action:::MOVE-TO-T_B2_B1
+
+::::::::::::::::::::::::current action:::MOVE-TO-T_B1_B5
+
+          h:                        13            [1]
+          h:                        13  , h_  :   12       
+::::::::::::::::::::::::current action:::MOVE-TO-T_B5_B4
+
+          h:                        12            [1]
+          h:                        12  , h_  :   11       
+::::::::::::::::::::::::current action:::MOVE-T-TO-B_B1_B5
+
+          h:                        11            [1]
+          h:                        11  , h_  :   10       
+::::::::::::::::::::::::current action:::MOVE-T-TO-B_B2_B1
+
+          h:                        10            [1][2]
+          h:                        10  , h_  :    9       
+::::::::::::::::::::::::current action:::MOVE-TO-T_B6_B9
+
+::::::::::::::::::::::::current action:::MOVE-B-TO-B_B15_B11_B10
+
+          h:                         9            [1]
+          h:                         9  , h_  :    8       
+::::::::::::::::::::::::current action:::MOVE-T-TO-B_B6_B15
+
+          h:                         8            [1]
+          h:                         8  , h_  :    7       
+::::::::::::::::::::::::current action:::MOVE-T-TO-B_B4_B6
+
+          h:                         7            [1]
+          h:                         7  , h_  :    6       
+::::::::::::::::::::::::current action:::MOVE-B-TO-B_B9_B14_B4
+
+          h:                         6            [1][2]
+          h:                         6  , h_  :    5       
+::::::::::::::::::::::::current action:::MOVE-B-TO-B_B11_B13_B9
+
+::::::::::::::::::::::::current action:::MOVE-TO-T_B13_B7
+
+          h:                         5            [1]
+          h:                         5  , h_  :    4       
+::::::::::::::::::::::::current action:::MOVE-B-TO-B_B14_B8_B13
+
+          h:                         4            [1]
+          h:                         4  , h_  :    3       
+::::::::::::::::::::::::current action:::MOVE-TO-T_B8_B12
+
+          h:                         3            [1]
+          h:                         3  , h_  :    2       
+::::::::::::::::::::::::current action:::MOVE-B-TO-B_B12_B3_B2
+
+          h:                         2            [1]
+          h:                         2  , h_  :    1       
+::::::::::::::::::::::::current action:::MOVE-T-TO-B_B3_B7
+
+          h:                         1            [1]
+          h:                         1  , h_  :    0       
+::::::::::::::::::::::::current action:::MOVE-B-TO-B_B11_B9_B14
+
+Goal reached in a branch 
+
+          h:                        31            [1]
+          h:                        31  , h_  :   30       
+::::::::::::::::::::::::current action:::SENSEON_B6_B9
+
+Branching....
+	Popping state:2
+          h:                        15            [1][2]
+          h:                        15  , h_  :   14       
+::::::::::::::::::::::::current action:::MOVE-TO-T_B2_B1
+
+::::::::::::::::::::::::current action:::MOVE-B-TO-B_B1_B5_B9
+
+          h:                        14            [1]
+          h:                        14  , h_  :   13       
+::::::::::::::::::::::::current action:::MOVE-TO-T_B5_B4
+
+          h:                        13            [1]
+          h:                        13  , h_  :   12       
+::::::::::::::::::::::::current action:::MOVE-B-TO-B_B1_B9_B5
+
+          h:                        12            [1]
+          h:                        12  , h_  :   11       
+::::::::::::::::::::::::current action:::MOVE-T-TO-B_B2_B1
+
+          h:                        11            [1][2][3]
+          h:                        11  , h_  :   10       
+::::::::::::::::::::::::current action:::MOVE-TO-T_B15_B10
+
+::::::::::::::::::::::::current action:::MOVE-TO-T_B9_B6
+
+::::::::::::::::::::::::current action:::MOVE-TO-T_B10_B11
+
+          h:                        10            [1]
+          h:                        10  , h_  :    9       
+::::::::::::::::::::::::current action:::MOVE-T-TO-B_B15_B10
+
+          h:                         9            [1]
+          h:                         9  , h_  :    8       
+::::::::::::::::::::::::current action:::MOVE-B-TO-B_B6_B14_B15
+
+          h:                         8            [1]
+          h:                         8  , h_  :    7       
+::::::::::::::::::::::::current action:::MOVE-T-TO-B_B4_B6
+
+          h:                         7            [1]
+          h:                         7  , h_  :    6       
+::::::::::::::::::::::::current action:::MOVE-T-TO-B_B9_B4
+
+          h:                         6            [1][2]
+          h:                         6  , h_  :    5       
+::::::::::::::::::::::::current action:::MOVE-B-TO-B_B11_B13_B9
+
+::::::::::::::::::::::::current action:::MOVE-TO-T_B13_B7
+
+          h:                         5            [1]
+          h:                         5  , h_  :    4       
+::::::::::::::::::::::::current action:::MOVE-B-TO-B_B14_B8_B13
+
+          h:                         4            [1]
+          h:                         4  , h_  :    3       
+::::::::::::::::::::::::current action:::MOVE-TO-T_B8_B12
+
+          h:                         3            [1]
+          h:                         3  , h_  :    2       
+::::::::::::::::::::::::current action:::MOVE-B-TO-B_B12_B3_B2
+
+          h:                         2            [1]
+          h:                         2  , h_  :    1       
+::::::::::::::::::::::::current action:::MOVE-T-TO-B_B3_B7
+
+          h:                         1            [1]
+          h:                         1  , h_  :    0       
+::::::::::::::::::::::::current action:::MOVE-B-TO-B_B11_B9_B14
+
+Goal reached in a branch 
+
+          h:                        15            [1]
+          h:                        15  , h_  :   14       
+::::::::::::::::::::::::current action:::MOVE-B-TO-B_B2_B1_B6
+
+          h:                        14            [1][2]
+          h:                        14  , h_  :   13       
+::::::::::::::::::::::::current action:::MOVE-TO-T_B1_B5
+
+::::::::::::::::::::::::current action:::MOVE-TO-T_B5_B4
+
+          h:                        13            [1]
+          h:                        13  , h_  :   12       
+::::::::::::::::::::::::current action:::MOVE-T-TO-B_B1_B5
+
+          h:                        12            [1]
+          h:                        12  , h_  :   11       
+::::::::::::::::::::::::current action:::MOVE-B-TO-B_B2_B6_B1
+
+          h:                        11            [1][2][3]
+          h:                        11  , h_  :   10       
+::::::::::::::::::::::::current action:::MOVE-TO-T_B15_B10
+
+::::::::::::::::::::::::current action:::MOVE-TO-T_B6_B9
+
+::::::::::::::::::::::::current action:::MOVE-TO-T_B10_B11
+
+          h:                        10            [1]
+          h:                        10  , h_  :    9       
+::::::::::::::::::::::::current action:::MOVE-T-TO-B_B15_B10
+
+          h:                         9            [1]
+          h:                         9  , h_  :    8       
+::::::::::::::::::::::::current action:::MOVE-T-TO-B_B6_B15
+
+          h:                         8            [1]
+          h:                         8  , h_  :    7       
+::::::::::::::::::::::::current action:::MOVE-T-TO-B_B4_B6
+
+          h:                         7            [1]
+          h:                         7  , h_  :    6       
+::::::::::::::::::::::::current action:::MOVE-B-TO-B_B9_B14_B4
+
+          h:                         6            [1][2]
+          h:                         6  , h_  :    5       
+::::::::::::::::::::::::current action:::MOVE-B-TO-B_B11_B13_B9
+
+::::::::::::::::::::::::current action:::MOVE-TO-T_B13_B7
+
+          h:                         5            [1]
+          h:                         5  , h_  :    4       
+::::::::::::::::::::::::current action:::MOVE-B-TO-B_B14_B8_B13
+
+          h:                         4            [1]
+          h:                         4  , h_  :    3       
+::::::::::::::::::::::::current action:::MOVE-TO-T_B8_B12
+
+          h:                         3            [1]
+          h:                         3  , h_  :    2       
+::::::::::::::::::::::::current action:::MOVE-B-TO-B_B12_B3_B2
+
+          h:                         2            [1]
+          h:                         2  , h_  :    1       
+::::::::::::::::::::::::current action:::MOVE-T-TO-B_B3_B7
+
+          h:                         1            [1]
+          h:                         1  , h_  :    0       
+::::::::::::::::::::::::current action:::MOVE-B-TO-B_B11_B9_B14
+
+Goal reached in a branch 
+root
+
+
+ff: found legal plan as follows
+
+Total branches in this plan: 8 
+Longest branch: 22
+Total spurious branches in this plan: 0
+Total number of actions: 157
+
+
+time spent:   19.90 seconds instantiating 30036 easy, 0 hard action templates
+               0.14 seconds reachability analysis, yielding 25019 facts and 30036 actions
+               0.56 seconds creating final representation with 24797 relevant facts
+               7.40 seconds building connectivity graph
+              88.20 seconds computing closures operations
+             271.80 seconds searching, evaluating 1403 states, expanding 1140 nodes, to a max depth of 3
+             299.80 seconds total time

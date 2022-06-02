@@ -1,0 +1,62 @@
+
+ff: parsing domain file
+domain 'BTS' defined
+ ... done.
+ff: parsing problem file
+problem 'BTS-10-1' defined
+ ... done.
+
+
+lowest leaf goal distance/initial state f value seen:     10/    10; maxdepth reached:    0
+                                                           9/    10                       1
+                                                           8/    10                       2
+                                                           7/    10                       3
+                                                           6/    10                       4
+                                                           5/    10                       5
+                                                           4/    10                       6
+                                                           3/    10                       7
+                                                           2/    10                       8
+                                                           1/    10                       9
+
+ff: found plan as follows
+-------------------------------------------------
+  0||0 --- DUNK P9 B0 T0 --- SON: 1||0
+-------------------------------------------------
+  1||0 --- DUNK P8 B0 T0 --- SON: 2||0
+-------------------------------------------------
+  2||0 --- DUNK P7 B0 T0 --- SON: 3||0
+-------------------------------------------------
+  3||0 --- DUNK P6 B0 T0 --- SON: 4||0
+-------------------------------------------------
+  4||0 --- DUNK P5 B0 T0 --- SON: 5||0
+-------------------------------------------------
+  5||0 --- DUNK P4 B0 T0 --- SON: 6||0
+-------------------------------------------------
+  6||0 --- DUNK P3 B0 T0 --- SON: 7||0
+-------------------------------------------------
+  7||0 --- DUNK P2 B0 T0 --- SON: 8||0
+-------------------------------------------------
+  8||0 --- DUNK P1 B0 T0 --- SON: 9||0
+-------------------------------------------------
+  9||0 --- DUNK P0 B0 T0 --- SON: 10||-1
+-------------------------------------------------
+
+tree layers: 10
+total nr. actions: 10
+
+statistics:    0.00 seconds instantiating 20 easy, 0 hard action templates
+               0.00 seconds reachability analysis, yielding 21 facts and 20 actions
+               0.00 seconds creating final representation with 21 relevant facts (21 max U, 11 CNF max U)
+               final representation has 20 unknown facts and 4 observation actions    
+               0.00 seconds building connectivity graph
+               0.00 seconds (   0.00 pure) evaluating 209 states
+               0.00 seconds in DP for 2882 RPG ini state implication checks
+               0.00 seconds in DP for 0 RPlan extract ini state implication checks (0 lits removed)
+               0.01 seconds generating,    0.01 seconds encoding 300 state transition base CNFs
+               0.07 seconds in DP solving 3924 state transition CNFs
+               0.00 seconds checking for self-contradictions, including 0 DP calls
+               0.00 seconds checking for stagnating states (45 hits), including 4221 DP calls
+              11027 total DP calls, 41281 total UP calls,    0.00 sec membership
+              0.01 seconds for remaining searching duties
+               0.10 seconds total time (+    0.04 secs for CNF memory allocation)
+

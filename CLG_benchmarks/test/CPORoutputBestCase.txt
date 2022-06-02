@@ -1,0 +1,12 @@
+1077) sensedoor_d1
+branching...
+	1080) go-left_d1_d2
+	1084) sensedoor_d2
+branching...
+		1087) go-left_d2_d3
+		1091) gothrow_d3
+)goal
+		1086) gothrow_d2
+)goal
+	1079) gothrow_d1
+)goal

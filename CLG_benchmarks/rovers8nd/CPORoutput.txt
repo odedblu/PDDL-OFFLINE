@@ -1,0 +1,400 @@
+0) navigate_rover0_waypoint3_waypoint1_camera0_objective2
+1) calibrate_rover0_camera0_objective1_waypoint1
+3) sense_vis_rover0_objective1_waypoint1
+branching...
+	6) navigate_rover0_waypoint1_waypoint2_camera0_objective2
+	584) calibrate_rover0_camera0_objective1_waypoint2
+	586) take_image_rover0_waypoint2_objective1_camera0_high_res
+	588) navigate_rover0_waypoint2_waypoint1_camera0_objective1
+	590) navigate_rover0_waypoint1_waypoint3_camera0_objective1
+	592) navigate_rover0_waypoint3_waypoint4_camera0_objective1
+	594) calibrate_rover0_camera0_objective2_waypoint4
+	596) sense_vis_rover0_objective2_waypoint4
+branching...
+		599) navigate_rover0_waypoint4_waypoint3_camera0_objective1
+		730) navigate_rover0_waypoint3_waypoint1_camera0_objective1
+		732) navigate_rover0_waypoint1_waypoint5_camera0_objective1
+		734) calibrate_rover0_camera0_objective2_waypoint5
+		736) sense_vis_rover0_objective2_waypoint5
+branching...
+			739) navigate_rover0_waypoint5_waypoint1_camera0_objective1
+			784) communicate_image_data_rover0_general_objective1_high_res_waypoint1_waypoint0
+			786) wait-response_rover0_general_objective1_high_res_waypoint1_waypoint0
+branching...
+				789) navigate_rover0_waypoint1_waypoint2_camera0_objective2
+				793) calibrate_rover0_camera0_objective1_waypoint2
+				795) navigate_rover0_waypoint2_waypoint6_camera0_objective1
+				797) calibrate_rover0_camera0_objective2_waypoint6
+				799) sense_vis_rover0_objective2_waypoint6
+branching...
+					802) navigate_rover0_waypoint6_waypoint2_camera0_objective2
+					838) navigate_rover0_waypoint2_waypoint1_camera0_objective2
+					840) navigate_rover0_waypoint1_waypoint3_camera0_objective2
+					842) navigate_rover0_waypoint3_waypoint0_camera0_objective2
+					844) navigate_rover0_waypoint0_waypoint7_camera0_objective2
+					846) calibrate_rover0_camera0_objective2_waypoint7
+					848) take_image_rover0_waypoint7_objective2_camera0_high_res
+					850) calibrate_rover0_camera0_objective2_waypoint7
+					852) communicate_image_data_rover0_general_objective2_high_res_waypoint7_waypoint0
+					854) wait-response_rover0_general_objective2_high_res_waypoint7_waypoint0
+branching...
+						857) take_image_rover0_waypoint7_objective2_camera0_colour
+						867) calibrate_rover0_camera0_objective2_waypoint7
+						869) communicate_image_data_rover0_general_objective2_colour_waypoint7_waypoint0
+						871) wait-response_rover0_general_objective2_colour_waypoint7_waypoint0
+branching...
+							962) take_image_rover0_waypoint7_objective2_camera0_colour
+							955) calibrate_rover0_camera0_objective2_waypoint7
+							957) communicate_image_data_rover0_general_objective2_colour_waypoint7_waypoint0
+							959) wait-response_rover0_general_objective2_colour_waypoint7_waypoint0
+branching...
+)connect to 962
+								961) take_image_rover0_waypoint7_objective2_camera0_high_res
+								966) navigate_rover0_waypoint7_waypoint0_camera0_objective2
+								968) navigate_rover0_waypoint0_waypoint3_camera0_objective2
+								970) communicate_image_data_rover0_general_objective2_high_res_waypoint3_waypoint0
+								972) navigate_rover0_waypoint3_waypoint1_camera0_objective2
+								974) navigate_rover0_waypoint1_waypoint2_camera0_objective2
+								976) calibrate_rover0_camera0_objective1_waypoint2
+								978) take_image_rover0_waypoint2_objective1_camera0_high_res
+								980) navigate_rover0_waypoint2_waypoint1_camera0_objective2
+								982) communicate_image_data_rover0_general_objective1_high_res_waypoint1_waypoint0
+								984) wait-response_rover0_general_objective1_high_res_waypoint1_waypoint0
+branching...
+									987) wait-response_rover0_general_objective2_high_res_waypoint1_waypoint0
+branching...
+										992) navigate_rover0_waypoint1_waypoint2_camera0_objective2
+										996) calibrate_rover0_camera0_objective1_waypoint2
+										923) take_image_rover0_waypoint2_objective1_camera0_high_res
+										925) navigate_rover0_waypoint2_waypoint1_camera0_objective2
+										927) communicate_image_data_rover0_general_objective1_high_res_waypoint1_waypoint0
+										929) navigate_rover0_waypoint1_waypoint3_camera0_objective2
+										931) navigate_rover0_waypoint3_waypoint0_camera0_objective2
+										933) navigate_rover0_waypoint0_waypoint7_camera0_objective2
+										935) calibrate_rover0_camera0_objective2_waypoint7
+										937) take_image_rover0_waypoint7_objective2_camera0_high_res
+										939) communicate_image_data_rover0_general_objective2_high_res_waypoint7_waypoint0
+										941) wait-response_rover0_general_objective1_high_res_waypoint7_waypoint0
+branching...
+											944) calibrate_rover0_camera0_objective2_waypoint7
+											948) wait-response_rover0_general_objective2_high_res_waypoint7_waypoint0
+branching...
+												951) take_image_rover0_waypoint7_objective2_camera0_colour
+)connect to 955
+												856) navigate_rover0_waypoint7_waypoint0_camera0_objective2
+												861) navigate_rover0_waypoint0_waypoint3_camera0_objective2
+												863) navigate_rover0_waypoint3_waypoint1_camera0_objective2
+												649) navigate_rover0_waypoint1_waypoint2_camera0_objective2
+												653) calibrate_rover0_camera0_objective1_waypoint2
+												640) take_image_rover0_waypoint2_objective1_camera0_high_res
+												642) navigate_rover0_waypoint2_waypoint1_camera0_objective2
+												644) communicate_image_data_rover0_general_objective1_high_res_waypoint1_waypoint0
+												646) wait-response_rover0_general_objective1_high_res_waypoint1_waypoint0
+branching...
+)connect to 649
+)goal
+											326) calibrate_rover0_camera0_objective2_waypoint7
+											330) take_image_rover0_waypoint7_objective2_camera0_high_res
+											321) communicate_image_data_rover0_general_objective2_high_res_waypoint7_waypoint0
+											323) wait-response_rover0_general_objective2_high_res_waypoint7_waypoint0
+branching...
+)connect to 326
+)goal
+)connect to 649
+									311) navigate_rover0_waypoint1_waypoint3_camera0_objective1
+									313) navigate_rover0_waypoint3_waypoint0_camera0_objective1
+									315) navigate_rover0_waypoint0_waypoint7_camera0_objective1
+									317) calibrate_rover0_camera0_objective2_waypoint7
+									319) take_image_rover0_waypoint7_objective2_camera0_high_res
+)connect to 321
+							873) take_image_rover0_waypoint7_objective2_camera0_high_res
+							878) navigate_rover0_waypoint7_waypoint0_camera0_objective2
+							880) navigate_rover0_waypoint0_waypoint3_camera0_objective2
+							882) navigate_rover0_waypoint3_waypoint1_camera0_objective2
+							884) communicate_image_data_rover0_general_objective2_high_res_waypoint1_waypoint0
+							886) navigate_rover0_waypoint1_waypoint2_camera0_objective2
+							888) take_image_rover0_waypoint2_objective1_camera0_high_res
+							890) navigate_rover0_waypoint2_waypoint1_camera0_objective2
+							892) communicate_image_data_rover0_general_objective1_high_res_waypoint1_waypoint0
+							894) wait-response_rover0_general_objective1_high_res_waypoint1_waypoint0
+branching...
+								897) wait-response_rover0_general_objective2_high_res_waypoint1_waypoint0
+branching...
+									902) navigate_rover0_waypoint1_waypoint2_camera0_objective2
+									906) calibrate_rover0_camera0_objective1_waypoint2
+									908) take_image_rover0_waypoint2_objective1_camera0_colour
+									910) calibrate_rover0_camera0_objective1_waypoint2
+									912) navigate_rover0_waypoint2_waypoint1_camera0_objective2
+									914) communicate_image_data_rover0_general_objective1_colour_waypoint1_waypoint0
+									916) wait-response_rover0_general_objective1_colour_waypoint1_waypoint0
+branching...
+)connect to 992
+										918) navigate_rover0_waypoint1_waypoint2_camera0_objective2
+)connect to 923
+)connect to 649
+)connect to 311
+)connect to 856
+					801) take_image_rover0_waypoint6_objective2_camera0_high_res
+					806) navigate_rover0_waypoint6_waypoint2_camera0_objective2
+					808) take_image_rover0_waypoint2_objective1_camera0_high_res
+					810) navigate_rover0_waypoint2_waypoint1_camera0_objective1
+					812) communicate_image_data_rover0_general_objective1_high_res_waypoint1_waypoint0
+					814) communicate_image_data_rover0_general_objective2_high_res_waypoint1_waypoint0
+					816) wait-response_rover0_general_objective1_high_res_waypoint1_waypoint0
+branching...
+						819) wait-response_rover0_general_objective2_high_res_waypoint1_waypoint0
+branching...
+							824) navigate_rover0_waypoint1_waypoint2_camera0_objective2
+							828) calibrate_rover0_camera0_objective1_waypoint2
+							830) navigate_rover0_waypoint2_waypoint6_camera0_objective1
+							832) calibrate_rover0_camera0_objective2_waypoint6
+							834) take_image_rover0_waypoint6_objective2_camera0_high_res
+)connect to 806
+)connect to 649
+						297) navigate_rover0_waypoint1_waypoint2_camera0_objective2
+						301) navigate_rover0_waypoint2_waypoint6_camera0_objective2
+						303) calibrate_rover0_camera0_objective2_waypoint6
+						305) take_image_rover0_waypoint6_objective2_camera0_colour
+						231) calibrate_rover0_camera0_objective2_waypoint6
+						233) navigate_rover0_waypoint6_waypoint2_camera0_objective2
+						235) navigate_rover0_waypoint2_waypoint1_camera0_objective2
+						237) communicate_image_data_rover0_general_objective2_colour_waypoint1_waypoint0
+						239) wait-response_rover0_general_objective2_colour_waypoint1_waypoint0
+branching...
+)connect to 297
+							241) navigate_rover0_waypoint1_waypoint2_camera0_objective2
+							246) navigate_rover0_waypoint2_waypoint6_camera0_objective1
+							248) take_image_rover0_waypoint6_objective2_camera0_high_res
+							250) navigate_rover0_waypoint6_waypoint2_camera0_objective2
+							252) navigate_rover0_waypoint2_waypoint1_camera0_objective2
+							254) communicate_image_data_rover0_general_objective2_high_res_waypoint1_waypoint0
+							256) wait-response_rover0_general_objective2_high_res_waypoint1_waypoint0
+branching...
+								259) navigate_rover0_waypoint1_waypoint2_camera0_objective2
+								263) navigate_rover0_waypoint2_waypoint6_camera0_objective2
+								265) calibrate_rover0_camera0_objective2_waypoint6
+								267) take_image_rover0_waypoint6_objective2_camera0_colour
+								269) calibrate_rover0_camera0_objective2_waypoint6
+								271) navigate_rover0_waypoint6_waypoint2_camera0_objective2
+								273) navigate_rover0_waypoint2_waypoint1_camera0_objective2
+								275) communicate_image_data_rover0_general_objective2_colour_waypoint1_waypoint0
+								277) wait-response_rover0_general_objective2_colour_waypoint1_waypoint0
+branching...
+)connect to 297
+									279) navigate_rover0_waypoint1_waypoint2_camera0_objective2
+									284) navigate_rover0_waypoint2_waypoint6_camera0_objective1
+									286) take_image_rover0_waypoint6_objective2_camera0_high_res
+									288) navigate_rover0_waypoint6_waypoint2_camera0_objective2
+									290) navigate_rover0_waypoint2_waypoint1_camera0_objective2
+									292) communicate_image_data_rover0_general_objective2_high_res_waypoint1_waypoint0
+									294) wait-response_rover0_general_objective2_high_res_waypoint1_waypoint0
+branching...
+)connect to 297
+)goal
+)goal
+				519) navigate_rover0_waypoint1_waypoint2_camera0_objective1
+				521) navigate_rover0_waypoint2_waypoint6_camera0_objective1
+				523) calibrate_rover0_camera0_objective2_waypoint6
+				525) sense_vis_rover0_objective2_waypoint6
+branching...
+					528) navigate_rover0_waypoint6_waypoint2_camera0_objective1
+					532) navigate_rover0_waypoint2_waypoint1_camera0_objective2
+					534) navigate_rover0_waypoint1_waypoint3_camera0_objective1
+					536) navigate_rover0_waypoint3_waypoint0_camera0_objective1
+					538) navigate_rover0_waypoint0_waypoint7_camera0_objective1
+)connect to 326
+)connect to 305
+			738) take_image_rover0_waypoint5_objective2_camera0_high_res
+			743) navigate_rover0_waypoint5_waypoint1_camera0_objective1
+			745) communicate_image_data_rover0_general_objective1_high_res_waypoint1_waypoint0
+			747) communicate_image_data_rover0_general_objective2_high_res_waypoint1_waypoint0
+			749) wait-response_rover0_general_objective2_high_res_waypoint1_waypoint0
+branching...
+				752) wait-response_rover0_general_objective1_high_res_waypoint1_waypoint0
+branching...
+					757) navigate_rover0_waypoint1_waypoint2_camera0_objective2
+					761) calibrate_rover0_camera0_objective1_waypoint2
+					763) navigate_rover0_waypoint2_waypoint1_camera0_objective1
+					765) navigate_rover0_waypoint1_waypoint5_camera0_objective1
+					767) calibrate_rover0_camera0_objective2_waypoint5
+					769) take_image_rover0_waypoint5_objective2_camera0_high_res
+					771) navigate_rover0_waypoint5_waypoint1_camera0_objective1
+					773) communicate_image_data_rover0_general_objective2_high_res_waypoint1_waypoint0
+					775) wait-response_rover0_general_objective2_high_res_waypoint1_waypoint0
+branching...
+						778) navigate_rover0_waypoint1_waypoint5_camera0_objective1
+)connect to 767
+)connect to 649
+					173) navigate_rover0_waypoint1_waypoint5_camera0_objective1
+					177) calibrate_rover0_camera0_objective2_waypoint5
+					179) take_image_rover0_waypoint5_objective2_camera0_high_res
+					166) navigate_rover0_waypoint5_waypoint1_camera0_objective1
+					168) communicate_image_data_rover0_general_objective2_high_res_waypoint1_waypoint0
+					170) wait-response_rover0_general_objective2_high_res_waypoint1_waypoint0
+branching...
+)connect to 173
+)goal
+)connect to 649
+		598) take_image_rover0_waypoint4_objective2_camera0_high_res
+		603) navigate_rover0_waypoint4_waypoint3_camera0_objective1
+		605) communicate_image_data_rover0_general_objective1_high_res_waypoint3_waypoint0
+		607) communicate_image_data_rover0_general_objective2_high_res_waypoint3_waypoint0
+		609) wait-response_rover0_general_objective2_high_res_waypoint3_waypoint0
+branching...
+			612) wait-response_rover0_general_objective1_high_res_waypoint3_waypoint0
+branching...
+				658) navigate_rover0_waypoint3_waypoint4_camera0_objective2
+				662) calibrate_rover0_camera0_objective2_waypoint4
+				664) navigate_rover0_waypoint4_waypoint3_camera0_objective2
+				666) navigate_rover0_waypoint3_waypoint1_camera0_objective2
+				668) navigate_rover0_waypoint1_waypoint2_camera0_objective2
+				670) calibrate_rover0_camera0_objective1_waypoint2
+				672) take_image_rover0_waypoint2_objective1_camera0_colour
+				674) navigate_rover0_waypoint2_waypoint1_camera0_objective2
+				676) communicate_image_data_rover0_general_objective1_colour_waypoint1_waypoint0
+				678) wait-response_rover0_general_objective1_colour_waypoint1_waypoint0
+branching...
+					720) navigate_rover0_waypoint1_waypoint3_camera0_objective2
+					724) navigate_rover0_waypoint3_waypoint4_camera0_objective2
+					726) calibrate_rover0_camera0_objective2_waypoint4
+					687) take_image_rover0_waypoint4_objective2_camera0_high_res
+					689) navigate_rover0_waypoint4_waypoint3_camera0_objective2
+					691) communicate_image_data_rover0_general_objective2_high_res_waypoint3_waypoint0
+					693) navigate_rover0_waypoint3_waypoint1_camera0_objective2
+					695) navigate_rover0_waypoint1_waypoint2_camera0_objective2
+					697) calibrate_rover0_camera0_objective1_waypoint2
+					699) take_image_rover0_waypoint2_objective1_camera0_high_res
+					701) navigate_rover0_waypoint2_waypoint1_camera0_objective2
+					703) communicate_image_data_rover0_general_objective1_high_res_waypoint1_waypoint0
+					705) wait-response_rover0_general_objective1_high_res_waypoint1_waypoint0
+branching...
+						708) wait-response_rover0_general_objective2_high_res_waypoint1_waypoint0
+branching...
+)connect to 720
+)connect to 649
+						707) wait-response_rover0_general_objective2_high_res_waypoint1_waypoint0
+branching...
+							713) navigate_rover0_waypoint1_waypoint3_camera0_objective2
+							77) navigate_rover0_waypoint3_waypoint4_camera0_objective1
+							81) calibrate_rover0_camera0_objective2_waypoint4
+							83) take_image_rover0_waypoint4_objective2_camera0_high_res
+							70) navigate_rover0_waypoint4_waypoint3_camera0_objective2
+							72) communicate_image_data_rover0_general_objective2_high_res_waypoint3_waypoint0
+							74) wait-response_rover0_general_objective2_high_res_waypoint3_waypoint0
+branching...
+)connect to 77
+)goal
+)goal
+					680) navigate_rover0_waypoint1_waypoint3_camera0_objective2
+					685) navigate_rover0_waypoint3_waypoint4_camera0_objective1
+)connect to 687
+)connect to 77
+			611) wait-response_rover0_general_objective1_high_res_waypoint3_waypoint0
+branching...
+				617) navigate_rover0_waypoint3_waypoint1_camera0_objective2
+				621) navigate_rover0_waypoint1_waypoint2_camera0_objective2
+				623) calibrate_rover0_camera0_objective1_waypoint2
+				625) take_image_rover0_waypoint2_objective1_camera0_colour
+				627) calibrate_rover0_camera0_objective1_waypoint2
+				629) navigate_rover0_waypoint2_waypoint1_camera0_objective2
+				631) communicate_image_data_rover0_general_objective1_colour_waypoint1_waypoint0
+				633) wait-response_rover0_general_objective1_colour_waypoint1_waypoint0
+branching...
+)connect to 649
+					635) navigate_rover0_waypoint1_waypoint2_camera0_objective2
+)connect to 640
+)goal
+	5) navigate_rover0_waypoint1_waypoint3_camera0_objective1
+	10) navigate_rover0_waypoint3_waypoint4_camera0_objective1
+	12) calibrate_rover0_camera0_objective2_waypoint4
+	14) sense_vis_rover0_objective2_waypoint4
+branching...
+		487) navigate_rover0_waypoint4_waypoint3_camera0_objective1
+		495) navigate_rover0_waypoint3_waypoint1_camera0_objective2
+		497) take_image_rover0_waypoint1_objective1_camera0_high_res
+		499) communicate_image_data_rover0_general_objective1_high_res_waypoint1_waypoint0
+		501) wait-response_rover0_general_objective1_high_res_waypoint1_waypoint0
+branching...
+			504) calibrate_rover0_camera0_objective1_waypoint1
+			542) navigate_rover0_waypoint1_waypoint5_camera0_objective1
+			544) calibrate_rover0_camera0_objective2_waypoint5
+			546) sense_vis_rover0_objective2_waypoint5
+branching...
+				549) navigate_rover0_waypoint5_waypoint1_camera0_objective2
+				553) navigate_rover0_waypoint1_waypoint2_camera0_objective2
+				555) navigate_rover0_waypoint2_waypoint6_camera0_objective2
+				557) sense_vis_rover0_objective2_waypoint6
+branching...
+					560) navigate_rover0_waypoint6_waypoint2_camera0_objective2
+					572) navigate_rover0_waypoint2_waypoint1_camera0_objective2
+					574) navigate_rover0_waypoint1_waypoint3_camera0_objective2
+					576) navigate_rover0_waypoint3_waypoint0_camera0_objective2
+					578) navigate_rover0_waypoint0_waypoint7_camera0_objective2
+					580) calibrate_rover0_camera0_objective2_waypoint7
+					468) navigate_rover0_waypoint7_waypoint0_camera0_objective2
+					478) navigate_rover0_waypoint0_waypoint3_camera0_objective2
+					480) navigate_rover0_waypoint3_waypoint1_camera0_objective2
+					482) calibrate_rover0_camera0_objective1_waypoint1
+					444) take_image_rover0_waypoint1_objective1_camera0_high_res
+					446) navigate_rover0_waypoint1_waypoint3_camera0_objective2
+					448) navigate_rover0_waypoint3_waypoint0_camera0_objective2
+					450) navigate_rover0_waypoint0_waypoint7_camera0_objective1
+					452) communicate_image_data_rover0_general_objective1_high_res_waypoint7_waypoint0
+					454) take_image_rover0_waypoint7_objective2_camera0_high_res
+					456) communicate_image_data_rover0_general_objective2_high_res_waypoint7_waypoint0
+					458) wait-response_rover0_general_objective1_high_res_waypoint7_waypoint0
+branching...
+						461) calibrate_rover0_camera0_objective2_waypoint7
+						465) wait-response_rover0_general_objective2_high_res_waypoint7_waypoint0
+branching...
+)connect to 468
+							467) navigate_rover0_waypoint7_waypoint0_camera0_objective2
+							472) navigate_rover0_waypoint0_waypoint3_camera0_objective2
+							474) navigate_rover0_waypoint3_waypoint1_camera0_objective2
+							99) calibrate_rover0_camera0_objective1_waypoint1
+							103) take_image_rover0_waypoint1_objective1_camera0_high_res
+							94) communicate_image_data_rover0_general_objective1_high_res_waypoint1_waypoint0
+							96) wait-response_rover0_general_objective1_high_res_waypoint1_waypoint0
+branching...
+)connect to 99
+)goal
+)connect to 326
+					559) calibrate_rover0_camera0_objective2_waypoint6
+					564) take_image_rover0_waypoint6_objective2_camera0_high_res
+					566) navigate_rover0_waypoint6_waypoint2_camera0_objective2
+					568) navigate_rover0_waypoint2_waypoint1_camera0_objective2
+					388) calibrate_rover0_camera0_objective1_waypoint1
+					381) take_image_rover0_waypoint1_objective1_camera0_high_res
+					383) communicate_image_data_rover0_general_objective1_high_res_waypoint1_waypoint0
+					385) wait-response_rover0_general_objective1_high_res_waypoint1_waypoint0
+branching...
+)connect to 388
+)connect to 297
+				358) take_image_rover0_waypoint5_objective2_camera0_high_res
+				345) navigate_rover0_waypoint5_waypoint1_camera0_objective2
+				347) communicate_image_data_rover0_general_objective2_high_res_waypoint1_waypoint0
+				349) wait-response_rover0_general_objective2_high_res_waypoint1_waypoint0
+branching...
+					352) navigate_rover0_waypoint1_waypoint5_camera0_objective1
+					356) calibrate_rover0_camera0_objective2_waypoint5
+)connect to 358
+)connect to 103
+			503) navigate_rover0_waypoint1_waypoint5_camera0_objective1
+			508) calibrate_rover0_camera0_objective2_waypoint5
+			510) sense_vis_rover0_objective2_waypoint5
+branching...
+				513) navigate_rover0_waypoint5_waypoint1_camera0_objective1
+				517) calibrate_rover0_camera0_objective1_waypoint1
+)connect to 519
+)connect to 179
+		486) take_image_rover0_waypoint4_objective2_camera0_high_res
+		491) navigate_rover0_waypoint4_waypoint3_camera0_objective1
+		124) navigate_rover0_waypoint3_waypoint1_camera0_objective2
+		128) calibrate_rover0_camera0_objective1_waypoint1
+		130) take_image_rover0_waypoint1_objective1_camera0_high_res
+		117) navigate_rover0_waypoint1_waypoint3_camera0_objective2
+		119) communicate_image_data_rover0_general_objective1_high_res_waypoint3_waypoint0
+		121) wait-response_rover0_general_objective1_high_res_waypoint3_waypoint0
+branching...
+)connect to 124
+)connect to 77

@@ -1,0 +1,257 @@
+
+ff: parsing domain file
+domain 'LOGISTICS_CONF' defined
+ ... done.
+ff: parsing problem file
+problem 'ATT_LOG0' defined
+ ... done.
+
+
+lowest leaf goal distance/initial state f value seen:     26/    26; maxdepth reached:    0
+                                                          23/    26                       1
+                                                          20/    26                       2
+                                                          16/    26                       3
+                                                          15/    26                       4
+                                                          14/    26                       5
+                                                          13/    26                       6
+                                                          12/    26                       7
+                                                          11/    26                       8
+                                                          10/    26                       9
+                                                           9/    26                      10
+                                                           8/    26                      11
+                                                           7/    26                      12
+                                                           7/    26                      13
+                                                           7/    26                      14
+                                                           7/    26                      15
+                                                           6/    26                      15
+                                                           6/    26                      16
+                                                           5/    26                      17
+                                                           4/    26                      18
+                                                           4/    26                      19
+                                                           3/    26                      20
+                                                           2/    26                      21
+                                                           1/    26                      22
+                                                           1/    26                      23
+                                                           1/    26                      24
+                                                           1/    26                      25
+
+ff: found plan as follows
+-------------------------------------------------
+  0||0 --- SENSE_PACKAGE_LOC_T PACKAGE3 BOS_PO BOS_TRUCK --- TRUESON: 1||0 --- FALSESON: 1||1
+-------------------------------------------------
+  1||0 --- SENSE_PACKAGE_LOC_T PACKAGE2 BOS_PO BOS_TRUCK --- TRUESON: 2||0 --- FALSESON: 2||1
+  1||1 --- SENSE_PACKAGE_LOC_T PACKAGE2 BOS_PO BOS_TRUCK --- TRUESON: 2||2 --- FALSESON: 2||3
+-------------------------------------------------
+  2||0 --- SENSE_PACKAGE_LOC_T PACKAGE1 PGH_PO PGH_TRUCK --- TRUESON: 3||0 --- FALSESON: 3||1
+  2||1 --- SENSE_PACKAGE_LOC_T PACKAGE1 PGH_PO PGH_TRUCK --- TRUESON: 3||2 --- FALSESON: 3||3
+  2||2 --- SENSE_PACKAGE_LOC_T PACKAGE1 PGH_PO PGH_TRUCK --- TRUESON: 3||4 --- FALSESON: 3||5
+  2||3 --- SENSE_PACKAGE_LOC_T PACKAGE1 PGH_PO PGH_TRUCK --- TRUESON: 3||6 --- FALSESON: 3||7
+-------------------------------------------------
+  3||0 --- LOAD_TRUCK_LOC PACKAGE3 BOS_TRUCK BOS_PO BOS --- SON: 4||0
+  3||1 --- LOAD_TRUCK_LOC PACKAGE3 BOS_TRUCK BOS_PO BOS --- SON: 4||1
+  3||2 --- LOAD_TRUCK_LOC PACKAGE3 BOS_TRUCK BOS_PO BOS --- SON: 4||2
+  3||3 --- LOAD_TRUCK_LOC PACKAGE3 BOS_TRUCK BOS_PO BOS --- SON: 4||3
+  3||4 --- LOAD_TRUCK_LOC PACKAGE2 BOS_TRUCK BOS_PO BOS --- SON: 4||4
+  3||5 --- LOAD_TRUCK_LOC PACKAGE2 BOS_TRUCK BOS_PO BOS --- SON: 4||5
+  3||6 --- LOAD_TRUCK_LOC PACKAGE2 PGH_TRUCK PGH_PO PGH --- SON: 4||6
+  3||7 --- LOAD_TRUCK_LOC PACKAGE2 PGH_TRUCK PGH_PO PGH --- SON: 4||7
+-------------------------------------------------
+  4||0 --- LOAD_TRUCK_LOC PACKAGE2 BOS_TRUCK BOS_PO BOS --- SON: 5||0
+  4||1 --- LOAD_TRUCK_LOC PACKAGE1 PHX_TRUCK PHX_PO PHX --- SON: 5||1
+  4||2 --- DRIVE_TRUCK_LOC_AP BOS_TRUCK BOS_PO BOS_AIRPORT BOS --- SON: 5||2
+  4||3 --- LOAD_TRUCK_LOC PACKAGE1 PHX_TRUCK PHX_PO PHX --- SON: 5||3
+  4||4 --- LOAD_TRUCK_LOC PACKAGE3 PHX_TRUCK PHX_PO PHX --- SON: 5||4
+  4||5 --- LOAD_TRUCK_LOC PACKAGE3 PHX_TRUCK PHX_PO PHX --- SON: 5||5
+  4||6 --- LOAD_TRUCK_LOC PACKAGE3 PHX_TRUCK PHX_PO PHX --- SON: 5||6
+  4||7 --- LOAD_TRUCK_LOC PACKAGE3 PHX_TRUCK PHX_PO PHX --- SON: 5||7
+-------------------------------------------------
+  5||0 --- DRIVE_TRUCK_LOC_AP BOS_TRUCK BOS_PO BOS_AIRPORT BOS --- SON: 6||0
+  5||1 --- DRIVE_TRUCK_LOC_AP PHX_TRUCK PHX_PO PHX_AIRPORT PHX --- SON: 6||1
+  5||2 --- UNLOAD_TRUCK_AP PACKAGE3 BOS_TRUCK BOS_AIRPORT BOS --- SON: 6||2
+  5||3 --- DRIVE_TRUCK_LOC_AP PHX_TRUCK PHX_PO PHX_AIRPORT PHX --- SON: 6||3
+  5||4 --- DRIVE_TRUCK_LOC_AP PHX_TRUCK PHX_PO PHX_AIRPORT PHX --- SON: 6||4
+  5||5 --- LOAD_TRUCK_LOC PACKAGE1 PHX_TRUCK PHX_PO PHX --- SON: 6||5
+  5||6 --- DRIVE_TRUCK_LOC_AP PHX_TRUCK PHX_PO PHX_AIRPORT PHX --- SON: 6||6
+  5||7 --- LOAD_TRUCK_LOC PACKAGE1 PHX_TRUCK PHX_PO PHX --- SON: 6||7
+-------------------------------------------------
+  6||0 --- UNLOAD_TRUCK_AP PACKAGE3 BOS_TRUCK BOS_AIRPORT BOS --- SON: 7||0
+  6||1 --- UNLOAD_TRUCK_AP PACKAGE1 PHX_TRUCK PHX_AIRPORT PHX --- SON: 7||1
+  6||2 --- LOAD_TRUCK_LOC PACKAGE2 PGH_TRUCK PGH_PO PGH --- SON: 7||2
+  6||3 --- UNLOAD_TRUCK_AP PACKAGE1 PHX_TRUCK PHX_AIRPORT PHX --- SON: 7||3
+  6||4 --- UNLOAD_TRUCK_AP PACKAGE3 PHX_TRUCK PHX_AIRPORT PHX --- SON: 7||4
+  6||5 --- DRIVE_TRUCK_LOC_AP PHX_TRUCK PHX_PO PHX_AIRPORT PHX --- SON: 7||5
+  6||6 --- UNLOAD_TRUCK_AP PACKAGE3 PHX_TRUCK PHX_AIRPORT PHX --- SON: 7||6
+  6||7 --- DRIVE_TRUCK_LOC_AP PHX_TRUCK PHX_PO PHX_AIRPORT PHX --- SON: 7||7
+-------------------------------------------------
+  7||0 --- UNLOAD_TRUCK_AP PACKAGE2 BOS_TRUCK BOS_AIRPORT BOS --- SON: 8||0
+  7||1 --- LOAD_TRUCK_LOC PACKAGE2 BOS_TRUCK BOS_PO BOS --- SON: 8||1
+  7||2 --- LOAD_TRUCK_LOC PACKAGE1 PGH_TRUCK PGH_PO PGH --- SON: 8||2
+  7||3 --- DRIVE_TRUCK_LOC_AP BOS_TRUCK BOS_PO BOS_AIRPORT BOS --- SON: 8||3
+  7||4 --- DRIVE_TRUCK_LOC_AP BOS_TRUCK BOS_PO BOS_AIRPORT BOS --- SON: 8||4
+  7||5 --- UNLOAD_TRUCK_AP PACKAGE3 PHX_TRUCK PHX_AIRPORT PHX --- SON: 8||5
+  7||6 --- LOAD_TRUCK_LOC PACKAGE1 PGH_TRUCK PGH_PO PGH --- SON: 8||6
+  7||7 --- UNLOAD_TRUCK_AP PACKAGE3 PHX_TRUCK PHX_AIRPORT PHX --- SON: 8||7
+-------------------------------------------------
+  8||0 --- LOAD_TRUCK_LOC PACKAGE1 PGH_TRUCK PGH_PO PGH --- SON: 9||0
+  8||1 --- DRIVE_TRUCK_LOC_AP BOS_TRUCK BOS_PO BOS_AIRPORT BOS --- SON: 9||1
+  8||2 --- DRIVE_TRUCK_LOC_AP PGH_TRUCK PGH_PO PGH_AIRPORT PGH --- SON: 9||2
+  8||3 --- UNLOAD_TRUCK_AP PACKAGE3 BOS_TRUCK BOS_AIRPORT BOS --- SON: 9||3
+  8||4 --- UNLOAD_TRUCK_AP PACKAGE2 BOS_TRUCK BOS_AIRPORT BOS --- SON: 9||4
+  8||5 --- UNLOAD_TRUCK_AP PACKAGE1 PHX_TRUCK PHX_AIRPORT PHX --- SON: 9||5
+  8||6 --- DRIVE_TRUCK_LOC_AP PGH_TRUCK PGH_PO PGH_AIRPORT PGH --- SON: 9||6
+  8||7 --- UNLOAD_TRUCK_AP PACKAGE1 PHX_TRUCK PHX_AIRPORT PHX --- SON: 9||7
+-------------------------------------------------
+  9||0 --- DRIVE_TRUCK_LOC_AP PGH_TRUCK PGH_PO PGH_AIRPORT PGH --- SON: 10||0
+  9||1 --- UNLOAD_TRUCK_AP PACKAGE3 BOS_TRUCK BOS_AIRPORT BOS --- SON: 10||1
+  9||2 --- UNLOAD_TRUCK_AP PACKAGE2 PGH_TRUCK PGH_AIRPORT PGH --- SON: 10||2
+  9||3 --- LOAD_TRUCK_LOC PACKAGE2 PGH_TRUCK PGH_PO PGH --- SON: 10||3
+  9||4 --- LOAD_TRUCK_LOC PACKAGE1 PGH_TRUCK PGH_PO PGH --- SON: 10||4
+  9||5 --- DRIVE_TRUCK_LOC_AP BOS_TRUCK BOS_PO BOS_AIRPORT BOS --- SON: 10||5
+  9||6 --- UNLOAD_TRUCK_AP PACKAGE2 PGH_TRUCK PGH_AIRPORT PGH --- SON: 10||6
+  9||7 --- DRIVE_TRUCK_LOC_AP PGH_TRUCK PGH_PO PGH_AIRPORT PGH --- SON: 10||7
+-------------------------------------------------
+ 10||0 --- UNLOAD_TRUCK_AP PACKAGE1 PGH_TRUCK PGH_AIRPORT PGH --- SON: 11||0
+ 10||1 --- UNLOAD_TRUCK_AP PACKAGE2 BOS_TRUCK BOS_AIRPORT BOS --- SON: 11||1
+ 10||2 --- UNLOAD_TRUCK_AP PACKAGE1 PGH_TRUCK PGH_AIRPORT PGH --- SON: 11||2
+ 10||3 --- DRIVE_TRUCK_LOC_AP PGH_TRUCK PGH_PO PGH_AIRPORT PGH --- SON: 11||3
+ 10||4 --- DRIVE_TRUCK_LOC_AP PGH_TRUCK PGH_PO PGH_AIRPORT PGH --- SON: 11||4
+ 10||5 --- UNLOAD_TRUCK_AP PACKAGE2 BOS_TRUCK BOS_AIRPORT BOS --- SON: 11||5
+ 10||6 --- UNLOAD_TRUCK_AP PACKAGE1 PGH_TRUCK PGH_AIRPORT PGH --- SON: 11||6
+ 10||7 --- UNLOAD_TRUCK_AP PACKAGE2 PGH_TRUCK PGH_AIRPORT PGH --- SON: 11||7
+-------------------------------------------------
+ 11||0 --- LOAD_AIRPLANE PACKAGE1 AIRPLANE1 PGH_AIRPORT --- SON: 12||0
+ 11||1 --- DRIVE_TRUCK_AP_LOC BOS_TRUCK BOS_AIRPORT BOS_PO BOS --- SON: 12||1
+ 11||2 --- LOAD_AIRPLANE PACKAGE2 AIRPLANE1 PGH_AIRPORT --- SON: 12||2
+ 11||3 --- UNLOAD_TRUCK_AP PACKAGE2 PGH_TRUCK PGH_AIRPORT PGH --- SON: 12||3
+ 11||4 --- UNLOAD_TRUCK_AP PACKAGE1 PGH_TRUCK PGH_AIRPORT PGH --- SON: 12||4
+ 11||5 --- DRIVE_TRUCK_AP_LOC BOS_TRUCK BOS_AIRPORT BOS_PO BOS --- SON: 12||5
+ 11||6 --- LOAD_AIRPLANE PACKAGE2 AIRPLANE1 PGH_AIRPORT --- SON: 12||6
+ 11||7 --- LOAD_AIRPLANE PACKAGE2 AIRPLANE1 PGH_AIRPORT --- SON: 12||7
+-------------------------------------------------
+ 12||0 --- DRIVE_TRUCK_AP_LOC PGH_TRUCK PGH_AIRPORT PGH_PO PGH --- SON: 13||0
+ 12||1 --- DRIVE_TRUCK_AP_LOC PHX_TRUCK PHX_AIRPORT PHX_PO PHX --- SON: 13||1
+ 12||2 --- LOAD_AIRPLANE PACKAGE1 AIRPLANE1 PGH_AIRPORT --- SON: 13||2
+ 12||3 --- LOAD_AIRPLANE PACKAGE2 AIRPLANE1 PGH_AIRPORT --- SON: 13||3
+ 12||4 --- LOAD_AIRPLANE PACKAGE1 AIRPLANE1 PGH_AIRPORT --- SON: 13||4
+ 12||5 --- DRIVE_TRUCK_AP_LOC PHX_TRUCK PHX_AIRPORT PHX_PO PHX --- SON: 13||5
+ 12||6 --- LOAD_AIRPLANE PACKAGE1 AIRPLANE1 PGH_AIRPORT --- SON: 13||6
+ 12||7 --- DRIVE_TRUCK_AP_LOC PGH_TRUCK PGH_AIRPORT PGH_PO PGH --- SON: 13||7
+-------------------------------------------------
+ 13||0 --- DRIVE_TRUCK_AP_LOC BOS_TRUCK BOS_AIRPORT BOS_PO BOS --- SON: 14||0
+ 13||1 --- FLY_AIRPLANE AIRPLANE1 PGH_AIRPORT PHX_AIRPORT --- SON: 14||1
+ 13||2 --- DRIVE_TRUCK_AP_LOC PGH_TRUCK PGH_AIRPORT PGH_PO PGH --- SON: 14||2
+ 13||3 --- DRIVE_TRUCK_AP_LOC PGH_TRUCK PGH_AIRPORT PGH_PO PGH --- SON: 14||3
+ 13||4 --- DRIVE_TRUCK_AP_LOC PGH_TRUCK PGH_AIRPORT PGH_PO PGH --- SON: 14||4
+ 13||5 --- FLY_AIRPLANE AIRPLANE1 PGH_AIRPORT PHX_AIRPORT --- SON: 14||5
+ 13||6 --- DRIVE_TRUCK_AP_LOC PGH_TRUCK PGH_AIRPORT PGH_PO PGH --- SON: 14||6
+ 13||7 --- DRIVE_TRUCK_AP_LOC PHX_TRUCK PHX_AIRPORT PHX_PO PHX --- SON: 14||7
+-------------------------------------------------
+ 14||0 --- FLY_AIRPLANE AIRPLANE1 PGH_AIRPORT PHX_AIRPORT --- SON: 15||0
+ 14||1 --- LOAD_AIRPLANE PACKAGE1 AIRPLANE1 PHX_AIRPORT --- SON: 15||1
+ 14||2 --- DRIVE_TRUCK_AP_LOC BOS_TRUCK BOS_AIRPORT BOS_PO BOS --- SON: 15||2
+ 14||3 --- DRIVE_TRUCK_AP_LOC BOS_TRUCK BOS_AIRPORT BOS_PO BOS --- SON: 15||3
+ 14||4 --- DRIVE_TRUCK_AP_LOC BOS_TRUCK BOS_AIRPORT BOS_PO BOS --- SON: 15||4
+ 14||5 --- LOAD_AIRPLANE PACKAGE3 AIRPLANE1 PHX_AIRPORT --- SON: 15||5
+ 14||6 --- DRIVE_TRUCK_AP_LOC PHX_TRUCK PHX_AIRPORT PHX_PO PHX --- SON: 15||6
+ 14||7 --- FLY_AIRPLANE AIRPLANE1 PGH_AIRPORT PHX_AIRPORT --- SON: 15||7
+-------------------------------------------------
+ 15||0 --- FLY_AIRPLANE AIRPLANE1 PHX_AIRPORT BOS_AIRPORT --- SON: 16||0
+ 15||1 --- FLY_AIRPLANE AIRPLANE1 PHX_AIRPORT PGH_AIRPORT --- SON: 16||1
+ 15||2 --- FLY_AIRPLANE AIRPLANE1 PGH_AIRPORT PHX_AIRPORT --- SON: 16||2
+ 15||3 --- DRIVE_TRUCK_AP_LOC PHX_TRUCK PHX_AIRPORT PHX_PO PHX --- SON: 16||3
+ 15||4 --- DRIVE_TRUCK_AP_LOC PHX_TRUCK PHX_AIRPORT PHX_PO PHX --- SON: 16||4
+ 15||5 --- LOAD_AIRPLANE PACKAGE1 AIRPLANE1 PHX_AIRPORT --- SON: 16||5
+ 15||6 --- FLY_AIRPLANE AIRPLANE1 PGH_AIRPORT PHX_AIRPORT --- SON: 16||6
+ 15||7 --- UNLOAD_AIRPLANE PACKAGE2 AIRPLANE1 PHX_AIRPORT --- SON: 16||7
+-------------------------------------------------
+ 16||0 --- UNLOAD_AIRPLANE PACKAGE1 AIRPLANE1 BOS_AIRPORT --- SON: 17||0
+ 16||1 --- FLY_AIRPLANE AIRPLANE1 PGH_AIRPORT BOS_AIRPORT --- SON: 17||1
+ 16||2 --- UNLOAD_AIRPLANE PACKAGE2 AIRPLANE1 PHX_AIRPORT --- SON: 17||2
+ 16||3 --- FLY_AIRPLANE AIRPLANE1 PGH_AIRPORT PHX_AIRPORT --- SON: 17||3
+ 16||4 --- FLY_AIRPLANE AIRPLANE1 PGH_AIRPORT PHX_AIRPORT --- SON: 17||4
+ 16||5 --- FLY_AIRPLANE AIRPLANE1 PHX_AIRPORT PGH_AIRPORT --- SON: 17||5
+ 16||6 --- UNLOAD_AIRPLANE PACKAGE2 AIRPLANE1 PHX_AIRPORT --- SON: 17||6
+ 16||7 --- LOAD_AIRPLANE PACKAGE3 AIRPLANE1 PHX_AIRPORT --- SON: 17||7
+-------------------------------------------------
+ 17||0 --- LOAD_AIRPLANE PACKAGE3 AIRPLANE1 BOS_AIRPORT --- SON: 18||0
+ 17||1 --- UNLOAD_AIRPLANE PACKAGE1 AIRPLANE1 BOS_AIRPORT --- SON: 18||1
+ 17||2 --- FLY_AIRPLANE AIRPLANE1 PHX_AIRPORT PGH_AIRPORT --- SON: 18||2
+ 17||3 --- UNLOAD_AIRPLANE PACKAGE2 AIRPLANE1 PHX_AIRPORT --- SON: 18||3
+ 17||4 --- LOAD_AIRPLANE PACKAGE3 AIRPLANE1 PHX_AIRPORT --- SON: 18||4
+ 17||5 --- UNLOAD_AIRPLANE PACKAGE3 AIRPLANE1 PGH_AIRPORT --- SON: 18||5
+ 17||6 --- LOAD_AIRPLANE PACKAGE3 AIRPLANE1 PHX_AIRPORT --- SON: 18||6
+ 17||7 --- LOAD_AIRPLANE PACKAGE1 AIRPLANE1 PHX_AIRPORT --- SON: 18||7
+-------------------------------------------------
+ 18||0 --- LOAD_AIRPLANE PACKAGE2 AIRPLANE1 BOS_AIRPORT --- SON: 19||0
+ 18||1 --- LOAD_AIRPLANE PACKAGE3 AIRPLANE1 BOS_AIRPORT --- SON: 19||1
+ 18||2 --- FLY_AIRPLANE AIRPLANE1 PGH_AIRPORT BOS_AIRPORT --- SON: 19||2
+ 18||3 --- LOAD_AIRPLANE PACKAGE1 AIRPLANE1 PHX_AIRPORT --- SON: 19||3
+ 18||4 --- FLY_AIRPLANE AIRPLANE1 PHX_AIRPORT PGH_AIRPORT --- SON: 19||4
+ 18||5 --- FLY_AIRPLANE AIRPLANE1 PGH_AIRPORT PHX_AIRPORT --- SON: 19||5
+ 18||6 --- FLY_AIRPLANE AIRPLANE1 PHX_AIRPORT PGH_AIRPORT --- SON: 19||6
+ 18||7 --- FLY_AIRPLANE AIRPLANE1 PHX_AIRPORT PGH_AIRPORT --- SON: 19||7
+-------------------------------------------------
+ 19||0 --- FLY_AIRPLANE AIRPLANE1 BOS_AIRPORT PHX_AIRPORT --- SON: 20||0
+ 19||1 --- LOAD_AIRPLANE PACKAGE2 AIRPLANE1 BOS_AIRPORT --- SON: 20||1
+ 19||2 --- UNLOAD_AIRPLANE PACKAGE1 AIRPLANE1 BOS_AIRPORT --- SON: 20||2
+ 19||3 --- FLY_AIRPLANE AIRPLANE1 PHX_AIRPORT PGH_AIRPORT --- SON: 20||3
+ 19||4 --- UNLOAD_AIRPLANE PACKAGE3 AIRPLANE1 PGH_AIRPORT --- SON: 20||4
+ 19||5 --- FLY_AIRPLANE AIRPLANE1 PHX_AIRPORT BOS_AIRPORT --- SON: 20||5
+ 19||6 --- UNLOAD_AIRPLANE PACKAGE3 AIRPLANE1 PGH_AIRPORT --- SON: 20||6
+ 19||7 --- UNLOAD_AIRPLANE PACKAGE3 AIRPLANE1 PGH_AIRPORT --- SON: 20||7
+-------------------------------------------------
+ 20||0 --- UNLOAD_AIRPLANE PACKAGE2 AIRPLANE1 PHX_AIRPORT --- SON: 21||0
+ 20||1 --- FLY_AIRPLANE AIRPLANE1 BOS_AIRPORT PHX_AIRPORT --- SON: 21||1
+ 20||2 --- LOAD_AIRPLANE PACKAGE3 AIRPLANE1 BOS_AIRPORT --- SON: 21||2
+ 20||3 --- FLY_AIRPLANE AIRPLANE1 PGH_AIRPORT BOS_AIRPORT --- SON: 21||3
+ 20||4 --- FLY_AIRPLANE AIRPLANE1 PGH_AIRPORT PHX_AIRPORT --- SON: 21||4
+ 20||5 --- UNLOAD_AIRPLANE PACKAGE1 AIRPLANE1 BOS_AIRPORT --- SON: 21||5
+ 20||6 --- FLY_AIRPLANE AIRPLANE1 PGH_AIRPORT BOS_AIRPORT --- SON: 21||6
+ 20||7 --- FLY_AIRPLANE AIRPLANE1 PGH_AIRPORT BOS_AIRPORT --- SON: 21||7
+-------------------------------------------------
+ 21||0 --- FLY_AIRPLANE AIRPLANE1 PHX_AIRPORT PGH_AIRPORT --- SON: 22||0
+ 21||1 --- UNLOAD_AIRPLANE PACKAGE2 AIRPLANE1 PHX_AIRPORT --- SON: 22||1
+ 21||2 --- FLY_AIRPLANE AIRPLANE1 BOS_AIRPORT PGH_AIRPORT --- SON: 22||2
+ 21||3 --- UNLOAD_AIRPLANE PACKAGE1 AIRPLANE1 BOS_AIRPORT --- SON: 22||3
+ 21||4 --- FLY_AIRPLANE AIRPLANE1 PHX_AIRPORT BOS_AIRPORT --- SON: 22||4
+ 21||5 --- LOAD_AIRPLANE PACKAGE2 AIRPLANE1 BOS_AIRPORT --- SON: 22||5
+ 21||6 --- UNLOAD_AIRPLANE PACKAGE1 AIRPLANE1 BOS_AIRPORT --- SON: 22||-1
+ 21||7 --- UNLOAD_AIRPLANE PACKAGE1 AIRPLANE1 BOS_AIRPORT --- SON: 22||-1
+-------------------------------------------------
+ 22||0 --- UNLOAD_AIRPLANE PACKAGE3 AIRPLANE1 PGH_AIRPORT --- SON: 23||-1
+ 22||1 --- FLY_AIRPLANE AIRPLANE1 PHX_AIRPORT PGH_AIRPORT --- SON: 23||0
+ 22||2 --- UNLOAD_AIRPLANE PACKAGE3 AIRPLANE1 PGH_AIRPORT --- SON: 23||-1
+ 22||3 --- LOAD_AIRPLANE PACKAGE3 AIRPLANE1 BOS_AIRPORT --- SON: 23||1
+ 22||4 --- UNLOAD_AIRPLANE PACKAGE1 AIRPLANE1 BOS_AIRPORT --- SON: 23||2
+ 22||5 --- FLY_AIRPLANE AIRPLANE1 BOS_AIRPORT PHX_AIRPORT --- SON: 23||3
+-------------------------------------------------
+ 23||0 --- UNLOAD_AIRPLANE PACKAGE3 AIRPLANE1 PGH_AIRPORT --- SON: 24||-1
+ 23||1 --- FLY_AIRPLANE AIRPLANE1 BOS_AIRPORT PGH_AIRPORT --- SON: 24||0
+ 23||2 --- LOAD_AIRPLANE PACKAGE2 AIRPLANE1 BOS_AIRPORT --- SON: 24||1
+ 23||3 --- UNLOAD_AIRPLANE PACKAGE2 AIRPLANE1 PHX_AIRPORT --- SON: 24||-1
+-------------------------------------------------
+ 24||0 --- UNLOAD_AIRPLANE PACKAGE3 AIRPLANE1 PGH_AIRPORT --- SON: 25||-1
+ 24||1 --- FLY_AIRPLANE AIRPLANE1 BOS_AIRPORT PHX_AIRPORT --- SON: 25||0
+-------------------------------------------------
+ 25||0 --- UNLOAD_AIRPLANE PACKAGE2 AIRPLANE1 PHX_AIRPORT --- SON: 26||-1
+-------------------------------------------------
+
+tree layers: 26
+total nr. actions: 172
+
+statistics:    0.00 seconds instantiating 132 easy, 0 hard action templates
+               0.00 seconds reachability analysis, yielding 69 facts and 96 actions
+               0.00 seconds creating final representation with 69 relevant facts (60 max U, 30 CNF max U)
+               final representation has 12 unknown facts and 45 observation actions    
+               0.00 seconds building connectivity graph
+               2.63 seconds (   2.32 pure) evaluating 37197 states
+               0.31 seconds in DP for 51354 RPG ini state implication checks
+               0.00 seconds in DP for 0 RPlan extract ini state implication checks (0 lits removed)
+               2.89 seconds generating,    0.26 seconds encoding 132435 state transition base CNFs
+               0.01 seconds in DP solving 1234 state transition CNFs
+               0.00 seconds checking for self-contradictions, including 0 DP calls
+               0.39 seconds checking for stagnating states (95100 hits), including 216 DP calls
+              52804 total DP calls, 1795686 total UP calls,    0.00 sec membership
+              0.80 seconds for remaining searching duties
+               6.98 seconds total time (+    0.13 secs for CNF memory allocation)
+

@@ -1,0 +1,56 @@
+
+ff: parsing domain file
+domain 'LOGISTICS_CONF' defined
+ ... done.
+ff: parsing problem file
+problem 'HARD_1PK_2CTY' defined
+ ... done.
+
+
+lowest leaf goal distance/initial state f value seen:     10/    10; maxdepth reached:    0
+                                                           3/    10                       1
+                                                           2/    10                       2
+                                                           1/    10                       3
+                                                           1/    10                       4
+                                                           1/    10                       5
+                                                           1/    10                       6
+
+ff: found plan as follows
+-------------------------------------------------
+  0||0 --- SENSE_PACKAGE_LOC_T PACKAGE1 BOS_PO BOS_TRUCK --- TRUESON: 1||0 --- FALSESON: 1||1
+-------------------------------------------------
+  1||0 --- LOAD_TRUCK_LOC PACKAGE1 BOS_TRUCK BOS_PO BOS --- SON: 2||0
+  1||1 --- LOAD_TRUCK_LOC PACKAGE1 PGH_TRUCK PGH_PO PGH --- SON: 2||1
+-------------------------------------------------
+  2||0 --- DRIVE_TRUCK_LOC_AP BOS_TRUCK BOS_PO BOS_AIRPORT BOS --- SON: 3||0
+  2||1 --- DRIVE_TRUCK_LOC_AP PGH_TRUCK PGH_PO PGH_AIRPORT PGH --- SON: 3||1
+-------------------------------------------------
+  3||0 --- UNLOAD_TRUCK_AP PACKAGE1 BOS_TRUCK BOS_AIRPORT BOS --- SON: 4||-1
+  3||1 --- UNLOAD_TRUCK_AP PACKAGE1 PGH_TRUCK PGH_AIRPORT PGH --- SON: 4||0
+-------------------------------------------------
+  4||0 --- LOAD_AIRPLANE PACKAGE1 AIRPLANE1 PGH_AIRPORT --- SON: 5||0
+-------------------------------------------------
+  5||0 --- FLY_AIRPLANE AIRPLANE1 PGH_AIRPORT BOS_AIRPORT --- SON: 6||0
+-------------------------------------------------
+  6||0 --- UNLOAD_AIRPLANE PACKAGE1 AIRPLANE1 BOS_AIRPORT --- SON: 7||-1
+-------------------------------------------------
+
+tree layers: 7
+total nr. actions: 10
+
+statistics:    0.00 seconds instantiating 30 easy, 0 hard action templates
+               0.00 seconds reachability analysis, yielding 20 facts and 26 actions
+               0.00 seconds creating final representation with 20 relevant facts (14 max U, 7 CNF max U)
+               final representation has 4 unknown facts and 10 observation actions    
+               0.00 seconds building connectivity graph
+               0.00 seconds (   0.00 pure) evaluating 50 states
+               0.00 seconds in DP for 125 RPG ini state implication checks
+               0.00 seconds in DP for 0 RPlan extract ini state implication checks (0 lits removed)
+               0.00 seconds generating,    0.00 seconds encoding 94 state transition base CNFs
+               0.00 seconds in DP solving 10 state transition CNFs
+               0.00 seconds checking for self-contradictions, including 0 DP calls
+               0.00 seconds checking for stagnating states (43 hits), including 16 DP calls
+                151 total DP calls, 1558 total UP calls,    0.00 sec membership
+              0.00 seconds for remaining searching duties
+               0.00 seconds total time (+    0.03 secs for CNF memory allocation)
+

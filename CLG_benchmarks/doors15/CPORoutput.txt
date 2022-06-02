@@ -1,0 +1,708 @@
+0) move_p1-8_p1-7
+1) move_p1-7_p1-6
+2) move_p1-6_p1-5
+3) move_p1-5_p1-4
+4) move_p1-4_p1-3
+5) move_p1-3_p1-2
+6) move_p1-2_p1-1
+7) sense-door_p1-1_p2-1
+branching...
+	9) move_p1-1_p1-2
+	698) sense-door_p1-2_p2-2
+branching...
+		700) move_p1-2_p1-3
+		706) sense-door_p1-3_p2-3
+branching...
+			708) move_p1-3_p1-4
+			714) sense-door_p1-4_p2-4
+branching...
+				716) move_p1-4_p1-5
+				722) sense-door_p1-5_p2-5
+branching...
+					724) move_p1-5_p1-6
+					730) sense-door_p1-6_p2-6
+branching...
+						732) move_p1-6_p1-7
+						738) sense-door_p1-7_p2-7
+branching...
+							740) move_p1-7_p1-8
+							746) sense-door_p1-8_p2-8
+branching...
+								748) move_p1-8_p1-9
+								754) sense-door_p1-9_p2-9
+branching...
+									756) move_p1-9_p1-10
+									762) sense-door_p1-10_p2-10
+branching...
+										764) move_p1-10_p1-11
+										770) sense-door_p1-11_p2-11
+branching...
+											772) move_p1-11_p1-12
+											778) sense-door_p1-12_p2-12
+branching...
+												780) move_p1-12_p1-13
+												786) sense-door_p1-13_p2-13
+branching...
+													788) move_p1-13_p1-14
+													794) sense-door_p1-14_p2-14
+branching...
+														796) move_p1-14_p1-15
+														802) move_p1-15_p2-15
+														803) move_p2-15_p3-15
+														804) move_p3-15_p3-14
+														800) move_p3-14_p3-13
+														792) move_p3-13_p3-12
+														784) move_p3-12_p3-11
+														776) move_p3-11_p3-10
+														768) move_p3-10_p3-9
+														760) move_p3-9_p3-8
+														752) move_p3-8_p3-7
+														744) move_p3-7_p3-6
+														736) move_p3-6_p3-5
+														728) move_p3-5_p3-4
+														720) move_p3-4_p3-3
+														712) move_p3-3_p3-2
+														704) move_p3-2_p3-1
+														13) sense-door_p3-1_p4-1
+branching...
+															15) move_p3-1_p3-2
+															590) sense-door_p3-2_p4-2
+branching...
+																592) move_p3-2_p3-3
+																598) sense-door_p3-3_p4-3
+branching...
+																	600) move_p3-3_p3-4
+																	606) sense-door_p3-4_p4-4
+branching...
+																		608) move_p3-4_p3-5
+																		614) sense-door_p3-5_p4-5
+branching...
+																			616) move_p3-5_p3-6
+																			622) sense-door_p3-6_p4-6
+branching...
+																				624) move_p3-6_p3-7
+																				630) sense-door_p3-7_p4-7
+branching...
+																					632) move_p3-7_p3-8
+																					638) sense-door_p3-8_p4-8
+branching...
+																						640) move_p3-8_p3-9
+																						646) sense-door_p3-9_p4-9
+branching...
+																							648) move_p3-9_p3-10
+																							654) sense-door_p3-10_p4-10
+branching...
+																								656) move_p3-10_p3-11
+																								662) sense-door_p3-11_p4-11
+branching...
+																									664) move_p3-11_p3-12
+																									670) sense-door_p3-12_p4-12
+branching...
+																										672) move_p3-12_p3-13
+																										678) sense-door_p3-13_p4-13
+branching...
+																											680) move_p3-13_p3-14
+																											686) sense-door_p3-14_p4-14
+branching...
+																												688) move_p3-14_p3-15
+																												694) move_p3-15_p4-15
+																												695) move_p4-15_p5-15
+																												696) move_p5-15_p5-14
+																												692) move_p5-14_p5-13
+																												684) move_p5-13_p5-12
+																												676) move_p5-12_p5-11
+																												668) move_p5-11_p5-10
+																												660) move_p5-10_p5-9
+																												652) move_p5-9_p5-8
+																												644) move_p5-8_p5-7
+																												636) move_p5-7_p5-6
+																												628) move_p5-6_p5-5
+																												620) move_p5-5_p5-4
+																												612) move_p5-4_p5-3
+																												604) move_p5-3_p5-2
+																												596) move_p5-2_p5-1
+																												19) sense-door_p5-1_p6-1
+branching...
+																													21) move_p5-1_p5-2
+																													482) sense-door_p5-2_p6-2
+branching...
+																														484) move_p5-2_p5-3
+																														490) sense-door_p5-3_p6-3
+branching...
+																															492) move_p5-3_p5-4
+																															498) sense-door_p5-4_p6-4
+branching...
+																																500) move_p5-4_p5-5
+																																506) sense-door_p5-5_p6-5
+branching...
+																																	508) move_p5-5_p5-6
+																																	514) sense-door_p5-6_p6-6
+branching...
+																																		516) move_p5-6_p5-7
+																																		522) sense-door_p5-7_p6-7
+branching...
+																																			524) move_p5-7_p5-8
+																																			530) sense-door_p5-8_p6-8
+branching...
+																																				532) move_p5-8_p5-9
+																																				538) sense-door_p5-9_p6-9
+branching...
+																																					540) move_p5-9_p5-10
+																																					546) sense-door_p5-10_p6-10
+branching...
+																																						548) move_p5-10_p5-11
+																																						554) sense-door_p5-11_p6-11
+branching...
+																																							556) move_p5-11_p5-12
+																																							562) sense-door_p5-12_p6-12
+branching...
+																																								564) move_p5-12_p5-13
+																																								570) sense-door_p5-13_p6-13
+branching...
+																																									572) move_p5-13_p5-14
+																																									578) sense-door_p5-14_p6-14
+branching...
+																																										580) move_p5-14_p5-15
+																																										586) move_p5-15_p6-15
+																																										587) move_p6-15_p7-15
+																																										588) move_p7-15_p7-14
+																																										584) move_p7-14_p7-13
+																																										576) move_p7-13_p7-12
+																																										568) move_p7-12_p7-11
+																																										560) move_p7-11_p7-10
+																																										552) move_p7-10_p7-9
+																																										544) move_p7-9_p7-8
+																																										536) move_p7-8_p7-7
+																																										528) move_p7-7_p7-6
+																																										520) move_p7-6_p7-5
+																																										512) move_p7-5_p7-4
+																																										504) move_p7-4_p7-3
+																																										496) move_p7-3_p7-2
+																																										488) move_p7-2_p7-1
+																																										25) sense-door_p7-1_p8-1
+branching...
+																																											27) move_p7-1_p7-2
+																																											374) sense-door_p7-2_p8-2
+branching...
+																																												376) move_p7-2_p7-3
+																																												382) sense-door_p7-3_p8-3
+branching...
+																																													384) move_p7-3_p7-4
+																																													390) sense-door_p7-4_p8-4
+branching...
+																																														392) move_p7-4_p7-5
+																																														398) sense-door_p7-5_p8-5
+branching...
+																																															400) move_p7-5_p7-6
+																																															406) sense-door_p7-6_p8-6
+branching...
+																																																408) move_p7-6_p7-7
+																																																414) sense-door_p7-7_p8-7
+branching...
+																																																	416) move_p7-7_p7-8
+																																																	422) sense-door_p7-8_p8-8
+branching...
+																																																		424) move_p7-8_p7-9
+																																																		430) sense-door_p7-9_p8-9
+branching...
+																																																			432) move_p7-9_p7-10
+																																																			438) sense-door_p7-10_p8-10
+branching...
+																																																				440) move_p7-10_p7-11
+																																																				446) sense-door_p7-11_p8-11
+branching...
+																																																					448) move_p7-11_p7-12
+																																																					454) sense-door_p7-12_p8-12
+branching...
+																																																						456) move_p7-12_p7-13
+																																																						462) sense-door_p7-13_p8-13
+branching...
+																																																							464) move_p7-13_p7-14
+																																																							470) sense-door_p7-14_p8-14
+branching...
+																																																								472) move_p7-14_p7-15
+																																																								478) move_p7-15_p8-15
+																																																								479) move_p8-15_p9-15
+																																																								480) move_p9-15_p9-14
+																																																								476) move_p9-14_p9-13
+																																																								468) move_p9-13_p9-12
+																																																								460) move_p9-12_p9-11
+																																																								452) move_p9-11_p9-10
+																																																								444) move_p9-10_p9-9
+																																																								436) move_p9-9_p9-8
+																																																								428) move_p9-8_p9-7
+																																																								420) move_p9-7_p9-6
+																																																								412) move_p9-6_p9-5
+																																																								404) move_p9-5_p9-4
+																																																								396) move_p9-4_p9-3
+																																																								388) move_p9-3_p9-2
+																																																								380) move_p9-2_p9-1
+																																																								31) sense-door_p9-1_p10-1
+branching...
+																																																									33) move_p9-1_p9-2
+																																																									266) sense-door_p9-2_p10-2
+branching...
+																																																										268) move_p9-2_p9-3
+																																																										274) sense-door_p9-3_p10-3
+branching...
+																																																											276) move_p9-3_p9-4
+																																																											282) sense-door_p9-4_p10-4
+branching...
+																																																												284) move_p9-4_p9-5
+																																																												290) sense-door_p9-5_p10-5
+branching...
+																																																													292) move_p9-5_p9-6
+																																																													298) sense-door_p9-6_p10-6
+branching...
+																																																														300) move_p9-6_p9-7
+																																																														306) sense-door_p9-7_p10-7
+branching...
+																																																															308) move_p9-7_p9-8
+																																																															314) sense-door_p9-8_p10-8
+branching...
+																																																																316) move_p9-8_p9-9
+																																																																322) sense-door_p9-9_p10-9
+branching...
+																																																																	324) move_p9-9_p9-10
+																																																																	330) sense-door_p9-10_p10-10
+branching...
+																																																																		332) move_p9-10_p9-11
+																																																																		338) sense-door_p9-11_p10-11
+branching...
+																																																																			340) move_p9-11_p9-12
+																																																																			346) sense-door_p9-12_p10-12
+branching...
+																																																																				348) move_p9-12_p9-13
+																																																																				354) sense-door_p9-13_p10-13
+branching...
+																																																																					356) move_p9-13_p9-14
+																																																																					362) sense-door_p9-14_p10-14
+branching...
+																																																																						364) move_p9-14_p9-15
+																																																																						370) move_p9-15_p10-15
+																																																																						371) move_p10-15_p11-15
+																																																																						372) move_p11-15_p11-14
+																																																																						368) move_p11-14_p11-13
+																																																																						360) move_p11-13_p11-12
+																																																																						352) move_p11-12_p11-11
+																																																																						344) move_p11-11_p11-10
+																																																																						336) move_p11-10_p11-9
+																																																																						328) move_p11-9_p11-8
+																																																																						320) move_p11-8_p11-7
+																																																																						312) move_p11-7_p11-6
+																																																																						304) move_p11-6_p11-5
+																																																																						296) move_p11-5_p11-4
+																																																																						288) move_p11-4_p11-3
+																																																																						280) move_p11-3_p11-2
+																																																																						272) move_p11-2_p11-1
+																																																																						37) sense-door_p11-1_p12-1
+branching...
+																																																																							39) move_p11-1_p11-2
+																																																																							158) sense-door_p11-2_p12-2
+branching...
+																																																																								160) move_p11-2_p11-3
+																																																																								166) sense-door_p11-3_p12-3
+branching...
+																																																																									168) move_p11-3_p11-4
+																																																																									174) sense-door_p11-4_p12-4
+branching...
+																																																																										176) move_p11-4_p11-5
+																																																																										182) sense-door_p11-5_p12-5
+branching...
+																																																																											184) move_p11-5_p11-6
+																																																																											190) sense-door_p11-6_p12-6
+branching...
+																																																																												192) move_p11-6_p11-7
+																																																																												198) sense-door_p11-7_p12-7
+branching...
+																																																																													200) move_p11-7_p11-8
+																																																																													206) sense-door_p11-8_p12-8
+branching...
+																																																																														208) move_p11-8_p11-9
+																																																																														214) sense-door_p11-9_p12-9
+branching...
+																																																																															216) move_p11-9_p11-10
+																																																																															222) sense-door_p11-10_p12-10
+branching...
+																																																																																224) move_p11-10_p11-11
+																																																																																230) sense-door_p11-11_p12-11
+branching...
+																																																																																	232) move_p11-11_p11-12
+																																																																																	238) sense-door_p11-12_p12-12
+branching...
+																																																																																		240) move_p11-12_p11-13
+																																																																																		246) sense-door_p11-13_p12-13
+branching...
+																																																																																			248) move_p11-13_p11-14
+																																																																																			254) sense-door_p11-14_p12-14
+branching...
+																																																																																				256) move_p11-14_p11-15
+																																																																																				262) move_p11-15_p12-15
+																																																																																				263) move_p12-15_p13-15
+																																																																																				264) move_p13-15_p13-14
+																																																																																				260) move_p13-14_p13-13
+																																																																																				252) move_p13-13_p13-12
+																																																																																				244) move_p13-12_p13-11
+																																																																																				236) move_p13-11_p13-10
+																																																																																				228) move_p13-10_p13-9
+																																																																																				220) move_p13-9_p13-8
+																																																																																				212) move_p13-8_p13-7
+																																																																																				204) move_p13-7_p13-6
+																																																																																				196) move_p13-6_p13-5
+																																																																																				188) move_p13-5_p13-4
+																																																																																				180) move_p13-4_p13-3
+																																																																																				172) move_p13-3_p13-2
+																																																																																				164) move_p13-2_p13-1
+																																																																																				43) sense-door_p13-1_p14-1
+branching...
+																																																																																					45) move_p13-1_p13-2
+																																																																																					57) sense-door_p13-2_p14-2
+branching...
+																																																																																						59) move_p13-2_p13-3
+																																																																																						64) sense-door_p13-3_p14-3
+branching...
+																																																																																							66) move_p13-3_p13-4
+																																																																																							71) sense-door_p13-4_p14-4
+branching...
+																																																																																								73) move_p13-4_p13-5
+																																																																																								78) sense-door_p13-5_p14-5
+branching...
+																																																																																									80) move_p13-5_p13-6
+																																																																																									85) sense-door_p13-6_p14-6
+branching...
+																																																																																										87) move_p13-6_p13-7
+																																																																																										92) sense-door_p13-7_p14-7
+branching...
+																																																																																											94) move_p13-7_p13-8
+																																																																																											99) sense-door_p13-8_p14-8
+branching...
+																																																																																												101) move_p13-8_p13-9
+																																																																																												106) sense-door_p13-9_p14-9
+branching...
+																																																																																													108) move_p13-9_p13-10
+																																																																																													114) sense-door_p13-10_p14-10
+branching...
+																																																																																														116) move_p13-10_p13-11
+																																																																																														122) sense-door_p13-11_p14-11
+branching...
+																																																																																															124) move_p13-11_p13-12
+																																																																																															130) sense-door_p13-12_p14-12
+branching...
+																																																																																																132) move_p13-12_p13-13
+																																																																																																138) sense-door_p13-13_p14-13
+branching...
+																																																																																																	140) move_p13-13_p13-14
+																																																																																																	146) sense-door_p13-14_p14-14
+branching...
+																																																																																																		148) move_p13-14_p13-15
+																																																																																																		154) move_p13-15_p14-15
+																																																																																																		155) move_p14-15_p15-15
+																																																																																																		156) move_p15-15_p15-14
+																																																																																																		152) move_p15-14_p15-13
+																																																																																																		144) move_p15-13_p15-12
+																																																																																																		136) move_p15-12_p15-11
+																																																																																																		128) move_p15-11_p15-10
+																																																																																																		120) move_p15-10_p15-9
+																																																																																																		112) move_p15-9_p15-8
+)goal
+																																																																																																		147) move_p13-14_p14-14
+																																																																																																		151) move_p14-14_p15-14
+)connect to 152
+																																																																																																	139) move_p13-13_p14-13
+																																																																																																	143) move_p14-13_p15-13
+)connect to 144
+																																																																																																131) move_p13-12_p14-12
+																																																																																																135) move_p14-12_p15-12
+)connect to 136
+																																																																																															123) move_p13-11_p14-11
+																																																																																															127) move_p14-11_p15-11
+)connect to 128
+																																																																																														115) move_p13-10_p14-10
+																																																																																														119) move_p14-10_p15-10
+)connect to 120
+																																																																																													107) move_p13-9_p14-9
+																																																																																													111) move_p14-9_p15-9
+)connect to 112
+																																																																																												100) move_p13-8_p14-8
+																																																																																												104) move_p14-8_p15-8
+)goal
+																																																																																											93) move_p13-7_p14-7
+																																																																																											97) move_p14-7_p15-7
+																																																																																											55) move_p15-7_p15-8
+)goal
+																																																																																										86) move_p13-6_p14-6
+																																																																																										90) move_p14-6_p15-6
+																																																																																										54) move_p15-6_p15-7
+)connect to 55
+																																																																																									79) move_p13-5_p14-5
+																																																																																									83) move_p14-5_p15-5
+																																																																																									53) move_p15-5_p15-6
+)connect to 54
+																																																																																								72) move_p13-4_p14-4
+																																																																																								76) move_p14-4_p15-4
+																																																																																								52) move_p15-4_p15-5
+)connect to 53
+																																																																																							65) move_p13-3_p14-3
+																																																																																							69) move_p14-3_p15-3
+																																																																																							51) move_p15-3_p15-4
+)connect to 52
+																																																																																						58) move_p13-2_p14-2
+																																																																																						62) move_p14-2_p15-2
+																																																																																						50) move_p15-2_p15-3
+)connect to 51
+																																																																																					44) move_p13-1_p14-1
+																																																																																					48) move_p14-1_p15-1
+																																																																																					49) move_p15-1_p15-2
+)connect to 50
+																																																																																				255) move_p11-14_p12-14
+																																																																																				259) move_p12-14_p13-14
+)connect to 260
+																																																																																			247) move_p11-13_p12-13
+																																																																																			251) move_p12-13_p13-13
+)connect to 252
+																																																																																		239) move_p11-12_p12-12
+																																																																																		243) move_p12-12_p13-12
+)connect to 244
+																																																																																	231) move_p11-11_p12-11
+																																																																																	235) move_p12-11_p13-11
+)connect to 236
+																																																																																223) move_p11-10_p12-10
+																																																																																227) move_p12-10_p13-10
+)connect to 228
+																																																																															215) move_p11-9_p12-9
+																																																																															219) move_p12-9_p13-9
+)connect to 220
+																																																																														207) move_p11-8_p12-8
+																																																																														211) move_p12-8_p13-8
+)connect to 212
+																																																																													199) move_p11-7_p12-7
+																																																																													203) move_p12-7_p13-7
+)connect to 204
+																																																																												191) move_p11-6_p12-6
+																																																																												195) move_p12-6_p13-6
+)connect to 196
+																																																																											183) move_p11-5_p12-5
+																																																																											187) move_p12-5_p13-5
+)connect to 188
+																																																																										175) move_p11-4_p12-4
+																																																																										179) move_p12-4_p13-4
+)connect to 180
+																																																																									167) move_p11-3_p12-3
+																																																																									171) move_p12-3_p13-3
+)connect to 172
+																																																																								159) move_p11-2_p12-2
+																																																																								163) move_p12-2_p13-2
+)connect to 164
+																																																																							38) move_p11-1_p12-1
+																																																																							42) move_p12-1_p13-1
+)connect to 43
+																																																																						363) move_p9-14_p10-14
+																																																																						367) move_p10-14_p11-14
+)connect to 368
+																																																																					355) move_p9-13_p10-13
+																																																																					359) move_p10-13_p11-13
+)connect to 360
+																																																																				347) move_p9-12_p10-12
+																																																																				351) move_p10-12_p11-12
+)connect to 352
+																																																																			339) move_p9-11_p10-11
+																																																																			343) move_p10-11_p11-11
+)connect to 344
+																																																																		331) move_p9-10_p10-10
+																																																																		335) move_p10-10_p11-10
+)connect to 336
+																																																																	323) move_p9-9_p10-9
+																																																																	327) move_p10-9_p11-9
+)connect to 328
+																																																																315) move_p9-8_p10-8
+																																																																319) move_p10-8_p11-8
+)connect to 320
+																																																															307) move_p9-7_p10-7
+																																																															311) move_p10-7_p11-7
+)connect to 312
+																																																														299) move_p9-6_p10-6
+																																																														303) move_p10-6_p11-6
+)connect to 304
+																																																													291) move_p9-5_p10-5
+																																																													295) move_p10-5_p11-5
+)connect to 296
+																																																												283) move_p9-4_p10-4
+																																																												287) move_p10-4_p11-4
+)connect to 288
+																																																											275) move_p9-3_p10-3
+																																																											279) move_p10-3_p11-3
+)connect to 280
+																																																										267) move_p9-2_p10-2
+																																																										271) move_p10-2_p11-2
+)connect to 272
+																																																									32) move_p9-1_p10-1
+																																																									36) move_p10-1_p11-1
+)connect to 37
+																																																								471) move_p7-14_p8-14
+																																																								475) move_p8-14_p9-14
+)connect to 476
+																																																							463) move_p7-13_p8-13
+																																																							467) move_p8-13_p9-13
+)connect to 468
+																																																						455) move_p7-12_p8-12
+																																																						459) move_p8-12_p9-12
+)connect to 460
+																																																					447) move_p7-11_p8-11
+																																																					451) move_p8-11_p9-11
+)connect to 452
+																																																				439) move_p7-10_p8-10
+																																																				443) move_p8-10_p9-10
+)connect to 444
+																																																			431) move_p7-9_p8-9
+																																																			435) move_p8-9_p9-9
+)connect to 436
+																																																		423) move_p7-8_p8-8
+																																																		427) move_p8-8_p9-8
+)connect to 428
+																																																	415) move_p7-7_p8-7
+																																																	419) move_p8-7_p9-7
+)connect to 420
+																																																407) move_p7-6_p8-6
+																																																411) move_p8-6_p9-6
+)connect to 412
+																																															399) move_p7-5_p8-5
+																																															403) move_p8-5_p9-5
+)connect to 404
+																																														391) move_p7-4_p8-4
+																																														395) move_p8-4_p9-4
+)connect to 396
+																																													383) move_p7-3_p8-3
+																																													387) move_p8-3_p9-3
+)connect to 388
+																																												375) move_p7-2_p8-2
+																																												379) move_p8-2_p9-2
+)connect to 380
+																																											26) move_p7-1_p8-1
+																																											30) move_p8-1_p9-1
+)connect to 31
+																																										579) move_p5-14_p6-14
+																																										583) move_p6-14_p7-14
+)connect to 584
+																																									571) move_p5-13_p6-13
+																																									575) move_p6-13_p7-13
+)connect to 576
+																																								563) move_p5-12_p6-12
+																																								567) move_p6-12_p7-12
+)connect to 568
+																																							555) move_p5-11_p6-11
+																																							559) move_p6-11_p7-11
+)connect to 560
+																																						547) move_p5-10_p6-10
+																																						551) move_p6-10_p7-10
+)connect to 552
+																																					539) move_p5-9_p6-9
+																																					543) move_p6-9_p7-9
+)connect to 544
+																																				531) move_p5-8_p6-8
+																																				535) move_p6-8_p7-8
+)connect to 536
+																																			523) move_p5-7_p6-7
+																																			527) move_p6-7_p7-7
+)connect to 528
+																																		515) move_p5-6_p6-6
+																																		519) move_p6-6_p7-6
+)connect to 520
+																																	507) move_p5-5_p6-5
+																																	511) move_p6-5_p7-5
+)connect to 512
+																																499) move_p5-4_p6-4
+																																503) move_p6-4_p7-4
+)connect to 504
+																															491) move_p5-3_p6-3
+																															495) move_p6-3_p7-3
+)connect to 496
+																														483) move_p5-2_p6-2
+																														487) move_p6-2_p7-2
+)connect to 488
+																													20) move_p5-1_p6-1
+																													24) move_p6-1_p7-1
+)connect to 25
+																												687) move_p3-14_p4-14
+																												691) move_p4-14_p5-14
+)connect to 692
+																											679) move_p3-13_p4-13
+																											683) move_p4-13_p5-13
+)connect to 684
+																										671) move_p3-12_p4-12
+																										675) move_p4-12_p5-12
+)connect to 676
+																									663) move_p3-11_p4-11
+																									667) move_p4-11_p5-11
+)connect to 668
+																								655) move_p3-10_p4-10
+																								659) move_p4-10_p5-10
+)connect to 660
+																							647) move_p3-9_p4-9
+																							651) move_p4-9_p5-9
+)connect to 652
+																						639) move_p3-8_p4-8
+																						643) move_p4-8_p5-8
+)connect to 644
+																					631) move_p3-7_p4-7
+																					635) move_p4-7_p5-7
+)connect to 636
+																				623) move_p3-6_p4-6
+																				627) move_p4-6_p5-6
+)connect to 628
+																			615) move_p3-5_p4-5
+																			619) move_p4-5_p5-5
+)connect to 620
+																		607) move_p3-4_p4-4
+																		611) move_p4-4_p5-4
+)connect to 612
+																	599) move_p3-3_p4-3
+																	603) move_p4-3_p5-3
+)connect to 604
+																591) move_p3-2_p4-2
+																595) move_p4-2_p5-2
+)connect to 596
+															14) move_p3-1_p4-1
+															18) move_p4-1_p5-1
+)connect to 19
+														795) move_p1-14_p2-14
+														799) move_p2-14_p3-14
+)connect to 800
+													787) move_p1-13_p2-13
+													791) move_p2-13_p3-13
+)connect to 792
+												779) move_p1-12_p2-12
+												783) move_p2-12_p3-12
+)connect to 784
+											771) move_p1-11_p2-11
+											775) move_p2-11_p3-11
+)connect to 776
+										763) move_p1-10_p2-10
+										767) move_p2-10_p3-10
+)connect to 768
+									755) move_p1-9_p2-9
+									759) move_p2-9_p3-9
+)connect to 760
+								747) move_p1-8_p2-8
+								751) move_p2-8_p3-8
+)connect to 752
+							739) move_p1-7_p2-7
+							743) move_p2-7_p3-7
+)connect to 744
+						731) move_p1-6_p2-6
+						735) move_p2-6_p3-6
+)connect to 736
+					723) move_p1-5_p2-5
+					727) move_p2-5_p3-5
+)connect to 728
+				715) move_p1-4_p2-4
+				719) move_p2-4_p3-4
+)connect to 720
+			707) move_p1-3_p2-3
+			711) move_p2-3_p3-3
+)connect to 712
+		699) move_p1-2_p2-2
+		703) move_p2-2_p3-2
+)connect to 704
+	8) move_p1-1_p2-1
+	12) move_p2-1_p3-1
+)connect to 13

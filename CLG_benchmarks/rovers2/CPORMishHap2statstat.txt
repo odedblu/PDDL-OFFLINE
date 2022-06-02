@@ -1,0 +1,22 @@
+
+Goals 
+#11 :  , (visible_from objective1 waypoint0) , (not (visible_from objective1 waypoint1))
+7 :  , (not (visible_from objective1 waypoint0)) , (visible_from objective1 waypoint1)
+#
+Union Goals Budget
+#11 :  , (visible_from objective1 waypoint0) , (not (visible_from objective1 waypoint1))
+7 :  , (not (visible_from objective1 waypoint0)) , (visible_from objective1 waypoint1)
+11 : 
+#
+
+
+
+Goals Fault Tolerance
+#1 : 1 :  , (visible_from objective1 waypoint0) , (not (visible_from objective1 waypoint1))
+1 : 0 :  , (not (visible_from objective1 waypoint0)) , (visible_from objective1 waypoint1)
+#
+
+
+
+Goals Fault Tolerance
+#

@@ -1,0 +1,30 @@
+
+Goals 
+#5 :  , (visible_from objective1 waypoint3) , (not (visible_from objective1 waypoint0)) , (not (visible_from objective1 waypoint1)) , (not (visible_from objective1 waypoint2))
+8 :  , (visible_from objective1 waypoint1) , (not (visible_from objective1 waypoint0)) , (not (visible_from objective1 waypoint2)) , (not (visible_from objective1 waypoint3))
+10 :  , (visible_from objective1 waypoint2) , (not (visible_from objective1 waypoint0)) , (not (visible_from objective1 waypoint1)) , (not (visible_from objective1 waypoint3))
+15 :  , (not (visible_from objective1 waypoint2)) , (visible_from objective1 waypoint0) , (not (visible_from objective1 waypoint1)) , (not (visible_from objective1 waypoint3))
+#
+Union Goals Budget
+#5 :  , (visible_from objective1 waypoint3) , (not (visible_from objective1 waypoint0)) , (not (visible_from objective1 waypoint1)) , (not (visible_from objective1 waypoint2))
+8 :  , (visible_from objective1 waypoint1) , (not (visible_from objective1 waypoint0)) , (not (visible_from objective1 waypoint2)) , (not (visible_from objective1 waypoint3))
+10 :  , (visible_from objective1 waypoint2) , (not (visible_from objective1 waypoint0)) , (not (visible_from objective1 waypoint1)) , (not (visible_from objective1 waypoint3))
+15 :  , (not (visible_from objective1 waypoint2)) , (visible_from objective1 waypoint0) , (not (visible_from objective1 waypoint1)) , (not (visible_from objective1 waypoint3))
+15 :  , (not (visible_from objective1 waypoint1)) , (not (visible_from objective1 waypoint3))
+15 :  , (not (visible_from objective1 waypoint3))
+15 : 
+#
+
+
+
+Goals Fault Tolerance
+#1 : 1 :  , (visible_from objective1 waypoint3) , (not (visible_from objective1 waypoint0)) , (not (visible_from objective1 waypoint1)) , (not (visible_from objective1 waypoint2))
+2 : 1 :  , (visible_from objective1 waypoint1) , (not (visible_from objective1 waypoint0)) , (not (visible_from objective1 waypoint2)) , (not (visible_from objective1 waypoint3))
+3 : 1 :  , (visible_from objective1 waypoint2) , (not (visible_from objective1 waypoint0)) , (not (visible_from objective1 waypoint1)) , (not (visible_from objective1 waypoint3))
+3 : 0 :  , (not (visible_from objective1 waypoint2)) , (visible_from objective1 waypoint0) , (not (visible_from objective1 waypoint1)) , (not (visible_from objective1 waypoint3))
+#
+
+
+
+Goals Fault Tolerance
+#

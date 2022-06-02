@@ -1,0 +1,371 @@
+634) observe-ball_p2-2_o1
+branching...
+	637) move_p2-2_p1-2
+	679) observe-ball_p1-2_o1
+branching...
+		682) move_p1-2_p1-3
+		686) observe-ball_p1-3_o1
+branching...
+			689) move_p1-3_p2-3
+			718) observe-ball_p2-3_o1
+branching...
+				721) move_p2-3_p2-4
+				726) observe-ball_p2-4_o1
+branching...
+					729) move_p2-4_p3-4
+					734) observe-ball_p3-4_o1
+branching...
+						737) move_p3-4_p3-3
+						772) observe-ball_p3-3_o1
+branching...
+							775) move_p3-3_p4-3
+							780) observe-ball_p4-3_o1
+branching...
+								783) move_p4-3_p4-2
+								788) observe-ball_p4-2_o1
+branching...
+									791) move_p4-2_p3-2
+									826) observe-ball_p3-2_o1
+branching...
+										829) move_p3-2_p3-1
+										855) observe-ball_p3-1_o1
+branching...
+											858) move_p3-1_p2-1
+											862) pickup_o1_p2-1
+											863) move_p2-1_p1-1
+											864) observe-color_red_o1
+branching...
+												867) observe-color_purple_o1
+branching...
+													872) observe-color_green_o1
+branching...
+														658) move_p1-1_p1-2
+														665) move_p1-2_p1-3
+														666) move_p1-3_p1-4
+														667) trash_o1_blue_t2_p1-4
+)goal
+														671) move_p1-1_p2-1
+														675) move_p2-1_p3-1
+														676) move_p3-1_p4-1
+														677) trash_o1_green_t3_p4-1
+)goal
+													847) move_p1-1_p1-2
+													643) move_p1-2_p1-3
+													650) move_p1-3_p1-4
+													651) move_p1-4_p2-4
+													652) move_p2-4_p3-4
+													653) move_p3-4_p4-4
+													654) trash_o1_purple_t4_p4-4
+)goal
+												670) trash_o1_red_t1_p1-1
+)goal
+											857) pickup_o1_p3-1
+											833) observe-color_green_o1
+branching...
+												836) move_p3-1_p2-1
+												839) observe-color_red_o1
+branching...
+													842) move_p2-1_p1-1
+													845) observe-color_purple_o1
+branching...
+														658) move_p1-1_p1-2
+														665) move_p1-2_p1-3
+														666) move_p1-3_p1-4
+														667) trash_o1_blue_t2_p1-4
+)goal
+														847) move_p1-1_p1-2
+														643) move_p1-2_p1-3
+														650) move_p1-3_p1-4
+														651) move_p1-4_p2-4
+														652) move_p2-4_p3-4
+														653) move_p3-4_p4-4
+														654) trash_o1_purple_t4_p4-4
+)goal
+													824) move_p2-1_p1-1
+													670) trash_o1_red_t1_p1-1
+)goal
+												676) move_p3-1_p4-1
+												677) trash_o1_green_t3_p4-1
+)goal
+										828) pickup_o1_p3-2
+										832) move_p3-2_p3-1
+										833) observe-color_green_o1
+branching...
+											836) move_p3-1_p2-1
+											839) observe-color_red_o1
+branching...
+												842) move_p2-1_p1-1
+												845) observe-color_purple_o1
+branching...
+													658) move_p1-1_p1-2
+													665) move_p1-2_p1-3
+													666) move_p1-3_p1-4
+													667) trash_o1_blue_t2_p1-4
+)goal
+													847) move_p1-1_p1-2
+													643) move_p1-2_p1-3
+													650) move_p1-3_p1-4
+													651) move_p1-4_p2-4
+													652) move_p2-4_p3-4
+													653) move_p3-4_p4-4
+													654) trash_o1_purple_t4_p4-4
+)goal
+												824) move_p2-1_p1-1
+												670) trash_o1_red_t1_p1-1
+)goal
+											676) move_p3-1_p4-1
+											677) trash_o1_green_t3_p4-1
+)goal
+									790) pickup_o1_p4-2
+									794) move_p4-2_p4-1
+									795) observe-color_green_o1
+branching...
+										798) observe-color_purple_o1
+branching...
+											803) observe-color_blue_o1
+branching...
+												814) move_p4-1_p3-1
+												823) move_p3-1_p2-1
+												824) move_p2-1_p1-1
+												670) trash_o1_red_t1_p1-1
+)goal
+												813) move_p4-1_p3-1
+												820) move_p3-1_p2-1
+												821) move_p2-1_p1-1
+												658) move_p1-1_p1-2
+												665) move_p1-2_p1-3
+												666) move_p1-3_p1-4
+												667) trash_o1_blue_t2_p1-4
+)goal
+											802) move_p4-1_p4-2
+											809) move_p4-2_p4-3
+											810) move_p4-3_p4-4
+											654) trash_o1_purple_t4_p4-4
+)goal
+										677) trash_o1_green_t3_p4-1
+)goal
+								782) pickup_o1_p4-3
+								786) move_p4-3_p4-4
+								741) observe-color_purple_o1
+branching...
+									744) observe-color_green_o1
+branching...
+										749) observe-color_blue_o1
+branching...
+											760) move_p4-4_p3-4
+											769) move_p3-4_p2-4
+											770) move_p2-4_p1-4
+											706) move_p1-4_p1-3
+											715) move_p1-3_p1-2
+											716) move_p1-2_p1-1
+											670) trash_o1_red_t1_p1-1
+)goal
+											759) move_p4-4_p3-4
+											766) move_p3-4_p2-4
+											767) move_p2-4_p1-4
+											667) trash_o1_blue_t2_p1-4
+)goal
+										748) move_p4-4_p4-3
+										755) move_p4-3_p4-2
+										756) move_p4-2_p4-1
+										677) trash_o1_green_t3_p4-1
+)goal
+									654) trash_o1_purple_t4_p4-4
+)goal
+							774) pickup_o1_p3-3
+							778) move_p3-3_p3-4
+							740) move_p3-4_p4-4
+							741) observe-color_purple_o1
+branching...
+								744) observe-color_green_o1
+branching...
+									749) observe-color_blue_o1
+branching...
+										760) move_p4-4_p3-4
+										769) move_p3-4_p2-4
+										770) move_p2-4_p1-4
+										706) move_p1-4_p1-3
+										715) move_p1-3_p1-2
+										716) move_p1-2_p1-1
+										670) trash_o1_red_t1_p1-1
+)goal
+										759) move_p4-4_p3-4
+										766) move_p3-4_p2-4
+										767) move_p2-4_p1-4
+										667) trash_o1_blue_t2_p1-4
+)goal
+									748) move_p4-4_p4-3
+									755) move_p4-3_p4-2
+									756) move_p4-2_p4-1
+									677) trash_o1_green_t3_p4-1
+)goal
+								654) trash_o1_purple_t4_p4-4
+)goal
+						736) pickup_o1_p3-4
+						740) move_p3-4_p4-4
+						741) observe-color_purple_o1
+branching...
+							744) observe-color_green_o1
+branching...
+								749) observe-color_blue_o1
+branching...
+									760) move_p4-4_p3-4
+									769) move_p3-4_p2-4
+									770) move_p2-4_p1-4
+									706) move_p1-4_p1-3
+									715) move_p1-3_p1-2
+									716) move_p1-2_p1-1
+									670) trash_o1_red_t1_p1-1
+)goal
+									759) move_p4-4_p3-4
+									766) move_p3-4_p2-4
+									767) move_p2-4_p1-4
+									667) trash_o1_blue_t2_p1-4
+)goal
+								748) move_p4-4_p4-3
+								755) move_p4-3_p4-2
+								756) move_p4-2_p4-1
+								677) trash_o1_green_t3_p4-1
+)goal
+							654) trash_o1_purple_t4_p4-4
+)goal
+					728) pickup_o1_p2-4
+					732) move_p2-4_p1-4
+					693) observe-color_blue_o1
+branching...
+						696) observe-color_purple_o1
+branching...
+							701) observe-color_green_o1
+branching...
+								706) move_p1-4_p1-3
+								715) move_p1-3_p1-2
+								716) move_p1-2_p1-1
+								670) trash_o1_red_t1_p1-1
+)goal
+								705) move_p1-4_p1-3
+								712) move_p1-3_p1-2
+								713) move_p1-2_p1-1
+								671) move_p1-1_p2-1
+								675) move_p2-1_p3-1
+								676) move_p3-1_p4-1
+								677) trash_o1_green_t3_p4-1
+)goal
+							651) move_p1-4_p2-4
+							652) move_p2-4_p3-4
+							653) move_p3-4_p4-4
+							654) trash_o1_purple_t4_p4-4
+)goal
+						667) trash_o1_blue_t2_p1-4
+)goal
+				720) pickup_o1_p2-3
+				724) move_p2-3_p1-3
+				692) move_p1-3_p1-4
+				693) observe-color_blue_o1
+branching...
+					696) observe-color_purple_o1
+branching...
+						701) observe-color_green_o1
+branching...
+							706) move_p1-4_p1-3
+							715) move_p1-3_p1-2
+							716) move_p1-2_p1-1
+							670) trash_o1_red_t1_p1-1
+)goal
+							705) move_p1-4_p1-3
+							712) move_p1-3_p1-2
+							713) move_p1-2_p1-1
+							671) move_p1-1_p2-1
+							675) move_p2-1_p3-1
+							676) move_p3-1_p4-1
+							677) trash_o1_green_t3_p4-1
+)goal
+						651) move_p1-4_p2-4
+						652) move_p2-4_p3-4
+						653) move_p3-4_p4-4
+						654) trash_o1_purple_t4_p4-4
+)goal
+					667) trash_o1_blue_t2_p1-4
+)goal
+			688) pickup_o1_p1-3
+			692) move_p1-3_p1-4
+			693) observe-color_blue_o1
+branching...
+				696) observe-color_purple_o1
+branching...
+					701) observe-color_green_o1
+branching...
+						706) move_p1-4_p1-3
+						715) move_p1-3_p1-2
+						716) move_p1-2_p1-1
+						670) trash_o1_red_t1_p1-1
+)goal
+						705) move_p1-4_p1-3
+						712) move_p1-3_p1-2
+						713) move_p1-2_p1-1
+						671) move_p1-1_p2-1
+						675) move_p2-1_p3-1
+						676) move_p3-1_p4-1
+						677) trash_o1_green_t3_p4-1
+)goal
+					651) move_p1-4_p2-4
+					652) move_p2-4_p3-4
+					653) move_p3-4_p4-4
+					654) trash_o1_purple_t4_p4-4
+)goal
+				667) trash_o1_blue_t2_p1-4
+)goal
+		681) pickup_o1_p1-2
+		641) observe-color_purple_o1
+branching...
+			644) move_p1-2_p1-1
+			656) observe-color_blue_o1
+branching...
+				659) observe-color_red_o1
+branching...
+					671) move_p1-1_p2-1
+					675) move_p2-1_p3-1
+					676) move_p3-1_p4-1
+					677) trash_o1_green_t3_p4-1
+)goal
+					670) trash_o1_red_t1_p1-1
+)goal
+				658) move_p1-1_p1-2
+				665) move_p1-2_p1-3
+				666) move_p1-3_p1-4
+				667) trash_o1_blue_t2_p1-4
+)goal
+			643) move_p1-2_p1-3
+			650) move_p1-3_p1-4
+			651) move_p1-4_p2-4
+			652) move_p2-4_p3-4
+			653) move_p3-4_p4-4
+			654) trash_o1_purple_t4_p4-4
+)goal
+	636) pickup_o1_p2-2
+	640) move_p2-2_p1-2
+	641) observe-color_purple_o1
+branching...
+		644) move_p1-2_p1-1
+		656) observe-color_blue_o1
+branching...
+			659) observe-color_red_o1
+branching...
+				671) move_p1-1_p2-1
+				675) move_p2-1_p3-1
+				676) move_p3-1_p4-1
+				677) trash_o1_green_t3_p4-1
+)goal
+				670) trash_o1_red_t1_p1-1
+)goal
+			658) move_p1-1_p1-2
+			665) move_p1-2_p1-3
+			666) move_p1-3_p1-4
+			667) trash_o1_blue_t2_p1-4
+)goal
+		643) move_p1-2_p1-3
+		650) move_p1-3_p1-4
+		651) move_p1-4_p2-4
+		652) move_p2-4_p3-4
+		653) move_p3-4_p4-4
+		654) trash_o1_purple_t4_p4-4
+)goal

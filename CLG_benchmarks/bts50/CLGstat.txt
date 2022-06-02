@@ -1,0 +1,82 @@
+4514) dunk_p9_b0_t0
+4515) dunk_p8_b0_t0
+4516) dunk_p7_b0_t0
+4517) dunk_p6_b0_t0
+4518) dunk_p5_b0_t0
+4519) dunk_p49_b0_t0
+4520) dunk_p48_b0_t0
+4521) dunk_p47_b0_t0
+4522) dunk_p46_b0_t0
+4523) dunk_p45_b0_t0
+4524) dunk_p44_b0_t0
+4525) dunk_p43_b0_t0
+4526) dunk_p42_b0_t0
+4527) dunk_p41_b0_t0
+4528) dunk_p40_b0_t0
+4529) dunk_p4_b0_t0
+4530) dunk_p39_b0_t0
+4531) dunk_p38_b0_t0
+4532) dunk_p37_b0_t0
+4533) dunk_p36_b0_t0
+4534) dunk_p35_b0_t0
+4535) dunk_p34_b0_t0
+4536) dunk_p33_b0_t0
+4537) dunk_p32_b0_t0
+4538) dunk_p31_b0_t0
+4539) dunk_p30_b0_t0
+4540) dunk_p3_b0_t0
+4541) dunk_p29_b0_t0
+4542) dunk_p28_b0_t0
+4543) dunk_p27_b0_t0
+4544) dunk_p26_b0_t0
+4545) dunk_p25_b0_t0
+4546) dunk_p24_b0_t0
+4547) dunk_p23_b0_t0
+4548) dunk_p22_b0_t0
+4549) dunk_p21_b0_t0
+4550) dunk_p20_b0_t0
+4551) dunk_p2_b0_t0
+4552) dunk_p19_b0_t0
+4553) dunk_p18_b0_t0
+4554) dunk_p17_b0_t0
+4555) dunk_p16_b0_t0
+4556) dunk_p15_b0_t0
+4557) dunk_p14_b0_t0
+4558) dunk_p13_b0_t0
+4559) dunk_p12_b0_t0
+4560) dunk_p11_b0_t0
+4561) dunk_p10_b0_t0
+4562) dunk_p1_b0_t0
+4563) dunk_p0_b0_t0
+
+Goals 
+#50 : 
+#
+Union Goals Budget
+#50 : 
+#
+
+
+
+Goals Fault Tolerance
+#0 : 0 : 
+#
+
+
+
+Goals Fault Tolerance
+##
+
+
+
+Simplicitity
+#nodes: 50
+branch: 0
+originalSize: 191
+compreesedSize: 113
+compreesedRatio: 1.69026548672566#
+
+
+
+Simplicitity
+#

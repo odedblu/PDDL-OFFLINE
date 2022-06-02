@@ -1,0 +1,33 @@
+ff: found legal plan as follows
+
+step    0: MOVE P3-3 P2-3 A1
+        1: MOVE P1-3 P1-2 A2
+        2: MOVE P1-2 P2-2 A2
+        3: MOVE P2-3 P2-2 A1
+        4: OBSERVE-BOX P2-2 B1 A1
+        5: OBSERVE-BOX P2-2 B1 A2
+        6: REFUTEF-BOX-AT B1 P2-2 TAG1 A1
+        7: REFUTEF-BOX-AT B1 P2-2 TAG1 A2
+        8: JOINT-PUSH P2-2 P2-1 B1
+        9: OBSERVE-BOX P2-1 B1 A1
+       10: OBSERVE-BOX P2-1 B1 A2
+       11: MOVE P2-1 P1-1 A2
+       12: MOVE P2-1 P3-1 A1
+       13: MOVE P1-1 P1-2 A2
+       14: OBSERVE-BOX P1-2 B0 A2
+       15: MOVE P3-1 P3-2 A1
+       16: OBSERVE-BOX P3-2 B2 A1
+       17: PUSH P1-2 P1-1 A2 B0
+       18: REFUTET-BOX-AT B1 P2-2 TAG0 A2
+       19: MERGE-BOX-AT B2 P3-1 A2 V_TRUE
+       20: PUSH P3-2 P3-1 A1 B2
+       21: REFUTET-BOX-AT B1 P2-2 TAG0 A1
+       22: MERGE-BOX-AT B0 P1-1 A1 V_TRUE
+
+
+time spent:    0.15 seconds instantiating 246 easy, 108 hard action templates
+               0.15 seconds reachability analysis, yielding 282 facts and 326 actions
+               0.00 seconds creating final representation with 268 relevant facts
+               0.00 seconds building connectivity graph
+               0.00 seconds searching, evaluating 40 states, to a max depth of 1
+               0.30 seconds total time

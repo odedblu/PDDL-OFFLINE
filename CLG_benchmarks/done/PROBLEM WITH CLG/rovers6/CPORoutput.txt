@@ -1,0 +1,170 @@
+49) navigate_rover0_waypoint3_waypoint0_camera0_objective1
+50) sense_vis_rover0_objective1_waypoint0
+branching...
+	53) navigate_rover0_waypoint0_waypoint3_camera0_objective1
+	107) navigate_rover0_waypoint3_waypoint1_camera0_objective1
+	108) navigate_rover0_waypoint1_waypoint4_camera0_objective1
+	109) sense_vis_rover0_objective1_waypoint4
+branching...
+		112) sense_rock_rover0_objective1_waypoint4
+branching...
+			182) sense_soil_rover0_objective1_waypoint4
+branching...
+				216) navigate_rover0_waypoint4_waypoint5_camera0_objective1
+				230) calibrate_rover0_camera0_objective1_waypoint5
+				231) take_image_rover0_waypoint5_objective1_camera0_high_res
+				232) sample_soil_rover0_rover0store_waypoint5
+				233) drop_rover0_rover0store
+				234) sample_rock_rover0_rover0store_waypoint5
+				235) navigate_rover0_waypoint5_waypoint4_camera0_objective1
+				236) navigate_rover0_waypoint4_waypoint1_camera0_objective1
+				237) communicate_image_data_rover0_general_objective1_high_res_waypoint1_waypoint0
+				238) communicate_soil_data_rover0_general_waypoint1_waypoint0
+				239) communicate_rock_data_rover0_general_waypoint1_waypoint0
+)goal
+				215) navigate_rover0_waypoint4_waypoint5_camera0_objective1
+				219) calibrate_rover0_camera0_objective1_waypoint5
+				220) take_image_rover0_waypoint5_objective1_camera0_high_res
+				221) sample_rock_rover0_rover0store_waypoint5
+				222) drop_rover0_rover0store
+				223) navigate_rover0_waypoint5_waypoint4_camera0_objective1
+				224) sample_soil_rover0_rover0store_waypoint4
+				225) navigate_rover0_waypoint4_waypoint1_camera0_objective1
+				226) communicate_image_data_rover0_general_objective1_high_res_waypoint1_waypoint0
+				227) communicate_soil_data_rover0_general_waypoint1_waypoint0
+				228) communicate_rock_data_rover0_general_waypoint1_waypoint0
+)goal
+			181) sense_soil_rover0_objective1_waypoint4
+branching...
+				187) navigate_rover0_waypoint4_waypoint5_camera0_objective1
+				203) calibrate_rover0_camera0_objective1_waypoint5
+				204) take_image_rover0_waypoint5_objective1_camera0_high_res
+				205) sample_soil_rover0_rover0store_waypoint5
+				206) drop_rover0_rover0store
+				207) navigate_rover0_waypoint5_waypoint4_camera0_objective1
+				208) sample_rock_rover0_rover0store_waypoint4
+				209) navigate_rover0_waypoint4_waypoint1_camera0_objective1
+				210) communicate_image_data_rover0_general_objective1_high_res_waypoint1_waypoint0
+				211) communicate_soil_data_rover0_general_waypoint1_waypoint0
+				212) communicate_rock_data_rover0_general_waypoint1_waypoint0
+)goal
+				186) navigate_rover0_waypoint4_waypoint5_camera0_objective1
+				190) calibrate_rover0_camera0_objective1_waypoint5
+				191) take_image_rover0_waypoint5_objective1_camera0_high_res
+				192) navigate_rover0_waypoint5_waypoint4_camera0_objective1
+				193) navigate_rover0_waypoint4_waypoint1_camera0_objective1
+				194) communicate_image_data_rover0_general_objective1_high_res_waypoint1_waypoint0
+				195) navigate_rover0_waypoint1_waypoint4_camera0_objective1
+				196) sample_soil_rover0_rover0store_waypoint4
+				197) drop_rover0_rover0store
+				198) sample_rock_rover0_rover0store_waypoint4
+				199) navigate_rover0_waypoint4_waypoint1_camera0_objective1
+				200) communicate_soil_data_rover0_general_waypoint1_waypoint0
+				201) communicate_rock_data_rover0_general_waypoint1_waypoint0
+)goal
+		111) sense_rock_rover0_objective1_waypoint4
+branching...
+			117) sense_soil_rover0_objective1_waypoint4
+branching...
+				151) calibrate_rover0_camera0_objective1_waypoint4
+				167) take_image_rover0_waypoint4_objective1_camera0_high_res
+				168) navigate_rover0_waypoint4_waypoint1_camera0_objective1
+				169) communicate_image_data_rover0_general_objective1_high_res_waypoint1_waypoint0
+				170) navigate_rover0_waypoint1_waypoint4_camera0_objective1
+				171) navigate_rover0_waypoint4_waypoint5_camera0_objective1
+				172) sample_soil_rover0_rover0store_waypoint5
+				173) drop_rover0_rover0store
+				174) sample_rock_rover0_rover0store_waypoint5
+				175) navigate_rover0_waypoint5_waypoint4_camera0_objective1
+				176) navigate_rover0_waypoint4_waypoint1_camera0_objective1
+				177) communicate_soil_data_rover0_general_waypoint1_waypoint0
+				178) communicate_rock_data_rover0_general_waypoint1_waypoint0
+)goal
+				150) calibrate_rover0_camera0_objective1_waypoint4
+				154) take_image_rover0_waypoint4_objective1_camera0_high_res
+				155) navigate_rover0_waypoint4_waypoint1_camera0_objective1
+				156) communicate_image_data_rover0_general_objective1_high_res_waypoint1_waypoint0
+				157) navigate_rover0_waypoint1_waypoint4_camera0_objective1
+				158) sample_soil_rover0_rover0store_waypoint4
+				159) drop_rover0_rover0store
+				160) navigate_rover0_waypoint4_waypoint5_camera0_objective1
+				161) sample_rock_rover0_rover0store_waypoint5
+				162) navigate_rover0_waypoint5_waypoint4_camera0_objective1
+				163) navigate_rover0_waypoint4_waypoint1_camera0_objective1
+				164) communicate_soil_data_rover0_general_waypoint1_waypoint0
+				165) communicate_rock_data_rover0_general_waypoint1_waypoint0
+)goal
+			116) sense_soil_rover0_objective1_waypoint4
+branching...
+				122) calibrate_rover0_camera0_objective1_waypoint4
+				136) take_image_rover0_waypoint4_objective1_camera0_high_res
+				137) navigate_rover0_waypoint4_waypoint1_camera0_objective1
+				138) communicate_image_data_rover0_general_objective1_high_res_waypoint1_waypoint0
+				139) navigate_rover0_waypoint1_waypoint4_camera0_objective1
+				140) sample_rock_rover0_rover0store_waypoint4
+				141) drop_rover0_rover0store
+				142) navigate_rover0_waypoint4_waypoint5_camera0_objective1
+				143) sample_soil_rover0_rover0store_waypoint5
+				144) navigate_rover0_waypoint5_waypoint4_camera0_objective1
+				145) navigate_rover0_waypoint4_waypoint1_camera0_objective1
+				146) communicate_soil_data_rover0_general_waypoint1_waypoint0
+				147) communicate_rock_data_rover0_general_waypoint1_waypoint0
+)goal
+				121) calibrate_rover0_camera0_objective1_waypoint4
+				125) take_image_rover0_waypoint4_objective1_camera0_high_res
+				126) navigate_rover0_waypoint4_waypoint1_camera0_objective1
+				127) communicate_image_data_rover0_general_objective1_high_res_waypoint1_waypoint0
+				128) navigate_rover0_waypoint1_waypoint4_camera0_objective1
+				129) sample_soil_rover0_rover0store_waypoint4
+				130) drop_rover0_rover0store
+				131) sample_rock_rover0_rover0store_waypoint4
+				132) navigate_rover0_waypoint4_waypoint1_camera0_objective1
+				133) communicate_soil_data_rover0_general_waypoint1_waypoint0
+				134) communicate_rock_data_rover0_general_waypoint1_waypoint0
+)goal
+	52) calibrate_rover0_camera0_objective1_waypoint0
+	56) take_image_rover0_waypoint0_objective1_camera0_high_res
+	57) navigate_rover0_waypoint0_waypoint3_camera0_objective1
+	58) communicate_image_data_rover0_general_objective1_high_res_waypoint3_waypoint0
+	59) navigate_rover0_waypoint3_waypoint1_camera0_objective1
+	60) navigate_rover0_waypoint1_waypoint4_camera0_objective1
+	61) sense_rock_rover0_objective1_waypoint4
+branching...
+		64) sense_soil_rover0_objective1_waypoint4
+branching...
+			88) navigate_rover0_waypoint4_waypoint5_camera0_objective1
+			99) sample_soil_rover0_rover0store_waypoint5
+			100) drop_rover0_rover0store
+			101) sample_rock_rover0_rover0store_waypoint5
+			102) navigate_rover0_waypoint5_waypoint4_camera0_objective1
+			103) navigate_rover0_waypoint4_waypoint1_camera0_objective1
+			104) communicate_soil_data_rover0_general_waypoint1_waypoint0
+			105) communicate_rock_data_rover0_general_waypoint1_waypoint0
+)goal
+			87) sample_soil_rover0_rover0store_waypoint4
+			91) drop_rover0_rover0store
+			92) navigate_rover0_waypoint4_waypoint5_camera0_objective1
+			93) sample_rock_rover0_rover0store_waypoint5
+			94) navigate_rover0_waypoint5_waypoint4_camera0_objective1
+			95) navigate_rover0_waypoint4_waypoint1_camera0_objective1
+			96) communicate_soil_data_rover0_general_waypoint1_waypoint0
+			97) communicate_rock_data_rover0_general_waypoint1_waypoint0
+)goal
+		63) sense_soil_rover0_objective1_waypoint4
+branching...
+			69) sample_rock_rover0_rover0store_waypoint4
+			78) drop_rover0_rover0store
+			79) navigate_rover0_waypoint4_waypoint5_camera0_objective1
+			80) sample_soil_rover0_rover0store_waypoint5
+			81) navigate_rover0_waypoint5_waypoint4_camera0_objective1
+			82) navigate_rover0_waypoint4_waypoint1_camera0_objective1
+			83) communicate_soil_data_rover0_general_waypoint1_waypoint0
+			84) communicate_rock_data_rover0_general_waypoint1_waypoint0
+)goal
+			68) sample_soil_rover0_rover0store_waypoint4
+			72) drop_rover0_rover0store
+			73) sample_rock_rover0_rover0store_waypoint4
+			74) navigate_rover0_waypoint4_waypoint1_camera0_objective1
+			75) communicate_soil_data_rover0_general_waypoint1_waypoint0
+			76) communicate_rock_data_rover0_general_waypoint1_waypoint0
+)goal

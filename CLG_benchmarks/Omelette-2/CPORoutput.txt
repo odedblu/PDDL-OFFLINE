@@ -1,0 +1,63 @@
+162) get-egg
+163) break-egg_bowl2_v0_v1
+165) observe-bowl_bowl2
+branching...
+	169) get-egg
+	205) break-egg_bowl1_v0_v1
+	207) observe-bowl_bowl1
+branching...
+		211) pour_bowl2_bowl1_v1_v1_v2
+		255) get-egg
+		257) break-egg_bowl2_v0_v1
+		259) observe-bowl_bowl2
+branching...
+			263) get-egg
+			283) empty_bowl2
+)connect to 257
+			262) get-egg
+			267) empty_bowl1
+			269) pour_bowl2_bowl1_v1_v0_v1
+			271) break-egg_bowl1_v1_v2
+			273) observe-bowl_bowl1
+branching...
+				277) get-egg
+)connect to 257
+)goal
+		210) get-egg
+		215) break-egg_bowl1_v1_v2
+		217) observe-bowl_bowl1
+branching...
+			221) get-egg
+			225) empty_bowl2
+			227) break-egg_bowl2_v0_v1
+			229) observe-bowl_bowl2
+branching...
+				233) get-egg
+)connect to 225
+				232) get-egg
+				237) empty_bowl1
+				239) pour_bowl2_bowl1_v1_v0_v1
+				241) break-egg_bowl1_v1_v2
+				243) observe-bowl_bowl1
+branching...
+					247) get-egg
+)connect to 227
+)goal
+)goal
+	168) pour_bowl2_bowl1_v1_v0_v1
+	173) get-egg
+	175) break-egg_bowl1_v1_v2
+	177) observe-bowl_bowl1
+branching...
+		181) get-egg
+		185) break-egg_bowl2_v0_v1
+		187) observe-bowl_bowl2
+branching...
+			191) get-egg
+			201) empty_bowl2
+)connect to 185
+			190) get-egg
+			195) empty_bowl1
+			197) pour_bowl2_bowl1_v1_v0_v1
+)connect to 175
+)goal

@@ -1,0 +1,70 @@
+Budget 4: Can not compare the trees 
+Budget 5: Can not compare the trees 
+Budget 6: Can not compare the trees 
+Budget 7: Can not compare the trees 
+Budget 8: Can not compare the trees 
+Budget 9: Can not compare the trees 
+Budget 10: Can not compare the trees 
+Budget 11: Can not compare the trees 
+Budget 12: Can not compare the trees 
+Budget 13: Can not compare the trees 
+Budget 14: Can not compare the trees 
+Budget 15: Can not compare the trees 
+Budget 16: Can not compare the trees 
+Budget 17: Can not compare the trees 
+Budget 18: Can not compare the trees 
+Budget 19: Can not compare the trees 
+Budget 20: Can not compare the trees 
+Budget 21: Can not compare the trees 
+Budget 22: Can not compare the trees 
+Budget 23: Can not compare the trees 
+Budget 24: Can not compare the trees 
+Budget 25: Can not compare the trees 
+Budget 26: Can not compare the trees 
+Budget 27: Can not compare the trees 
+Budget 28: Can not compare the trees 
+Budget 29: Can not compare the trees 
+Budget 30: Can not compare the trees 
+Budget 31: Can not compare the trees 
+Budget 32: Can not compare the trees 
+Budget 33: Can not compare the trees 
+Budget 34: Can not compare the trees 
+Budget 35: Tree CLG is better than Tree CPOR
+Budget 36: Tree CLG is better than Tree CPOR
+Budget 37: Tree CLG is better than Tree CPOR
+Budget 38: Tree CLG is better than Tree CPOR
+Budget 39: Tree CLG is better than Tree CPOR
+Budget 40: Tree CLG is better than Tree CPOR
+Budget 41: Tree CLG is better than Tree CPOR
+Budget 42: Tree CLG is better than Tree CPOR
+Budget 43: Tree CLG is better than Tree CPOR
+Budget 44: Tree CLG is better than Tree CPOR
+Budget 45: Tree CLG is better than Tree CPOR
+Budget 46: Tree CLG is better than Tree CPOR
+Budget 47: Tree CLG is better than Tree CPOR
+Budget 48: Tree CLG is better than Tree CPOR
+Budget 49: Tree CLG is better than Tree CPOR
+Budget 50: Tree CLG is better than Tree CPOR
+Budget 51: Tree CLG is better than Tree CPOR
+Budget 52: Tree CLG is better than Tree CPOR
+Budget 53: Tree CLG is better than Tree CPOR
+Budget 54: Tree CLG is better than Tree CPOR
+Budget 55: Tree CLG is better than Tree CPOR
+Budget 56: Tree CLG is better than Tree CPOR
+Budget 57: Tree CLG is better than Tree CPOR
+Budget 58: Tree CLG is better than Tree CPOR
+Budget 59: Tree CLG is better than Tree CPOR
+Budget 60: Tree CLG is better than Tree CPOR
+Budget 61: Tree CLG is better than Tree CPOR
+Budget 62: Tree CLG is better than Tree CPOR
+Budget 63: Tree CLG is better than Tree CPOR
+Budget 64: Tree CLG is better than Tree CPOR
+Budget 65: Tree CLG is better than Tree CPOR
+Budget 66: Tree CLG is better than Tree CPOR
+Budget 67: Tree CLG is better than Tree CPOR
+Budget 68: Tree CLG is better than Tree CPOR
+Budget 69: Tree CLG is better than Tree CPOR
+Budget 70: Tree CLG is better than Tree CPOR
+Budget 71: Tree CLG is better than Tree CPOR
+Budget 72: Tree CLG is better than Tree CPOR
+Budget 73: Equal Trees

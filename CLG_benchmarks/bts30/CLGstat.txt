@@ -1,0 +1,62 @@
+2403) dunk_p9_b0_t0
+2404) dunk_p8_b0_t0
+2405) dunk_p7_b0_t0
+2406) dunk_p6_b0_t0
+2407) dunk_p5_b0_t0
+2408) dunk_p4_b0_t0
+2409) dunk_p3_b0_t0
+2410) dunk_p29_b0_t0
+2411) dunk_p28_b0_t0
+2412) dunk_p27_b0_t0
+2413) dunk_p26_b0_t0
+2414) dunk_p25_b0_t0
+2415) dunk_p24_b0_t0
+2416) dunk_p23_b0_t0
+2417) dunk_p22_b0_t0
+2418) dunk_p21_b0_t0
+2419) dunk_p20_b0_t0
+2420) dunk_p2_b0_t0
+2421) dunk_p19_b0_t0
+2422) dunk_p18_b0_t0
+2423) dunk_p17_b0_t0
+2424) dunk_p16_b0_t0
+2425) dunk_p15_b0_t0
+2426) dunk_p14_b0_t0
+2427) dunk_p13_b0_t0
+2428) dunk_p12_b0_t0
+2429) dunk_p11_b0_t0
+2430) dunk_p10_b0_t0
+2431) dunk_p1_b0_t0
+2432) dunk_p0_b0_t0
+
+Goals 
+#30 : 
+#
+Union Goals Budget
+#30 : 
+#
+
+
+
+Goals Fault Tolerance
+#0 : 0 : 
+#
+
+
+
+Goals Fault Tolerance
+##
+
+
+
+Simplicitity
+#nodes: 30
+branch: 0
+originalSize: 111
+compreesedSize: 81
+compreesedRatio: 1.37037037037037#
+
+
+
+Simplicitity
+#

@@ -1,0 +1,47 @@
+618) sense_package_loc_t_package1_bos_po_bos_truck
+	619) load_truck_loc_package1_pgh_truck_pgh_po_pgh
+	620) drive_truck_loc_ap_pgh_truck_pgh_po_pgh_airport_pgh
+	621) unload_truck_ap_package1_pgh_truck_pgh_airport_pgh
+	622) load_airplane_package1_airplane1_pgh_airport
+	623) fly_airplane_airplane1_pgh_airport_bos_airport
+	624) unload_airplane_package1_airplane1_bos_airport
+
+	627) load_truck_loc_package1_bos_truck_bos_po_bos
+	628) drive_truck_loc_ap_bos_truck_bos_po_bos_airport_bos
+	629) unload_truck_ap_package1_bos_truck_bos_airport_bos
+
+Goals 
+#4 :  , (at_ol package1 bos_po) , (not (at_ol package1 pgh_po))
+7 :  , (not (at_ol package1 bos_po)) , (at_ol package1 pgh_po)
+#
+Union Goals Budget
+#4 :  , (at_ol package1 bos_po) , (not (at_ol package1 pgh_po))
+7 :  , (not (at_ol package1 bos_po)) , (at_ol package1 pgh_po)
+7 : 
+#
+
+
+
+Goals Fault Tolerance
+#1 : 0 :  , (at_ol package1 bos_po) , (not (at_ol package1 pgh_po))
+1 : 1 :  , (not (at_ol package1 bos_po)) , (at_ol package1 pgh_po)
+#
+
+
+
+Goals Fault Tolerance
+##
+
+
+
+Simplicitity
+#nodes: 10
+branch: 1
+originalSize: 31
+compreesedSize: 49
+compreesedRatio: 0.63265306122449#
+
+
+
+Simplicitity
+#

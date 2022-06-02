@@ -1,0 +1,63 @@
+0) move_p1-3_p1-2
+1) move_p1-2_p1-1
+2) sense-door_p1-1_p2-1
+branching...
+	4) move_p1-1_p1-2
+	43) sense-door_p1-2_p2-2
+branching...
+		45) move_p1-2_p1-3
+		51) sense-door_p1-3_p2-3
+branching...
+			53) move_p1-3_p1-4
+			59) sense-door_p1-4_p2-4
+branching...
+				61) move_p1-4_p1-5
+				67) move_p1-5_p2-5
+				68) move_p2-5_p3-5
+				69) move_p3-5_p3-4
+				65) move_p3-4_p3-3
+				57) move_p3-3_p3-2
+				49) move_p3-2_p3-1
+				8) sense-door_p3-1_p4-1
+branching...
+					10) move_p3-1_p3-2
+					17) sense-door_p3-2_p4-2
+branching...
+						19) move_p3-2_p3-3
+						24) sense-door_p3-3_p4-3
+branching...
+							26) move_p3-3_p3-4
+							31) sense-door_p3-4_p4-4
+branching...
+								33) move_p3-4_p3-5
+								39) move_p3-5_p4-5
+								40) move_p4-5_p5-5
+								41) move_p5-5_p5-4
+								37) move_p5-4_p5-3
+)goal
+								32) move_p3-4_p4-4
+								36) move_p4-4_p5-4
+)connect to 37
+							25) move_p3-3_p4-3
+							29) move_p4-3_p5-3
+)goal
+						18) move_p3-2_p4-2
+						22) move_p4-2_p5-2
+						15) move_p5-2_p5-3
+)goal
+					9) move_p3-1_p4-1
+					13) move_p4-1_p5-1
+					14) move_p5-1_p5-2
+)connect to 15
+				60) move_p1-4_p2-4
+				64) move_p2-4_p3-4
+)connect to 65
+			52) move_p1-3_p2-3
+			56) move_p2-3_p3-3
+)connect to 57
+		44) move_p1-2_p2-2
+		48) move_p2-2_p3-2
+)connect to 49
+	3) move_p1-1_p2-1
+	7) move_p2-1_p3-1
+)connect to 8

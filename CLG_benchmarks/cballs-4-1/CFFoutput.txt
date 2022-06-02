@@ -1,0 +1,453 @@
+
+ff: parsing domain file
+domain 'COLORBALLS' defined
+ ... done.
+ff: parsing problem file
+problem 'COLORBALLS-4-1' defined
+ ... done.
+
+
+lowest leaf goal distance/initial state f value seen:     47/    47; maxdepth reached:    0
+                                                          18/    47                       1
+                                                          17/    47                       2
+                                                           4/    47                       3
+                                                           3/    47                       4
+                                                           2/    47                       5
+                                                           1/    47                       6
+                                                           1/    47                       7
+                                                           1/    47                       8
+                                                           1/    47                       9
+                                                           1/    47                      10
+                                                           1/    47                      11
+                                                           1/    47                      12
+                                                           1/    47                      13
+                                                           1/    47                      14
+                                                           1/    47                      15
+                                                           1/    47                      16
+                                                           1/    47                      17
+                                                           1/    47                      18
+                                                           1/    47                      19
+                                                           1/    47                      20
+                                                           1/    47                      21
+                                                           1/    47                      22
+                                                           1/    47                      23
+                                                           1/    47                      24
+                                                           1/    47                      25
+                                                           1/    47                      26
+                                                           1/    47                      27
+                                                           1/    47                      28
+                                                           1/    47                      29
+                                                           1/    47                      30
+                                                           1/    47                      31
+                                                           1/    47                      32
+                                                           1/    47                      33
+                                                           1/    47                      34
+                                                           1/    47                      35
+                                                           1/    47                      36
+                                                           1/    47                      37
+                                                           1/    47                      38
+                                                           1/    47                      39
+                                                           1/    47                      40
+                                                           1/    47                      41
+                                                           1/    47                      42
+                                                           1/    47                      43
+                                                           1/    47                      44
+                                                           1/    47                      45
+                                                           1/    47                      46
+                                                           1/    47                      47
+                                                           1/    47                      48
+                                                           1/    47                      49
+                                                           1/    47                      50
+                                                           1/    47                      51
+                                                           1/    47                      52
+                                                           1/    47                      53
+                                                           1/    47                      54
+                                                           1/    47                      55
+                                                           1/    47                      56
+                                                           1/    47                      57
+                                                           1/    47                      58
+                                                           1/    47                      59
+                                                           1/    47                      60
+                                                           1/    47                      61
+                                                           1/    47                      62
+
+ff: found plan as follows
+-------------------------------------------------
+  0||0 --- OBSERVE-BALL P2-2 O1 --- TRUESON: 1||0 --- FALSESON: 1||1
+-------------------------------------------------
+  1||0 --- PICKUP O1 P2-2 --- SON: 2||0
+  1||1 --- MOVE P2-2 P2-3 --- SON: 2||1
+-------------------------------------------------
+  2||0 --- OBSERVE-COLOR GREEN O1 --- TRUESON: 3||0 --- FALSESON: 3||1
+  2||1 --- OBSERVE-BALL P2-3 O1 --- TRUESON: 3||2 --- FALSESON: 3||3
+-------------------------------------------------
+  3||0 --- MOVE P2-2 P2-1 --- SON: 4||0
+  3||1 --- OBSERVE-COLOR PURPLE O1 --- TRUESON: 4||1 --- FALSESON: 4||2
+  3||2 --- PICKUP O1 P2-3 --- SON: 4||3
+  3||3 --- MOVE P2-3 P3-3 --- SON: 4||4
+-------------------------------------------------
+  4||0 --- MOVE P2-1 P3-1 --- SON: 5||0
+  4||1 --- MOVE P2-2 P2-3 --- SON: 5||1
+  4||2 --- OBSERVE-COLOR BLUE O1 --- TRUESON: 5||2 --- FALSESON: 5||3
+  4||3 --- OBSERVE-COLOR GREEN O1 --- TRUESON: 5||4 --- FALSESON: 5||5
+  4||4 --- OBSERVE-BALL P3-3 O1 --- TRUESON: 5||6 --- FALSESON: 5||7
+-------------------------------------------------
+  5||0 --- MOVE P3-1 P4-1 --- SON: 6||0
+  5||1 --- MOVE P2-3 P3-3 --- SON: 6||1
+  5||2 --- MOVE P2-2 P2-3 --- SON: 6||2
+  5||3 --- MOVE P2-2 P2-1 --- SON: 6||3
+  5||4 --- MOVE P2-3 P3-3 --- SON: 6||4
+  5||5 --- OBSERVE-COLOR RED O1 --- TRUESON: 6||5 --- FALSESON: 6||6
+  5||6 --- PICKUP O1 P3-3 --- SON: 6||7
+  5||7 --- MOVE P3-3 P4-3 --- SON: 6||8
+-------------------------------------------------
+  6||0 --- TRASH O1 GREEN T3 P4-1 --- SON: 7||-1
+  6||1 --- MOVE P3-3 P4-3 --- SON: 7||0
+  6||2 --- MOVE P2-3 P1-3 --- SON: 7||1
+  6||3 --- MOVE P2-1 P1-1 --- SON: 7||2
+  6||4 --- MOVE P3-3 P4-3 --- SON: 7||3
+  6||5 --- MOVE P2-3 P1-3 --- SON: 7||4
+  6||6 --- OBSERVE-COLOR PURPLE O1 --- TRUESON: 7||5 --- FALSESON: 7||6
+  6||7 --- OBSERVE-COLOR BLUE O1 --- TRUESON: 7||7 --- FALSESON: 7||8
+  6||8 --- OBSERVE-BALL P4-3 O1 --- TRUESON: 7||9 --- FALSESON: 7||10
+-------------------------------------------------
+  7||0 --- MOVE P4-3 P4-4 --- SON: 8||0
+  7||1 --- MOVE P1-3 P1-4 --- SON: 8||1
+  7||2 --- TRASH O1 RED T1 P1-1 --- SON: 8||-1
+  7||3 --- MOVE P4-3 P4-2 --- SON: 8||2
+  7||4 --- MOVE P1-3 P1-2 --- SON: 8||3
+  7||5 --- MOVE P2-3 P3-3 --- SON: 8||4
+  7||6 --- MOVE P2-3 P1-3 --- SON: 8||5
+  7||7 --- MOVE P3-3 P2-3 --- SON: 8||6
+  7||8 --- OBSERVE-COLOR PURPLE O1 --- TRUESON: 8||7 --- FALSESON: 8||8
+  7||9 --- PICKUP O1 P4-3 --- SON: 8||9
+  7||10 --- MOVE P4-3 P3-3 --- SON: 8||10
+-------------------------------------------------
+  8||0 --- TRASH O1 PURPLE T4 P4-4 --- SON: 9||-1
+  8||1 --- TRASH O1 BLUE T2 P1-4 --- SON: 9||-1
+  8||2 --- MOVE P4-2 P4-1 --- SON: 9||0
+  8||3 --- MOVE P1-2 P1-1 --- SON: 9||1
+  8||4 --- MOVE P3-3 P4-3 --- SON: 9||2
+  8||5 --- MOVE P1-3 P1-4 --- SON: 9||3
+  8||6 --- MOVE P2-3 P1-3 --- SON: 9||4
+  8||7 --- MOVE P3-3 P4-3 --- SON: 9||5
+  8||8 --- OBSERVE-COLOR GREEN O1 --- TRUESON: 9||6 --- FALSESON: 9||7
+  8||9 --- OBSERVE-COLOR BLUE O1 --- TRUESON: 9||8 --- FALSESON: 9||9
+  8||10 --- MOVE P3-3 P4-3 --- SON: 9||10
+-------------------------------------------------
+  9||0 --- TRASH O1 GREEN T3 P4-1 --- SON: 10||-1
+  9||1 --- TRASH O1 RED T1 P1-1 --- SON: 10||-1
+  9||2 --- MOVE P4-3 P4-4 --- SON: 10||0
+  9||3 --- TRASH O1 BLUE T2 P1-4 --- SON: 10||-1
+  9||4 --- MOVE P1-3 P1-4 --- SON: 10||1
+  9||5 --- MOVE P4-3 P4-4 --- SON: 10||2
+  9||6 --- MOVE P3-3 P4-3 --- SON: 10||3
+  9||7 --- MOVE P3-3 P2-3 --- SON: 10||4
+  9||8 --- MOVE P4-3 P3-3 --- SON: 10||5
+  9||9 --- OBSERVE-COLOR RED O1 --- TRUESON: 10||6 --- FALSESON: 10||7
+  9||10 --- MOVE P4-3 P4-4 --- SON: 10||8
+-------------------------------------------------
+ 10||0 --- TRASH O1 PURPLE T4 P4-4 --- SON: 11||-1
+ 10||1 --- TRASH O1 BLUE T2 P1-4 --- SON: 11||-1
+ 10||2 --- TRASH O1 PURPLE T4 P4-4 --- SON: 11||-1
+ 10||3 --- MOVE P4-3 P4-2 --- SON: 11||0
+ 10||4 --- MOVE P2-3 P1-3 --- SON: 11||1
+ 10||5 --- MOVE P3-3 P2-3 --- SON: 11||2
+ 10||6 --- MOVE P4-3 P3-3 --- SON: 11||3
+ 10||7 --- OBSERVE-COLOR GREEN O1 --- TRUESON: 11||4 --- FALSESON: 11||5
+ 10||8 --- MOVE P4-4 P3-4 --- SON: 11||6
+-------------------------------------------------
+ 11||0 --- MOVE P4-2 P4-1 --- SON: 12||0
+ 11||1 --- MOVE P1-3 P1-2 --- SON: 12||1
+ 11||2 --- MOVE P2-3 P1-3 --- SON: 12||2
+ 11||3 --- MOVE P3-3 P2-3 --- SON: 12||3
+ 11||4 --- MOVE P4-3 P4-2 --- SON: 12||4
+ 11||5 --- MOVE P4-3 P4-4 --- SON: 12||5
+ 11||6 --- OBSERVE-BALL P3-4 O1 --- TRUESON: 12||6 --- FALSESON: 12||7
+-------------------------------------------------
+ 12||0 --- TRASH O1 GREEN T3 P4-1 --- SON: 13||-1
+ 12||1 --- MOVE P1-2 P1-1 --- SON: 13||0
+ 12||2 --- MOVE P1-3 P1-4 --- SON: 13||1
+ 12||3 --- MOVE P2-3 P1-3 --- SON: 13||2
+ 12||4 --- MOVE P4-2 P4-1 --- SON: 13||3
+ 12||5 --- TRASH O1 PURPLE T4 P4-4 --- SON: 13||-1
+ 12||6 --- PICKUP O1 P3-4 --- SON: 13||4
+ 12||7 --- MOVE P3-4 P4-4 --- SON: 13||5
+-------------------------------------------------
+ 13||0 --- TRASH O1 RED T1 P1-1 --- SON: 14||-1
+ 13||1 --- TRASH O1 BLUE T2 P1-4 --- SON: 14||-1
+ 13||2 --- MOVE P1-3 P1-2 --- SON: 14||0
+ 13||3 --- TRASH O1 GREEN T3 P4-1 --- SON: 14||-1
+ 13||4 --- OBSERVE-COLOR BLUE O1 --- TRUESON: 14||1 --- FALSESON: 14||2
+ 13||5 --- MOVE P4-4 P3-4 --- SON: 14||3
+-------------------------------------------------
+ 14||0 --- MOVE P1-2 P1-1 --- SON: 15||0
+ 14||1 --- MOVE P3-4 P2-4 --- SON: 15||1
+ 14||2 --- OBSERVE-COLOR RED O1 --- TRUESON: 15||2 --- FALSESON: 15||3
+ 14||3 --- MOVE P3-4 P3-3 --- SON: 15||4
+-------------------------------------------------
+ 15||0 --- TRASH O1 RED T1 P1-1 --- SON: 16||-1
+ 15||1 --- MOVE P2-4 P1-4 --- SON: 16||0
+ 15||2 --- MOVE P3-4 P2-4 --- SON: 16||1
+ 15||3 --- OBSERVE-COLOR GREEN O1 --- TRUESON: 16||2 --- FALSESON: 16||3
+ 15||4 --- MOVE P3-3 P4-3 --- SON: 16||4
+-------------------------------------------------
+ 16||0 --- TRASH O1 BLUE T2 P1-4 --- SON: 17||-1
+ 16||1 --- MOVE P2-4 P1-4 --- SON: 17||0
+ 16||2 --- MOVE P3-4 P4-4 --- SON: 17||1
+ 16||3 --- MOVE P3-4 P4-4 --- SON: 17||2
+ 16||4 --- MOVE P4-3 P4-2 --- SON: 17||3
+-------------------------------------------------
+ 17||0 --- MOVE P1-4 P1-3 --- SON: 18||0
+ 17||1 --- MOVE P4-4 P4-3 --- SON: 18||1
+ 17||2 --- TRASH O1 PURPLE T4 P4-4 --- SON: 18||-1
+ 17||3 --- OBSERVE-BALL P4-2 O1 --- TRUESON: 18||2 --- FALSESON: 18||3
+-------------------------------------------------
+ 18||0 --- MOVE P1-3 P1-2 --- SON: 19||0
+ 18||1 --- MOVE P4-3 P4-2 --- SON: 19||1
+ 18||2 --- PICKUP O1 P4-2 --- SON: 19||2
+ 18||3 --- MOVE P4-2 P3-2 --- SON: 19||3
+-------------------------------------------------
+ 19||0 --- MOVE P1-2 P1-1 --- SON: 20||0
+ 19||1 --- MOVE P4-2 P4-1 --- SON: 20||1
+ 19||2 --- OBSERVE-COLOR BLUE O1 --- TRUESON: 20||2 --- FALSESON: 20||3
+ 19||3 --- OBSERVE-BALL P3-2 O1 --- TRUESON: 20||4 --- FALSESON: 20||5
+-------------------------------------------------
+ 20||0 --- TRASH O1 RED T1 P1-1 --- SON: 21||-1
+ 20||1 --- TRASH O1 GREEN T3 P4-1 --- SON: 21||-1
+ 20||2 --- MOVE P4-2 P4-3 --- SON: 21||0
+ 20||3 --- OBSERVE-COLOR RED O1 --- TRUESON: 21||1 --- FALSESON: 21||2
+ 20||4 --- PICKUP O1 P3-2 --- SON: 21||3
+ 20||5 --- MOVE P3-2 P2-2 --- SON: 21||4
+-------------------------------------------------
+ 21||0 --- MOVE P4-3 P3-3 --- SON: 22||0
+ 21||1 --- MOVE P4-2 P4-1 --- SON: 22||1
+ 21||2 --- OBSERVE-COLOR GREEN O1 --- TRUESON: 22||2 --- FALSESON: 22||3
+ 21||3 --- OBSERVE-COLOR BLUE O1 --- TRUESON: 22||4 --- FALSESON: 22||5
+ 21||4 --- MOVE P2-2 P1-2 --- SON: 22||6
+-------------------------------------------------
+ 22||0 --- MOVE P3-3 P2-3 --- SON: 23||0
+ 22||1 --- MOVE P4-1 P3-1 --- SON: 23||1
+ 22||2 --- MOVE P4-2 P4-1 --- SON: 23||2
+ 22||3 --- MOVE P4-2 P4-3 --- SON: 23||3
+ 22||4 --- MOVE P3-2 P3-3 --- SON: 23||4
+ 22||5 --- OBSERVE-COLOR PURPLE O1 --- TRUESON: 23||5 --- FALSESON: 23||6
+ 22||6 --- OBSERVE-BALL P1-2 O1 --- TRUESON: 23||7 --- FALSESON: 23||8
+-------------------------------------------------
+ 23||0 --- MOVE P2-3 P1-3 --- SON: 24||0
+ 23||1 --- MOVE P3-1 P2-1 --- SON: 24||1
+ 23||2 --- TRASH O1 GREEN T3 P4-1 --- SON: 24||-1
+ 23||3 --- MOVE P4-3 P4-4 --- SON: 24||2
+ 23||4 --- MOVE P3-3 P2-3 --- SON: 24||3
+ 23||5 --- MOVE P3-2 P3-3 --- SON: 24||4
+ 23||6 --- OBSERVE-COLOR GREEN O1 --- TRUESON: 24||5 --- FALSESON: 24||6
+ 23||7 --- PICKUP O1 P1-2 --- SON: 24||7
+ 23||8 --- MOVE P1-2 P1-3 --- SON: 24||8
+-------------------------------------------------
+ 24||0 --- MOVE P1-3 P1-4 --- SON: 25||0
+ 24||1 --- MOVE P2-1 P1-1 --- SON: 25||1
+ 24||2 --- TRASH O1 PURPLE T4 P4-4 --- SON: 25||-1
+ 24||3 --- MOVE P2-3 P1-3 --- SON: 25||2
+ 24||4 --- MOVE P3-3 P4-3 --- SON: 25||3
+ 24||5 --- MOVE P3-2 P3-1 --- SON: 25||4
+ 24||6 --- MOVE P3-2 P3-1 --- SON: 25||5
+ 24||7 --- OBSERVE-COLOR GREEN O1 --- TRUESON: 25||6 --- FALSESON: 25||7
+ 24||8 --- OBSERVE-BALL P1-3 O1 --- TRUESON: 25||8 --- FALSESON: 25||9
+-------------------------------------------------
+ 25||0 --- TRASH O1 BLUE T2 P1-4 --- SON: 26||-1
+ 25||1 --- TRASH O1 RED T1 P1-1 --- SON: 26||-1
+ 25||2 --- MOVE P1-3 P1-4 --- SON: 26||0
+ 25||3 --- MOVE P4-3 P4-4 --- SON: 26||1
+ 25||4 --- MOVE P3-1 P4-1 --- SON: 26||2
+ 25||5 --- MOVE P3-1 P2-1 --- SON: 26||3
+ 25||6 --- MOVE P1-2 P2-2 --- SON: 26||4
+ 25||7 --- OBSERVE-COLOR PURPLE O1 --- TRUESON: 26||5 --- FALSESON: 26||6
+ 25||8 --- PICKUP O1 P1-3 --- SON: 26||7
+ 25||9 --- MOVE P1-3 P2-3 --- SON: 26||8
+-------------------------------------------------
+ 26||0 --- TRASH O1 BLUE T2 P1-4 --- SON: 27||-1
+ 26||1 --- TRASH O1 PURPLE T4 P4-4 --- SON: 27||-1
+ 26||2 --- TRASH O1 GREEN T3 P4-1 --- SON: 27||-1
+ 26||3 --- MOVE P2-1 P1-1 --- SON: 27||0
+ 26||4 --- MOVE P2-2 P2-1 --- SON: 27||1
+ 26||5 --- MOVE P1-2 P2-2 --- SON: 27||2
+ 26||6 --- OBSERVE-COLOR BLUE O1 --- TRUESON: 27||3 --- FALSESON: 27||4
+ 26||7 --- OBSERVE-COLOR GREEN O1 --- TRUESON: 27||5 --- FALSESON: 27||6
+ 26||8 --- MOVE P2-3 P3-3 --- SON: 27||7
+-------------------------------------------------
+ 27||0 --- TRASH O1 RED T1 P1-1 --- SON: 28||-1
+ 27||1 --- MOVE P2-1 P3-1 --- SON: 28||0
+ 27||2 --- MOVE P2-2 P2-3 --- SON: 28||1
+ 27||3 --- MOVE P1-2 P1-3 --- SON: 28||2
+ 27||4 --- MOVE P1-2 P1-1 --- SON: 28||3
+ 27||5 --- MOVE P1-3 P2-3 --- SON: 28||4
+ 27||6 --- OBSERVE-COLOR PURPLE O1 --- TRUESON: 28||5 --- FALSESON: 28||6
+ 27||7 --- MOVE P3-3 P4-3 --- SON: 28||7
+-------------------------------------------------
+ 28||0 --- MOVE P3-1 P4-1 --- SON: 29||0
+ 28||1 --- MOVE P2-3 P3-3 --- SON: 29||1
+ 28||2 --- MOVE P1-3 P1-4 --- SON: 29||2
+ 28||3 --- TRASH O1 RED T1 P1-1 --- SON: 29||-1
+ 28||4 --- MOVE P2-3 P3-3 --- SON: 29||3
+ 28||5 --- MOVE P1-3 P2-3 --- SON: 29||4
+ 28||6 --- OBSERVE-COLOR BLUE O1 --- TRUESON: 29||5 --- FALSESON: 29||6
+ 28||7 --- MOVE P4-3 P4-4 --- SON: 29||7
+-------------------------------------------------
+ 29||0 --- TRASH O1 GREEN T3 P4-1 --- SON: 30||-1
+ 29||1 --- MOVE P3-3 P4-3 --- SON: 30||0
+ 29||2 --- TRASH O1 BLUE T2 P1-4 --- SON: 30||-1
+ 29||3 --- MOVE P3-3 P4-3 --- SON: 30||1
+ 29||4 --- MOVE P2-3 P3-3 --- SON: 30||2
+ 29||5 --- MOVE P1-3 P1-4 --- SON: 30||3
+ 29||6 --- MOVE P1-3 P1-2 --- SON: 30||4
+ 29||7 --- MOVE P4-4 P3-4 --- SON: 30||5
+-------------------------------------------------
+ 30||0 --- MOVE P4-3 P4-4 --- SON: 31||0
+ 30||1 --- MOVE P4-3 P4-2 --- SON: 31||1
+ 30||2 --- MOVE P3-3 P4-3 --- SON: 31||2
+ 30||3 --- TRASH O1 BLUE T2 P1-4 --- SON: 31||-1
+ 30||4 --- MOVE P1-2 P1-1 --- SON: 31||3
+ 30||5 --- MOVE P3-4 P2-4 --- SON: 31||4
+-------------------------------------------------
+ 31||0 --- TRASH O1 PURPLE T4 P4-4 --- SON: 32||-1
+ 31||1 --- MOVE P4-2 P4-1 --- SON: 32||0
+ 31||2 --- MOVE P4-3 P4-4 --- SON: 32||1
+ 31||3 --- TRASH O1 RED T1 P1-1 --- SON: 32||-1
+ 31||4 --- OBSERVE-BALL P2-4 O1 --- TRUESON: 32||2 --- FALSESON: 32||3
+-------------------------------------------------
+ 32||0 --- TRASH O1 GREEN T3 P4-1 --- SON: 33||-1
+ 32||1 --- TRASH O1 PURPLE T4 P4-4 --- SON: 33||-1
+ 32||2 --- PICKUP O1 P2-4 --- SON: 33||0
+ 32||3 --- MOVE P2-4 P3-4 --- SON: 33||1
+-------------------------------------------------
+ 33||0 --- OBSERVE-COLOR GREEN O1 --- TRUESON: 34||0 --- FALSESON: 34||1
+ 33||1 --- MOVE P3-4 P4-4 --- SON: 34||2
+-------------------------------------------------
+ 34||0 --- MOVE P2-4 P3-4 --- SON: 35||0
+ 34||1 --- OBSERVE-COLOR RED O1 --- TRUESON: 35||1 --- FALSESON: 35||2
+ 34||2 --- MOVE P4-4 P4-3 --- SON: 35||3
+-------------------------------------------------
+ 35||0 --- MOVE P3-4 P4-4 --- SON: 36||0
+ 35||1 --- MOVE P2-4 P1-4 --- SON: 36||1
+ 35||2 --- OBSERVE-COLOR PURPLE O1 --- TRUESON: 36||2 --- FALSESON: 36||3
+ 35||3 --- MOVE P4-3 P3-3 --- SON: 36||4
+-------------------------------------------------
+ 36||0 --- MOVE P4-4 P4-3 --- SON: 37||0
+ 36||1 --- MOVE P1-4 P1-3 --- SON: 37||1
+ 36||2 --- MOVE P2-4 P3-4 --- SON: 37||2
+ 36||3 --- MOVE P2-4 P1-4 --- SON: 37||3
+ 36||4 --- MOVE P3-3 P2-3 --- SON: 37||4
+-------------------------------------------------
+ 37||0 --- MOVE P4-3 P4-2 --- SON: 38||0
+ 37||1 --- MOVE P1-3 P1-2 --- SON: 38||1
+ 37||2 --- MOVE P3-4 P4-4 --- SON: 38||2
+ 37||3 --- TRASH O1 BLUE T2 P1-4 --- SON: 38||-1
+ 37||4 --- MOVE P2-3 P1-3 --- SON: 38||3
+-------------------------------------------------
+ 38||0 --- MOVE P4-2 P4-1 --- SON: 39||0
+ 38||1 --- MOVE P1-2 P1-1 --- SON: 39||1
+ 38||2 --- TRASH O1 PURPLE T4 P4-4 --- SON: 39||-1
+ 38||3 --- MOVE P1-3 P1-2 --- SON: 39||2
+-------------------------------------------------
+ 39||0 --- TRASH O1 GREEN T3 P4-1 --- SON: 40||-1
+ 39||1 --- TRASH O1 RED T1 P1-1 --- SON: 40||-1
+ 39||2 --- MOVE P1-2 P2-2 --- SON: 40||0
+-------------------------------------------------
+ 40||0 --- MOVE P2-2 P2-1 --- SON: 41||0
+-------------------------------------------------
+ 41||0 --- OBSERVE-BALL P2-1 O1 --- TRUESON: 42||0 --- FALSESON: 42||1
+-------------------------------------------------
+ 42||0 --- PICKUP O1 P2-1 --- SON: 43||0
+ 42||1 --- MOVE P2-1 P2-2 --- SON: 43||1
+-------------------------------------------------
+ 43||0 --- OBSERVE-COLOR GREEN O1 --- TRUESON: 44||0 --- FALSESON: 44||1
+ 43||1 --- MOVE P2-2 P2-3 --- SON: 44||2
+-------------------------------------------------
+ 44||0 --- MOVE P2-1 P3-1 --- SON: 45||0
+ 44||1 --- OBSERVE-COLOR PURPLE O1 --- TRUESON: 45||1 --- FALSESON: 45||2
+ 44||2 --- MOVE P2-3 P3-3 --- SON: 45||3
+-------------------------------------------------
+ 45||0 --- MOVE P3-1 P4-1 --- SON: 46||0
+ 45||1 --- MOVE P2-1 P2-2 --- SON: 46||1
+ 45||2 --- OBSERVE-COLOR BLUE O1 --- TRUESON: 46||2 --- FALSESON: 46||3
+ 45||3 --- MOVE P3-3 P4-3 --- SON: 46||4
+-------------------------------------------------
+ 46||0 --- TRASH O1 GREEN T3 P4-1 --- SON: 47||-1
+ 46||1 --- MOVE P2-2 P2-3 --- SON: 47||0
+ 46||2 --- MOVE P2-1 P2-2 --- SON: 47||1
+ 46||3 --- MOVE P2-1 P1-1 --- SON: 47||2
+ 46||4 --- MOVE P4-3 P4-4 --- SON: 47||3
+-------------------------------------------------
+ 47||0 --- MOVE P2-3 P3-3 --- SON: 48||0
+ 47||1 --- MOVE P2-2 P2-3 --- SON: 48||1
+ 47||2 --- TRASH O1 RED T1 P1-1 --- SON: 48||-1
+ 47||3 --- MOVE P4-4 P3-4 --- SON: 48||2
+-------------------------------------------------
+ 48||0 --- MOVE P3-3 P4-3 --- SON: 49||0
+ 48||1 --- MOVE P2-3 P1-3 --- SON: 49||1
+ 48||2 --- MOVE P3-4 P2-4 --- SON: 49||2
+-------------------------------------------------
+ 49||0 --- MOVE P4-3 P4-4 --- SON: 50||0
+ 49||1 --- MOVE P1-3 P1-4 --- SON: 50||1
+ 49||2 --- MOVE P2-4 P1-4 --- SON: 50||2
+-------------------------------------------------
+ 50||0 --- TRASH O1 PURPLE T4 P4-4 --- SON: 51||-1
+ 50||1 --- TRASH O1 BLUE T2 P1-4 --- SON: 51||-1
+ 50||2 --- MOVE P1-4 P1-3 --- SON: 51||0
+-------------------------------------------------
+ 51||0 --- MOVE P1-3 P1-2 --- SON: 52||0
+-------------------------------------------------
+ 52||0 --- MOVE P1-2 P1-1 --- SON: 53||0
+-------------------------------------------------
+ 53||0 --- MOVE P1-1 P2-1 --- SON: 54||0
+-------------------------------------------------
+ 54||0 --- MOVE P2-1 P3-1 --- SON: 55||0
+-------------------------------------------------
+ 55||0 --- PICKUP O1 P3-1 --- SON: 56||0
+-------------------------------------------------
+ 56||0 --- OBSERVE-COLOR BLUE O1 --- TRUESON: 57||0 --- FALSESON: 57||1
+-------------------------------------------------
+ 57||0 --- MOVE P3-1 P3-2 --- SON: 58||0
+ 57||1 --- OBSERVE-COLOR PURPLE O1 --- TRUESON: 58||1 --- FALSESON: 58||2
+-------------------------------------------------
+ 58||0 --- MOVE P3-2 P3-3 --- SON: 59||0
+ 58||1 --- MOVE P3-1 P3-2 --- SON: 59||1
+ 58||2 --- OBSERVE-COLOR GREEN O1 --- TRUESON: 59||2 --- FALSESON: 59||3
+-------------------------------------------------
+ 59||0 --- MOVE P3-3 P2-3 --- SON: 60||0
+ 59||1 --- MOVE P3-2 P3-3 --- SON: 60||1
+ 59||2 --- MOVE P3-1 P4-1 --- SON: 60||2
+ 59||3 --- MOVE P3-1 P2-1 --- SON: 60||3
+-------------------------------------------------
+ 60||0 --- MOVE P2-3 P1-3 --- SON: 61||0
+ 60||1 --- MOVE P3-3 P4-3 --- SON: 61||1
+ 60||2 --- TRASH O1 GREEN T3 P4-1 --- SON: 61||-1
+ 60||3 --- MOVE P2-1 P1-1 --- SON: 61||2
+-------------------------------------------------
+ 61||0 --- MOVE P1-3 P1-4 --- SON: 62||0
+ 61||1 --- MOVE P4-3 P4-4 --- SON: 62||1
+ 61||2 --- TRASH O1 RED T1 P1-1 --- SON: 62||-1
+-------------------------------------------------
+ 62||0 --- TRASH O1 BLUE T2 P1-4 --- SON: 63||-1
+ 62||1 --- TRASH O1 PURPLE T4 P4-4 --- SON: 63||-1
+-------------------------------------------------
+
+tree layers: 63
+total nr. actions: 295
+
+statistics:    0.00 seconds instantiating 100 easy, 0 hard action templates
+               0.00 seconds reachability analysis, yielding 1284 facts and 96 actions
+               0.00 seconds creating final representation with 50 relevant facts (34 max U, 18 CNF max U)
+               final representation has 32 unknown facts and 27 observation actions    
+               0.00 seconds building connectivity graph
+               0.17 seconds (   0.14 pure) evaluating 1022 states
+               0.03 seconds in DP for 26526 RPG ini state implication checks
+               0.00 seconds in DP for 0 RPlan extract ini state implication checks (0 lits removed)
+               0.03 seconds generating,    0.00 seconds encoding 1213 state transition base CNFs
+               0.01 seconds in DP solving 1364 state transition CNFs
+               0.00 seconds checking for self-contradictions, including 0 DP calls
+               0.00 seconds checking for stagnating states (144 hits), including 626 DP calls
+              28516 total DP calls, 599409 total UP calls,    0.00 sec membership
+              0.00 seconds for remaining searching duties
+               0.21 seconds total time (+    0.02 secs for CNF memory allocation)
+

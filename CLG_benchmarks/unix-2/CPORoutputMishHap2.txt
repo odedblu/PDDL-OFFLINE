@@ -1,0 +1,79 @@
+0) cd_down_root_sub1
+1) cd_down_sub1_sub12
+2) ls_sub12_my_file
+branching...
+	5) cd_down_sub12_sub122
+	16) ls_sub122_my_file
+branching...
+		19) cd_up_sub122_sub12
+		30) cd_down_sub12_sub121
+		31) ls_sub121_my_file
+branching...
+			34) cd_up_sub121_sub12
+			38) cd_up_sub12_sub1
+			39) cd_down_sub1_sub11
+			40) ls_sub11_my_file
+branching...
+				43) cd_down_sub11_sub111
+				47) ls_sub111_my_file
+branching...
+					50) cd_up_sub111_sub11
+					54) cd_down_sub11_sub112
+					55) ls_sub112_my_file
+branching...
+						58) cd_up_sub112_sub11
+						62) cd_up_sub11_sub1
+						63) cd_up_sub1_root
+						64) cd_down_root_sub2
+						65) cd_down_sub2_sub21
+						66) ls_sub21_my_file
+branching...
+							69) cd_down_sub21_sub211
+							73) ls_sub211_my_file
+branching...
+								76) cd_up_sub211_sub21
+								80) cd_down_sub21_sub212
+								81) ls_sub212_my_file
+branching...
+									84) cd_up_sub212_sub21
+									88) cd_up_sub21_sub2
+									89) cd_down_sub2_sub22
+									90) ls_sub22_my_file
+branching...
+										93) cd_down_sub22_sub221
+										97) ls_sub221_my_file
+branching...
+											100) cd_up_sub221_sub22
+											104) cd_down_sub22_sub222
+											105) mv_my_file_sub222_root
+)goal
+											99) mv_my_file_sub221_root
+)goal
+										92) mv_my_file_sub22_root
+)goal
+									83) mv_my_file_sub212_root
+)goal
+								75) mv_my_file_sub211_root
+)goal
+							68) mv_my_file_sub21_root
+)goal
+						57) mv_my_file_sub112_root
+)goal
+					49) mv_my_file_sub111_root
+)goal
+				42) mv_my_file_sub11_root
+)goal
+			33) mv_my_file_sub121_root
+)goal
+		18) cd_up_sub122_sub12
+		22) cd_down_sub12_sub121
+		23) cd_up_sub121_sub12
+		27) cd_down_sub12_sub122
+		28) mv_my_file_sub122_root
+)goal
+	4) cd_up_sub12_sub1
+	8) cd_down_sub1_sub11
+	9) cd_up_sub11_sub1
+	13) cd_down_sub1_sub12
+	14) mv_my_file_sub12_root
+)goal

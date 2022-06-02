@@ -1,0 +1,11 @@
+Budget 4: Equal Trees
+Budget 5: Equal Trees
+Budget 6: Tree CPORBestCase is better than Tree CFF
+Budget 7: Equal Trees
+Budget 8: Tree CPORBestCase is better than Tree CFF
+Budget 9: Equal Trees
+Budget 10: Equal Trees
+Budget 11: Equal Trees
+Budget 12: Tree CPORBestCase is better than Tree CFF
+Budget 13: Tree CPORBestCase is better than Tree CFF
+Budget 14: Equal Trees

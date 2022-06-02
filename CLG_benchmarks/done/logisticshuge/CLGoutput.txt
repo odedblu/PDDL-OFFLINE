@@ -1,0 +1,2324 @@
+REGISTER (entering): main()
+cf2cs v 2.1 -- A compiler for contingent planning problems into classical models.
+CALL: ./cf2cs -sn -t0 -cond -cod -cmr -csl -ckit -ckinl -cminl -cmit -cdisjk0 -cdisjm0 -mac -cfc -fp benchmarks/logisticshuge/d.pddl benchmarks/logisticshuge/p.pddl
+-sn
+-t0
+-cond
+-cod
+-cmr
+-csl
+-ckit
+-ckinl
+-cminl
+-cmit
+-cdisjk0
+-cdisjm0
+-mac
+-cfc
+-fp
+benchmarks/logisticshuge/d.pddl
+benchmarks/logisticshuge/p.pddl
+Using only initial disjunctions for merge
+Clousuring for obtaining possible tags
+Full cancellation: Translating deletes properly. Maybe complete if '-s0' or '-f' option was used
+Propagating ramifications in effects
+Using action compilation + merge
+Merging only goals and preconditions
+REGISTER (entering): parse()
+predicates size = 1 for name = AT_TL
+predicates size = 2 for name = AT_TA
+predicates size = 3 for name = AT_AA
+predicates size = 4 for name = AT_OL
+predicates size = 5 for name = AT_OA
+predicates size = 6 for name = IN_OT
+predicates size = 7 for name = IN_OA
+predicates size = 8 for name = IN_CITY_L
+predicates size = 9 for name = IN_CITY_A
+predicates size = 10 for name = IN_CITY_T
+Parsed: benchmarks/logisticshuge/d.pddl
+Parsed: benchmarks/logisticshuge/p.pddl
+REGISTER: parse() took 0.001112 secs
+REGISTER (entering): initialize()
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+REGISTER (entering): computeReachableAtoms()
+schema 0 de 12
+schema 1 de 12
+schema 2 de 12
+schema 3 de 12
+schema 4 de 12
+schema 5 de 12
+schema 6 de 12
+schema 7 de 12
+schema 8 de 12
+schema 9 de 12
+schema 10 de 12
+schema 11 de 12
+schema 0 de 12
+schema 1 de 12
+schema 2 de 12
+schema 3 de 12
+schema 4 de 12
+schema 5 de 12
+schema 6 de 12
+schema 7 de 12
+schema 8 de 12
+schema 9 de 12
+schema 10 de 12
+schema 11 de 12
+schema 0 de 12
+schema 1 de 12
+schema 2 de 12
+schema 3 de 12
+schema 4 de 12
+schema 5 de 12
+schema 6 de 12
+schema 7 de 12
+schema 8 de 12
+schema 9 de 12
+schema 10 de 12
+schema 11 de 12
+REGISTER: computeReachableAtoms() took 0.043202 secs
+GENERAL: number of atoms = 435
+GENERAL: number of reachable atoms = 215
+GENERAL: number of grounded operators = 510
+REGISTER: initialize() took 0.044073 secs
+REGISTER (entering): initInstanceDB()
+Unknown atoms: 25
+Simply unknown atoms: 0
+Known atoms: 221
+True literals (after unit resolution): 190
+Oneof (0): 5
+Oneof (1): 5
+Oneof (2): 5
+Oneof (3): 5
+Oneof (4): 5
+Or (0): 2
+Or (1): 2
+Or (2): 2
+Or (3): 2
+Or (4): 2
+Or (5): 2
+Or (6): 2
+Or (7): 2
+Or (8): 2
+Or (9): 2
+Or (10): 2
+Or (11): 2
+Or (12): 2
+Or (13): 2
+Or (14): 2
+Or (15): 2
+Or (16): 2
+Or (17): 2
+Or (18): 2
+Or (19): 2
+Or (20): 2
+Or (21): 2
+Or (22): 2
+Or (23): 2
+Or (24): 2
+Or (25): 2
+Or (26): 2
+Or (27): 2
+Or (28): 2
+Or (29): 2
+Or (30): 2
+Or (31): 2
+Or (32): 2
+Or (33): 2
+Or (34): 2
+Or (35): 2
+Or (36): 2
+Or (37): 2
+Or (38): 2
+Or (39): 2
+Or (40): 2
+Or (41): 2
+Or (42): 2
+Or (43): 2
+Or (44): 2
+Or (45): 2
+Or (46): 2
+Or (47): 2
+Or (48): 2
+Or (49): 2
+Or (50): 5
+Or (51): 5
+Or (52): 5
+Or (53): 5
+Or (54): 5
+
+---- end uncertainty: 
+Reachable 215
+GENERAL: number of actions = 360
+REGISTER: initInstanceDB() took 0.007629 secs
+Generating PDDL for contingent heuristic
+Objects: A0 C0 C1 C2 C3 C4 L00 L01 L02 L03 L04 L10 L11 L12 L13 L14 L20 L21 L22 L23 L24 L30 L31 L32 L33 L34 L40 L41 L42 L43 L44 P0 P1 P2 P3 P4 T0 T1 T2 T3 T4 
+REGISTER (entering): finishInstanceDB(void)
+Unknown relevant = 25
+Unknown = 25
+Static oneof atoms: 
+REGISTER: finishInstanceDB(void) took 5.80549e-10 secs
+Static atoms (35): FALSE FOO IN_CITY_A_L40_C4 IN_CITY_A_L30_C3 IN_CITY_A_L20_C2 IN_CITY_A_L10_C1 IN_CITY_A_L00_C0 IN_CITY_L_L44_C4 IN_CITY_L_L43_C4 IN_CITY_L_L42_C4 IN_CITY_L_L41_C4 IN_CITY_L_L34_C3 IN_CITY_L_L33_C3 IN_CITY_L_L32_C3 IN_CITY_L_L31_C3 IN_CITY_L_L24_C2 IN_CITY_L_L23_C2 IN_CITY_L_L22_C2 IN_CITY_L_L21_C2 IN_CITY_L_L14_C1 IN_CITY_L_L13_C1 IN_CITY_L_L12_C1 IN_CITY_L_L11_C1 IN_CITY_L_L04_C0 IN_CITY_L_L03_C0 IN_CITY_L_L02_C0 IN_CITY_L_L01_C0 IN_CITY_T_T4_C4 IN_CITY_T_T3_C3 IN_CITY_T_T2_C2 IN_CITY_T_T1_C1 IN_CITY_T_T0_C0 ACTIVE ALL_END CONT_DUMMY 
+REGISTER (entering): calc_tags()
+REGISTER (entering): calc_relevant()
+starting iterations...
+REGISTER: calc_relevant() took 1.22513 secs
+REGISTER (entering): calc_relevant_obs()
+REGISTER: calc_relevant_obs() took 0.00708299 secs
+Accepted disjunction 8, 33, 34, 35, 36, 
+Accepted disjunction 15, 61, 62, 63, 64, 
+Accepted disjunction 21, 85, 86, 87, 88, 
+Accepted disjunction 25, 101, 102, 103, 104, 
+Accepted disjunction 32, 129, 130, 131, 132, 
+STAT Max-width: 1
+Final disjunctions: 1
+8, 33, 34, 35, 36, 
+15, 61, 62, 63, 64, 
+21, 85, 86, 87, 88, 
+25, 101, 102, 103, 104, 
+32, 129, 130, 131, 132, 
+==== End of Final disjunctions: 
+All tags: AT_OA_P4_L40(8) AT_OA_P3_L20(15) AT_OA_P2_L10(21) AT_OA_P1_L20(25) AT_OA_P0_L00(32) AT_OL_P4_L44(33) AT_OL_P4_L43(34) AT_OL_P4_L42(35) AT_OL_P4_L41(36) AT_OL_P3_L24(61) AT_OL_P3_L23(62) AT_OL_P3_L22(63) AT_OL_P3_L21(64) AT_OL_P2_L14(85) AT_OL_P2_L13(86) AT_OL_P2_L12(87) AT_OL_P2_L11(88) AT_OL_P1_L24(101) AT_OL_P1_L23(102) AT_OL_P1_L22(103) AT_OL_P1_L21(104) AT_OL_P0_L04(129) AT_OL_P0_L03(130) AT_OL_P0_L02(131) AT_OL_P0_L01(132) 
+For lit AT_AA_A0_L40(3) relevants tags are: 
+For lit AT_AA_A0_L30(4) relevants tags are: 
+For lit AT_AA_A0_L20(5) relevants tags are: 
+For lit AT_AA_A0_L10(6) relevants tags are: 
+For lit AT_AA_A0_L00(7) relevants tags are: 
+For lit AT_OA_P0_L10(31) relevants tags are: AT_OA_P0_L00(32) AT_OL_P0_L04(129) AT_OL_P0_L03(130) AT_OL_P0_L02(131) AT_OL_P0_L01(132) 
+IMPLIES_WITH_INIT: From lit AT_OA_P0_L00(32) obtaing the following lits:AT_OL_P0_L01(-132) AT_OL_P0_L02(-131) AT_OL_P0_L03(-130) AT_OL_P0_L04(-129) AT_OA_P0_L00(32) 
+IMPLIES_WITH_INIT: From lit AT_OL_P0_L04(129) obtaing the following lits:AT_OL_P0_L01(-132) AT_OL_P0_L02(-131) AT_OL_P0_L03(-130) AT_OA_P0_L00(-32) AT_OL_P0_L04(129) 
+IMPLIES_WITH_INIT: From lit AT_OL_P0_L03(130) obtaing the following lits:AT_OL_P0_L01(-132) AT_OL_P0_L02(-131) AT_OL_P0_L04(-129) AT_OA_P0_L00(-32) AT_OL_P0_L03(130) 
+IMPLIES_WITH_INIT: From lit AT_OL_P0_L02(131) obtaing the following lits:AT_OL_P0_L01(-132) AT_OL_P0_L03(-130) AT_OL_P0_L04(-129) AT_OA_P0_L00(-32) AT_OL_P0_L02(131) 
+IMPLIES_WITH_INIT: From lit AT_OL_P0_L01(132) obtaing the following lits:AT_OL_P0_L02(-131) AT_OL_P0_L03(-130) AT_OL_P0_L04(-129) AT_OA_P0_L00(-32) AT_OL_P0_L01(132) 
+For lit AT_OL_P4_L42(35) relevants tags are: AT_OA_P4_L40(8) AT_OL_P4_L44(33) AT_OL_P4_L43(34) AT_OL_P4_L42(35) AT_OL_P4_L41(36) 
+IMPLIES_WITH_INIT: From lit AT_OA_P4_L40(8) obtaing the following lits:AT_OL_P4_L41(-36) AT_OL_P4_L42(-35) AT_OL_P4_L43(-34) AT_OL_P4_L44(-33) AT_OA_P4_L40(8) 
+IMPLIES_WITH_INIT: From lit AT_OL_P4_L44(33) obtaing the following lits:AT_OL_P4_L41(-36) AT_OL_P4_L42(-35) AT_OL_P4_L43(-34) AT_OA_P4_L40(-8) AT_OL_P4_L44(33) 
+IMPLIES_WITH_INIT: From lit AT_OL_P4_L43(34) obtaing the following lits:AT_OL_P4_L41(-36) AT_OL_P4_L42(-35) AT_OL_P4_L44(-33) AT_OA_P4_L40(-8) AT_OL_P4_L43(34) 
+IMPLIES_WITH_INIT: From lit AT_OL_P4_L42(35) obtaing the following lits:AT_OL_P4_L41(-36) AT_OL_P4_L43(-34) AT_OL_P4_L44(-33) AT_OA_P4_L40(-8) AT_OL_P4_L42(35) 
+IMPLIES_WITH_INIT: From lit AT_OL_P4_L41(36) obtaing the following lits:AT_OL_P4_L42(-35) AT_OL_P4_L43(-34) AT_OL_P4_L44(-33) AT_OA_P4_L40(-8) AT_OL_P4_L41(36) 
+For lit AT_OL_P3_L32(59) relevants tags are: AT_OA_P3_L20(15) AT_OL_P3_L24(61) AT_OL_P3_L23(62) AT_OL_P3_L22(63) AT_OL_P3_L21(64) 
+IMPLIES_WITH_INIT: From lit AT_OA_P3_L20(15) obtaing the following lits:AT_OL_P3_L21(-64) AT_OL_P3_L22(-63) AT_OL_P3_L23(-62) AT_OL_P3_L24(-61) AT_OA_P3_L20(15) 
+IMPLIES_WITH_INIT: From lit AT_OL_P3_L24(61) obtaing the following lits:AT_OL_P3_L21(-64) AT_OL_P3_L22(-63) AT_OL_P3_L23(-62) AT_OA_P3_L20(-15) AT_OL_P3_L24(61) 
+IMPLIES_WITH_INIT: From lit AT_OL_P3_L23(62) obtaing the following lits:AT_OL_P3_L21(-64) AT_OL_P3_L22(-63) AT_OL_P3_L24(-61) AT_OA_P3_L20(-15) AT_OL_P3_L23(62) 
+IMPLIES_WITH_INIT: From lit AT_OL_P3_L22(63) obtaing the following lits:AT_OL_P3_L21(-64) AT_OL_P3_L23(-62) AT_OL_P3_L24(-61) AT_OA_P3_L20(-15) AT_OL_P3_L22(63) 
+IMPLIES_WITH_INIT: From lit AT_OL_P3_L21(64) obtaing the following lits:AT_OL_P3_L22(-63) AT_OL_P3_L23(-62) AT_OL_P3_L24(-61) AT_OA_P3_L20(-15) AT_OL_P3_L21(64) 
+For lit AT_OL_P2_L11(88) relevants tags are: AT_OA_P2_L10(21) AT_OL_P2_L14(85) AT_OL_P2_L13(86) AT_OL_P2_L12(87) AT_OL_P2_L11(88) 
+IMPLIES_WITH_INIT: From lit AT_OA_P2_L10(21) obtaing the following lits:AT_OL_P2_L11(-88) AT_OL_P2_L12(-87) AT_OL_P2_L13(-86) AT_OL_P2_L14(-85) AT_OA_P2_L10(21) 
+IMPLIES_WITH_INIT: From lit AT_OL_P2_L14(85) obtaing the following lits:AT_OL_P2_L11(-88) AT_OL_P2_L12(-87) AT_OL_P2_L13(-86) AT_OA_P2_L10(-21) AT_OL_P2_L14(85) 
+IMPLIES_WITH_INIT: From lit AT_OL_P2_L13(86) obtaing the following lits:AT_OL_P2_L11(-88) AT_OL_P2_L12(-87) AT_OL_P2_L14(-85) AT_OA_P2_L10(-21) AT_OL_P2_L13(86) 
+IMPLIES_WITH_INIT: From lit AT_OL_P2_L12(87) obtaing the following lits:AT_OL_P2_L11(-88) AT_OL_P2_L13(-86) AT_OL_P2_L14(-85) AT_OA_P2_L10(-21) AT_OL_P2_L12(87) 
+IMPLIES_WITH_INIT: From lit AT_OL_P2_L11(88) obtaing the following lits:AT_OL_P2_L12(-87) AT_OL_P2_L13(-86) AT_OL_P2_L14(-85) AT_OA_P2_L10(-21) AT_OL_P2_L11(88) 
+For lit AT_OL_P1_L12(107) relevants tags are: AT_OA_P1_L20(25) AT_OL_P1_L24(101) AT_OL_P1_L23(102) AT_OL_P1_L22(103) AT_OL_P1_L21(104) 
+IMPLIES_WITH_INIT: From lit AT_OA_P1_L20(25) obtaing the following lits:AT_OL_P1_L21(-104) AT_OL_P1_L22(-103) AT_OL_P1_L23(-102) AT_OL_P1_L24(-101) AT_OA_P1_L20(25) 
+IMPLIES_WITH_INIT: From lit AT_OL_P1_L24(101) obtaing the following lits:AT_OL_P1_L21(-104) AT_OL_P1_L22(-103) AT_OL_P1_L23(-102) AT_OA_P1_L20(-25) AT_OL_P1_L24(101) 
+IMPLIES_WITH_INIT: From lit AT_OL_P1_L23(102) obtaing the following lits:AT_OL_P1_L21(-104) AT_OL_P1_L22(-103) AT_OL_P1_L24(-101) AT_OA_P1_L20(-25) AT_OL_P1_L23(102) 
+IMPLIES_WITH_INIT: From lit AT_OL_P1_L22(103) obtaing the following lits:AT_OL_P1_L21(-104) AT_OL_P1_L23(-102) AT_OL_P1_L24(-101) AT_OA_P1_L20(-25) AT_OL_P1_L22(103) 
+IMPLIES_WITH_INIT: From lit AT_OL_P1_L21(104) obtaing the following lits:AT_OL_P1_L22(-103) AT_OL_P1_L23(-102) AT_OL_P1_L24(-101) AT_OA_P1_L20(-25) AT_OL_P1_L21(104) 
+For lit AT_TA_T4_L40(133) relevants tags are: 
+For lit AT_TA_T3_L30(134) relevants tags are: 
+For lit AT_TA_T2_L20(135) relevants tags are: 
+For lit AT_TA_T1_L10(136) relevants tags are: 
+For lit AT_TA_T0_L00(137) relevants tags are: 
+For lit AT_TL_T4_L44(138) relevants tags are: 
+For lit AT_TL_T4_L43(139) relevants tags are: 
+For lit AT_TL_T4_L42(140) relevants tags are: 
+For lit AT_TL_T4_L41(141) relevants tags are: 
+For lit AT_TL_T3_L34(142) relevants tags are: 
+For lit AT_TL_T3_L33(143) relevants tags are: 
+For lit AT_TL_T3_L32(144) relevants tags are: 
+For lit AT_TL_T3_L31(145) relevants tags are: 
+For lit AT_TL_T2_L24(146) relevants tags are: 
+For lit AT_TL_T2_L23(147) relevants tags are: 
+For lit AT_TL_T2_L22(148) relevants tags are: 
+For lit AT_TL_T2_L21(149) relevants tags are: 
+For lit AT_TL_T1_L14(150) relevants tags are: 
+For lit AT_TL_T1_L13(151) relevants tags are: 
+For lit AT_TL_T1_L12(152) relevants tags are: 
+For lit AT_TL_T1_L11(153) relevants tags are: 
+For lit AT_TL_T0_L04(154) relevants tags are: 
+For lit AT_TL_T0_L03(155) relevants tags are: 
+For lit AT_TL_T0_L02(156) relevants tags are: 
+For lit AT_TL_T0_L01(157) relevants tags are: 
+REGISTER: calc_tags() took 1.25215 secs
+REGISTER (entering): make_k_0(m)
+REGISTER: make_k_0(m) took 0.00342401 secs
+REGISTER (entering): make_k_0(k)
+REGISTER: make_k_0(k) took 0.00633796 secs
+GENERAL: number of observations = 125
+Unknown atoms: 8 15 21 25 32 33 34 35 36 61 62 63 64 85 86 87 88 101 102 103 104 129 130 131 132 
+Unknown not in oneof: 
+REGISTER (entering): make_split_t0c()
+1889 = k_AT_OL_P0_L03___AT_OA_P0_L00
+1890 = kn_AT_OL_P0_L03___AT_OA_P0_L00
+1891 = k_IN_OT_P0_T0___AT_OA_P0_L00
+1892 = kn_IN_OT_P0_T0___AT_OA_P0_L00
+1893 = k_AT_OL_P0_L03___AT_OL_P0_L04
+1894 = kn_AT_OL_P0_L03___AT_OL_P0_L04
+1895 = k_IN_OT_P0_T0___AT_OL_P0_L04
+1896 = kn_IN_OT_P0_T0___AT_OL_P0_L04
+1897 = k_AT_OL_P0_L03___AT_OL_P0_L03
+1898 = kn_AT_OL_P0_L03___AT_OL_P0_L03
+1899 = k_IN_OT_P0_T0___AT_OL_P0_L03
+1900 = kn_IN_OT_P0_T0___AT_OL_P0_L03
+1901 = k_AT_OL_P0_L03___AT_OL_P0_L02
+1902 = kn_AT_OL_P0_L03___AT_OL_P0_L02
+1903 = k_IN_OT_P0_T0___AT_OL_P0_L02
+1904 = kn_IN_OT_P0_T0___AT_OL_P0_L02
+1905 = k_AT_OL_P0_L03___AT_OL_P0_L01
+1906 = kn_AT_OL_P0_L03___AT_OL_P0_L01
+1907 = k_IN_OT_P0_T0___AT_OL_P0_L01
+1908 = kn_IN_OT_P0_T0___AT_OL_P0_L01
+1909 = k_AT_OL_P0_L11___AT_OA_P0_L00
+1910 = kn_AT_OL_P0_L11___AT_OA_P0_L00
+1911 = k_IN_OT_P0_T1___AT_OA_P0_L00
+1912 = kn_IN_OT_P0_T1___AT_OA_P0_L00
+1913 = k_AT_OL_P0_L11___AT_OL_P0_L04
+1914 = kn_AT_OL_P0_L11___AT_OL_P0_L04
+1915 = k_IN_OT_P0_T1___AT_OL_P0_L04
+1916 = kn_IN_OT_P0_T1___AT_OL_P0_L04
+1917 = k_AT_OL_P0_L11___AT_OL_P0_L03
+1918 = kn_AT_OL_P0_L11___AT_OL_P0_L03
+1919 = k_IN_OT_P0_T1___AT_OL_P0_L03
+1920 = kn_IN_OT_P0_T1___AT_OL_P0_L03
+1921 = k_AT_OL_P0_L11___AT_OL_P0_L02
+1922 = kn_AT_OL_P0_L11___AT_OL_P0_L02
+1923 = k_IN_OT_P0_T1___AT_OL_P0_L02
+1924 = kn_IN_OT_P0_T1___AT_OL_P0_L02
+1925 = k_AT_OL_P0_L11___AT_OL_P0_L01
+1926 = kn_AT_OL_P0_L11___AT_OL_P0_L01
+1927 = k_IN_OT_P0_T1___AT_OL_P0_L01
+1928 = kn_IN_OT_P0_T1___AT_OL_P0_L01
+1929 = k_AT_OL_P0_L22___AT_OA_P0_L00
+1930 = kn_AT_OL_P0_L22___AT_OA_P0_L00
+1931 = k_IN_OT_P0_T2___AT_OA_P0_L00
+1932 = kn_IN_OT_P0_T2___AT_OA_P0_L00
+1933 = k_AT_OL_P0_L22___AT_OL_P0_L04
+1934 = kn_AT_OL_P0_L22___AT_OL_P0_L04
+1935 = k_IN_OT_P0_T2___AT_OL_P0_L04
+1936 = kn_IN_OT_P0_T2___AT_OL_P0_L04
+1937 = k_AT_OL_P0_L22___AT_OL_P0_L03
+1938 = kn_AT_OL_P0_L22___AT_OL_P0_L03
+1939 = k_IN_OT_P0_T2___AT_OL_P0_L03
+1940 = kn_IN_OT_P0_T2___AT_OL_P0_L03
+1941 = k_AT_OL_P0_L22___AT_OL_P0_L02
+1942 = kn_AT_OL_P0_L22___AT_OL_P0_L02
+1943 = k_IN_OT_P0_T2___AT_OL_P0_L02
+1944 = kn_IN_OT_P0_T2___AT_OL_P0_L02
+1945 = k_AT_OL_P0_L22___AT_OL_P0_L01
+1946 = kn_AT_OL_P0_L22___AT_OL_P0_L01
+1947 = k_IN_OT_P0_T2___AT_OL_P0_L01
+1948 = kn_IN_OT_P0_T2___AT_OL_P0_L01
+1949 = k_AT_OL_P0_L43___AT_OA_P0_L00
+1950 = kn_AT_OL_P0_L43___AT_OA_P0_L00
+1951 = k_IN_OT_P0_T4___AT_OA_P0_L00
+1952 = kn_IN_OT_P0_T4___AT_OA_P0_L00
+1953 = k_AT_OL_P0_L43___AT_OL_P0_L04
+1954 = kn_AT_OL_P0_L43___AT_OL_P0_L04
+1955 = k_IN_OT_P0_T4___AT_OL_P0_L04
+1956 = kn_IN_OT_P0_T4___AT_OL_P0_L04
+1957 = k_AT_OL_P0_L43___AT_OL_P0_L03
+1958 = kn_AT_OL_P0_L43___AT_OL_P0_L03
+1959 = k_IN_OT_P0_T4___AT_OL_P0_L03
+1960 = kn_IN_OT_P0_T4___AT_OL_P0_L03
+1961 = k_AT_OL_P0_L43___AT_OL_P0_L02
+1962 = kn_AT_OL_P0_L43___AT_OL_P0_L02
+1963 = k_IN_OT_P0_T4___AT_OL_P0_L02
+1964 = kn_IN_OT_P0_T4___AT_OL_P0_L02
+1965 = k_AT_OL_P0_L43___AT_OL_P0_L01
+1966 = kn_AT_OL_P0_L43___AT_OL_P0_L01
+1967 = k_IN_OT_P0_T4___AT_OL_P0_L01
+1968 = kn_IN_OT_P0_T4___AT_OL_P0_L01
+1969 = k_AT_OL_P1_L03___AT_OA_P1_L20
+1970 = kn_AT_OL_P1_L03___AT_OA_P1_L20
+1971 = k_IN_OT_P1_T0___AT_OA_P1_L20
+1972 = kn_IN_OT_P1_T0___AT_OA_P1_L20
+1973 = k_AT_OL_P1_L03___AT_OL_P1_L24
+1974 = kn_AT_OL_P1_L03___AT_OL_P1_L24
+1975 = k_IN_OT_P1_T0___AT_OL_P1_L24
+1976 = kn_IN_OT_P1_T0___AT_OL_P1_L24
+1977 = k_AT_OL_P1_L03___AT_OL_P1_L23
+1978 = kn_AT_OL_P1_L03___AT_OL_P1_L23
+1979 = k_IN_OT_P1_T0___AT_OL_P1_L23
+1980 = kn_IN_OT_P1_T0___AT_OL_P1_L23
+1981 = k_AT_OL_P1_L03___AT_OL_P1_L22
+1982 = kn_AT_OL_P1_L03___AT_OL_P1_L22
+1983 = k_IN_OT_P1_T0___AT_OL_P1_L22
+1984 = kn_IN_OT_P1_T0___AT_OL_P1_L22
+1985 = k_AT_OL_P1_L03___AT_OL_P1_L21
+1986 = kn_AT_OL_P1_L03___AT_OL_P1_L21
+1987 = k_IN_OT_P1_T0___AT_OL_P1_L21
+1988 = kn_IN_OT_P1_T0___AT_OL_P1_L21
+1989 = k_AT_OL_P1_L11___AT_OA_P1_L20
+1990 = kn_AT_OL_P1_L11___AT_OA_P1_L20
+1991 = k_IN_OT_P1_T1___AT_OA_P1_L20
+1992 = kn_IN_OT_P1_T1___AT_OA_P1_L20
+1993 = k_AT_OL_P1_L11___AT_OL_P1_L24
+1994 = kn_AT_OL_P1_L11___AT_OL_P1_L24
+1995 = k_IN_OT_P1_T1___AT_OL_P1_L24
+1996 = kn_IN_OT_P1_T1___AT_OL_P1_L24
+1997 = k_AT_OL_P1_L11___AT_OL_P1_L23
+1998 = kn_AT_OL_P1_L11___AT_OL_P1_L23
+1999 = k_IN_OT_P1_T1___AT_OL_P1_L23
+2000 = kn_IN_OT_P1_T1___AT_OL_P1_L23
+2001 = k_AT_OL_P1_L11___AT_OL_P1_L22
+2002 = kn_AT_OL_P1_L11___AT_OL_P1_L22
+2003 = k_IN_OT_P1_T1___AT_OL_P1_L22
+2004 = kn_IN_OT_P1_T1___AT_OL_P1_L22
+2005 = k_AT_OL_P1_L11___AT_OL_P1_L21
+2006 = kn_AT_OL_P1_L11___AT_OL_P1_L21
+2007 = k_IN_OT_P1_T1___AT_OL_P1_L21
+2008 = kn_IN_OT_P1_T1___AT_OL_P1_L21
+2009 = k_AT_OL_P1_L22___AT_OA_P1_L20
+2010 = kn_AT_OL_P1_L22___AT_OA_P1_L20
+2011 = k_IN_OT_P1_T2___AT_OA_P1_L20
+2012 = kn_IN_OT_P1_T2___AT_OA_P1_L20
+2013 = k_AT_OL_P1_L22___AT_OL_P1_L24
+2014 = kn_AT_OL_P1_L22___AT_OL_P1_L24
+2015 = k_IN_OT_P1_T2___AT_OL_P1_L24
+2016 = kn_IN_OT_P1_T2___AT_OL_P1_L24
+2017 = k_AT_OL_P1_L22___AT_OL_P1_L23
+2018 = kn_AT_OL_P1_L22___AT_OL_P1_L23
+2019 = k_IN_OT_P1_T2___AT_OL_P1_L23
+2020 = kn_IN_OT_P1_T2___AT_OL_P1_L23
+2021 = k_AT_OL_P1_L22___AT_OL_P1_L22
+2022 = kn_AT_OL_P1_L22___AT_OL_P1_L22
+2023 = k_IN_OT_P1_T2___AT_OL_P1_L22
+2024 = kn_IN_OT_P1_T2___AT_OL_P1_L22
+2025 = k_AT_OL_P1_L22___AT_OL_P1_L21
+2026 = kn_AT_OL_P1_L22___AT_OL_P1_L21
+2027 = k_IN_OT_P1_T2___AT_OL_P1_L21
+2028 = kn_IN_OT_P1_T2___AT_OL_P1_L21
+2029 = k_AT_OL_P1_L43___AT_OA_P1_L20
+2030 = kn_AT_OL_P1_L43___AT_OA_P1_L20
+2031 = k_IN_OT_P1_T4___AT_OA_P1_L20
+2032 = kn_IN_OT_P1_T4___AT_OA_P1_L20
+2033 = k_AT_OL_P1_L43___AT_OL_P1_L24
+2034 = kn_AT_OL_P1_L43___AT_OL_P1_L24
+2035 = k_IN_OT_P1_T4___AT_OL_P1_L24
+2036 = kn_IN_OT_P1_T4___AT_OL_P1_L24
+2037 = k_AT_OL_P1_L43___AT_OL_P1_L23
+2038 = kn_AT_OL_P1_L43___AT_OL_P1_L23
+2039 = k_IN_OT_P1_T4___AT_OL_P1_L23
+2040 = kn_IN_OT_P1_T4___AT_OL_P1_L23
+2041 = k_AT_OL_P1_L43___AT_OL_P1_L22
+2042 = kn_AT_OL_P1_L43___AT_OL_P1_L22
+2043 = k_IN_OT_P1_T4___AT_OL_P1_L22
+2044 = kn_IN_OT_P1_T4___AT_OL_P1_L22
+2045 = k_AT_OL_P1_L43___AT_OL_P1_L21
+2046 = kn_AT_OL_P1_L43___AT_OL_P1_L21
+2047 = k_IN_OT_P1_T4___AT_OL_P1_L21
+2048 = kn_IN_OT_P1_T4___AT_OL_P1_L21
+2049 = k_AT_OL_P2_L03___AT_OA_P2_L10
+2050 = kn_AT_OL_P2_L03___AT_OA_P2_L10
+2051 = k_IN_OT_P2_T0___AT_OA_P2_L10
+2052 = kn_IN_OT_P2_T0___AT_OA_P2_L10
+2053 = k_AT_OL_P2_L03___AT_OL_P2_L14
+2054 = kn_AT_OL_P2_L03___AT_OL_P2_L14
+2055 = k_IN_OT_P2_T0___AT_OL_P2_L14
+2056 = kn_IN_OT_P2_T0___AT_OL_P2_L14
+2057 = k_AT_OL_P2_L03___AT_OL_P2_L13
+2058 = kn_AT_OL_P2_L03___AT_OL_P2_L13
+2059 = k_IN_OT_P2_T0___AT_OL_P2_L13
+2060 = kn_IN_OT_P2_T0___AT_OL_P2_L13
+2061 = k_AT_OL_P2_L03___AT_OL_P2_L12
+2062 = kn_AT_OL_P2_L03___AT_OL_P2_L12
+2063 = k_IN_OT_P2_T0___AT_OL_P2_L12
+2064 = kn_IN_OT_P2_T0___AT_OL_P2_L12
+2065 = k_AT_OL_P2_L03___AT_OL_P2_L11
+2066 = kn_AT_OL_P2_L03___AT_OL_P2_L11
+2067 = k_IN_OT_P2_T0___AT_OL_P2_L11
+2068 = kn_IN_OT_P2_T0___AT_OL_P2_L11
+2069 = k_AT_OL_P2_L11___AT_OA_P2_L10
+2070 = kn_AT_OL_P2_L11___AT_OA_P2_L10
+2071 = k_IN_OT_P2_T1___AT_OA_P2_L10
+2072 = kn_IN_OT_P2_T1___AT_OA_P2_L10
+2073 = k_AT_OL_P2_L11___AT_OL_P2_L14
+2074 = kn_AT_OL_P2_L11___AT_OL_P2_L14
+2075 = k_IN_OT_P2_T1___AT_OL_P2_L14
+2076 = kn_IN_OT_P2_T1___AT_OL_P2_L14
+2077 = k_AT_OL_P2_L11___AT_OL_P2_L13
+2078 = kn_AT_OL_P2_L11___AT_OL_P2_L13
+2079 = k_IN_OT_P2_T1___AT_OL_P2_L13
+2080 = kn_IN_OT_P2_T1___AT_OL_P2_L13
+2081 = k_AT_OL_P2_L11___AT_OL_P2_L12
+2082 = kn_AT_OL_P2_L11___AT_OL_P2_L12
+2083 = k_IN_OT_P2_T1___AT_OL_P2_L12
+2084 = kn_IN_OT_P2_T1___AT_OL_P2_L12
+2085 = k_AT_OL_P2_L11___AT_OL_P2_L11
+2086 = kn_AT_OL_P2_L11___AT_OL_P2_L11
+2087 = k_IN_OT_P2_T1___AT_OL_P2_L11
+2088 = kn_IN_OT_P2_T1___AT_OL_P2_L11
+2089 = k_AT_OL_P2_L22___AT_OA_P2_L10
+2090 = kn_AT_OL_P2_L22___AT_OA_P2_L10
+2091 = k_IN_OT_P2_T2___AT_OA_P2_L10
+2092 = kn_IN_OT_P2_T2___AT_OA_P2_L10
+2093 = k_AT_OL_P2_L22___AT_OL_P2_L14
+2094 = kn_AT_OL_P2_L22___AT_OL_P2_L14
+2095 = k_IN_OT_P2_T2___AT_OL_P2_L14
+2096 = kn_IN_OT_P2_T2___AT_OL_P2_L14
+2097 = k_AT_OL_P2_L22___AT_OL_P2_L13
+2098 = kn_AT_OL_P2_L22___AT_OL_P2_L13
+2099 = k_IN_OT_P2_T2___AT_OL_P2_L13
+2100 = kn_IN_OT_P2_T2___AT_OL_P2_L13
+2101 = k_AT_OL_P2_L22___AT_OL_P2_L12
+2102 = kn_AT_OL_P2_L22___AT_OL_P2_L12
+2103 = k_IN_OT_P2_T2___AT_OL_P2_L12
+2104 = kn_IN_OT_P2_T2___AT_OL_P2_L12
+2105 = k_AT_OL_P2_L22___AT_OL_P2_L11
+2106 = kn_AT_OL_P2_L22___AT_OL_P2_L11
+2107 = k_IN_OT_P2_T2___AT_OL_P2_L11
+2108 = kn_IN_OT_P2_T2___AT_OL_P2_L11
+2109 = k_AT_OL_P2_L43___AT_OA_P2_L10
+2110 = kn_AT_OL_P2_L43___AT_OA_P2_L10
+2111 = k_IN_OT_P2_T4___AT_OA_P2_L10
+2112 = kn_IN_OT_P2_T4___AT_OA_P2_L10
+2113 = k_AT_OL_P2_L43___AT_OL_P2_L14
+2114 = kn_AT_OL_P2_L43___AT_OL_P2_L14
+2115 = k_IN_OT_P2_T4___AT_OL_P2_L14
+2116 = kn_IN_OT_P2_T4___AT_OL_P2_L14
+2117 = k_AT_OL_P2_L43___AT_OL_P2_L13
+2118 = kn_AT_OL_P2_L43___AT_OL_P2_L13
+2119 = k_IN_OT_P2_T4___AT_OL_P2_L13
+2120 = kn_IN_OT_P2_T4___AT_OL_P2_L13
+2121 = k_AT_OL_P2_L43___AT_OL_P2_L12
+2122 = kn_AT_OL_P2_L43___AT_OL_P2_L12
+2123 = k_IN_OT_P2_T4___AT_OL_P2_L12
+2124 = kn_IN_OT_P2_T4___AT_OL_P2_L12
+2125 = k_AT_OL_P2_L43___AT_OL_P2_L11
+2126 = kn_AT_OL_P2_L43___AT_OL_P2_L11
+2127 = k_IN_OT_P2_T4___AT_OL_P2_L11
+2128 = kn_IN_OT_P2_T4___AT_OL_P2_L11
+2129 = k_AT_OL_P3_L03___AT_OA_P3_L20
+2130 = kn_AT_OL_P3_L03___AT_OA_P3_L20
+2131 = k_IN_OT_P3_T0___AT_OA_P3_L20
+2132 = kn_IN_OT_P3_T0___AT_OA_P3_L20
+2133 = k_AT_OL_P3_L03___AT_OL_P3_L24
+2134 = kn_AT_OL_P3_L03___AT_OL_P3_L24
+2135 = k_IN_OT_P3_T0___AT_OL_P3_L24
+2136 = kn_IN_OT_P3_T0___AT_OL_P3_L24
+2137 = k_AT_OL_P3_L03___AT_OL_P3_L23
+2138 = kn_AT_OL_P3_L03___AT_OL_P3_L23
+2139 = k_IN_OT_P3_T0___AT_OL_P3_L23
+2140 = kn_IN_OT_P3_T0___AT_OL_P3_L23
+2141 = k_AT_OL_P3_L03___AT_OL_P3_L22
+2142 = kn_AT_OL_P3_L03___AT_OL_P3_L22
+2143 = k_IN_OT_P3_T0___AT_OL_P3_L22
+2144 = kn_IN_OT_P3_T0___AT_OL_P3_L22
+2145 = k_AT_OL_P3_L03___AT_OL_P3_L21
+2146 = kn_AT_OL_P3_L03___AT_OL_P3_L21
+2147 = k_IN_OT_P3_T0___AT_OL_P3_L21
+2148 = kn_IN_OT_P3_T0___AT_OL_P3_L21
+2149 = k_AT_OL_P3_L11___AT_OA_P3_L20
+2150 = kn_AT_OL_P3_L11___AT_OA_P3_L20
+2151 = k_IN_OT_P3_T1___AT_OA_P3_L20
+2152 = kn_IN_OT_P3_T1___AT_OA_P3_L20
+2153 = k_AT_OL_P3_L11___AT_OL_P3_L24
+2154 = kn_AT_OL_P3_L11___AT_OL_P3_L24
+2155 = k_IN_OT_P3_T1___AT_OL_P3_L24
+2156 = kn_IN_OT_P3_T1___AT_OL_P3_L24
+2157 = k_AT_OL_P3_L11___AT_OL_P3_L23
+2158 = kn_AT_OL_P3_L11___AT_OL_P3_L23
+2159 = k_IN_OT_P3_T1___AT_OL_P3_L23
+2160 = kn_IN_OT_P3_T1___AT_OL_P3_L23
+2161 = k_AT_OL_P3_L11___AT_OL_P3_L22
+2162 = kn_AT_OL_P3_L11___AT_OL_P3_L22
+2163 = k_IN_OT_P3_T1___AT_OL_P3_L22
+2164 = kn_IN_OT_P3_T1___AT_OL_P3_L22
+2165 = k_AT_OL_P3_L11___AT_OL_P3_L21
+2166 = kn_AT_OL_P3_L11___AT_OL_P3_L21
+2167 = k_IN_OT_P3_T1___AT_OL_P3_L21
+2168 = kn_IN_OT_P3_T1___AT_OL_P3_L21
+2169 = k_AT_OL_P3_L22___AT_OA_P3_L20
+2170 = kn_AT_OL_P3_L22___AT_OA_P3_L20
+2171 = k_IN_OT_P3_T2___AT_OA_P3_L20
+2172 = kn_IN_OT_P3_T2___AT_OA_P3_L20
+2173 = k_AT_OL_P3_L22___AT_OL_P3_L24
+2174 = kn_AT_OL_P3_L22___AT_OL_P3_L24
+2175 = k_IN_OT_P3_T2___AT_OL_P3_L24
+2176 = kn_IN_OT_P3_T2___AT_OL_P3_L24
+2177 = k_AT_OL_P3_L22___AT_OL_P3_L23
+2178 = kn_AT_OL_P3_L22___AT_OL_P3_L23
+2179 = k_IN_OT_P3_T2___AT_OL_P3_L23
+2180 = kn_IN_OT_P3_T2___AT_OL_P3_L23
+2181 = k_AT_OL_P3_L22___AT_OL_P3_L22
+2182 = kn_AT_OL_P3_L22___AT_OL_P3_L22
+2183 = k_IN_OT_P3_T2___AT_OL_P3_L22
+2184 = kn_IN_OT_P3_T2___AT_OL_P3_L22
+2185 = k_AT_OL_P3_L22___AT_OL_P3_L21
+2186 = kn_AT_OL_P3_L22___AT_OL_P3_L21
+2187 = k_IN_OT_P3_T2___AT_OL_P3_L21
+2188 = kn_IN_OT_P3_T2___AT_OL_P3_L21
+2189 = k_AT_OL_P3_L43___AT_OA_P3_L20
+2190 = kn_AT_OL_P3_L43___AT_OA_P3_L20
+2191 = k_IN_OT_P3_T4___AT_OA_P3_L20
+2192 = kn_IN_OT_P3_T4___AT_OA_P3_L20
+2193 = k_AT_OL_P3_L43___AT_OL_P3_L24
+2194 = kn_AT_OL_P3_L43___AT_OL_P3_L24
+2195 = k_IN_OT_P3_T4___AT_OL_P3_L24
+2196 = kn_IN_OT_P3_T4___AT_OL_P3_L24
+2197 = k_AT_OL_P3_L43___AT_OL_P3_L23
+2198 = kn_AT_OL_P3_L43___AT_OL_P3_L23
+2199 = k_IN_OT_P3_T4___AT_OL_P3_L23
+2200 = kn_IN_OT_P3_T4___AT_OL_P3_L23
+2201 = k_AT_OL_P3_L43___AT_OL_P3_L22
+2202 = kn_AT_OL_P3_L43___AT_OL_P3_L22
+2203 = k_IN_OT_P3_T4___AT_OL_P3_L22
+2204 = kn_IN_OT_P3_T4___AT_OL_P3_L22
+2205 = k_AT_OL_P3_L43___AT_OL_P3_L21
+2206 = kn_AT_OL_P3_L43___AT_OL_P3_L21
+2207 = k_IN_OT_P3_T4___AT_OL_P3_L21
+2208 = kn_IN_OT_P3_T4___AT_OL_P3_L21
+2209 = k_AT_OL_P4_L03___AT_OA_P4_L40
+2210 = kn_AT_OL_P4_L03___AT_OA_P4_L40
+2211 = k_IN_OT_P4_T0___AT_OA_P4_L40
+2212 = kn_IN_OT_P4_T0___AT_OA_P4_L40
+2213 = k_AT_OL_P4_L03___AT_OL_P4_L44
+2214 = kn_AT_OL_P4_L03___AT_OL_P4_L44
+2215 = k_IN_OT_P4_T0___AT_OL_P4_L44
+2216 = kn_IN_OT_P4_T0___AT_OL_P4_L44
+2217 = k_AT_OL_P4_L03___AT_OL_P4_L43
+2218 = kn_AT_OL_P4_L03___AT_OL_P4_L43
+2219 = k_IN_OT_P4_T0___AT_OL_P4_L43
+2220 = kn_IN_OT_P4_T0___AT_OL_P4_L43
+2221 = k_AT_OL_P4_L03___AT_OL_P4_L42
+2222 = kn_AT_OL_P4_L03___AT_OL_P4_L42
+2223 = k_IN_OT_P4_T0___AT_OL_P4_L42
+2224 = kn_IN_OT_P4_T0___AT_OL_P4_L42
+2225 = k_AT_OL_P4_L03___AT_OL_P4_L41
+2226 = kn_AT_OL_P4_L03___AT_OL_P4_L41
+2227 = k_IN_OT_P4_T0___AT_OL_P4_L41
+2228 = kn_IN_OT_P4_T0___AT_OL_P4_L41
+2229 = k_AT_OL_P4_L11___AT_OA_P4_L40
+2230 = kn_AT_OL_P4_L11___AT_OA_P4_L40
+2231 = k_IN_OT_P4_T1___AT_OA_P4_L40
+2232 = kn_IN_OT_P4_T1___AT_OA_P4_L40
+2233 = k_AT_OL_P4_L11___AT_OL_P4_L44
+2234 = kn_AT_OL_P4_L11___AT_OL_P4_L44
+2235 = k_IN_OT_P4_T1___AT_OL_P4_L44
+2236 = kn_IN_OT_P4_T1___AT_OL_P4_L44
+2237 = k_AT_OL_P4_L11___AT_OL_P4_L43
+2238 = kn_AT_OL_P4_L11___AT_OL_P4_L43
+2239 = k_IN_OT_P4_T1___AT_OL_P4_L43
+2240 = kn_IN_OT_P4_T1___AT_OL_P4_L43
+2241 = k_AT_OL_P4_L11___AT_OL_P4_L42
+2242 = kn_AT_OL_P4_L11___AT_OL_P4_L42
+2243 = k_IN_OT_P4_T1___AT_OL_P4_L42
+2244 = kn_IN_OT_P4_T1___AT_OL_P4_L42
+2245 = k_AT_OL_P4_L11___AT_OL_P4_L41
+2246 = kn_AT_OL_P4_L11___AT_OL_P4_L41
+2247 = k_IN_OT_P4_T1___AT_OL_P4_L41
+2248 = kn_IN_OT_P4_T1___AT_OL_P4_L41
+2249 = k_AT_OL_P4_L22___AT_OA_P4_L40
+2250 = kn_AT_OL_P4_L22___AT_OA_P4_L40
+2251 = k_IN_OT_P4_T2___AT_OA_P4_L40
+2252 = kn_IN_OT_P4_T2___AT_OA_P4_L40
+2253 = k_AT_OL_P4_L22___AT_OL_P4_L44
+2254 = kn_AT_OL_P4_L22___AT_OL_P4_L44
+2255 = k_IN_OT_P4_T2___AT_OL_P4_L44
+2256 = kn_IN_OT_P4_T2___AT_OL_P4_L44
+2257 = k_AT_OL_P4_L22___AT_OL_P4_L43
+2258 = kn_AT_OL_P4_L22___AT_OL_P4_L43
+2259 = k_IN_OT_P4_T2___AT_OL_P4_L43
+2260 = kn_IN_OT_P4_T2___AT_OL_P4_L43
+2261 = k_AT_OL_P4_L22___AT_OL_P4_L42
+2262 = kn_AT_OL_P4_L22___AT_OL_P4_L42
+2263 = k_IN_OT_P4_T2___AT_OL_P4_L42
+2264 = kn_IN_OT_P4_T2___AT_OL_P4_L42
+2265 = k_AT_OL_P4_L22___AT_OL_P4_L41
+2266 = kn_AT_OL_P4_L22___AT_OL_P4_L41
+2267 = k_IN_OT_P4_T2___AT_OL_P4_L41
+2268 = kn_IN_OT_P4_T2___AT_OL_P4_L41
+2269 = k_AT_OL_P4_L43___AT_OA_P4_L40
+2270 = kn_AT_OL_P4_L43___AT_OA_P4_L40
+2271 = k_IN_OT_P4_T4___AT_OA_P4_L40
+2272 = kn_IN_OT_P4_T4___AT_OA_P4_L40
+2273 = k_AT_OL_P4_L43___AT_OL_P4_L44
+2274 = kn_AT_OL_P4_L43___AT_OL_P4_L44
+2275 = k_IN_OT_P4_T4___AT_OL_P4_L44
+2276 = kn_IN_OT_P4_T4___AT_OL_P4_L44
+2277 = k_AT_OL_P4_L43___AT_OL_P4_L43
+2278 = kn_AT_OL_P4_L43___AT_OL_P4_L43
+2279 = k_IN_OT_P4_T4___AT_OL_P4_L43
+2280 = kn_IN_OT_P4_T4___AT_OL_P4_L43
+2281 = k_AT_OL_P4_L43___AT_OL_P4_L42
+2282 = kn_AT_OL_P4_L43___AT_OL_P4_L42
+2283 = k_IN_OT_P4_T4___AT_OL_P4_L42
+2284 = kn_IN_OT_P4_T4___AT_OL_P4_L42
+2285 = k_AT_OL_P4_L43___AT_OL_P4_L41
+2286 = kn_AT_OL_P4_L43___AT_OL_P4_L41
+2287 = k_IN_OT_P4_T4___AT_OL_P4_L41
+2288 = kn_IN_OT_P4_T4___AT_OL_P4_L41
+2289 = k_AT_OA_P0_L30___AT_OA_P0_L00
+2290 = kn_AT_OA_P0_L30___AT_OA_P0_L00
+2291 = k_IN_OT_P0_T3___AT_OA_P0_L00
+2292 = kn_IN_OT_P0_T3___AT_OA_P0_L00
+2293 = k_AT_OA_P0_L30___AT_OL_P0_L04
+2294 = kn_AT_OA_P0_L30___AT_OL_P0_L04
+2295 = k_IN_OT_P0_T3___AT_OL_P0_L04
+2296 = kn_IN_OT_P0_T3___AT_OL_P0_L04
+2297 = k_AT_OA_P0_L30___AT_OL_P0_L03
+2298 = kn_AT_OA_P0_L30___AT_OL_P0_L03
+2299 = k_IN_OT_P0_T3___AT_OL_P0_L03
+2300 = kn_IN_OT_P0_T3___AT_OL_P0_L03
+2301 = k_AT_OA_P0_L30___AT_OL_P0_L02
+2302 = kn_AT_OA_P0_L30___AT_OL_P0_L02
+2303 = k_IN_OT_P0_T3___AT_OL_P0_L02
+2304 = kn_IN_OT_P0_T3___AT_OL_P0_L02
+2305 = k_AT_OA_P0_L30___AT_OL_P0_L01
+2306 = kn_AT_OA_P0_L30___AT_OL_P0_L01
+2307 = k_IN_OT_P0_T3___AT_OL_P0_L01
+2308 = kn_IN_OT_P0_T3___AT_OL_P0_L01
+2309 = k_AT_OA_P1_L30___AT_OA_P1_L20
+2310 = kn_AT_OA_P1_L30___AT_OA_P1_L20
+2311 = k_IN_OT_P1_T3___AT_OA_P1_L20
+2312 = kn_IN_OT_P1_T3___AT_OA_P1_L20
+2313 = k_AT_OA_P1_L30___AT_OL_P1_L24
+2314 = kn_AT_OA_P1_L30___AT_OL_P1_L24
+2315 = k_IN_OT_P1_T3___AT_OL_P1_L24
+2316 = kn_IN_OT_P1_T3___AT_OL_P1_L24
+2317 = k_AT_OA_P1_L30___AT_OL_P1_L23
+2318 = kn_AT_OA_P1_L30___AT_OL_P1_L23
+2319 = k_IN_OT_P1_T3___AT_OL_P1_L23
+2320 = kn_IN_OT_P1_T3___AT_OL_P1_L23
+2321 = k_AT_OA_P1_L30___AT_OL_P1_L22
+2322 = kn_AT_OA_P1_L30___AT_OL_P1_L22
+2323 = k_IN_OT_P1_T3___AT_OL_P1_L22
+2324 = kn_IN_OT_P1_T3___AT_OL_P1_L22
+2325 = k_AT_OA_P1_L30___AT_OL_P1_L21
+2326 = kn_AT_OA_P1_L30___AT_OL_P1_L21
+2327 = k_IN_OT_P1_T3___AT_OL_P1_L21
+2328 = kn_IN_OT_P1_T3___AT_OL_P1_L21
+2329 = k_AT_OA_P2_L30___AT_OA_P2_L10
+2330 = kn_AT_OA_P2_L30___AT_OA_P2_L10
+2331 = k_IN_OT_P2_T3___AT_OA_P2_L10
+2332 = kn_IN_OT_P2_T3___AT_OA_P2_L10
+2333 = k_AT_OA_P2_L30___AT_OL_P2_L14
+2334 = kn_AT_OA_P2_L30___AT_OL_P2_L14
+2335 = k_IN_OT_P2_T3___AT_OL_P2_L14
+2336 = kn_IN_OT_P2_T3___AT_OL_P2_L14
+2337 = k_AT_OA_P2_L30___AT_OL_P2_L13
+2338 = kn_AT_OA_P2_L30___AT_OL_P2_L13
+2339 = k_IN_OT_P2_T3___AT_OL_P2_L13
+2340 = kn_IN_OT_P2_T3___AT_OL_P2_L13
+2341 = k_AT_OA_P2_L30___AT_OL_P2_L12
+2342 = kn_AT_OA_P2_L30___AT_OL_P2_L12
+2343 = k_IN_OT_P2_T3___AT_OL_P2_L12
+2344 = kn_IN_OT_P2_T3___AT_OL_P2_L12
+2345 = k_AT_OA_P2_L30___AT_OL_P2_L11
+2346 = kn_AT_OA_P2_L30___AT_OL_P2_L11
+2347 = k_IN_OT_P2_T3___AT_OL_P2_L11
+2348 = kn_IN_OT_P2_T3___AT_OL_P2_L11
+2349 = k_AT_OA_P3_L30___AT_OA_P3_L20
+2350 = kn_AT_OA_P3_L30___AT_OA_P3_L20
+2351 = k_IN_OT_P3_T3___AT_OA_P3_L20
+2352 = kn_IN_OT_P3_T3___AT_OA_P3_L20
+2353 = k_AT_OA_P3_L30___AT_OL_P3_L24
+2354 = kn_AT_OA_P3_L30___AT_OL_P3_L24
+2355 = k_IN_OT_P3_T3___AT_OL_P3_L24
+2356 = kn_IN_OT_P3_T3___AT_OL_P3_L24
+2357 = k_AT_OA_P3_L30___AT_OL_P3_L23
+2358 = kn_AT_OA_P3_L30___AT_OL_P3_L23
+2359 = k_IN_OT_P3_T3___AT_OL_P3_L23
+2360 = kn_IN_OT_P3_T3___AT_OL_P3_L23
+2361 = k_AT_OA_P3_L30___AT_OL_P3_L22
+2362 = kn_AT_OA_P3_L30___AT_OL_P3_L22
+2363 = k_IN_OT_P3_T3___AT_OL_P3_L22
+2364 = kn_IN_OT_P3_T3___AT_OL_P3_L22
+2365 = k_AT_OA_P3_L30___AT_OL_P3_L21
+2366 = kn_AT_OA_P3_L30___AT_OL_P3_L21
+2367 = k_IN_OT_P3_T3___AT_OL_P3_L21
+2368 = kn_IN_OT_P3_T3___AT_OL_P3_L21
+2369 = k_AT_OA_P4_L30___AT_OA_P4_L40
+2370 = kn_AT_OA_P4_L30___AT_OA_P4_L40
+2371 = k_IN_OT_P4_T3___AT_OA_P4_L40
+2372 = kn_IN_OT_P4_T3___AT_OA_P4_L40
+2373 = k_AT_OA_P4_L30___AT_OL_P4_L44
+2374 = kn_AT_OA_P4_L30___AT_OL_P4_L44
+2375 = k_IN_OT_P4_T3___AT_OL_P4_L44
+2376 = kn_IN_OT_P4_T3___AT_OL_P4_L44
+2377 = k_AT_OA_P4_L30___AT_OL_P4_L43
+2378 = kn_AT_OA_P4_L30___AT_OL_P4_L43
+2379 = k_IN_OT_P4_T3___AT_OL_P4_L43
+2380 = kn_IN_OT_P4_T3___AT_OL_P4_L43
+2381 = k_AT_OA_P4_L30___AT_OL_P4_L42
+2382 = kn_AT_OA_P4_L30___AT_OL_P4_L42
+2383 = k_IN_OT_P4_T3___AT_OL_P4_L42
+2384 = kn_IN_OT_P4_T3___AT_OL_P4_L42
+2385 = k_AT_OA_P4_L30___AT_OL_P4_L41
+2386 = kn_AT_OA_P4_L30___AT_OL_P4_L41
+2387 = k_IN_OT_P4_T3___AT_OL_P4_L41
+2388 = kn_IN_OT_P4_T3___AT_OL_P4_L41
+2389 = k_AT_OA_P0_L00___AT_OA_P0_L00
+2390 = kn_AT_OA_P0_L00___AT_OA_P0_L00
+2391 = k_IN_OA_P0_A0___AT_OA_P0_L00
+2392 = kn_IN_OA_P0_A0___AT_OA_P0_L00
+2393 = k_AT_OA_P0_L00___AT_OL_P0_L04
+2394 = kn_AT_OA_P0_L00___AT_OL_P0_L04
+2395 = k_IN_OA_P0_A0___AT_OL_P0_L04
+2396 = kn_IN_OA_P0_A0___AT_OL_P0_L04
+2397 = k_AT_OA_P0_L00___AT_OL_P0_L03
+2398 = kn_AT_OA_P0_L00___AT_OL_P0_L03
+2399 = k_IN_OA_P0_A0___AT_OL_P0_L03
+2400 = kn_IN_OA_P0_A0___AT_OL_P0_L03
+2401 = k_AT_OA_P0_L00___AT_OL_P0_L02
+2402 = kn_AT_OA_P0_L00___AT_OL_P0_L02
+2403 = k_IN_OA_P0_A0___AT_OL_P0_L02
+2404 = kn_IN_OA_P0_A0___AT_OL_P0_L02
+2405 = k_AT_OA_P0_L00___AT_OL_P0_L01
+2406 = kn_AT_OA_P0_L00___AT_OL_P0_L01
+2407 = k_IN_OA_P0_A0___AT_OL_P0_L01
+2408 = kn_IN_OA_P0_A0___AT_OL_P0_L01
+2409 = k_AT_OA_P1_L00___AT_OA_P1_L20
+2410 = kn_AT_OA_P1_L00___AT_OA_P1_L20
+2411 = k_IN_OA_P1_A0___AT_OA_P1_L20
+2412 = kn_IN_OA_P1_A0___AT_OA_P1_L20
+2413 = k_AT_OA_P1_L00___AT_OL_P1_L24
+2414 = kn_AT_OA_P1_L00___AT_OL_P1_L24
+2415 = k_IN_OA_P1_A0___AT_OL_P1_L24
+2416 = kn_IN_OA_P1_A0___AT_OL_P1_L24
+2417 = k_AT_OA_P1_L00___AT_OL_P1_L23
+2418 = kn_AT_OA_P1_L00___AT_OL_P1_L23
+2419 = k_IN_OA_P1_A0___AT_OL_P1_L23
+2420 = kn_IN_OA_P1_A0___AT_OL_P1_L23
+2421 = k_AT_OA_P1_L00___AT_OL_P1_L22
+2422 = kn_AT_OA_P1_L00___AT_OL_P1_L22
+2423 = k_IN_OA_P1_A0___AT_OL_P1_L22
+2424 = kn_IN_OA_P1_A0___AT_OL_P1_L22
+2425 = k_AT_OA_P1_L00___AT_OL_P1_L21
+2426 = kn_AT_OA_P1_L00___AT_OL_P1_L21
+2427 = k_IN_OA_P1_A0___AT_OL_P1_L21
+2428 = kn_IN_OA_P1_A0___AT_OL_P1_L21
+2429 = k_AT_OA_P2_L00___AT_OA_P2_L10
+2430 = kn_AT_OA_P2_L00___AT_OA_P2_L10
+2431 = k_IN_OA_P2_A0___AT_OA_P2_L10
+2432 = kn_IN_OA_P2_A0___AT_OA_P2_L10
+2433 = k_AT_OA_P2_L00___AT_OL_P2_L14
+2434 = kn_AT_OA_P2_L00___AT_OL_P2_L14
+2435 = k_IN_OA_P2_A0___AT_OL_P2_L14
+2436 = kn_IN_OA_P2_A0___AT_OL_P2_L14
+2437 = k_AT_OA_P2_L00___AT_OL_P2_L13
+2438 = kn_AT_OA_P2_L00___AT_OL_P2_L13
+2439 = k_IN_OA_P2_A0___AT_OL_P2_L13
+2440 = kn_IN_OA_P2_A0___AT_OL_P2_L13
+2441 = k_AT_OA_P2_L00___AT_OL_P2_L12
+2442 = kn_AT_OA_P2_L00___AT_OL_P2_L12
+2443 = k_IN_OA_P2_A0___AT_OL_P2_L12
+2444 = kn_IN_OA_P2_A0___AT_OL_P2_L12
+2445 = k_AT_OA_P2_L00___AT_OL_P2_L11
+2446 = kn_AT_OA_P2_L00___AT_OL_P2_L11
+2447 = k_IN_OA_P2_A0___AT_OL_P2_L11
+2448 = kn_IN_OA_P2_A0___AT_OL_P2_L11
+2449 = k_AT_OA_P3_L00___AT_OA_P3_L20
+2450 = kn_AT_OA_P3_L00___AT_OA_P3_L20
+2451 = k_IN_OA_P3_A0___AT_OA_P3_L20
+2452 = kn_IN_OA_P3_A0___AT_OA_P3_L20
+2453 = k_AT_OA_P3_L00___AT_OL_P3_L24
+2454 = kn_AT_OA_P3_L00___AT_OL_P3_L24
+2455 = k_IN_OA_P3_A0___AT_OL_P3_L24
+2456 = kn_IN_OA_P3_A0___AT_OL_P3_L24
+2457 = k_AT_OA_P3_L00___AT_OL_P3_L23
+2458 = kn_AT_OA_P3_L00___AT_OL_P3_L23
+2459 = k_IN_OA_P3_A0___AT_OL_P3_L23
+2460 = kn_IN_OA_P3_A0___AT_OL_P3_L23
+2461 = k_AT_OA_P3_L00___AT_OL_P3_L22
+2462 = kn_AT_OA_P3_L00___AT_OL_P3_L22
+2463 = k_IN_OA_P3_A0___AT_OL_P3_L22
+2464 = kn_IN_OA_P3_A0___AT_OL_P3_L22
+2465 = k_AT_OA_P3_L00___AT_OL_P3_L21
+2466 = kn_AT_OA_P3_L00___AT_OL_P3_L21
+2467 = k_IN_OA_P3_A0___AT_OL_P3_L21
+2468 = kn_IN_OA_P3_A0___AT_OL_P3_L21
+2469 = k_AT_OA_P4_L00___AT_OA_P4_L40
+2470 = kn_AT_OA_P4_L00___AT_OA_P4_L40
+2471 = k_IN_OA_P4_A0___AT_OA_P4_L40
+2472 = kn_IN_OA_P4_A0___AT_OA_P4_L40
+2473 = k_AT_OA_P4_L00___AT_OL_P4_L44
+2474 = kn_AT_OA_P4_L00___AT_OL_P4_L44
+2475 = k_IN_OA_P4_A0___AT_OL_P4_L44
+2476 = kn_IN_OA_P4_A0___AT_OL_P4_L44
+2477 = k_AT_OA_P4_L00___AT_OL_P4_L43
+2478 = kn_AT_OA_P4_L00___AT_OL_P4_L43
+2479 = k_IN_OA_P4_A0___AT_OL_P4_L43
+2480 = kn_IN_OA_P4_A0___AT_OL_P4_L43
+2481 = k_AT_OA_P4_L00___AT_OL_P4_L42
+2482 = kn_AT_OA_P4_L00___AT_OL_P4_L42
+2483 = k_IN_OA_P4_A0___AT_OL_P4_L42
+2484 = kn_IN_OA_P4_A0___AT_OL_P4_L42
+2485 = k_AT_OA_P4_L00___AT_OL_P4_L41
+2486 = kn_AT_OA_P4_L00___AT_OL_P4_L41
+2487 = k_IN_OA_P4_A0___AT_OL_P4_L41
+2488 = kn_IN_OA_P4_A0___AT_OL_P4_L41
+2489 = k_AT_OL_P0_L01___AT_OA_P0_L00
+2490 = kn_AT_OL_P0_L01___AT_OA_P0_L00
+2491 = k_AT_OL_P0_L01___AT_OL_P0_L04
+2492 = kn_AT_OL_P0_L01___AT_OL_P0_L04
+2493 = k_AT_OL_P0_L01___AT_OL_P0_L03
+2494 = kn_AT_OL_P0_L01___AT_OL_P0_L03
+2495 = k_AT_OL_P0_L01___AT_OL_P0_L02
+2496 = kn_AT_OL_P0_L01___AT_OL_P0_L02
+2497 = k_AT_OL_P0_L01___AT_OL_P0_L01
+2498 = kn_AT_OL_P0_L01___AT_OL_P0_L01
+2499 = k_AT_OL_P0_L02___AT_OA_P0_L00
+2500 = kn_AT_OL_P0_L02___AT_OA_P0_L00
+2501 = k_AT_OL_P0_L02___AT_OL_P0_L04
+2502 = kn_AT_OL_P0_L02___AT_OL_P0_L04
+2503 = k_AT_OL_P0_L02___AT_OL_P0_L03
+2504 = kn_AT_OL_P0_L02___AT_OL_P0_L03
+2505 = k_AT_OL_P0_L02___AT_OL_P0_L02
+2506 = kn_AT_OL_P0_L02___AT_OL_P0_L02
+2507 = k_AT_OL_P0_L02___AT_OL_P0_L01
+2508 = kn_AT_OL_P0_L02___AT_OL_P0_L01
+2509 = k_AT_OL_P0_L04___AT_OA_P0_L00
+2510 = kn_AT_OL_P0_L04___AT_OA_P0_L00
+2511 = k_AT_OL_P0_L04___AT_OL_P0_L04
+2512 = kn_AT_OL_P0_L04___AT_OL_P0_L04
+2513 = k_AT_OL_P0_L04___AT_OL_P0_L03
+2514 = kn_AT_OL_P0_L04___AT_OL_P0_L03
+2515 = k_AT_OL_P0_L04___AT_OL_P0_L02
+2516 = kn_AT_OL_P0_L04___AT_OL_P0_L02
+2517 = k_AT_OL_P0_L04___AT_OL_P0_L01
+2518 = kn_AT_OL_P0_L04___AT_OL_P0_L01
+2519 = k_AT_OL_P0_L12___AT_OA_P0_L00
+2520 = kn_AT_OL_P0_L12___AT_OA_P0_L00
+2521 = k_AT_OL_P0_L12___AT_OL_P0_L04
+2522 = kn_AT_OL_P0_L12___AT_OL_P0_L04
+2523 = k_AT_OL_P0_L12___AT_OL_P0_L03
+2524 = kn_AT_OL_P0_L12___AT_OL_P0_L03
+2525 = k_AT_OL_P0_L12___AT_OL_P0_L02
+2526 = kn_AT_OL_P0_L12___AT_OL_P0_L02
+2527 = k_AT_OL_P0_L12___AT_OL_P0_L01
+2528 = kn_AT_OL_P0_L12___AT_OL_P0_L01
+2529 = k_AT_OL_P0_L13___AT_OA_P0_L00
+2530 = kn_AT_OL_P0_L13___AT_OA_P0_L00
+2531 = k_AT_OL_P0_L13___AT_OL_P0_L04
+2532 = kn_AT_OL_P0_L13___AT_OL_P0_L04
+2533 = k_AT_OL_P0_L13___AT_OL_P0_L03
+2534 = kn_AT_OL_P0_L13___AT_OL_P0_L03
+2535 = k_AT_OL_P0_L13___AT_OL_P0_L02
+2536 = kn_AT_OL_P0_L13___AT_OL_P0_L02
+2537 = k_AT_OL_P0_L13___AT_OL_P0_L01
+2538 = kn_AT_OL_P0_L13___AT_OL_P0_L01
+2539 = k_AT_OL_P0_L14___AT_OA_P0_L00
+2540 = kn_AT_OL_P0_L14___AT_OA_P0_L00
+2541 = k_AT_OL_P0_L14___AT_OL_P0_L04
+2542 = kn_AT_OL_P0_L14___AT_OL_P0_L04
+2543 = k_AT_OL_P0_L14___AT_OL_P0_L03
+2544 = kn_AT_OL_P0_L14___AT_OL_P0_L03
+2545 = k_AT_OL_P0_L14___AT_OL_P0_L02
+2546 = kn_AT_OL_P0_L14___AT_OL_P0_L02
+2547 = k_AT_OL_P0_L14___AT_OL_P0_L01
+2548 = kn_AT_OL_P0_L14___AT_OL_P0_L01
+2549 = k_AT_OL_P0_L21___AT_OA_P0_L00
+2550 = kn_AT_OL_P0_L21___AT_OA_P0_L00
+2551 = k_AT_OL_P0_L21___AT_OL_P0_L04
+2552 = kn_AT_OL_P0_L21___AT_OL_P0_L04
+2553 = k_AT_OL_P0_L21___AT_OL_P0_L03
+2554 = kn_AT_OL_P0_L21___AT_OL_P0_L03
+2555 = k_AT_OL_P0_L21___AT_OL_P0_L02
+2556 = kn_AT_OL_P0_L21___AT_OL_P0_L02
+2557 = k_AT_OL_P0_L21___AT_OL_P0_L01
+2558 = kn_AT_OL_P0_L21___AT_OL_P0_L01
+2559 = k_AT_OL_P0_L23___AT_OA_P0_L00
+2560 = kn_AT_OL_P0_L23___AT_OA_P0_L00
+2561 = k_AT_OL_P0_L23___AT_OL_P0_L04
+2562 = kn_AT_OL_P0_L23___AT_OL_P0_L04
+2563 = k_AT_OL_P0_L23___AT_OL_P0_L03
+2564 = kn_AT_OL_P0_L23___AT_OL_P0_L03
+2565 = k_AT_OL_P0_L23___AT_OL_P0_L02
+2566 = kn_AT_OL_P0_L23___AT_OL_P0_L02
+2567 = k_AT_OL_P0_L23___AT_OL_P0_L01
+2568 = kn_AT_OL_P0_L23___AT_OL_P0_L01
+2569 = k_AT_OL_P0_L24___AT_OA_P0_L00
+2570 = kn_AT_OL_P0_L24___AT_OA_P0_L00
+2571 = k_AT_OL_P0_L24___AT_OL_P0_L04
+2572 = kn_AT_OL_P0_L24___AT_OL_P0_L04
+2573 = k_AT_OL_P0_L24___AT_OL_P0_L03
+2574 = kn_AT_OL_P0_L24___AT_OL_P0_L03
+2575 = k_AT_OL_P0_L24___AT_OL_P0_L02
+2576 = kn_AT_OL_P0_L24___AT_OL_P0_L02
+2577 = k_AT_OL_P0_L24___AT_OL_P0_L01
+2578 = kn_AT_OL_P0_L24___AT_OL_P0_L01
+2579 = k_AT_OL_P0_L31___AT_OA_P0_L00
+2580 = kn_AT_OL_P0_L31___AT_OA_P0_L00
+2581 = k_AT_OL_P0_L31___AT_OL_P0_L04
+2582 = kn_AT_OL_P0_L31___AT_OL_P0_L04
+2583 = k_AT_OL_P0_L31___AT_OL_P0_L03
+2584 = kn_AT_OL_P0_L31___AT_OL_P0_L03
+2585 = k_AT_OL_P0_L31___AT_OL_P0_L02
+2586 = kn_AT_OL_P0_L31___AT_OL_P0_L02
+2587 = k_AT_OL_P0_L31___AT_OL_P0_L01
+2588 = kn_AT_OL_P0_L31___AT_OL_P0_L01
+2589 = k_AT_OL_P0_L32___AT_OA_P0_L00
+2590 = kn_AT_OL_P0_L32___AT_OA_P0_L00
+2591 = k_AT_OL_P0_L32___AT_OL_P0_L04
+2592 = kn_AT_OL_P0_L32___AT_OL_P0_L04
+2593 = k_AT_OL_P0_L32___AT_OL_P0_L03
+2594 = kn_AT_OL_P0_L32___AT_OL_P0_L03
+2595 = k_AT_OL_P0_L32___AT_OL_P0_L02
+2596 = kn_AT_OL_P0_L32___AT_OL_P0_L02
+2597 = k_AT_OL_P0_L32___AT_OL_P0_L01
+2598 = kn_AT_OL_P0_L32___AT_OL_P0_L01
+2599 = k_AT_OL_P0_L33___AT_OA_P0_L00
+2600 = kn_AT_OL_P0_L33___AT_OA_P0_L00
+2601 = k_AT_OL_P0_L33___AT_OL_P0_L04
+2602 = kn_AT_OL_P0_L33___AT_OL_P0_L04
+2603 = k_AT_OL_P0_L33___AT_OL_P0_L03
+2604 = kn_AT_OL_P0_L33___AT_OL_P0_L03
+2605 = k_AT_OL_P0_L33___AT_OL_P0_L02
+2606 = kn_AT_OL_P0_L33___AT_OL_P0_L02
+2607 = k_AT_OL_P0_L33___AT_OL_P0_L01
+2608 = kn_AT_OL_P0_L33___AT_OL_P0_L01
+2609 = k_AT_OL_P0_L34___AT_OA_P0_L00
+2610 = kn_AT_OL_P0_L34___AT_OA_P0_L00
+2611 = k_AT_OL_P0_L34___AT_OL_P0_L04
+2612 = kn_AT_OL_P0_L34___AT_OL_P0_L04
+2613 = k_AT_OL_P0_L34___AT_OL_P0_L03
+2614 = kn_AT_OL_P0_L34___AT_OL_P0_L03
+2615 = k_AT_OL_P0_L34___AT_OL_P0_L02
+2616 = kn_AT_OL_P0_L34___AT_OL_P0_L02
+2617 = k_AT_OL_P0_L34___AT_OL_P0_L01
+2618 = kn_AT_OL_P0_L34___AT_OL_P0_L01
+2619 = k_AT_OL_P0_L41___AT_OA_P0_L00
+2620 = kn_AT_OL_P0_L41___AT_OA_P0_L00
+2621 = k_AT_OL_P0_L41___AT_OL_P0_L04
+2622 = kn_AT_OL_P0_L41___AT_OL_P0_L04
+2623 = k_AT_OL_P0_L41___AT_OL_P0_L03
+2624 = kn_AT_OL_P0_L41___AT_OL_P0_L03
+2625 = k_AT_OL_P0_L41___AT_OL_P0_L02
+2626 = kn_AT_OL_P0_L41___AT_OL_P0_L02
+2627 = k_AT_OL_P0_L41___AT_OL_P0_L01
+2628 = kn_AT_OL_P0_L41___AT_OL_P0_L01
+2629 = k_AT_OL_P0_L42___AT_OA_P0_L00
+2630 = kn_AT_OL_P0_L42___AT_OA_P0_L00
+2631 = k_AT_OL_P0_L42___AT_OL_P0_L04
+2632 = kn_AT_OL_P0_L42___AT_OL_P0_L04
+2633 = k_AT_OL_P0_L42___AT_OL_P0_L03
+2634 = kn_AT_OL_P0_L42___AT_OL_P0_L03
+2635 = k_AT_OL_P0_L42___AT_OL_P0_L02
+2636 = kn_AT_OL_P0_L42___AT_OL_P0_L02
+2637 = k_AT_OL_P0_L42___AT_OL_P0_L01
+2638 = kn_AT_OL_P0_L42___AT_OL_P0_L01
+2639 = k_AT_OL_P0_L44___AT_OA_P0_L00
+2640 = kn_AT_OL_P0_L44___AT_OA_P0_L00
+2641 = k_AT_OL_P0_L44___AT_OL_P0_L04
+2642 = kn_AT_OL_P0_L44___AT_OL_P0_L04
+2643 = k_AT_OL_P0_L44___AT_OL_P0_L03
+2644 = kn_AT_OL_P0_L44___AT_OL_P0_L03
+2645 = k_AT_OL_P0_L44___AT_OL_P0_L02
+2646 = kn_AT_OL_P0_L44___AT_OL_P0_L02
+2647 = k_AT_OL_P0_L44___AT_OL_P0_L01
+2648 = kn_AT_OL_P0_L44___AT_OL_P0_L01
+2649 = k_AT_OL_P1_L01___AT_OA_P1_L20
+2650 = kn_AT_OL_P1_L01___AT_OA_P1_L20
+2651 = k_AT_OL_P1_L01___AT_OL_P1_L24
+2652 = kn_AT_OL_P1_L01___AT_OL_P1_L24
+2653 = k_AT_OL_P1_L01___AT_OL_P1_L23
+2654 = kn_AT_OL_P1_L01___AT_OL_P1_L23
+2655 = k_AT_OL_P1_L01___AT_OL_P1_L22
+2656 = kn_AT_OL_P1_L01___AT_OL_P1_L22
+2657 = k_AT_OL_P1_L01___AT_OL_P1_L21
+2658 = kn_AT_OL_P1_L01___AT_OL_P1_L21
+2659 = k_AT_OL_P1_L02___AT_OA_P1_L20
+2660 = kn_AT_OL_P1_L02___AT_OA_P1_L20
+2661 = k_AT_OL_P1_L02___AT_OL_P1_L24
+2662 = kn_AT_OL_P1_L02___AT_OL_P1_L24
+2663 = k_AT_OL_P1_L02___AT_OL_P1_L23
+2664 = kn_AT_OL_P1_L02___AT_OL_P1_L23
+2665 = k_AT_OL_P1_L02___AT_OL_P1_L22
+2666 = kn_AT_OL_P1_L02___AT_OL_P1_L22
+2667 = k_AT_OL_P1_L02___AT_OL_P1_L21
+2668 = kn_AT_OL_P1_L02___AT_OL_P1_L21
+2669 = k_AT_OL_P1_L04___AT_OA_P1_L20
+2670 = kn_AT_OL_P1_L04___AT_OA_P1_L20
+2671 = k_AT_OL_P1_L04___AT_OL_P1_L24
+2672 = kn_AT_OL_P1_L04___AT_OL_P1_L24
+2673 = k_AT_OL_P1_L04___AT_OL_P1_L23
+2674 = kn_AT_OL_P1_L04___AT_OL_P1_L23
+2675 = k_AT_OL_P1_L04___AT_OL_P1_L22
+2676 = kn_AT_OL_P1_L04___AT_OL_P1_L22
+2677 = k_AT_OL_P1_L04___AT_OL_P1_L21
+2678 = kn_AT_OL_P1_L04___AT_OL_P1_L21
+2679 = k_AT_OL_P1_L12___AT_OA_P1_L20
+2680 = kn_AT_OL_P1_L12___AT_OA_P1_L20
+2681 = k_AT_OL_P1_L12___AT_OL_P1_L24
+2682 = kn_AT_OL_P1_L12___AT_OL_P1_L24
+2683 = k_AT_OL_P1_L12___AT_OL_P1_L23
+2684 = kn_AT_OL_P1_L12___AT_OL_P1_L23
+2685 = k_AT_OL_P1_L12___AT_OL_P1_L22
+2686 = kn_AT_OL_P1_L12___AT_OL_P1_L22
+2687 = k_AT_OL_P1_L12___AT_OL_P1_L21
+2688 = kn_AT_OL_P1_L12___AT_OL_P1_L21
+2689 = k_AT_OL_P1_L13___AT_OA_P1_L20
+2690 = kn_AT_OL_P1_L13___AT_OA_P1_L20
+2691 = k_AT_OL_P1_L13___AT_OL_P1_L24
+2692 = kn_AT_OL_P1_L13___AT_OL_P1_L24
+2693 = k_AT_OL_P1_L13___AT_OL_P1_L23
+2694 = kn_AT_OL_P1_L13___AT_OL_P1_L23
+2695 = k_AT_OL_P1_L13___AT_OL_P1_L22
+2696 = kn_AT_OL_P1_L13___AT_OL_P1_L22
+2697 = k_AT_OL_P1_L13___AT_OL_P1_L21
+2698 = kn_AT_OL_P1_L13___AT_OL_P1_L21
+2699 = k_AT_OL_P1_L14___AT_OA_P1_L20
+2700 = kn_AT_OL_P1_L14___AT_OA_P1_L20
+2701 = k_AT_OL_P1_L14___AT_OL_P1_L24
+2702 = kn_AT_OL_P1_L14___AT_OL_P1_L24
+2703 = k_AT_OL_P1_L14___AT_OL_P1_L23
+2704 = kn_AT_OL_P1_L14___AT_OL_P1_L23
+2705 = k_AT_OL_P1_L14___AT_OL_P1_L22
+2706 = kn_AT_OL_P1_L14___AT_OL_P1_L22
+2707 = k_AT_OL_P1_L14___AT_OL_P1_L21
+2708 = kn_AT_OL_P1_L14___AT_OL_P1_L21
+2709 = k_AT_OL_P1_L21___AT_OA_P1_L20
+2710 = kn_AT_OL_P1_L21___AT_OA_P1_L20
+2711 = k_AT_OL_P1_L21___AT_OL_P1_L24
+2712 = kn_AT_OL_P1_L21___AT_OL_P1_L24
+2713 = k_AT_OL_P1_L21___AT_OL_P1_L23
+2714 = kn_AT_OL_P1_L21___AT_OL_P1_L23
+2715 = k_AT_OL_P1_L21___AT_OL_P1_L22
+2716 = kn_AT_OL_P1_L21___AT_OL_P1_L22
+2717 = k_AT_OL_P1_L21___AT_OL_P1_L21
+2718 = kn_AT_OL_P1_L21___AT_OL_P1_L21
+2719 = k_AT_OL_P1_L23___AT_OA_P1_L20
+2720 = kn_AT_OL_P1_L23___AT_OA_P1_L20
+2721 = k_AT_OL_P1_L23___AT_OL_P1_L24
+2722 = kn_AT_OL_P1_L23___AT_OL_P1_L24
+2723 = k_AT_OL_P1_L23___AT_OL_P1_L23
+2724 = kn_AT_OL_P1_L23___AT_OL_P1_L23
+2725 = k_AT_OL_P1_L23___AT_OL_P1_L22
+2726 = kn_AT_OL_P1_L23___AT_OL_P1_L22
+2727 = k_AT_OL_P1_L23___AT_OL_P1_L21
+2728 = kn_AT_OL_P1_L23___AT_OL_P1_L21
+2729 = k_AT_OL_P1_L24___AT_OA_P1_L20
+2730 = kn_AT_OL_P1_L24___AT_OA_P1_L20
+2731 = k_AT_OL_P1_L24___AT_OL_P1_L24
+2732 = kn_AT_OL_P1_L24___AT_OL_P1_L24
+2733 = k_AT_OL_P1_L24___AT_OL_P1_L23
+2734 = kn_AT_OL_P1_L24___AT_OL_P1_L23
+2735 = k_AT_OL_P1_L24___AT_OL_P1_L22
+2736 = kn_AT_OL_P1_L24___AT_OL_P1_L22
+2737 = k_AT_OL_P1_L24___AT_OL_P1_L21
+2738 = kn_AT_OL_P1_L24___AT_OL_P1_L21
+2739 = k_AT_OL_P1_L31___AT_OA_P1_L20
+2740 = kn_AT_OL_P1_L31___AT_OA_P1_L20
+2741 = k_AT_OL_P1_L31___AT_OL_P1_L24
+2742 = kn_AT_OL_P1_L31___AT_OL_P1_L24
+2743 = k_AT_OL_P1_L31___AT_OL_P1_L23
+2744 = kn_AT_OL_P1_L31___AT_OL_P1_L23
+2745 = k_AT_OL_P1_L31___AT_OL_P1_L22
+2746 = kn_AT_OL_P1_L31___AT_OL_P1_L22
+2747 = k_AT_OL_P1_L31___AT_OL_P1_L21
+2748 = kn_AT_OL_P1_L31___AT_OL_P1_L21
+2749 = k_AT_OL_P1_L32___AT_OA_P1_L20
+2750 = kn_AT_OL_P1_L32___AT_OA_P1_L20
+2751 = k_AT_OL_P1_L32___AT_OL_P1_L24
+2752 = kn_AT_OL_P1_L32___AT_OL_P1_L24
+2753 = k_AT_OL_P1_L32___AT_OL_P1_L23
+2754 = kn_AT_OL_P1_L32___AT_OL_P1_L23
+2755 = k_AT_OL_P1_L32___AT_OL_P1_L22
+2756 = kn_AT_OL_P1_L32___AT_OL_P1_L22
+2757 = k_AT_OL_P1_L32___AT_OL_P1_L21
+2758 = kn_AT_OL_P1_L32___AT_OL_P1_L21
+2759 = k_AT_OL_P1_L33___AT_OA_P1_L20
+2760 = kn_AT_OL_P1_L33___AT_OA_P1_L20
+2761 = k_AT_OL_P1_L33___AT_OL_P1_L24
+2762 = kn_AT_OL_P1_L33___AT_OL_P1_L24
+2763 = k_AT_OL_P1_L33___AT_OL_P1_L23
+2764 = kn_AT_OL_P1_L33___AT_OL_P1_L23
+2765 = k_AT_OL_P1_L33___AT_OL_P1_L22
+2766 = kn_AT_OL_P1_L33___AT_OL_P1_L22
+2767 = k_AT_OL_P1_L33___AT_OL_P1_L21
+2768 = kn_AT_OL_P1_L33___AT_OL_P1_L21
+2769 = k_AT_OL_P1_L34___AT_OA_P1_L20
+2770 = kn_AT_OL_P1_L34___AT_OA_P1_L20
+2771 = k_AT_OL_P1_L34___AT_OL_P1_L24
+2772 = kn_AT_OL_P1_L34___AT_OL_P1_L24
+2773 = k_AT_OL_P1_L34___AT_OL_P1_L23
+2774 = kn_AT_OL_P1_L34___AT_OL_P1_L23
+2775 = k_AT_OL_P1_L34___AT_OL_P1_L22
+2776 = kn_AT_OL_P1_L34___AT_OL_P1_L22
+2777 = k_AT_OL_P1_L34___AT_OL_P1_L21
+2778 = kn_AT_OL_P1_L34___AT_OL_P1_L21
+2779 = k_AT_OL_P1_L41___AT_OA_P1_L20
+2780 = kn_AT_OL_P1_L41___AT_OA_P1_L20
+2781 = k_AT_OL_P1_L41___AT_OL_P1_L24
+2782 = kn_AT_OL_P1_L41___AT_OL_P1_L24
+2783 = k_AT_OL_P1_L41___AT_OL_P1_L23
+2784 = kn_AT_OL_P1_L41___AT_OL_P1_L23
+2785 = k_AT_OL_P1_L41___AT_OL_P1_L22
+2786 = kn_AT_OL_P1_L41___AT_OL_P1_L22
+2787 = k_AT_OL_P1_L41___AT_OL_P1_L21
+2788 = kn_AT_OL_P1_L41___AT_OL_P1_L21
+2789 = k_AT_OL_P1_L42___AT_OA_P1_L20
+2790 = kn_AT_OL_P1_L42___AT_OA_P1_L20
+2791 = k_AT_OL_P1_L42___AT_OL_P1_L24
+2792 = kn_AT_OL_P1_L42___AT_OL_P1_L24
+2793 = k_AT_OL_P1_L42___AT_OL_P1_L23
+2794 = kn_AT_OL_P1_L42___AT_OL_P1_L23
+2795 = k_AT_OL_P1_L42___AT_OL_P1_L22
+2796 = kn_AT_OL_P1_L42___AT_OL_P1_L22
+2797 = k_AT_OL_P1_L42___AT_OL_P1_L21
+2798 = kn_AT_OL_P1_L42___AT_OL_P1_L21
+2799 = k_AT_OL_P1_L44___AT_OA_P1_L20
+2800 = kn_AT_OL_P1_L44___AT_OA_P1_L20
+2801 = k_AT_OL_P1_L44___AT_OL_P1_L24
+2802 = kn_AT_OL_P1_L44___AT_OL_P1_L24
+2803 = k_AT_OL_P1_L44___AT_OL_P1_L23
+2804 = kn_AT_OL_P1_L44___AT_OL_P1_L23
+2805 = k_AT_OL_P1_L44___AT_OL_P1_L22
+2806 = kn_AT_OL_P1_L44___AT_OL_P1_L22
+2807 = k_AT_OL_P1_L44___AT_OL_P1_L21
+2808 = kn_AT_OL_P1_L44___AT_OL_P1_L21
+2809 = k_AT_OL_P2_L01___AT_OA_P2_L10
+2810 = kn_AT_OL_P2_L01___AT_OA_P2_L10
+2811 = k_AT_OL_P2_L01___AT_OL_P2_L14
+2812 = kn_AT_OL_P2_L01___AT_OL_P2_L14
+2813 = k_AT_OL_P2_L01___AT_OL_P2_L13
+2814 = kn_AT_OL_P2_L01___AT_OL_P2_L13
+2815 = k_AT_OL_P2_L01___AT_OL_P2_L12
+2816 = kn_AT_OL_P2_L01___AT_OL_P2_L12
+2817 = k_AT_OL_P2_L01___AT_OL_P2_L11
+2818 = kn_AT_OL_P2_L01___AT_OL_P2_L11
+2819 = k_AT_OL_P2_L02___AT_OA_P2_L10
+2820 = kn_AT_OL_P2_L02___AT_OA_P2_L10
+2821 = k_AT_OL_P2_L02___AT_OL_P2_L14
+2822 = kn_AT_OL_P2_L02___AT_OL_P2_L14
+2823 = k_AT_OL_P2_L02___AT_OL_P2_L13
+2824 = kn_AT_OL_P2_L02___AT_OL_P2_L13
+2825 = k_AT_OL_P2_L02___AT_OL_P2_L12
+2826 = kn_AT_OL_P2_L02___AT_OL_P2_L12
+2827 = k_AT_OL_P2_L02___AT_OL_P2_L11
+2828 = kn_AT_OL_P2_L02___AT_OL_P2_L11
+2829 = k_AT_OL_P2_L04___AT_OA_P2_L10
+2830 = kn_AT_OL_P2_L04___AT_OA_P2_L10
+2831 = k_AT_OL_P2_L04___AT_OL_P2_L14
+2832 = kn_AT_OL_P2_L04___AT_OL_P2_L14
+2833 = k_AT_OL_P2_L04___AT_OL_P2_L13
+2834 = kn_AT_OL_P2_L04___AT_OL_P2_L13
+2835 = k_AT_OL_P2_L04___AT_OL_P2_L12
+2836 = kn_AT_OL_P2_L04___AT_OL_P2_L12
+2837 = k_AT_OL_P2_L04___AT_OL_P2_L11
+2838 = kn_AT_OL_P2_L04___AT_OL_P2_L11
+2839 = k_AT_OL_P2_L12___AT_OA_P2_L10
+2840 = kn_AT_OL_P2_L12___AT_OA_P2_L10
+2841 = k_AT_OL_P2_L12___AT_OL_P2_L14
+2842 = kn_AT_OL_P2_L12___AT_OL_P2_L14
+2843 = k_AT_OL_P2_L12___AT_OL_P2_L13
+2844 = kn_AT_OL_P2_L12___AT_OL_P2_L13
+2845 = k_AT_OL_P2_L12___AT_OL_P2_L12
+2846 = kn_AT_OL_P2_L12___AT_OL_P2_L12
+2847 = k_AT_OL_P2_L12___AT_OL_P2_L11
+2848 = kn_AT_OL_P2_L12___AT_OL_P2_L11
+2849 = k_AT_OL_P2_L13___AT_OA_P2_L10
+2850 = kn_AT_OL_P2_L13___AT_OA_P2_L10
+2851 = k_AT_OL_P2_L13___AT_OL_P2_L14
+2852 = kn_AT_OL_P2_L13___AT_OL_P2_L14
+2853 = k_AT_OL_P2_L13___AT_OL_P2_L13
+2854 = kn_AT_OL_P2_L13___AT_OL_P2_L13
+2855 = k_AT_OL_P2_L13___AT_OL_P2_L12
+2856 = kn_AT_OL_P2_L13___AT_OL_P2_L12
+2857 = k_AT_OL_P2_L13___AT_OL_P2_L11
+2858 = kn_AT_OL_P2_L13___AT_OL_P2_L11
+2859 = k_AT_OL_P2_L14___AT_OA_P2_L10
+2860 = kn_AT_OL_P2_L14___AT_OA_P2_L10
+2861 = k_AT_OL_P2_L14___AT_OL_P2_L14
+2862 = kn_AT_OL_P2_L14___AT_OL_P2_L14
+2863 = k_AT_OL_P2_L14___AT_OL_P2_L13
+2864 = kn_AT_OL_P2_L14___AT_OL_P2_L13
+2865 = k_AT_OL_P2_L14___AT_OL_P2_L12
+2866 = kn_AT_OL_P2_L14___AT_OL_P2_L12
+2867 = k_AT_OL_P2_L14___AT_OL_P2_L11
+2868 = kn_AT_OL_P2_L14___AT_OL_P2_L11
+2869 = k_AT_OL_P2_L21___AT_OA_P2_L10
+2870 = kn_AT_OL_P2_L21___AT_OA_P2_L10
+2871 = k_AT_OL_P2_L21___AT_OL_P2_L14
+2872 = kn_AT_OL_P2_L21___AT_OL_P2_L14
+2873 = k_AT_OL_P2_L21___AT_OL_P2_L13
+2874 = kn_AT_OL_P2_L21___AT_OL_P2_L13
+2875 = k_AT_OL_P2_L21___AT_OL_P2_L12
+2876 = kn_AT_OL_P2_L21___AT_OL_P2_L12
+2877 = k_AT_OL_P2_L21___AT_OL_P2_L11
+2878 = kn_AT_OL_P2_L21___AT_OL_P2_L11
+2879 = k_AT_OL_P2_L23___AT_OA_P2_L10
+2880 = kn_AT_OL_P2_L23___AT_OA_P2_L10
+2881 = k_AT_OL_P2_L23___AT_OL_P2_L14
+2882 = kn_AT_OL_P2_L23___AT_OL_P2_L14
+2883 = k_AT_OL_P2_L23___AT_OL_P2_L13
+2884 = kn_AT_OL_P2_L23___AT_OL_P2_L13
+2885 = k_AT_OL_P2_L23___AT_OL_P2_L12
+2886 = kn_AT_OL_P2_L23___AT_OL_P2_L12
+2887 = k_AT_OL_P2_L23___AT_OL_P2_L11
+2888 = kn_AT_OL_P2_L23___AT_OL_P2_L11
+2889 = k_AT_OL_P2_L24___AT_OA_P2_L10
+2890 = kn_AT_OL_P2_L24___AT_OA_P2_L10
+2891 = k_AT_OL_P2_L24___AT_OL_P2_L14
+2892 = kn_AT_OL_P2_L24___AT_OL_P2_L14
+2893 = k_AT_OL_P2_L24___AT_OL_P2_L13
+2894 = kn_AT_OL_P2_L24___AT_OL_P2_L13
+2895 = k_AT_OL_P2_L24___AT_OL_P2_L12
+2896 = kn_AT_OL_P2_L24___AT_OL_P2_L12
+2897 = k_AT_OL_P2_L24___AT_OL_P2_L11
+2898 = kn_AT_OL_P2_L24___AT_OL_P2_L11
+2899 = k_AT_OL_P2_L31___AT_OA_P2_L10
+2900 = kn_AT_OL_P2_L31___AT_OA_P2_L10
+2901 = k_AT_OL_P2_L31___AT_OL_P2_L14
+2902 = kn_AT_OL_P2_L31___AT_OL_P2_L14
+2903 = k_AT_OL_P2_L31___AT_OL_P2_L13
+2904 = kn_AT_OL_P2_L31___AT_OL_P2_L13
+2905 = k_AT_OL_P2_L31___AT_OL_P2_L12
+2906 = kn_AT_OL_P2_L31___AT_OL_P2_L12
+2907 = k_AT_OL_P2_L31___AT_OL_P2_L11
+2908 = kn_AT_OL_P2_L31___AT_OL_P2_L11
+2909 = k_AT_OL_P2_L32___AT_OA_P2_L10
+2910 = kn_AT_OL_P2_L32___AT_OA_P2_L10
+2911 = k_AT_OL_P2_L32___AT_OL_P2_L14
+2912 = kn_AT_OL_P2_L32___AT_OL_P2_L14
+2913 = k_AT_OL_P2_L32___AT_OL_P2_L13
+2914 = kn_AT_OL_P2_L32___AT_OL_P2_L13
+2915 = k_AT_OL_P2_L32___AT_OL_P2_L12
+2916 = kn_AT_OL_P2_L32___AT_OL_P2_L12
+2917 = k_AT_OL_P2_L32___AT_OL_P2_L11
+2918 = kn_AT_OL_P2_L32___AT_OL_P2_L11
+2919 = k_AT_OL_P2_L33___AT_OA_P2_L10
+2920 = kn_AT_OL_P2_L33___AT_OA_P2_L10
+2921 = k_AT_OL_P2_L33___AT_OL_P2_L14
+2922 = kn_AT_OL_P2_L33___AT_OL_P2_L14
+2923 = k_AT_OL_P2_L33___AT_OL_P2_L13
+2924 = kn_AT_OL_P2_L33___AT_OL_P2_L13
+2925 = k_AT_OL_P2_L33___AT_OL_P2_L12
+2926 = kn_AT_OL_P2_L33___AT_OL_P2_L12
+2927 = k_AT_OL_P2_L33___AT_OL_P2_L11
+2928 = kn_AT_OL_P2_L33___AT_OL_P2_L11
+2929 = k_AT_OL_P2_L34___AT_OA_P2_L10
+2930 = kn_AT_OL_P2_L34___AT_OA_P2_L10
+2931 = k_AT_OL_P2_L34___AT_OL_P2_L14
+2932 = kn_AT_OL_P2_L34___AT_OL_P2_L14
+2933 = k_AT_OL_P2_L34___AT_OL_P2_L13
+2934 = kn_AT_OL_P2_L34___AT_OL_P2_L13
+2935 = k_AT_OL_P2_L34___AT_OL_P2_L12
+2936 = kn_AT_OL_P2_L34___AT_OL_P2_L12
+2937 = k_AT_OL_P2_L34___AT_OL_P2_L11
+2938 = kn_AT_OL_P2_L34___AT_OL_P2_L11
+2939 = k_AT_OL_P2_L41___AT_OA_P2_L10
+2940 = kn_AT_OL_P2_L41___AT_OA_P2_L10
+2941 = k_AT_OL_P2_L41___AT_OL_P2_L14
+2942 = kn_AT_OL_P2_L41___AT_OL_P2_L14
+2943 = k_AT_OL_P2_L41___AT_OL_P2_L13
+2944 = kn_AT_OL_P2_L41___AT_OL_P2_L13
+2945 = k_AT_OL_P2_L41___AT_OL_P2_L12
+2946 = kn_AT_OL_P2_L41___AT_OL_P2_L12
+2947 = k_AT_OL_P2_L41___AT_OL_P2_L11
+2948 = kn_AT_OL_P2_L41___AT_OL_P2_L11
+2949 = k_AT_OL_P2_L42___AT_OA_P2_L10
+2950 = kn_AT_OL_P2_L42___AT_OA_P2_L10
+2951 = k_AT_OL_P2_L42___AT_OL_P2_L14
+2952 = kn_AT_OL_P2_L42___AT_OL_P2_L14
+2953 = k_AT_OL_P2_L42___AT_OL_P2_L13
+2954 = kn_AT_OL_P2_L42___AT_OL_P2_L13
+2955 = k_AT_OL_P2_L42___AT_OL_P2_L12
+2956 = kn_AT_OL_P2_L42___AT_OL_P2_L12
+2957 = k_AT_OL_P2_L42___AT_OL_P2_L11
+2958 = kn_AT_OL_P2_L42___AT_OL_P2_L11
+2959 = k_AT_OL_P2_L44___AT_OA_P2_L10
+2960 = kn_AT_OL_P2_L44___AT_OA_P2_L10
+2961 = k_AT_OL_P2_L44___AT_OL_P2_L14
+2962 = kn_AT_OL_P2_L44___AT_OL_P2_L14
+2963 = k_AT_OL_P2_L44___AT_OL_P2_L13
+2964 = kn_AT_OL_P2_L44___AT_OL_P2_L13
+2965 = k_AT_OL_P2_L44___AT_OL_P2_L12
+2966 = kn_AT_OL_P2_L44___AT_OL_P2_L12
+2967 = k_AT_OL_P2_L44___AT_OL_P2_L11
+2968 = kn_AT_OL_P2_L44___AT_OL_P2_L11
+2969 = k_AT_OL_P3_L01___AT_OA_P3_L20
+2970 = kn_AT_OL_P3_L01___AT_OA_P3_L20
+2971 = k_AT_OL_P3_L01___AT_OL_P3_L24
+2972 = kn_AT_OL_P3_L01___AT_OL_P3_L24
+2973 = k_AT_OL_P3_L01___AT_OL_P3_L23
+2974 = kn_AT_OL_P3_L01___AT_OL_P3_L23
+2975 = k_AT_OL_P3_L01___AT_OL_P3_L22
+2976 = kn_AT_OL_P3_L01___AT_OL_P3_L22
+2977 = k_AT_OL_P3_L01___AT_OL_P3_L21
+2978 = kn_AT_OL_P3_L01___AT_OL_P3_L21
+2979 = k_AT_OL_P3_L02___AT_OA_P3_L20
+2980 = kn_AT_OL_P3_L02___AT_OA_P3_L20
+2981 = k_AT_OL_P3_L02___AT_OL_P3_L24
+2982 = kn_AT_OL_P3_L02___AT_OL_P3_L24
+2983 = k_AT_OL_P3_L02___AT_OL_P3_L23
+2984 = kn_AT_OL_P3_L02___AT_OL_P3_L23
+2985 = k_AT_OL_P3_L02___AT_OL_P3_L22
+2986 = kn_AT_OL_P3_L02___AT_OL_P3_L22
+2987 = k_AT_OL_P3_L02___AT_OL_P3_L21
+2988 = kn_AT_OL_P3_L02___AT_OL_P3_L21
+2989 = k_AT_OL_P3_L04___AT_OA_P3_L20
+2990 = kn_AT_OL_P3_L04___AT_OA_P3_L20
+2991 = k_AT_OL_P3_L04___AT_OL_P3_L24
+2992 = kn_AT_OL_P3_L04___AT_OL_P3_L24
+2993 = k_AT_OL_P3_L04___AT_OL_P3_L23
+2994 = kn_AT_OL_P3_L04___AT_OL_P3_L23
+2995 = k_AT_OL_P3_L04___AT_OL_P3_L22
+2996 = kn_AT_OL_P3_L04___AT_OL_P3_L22
+2997 = k_AT_OL_P3_L04___AT_OL_P3_L21
+2998 = kn_AT_OL_P3_L04___AT_OL_P3_L21
+2999 = k_AT_OL_P3_L12___AT_OA_P3_L20
+3000 = kn_AT_OL_P3_L12___AT_OA_P3_L20
+3001 = k_AT_OL_P3_L12___AT_OL_P3_L24
+3002 = kn_AT_OL_P3_L12___AT_OL_P3_L24
+3003 = k_AT_OL_P3_L12___AT_OL_P3_L23
+3004 = kn_AT_OL_P3_L12___AT_OL_P3_L23
+3005 = k_AT_OL_P3_L12___AT_OL_P3_L22
+3006 = kn_AT_OL_P3_L12___AT_OL_P3_L22
+3007 = k_AT_OL_P3_L12___AT_OL_P3_L21
+3008 = kn_AT_OL_P3_L12___AT_OL_P3_L21
+3009 = k_AT_OL_P3_L13___AT_OA_P3_L20
+3010 = kn_AT_OL_P3_L13___AT_OA_P3_L20
+3011 = k_AT_OL_P3_L13___AT_OL_P3_L24
+3012 = kn_AT_OL_P3_L13___AT_OL_P3_L24
+3013 = k_AT_OL_P3_L13___AT_OL_P3_L23
+3014 = kn_AT_OL_P3_L13___AT_OL_P3_L23
+3015 = k_AT_OL_P3_L13___AT_OL_P3_L22
+3016 = kn_AT_OL_P3_L13___AT_OL_P3_L22
+3017 = k_AT_OL_P3_L13___AT_OL_P3_L21
+3018 = kn_AT_OL_P3_L13___AT_OL_P3_L21
+3019 = k_AT_OL_P3_L14___AT_OA_P3_L20
+3020 = kn_AT_OL_P3_L14___AT_OA_P3_L20
+3021 = k_AT_OL_P3_L14___AT_OL_P3_L24
+3022 = kn_AT_OL_P3_L14___AT_OL_P3_L24
+3023 = k_AT_OL_P3_L14___AT_OL_P3_L23
+3024 = kn_AT_OL_P3_L14___AT_OL_P3_L23
+3025 = k_AT_OL_P3_L14___AT_OL_P3_L22
+3026 = kn_AT_OL_P3_L14___AT_OL_P3_L22
+3027 = k_AT_OL_P3_L14___AT_OL_P3_L21
+3028 = kn_AT_OL_P3_L14___AT_OL_P3_L21
+3029 = k_AT_OL_P3_L21___AT_OA_P3_L20
+3030 = kn_AT_OL_P3_L21___AT_OA_P3_L20
+3031 = k_AT_OL_P3_L21___AT_OL_P3_L24
+3032 = kn_AT_OL_P3_L21___AT_OL_P3_L24
+3033 = k_AT_OL_P3_L21___AT_OL_P3_L23
+3034 = kn_AT_OL_P3_L21___AT_OL_P3_L23
+3035 = k_AT_OL_P3_L21___AT_OL_P3_L22
+3036 = kn_AT_OL_P3_L21___AT_OL_P3_L22
+3037 = k_AT_OL_P3_L21___AT_OL_P3_L21
+3038 = kn_AT_OL_P3_L21___AT_OL_P3_L21
+3039 = k_AT_OL_P3_L23___AT_OA_P3_L20
+3040 = kn_AT_OL_P3_L23___AT_OA_P3_L20
+3041 = k_AT_OL_P3_L23___AT_OL_P3_L24
+3042 = kn_AT_OL_P3_L23___AT_OL_P3_L24
+3043 = k_AT_OL_P3_L23___AT_OL_P3_L23
+3044 = kn_AT_OL_P3_L23___AT_OL_P3_L23
+3045 = k_AT_OL_P3_L23___AT_OL_P3_L22
+3046 = kn_AT_OL_P3_L23___AT_OL_P3_L22
+3047 = k_AT_OL_P3_L23___AT_OL_P3_L21
+3048 = kn_AT_OL_P3_L23___AT_OL_P3_L21
+3049 = k_AT_OL_P3_L24___AT_OA_P3_L20
+3050 = kn_AT_OL_P3_L24___AT_OA_P3_L20
+3051 = k_AT_OL_P3_L24___AT_OL_P3_L24
+3052 = kn_AT_OL_P3_L24___AT_OL_P3_L24
+3053 = k_AT_OL_P3_L24___AT_OL_P3_L23
+3054 = kn_AT_OL_P3_L24___AT_OL_P3_L23
+3055 = k_AT_OL_P3_L24___AT_OL_P3_L22
+3056 = kn_AT_OL_P3_L24___AT_OL_P3_L22
+3057 = k_AT_OL_P3_L24___AT_OL_P3_L21
+3058 = kn_AT_OL_P3_L24___AT_OL_P3_L21
+3059 = k_AT_OL_P3_L31___AT_OA_P3_L20
+3060 = kn_AT_OL_P3_L31___AT_OA_P3_L20
+3061 = k_AT_OL_P3_L31___AT_OL_P3_L24
+3062 = kn_AT_OL_P3_L31___AT_OL_P3_L24
+3063 = k_AT_OL_P3_L31___AT_OL_P3_L23
+3064 = kn_AT_OL_P3_L31___AT_OL_P3_L23
+3065 = k_AT_OL_P3_L31___AT_OL_P3_L22
+3066 = kn_AT_OL_P3_L31___AT_OL_P3_L22
+3067 = k_AT_OL_P3_L31___AT_OL_P3_L21
+3068 = kn_AT_OL_P3_L31___AT_OL_P3_L21
+3069 = k_AT_OL_P3_L32___AT_OA_P3_L20
+3070 = kn_AT_OL_P3_L32___AT_OA_P3_L20
+3071 = k_AT_OL_P3_L32___AT_OL_P3_L24
+3072 = kn_AT_OL_P3_L32___AT_OL_P3_L24
+3073 = k_AT_OL_P3_L32___AT_OL_P3_L23
+3074 = kn_AT_OL_P3_L32___AT_OL_P3_L23
+3075 = k_AT_OL_P3_L32___AT_OL_P3_L22
+3076 = kn_AT_OL_P3_L32___AT_OL_P3_L22
+3077 = k_AT_OL_P3_L32___AT_OL_P3_L21
+3078 = kn_AT_OL_P3_L32___AT_OL_P3_L21
+3079 = k_AT_OL_P3_L33___AT_OA_P3_L20
+3080 = kn_AT_OL_P3_L33___AT_OA_P3_L20
+3081 = k_AT_OL_P3_L33___AT_OL_P3_L24
+3082 = kn_AT_OL_P3_L33___AT_OL_P3_L24
+3083 = k_AT_OL_P3_L33___AT_OL_P3_L23
+3084 = kn_AT_OL_P3_L33___AT_OL_P3_L23
+3085 = k_AT_OL_P3_L33___AT_OL_P3_L22
+3086 = kn_AT_OL_P3_L33___AT_OL_P3_L22
+3087 = k_AT_OL_P3_L33___AT_OL_P3_L21
+3088 = kn_AT_OL_P3_L33___AT_OL_P3_L21
+3089 = k_AT_OL_P3_L34___AT_OA_P3_L20
+3090 = kn_AT_OL_P3_L34___AT_OA_P3_L20
+3091 = k_AT_OL_P3_L34___AT_OL_P3_L24
+3092 = kn_AT_OL_P3_L34___AT_OL_P3_L24
+3093 = k_AT_OL_P3_L34___AT_OL_P3_L23
+3094 = kn_AT_OL_P3_L34___AT_OL_P3_L23
+3095 = k_AT_OL_P3_L34___AT_OL_P3_L22
+3096 = kn_AT_OL_P3_L34___AT_OL_P3_L22
+3097 = k_AT_OL_P3_L34___AT_OL_P3_L21
+3098 = kn_AT_OL_P3_L34___AT_OL_P3_L21
+3099 = k_AT_OL_P3_L41___AT_OA_P3_L20
+3100 = kn_AT_OL_P3_L41___AT_OA_P3_L20
+3101 = k_AT_OL_P3_L41___AT_OL_P3_L24
+3102 = kn_AT_OL_P3_L41___AT_OL_P3_L24
+3103 = k_AT_OL_P3_L41___AT_OL_P3_L23
+3104 = kn_AT_OL_P3_L41___AT_OL_P3_L23
+3105 = k_AT_OL_P3_L41___AT_OL_P3_L22
+3106 = kn_AT_OL_P3_L41___AT_OL_P3_L22
+3107 = k_AT_OL_P3_L41___AT_OL_P3_L21
+3108 = kn_AT_OL_P3_L41___AT_OL_P3_L21
+3109 = k_AT_OL_P3_L42___AT_OA_P3_L20
+3110 = kn_AT_OL_P3_L42___AT_OA_P3_L20
+3111 = k_AT_OL_P3_L42___AT_OL_P3_L24
+3112 = kn_AT_OL_P3_L42___AT_OL_P3_L24
+3113 = k_AT_OL_P3_L42___AT_OL_P3_L23
+3114 = kn_AT_OL_P3_L42___AT_OL_P3_L23
+3115 = k_AT_OL_P3_L42___AT_OL_P3_L22
+3116 = kn_AT_OL_P3_L42___AT_OL_P3_L22
+3117 = k_AT_OL_P3_L42___AT_OL_P3_L21
+3118 = kn_AT_OL_P3_L42___AT_OL_P3_L21
+3119 = k_AT_OL_P3_L44___AT_OA_P3_L20
+3120 = kn_AT_OL_P3_L44___AT_OA_P3_L20
+3121 = k_AT_OL_P3_L44___AT_OL_P3_L24
+3122 = kn_AT_OL_P3_L44___AT_OL_P3_L24
+3123 = k_AT_OL_P3_L44___AT_OL_P3_L23
+3124 = kn_AT_OL_P3_L44___AT_OL_P3_L23
+3125 = k_AT_OL_P3_L44___AT_OL_P3_L22
+3126 = kn_AT_OL_P3_L44___AT_OL_P3_L22
+3127 = k_AT_OL_P3_L44___AT_OL_P3_L21
+3128 = kn_AT_OL_P3_L44___AT_OL_P3_L21
+3129 = k_AT_OL_P4_L01___AT_OA_P4_L40
+3130 = kn_AT_OL_P4_L01___AT_OA_P4_L40
+3131 = k_AT_OL_P4_L01___AT_OL_P4_L44
+3132 = kn_AT_OL_P4_L01___AT_OL_P4_L44
+3133 = k_AT_OL_P4_L01___AT_OL_P4_L43
+3134 = kn_AT_OL_P4_L01___AT_OL_P4_L43
+3135 = k_AT_OL_P4_L01___AT_OL_P4_L42
+3136 = kn_AT_OL_P4_L01___AT_OL_P4_L42
+3137 = k_AT_OL_P4_L01___AT_OL_P4_L41
+3138 = kn_AT_OL_P4_L01___AT_OL_P4_L41
+3139 = k_AT_OL_P4_L02___AT_OA_P4_L40
+3140 = kn_AT_OL_P4_L02___AT_OA_P4_L40
+3141 = k_AT_OL_P4_L02___AT_OL_P4_L44
+3142 = kn_AT_OL_P4_L02___AT_OL_P4_L44
+3143 = k_AT_OL_P4_L02___AT_OL_P4_L43
+3144 = kn_AT_OL_P4_L02___AT_OL_P4_L43
+3145 = k_AT_OL_P4_L02___AT_OL_P4_L42
+3146 = kn_AT_OL_P4_L02___AT_OL_P4_L42
+3147 = k_AT_OL_P4_L02___AT_OL_P4_L41
+3148 = kn_AT_OL_P4_L02___AT_OL_P4_L41
+3149 = k_AT_OL_P4_L04___AT_OA_P4_L40
+3150 = kn_AT_OL_P4_L04___AT_OA_P4_L40
+3151 = k_AT_OL_P4_L04___AT_OL_P4_L44
+3152 = kn_AT_OL_P4_L04___AT_OL_P4_L44
+3153 = k_AT_OL_P4_L04___AT_OL_P4_L43
+3154 = kn_AT_OL_P4_L04___AT_OL_P4_L43
+3155 = k_AT_OL_P4_L04___AT_OL_P4_L42
+3156 = kn_AT_OL_P4_L04___AT_OL_P4_L42
+3157 = k_AT_OL_P4_L04___AT_OL_P4_L41
+3158 = kn_AT_OL_P4_L04___AT_OL_P4_L41
+3159 = k_AT_OL_P4_L12___AT_OA_P4_L40
+3160 = kn_AT_OL_P4_L12___AT_OA_P4_L40
+3161 = k_AT_OL_P4_L12___AT_OL_P4_L44
+3162 = kn_AT_OL_P4_L12___AT_OL_P4_L44
+3163 = k_AT_OL_P4_L12___AT_OL_P4_L43
+3164 = kn_AT_OL_P4_L12___AT_OL_P4_L43
+3165 = k_AT_OL_P4_L12___AT_OL_P4_L42
+3166 = kn_AT_OL_P4_L12___AT_OL_P4_L42
+3167 = k_AT_OL_P4_L12___AT_OL_P4_L41
+3168 = kn_AT_OL_P4_L12___AT_OL_P4_L41
+3169 = k_AT_OL_P4_L13___AT_OA_P4_L40
+3170 = kn_AT_OL_P4_L13___AT_OA_P4_L40
+3171 = k_AT_OL_P4_L13___AT_OL_P4_L44
+3172 = kn_AT_OL_P4_L13___AT_OL_P4_L44
+3173 = k_AT_OL_P4_L13___AT_OL_P4_L43
+3174 = kn_AT_OL_P4_L13___AT_OL_P4_L43
+3175 = k_AT_OL_P4_L13___AT_OL_P4_L42
+3176 = kn_AT_OL_P4_L13___AT_OL_P4_L42
+3177 = k_AT_OL_P4_L13___AT_OL_P4_L41
+3178 = kn_AT_OL_P4_L13___AT_OL_P4_L41
+3179 = k_AT_OL_P4_L14___AT_OA_P4_L40
+3180 = kn_AT_OL_P4_L14___AT_OA_P4_L40
+3181 = k_AT_OL_P4_L14___AT_OL_P4_L44
+3182 = kn_AT_OL_P4_L14___AT_OL_P4_L44
+3183 = k_AT_OL_P4_L14___AT_OL_P4_L43
+3184 = kn_AT_OL_P4_L14___AT_OL_P4_L43
+3185 = k_AT_OL_P4_L14___AT_OL_P4_L42
+3186 = kn_AT_OL_P4_L14___AT_OL_P4_L42
+3187 = k_AT_OL_P4_L14___AT_OL_P4_L41
+3188 = kn_AT_OL_P4_L14___AT_OL_P4_L41
+3189 = k_AT_OL_P4_L21___AT_OA_P4_L40
+3190 = kn_AT_OL_P4_L21___AT_OA_P4_L40
+3191 = k_AT_OL_P4_L21___AT_OL_P4_L44
+3192 = kn_AT_OL_P4_L21___AT_OL_P4_L44
+3193 = k_AT_OL_P4_L21___AT_OL_P4_L43
+3194 = kn_AT_OL_P4_L21___AT_OL_P4_L43
+3195 = k_AT_OL_P4_L21___AT_OL_P4_L42
+3196 = kn_AT_OL_P4_L21___AT_OL_P4_L42
+3197 = k_AT_OL_P4_L21___AT_OL_P4_L41
+3198 = kn_AT_OL_P4_L21___AT_OL_P4_L41
+3199 = k_AT_OL_P4_L23___AT_OA_P4_L40
+3200 = kn_AT_OL_P4_L23___AT_OA_P4_L40
+3201 = k_AT_OL_P4_L23___AT_OL_P4_L44
+3202 = kn_AT_OL_P4_L23___AT_OL_P4_L44
+3203 = k_AT_OL_P4_L23___AT_OL_P4_L43
+3204 = kn_AT_OL_P4_L23___AT_OL_P4_L43
+3205 = k_AT_OL_P4_L23___AT_OL_P4_L42
+3206 = kn_AT_OL_P4_L23___AT_OL_P4_L42
+3207 = k_AT_OL_P4_L23___AT_OL_P4_L41
+3208 = kn_AT_OL_P4_L23___AT_OL_P4_L41
+3209 = k_AT_OL_P4_L24___AT_OA_P4_L40
+3210 = kn_AT_OL_P4_L24___AT_OA_P4_L40
+3211 = k_AT_OL_P4_L24___AT_OL_P4_L44
+3212 = kn_AT_OL_P4_L24___AT_OL_P4_L44
+3213 = k_AT_OL_P4_L24___AT_OL_P4_L43
+3214 = kn_AT_OL_P4_L24___AT_OL_P4_L43
+3215 = k_AT_OL_P4_L24___AT_OL_P4_L42
+3216 = kn_AT_OL_P4_L24___AT_OL_P4_L42
+3217 = k_AT_OL_P4_L24___AT_OL_P4_L41
+3218 = kn_AT_OL_P4_L24___AT_OL_P4_L41
+3219 = k_AT_OL_P4_L31___AT_OA_P4_L40
+3220 = kn_AT_OL_P4_L31___AT_OA_P4_L40
+3221 = k_AT_OL_P4_L31___AT_OL_P4_L44
+3222 = kn_AT_OL_P4_L31___AT_OL_P4_L44
+3223 = k_AT_OL_P4_L31___AT_OL_P4_L43
+3224 = kn_AT_OL_P4_L31___AT_OL_P4_L43
+3225 = k_AT_OL_P4_L31___AT_OL_P4_L42
+3226 = kn_AT_OL_P4_L31___AT_OL_P4_L42
+3227 = k_AT_OL_P4_L31___AT_OL_P4_L41
+3228 = kn_AT_OL_P4_L31___AT_OL_P4_L41
+3229 = k_AT_OL_P4_L32___AT_OA_P4_L40
+3230 = kn_AT_OL_P4_L32___AT_OA_P4_L40
+3231 = k_AT_OL_P4_L32___AT_OL_P4_L44
+3232 = kn_AT_OL_P4_L32___AT_OL_P4_L44
+3233 = k_AT_OL_P4_L32___AT_OL_P4_L43
+3234 = kn_AT_OL_P4_L32___AT_OL_P4_L43
+3235 = k_AT_OL_P4_L32___AT_OL_P4_L42
+3236 = kn_AT_OL_P4_L32___AT_OL_P4_L42
+3237 = k_AT_OL_P4_L32___AT_OL_P4_L41
+3238 = kn_AT_OL_P4_L32___AT_OL_P4_L41
+3239 = k_AT_OL_P4_L33___AT_OA_P4_L40
+3240 = kn_AT_OL_P4_L33___AT_OA_P4_L40
+3241 = k_AT_OL_P4_L33___AT_OL_P4_L44
+3242 = kn_AT_OL_P4_L33___AT_OL_P4_L44
+3243 = k_AT_OL_P4_L33___AT_OL_P4_L43
+3244 = kn_AT_OL_P4_L33___AT_OL_P4_L43
+3245 = k_AT_OL_P4_L33___AT_OL_P4_L42
+3246 = kn_AT_OL_P4_L33___AT_OL_P4_L42
+3247 = k_AT_OL_P4_L33___AT_OL_P4_L41
+3248 = kn_AT_OL_P4_L33___AT_OL_P4_L41
+3249 = k_AT_OL_P4_L34___AT_OA_P4_L40
+3250 = kn_AT_OL_P4_L34___AT_OA_P4_L40
+3251 = k_AT_OL_P4_L34___AT_OL_P4_L44
+3252 = kn_AT_OL_P4_L34___AT_OL_P4_L44
+3253 = k_AT_OL_P4_L34___AT_OL_P4_L43
+3254 = kn_AT_OL_P4_L34___AT_OL_P4_L43
+3255 = k_AT_OL_P4_L34___AT_OL_P4_L42
+3256 = kn_AT_OL_P4_L34___AT_OL_P4_L42
+3257 = k_AT_OL_P4_L34___AT_OL_P4_L41
+3258 = kn_AT_OL_P4_L34___AT_OL_P4_L41
+3259 = k_AT_OL_P4_L41___AT_OA_P4_L40
+3260 = kn_AT_OL_P4_L41___AT_OA_P4_L40
+3261 = k_AT_OL_P4_L41___AT_OL_P4_L44
+3262 = kn_AT_OL_P4_L41___AT_OL_P4_L44
+3263 = k_AT_OL_P4_L41___AT_OL_P4_L43
+3264 = kn_AT_OL_P4_L41___AT_OL_P4_L43
+3265 = k_AT_OL_P4_L41___AT_OL_P4_L42
+3266 = kn_AT_OL_P4_L41___AT_OL_P4_L42
+3267 = k_AT_OL_P4_L41___AT_OL_P4_L41
+3268 = kn_AT_OL_P4_L41___AT_OL_P4_L41
+3269 = k_AT_OL_P4_L42___AT_OA_P4_L40
+3270 = kn_AT_OL_P4_L42___AT_OA_P4_L40
+3271 = k_AT_OL_P4_L42___AT_OL_P4_L44
+3272 = kn_AT_OL_P4_L42___AT_OL_P4_L44
+3273 = k_AT_OL_P4_L42___AT_OL_P4_L43
+3274 = kn_AT_OL_P4_L42___AT_OL_P4_L43
+3275 = k_AT_OL_P4_L42___AT_OL_P4_L42
+3276 = kn_AT_OL_P4_L42___AT_OL_P4_L42
+3277 = k_AT_OL_P4_L42___AT_OL_P4_L41
+3278 = kn_AT_OL_P4_L42___AT_OL_P4_L41
+3279 = k_AT_OL_P4_L44___AT_OA_P4_L40
+3280 = kn_AT_OL_P4_L44___AT_OA_P4_L40
+3281 = k_AT_OL_P4_L44___AT_OL_P4_L44
+3282 = kn_AT_OL_P4_L44___AT_OL_P4_L44
+3283 = k_AT_OL_P4_L44___AT_OL_P4_L43
+3284 = kn_AT_OL_P4_L44___AT_OL_P4_L43
+3285 = k_AT_OL_P4_L44___AT_OL_P4_L42
+3286 = kn_AT_OL_P4_L44___AT_OL_P4_L42
+3287 = k_AT_OL_P4_L44___AT_OL_P4_L41
+3288 = kn_AT_OL_P4_L44___AT_OL_P4_L41
+3289 = k_AT_OA_P0_L10___AT_OA_P0_L00
+3290 = kn_AT_OA_P0_L10___AT_OA_P0_L00
+3291 = k_AT_OA_P0_L10___AT_OL_P0_L04
+3292 = kn_AT_OA_P0_L10___AT_OL_P0_L04
+3293 = k_AT_OA_P0_L10___AT_OL_P0_L03
+3294 = kn_AT_OA_P0_L10___AT_OL_P0_L03
+3295 = k_AT_OA_P0_L10___AT_OL_P0_L02
+3296 = kn_AT_OA_P0_L10___AT_OL_P0_L02
+3297 = k_AT_OA_P0_L10___AT_OL_P0_L01
+3298 = kn_AT_OA_P0_L10___AT_OL_P0_L01
+3299 = k_AT_OA_P0_L20___AT_OA_P0_L00
+3300 = kn_AT_OA_P0_L20___AT_OA_P0_L00
+3301 = k_AT_OA_P0_L20___AT_OL_P0_L04
+3302 = kn_AT_OA_P0_L20___AT_OL_P0_L04
+3303 = k_AT_OA_P0_L20___AT_OL_P0_L03
+3304 = kn_AT_OA_P0_L20___AT_OL_P0_L03
+3305 = k_AT_OA_P0_L20___AT_OL_P0_L02
+3306 = kn_AT_OA_P0_L20___AT_OL_P0_L02
+3307 = k_AT_OA_P0_L20___AT_OL_P0_L01
+3308 = kn_AT_OA_P0_L20___AT_OL_P0_L01
+3309 = k_AT_OA_P0_L40___AT_OA_P0_L00
+3310 = kn_AT_OA_P0_L40___AT_OA_P0_L00
+3311 = k_AT_OA_P0_L40___AT_OL_P0_L04
+3312 = kn_AT_OA_P0_L40___AT_OL_P0_L04
+3313 = k_AT_OA_P0_L40___AT_OL_P0_L03
+3314 = kn_AT_OA_P0_L40___AT_OL_P0_L03
+3315 = k_AT_OA_P0_L40___AT_OL_P0_L02
+3316 = kn_AT_OA_P0_L40___AT_OL_P0_L02
+3317 = k_AT_OA_P0_L40___AT_OL_P0_L01
+3318 = kn_AT_OA_P0_L40___AT_OL_P0_L01
+3319 = k_AT_OA_P1_L10___AT_OA_P1_L20
+3320 = kn_AT_OA_P1_L10___AT_OA_P1_L20
+3321 = k_AT_OA_P1_L10___AT_OL_P1_L24
+3322 = kn_AT_OA_P1_L10___AT_OL_P1_L24
+3323 = k_AT_OA_P1_L10___AT_OL_P1_L23
+3324 = kn_AT_OA_P1_L10___AT_OL_P1_L23
+3325 = k_AT_OA_P1_L10___AT_OL_P1_L22
+3326 = kn_AT_OA_P1_L10___AT_OL_P1_L22
+3327 = k_AT_OA_P1_L10___AT_OL_P1_L21
+3328 = kn_AT_OA_P1_L10___AT_OL_P1_L21
+3329 = k_AT_OA_P1_L20___AT_OA_P1_L20
+3330 = kn_AT_OA_P1_L20___AT_OA_P1_L20
+3331 = k_AT_OA_P1_L20___AT_OL_P1_L24
+3332 = kn_AT_OA_P1_L20___AT_OL_P1_L24
+3333 = k_AT_OA_P1_L20___AT_OL_P1_L23
+3334 = kn_AT_OA_P1_L20___AT_OL_P1_L23
+3335 = k_AT_OA_P1_L20___AT_OL_P1_L22
+3336 = kn_AT_OA_P1_L20___AT_OL_P1_L22
+3337 = k_AT_OA_P1_L20___AT_OL_P1_L21
+3338 = kn_AT_OA_P1_L20___AT_OL_P1_L21
+3339 = k_AT_OA_P1_L40___AT_OA_P1_L20
+3340 = kn_AT_OA_P1_L40___AT_OA_P1_L20
+3341 = k_AT_OA_P1_L40___AT_OL_P1_L24
+3342 = kn_AT_OA_P1_L40___AT_OL_P1_L24
+3343 = k_AT_OA_P1_L40___AT_OL_P1_L23
+3344 = kn_AT_OA_P1_L40___AT_OL_P1_L23
+3345 = k_AT_OA_P1_L40___AT_OL_P1_L22
+3346 = kn_AT_OA_P1_L40___AT_OL_P1_L22
+3347 = k_AT_OA_P1_L40___AT_OL_P1_L21
+3348 = kn_AT_OA_P1_L40___AT_OL_P1_L21
+3349 = k_AT_OA_P2_L10___AT_OA_P2_L10
+3350 = kn_AT_OA_P2_L10___AT_OA_P2_L10
+3351 = k_AT_OA_P2_L10___AT_OL_P2_L14
+3352 = kn_AT_OA_P2_L10___AT_OL_P2_L14
+3353 = k_AT_OA_P2_L10___AT_OL_P2_L13
+3354 = kn_AT_OA_P2_L10___AT_OL_P2_L13
+3355 = k_AT_OA_P2_L10___AT_OL_P2_L12
+3356 = kn_AT_OA_P2_L10___AT_OL_P2_L12
+3357 = k_AT_OA_P2_L10___AT_OL_P2_L11
+3358 = kn_AT_OA_P2_L10___AT_OL_P2_L11
+3359 = k_AT_OA_P2_L20___AT_OA_P2_L10
+3360 = kn_AT_OA_P2_L20___AT_OA_P2_L10
+3361 = k_AT_OA_P2_L20___AT_OL_P2_L14
+3362 = kn_AT_OA_P2_L20___AT_OL_P2_L14
+3363 = k_AT_OA_P2_L20___AT_OL_P2_L13
+3364 = kn_AT_OA_P2_L20___AT_OL_P2_L13
+3365 = k_AT_OA_P2_L20___AT_OL_P2_L12
+3366 = kn_AT_OA_P2_L20___AT_OL_P2_L12
+3367 = k_AT_OA_P2_L20___AT_OL_P2_L11
+3368 = kn_AT_OA_P2_L20___AT_OL_P2_L11
+3369 = k_AT_OA_P2_L40___AT_OA_P2_L10
+3370 = kn_AT_OA_P2_L40___AT_OA_P2_L10
+3371 = k_AT_OA_P2_L40___AT_OL_P2_L14
+3372 = kn_AT_OA_P2_L40___AT_OL_P2_L14
+3373 = k_AT_OA_P2_L40___AT_OL_P2_L13
+3374 = kn_AT_OA_P2_L40___AT_OL_P2_L13
+3375 = k_AT_OA_P2_L40___AT_OL_P2_L12
+3376 = kn_AT_OA_P2_L40___AT_OL_P2_L12
+3377 = k_AT_OA_P2_L40___AT_OL_P2_L11
+3378 = kn_AT_OA_P2_L40___AT_OL_P2_L11
+3379 = k_AT_OA_P3_L10___AT_OA_P3_L20
+3380 = kn_AT_OA_P3_L10___AT_OA_P3_L20
+3381 = k_AT_OA_P3_L10___AT_OL_P3_L24
+3382 = kn_AT_OA_P3_L10___AT_OL_P3_L24
+3383 = k_AT_OA_P3_L10___AT_OL_P3_L23
+3384 = kn_AT_OA_P3_L10___AT_OL_P3_L23
+3385 = k_AT_OA_P3_L10___AT_OL_P3_L22
+3386 = kn_AT_OA_P3_L10___AT_OL_P3_L22
+3387 = k_AT_OA_P3_L10___AT_OL_P3_L21
+3388 = kn_AT_OA_P3_L10___AT_OL_P3_L21
+3389 = k_AT_OA_P3_L20___AT_OA_P3_L20
+3390 = kn_AT_OA_P3_L20___AT_OA_P3_L20
+3391 = k_AT_OA_P3_L20___AT_OL_P3_L24
+3392 = kn_AT_OA_P3_L20___AT_OL_P3_L24
+3393 = k_AT_OA_P3_L20___AT_OL_P3_L23
+3394 = kn_AT_OA_P3_L20___AT_OL_P3_L23
+3395 = k_AT_OA_P3_L20___AT_OL_P3_L22
+3396 = kn_AT_OA_P3_L20___AT_OL_P3_L22
+3397 = k_AT_OA_P3_L20___AT_OL_P3_L21
+3398 = kn_AT_OA_P3_L20___AT_OL_P3_L21
+3399 = k_AT_OA_P3_L40___AT_OA_P3_L20
+3400 = kn_AT_OA_P3_L40___AT_OA_P3_L20
+3401 = k_AT_OA_P3_L40___AT_OL_P3_L24
+3402 = kn_AT_OA_P3_L40___AT_OL_P3_L24
+3403 = k_AT_OA_P3_L40___AT_OL_P3_L23
+3404 = kn_AT_OA_P3_L40___AT_OL_P3_L23
+3405 = k_AT_OA_P3_L40___AT_OL_P3_L22
+3406 = kn_AT_OA_P3_L40___AT_OL_P3_L22
+3407 = k_AT_OA_P3_L40___AT_OL_P3_L21
+3408 = kn_AT_OA_P3_L40___AT_OL_P3_L21
+3409 = k_AT_OA_P4_L10___AT_OA_P4_L40
+3410 = kn_AT_OA_P4_L10___AT_OA_P4_L40
+3411 = k_AT_OA_P4_L10___AT_OL_P4_L44
+3412 = kn_AT_OA_P4_L10___AT_OL_P4_L44
+3413 = k_AT_OA_P4_L10___AT_OL_P4_L43
+3414 = kn_AT_OA_P4_L10___AT_OL_P4_L43
+3415 = k_AT_OA_P4_L10___AT_OL_P4_L42
+3416 = kn_AT_OA_P4_L10___AT_OL_P4_L42
+3417 = k_AT_OA_P4_L10___AT_OL_P4_L41
+3418 = kn_AT_OA_P4_L10___AT_OL_P4_L41
+3419 = k_AT_OA_P4_L20___AT_OA_P4_L40
+3420 = kn_AT_OA_P4_L20___AT_OA_P4_L40
+3421 = k_AT_OA_P4_L20___AT_OL_P4_L44
+3422 = kn_AT_OA_P4_L20___AT_OL_P4_L44
+3423 = k_AT_OA_P4_L20___AT_OL_P4_L43
+3424 = kn_AT_OA_P4_L20___AT_OL_P4_L43
+3425 = k_AT_OA_P4_L20___AT_OL_P4_L42
+3426 = kn_AT_OA_P4_L20___AT_OL_P4_L42
+3427 = k_AT_OA_P4_L20___AT_OL_P4_L41
+3428 = kn_AT_OA_P4_L20___AT_OL_P4_L41
+3429 = k_AT_OA_P4_L40___AT_OA_P4_L40
+3430 = kn_AT_OA_P4_L40___AT_OA_P4_L40
+3431 = k_AT_OA_P4_L40___AT_OL_P4_L44
+3432 = kn_AT_OA_P4_L40___AT_OL_P4_L44
+3433 = k_AT_OA_P4_L40___AT_OL_P4_L43
+3434 = kn_AT_OA_P4_L40___AT_OL_P4_L43
+3435 = k_AT_OA_P4_L40___AT_OL_P4_L42
+3436 = kn_AT_OA_P4_L40___AT_OL_P4_L42
+3437 = k_AT_OA_P4_L40___AT_OL_P4_L41
+3438 = kn_AT_OA_P4_L40___AT_OL_P4_L41
+REGISTER: make_split_t0c() took 0.055584 secs
+
+
+Haciendo merge...
+REGISTER (entering): make_k_t0c()
+Trying to merge: AT_OA_P0_L10(31)/(AT_OA_P0_L00(32), ) with var = 32
+Trying to make merge with (4) = (AT_OA_P0_L00(32), AT_OL_P0_L04(129), AT_OL_P0_L03(130), AT_OL_P0_L02(131), AT_OL_P0_L01(132), )
+accepting 32 tagged 
+accepting 129 tagged 
+accepting 130 tagged 
+accepting 131 tagged 
+accepting 132 tagged 
+Merging with (4) = (32,129,130,131,132,)
+Trying to merge: AT_OA_P0_L10(31)/(AT_OL_P0_L04(129), ) with var = 129
+Trying to merge: AT_OA_P0_L10(31)/(AT_OL_P0_L03(130), ) with var = 130
+Trying to merge: AT_OA_P0_L10(31)/(AT_OL_P0_L02(131), ) with var = 131
+Trying to merge: AT_OA_P0_L10(31)/(AT_OL_P0_L01(132), ) with var = 132
+Trying to merge: AT_OL_P4_L42(35)/(AT_OA_P4_L40(8), ) with var = 8
+Trying to make merge with (0) = (AT_OA_P4_L40(8), AT_OL_P4_L44(33), AT_OL_P4_L43(34), AT_OL_P4_L42(35), AT_OL_P4_L41(36), )
+accepting 8 tagged 
+accepting 33 tagged 
+accepting 34 tagged 
+accepting 35 tagged 
+accepting 36 tagged 
+Merging with (0) = (8,33,34,35,36,)
+Trying to merge: AT_OL_P4_L42(35)/(AT_OL_P4_L44(33), ) with var = 33
+Trying to merge: AT_OL_P4_L42(35)/(AT_OL_P4_L43(34), ) with var = 34
+Trying to merge: AT_OL_P4_L42(35)/(AT_OL_P4_L42(35), ) with var = 35
+Trying to merge: AT_OL_P4_L42(35)/(AT_OL_P4_L41(36), ) with var = 36
+Trying to merge: AT_OL_P3_L32(59)/(AT_OA_P3_L20(15), ) with var = 15
+Trying to make merge with (1) = (AT_OA_P3_L20(15), AT_OL_P3_L24(61), AT_OL_P3_L23(62), AT_OL_P3_L22(63), AT_OL_P3_L21(64), )
+accepting 15 tagged 
+accepting 61 tagged 
+accepting 62 tagged 
+accepting 63 tagged 
+accepting 64 tagged 
+Merging with (1) = (15,61,62,63,64,)
+Trying to merge: AT_OL_P3_L32(59)/(AT_OL_P3_L24(61), ) with var = 61
+Trying to merge: AT_OL_P3_L32(59)/(AT_OL_P3_L23(62), ) with var = 62
+Trying to merge: AT_OL_P3_L32(59)/(AT_OL_P3_L22(63), ) with var = 63
+Trying to merge: AT_OL_P3_L32(59)/(AT_OL_P3_L21(64), ) with var = 64
+Trying to merge: AT_OL_P2_L11(88)/(AT_OA_P2_L10(21), ) with var = 21
+Trying to make merge with (2) = (AT_OA_P2_L10(21), AT_OL_P2_L14(85), AT_OL_P2_L13(86), AT_OL_P2_L12(87), AT_OL_P2_L11(88), )
+accepting 21 tagged 
+accepting 85 tagged 
+accepting 86 tagged 
+accepting 87 tagged 
+accepting 88 tagged 
+Merging with (2) = (21,85,86,87,88,)
+Trying to merge: AT_OL_P2_L11(88)/(AT_OL_P2_L14(85), ) with var = 85
+Trying to merge: AT_OL_P2_L11(88)/(AT_OL_P2_L13(86), ) with var = 86
+Trying to merge: AT_OL_P2_L11(88)/(AT_OL_P2_L12(87), ) with var = 87
+Trying to merge: AT_OL_P2_L11(88)/(AT_OL_P2_L11(88), ) with var = 88
+Trying to merge: AT_OL_P1_L12(107)/(AT_OA_P1_L20(25), ) with var = 25
+Trying to make merge with (3) = (AT_OA_P1_L20(25), AT_OL_P1_L24(101), AT_OL_P1_L23(102), AT_OL_P1_L22(103), AT_OL_P1_L21(104), )
+accepting 25 tagged 
+accepting 101 tagged 
+accepting 102 tagged 
+accepting 103 tagged 
+accepting 104 tagged 
+Merging with (3) = (25,101,102,103,104,)
+Trying to merge: AT_OL_P1_L12(107)/(AT_OL_P1_L24(101), ) with var = 101
+Trying to merge: AT_OL_P1_L12(107)/(AT_OL_P1_L23(102), ) with var = 102
+Trying to merge: AT_OL_P1_L12(107)/(AT_OL_P1_L22(103), ) with var = 103
+Trying to merge: AT_OL_P1_L12(107)/(AT_OL_P1_L21(104), ) with var = 104
+REGISTER: make_k_t0c() took 0.01057 secs
+REGISTER (entering): make_merge_act()
+REGISTER: make_merge_act() took 0.000125995 secs
+REGISTER (entering): make_merge_act()
+REGISTER: make_merge_act() took 0.000749983 secs
+REGISTER (entering): make_merge_act()
+REGISTER: make_merge_act() took 0.000786049 secs
+REGISTER (entering): clean_actions()
+fixpoint 0
+fixpoint 0
+fixpoint 0
+fixpoint 0
+fixpoint 0
+fixpoint 1
+Number of Atoms to del: 0
+REGISTER: clean_actions() took 0.0373 secs
+IMPLIES_WITH_INIT: From lit AT_OA_P4_L40(8) obtaing the following lits:IN_OT_P0_T0(-217) IN_OT_P0_T1(-216) IN_OT_P0_T2(-215) IN_OT_P0_T3(-214) IN_OT_P0_T4(-213) IN_OT_P1_T0(-212) IN_OT_P1_T1(-211) IN_OT_P1_T2(-210) IN_OT_P1_T3(-209) IN_OT_P1_T4(-208) IN_OT_P2_T0(-207) IN_OT_P2_T1(-206) IN_OT_P2_T2(-205) IN_OT_P2_T3(-204) IN_OT_P2_T4(-203) IN_OT_P3_T0(-202) IN_OT_P3_T1(-201) IN_OT_P3_T2(-200) IN_OT_P3_T3(-199) IN_OT_P3_T4(-198) IN_OT_P4_T0(-197) IN_OT_P4_T1(-196) IN_OT_P4_T2(-195) IN_OT_P4_T3(-194) IN_OT_P4_T4(-193) IN_OA_P0_A0(-192) IN_OA_P1_A0(-191) IN_OA_P2_A0(-190) IN_OA_P3_A0(-189) IN_OA_P4_A0(-188) AT_TL_T0_L01(-157) AT_TL_T0_L02(-156) AT_TL_T0_L04(-154) AT_TL_T1_L12(-152) AT_TL_T1_L13(-151) AT_TL_T1_L14(-150) AT_TL_T2_L21(-149) AT_TL_T2_L23(-147) AT_TL_T2_L24(-146) AT_TL_T3_L31(-145) AT_TL_T3_L32(-144) AT_TL_T3_L33(-143) AT_TL_T3_L34(-142) AT_TL_T4_L41(-141) AT_TL_T4_L42(-140) AT_TL_T4_L44(-138) AT_TA_T0_L00(-137) AT_TA_T1_L10(-136) AT_TA_T2_L20(-135) AT_TA_T4_L40(-133) AT_OL_P0_L11(-128) AT_OL_P0_L12(-127) AT_OL_P0_L13(-126) AT_OL_P0_L14(-125) AT_OL_P0_L21(-124) AT_OL_P0_L22(-123) AT_OL_P0_L23(-122) AT_OL_P0_L24(-121) AT_OL_P0_L31(-120) AT_OL_P0_L32(-119) AT_OL_P0_L33(-118) AT_OL_P0_L34(-117) AT_OL_P0_L41(-116) AT_OL_P0_L42(-115) AT_OL_P0_L43(-114) AT_OL_P0_L44(-113) AT_OL_P1_L01(-112) AT_OL_P1_L02(-111) AT_OL_P1_L03(-110) AT_OL_P1_L04(-109) AT_OL_P1_L11(-108) AT_OL_P1_L12(-107) AT_OL_P1_L13(-106) AT_OL_P1_L14(-105) AT_OL_P1_L31(-100) AT_OL_P1_L32(-99) AT_OL_P1_L33(-98) AT_OL_P1_L34(-97) AT_OL_P1_L41(-96) AT_OL_P1_L42(-95) AT_OL_P1_L43(-94) AT_OL_P1_L44(-93) AT_OL_P2_L01(-92) AT_OL_P2_L02(-91) AT_OL_P2_L03(-90) AT_OL_P2_L04(-89) AT_OL_P2_L21(-84) AT_OL_P2_L22(-83) AT_OL_P2_L23(-82) AT_OL_P2_L24(-81) AT_OL_P2_L31(-80) AT_OL_P2_L32(-79) AT_OL_P2_L33(-78) AT_OL_P2_L34(-77) AT_OL_P2_L41(-76) AT_OL_P2_L42(-75) AT_OL_P2_L43(-74) AT_OL_P2_L44(-73) AT_OL_P3_L01(-72) AT_OL_P3_L02(-71) AT_OL_P3_L03(-70) AT_OL_P3_L04(-69) AT_OL_P3_L11(-68) AT_OL_P3_L12(-67) AT_OL_P3_L13(-66) AT_OL_P3_L14(-65) AT_OL_P3_L31(-60) AT_OL_P3_L32(-59) AT_OL_P3_L33(-58) AT_OL_P3_L34(-57) AT_OL_P3_L41(-56) AT_OL_P3_L42(-55) AT_OL_P3_L43(-54) AT_OL_P3_L44(-53) AT_OL_P4_L01(-52) AT_OL_P4_L02(-51) AT_OL_P4_L03(-50) AT_OL_P4_L04(-49) AT_OL_P4_L11(-48) AT_OL_P4_L12(-47) AT_OL_P4_L13(-46) AT_OL_P4_L14(-45) AT_OL_P4_L21(-44) AT_OL_P4_L22(-43) AT_OL_P4_L23(-42) AT_OL_P4_L24(-41) AT_OL_P4_L31(-40) AT_OL_P4_L32(-39) AT_OL_P4_L33(-38) AT_OL_P4_L34(-37) AT_OL_P4_L41(-36) AT_OL_P4_L42(-35) AT_OL_P4_L43(-34) AT_OL_P4_L44(-33) AT_OA_P0_L10(-31) AT_OA_P0_L20(-30) AT_OA_P0_L30(-29) AT_OA_P0_L40(-28) AT_OA_P1_L00(-27) AT_OA_P1_L10(-26) AT_OA_P1_L30(-24) AT_OA_P1_L40(-23) AT_OA_P2_L00(-22) AT_OA_P2_L20(-20) AT_OA_P2_L30(-19) AT_OA_P2_L40(-18) AT_OA_P3_L00(-17) AT_OA_P3_L10(-16) AT_OA_P3_L30(-14) AT_OA_P3_L40(-13) AT_OA_P4_L00(-12) AT_OA_P4_L10(-11) AT_OA_P4_L20(-10) AT_OA_P4_L30(-9) AT_AA_A0_L10(-6) AT_AA_A0_L20(-5) AT_AA_A0_L30(-4) AT_AA_A0_L40(-3) FALSE(-1) FOO(2) AT_AA_A0_L00(7) AT_OA_P4_L40(8) AT_TA_T3_L30(134) AT_TL_T4_L43(139) AT_TL_T2_L22(148) AT_TL_T1_L11(153) AT_TL_T0_L03(155) IN_CITY_A_L40_C4(158) IN_CITY_A_L30_C3(159) IN_CITY_A_L20_C2(160) IN_CITY_A_L10_C1(161) IN_CITY_A_L00_C0(162) IN_CITY_L_L44_C4(163) IN_CITY_L_L43_C4(164) IN_CITY_L_L42_C4(165) IN_CITY_L_L41_C4(166) IN_CITY_L_L34_C3(167) IN_CITY_L_L33_C3(168) IN_CITY_L_L32_C3(169) IN_CITY_L_L31_C3(170) IN_CITY_L_L24_C2(171) IN_CITY_L_L23_C2(172) IN_CITY_L_L22_C2(173) IN_CITY_L_L21_C2(174) IN_CITY_L_L14_C1(175) IN_CITY_L_L13_C1(176) IN_CITY_L_L12_C1(177) IN_CITY_L_L11_C1(178) IN_CITY_L_L04_C0(179) IN_CITY_L_L03_C0(180) IN_CITY_L_L02_C0(181) IN_CITY_L_L01_C0(182) IN_CITY_T_T4_C4(183) IN_CITY_T_T3_C3(184) IN_CITY_T_T2_C2(185) IN_CITY_T_T1_C1(186) IN_CITY_T_T0_C0(187) 
+IMPLIES_WITH_INIT: From lit AT_OA_P3_L20(15) obtaing the following lits:IN_OT_P0_T0(-217) IN_OT_P0_T1(-216) IN_OT_P0_T2(-215) IN_OT_P0_T3(-214) IN_OT_P0_T4(-213) IN_OT_P1_T0(-212) IN_OT_P1_T1(-211) IN_OT_P1_T2(-210) IN_OT_P1_T3(-209) IN_OT_P1_T4(-208) IN_OT_P2_T0(-207) IN_OT_P2_T1(-206) IN_OT_P2_T2(-205) IN_OT_P2_T3(-204) IN_OT_P2_T4(-203) IN_OT_P3_T0(-202) IN_OT_P3_T1(-201) IN_OT_P3_T2(-200) IN_OT_P3_T3(-199) IN_OT_P3_T4(-198) IN_OT_P4_T0(-197) IN_OT_P4_T1(-196) IN_OT_P4_T2(-195) IN_OT_P4_T3(-194) IN_OT_P4_T4(-193) IN_OA_P0_A0(-192) IN_OA_P1_A0(-191) IN_OA_P2_A0(-190) IN_OA_P3_A0(-189) IN_OA_P4_A0(-188) AT_TL_T0_L01(-157) AT_TL_T0_L02(-156) AT_TL_T0_L04(-154) AT_TL_T1_L12(-152) AT_TL_T1_L13(-151) AT_TL_T1_L14(-150) AT_TL_T2_L21(-149) AT_TL_T2_L23(-147) AT_TL_T2_L24(-146) AT_TL_T3_L31(-145) AT_TL_T3_L32(-144) AT_TL_T3_L33(-143) AT_TL_T3_L34(-142) AT_TL_T4_L41(-141) AT_TL_T4_L42(-140) AT_TL_T4_L44(-138) AT_TA_T0_L00(-137) AT_TA_T1_L10(-136) AT_TA_T2_L20(-135) AT_TA_T4_L40(-133) AT_OL_P0_L11(-128) AT_OL_P0_L12(-127) AT_OL_P0_L13(-126) AT_OL_P0_L14(-125) AT_OL_P0_L21(-124) AT_OL_P0_L22(-123) AT_OL_P0_L23(-122) AT_OL_P0_L24(-121) AT_OL_P0_L31(-120) AT_OL_P0_L32(-119) AT_OL_P0_L33(-118) AT_OL_P0_L34(-117) AT_OL_P0_L41(-116) AT_OL_P0_L42(-115) AT_OL_P0_L43(-114) AT_OL_P0_L44(-113) AT_OL_P1_L01(-112) AT_OL_P1_L02(-111) AT_OL_P1_L03(-110) AT_OL_P1_L04(-109) AT_OL_P1_L11(-108) AT_OL_P1_L12(-107) AT_OL_P1_L13(-106) AT_OL_P1_L14(-105) AT_OL_P1_L31(-100) AT_OL_P1_L32(-99) AT_OL_P1_L33(-98) AT_OL_P1_L34(-97) AT_OL_P1_L41(-96) AT_OL_P1_L42(-95) AT_OL_P1_L43(-94) AT_OL_P1_L44(-93) AT_OL_P2_L01(-92) AT_OL_P2_L02(-91) AT_OL_P2_L03(-90) AT_OL_P2_L04(-89) AT_OL_P2_L21(-84) AT_OL_P2_L22(-83) AT_OL_P2_L23(-82) AT_OL_P2_L24(-81) AT_OL_P2_L31(-80) AT_OL_P2_L32(-79) AT_OL_P2_L33(-78) AT_OL_P2_L34(-77) AT_OL_P2_L41(-76) AT_OL_P2_L42(-75) AT_OL_P2_L43(-74) AT_OL_P2_L44(-73) AT_OL_P3_L01(-72) AT_OL_P3_L02(-71) AT_OL_P3_L03(-70) AT_OL_P3_L04(-69) AT_OL_P3_L11(-68) AT_OL_P3_L12(-67) AT_OL_P3_L13(-66) AT_OL_P3_L14(-65) AT_OL_P3_L21(-64) AT_OL_P3_L22(-63) AT_OL_P3_L23(-62) AT_OL_P3_L24(-61) AT_OL_P3_L31(-60) AT_OL_P3_L32(-59) AT_OL_P3_L33(-58) AT_OL_P3_L34(-57) AT_OL_P3_L41(-56) AT_OL_P3_L42(-55) AT_OL_P3_L43(-54) AT_OL_P3_L44(-53) AT_OL_P4_L01(-52) AT_OL_P4_L02(-51) AT_OL_P4_L03(-50) AT_OL_P4_L04(-49) AT_OL_P4_L11(-48) AT_OL_P4_L12(-47) AT_OL_P4_L13(-46) AT_OL_P4_L14(-45) AT_OL_P4_L21(-44) AT_OL_P4_L22(-43) AT_OL_P4_L23(-42) AT_OL_P4_L24(-41) AT_OL_P4_L31(-40) AT_OL_P4_L32(-39) AT_OL_P4_L33(-38) AT_OL_P4_L34(-37) AT_OA_P0_L10(-31) AT_OA_P0_L20(-30) AT_OA_P0_L30(-29) AT_OA_P0_L40(-28) AT_OA_P1_L00(-27) AT_OA_P1_L10(-26) AT_OA_P1_L30(-24) AT_OA_P1_L40(-23) AT_OA_P2_L00(-22) AT_OA_P2_L20(-20) AT_OA_P2_L30(-19) AT_OA_P2_L40(-18) AT_OA_P3_L00(-17) AT_OA_P3_L10(-16) AT_OA_P3_L30(-14) AT_OA_P3_L40(-13) AT_OA_P4_L00(-12) AT_OA_P4_L10(-11) AT_OA_P4_L20(-10) AT_OA_P4_L30(-9) AT_AA_A0_L10(-6) AT_AA_A0_L20(-5) AT_AA_A0_L30(-4) AT_AA_A0_L40(-3) FALSE(-1) FOO(2) AT_AA_A0_L00(7) AT_OA_P3_L20(15) AT_TA_T3_L30(134) AT_TL_T4_L43(139) AT_TL_T2_L22(148) AT_TL_T1_L11(153) AT_TL_T0_L03(155) IN_CITY_A_L40_C4(158) IN_CITY_A_L30_C3(159) IN_CITY_A_L20_C2(160) IN_CITY_A_L10_C1(161) IN_CITY_A_L00_C0(162) IN_CITY_L_L44_C4(163) IN_CITY_L_L43_C4(164) IN_CITY_L_L42_C4(165) IN_CITY_L_L41_C4(166) IN_CITY_L_L34_C3(167) IN_CITY_L_L33_C3(168) IN_CITY_L_L32_C3(169) IN_CITY_L_L31_C3(170) IN_CITY_L_L24_C2(171) IN_CITY_L_L23_C2(172) IN_CITY_L_L22_C2(173) IN_CITY_L_L21_C2(174) IN_CITY_L_L14_C1(175) IN_CITY_L_L13_C1(176) IN_CITY_L_L12_C1(177) IN_CITY_L_L11_C1(178) IN_CITY_L_L04_C0(179) IN_CITY_L_L03_C0(180) IN_CITY_L_L02_C0(181) IN_CITY_L_L01_C0(182) IN_CITY_T_T4_C4(183) IN_CITY_T_T3_C3(184) IN_CITY_T_T2_C2(185) IN_CITY_T_T1_C1(186) IN_CITY_T_T0_C0(187) 
+IMPLIES_WITH_INIT: From lit AT_OA_P2_L10(21) obtaing the following lits:IN_OT_P0_T0(-217) IN_OT_P0_T1(-216) IN_OT_P0_T2(-215) IN_OT_P0_T3(-214) IN_OT_P0_T4(-213) IN_OT_P1_T0(-212) IN_OT_P1_T1(-211) IN_OT_P1_T2(-210) IN_OT_P1_T3(-209) IN_OT_P1_T4(-208) IN_OT_P2_T0(-207) IN_OT_P2_T1(-206) IN_OT_P2_T2(-205) IN_OT_P2_T3(-204) IN_OT_P2_T4(-203) IN_OT_P3_T0(-202) IN_OT_P3_T1(-201) IN_OT_P3_T2(-200) IN_OT_P3_T3(-199) IN_OT_P3_T4(-198) IN_OT_P4_T0(-197) IN_OT_P4_T1(-196) IN_OT_P4_T2(-195) IN_OT_P4_T3(-194) IN_OT_P4_T4(-193) IN_OA_P0_A0(-192) IN_OA_P1_A0(-191) IN_OA_P2_A0(-190) IN_OA_P3_A0(-189) IN_OA_P4_A0(-188) AT_TL_T0_L01(-157) AT_TL_T0_L02(-156) AT_TL_T0_L04(-154) AT_TL_T1_L12(-152) AT_TL_T1_L13(-151) AT_TL_T1_L14(-150) AT_TL_T2_L21(-149) AT_TL_T2_L23(-147) AT_TL_T2_L24(-146) AT_TL_T3_L31(-145) AT_TL_T3_L32(-144) AT_TL_T3_L33(-143) AT_TL_T3_L34(-142) AT_TL_T4_L41(-141) AT_TL_T4_L42(-140) AT_TL_T4_L44(-138) AT_TA_T0_L00(-137) AT_TA_T1_L10(-136) AT_TA_T2_L20(-135) AT_TA_T4_L40(-133) AT_OL_P0_L11(-128) AT_OL_P0_L12(-127) AT_OL_P0_L13(-126) AT_OL_P0_L14(-125) AT_OL_P0_L21(-124) AT_OL_P0_L22(-123) AT_OL_P0_L23(-122) AT_OL_P0_L24(-121) AT_OL_P0_L31(-120) AT_OL_P0_L32(-119) AT_OL_P0_L33(-118) AT_OL_P0_L34(-117) AT_OL_P0_L41(-116) AT_OL_P0_L42(-115) AT_OL_P0_L43(-114) AT_OL_P0_L44(-113) AT_OL_P1_L01(-112) AT_OL_P1_L02(-111) AT_OL_P1_L03(-110) AT_OL_P1_L04(-109) AT_OL_P1_L11(-108) AT_OL_P1_L12(-107) AT_OL_P1_L13(-106) AT_OL_P1_L14(-105) AT_OL_P1_L31(-100) AT_OL_P1_L32(-99) AT_OL_P1_L33(-98) AT_OL_P1_L34(-97) AT_OL_P1_L41(-96) AT_OL_P1_L42(-95) AT_OL_P1_L43(-94) AT_OL_P1_L44(-93) AT_OL_P2_L01(-92) AT_OL_P2_L02(-91) AT_OL_P2_L03(-90) AT_OL_P2_L04(-89) AT_OL_P2_L11(-88) AT_OL_P2_L12(-87) AT_OL_P2_L13(-86) AT_OL_P2_L14(-85) AT_OL_P2_L21(-84) AT_OL_P2_L22(-83) AT_OL_P2_L23(-82) AT_OL_P2_L24(-81) AT_OL_P2_L31(-80) AT_OL_P2_L32(-79) AT_OL_P2_L33(-78) AT_OL_P2_L34(-77) AT_OL_P2_L41(-76) AT_OL_P2_L42(-75) AT_OL_P2_L43(-74) AT_OL_P2_L44(-73) AT_OL_P3_L01(-72) AT_OL_P3_L02(-71) AT_OL_P3_L03(-70) AT_OL_P3_L04(-69) AT_OL_P3_L11(-68) AT_OL_P3_L12(-67) AT_OL_P3_L13(-66) AT_OL_P3_L14(-65) AT_OL_P3_L31(-60) AT_OL_P3_L32(-59) AT_OL_P3_L33(-58) AT_OL_P3_L34(-57) AT_OL_P3_L41(-56) AT_OL_P3_L42(-55) AT_OL_P3_L43(-54) AT_OL_P3_L44(-53) AT_OL_P4_L01(-52) AT_OL_P4_L02(-51) AT_OL_P4_L03(-50) AT_OL_P4_L04(-49) AT_OL_P4_L11(-48) AT_OL_P4_L12(-47) AT_OL_P4_L13(-46) AT_OL_P4_L14(-45) AT_OL_P4_L21(-44) AT_OL_P4_L22(-43) AT_OL_P4_L23(-42) AT_OL_P4_L24(-41) AT_OL_P4_L31(-40) AT_OL_P4_L32(-39) AT_OL_P4_L33(-38) AT_OL_P4_L34(-37) AT_OA_P0_L10(-31) AT_OA_P0_L20(-30) AT_OA_P0_L30(-29) AT_OA_P0_L40(-28) AT_OA_P1_L00(-27) AT_OA_P1_L10(-26) AT_OA_P1_L30(-24) AT_OA_P1_L40(-23) AT_OA_P2_L00(-22) AT_OA_P2_L20(-20) AT_OA_P2_L30(-19) AT_OA_P2_L40(-18) AT_OA_P3_L00(-17) AT_OA_P3_L10(-16) AT_OA_P3_L30(-14) AT_OA_P3_L40(-13) AT_OA_P4_L00(-12) AT_OA_P4_L10(-11) AT_OA_P4_L20(-10) AT_OA_P4_L30(-9) AT_AA_A0_L10(-6) AT_AA_A0_L20(-5) AT_AA_A0_L30(-4) AT_AA_A0_L40(-3) FALSE(-1) FOO(2) AT_AA_A0_L00(7) AT_OA_P2_L10(21) AT_TA_T3_L30(134) AT_TL_T4_L43(139) AT_TL_T2_L22(148) AT_TL_T1_L11(153) AT_TL_T0_L03(155) IN_CITY_A_L40_C4(158) IN_CITY_A_L30_C3(159) IN_CITY_A_L20_C2(160) IN_CITY_A_L10_C1(161) IN_CITY_A_L00_C0(162) IN_CITY_L_L44_C4(163) IN_CITY_L_L43_C4(164) IN_CITY_L_L42_C4(165) IN_CITY_L_L41_C4(166) IN_CITY_L_L34_C3(167) IN_CITY_L_L33_C3(168) IN_CITY_L_L32_C3(169) IN_CITY_L_L31_C3(170) IN_CITY_L_L24_C2(171) IN_CITY_L_L23_C2(172) IN_CITY_L_L22_C2(173) IN_CITY_L_L21_C2(174) IN_CITY_L_L14_C1(175) IN_CITY_L_L13_C1(176) IN_CITY_L_L12_C1(177) IN_CITY_L_L11_C1(178) IN_CITY_L_L04_C0(179) IN_CITY_L_L03_C0(180) IN_CITY_L_L02_C0(181) IN_CITY_L_L01_C0(182) IN_CITY_T_T4_C4(183) IN_CITY_T_T3_C3(184) IN_CITY_T_T2_C2(185) IN_CITY_T_T1_C1(186) IN_CITY_T_T0_C0(187) 
+IMPLIES_WITH_INIT: From lit AT_OA_P1_L20(25) obtaing the following lits:IN_OT_P0_T0(-217) IN_OT_P0_T1(-216) IN_OT_P0_T2(-215) IN_OT_P0_T3(-214) IN_OT_P0_T4(-213) IN_OT_P1_T0(-212) IN_OT_P1_T1(-211) IN_OT_P1_T2(-210) IN_OT_P1_T3(-209) IN_OT_P1_T4(-208) IN_OT_P2_T0(-207) IN_OT_P2_T1(-206) IN_OT_P2_T2(-205) IN_OT_P2_T3(-204) IN_OT_P2_T4(-203) IN_OT_P3_T0(-202) IN_OT_P3_T1(-201) IN_OT_P3_T2(-200) IN_OT_P3_T3(-199) IN_OT_P3_T4(-198) IN_OT_P4_T0(-197) IN_OT_P4_T1(-196) IN_OT_P4_T2(-195) IN_OT_P4_T3(-194) IN_OT_P4_T4(-193) IN_OA_P0_A0(-192) IN_OA_P1_A0(-191) IN_OA_P2_A0(-190) IN_OA_P3_A0(-189) IN_OA_P4_A0(-188) AT_TL_T0_L01(-157) AT_TL_T0_L02(-156) AT_TL_T0_L04(-154) AT_TL_T1_L12(-152) AT_TL_T1_L13(-151) AT_TL_T1_L14(-150) AT_TL_T2_L21(-149) AT_TL_T2_L23(-147) AT_TL_T2_L24(-146) AT_TL_T3_L31(-145) AT_TL_T3_L32(-144) AT_TL_T3_L33(-143) AT_TL_T3_L34(-142) AT_TL_T4_L41(-141) AT_TL_T4_L42(-140) AT_TL_T4_L44(-138) AT_TA_T0_L00(-137) AT_TA_T1_L10(-136) AT_TA_T2_L20(-135) AT_TA_T4_L40(-133) AT_OL_P0_L11(-128) AT_OL_P0_L12(-127) AT_OL_P0_L13(-126) AT_OL_P0_L14(-125) AT_OL_P0_L21(-124) AT_OL_P0_L22(-123) AT_OL_P0_L23(-122) AT_OL_P0_L24(-121) AT_OL_P0_L31(-120) AT_OL_P0_L32(-119) AT_OL_P0_L33(-118) AT_OL_P0_L34(-117) AT_OL_P0_L41(-116) AT_OL_P0_L42(-115) AT_OL_P0_L43(-114) AT_OL_P0_L44(-113) AT_OL_P1_L01(-112) AT_OL_P1_L02(-111) AT_OL_P1_L03(-110) AT_OL_P1_L04(-109) AT_OL_P1_L11(-108) AT_OL_P1_L12(-107) AT_OL_P1_L13(-106) AT_OL_P1_L14(-105) AT_OL_P1_L21(-104) AT_OL_P1_L22(-103) AT_OL_P1_L23(-102) AT_OL_P1_L24(-101) AT_OL_P1_L31(-100) AT_OL_P1_L32(-99) AT_OL_P1_L33(-98) AT_OL_P1_L34(-97) AT_OL_P1_L41(-96) AT_OL_P1_L42(-95) AT_OL_P1_L43(-94) AT_OL_P1_L44(-93) AT_OL_P2_L01(-92) AT_OL_P2_L02(-91) AT_OL_P2_L03(-90) AT_OL_P2_L04(-89) AT_OL_P2_L21(-84) AT_OL_P2_L22(-83) AT_OL_P2_L23(-82) AT_OL_P2_L24(-81) AT_OL_P2_L31(-80) AT_OL_P2_L32(-79) AT_OL_P2_L33(-78) AT_OL_P2_L34(-77) AT_OL_P2_L41(-76) AT_OL_P2_L42(-75) AT_OL_P2_L43(-74) AT_OL_P2_L44(-73) AT_OL_P3_L01(-72) AT_OL_P3_L02(-71) AT_OL_P3_L03(-70) AT_OL_P3_L04(-69) AT_OL_P3_L11(-68) AT_OL_P3_L12(-67) AT_OL_P3_L13(-66) AT_OL_P3_L14(-65) AT_OL_P3_L31(-60) AT_OL_P3_L32(-59) AT_OL_P3_L33(-58) AT_OL_P3_L34(-57) AT_OL_P3_L41(-56) AT_OL_P3_L42(-55) AT_OL_P3_L43(-54) AT_OL_P3_L44(-53) AT_OL_P4_L01(-52) AT_OL_P4_L02(-51) AT_OL_P4_L03(-50) AT_OL_P4_L04(-49) AT_OL_P4_L11(-48) AT_OL_P4_L12(-47) AT_OL_P4_L13(-46) AT_OL_P4_L14(-45) AT_OL_P4_L21(-44) AT_OL_P4_L22(-43) AT_OL_P4_L23(-42) AT_OL_P4_L24(-41) AT_OL_P4_L31(-40) AT_OL_P4_L32(-39) AT_OL_P4_L33(-38) AT_OL_P4_L34(-37) AT_OA_P0_L10(-31) AT_OA_P0_L20(-30) AT_OA_P0_L30(-29) AT_OA_P0_L40(-28) AT_OA_P1_L00(-27) AT_OA_P1_L10(-26) AT_OA_P1_L30(-24) AT_OA_P1_L40(-23) AT_OA_P2_L00(-22) AT_OA_P2_L20(-20) AT_OA_P2_L30(-19) AT_OA_P2_L40(-18) AT_OA_P3_L00(-17) AT_OA_P3_L10(-16) AT_OA_P3_L30(-14) AT_OA_P3_L40(-13) AT_OA_P4_L00(-12) AT_OA_P4_L10(-11) AT_OA_P4_L20(-10) AT_OA_P4_L30(-9) AT_AA_A0_L10(-6) AT_AA_A0_L20(-5) AT_AA_A0_L30(-4) AT_AA_A0_L40(-3) FALSE(-1) FOO(2) AT_AA_A0_L00(7) AT_OA_P1_L20(25) AT_TA_T3_L30(134) AT_TL_T4_L43(139) AT_TL_T2_L22(148) AT_TL_T1_L11(153) AT_TL_T0_L03(155) IN_CITY_A_L40_C4(158) IN_CITY_A_L30_C3(159) IN_CITY_A_L20_C2(160) IN_CITY_A_L10_C1(161) IN_CITY_A_L00_C0(162) IN_CITY_L_L44_C4(163) IN_CITY_L_L43_C4(164) IN_CITY_L_L42_C4(165) IN_CITY_L_L41_C4(166) IN_CITY_L_L34_C3(167) IN_CITY_L_L33_C3(168) IN_CITY_L_L32_C3(169) IN_CITY_L_L31_C3(170) IN_CITY_L_L24_C2(171) IN_CITY_L_L23_C2(172) IN_CITY_L_L22_C2(173) IN_CITY_L_L21_C2(174) IN_CITY_L_L14_C1(175) IN_CITY_L_L13_C1(176) IN_CITY_L_L12_C1(177) IN_CITY_L_L11_C1(178) IN_CITY_L_L04_C0(179) IN_CITY_L_L03_C0(180) IN_CITY_L_L02_C0(181) IN_CITY_L_L01_C0(182) IN_CITY_T_T4_C4(183) IN_CITY_T_T3_C3(184) IN_CITY_T_T2_C2(185) IN_CITY_T_T1_C1(186) IN_CITY_T_T0_C0(187) 
+IMPLIES_WITH_INIT: From lit AT_OA_P0_L00(32) obtaing the following lits:IN_OT_P0_T0(-217) IN_OT_P0_T1(-216) IN_OT_P0_T2(-215) IN_OT_P0_T3(-214) IN_OT_P0_T4(-213) IN_OT_P1_T0(-212) IN_OT_P1_T1(-211) IN_OT_P1_T2(-210) IN_OT_P1_T3(-209) IN_OT_P1_T4(-208) IN_OT_P2_T0(-207) IN_OT_P2_T1(-206) IN_OT_P2_T2(-205) IN_OT_P2_T3(-204) IN_OT_P2_T4(-203) IN_OT_P3_T0(-202) IN_OT_P3_T1(-201) IN_OT_P3_T2(-200) IN_OT_P3_T3(-199) IN_OT_P3_T4(-198) IN_OT_P4_T0(-197) IN_OT_P4_T1(-196) IN_OT_P4_T2(-195) IN_OT_P4_T3(-194) IN_OT_P4_T4(-193) IN_OA_P0_A0(-192) IN_OA_P1_A0(-191) IN_OA_P2_A0(-190) IN_OA_P3_A0(-189) IN_OA_P4_A0(-188) AT_TL_T0_L01(-157) AT_TL_T0_L02(-156) AT_TL_T0_L04(-154) AT_TL_T1_L12(-152) AT_TL_T1_L13(-151) AT_TL_T1_L14(-150) AT_TL_T2_L21(-149) AT_TL_T2_L23(-147) AT_TL_T2_L24(-146) AT_TL_T3_L31(-145) AT_TL_T3_L32(-144) AT_TL_T3_L33(-143) AT_TL_T3_L34(-142) AT_TL_T4_L41(-141) AT_TL_T4_L42(-140) AT_TL_T4_L44(-138) AT_TA_T0_L00(-137) AT_TA_T1_L10(-136) AT_TA_T2_L20(-135) AT_TA_T4_L40(-133) AT_OL_P0_L01(-132) AT_OL_P0_L02(-131) AT_OL_P0_L03(-130) AT_OL_P0_L04(-129) AT_OL_P0_L11(-128) AT_OL_P0_L12(-127) AT_OL_P0_L13(-126) AT_OL_P0_L14(-125) AT_OL_P0_L21(-124) AT_OL_P0_L22(-123) AT_OL_P0_L23(-122) AT_OL_P0_L24(-121) AT_OL_P0_L31(-120) AT_OL_P0_L32(-119) AT_OL_P0_L33(-118) AT_OL_P0_L34(-117) AT_OL_P0_L41(-116) AT_OL_P0_L42(-115) AT_OL_P0_L43(-114) AT_OL_P0_L44(-113) AT_OL_P1_L01(-112) AT_OL_P1_L02(-111) AT_OL_P1_L03(-110) AT_OL_P1_L04(-109) AT_OL_P1_L11(-108) AT_OL_P1_L12(-107) AT_OL_P1_L13(-106) AT_OL_P1_L14(-105) AT_OL_P1_L31(-100) AT_OL_P1_L32(-99) AT_OL_P1_L33(-98) AT_OL_P1_L34(-97) AT_OL_P1_L41(-96) AT_OL_P1_L42(-95) AT_OL_P1_L43(-94) AT_OL_P1_L44(-93) AT_OL_P2_L01(-92) AT_OL_P2_L02(-91) AT_OL_P2_L03(-90) AT_OL_P2_L04(-89) AT_OL_P2_L21(-84) AT_OL_P2_L22(-83) AT_OL_P2_L23(-82) AT_OL_P2_L24(-81) AT_OL_P2_L31(-80) AT_OL_P2_L32(-79) AT_OL_P2_L33(-78) AT_OL_P2_L34(-77) AT_OL_P2_L41(-76) AT_OL_P2_L42(-75) AT_OL_P2_L43(-74) AT_OL_P2_L44(-73) AT_OL_P3_L01(-72) AT_OL_P3_L02(-71) AT_OL_P3_L03(-70) AT_OL_P3_L04(-69) AT_OL_P3_L11(-68) AT_OL_P3_L12(-67) AT_OL_P3_L13(-66) AT_OL_P3_L14(-65) AT_OL_P3_L31(-60) AT_OL_P3_L32(-59) AT_OL_P3_L33(-58) AT_OL_P3_L34(-57) AT_OL_P3_L41(-56) AT_OL_P3_L42(-55) AT_OL_P3_L43(-54) AT_OL_P3_L44(-53) AT_OL_P4_L01(-52) AT_OL_P4_L02(-51) AT_OL_P4_L03(-50) AT_OL_P4_L04(-49) AT_OL_P4_L11(-48) AT_OL_P4_L12(-47) AT_OL_P4_L13(-46) AT_OL_P4_L14(-45) AT_OL_P4_L21(-44) AT_OL_P4_L22(-43) AT_OL_P4_L23(-42) AT_OL_P4_L24(-41) AT_OL_P4_L31(-40) AT_OL_P4_L32(-39) AT_OL_P4_L33(-38) AT_OL_P4_L34(-37) AT_OA_P0_L10(-31) AT_OA_P0_L20(-30) AT_OA_P0_L30(-29) AT_OA_P0_L40(-28) AT_OA_P1_L00(-27) AT_OA_P1_L10(-26) AT_OA_P1_L30(-24) AT_OA_P1_L40(-23) AT_OA_P2_L00(-22) AT_OA_P2_L20(-20) AT_OA_P2_L30(-19) AT_OA_P2_L40(-18) AT_OA_P3_L00(-17) AT_OA_P3_L10(-16) AT_OA_P3_L30(-14) AT_OA_P3_L40(-13) AT_OA_P4_L00(-12) AT_OA_P4_L10(-11) AT_OA_P4_L20(-10) AT_OA_P4_L30(-9) AT_AA_A0_L10(-6) AT_AA_A0_L20(-5) AT_AA_A0_L30(-4) AT_AA_A0_L40(-3) FALSE(-1) FOO(2) AT_AA_A0_L00(7) AT_OA_P0_L00(32) AT_TA_T3_L30(134) AT_TL_T4_L43(139) AT_TL_T2_L22(148) AT_TL_T1_L11(153) AT_TL_T0_L03(155) IN_CITY_A_L40_C4(158) IN_CITY_A_L30_C3(159) IN_CITY_A_L20_C2(160) IN_CITY_A_L10_C1(161) IN_CITY_A_L00_C0(162) IN_CITY_L_L44_C4(163) IN_CITY_L_L43_C4(164) IN_CITY_L_L42_C4(165) IN_CITY_L_L41_C4(166) IN_CITY_L_L34_C3(167) IN_CITY_L_L33_C3(168) IN_CITY_L_L32_C3(169) IN_CITY_L_L31_C3(170) IN_CITY_L_L24_C2(171) IN_CITY_L_L23_C2(172) IN_CITY_L_L22_C2(173) IN_CITY_L_L21_C2(174) IN_CITY_L_L14_C1(175) IN_CITY_L_L13_C1(176) IN_CITY_L_L12_C1(177) IN_CITY_L_L11_C1(178) IN_CITY_L_L04_C0(179) IN_CITY_L_L03_C0(180) IN_CITY_L_L02_C0(181) IN_CITY_L_L01_C0(182) IN_CITY_T_T4_C4(183) IN_CITY_T_T3_C3(184) IN_CITY_T_T2_C2(185) IN_CITY_T_T1_C1(186) IN_CITY_T_T0_C0(187) 
+IMPLIES_WITH_INIT: From lit AT_OL_P4_L44(33) obtaing the following lits:IN_OT_P0_T0(-217) IN_OT_P0_T1(-216) IN_OT_P0_T2(-215) IN_OT_P0_T3(-214) IN_OT_P0_T4(-213) IN_OT_P1_T0(-212) IN_OT_P1_T1(-211) IN_OT_P1_T2(-210) IN_OT_P1_T3(-209) IN_OT_P1_T4(-208) IN_OT_P2_T0(-207) IN_OT_P2_T1(-206) IN_OT_P2_T2(-205) IN_OT_P2_T3(-204) IN_OT_P2_T4(-203) IN_OT_P3_T0(-202) IN_OT_P3_T1(-201) IN_OT_P3_T2(-200) IN_OT_P3_T3(-199) IN_OT_P3_T4(-198) IN_OT_P4_T0(-197) IN_OT_P4_T1(-196) IN_OT_P4_T2(-195) IN_OT_P4_T3(-194) IN_OT_P4_T4(-193) IN_OA_P0_A0(-192) IN_OA_P1_A0(-191) IN_OA_P2_A0(-190) IN_OA_P3_A0(-189) IN_OA_P4_A0(-188) AT_TL_T0_L01(-157) AT_TL_T0_L02(-156) AT_TL_T0_L04(-154) AT_TL_T1_L12(-152) AT_TL_T1_L13(-151) AT_TL_T1_L14(-150) AT_TL_T2_L21(-149) AT_TL_T2_L23(-147) AT_TL_T2_L24(-146) AT_TL_T3_L31(-145) AT_TL_T3_L32(-144) AT_TL_T3_L33(-143) AT_TL_T3_L34(-142) AT_TL_T4_L41(-141) AT_TL_T4_L42(-140) AT_TL_T4_L44(-138) AT_TA_T0_L00(-137) AT_TA_T1_L10(-136) AT_TA_T2_L20(-135) AT_TA_T4_L40(-133) AT_OL_P0_L11(-128) AT_OL_P0_L12(-127) AT_OL_P0_L13(-126) AT_OL_P0_L14(-125) AT_OL_P0_L21(-124) AT_OL_P0_L22(-123) AT_OL_P0_L23(-122) AT_OL_P0_L24(-121) AT_OL_P0_L31(-120) AT_OL_P0_L32(-119) AT_OL_P0_L33(-118) AT_OL_P0_L34(-117) AT_OL_P0_L41(-116) AT_OL_P0_L42(-115) AT_OL_P0_L43(-114) AT_OL_P0_L44(-113) AT_OL_P1_L01(-112) AT_OL_P1_L02(-111) AT_OL_P1_L03(-110) AT_OL_P1_L04(-109) AT_OL_P1_L11(-108) AT_OL_P1_L12(-107) AT_OL_P1_L13(-106) AT_OL_P1_L14(-105) AT_OL_P1_L31(-100) AT_OL_P1_L32(-99) AT_OL_P1_L33(-98) AT_OL_P1_L34(-97) AT_OL_P1_L41(-96) AT_OL_P1_L42(-95) AT_OL_P1_L43(-94) AT_OL_P1_L44(-93) AT_OL_P2_L01(-92) AT_OL_P2_L02(-91) AT_OL_P2_L03(-90) AT_OL_P2_L04(-89) AT_OL_P2_L21(-84) AT_OL_P2_L22(-83) AT_OL_P2_L23(-82) AT_OL_P2_L24(-81) AT_OL_P2_L31(-80) AT_OL_P2_L32(-79) AT_OL_P2_L33(-78) AT_OL_P2_L34(-77) AT_OL_P2_L41(-76) AT_OL_P2_L42(-75) AT_OL_P2_L43(-74) AT_OL_P2_L44(-73) AT_OL_P3_L01(-72) AT_OL_P3_L02(-71) AT_OL_P3_L03(-70) AT_OL_P3_L04(-69) AT_OL_P3_L11(-68) AT_OL_P3_L12(-67) AT_OL_P3_L13(-66) AT_OL_P3_L14(-65) AT_OL_P3_L31(-60) AT_OL_P3_L32(-59) AT_OL_P3_L33(-58) AT_OL_P3_L34(-57) AT_OL_P3_L41(-56) AT_OL_P3_L42(-55) AT_OL_P3_L43(-54) AT_OL_P3_L44(-53) AT_OL_P4_L01(-52) AT_OL_P4_L02(-51) AT_OL_P4_L03(-50) AT_OL_P4_L04(-49) AT_OL_P4_L11(-48) AT_OL_P4_L12(-47) AT_OL_P4_L13(-46) AT_OL_P4_L14(-45) AT_OL_P4_L21(-44) AT_OL_P4_L22(-43) AT_OL_P4_L23(-42) AT_OL_P4_L24(-41) AT_OL_P4_L31(-40) AT_OL_P4_L32(-39) AT_OL_P4_L33(-38) AT_OL_P4_L34(-37) AT_OL_P4_L41(-36) AT_OL_P4_L42(-35) AT_OL_P4_L43(-34) AT_OA_P0_L10(-31) AT_OA_P0_L20(-30) AT_OA_P0_L30(-29) AT_OA_P0_L40(-28) AT_OA_P1_L00(-27) AT_OA_P1_L10(-26) AT_OA_P1_L30(-24) AT_OA_P1_L40(-23) AT_OA_P2_L00(-22) AT_OA_P2_L20(-20) AT_OA_P2_L30(-19) AT_OA_P2_L40(-18) AT_OA_P3_L00(-17) AT_OA_P3_L10(-16) AT_OA_P3_L30(-14) AT_OA_P3_L40(-13) AT_OA_P4_L00(-12) AT_OA_P4_L10(-11) AT_OA_P4_L20(-10) AT_OA_P4_L30(-9) AT_OA_P4_L40(-8) AT_AA_A0_L10(-6) AT_AA_A0_L20(-5) AT_AA_A0_L30(-4) AT_AA_A0_L40(-3) FALSE(-1) FOO(2) AT_AA_A0_L00(7) AT_OL_P4_L44(33) AT_TA_T3_L30(134) AT_TL_T4_L43(139) AT_TL_T2_L22(148) AT_TL_T1_L11(153) AT_TL_T0_L03(155) IN_CITY_A_L40_C4(158) IN_CITY_A_L30_C3(159) IN_CITY_A_L20_C2(160) IN_CITY_A_L10_C1(161) IN_CITY_A_L00_C0(162) IN_CITY_L_L44_C4(163) IN_CITY_L_L43_C4(164) IN_CITY_L_L42_C4(165) IN_CITY_L_L41_C4(166) IN_CITY_L_L34_C3(167) IN_CITY_L_L33_C3(168) IN_CITY_L_L32_C3(169) IN_CITY_L_L31_C3(170) IN_CITY_L_L24_C2(171) IN_CITY_L_L23_C2(172) IN_CITY_L_L22_C2(173) IN_CITY_L_L21_C2(174) IN_CITY_L_L14_C1(175) IN_CITY_L_L13_C1(176) IN_CITY_L_L12_C1(177) IN_CITY_L_L11_C1(178) IN_CITY_L_L04_C0(179) IN_CITY_L_L03_C0(180) IN_CITY_L_L02_C0(181) IN_CITY_L_L01_C0(182) IN_CITY_T_T4_C4(183) IN_CITY_T_T3_C3(184) IN_CITY_T_T2_C2(185) IN_CITY_T_T1_C1(186) IN_CITY_T_T0_C0(187) 
+IMPLIES_WITH_INIT: From lit AT_OL_P4_L43(34) obtaing the following lits:IN_OT_P0_T0(-217) IN_OT_P0_T1(-216) IN_OT_P0_T2(-215) IN_OT_P0_T3(-214) IN_OT_P0_T4(-213) IN_OT_P1_T0(-212) IN_OT_P1_T1(-211) IN_OT_P1_T2(-210) IN_OT_P1_T3(-209) IN_OT_P1_T4(-208) IN_OT_P2_T0(-207) IN_OT_P2_T1(-206) IN_OT_P2_T2(-205) IN_OT_P2_T3(-204) IN_OT_P2_T4(-203) IN_OT_P3_T0(-202) IN_OT_P3_T1(-201) IN_OT_P3_T2(-200) IN_OT_P3_T3(-199) IN_OT_P3_T4(-198) IN_OT_P4_T0(-197) IN_OT_P4_T1(-196) IN_OT_P4_T2(-195) IN_OT_P4_T3(-194) IN_OT_P4_T4(-193) IN_OA_P0_A0(-192) IN_OA_P1_A0(-191) IN_OA_P2_A0(-190) IN_OA_P3_A0(-189) IN_OA_P4_A0(-188) AT_TL_T0_L01(-157) AT_TL_T0_L02(-156) AT_TL_T0_L04(-154) AT_TL_T1_L12(-152) AT_TL_T1_L13(-151) AT_TL_T1_L14(-150) AT_TL_T2_L21(-149) AT_TL_T2_L23(-147) AT_TL_T2_L24(-146) AT_TL_T3_L31(-145) AT_TL_T3_L32(-144) AT_TL_T3_L33(-143) AT_TL_T3_L34(-142) AT_TL_T4_L41(-141) AT_TL_T4_L42(-140) AT_TL_T4_L44(-138) AT_TA_T0_L00(-137) AT_TA_T1_L10(-136) AT_TA_T2_L20(-135) AT_TA_T4_L40(-133) AT_OL_P0_L11(-128) AT_OL_P0_L12(-127) AT_OL_P0_L13(-126) AT_OL_P0_L14(-125) AT_OL_P0_L21(-124) AT_OL_P0_L22(-123) AT_OL_P0_L23(-122) AT_OL_P0_L24(-121) AT_OL_P0_L31(-120) AT_OL_P0_L32(-119) AT_OL_P0_L33(-118) AT_OL_P0_L34(-117) AT_OL_P0_L41(-116) AT_OL_P0_L42(-115) AT_OL_P0_L43(-114) AT_OL_P0_L44(-113) AT_OL_P1_L01(-112) AT_OL_P1_L02(-111) AT_OL_P1_L03(-110) AT_OL_P1_L04(-109) AT_OL_P1_L11(-108) AT_OL_P1_L12(-107) AT_OL_P1_L13(-106) AT_OL_P1_L14(-105) AT_OL_P1_L31(-100) AT_OL_P1_L32(-99) AT_OL_P1_L33(-98) AT_OL_P1_L34(-97) AT_OL_P1_L41(-96) AT_OL_P1_L42(-95) AT_OL_P1_L43(-94) AT_OL_P1_L44(-93) AT_OL_P2_L01(-92) AT_OL_P2_L02(-91) AT_OL_P2_L03(-90) AT_OL_P2_L04(-89) AT_OL_P2_L21(-84) AT_OL_P2_L22(-83) AT_OL_P2_L23(-82) AT_OL_P2_L24(-81) AT_OL_P2_L31(-80) AT_OL_P2_L32(-79) AT_OL_P2_L33(-78) AT_OL_P2_L34(-77) AT_OL_P2_L41(-76) AT_OL_P2_L42(-75) AT_OL_P2_L43(-74) AT_OL_P2_L44(-73) AT_OL_P3_L01(-72) AT_OL_P3_L02(-71) AT_OL_P3_L03(-70) AT_OL_P3_L04(-69) AT_OL_P3_L11(-68) AT_OL_P3_L12(-67) AT_OL_P3_L13(-66) AT_OL_P3_L14(-65) AT_OL_P3_L31(-60) AT_OL_P3_L32(-59) AT_OL_P3_L33(-58) AT_OL_P3_L34(-57) AT_OL_P3_L41(-56) AT_OL_P3_L42(-55) AT_OL_P3_L43(-54) AT_OL_P3_L44(-53) AT_OL_P4_L01(-52) AT_OL_P4_L02(-51) AT_OL_P4_L03(-50) AT_OL_P4_L04(-49) AT_OL_P4_L11(-48) AT_OL_P4_L12(-47) AT_OL_P4_L13(-46) AT_OL_P4_L14(-45) AT_OL_P4_L21(-44) AT_OL_P4_L22(-43) AT_OL_P4_L23(-42) AT_OL_P4_L24(-41) AT_OL_P4_L31(-40) AT_OL_P4_L32(-39) AT_OL_P4_L33(-38) AT_OL_P4_L34(-37) AT_OL_P4_L41(-36) AT_OL_P4_L42(-35) AT_OL_P4_L44(-33) AT_OA_P0_L10(-31) AT_OA_P0_L20(-30) AT_OA_P0_L30(-29) AT_OA_P0_L40(-28) AT_OA_P1_L00(-27) AT_OA_P1_L10(-26) AT_OA_P1_L30(-24) AT_OA_P1_L40(-23) AT_OA_P2_L00(-22) AT_OA_P2_L20(-20) AT_OA_P2_L30(-19) AT_OA_P2_L40(-18) AT_OA_P3_L00(-17) AT_OA_P3_L10(-16) AT_OA_P3_L30(-14) AT_OA_P3_L40(-13) AT_OA_P4_L00(-12) AT_OA_P4_L10(-11) AT_OA_P4_L20(-10) AT_OA_P4_L30(-9) AT_OA_P4_L40(-8) AT_AA_A0_L10(-6) AT_AA_A0_L20(-5) AT_AA_A0_L30(-4) AT_AA_A0_L40(-3) FALSE(-1) FOO(2) AT_AA_A0_L00(7) AT_OL_P4_L43(34) AT_TA_T3_L30(134) AT_TL_T4_L43(139) AT_TL_T2_L22(148) AT_TL_T1_L11(153) AT_TL_T0_L03(155) IN_CITY_A_L40_C4(158) IN_CITY_A_L30_C3(159) IN_CITY_A_L20_C2(160) IN_CITY_A_L10_C1(161) IN_CITY_A_L00_C0(162) IN_CITY_L_L44_C4(163) IN_CITY_L_L43_C4(164) IN_CITY_L_L42_C4(165) IN_CITY_L_L41_C4(166) IN_CITY_L_L34_C3(167) IN_CITY_L_L33_C3(168) IN_CITY_L_L32_C3(169) IN_CITY_L_L31_C3(170) IN_CITY_L_L24_C2(171) IN_CITY_L_L23_C2(172) IN_CITY_L_L22_C2(173) IN_CITY_L_L21_C2(174) IN_CITY_L_L14_C1(175) IN_CITY_L_L13_C1(176) IN_CITY_L_L12_C1(177) IN_CITY_L_L11_C1(178) IN_CITY_L_L04_C0(179) IN_CITY_L_L03_C0(180) IN_CITY_L_L02_C0(181) IN_CITY_L_L01_C0(182) IN_CITY_T_T4_C4(183) IN_CITY_T_T3_C3(184) IN_CITY_T_T2_C2(185) IN_CITY_T_T1_C1(186) IN_CITY_T_T0_C0(187) 
+IMPLIES_WITH_INIT: From lit AT_OL_P4_L42(35) obtaing the following lits:IN_OT_P0_T0(-217) IN_OT_P0_T1(-216) IN_OT_P0_T2(-215) IN_OT_P0_T3(-214) IN_OT_P0_T4(-213) IN_OT_P1_T0(-212) IN_OT_P1_T1(-211) IN_OT_P1_T2(-210) IN_OT_P1_T3(-209) IN_OT_P1_T4(-208) IN_OT_P2_T0(-207) IN_OT_P2_T1(-206) IN_OT_P2_T2(-205) IN_OT_P2_T3(-204) IN_OT_P2_T4(-203) IN_OT_P3_T0(-202) IN_OT_P3_T1(-201) IN_OT_P3_T2(-200) IN_OT_P3_T3(-199) IN_OT_P3_T4(-198) IN_OT_P4_T0(-197) IN_OT_P4_T1(-196) IN_OT_P4_T2(-195) IN_OT_P4_T3(-194) IN_OT_P4_T4(-193) IN_OA_P0_A0(-192) IN_OA_P1_A0(-191) IN_OA_P2_A0(-190) IN_OA_P3_A0(-189) IN_OA_P4_A0(-188) AT_TL_T0_L01(-157) AT_TL_T0_L02(-156) AT_TL_T0_L04(-154) AT_TL_T1_L12(-152) AT_TL_T1_L13(-151) AT_TL_T1_L14(-150) AT_TL_T2_L21(-149) AT_TL_T2_L23(-147) AT_TL_T2_L24(-146) AT_TL_T3_L31(-145) AT_TL_T3_L32(-144) AT_TL_T3_L33(-143) AT_TL_T3_L34(-142) AT_TL_T4_L41(-141) AT_TL_T4_L42(-140) AT_TL_T4_L44(-138) AT_TA_T0_L00(-137) AT_TA_T1_L10(-136) AT_TA_T2_L20(-135) AT_TA_T4_L40(-133) AT_OL_P0_L11(-128) AT_OL_P0_L12(-127) AT_OL_P0_L13(-126) AT_OL_P0_L14(-125) AT_OL_P0_L21(-124) AT_OL_P0_L22(-123) AT_OL_P0_L23(-122) AT_OL_P0_L24(-121) AT_OL_P0_L31(-120) AT_OL_P0_L32(-119) AT_OL_P0_L33(-118) AT_OL_P0_L34(-117) AT_OL_P0_L41(-116) AT_OL_P0_L42(-115) AT_OL_P0_L43(-114) AT_OL_P0_L44(-113) AT_OL_P1_L01(-112) AT_OL_P1_L02(-111) AT_OL_P1_L03(-110) AT_OL_P1_L04(-109) AT_OL_P1_L11(-108) AT_OL_P1_L12(-107) AT_OL_P1_L13(-106) AT_OL_P1_L14(-105) AT_OL_P1_L31(-100) AT_OL_P1_L32(-99) AT_OL_P1_L33(-98) AT_OL_P1_L34(-97) AT_OL_P1_L41(-96) AT_OL_P1_L42(-95) AT_OL_P1_L43(-94) AT_OL_P1_L44(-93) AT_OL_P2_L01(-92) AT_OL_P2_L02(-91) AT_OL_P2_L03(-90) AT_OL_P2_L04(-89) AT_OL_P2_L21(-84) AT_OL_P2_L22(-83) AT_OL_P2_L23(-82) AT_OL_P2_L24(-81) AT_OL_P2_L31(-80) AT_OL_P2_L32(-79) AT_OL_P2_L33(-78) AT_OL_P2_L34(-77) AT_OL_P2_L41(-76) AT_OL_P2_L42(-75) AT_OL_P2_L43(-74) AT_OL_P2_L44(-73) AT_OL_P3_L01(-72) AT_OL_P3_L02(-71) AT_OL_P3_L03(-70) AT_OL_P3_L04(-69) AT_OL_P3_L11(-68) AT_OL_P3_L12(-67) AT_OL_P3_L13(-66) AT_OL_P3_L14(-65) AT_OL_P3_L31(-60) AT_OL_P3_L32(-59) AT_OL_P3_L33(-58) AT_OL_P3_L34(-57) AT_OL_P3_L41(-56) AT_OL_P3_L42(-55) AT_OL_P3_L43(-54) AT_OL_P3_L44(-53) AT_OL_P4_L01(-52) AT_OL_P4_L02(-51) AT_OL_P4_L03(-50) AT_OL_P4_L04(-49) AT_OL_P4_L11(-48) AT_OL_P4_L12(-47) AT_OL_P4_L13(-46) AT_OL_P4_L14(-45) AT_OL_P4_L21(-44) AT_OL_P4_L22(-43) AT_OL_P4_L23(-42) AT_OL_P4_L24(-41) AT_OL_P4_L31(-40) AT_OL_P4_L32(-39) AT_OL_P4_L33(-38) AT_OL_P4_L34(-37) AT_OL_P4_L41(-36) AT_OL_P4_L43(-34) AT_OL_P4_L44(-33) AT_OA_P0_L10(-31) AT_OA_P0_L20(-30) AT_OA_P0_L30(-29) AT_OA_P0_L40(-28) AT_OA_P1_L00(-27) AT_OA_P1_L10(-26) AT_OA_P1_L30(-24) AT_OA_P1_L40(-23) AT_OA_P2_L00(-22) AT_OA_P2_L20(-20) AT_OA_P2_L30(-19) AT_OA_P2_L40(-18) AT_OA_P3_L00(-17) AT_OA_P3_L10(-16) AT_OA_P3_L30(-14) AT_OA_P3_L40(-13) AT_OA_P4_L00(-12) AT_OA_P4_L10(-11) AT_OA_P4_L20(-10) AT_OA_P4_L30(-9) AT_OA_P4_L40(-8) AT_AA_A0_L10(-6) AT_AA_A0_L20(-5) AT_AA_A0_L30(-4) AT_AA_A0_L40(-3) FALSE(-1) FOO(2) AT_AA_A0_L00(7) AT_OL_P4_L42(35) AT_TA_T3_L30(134) AT_TL_T4_L43(139) AT_TL_T2_L22(148) AT_TL_T1_L11(153) AT_TL_T0_L03(155) IN_CITY_A_L40_C4(158) IN_CITY_A_L30_C3(159) IN_CITY_A_L20_C2(160) IN_CITY_A_L10_C1(161) IN_CITY_A_L00_C0(162) IN_CITY_L_L44_C4(163) IN_CITY_L_L43_C4(164) IN_CITY_L_L42_C4(165) IN_CITY_L_L41_C4(166) IN_CITY_L_L34_C3(167) IN_CITY_L_L33_C3(168) IN_CITY_L_L32_C3(169) IN_CITY_L_L31_C3(170) IN_CITY_L_L24_C2(171) IN_CITY_L_L23_C2(172) IN_CITY_L_L22_C2(173) IN_CITY_L_L21_C2(174) IN_CITY_L_L14_C1(175) IN_CITY_L_L13_C1(176) IN_CITY_L_L12_C1(177) IN_CITY_L_L11_C1(178) IN_CITY_L_L04_C0(179) IN_CITY_L_L03_C0(180) IN_CITY_L_L02_C0(181) IN_CITY_L_L01_C0(182) IN_CITY_T_T4_C4(183) IN_CITY_T_T3_C3(184) IN_CITY_T_T2_C2(185) IN_CITY_T_T1_C1(186) IN_CITY_T_T0_C0(187) 
+IMPLIES_WITH_INIT: From lit AT_OL_P4_L41(36) obtaing the following lits:IN_OT_P0_T0(-217) IN_OT_P0_T1(-216) IN_OT_P0_T2(-215) IN_OT_P0_T3(-214) IN_OT_P0_T4(-213) IN_OT_P1_T0(-212) IN_OT_P1_T1(-211) IN_OT_P1_T2(-210) IN_OT_P1_T3(-209) IN_OT_P1_T4(-208) IN_OT_P2_T0(-207) IN_OT_P2_T1(-206) IN_OT_P2_T2(-205) IN_OT_P2_T3(-204) IN_OT_P2_T4(-203) IN_OT_P3_T0(-202) IN_OT_P3_T1(-201) IN_OT_P3_T2(-200) IN_OT_P3_T3(-199) IN_OT_P3_T4(-198) IN_OT_P4_T0(-197) IN_OT_P4_T1(-196) IN_OT_P4_T2(-195) IN_OT_P4_T3(-194) IN_OT_P4_T4(-193) IN_OA_P0_A0(-192) IN_OA_P1_A0(-191) IN_OA_P2_A0(-190) IN_OA_P3_A0(-189) IN_OA_P4_A0(-188) AT_TL_T0_L01(-157) AT_TL_T0_L02(-156) AT_TL_T0_L04(-154) AT_TL_T1_L12(-152) AT_TL_T1_L13(-151) AT_TL_T1_L14(-150) AT_TL_T2_L21(-149) AT_TL_T2_L23(-147) AT_TL_T2_L24(-146) AT_TL_T3_L31(-145) AT_TL_T3_L32(-144) AT_TL_T3_L33(-143) AT_TL_T3_L34(-142) AT_TL_T4_L41(-141) AT_TL_T4_L42(-140) AT_TL_T4_L44(-138) AT_TA_T0_L00(-137) AT_TA_T1_L10(-136) AT_TA_T2_L20(-135) AT_TA_T4_L40(-133) AT_OL_P0_L11(-128) AT_OL_P0_L12(-127) AT_OL_P0_L13(-126) AT_OL_P0_L14(-125) AT_OL_P0_L21(-124) AT_OL_P0_L22(-123) AT_OL_P0_L23(-122) AT_OL_P0_L24(-121) AT_OL_P0_L31(-120) AT_OL_P0_L32(-119) AT_OL_P0_L33(-118) AT_OL_P0_L34(-117) AT_OL_P0_L41(-116) AT_OL_P0_L42(-115) AT_OL_P0_L43(-114) AT_OL_P0_L44(-113) AT_OL_P1_L01(-112) AT_OL_P1_L02(-111) AT_OL_P1_L03(-110) AT_OL_P1_L04(-109) AT_OL_P1_L11(-108) AT_OL_P1_L12(-107) AT_OL_P1_L13(-106) AT_OL_P1_L14(-105) AT_OL_P1_L31(-100) AT_OL_P1_L32(-99) AT_OL_P1_L33(-98) AT_OL_P1_L34(-97) AT_OL_P1_L41(-96) AT_OL_P1_L42(-95) AT_OL_P1_L43(-94) AT_OL_P1_L44(-93) AT_OL_P2_L01(-92) AT_OL_P2_L02(-91) AT_OL_P2_L03(-90) AT_OL_P2_L04(-89) AT_OL_P2_L21(-84) AT_OL_P2_L22(-83) AT_OL_P2_L23(-82) AT_OL_P2_L24(-81) AT_OL_P2_L31(-80) AT_OL_P2_L32(-79) AT_OL_P2_L33(-78) AT_OL_P2_L34(-77) AT_OL_P2_L41(-76) AT_OL_P2_L42(-75) AT_OL_P2_L43(-74) AT_OL_P2_L44(-73) AT_OL_P3_L01(-72) AT_OL_P3_L02(-71) AT_OL_P3_L03(-70) AT_OL_P3_L04(-69) AT_OL_P3_L11(-68) AT_OL_P3_L12(-67) AT_OL_P3_L13(-66) AT_OL_P3_L14(-65) AT_OL_P3_L31(-60) AT_OL_P3_L32(-59) AT_OL_P3_L33(-58) AT_OL_P3_L34(-57) AT_OL_P3_L41(-56) AT_OL_P3_L42(-55) AT_OL_P3_L43(-54) AT_OL_P3_L44(-53) AT_OL_P4_L01(-52) AT_OL_P4_L02(-51) AT_OL_P4_L03(-50) AT_OL_P4_L04(-49) AT_OL_P4_L11(-48) AT_OL_P4_L12(-47) AT_OL_P4_L13(-46) AT_OL_P4_L14(-45) AT_OL_P4_L21(-44) AT_OL_P4_L22(-43) AT_OL_P4_L23(-42) AT_OL_P4_L24(-41) AT_OL_P4_L31(-40) AT_OL_P4_L32(-39) AT_OL_P4_L33(-38) AT_OL_P4_L34(-37) AT_OL_P4_L42(-35) AT_OL_P4_L43(-34) AT_OL_P4_L44(-33) AT_OA_P0_L10(-31) AT_OA_P0_L20(-30) AT_OA_P0_L30(-29) AT_OA_P0_L40(-28) AT_OA_P1_L00(-27) AT_OA_P1_L10(-26) AT_OA_P1_L30(-24) AT_OA_P1_L40(-23) AT_OA_P2_L00(-22) AT_OA_P2_L20(-20) AT_OA_P2_L30(-19) AT_OA_P2_L40(-18) AT_OA_P3_L00(-17) AT_OA_P3_L10(-16) AT_OA_P3_L30(-14) AT_OA_P3_L40(-13) AT_OA_P4_L00(-12) AT_OA_P4_L10(-11) AT_OA_P4_L20(-10) AT_OA_P4_L30(-9) AT_OA_P4_L40(-8) AT_AA_A0_L10(-6) AT_AA_A0_L20(-5) AT_AA_A0_L30(-4) AT_AA_A0_L40(-3) FALSE(-1) FOO(2) AT_AA_A0_L00(7) AT_OL_P4_L41(36) AT_TA_T3_L30(134) AT_TL_T4_L43(139) AT_TL_T2_L22(148) AT_TL_T1_L11(153) AT_TL_T0_L03(155) IN_CITY_A_L40_C4(158) IN_CITY_A_L30_C3(159) IN_CITY_A_L20_C2(160) IN_CITY_A_L10_C1(161) IN_CITY_A_L00_C0(162) IN_CITY_L_L44_C4(163) IN_CITY_L_L43_C4(164) IN_CITY_L_L42_C4(165) IN_CITY_L_L41_C4(166) IN_CITY_L_L34_C3(167) IN_CITY_L_L33_C3(168) IN_CITY_L_L32_C3(169) IN_CITY_L_L31_C3(170) IN_CITY_L_L24_C2(171) IN_CITY_L_L23_C2(172) IN_CITY_L_L22_C2(173) IN_CITY_L_L21_C2(174) IN_CITY_L_L14_C1(175) IN_CITY_L_L13_C1(176) IN_CITY_L_L12_C1(177) IN_CITY_L_L11_C1(178) IN_CITY_L_L04_C0(179) IN_CITY_L_L03_C0(180) IN_CITY_L_L02_C0(181) IN_CITY_L_L01_C0(182) IN_CITY_T_T4_C4(183) IN_CITY_T_T3_C3(184) IN_CITY_T_T2_C2(185) IN_CITY_T_T1_C1(186) IN_CITY_T_T0_C0(187) 
+IMPLIES_WITH_INIT: From lit AT_OL_P3_L24(61) obtaing the following lits:IN_OT_P0_T0(-217) IN_OT_P0_T1(-216) IN_OT_P0_T2(-215) IN_OT_P0_T3(-214) IN_OT_P0_T4(-213) IN_OT_P1_T0(-212) IN_OT_P1_T1(-211) IN_OT_P1_T2(-210) IN_OT_P1_T3(-209) IN_OT_P1_T4(-208) IN_OT_P2_T0(-207) IN_OT_P2_T1(-206) IN_OT_P2_T2(-205) IN_OT_P2_T3(-204) IN_OT_P2_T4(-203) IN_OT_P3_T0(-202) IN_OT_P3_T1(-201) IN_OT_P3_T2(-200) IN_OT_P3_T3(-199) IN_OT_P3_T4(-198) IN_OT_P4_T0(-197) IN_OT_P4_T1(-196) IN_OT_P4_T2(-195) IN_OT_P4_T3(-194) IN_OT_P4_T4(-193) IN_OA_P0_A0(-192) IN_OA_P1_A0(-191) IN_OA_P2_A0(-190) IN_OA_P3_A0(-189) IN_OA_P4_A0(-188) AT_TL_T0_L01(-157) AT_TL_T0_L02(-156) AT_TL_T0_L04(-154) AT_TL_T1_L12(-152) AT_TL_T1_L13(-151) AT_TL_T1_L14(-150) AT_TL_T2_L21(-149) AT_TL_T2_L23(-147) AT_TL_T2_L24(-146) AT_TL_T3_L31(-145) AT_TL_T3_L32(-144) AT_TL_T3_L33(-143) AT_TL_T3_L34(-142) AT_TL_T4_L41(-141) AT_TL_T4_L42(-140) AT_TL_T4_L44(-138) AT_TA_T0_L00(-137) AT_TA_T1_L10(-136) AT_TA_T2_L20(-135) AT_TA_T4_L40(-133) AT_OL_P0_L11(-128) AT_OL_P0_L12(-127) AT_OL_P0_L13(-126) AT_OL_P0_L14(-125) AT_OL_P0_L21(-124) AT_OL_P0_L22(-123) AT_OL_P0_L23(-122) AT_OL_P0_L24(-121) AT_OL_P0_L31(-120) AT_OL_P0_L32(-119) AT_OL_P0_L33(-118) AT_OL_P0_L34(-117) AT_OL_P0_L41(-116) AT_OL_P0_L42(-115) AT_OL_P0_L43(-114) AT_OL_P0_L44(-113) AT_OL_P1_L01(-112) AT_OL_P1_L02(-111) AT_OL_P1_L03(-110) AT_OL_P1_L04(-109) AT_OL_P1_L11(-108) AT_OL_P1_L12(-107) AT_OL_P1_L13(-106) AT_OL_P1_L14(-105) AT_OL_P1_L31(-100) AT_OL_P1_L32(-99) AT_OL_P1_L33(-98) AT_OL_P1_L34(-97) AT_OL_P1_L41(-96) AT_OL_P1_L42(-95) AT_OL_P1_L43(-94) AT_OL_P1_L44(-93) AT_OL_P2_L01(-92) AT_OL_P2_L02(-91) AT_OL_P2_L03(-90) AT_OL_P2_L04(-89) AT_OL_P2_L21(-84) AT_OL_P2_L22(-83) AT_OL_P2_L23(-82) AT_OL_P2_L24(-81) AT_OL_P2_L31(-80) AT_OL_P2_L32(-79) AT_OL_P2_L33(-78) AT_OL_P2_L34(-77) AT_OL_P2_L41(-76) AT_OL_P2_L42(-75) AT_OL_P2_L43(-74) AT_OL_P2_L44(-73) AT_OL_P3_L01(-72) AT_OL_P3_L02(-71) AT_OL_P3_L03(-70) AT_OL_P3_L04(-69) AT_OL_P3_L11(-68) AT_OL_P3_L12(-67) AT_OL_P3_L13(-66) AT_OL_P3_L14(-65) AT_OL_P3_L21(-64) AT_OL_P3_L22(-63) AT_OL_P3_L23(-62) AT_OL_P3_L31(-60) AT_OL_P3_L32(-59) AT_OL_P3_L33(-58) AT_OL_P3_L34(-57) AT_OL_P3_L41(-56) AT_OL_P3_L42(-55) AT_OL_P3_L43(-54) AT_OL_P3_L44(-53) AT_OL_P4_L01(-52) AT_OL_P4_L02(-51) AT_OL_P4_L03(-50) AT_OL_P4_L04(-49) AT_OL_P4_L11(-48) AT_OL_P4_L12(-47) AT_OL_P4_L13(-46) AT_OL_P4_L14(-45) AT_OL_P4_L21(-44) AT_OL_P4_L22(-43) AT_OL_P4_L23(-42) AT_OL_P4_L24(-41) AT_OL_P4_L31(-40) AT_OL_P4_L32(-39) AT_OL_P4_L33(-38) AT_OL_P4_L34(-37) AT_OA_P0_L10(-31) AT_OA_P0_L20(-30) AT_OA_P0_L30(-29) AT_OA_P0_L40(-28) AT_OA_P1_L00(-27) AT_OA_P1_L10(-26) AT_OA_P1_L30(-24) AT_OA_P1_L40(-23) AT_OA_P2_L00(-22) AT_OA_P2_L20(-20) AT_OA_P2_L30(-19) AT_OA_P2_L40(-18) AT_OA_P3_L00(-17) AT_OA_P3_L10(-16) AT_OA_P3_L20(-15) AT_OA_P3_L30(-14) AT_OA_P3_L40(-13) AT_OA_P4_L00(-12) AT_OA_P4_L10(-11) AT_OA_P4_L20(-10) AT_OA_P4_L30(-9) AT_AA_A0_L10(-6) AT_AA_A0_L20(-5) AT_AA_A0_L30(-4) AT_AA_A0_L40(-3) FALSE(-1) FOO(2) AT_AA_A0_L00(7) AT_OL_P3_L24(61) AT_TA_T3_L30(134) AT_TL_T4_L43(139) AT_TL_T2_L22(148) AT_TL_T1_L11(153) AT_TL_T0_L03(155) IN_CITY_A_L40_C4(158) IN_CITY_A_L30_C3(159) IN_CITY_A_L20_C2(160) IN_CITY_A_L10_C1(161) IN_CITY_A_L00_C0(162) IN_CITY_L_L44_C4(163) IN_CITY_L_L43_C4(164) IN_CITY_L_L42_C4(165) IN_CITY_L_L41_C4(166) IN_CITY_L_L34_C3(167) IN_CITY_L_L33_C3(168) IN_CITY_L_L32_C3(169) IN_CITY_L_L31_C3(170) IN_CITY_L_L24_C2(171) IN_CITY_L_L23_C2(172) IN_CITY_L_L22_C2(173) IN_CITY_L_L21_C2(174) IN_CITY_L_L14_C1(175) IN_CITY_L_L13_C1(176) IN_CITY_L_L12_C1(177) IN_CITY_L_L11_C1(178) IN_CITY_L_L04_C0(179) IN_CITY_L_L03_C0(180) IN_CITY_L_L02_C0(181) IN_CITY_L_L01_C0(182) IN_CITY_T_T4_C4(183) IN_CITY_T_T3_C3(184) IN_CITY_T_T2_C2(185) IN_CITY_T_T1_C1(186) IN_CITY_T_T0_C0(187) 
+IMPLIES_WITH_INIT: From lit AT_OL_P3_L23(62) obtaing the following lits:IN_OT_P0_T0(-217) IN_OT_P0_T1(-216) IN_OT_P0_T2(-215) IN_OT_P0_T3(-214) IN_OT_P0_T4(-213) IN_OT_P1_T0(-212) IN_OT_P1_T1(-211) IN_OT_P1_T2(-210) IN_OT_P1_T3(-209) IN_OT_P1_T4(-208) IN_OT_P2_T0(-207) IN_OT_P2_T1(-206) IN_OT_P2_T2(-205) IN_OT_P2_T3(-204) IN_OT_P2_T4(-203) IN_OT_P3_T0(-202) IN_OT_P3_T1(-201) IN_OT_P3_T2(-200) IN_OT_P3_T3(-199) IN_OT_P3_T4(-198) IN_OT_P4_T0(-197) IN_OT_P4_T1(-196) IN_OT_P4_T2(-195) IN_OT_P4_T3(-194) IN_OT_P4_T4(-193) IN_OA_P0_A0(-192) IN_OA_P1_A0(-191) IN_OA_P2_A0(-190) IN_OA_P3_A0(-189) IN_OA_P4_A0(-188) AT_TL_T0_L01(-157) AT_TL_T0_L02(-156) AT_TL_T0_L04(-154) AT_TL_T1_L12(-152) AT_TL_T1_L13(-151) AT_TL_T1_L14(-150) AT_TL_T2_L21(-149) AT_TL_T2_L23(-147) AT_TL_T2_L24(-146) AT_TL_T3_L31(-145) AT_TL_T3_L32(-144) AT_TL_T3_L33(-143) AT_TL_T3_L34(-142) AT_TL_T4_L41(-141) AT_TL_T4_L42(-140) AT_TL_T4_L44(-138) AT_TA_T0_L00(-137) AT_TA_T1_L10(-136) AT_TA_T2_L20(-135) AT_TA_T4_L40(-133) AT_OL_P0_L11(-128) AT_OL_P0_L12(-127) AT_OL_P0_L13(-126) AT_OL_P0_L14(-125) AT_OL_P0_L21(-124) AT_OL_P0_L22(-123) AT_OL_P0_L23(-122) AT_OL_P0_L24(-121) AT_OL_P0_L31(-120) AT_OL_P0_L32(-119) AT_OL_P0_L33(-118) AT_OL_P0_L34(-117) AT_OL_P0_L41(-116) AT_OL_P0_L42(-115) AT_OL_P0_L43(-114) AT_OL_P0_L44(-113) AT_OL_P1_L01(-112) AT_OL_P1_L02(-111) AT_OL_P1_L03(-110) AT_OL_P1_L04(-109) AT_OL_P1_L11(-108) AT_OL_P1_L12(-107) AT_OL_P1_L13(-106) AT_OL_P1_L14(-105) AT_OL_P1_L31(-100) AT_OL_P1_L32(-99) AT_OL_P1_L33(-98) AT_OL_P1_L34(-97) AT_OL_P1_L41(-96) AT_OL_P1_L42(-95) AT_OL_P1_L43(-94) AT_OL_P1_L44(-93) AT_OL_P2_L01(-92) AT_OL_P2_L02(-91) AT_OL_P2_L03(-90) AT_OL_P2_L04(-89) AT_OL_P2_L21(-84) AT_OL_P2_L22(-83) AT_OL_P2_L23(-82) AT_OL_P2_L24(-81) AT_OL_P2_L31(-80) AT_OL_P2_L32(-79) AT_OL_P2_L33(-78) AT_OL_P2_L34(-77) AT_OL_P2_L41(-76) AT_OL_P2_L42(-75) AT_OL_P2_L43(-74) AT_OL_P2_L44(-73) AT_OL_P3_L01(-72) AT_OL_P3_L02(-71) AT_OL_P3_L03(-70) AT_OL_P3_L04(-69) AT_OL_P3_L11(-68) AT_OL_P3_L12(-67) AT_OL_P3_L13(-66) AT_OL_P3_L14(-65) AT_OL_P3_L21(-64) AT_OL_P3_L22(-63) AT_OL_P3_L24(-61) AT_OL_P3_L31(-60) AT_OL_P3_L32(-59) AT_OL_P3_L33(-58) AT_OL_P3_L34(-57) AT_OL_P3_L41(-56) AT_OL_P3_L42(-55) AT_OL_P3_L43(-54) AT_OL_P3_L44(-53) AT_OL_P4_L01(-52) AT_OL_P4_L02(-51) AT_OL_P4_L03(-50) AT_OL_P4_L04(-49) AT_OL_P4_L11(-48) AT_OL_P4_L12(-47) AT_OL_P4_L13(-46) AT_OL_P4_L14(-45) AT_OL_P4_L21(-44) AT_OL_P4_L22(-43) AT_OL_P4_L23(-42) AT_OL_P4_L24(-41) AT_OL_P4_L31(-40) AT_OL_P4_L32(-39) AT_OL_P4_L33(-38) AT_OL_P4_L34(-37) AT_OA_P0_L10(-31) AT_OA_P0_L20(-30) AT_OA_P0_L30(-29) AT_OA_P0_L40(-28) AT_OA_P1_L00(-27) AT_OA_P1_L10(-26) AT_OA_P1_L30(-24) AT_OA_P1_L40(-23) AT_OA_P2_L00(-22) AT_OA_P2_L20(-20) AT_OA_P2_L30(-19) AT_OA_P2_L40(-18) AT_OA_P3_L00(-17) AT_OA_P3_L10(-16) AT_OA_P3_L20(-15) AT_OA_P3_L30(-14) AT_OA_P3_L40(-13) AT_OA_P4_L00(-12) AT_OA_P4_L10(-11) AT_OA_P4_L20(-10) AT_OA_P4_L30(-9) AT_AA_A0_L10(-6) AT_AA_A0_L20(-5) AT_AA_A0_L30(-4) AT_AA_A0_L40(-3) FALSE(-1) FOO(2) AT_AA_A0_L00(7) AT_OL_P3_L23(62) AT_TA_T3_L30(134) AT_TL_T4_L43(139) AT_TL_T2_L22(148) AT_TL_T1_L11(153) AT_TL_T0_L03(155) IN_CITY_A_L40_C4(158) IN_CITY_A_L30_C3(159) IN_CITY_A_L20_C2(160) IN_CITY_A_L10_C1(161) IN_CITY_A_L00_C0(162) IN_CITY_L_L44_C4(163) IN_CITY_L_L43_C4(164) IN_CITY_L_L42_C4(165) IN_CITY_L_L41_C4(166) IN_CITY_L_L34_C3(167) IN_CITY_L_L33_C3(168) IN_CITY_L_L32_C3(169) IN_CITY_L_L31_C3(170) IN_CITY_L_L24_C2(171) IN_CITY_L_L23_C2(172) IN_CITY_L_L22_C2(173) IN_CITY_L_L21_C2(174) IN_CITY_L_L14_C1(175) IN_CITY_L_L13_C1(176) IN_CITY_L_L12_C1(177) IN_CITY_L_L11_C1(178) IN_CITY_L_L04_C0(179) IN_CITY_L_L03_C0(180) IN_CITY_L_L02_C0(181) IN_CITY_L_L01_C0(182) IN_CITY_T_T4_C4(183) IN_CITY_T_T3_C3(184) IN_CITY_T_T2_C2(185) IN_CITY_T_T1_C1(186) IN_CITY_T_T0_C0(187) 
+IMPLIES_WITH_INIT: From lit AT_OL_P3_L22(63) obtaing the following lits:IN_OT_P0_T0(-217) IN_OT_P0_T1(-216) IN_OT_P0_T2(-215) IN_OT_P0_T3(-214) IN_OT_P0_T4(-213) IN_OT_P1_T0(-212) IN_OT_P1_T1(-211) IN_OT_P1_T2(-210) IN_OT_P1_T3(-209) IN_OT_P1_T4(-208) IN_OT_P2_T0(-207) IN_OT_P2_T1(-206) IN_OT_P2_T2(-205) IN_OT_P2_T3(-204) IN_OT_P2_T4(-203) IN_OT_P3_T0(-202) IN_OT_P3_T1(-201) IN_OT_P3_T2(-200) IN_OT_P3_T3(-199) IN_OT_P3_T4(-198) IN_OT_P4_T0(-197) IN_OT_P4_T1(-196) IN_OT_P4_T2(-195) IN_OT_P4_T3(-194) IN_OT_P4_T4(-193) IN_OA_P0_A0(-192) IN_OA_P1_A0(-191) IN_OA_P2_A0(-190) IN_OA_P3_A0(-189) IN_OA_P4_A0(-188) AT_TL_T0_L01(-157) AT_TL_T0_L02(-156) AT_TL_T0_L04(-154) AT_TL_T1_L12(-152) AT_TL_T1_L13(-151) AT_TL_T1_L14(-150) AT_TL_T2_L21(-149) AT_TL_T2_L23(-147) AT_TL_T2_L24(-146) AT_TL_T3_L31(-145) AT_TL_T3_L32(-144) AT_TL_T3_L33(-143) AT_TL_T3_L34(-142) AT_TL_T4_L41(-141) AT_TL_T4_L42(-140) AT_TL_T4_L44(-138) AT_TA_T0_L00(-137) AT_TA_T1_L10(-136) AT_TA_T2_L20(-135) AT_TA_T4_L40(-133) AT_OL_P0_L11(-128) AT_OL_P0_L12(-127) AT_OL_P0_L13(-126) AT_OL_P0_L14(-125) AT_OL_P0_L21(-124) AT_OL_P0_L22(-123) AT_OL_P0_L23(-122) AT_OL_P0_L24(-121) AT_OL_P0_L31(-120) AT_OL_P0_L32(-119) AT_OL_P0_L33(-118) AT_OL_P0_L34(-117) AT_OL_P0_L41(-116) AT_OL_P0_L42(-115) AT_OL_P0_L43(-114) AT_OL_P0_L44(-113) AT_OL_P1_L01(-112) AT_OL_P1_L02(-111) AT_OL_P1_L03(-110) AT_OL_P1_L04(-109) AT_OL_P1_L11(-108) AT_OL_P1_L12(-107) AT_OL_P1_L13(-106) AT_OL_P1_L14(-105) AT_OL_P1_L31(-100) AT_OL_P1_L32(-99) AT_OL_P1_L33(-98) AT_OL_P1_L34(-97) AT_OL_P1_L41(-96) AT_OL_P1_L42(-95) AT_OL_P1_L43(-94) AT_OL_P1_L44(-93) AT_OL_P2_L01(-92) AT_OL_P2_L02(-91) AT_OL_P2_L03(-90) AT_OL_P2_L04(-89) AT_OL_P2_L21(-84) AT_OL_P2_L22(-83) AT_OL_P2_L23(-82) AT_OL_P2_L24(-81) AT_OL_P2_L31(-80) AT_OL_P2_L32(-79) AT_OL_P2_L33(-78) AT_OL_P2_L34(-77) AT_OL_P2_L41(-76) AT_OL_P2_L42(-75) AT_OL_P2_L43(-74) AT_OL_P2_L44(-73) AT_OL_P3_L01(-72) AT_OL_P3_L02(-71) AT_OL_P3_L03(-70) AT_OL_P3_L04(-69) AT_OL_P3_L11(-68) AT_OL_P3_L12(-67) AT_OL_P3_L13(-66) AT_OL_P3_L14(-65) AT_OL_P3_L21(-64) AT_OL_P3_L23(-62) AT_OL_P3_L24(-61) AT_OL_P3_L31(-60) AT_OL_P3_L32(-59) AT_OL_P3_L33(-58) AT_OL_P3_L34(-57) AT_OL_P3_L41(-56) AT_OL_P3_L42(-55) AT_OL_P3_L43(-54) AT_OL_P3_L44(-53) AT_OL_P4_L01(-52) AT_OL_P4_L02(-51) AT_OL_P4_L03(-50) AT_OL_P4_L04(-49) AT_OL_P4_L11(-48) AT_OL_P4_L12(-47) AT_OL_P4_L13(-46) AT_OL_P4_L14(-45) AT_OL_P4_L21(-44) AT_OL_P4_L22(-43) AT_OL_P4_L23(-42) AT_OL_P4_L24(-41) AT_OL_P4_L31(-40) AT_OL_P4_L32(-39) AT_OL_P4_L33(-38) AT_OL_P4_L34(-37) AT_OA_P0_L10(-31) AT_OA_P0_L20(-30) AT_OA_P0_L30(-29) AT_OA_P0_L40(-28) AT_OA_P1_L00(-27) AT_OA_P1_L10(-26) AT_OA_P1_L30(-24) AT_OA_P1_L40(-23) AT_OA_P2_L00(-22) AT_OA_P2_L20(-20) AT_OA_P2_L30(-19) AT_OA_P2_L40(-18) AT_OA_P3_L00(-17) AT_OA_P3_L10(-16) AT_OA_P3_L20(-15) AT_OA_P3_L30(-14) AT_OA_P3_L40(-13) AT_OA_P4_L00(-12) AT_OA_P4_L10(-11) AT_OA_P4_L20(-10) AT_OA_P4_L30(-9) AT_AA_A0_L10(-6) AT_AA_A0_L20(-5) AT_AA_A0_L30(-4) AT_AA_A0_L40(-3) FALSE(-1) FOO(2) AT_AA_A0_L00(7) AT_OL_P3_L22(63) AT_TA_T3_L30(134) AT_TL_T4_L43(139) AT_TL_T2_L22(148) AT_TL_T1_L11(153) AT_TL_T0_L03(155) IN_CITY_A_L40_C4(158) IN_CITY_A_L30_C3(159) IN_CITY_A_L20_C2(160) IN_CITY_A_L10_C1(161) IN_CITY_A_L00_C0(162) IN_CITY_L_L44_C4(163) IN_CITY_L_L43_C4(164) IN_CITY_L_L42_C4(165) IN_CITY_L_L41_C4(166) IN_CITY_L_L34_C3(167) IN_CITY_L_L33_C3(168) IN_CITY_L_L32_C3(169) IN_CITY_L_L31_C3(170) IN_CITY_L_L24_C2(171) IN_CITY_L_L23_C2(172) IN_CITY_L_L22_C2(173) IN_CITY_L_L21_C2(174) IN_CITY_L_L14_C1(175) IN_CITY_L_L13_C1(176) IN_CITY_L_L12_C1(177) IN_CITY_L_L11_C1(178) IN_CITY_L_L04_C0(179) IN_CITY_L_L03_C0(180) IN_CITY_L_L02_C0(181) IN_CITY_L_L01_C0(182) IN_CITY_T_T4_C4(183) IN_CITY_T_T3_C3(184) IN_CITY_T_T2_C2(185) IN_CITY_T_T1_C1(186) IN_CITY_T_T0_C0(187) 
+IMPLIES_WITH_INIT: From lit AT_OL_P3_L21(64) obtaing the following lits:IN_OT_P0_T0(-217) IN_OT_P0_T1(-216) IN_OT_P0_T2(-215) IN_OT_P0_T3(-214) IN_OT_P0_T4(-213) IN_OT_P1_T0(-212) IN_OT_P1_T1(-211) IN_OT_P1_T2(-210) IN_OT_P1_T3(-209) IN_OT_P1_T4(-208) IN_OT_P2_T0(-207) IN_OT_P2_T1(-206) IN_OT_P2_T2(-205) IN_OT_P2_T3(-204) IN_OT_P2_T4(-203) IN_OT_P3_T0(-202) IN_OT_P3_T1(-201) IN_OT_P3_T2(-200) IN_OT_P3_T3(-199) IN_OT_P3_T4(-198) IN_OT_P4_T0(-197) IN_OT_P4_T1(-196) IN_OT_P4_T2(-195) IN_OT_P4_T3(-194) IN_OT_P4_T4(-193) IN_OA_P0_A0(-192) IN_OA_P1_A0(-191) IN_OA_P2_A0(-190) IN_OA_P3_A0(-189) IN_OA_P4_A0(-188) AT_TL_T0_L01(-157) AT_TL_T0_L02(-156) AT_TL_T0_L04(-154) AT_TL_T1_L12(-152) AT_TL_T1_L13(-151) AT_TL_T1_L14(-150) AT_TL_T2_L21(-149) AT_TL_T2_L23(-147) AT_TL_T2_L24(-146) AT_TL_T3_L31(-145) AT_TL_T3_L32(-144) AT_TL_T3_L33(-143) AT_TL_T3_L34(-142) AT_TL_T4_L41(-141) AT_TL_T4_L42(-140) AT_TL_T4_L44(-138) AT_TA_T0_L00(-137) AT_TA_T1_L10(-136) AT_TA_T2_L20(-135) AT_TA_T4_L40(-133) AT_OL_P0_L11(-128) AT_OL_P0_L12(-127) AT_OL_P0_L13(-126) AT_OL_P0_L14(-125) AT_OL_P0_L21(-124) AT_OL_P0_L22(-123) AT_OL_P0_L23(-122) AT_OL_P0_L24(-121) AT_OL_P0_L31(-120) AT_OL_P0_L32(-119) AT_OL_P0_L33(-118) AT_OL_P0_L34(-117) AT_OL_P0_L41(-116) AT_OL_P0_L42(-115) AT_OL_P0_L43(-114) AT_OL_P0_L44(-113) AT_OL_P1_L01(-112) AT_OL_P1_L02(-111) AT_OL_P1_L03(-110) AT_OL_P1_L04(-109) AT_OL_P1_L11(-108) AT_OL_P1_L12(-107) AT_OL_P1_L13(-106) AT_OL_P1_L14(-105) AT_OL_P1_L31(-100) AT_OL_P1_L32(-99) AT_OL_P1_L33(-98) AT_OL_P1_L34(-97) AT_OL_P1_L41(-96) AT_OL_P1_L42(-95) AT_OL_P1_L43(-94) AT_OL_P1_L44(-93) AT_OL_P2_L01(-92) AT_OL_P2_L02(-91) AT_OL_P2_L03(-90) AT_OL_P2_L04(-89) AT_OL_P2_L21(-84) AT_OL_P2_L22(-83) AT_OL_P2_L23(-82) AT_OL_P2_L24(-81) AT_OL_P2_L31(-80) AT_OL_P2_L32(-79) AT_OL_P2_L33(-78) AT_OL_P2_L34(-77) AT_OL_P2_L41(-76) AT_OL_P2_L42(-75) AT_OL_P2_L43(-74) AT_OL_P2_L44(-73) AT_OL_P3_L01(-72) AT_OL_P3_L02(-71) AT_OL_P3_L03(-70) AT_OL_P3_L04(-69) AT_OL_P3_L11(-68) AT_OL_P3_L12(-67) AT_OL_P3_L13(-66) AT_OL_P3_L14(-65) AT_OL_P3_L22(-63) AT_OL_P3_L23(-62) AT_OL_P3_L24(-61) AT_OL_P3_L31(-60) AT_OL_P3_L32(-59) AT_OL_P3_L33(-58) AT_OL_P3_L34(-57) AT_OL_P3_L41(-56) AT_OL_P3_L42(-55) AT_OL_P3_L43(-54) AT_OL_P3_L44(-53) AT_OL_P4_L01(-52) AT_OL_P4_L02(-51) AT_OL_P4_L03(-50) AT_OL_P4_L04(-49) AT_OL_P4_L11(-48) AT_OL_P4_L12(-47) AT_OL_P4_L13(-46) AT_OL_P4_L14(-45) AT_OL_P4_L21(-44) AT_OL_P4_L22(-43) AT_OL_P4_L23(-42) AT_OL_P4_L24(-41) AT_OL_P4_L31(-40) AT_OL_P4_L32(-39) AT_OL_P4_L33(-38) AT_OL_P4_L34(-37) AT_OA_P0_L10(-31) AT_OA_P0_L20(-30) AT_OA_P0_L30(-29) AT_OA_P0_L40(-28) AT_OA_P1_L00(-27) AT_OA_P1_L10(-26) AT_OA_P1_L30(-24) AT_OA_P1_L40(-23) AT_OA_P2_L00(-22) AT_OA_P2_L20(-20) AT_OA_P2_L30(-19) AT_OA_P2_L40(-18) AT_OA_P3_L00(-17) AT_OA_P3_L10(-16) AT_OA_P3_L20(-15) AT_OA_P3_L30(-14) AT_OA_P3_L40(-13) AT_OA_P4_L00(-12) AT_OA_P4_L10(-11) AT_OA_P4_L20(-10) AT_OA_P4_L30(-9) AT_AA_A0_L10(-6) AT_AA_A0_L20(-5) AT_AA_A0_L30(-4) AT_AA_A0_L40(-3) FALSE(-1) FOO(2) AT_AA_A0_L00(7) AT_OL_P3_L21(64) AT_TA_T3_L30(134) AT_TL_T4_L43(139) AT_TL_T2_L22(148) AT_TL_T1_L11(153) AT_TL_T0_L03(155) IN_CITY_A_L40_C4(158) IN_CITY_A_L30_C3(159) IN_CITY_A_L20_C2(160) IN_CITY_A_L10_C1(161) IN_CITY_A_L00_C0(162) IN_CITY_L_L44_C4(163) IN_CITY_L_L43_C4(164) IN_CITY_L_L42_C4(165) IN_CITY_L_L41_C4(166) IN_CITY_L_L34_C3(167) IN_CITY_L_L33_C3(168) IN_CITY_L_L32_C3(169) IN_CITY_L_L31_C3(170) IN_CITY_L_L24_C2(171) IN_CITY_L_L23_C2(172) IN_CITY_L_L22_C2(173) IN_CITY_L_L21_C2(174) IN_CITY_L_L14_C1(175) IN_CITY_L_L13_C1(176) IN_CITY_L_L12_C1(177) IN_CITY_L_L11_C1(178) IN_CITY_L_L04_C0(179) IN_CITY_L_L03_C0(180) IN_CITY_L_L02_C0(181) IN_CITY_L_L01_C0(182) IN_CITY_T_T4_C4(183) IN_CITY_T_T3_C3(184) IN_CITY_T_T2_C2(185) IN_CITY_T_T1_C1(186) IN_CITY_T_T0_C0(187) 
+IMPLIES_WITH_INIT: From lit AT_OL_P2_L14(85) obtaing the following lits:IN_OT_P0_T0(-217) IN_OT_P0_T1(-216) IN_OT_P0_T2(-215) IN_OT_P0_T3(-214) IN_OT_P0_T4(-213) IN_OT_P1_T0(-212) IN_OT_P1_T1(-211) IN_OT_P1_T2(-210) IN_OT_P1_T3(-209) IN_OT_P1_T4(-208) IN_OT_P2_T0(-207) IN_OT_P2_T1(-206) IN_OT_P2_T2(-205) IN_OT_P2_T3(-204) IN_OT_P2_T4(-203) IN_OT_P3_T0(-202) IN_OT_P3_T1(-201) IN_OT_P3_T2(-200) IN_OT_P3_T3(-199) IN_OT_P3_T4(-198) IN_OT_P4_T0(-197) IN_OT_P4_T1(-196) IN_OT_P4_T2(-195) IN_OT_P4_T3(-194) IN_OT_P4_T4(-193) IN_OA_P0_A0(-192) IN_OA_P1_A0(-191) IN_OA_P2_A0(-190) IN_OA_P3_A0(-189) IN_OA_P4_A0(-188) AT_TL_T0_L01(-157) AT_TL_T0_L02(-156) AT_TL_T0_L04(-154) AT_TL_T1_L12(-152) AT_TL_T1_L13(-151) AT_TL_T1_L14(-150) AT_TL_T2_L21(-149) AT_TL_T2_L23(-147) AT_TL_T2_L24(-146) AT_TL_T3_L31(-145) AT_TL_T3_L32(-144) AT_TL_T3_L33(-143) AT_TL_T3_L34(-142) AT_TL_T4_L41(-141) AT_TL_T4_L42(-140) AT_TL_T4_L44(-138) AT_TA_T0_L00(-137) AT_TA_T1_L10(-136) AT_TA_T2_L20(-135) AT_TA_T4_L40(-133) AT_OL_P0_L11(-128) AT_OL_P0_L12(-127) AT_OL_P0_L13(-126) AT_OL_P0_L14(-125) AT_OL_P0_L21(-124) AT_OL_P0_L22(-123) AT_OL_P0_L23(-122) AT_OL_P0_L24(-121) AT_OL_P0_L31(-120) AT_OL_P0_L32(-119) AT_OL_P0_L33(-118) AT_OL_P0_L34(-117) AT_OL_P0_L41(-116) AT_OL_P0_L42(-115) AT_OL_P0_L43(-114) AT_OL_P0_L44(-113) AT_OL_P1_L01(-112) AT_OL_P1_L02(-111) AT_OL_P1_L03(-110) AT_OL_P1_L04(-109) AT_OL_P1_L11(-108) AT_OL_P1_L12(-107) AT_OL_P1_L13(-106) AT_OL_P1_L14(-105) AT_OL_P1_L31(-100) AT_OL_P1_L32(-99) AT_OL_P1_L33(-98) AT_OL_P1_L34(-97) AT_OL_P1_L41(-96) AT_OL_P1_L42(-95) AT_OL_P1_L43(-94) AT_OL_P1_L44(-93) AT_OL_P2_L01(-92) AT_OL_P2_L02(-91) AT_OL_P2_L03(-90) AT_OL_P2_L04(-89) AT_OL_P2_L11(-88) AT_OL_P2_L12(-87) AT_OL_P2_L13(-86) AT_OL_P2_L21(-84) AT_OL_P2_L22(-83) AT_OL_P2_L23(-82) AT_OL_P2_L24(-81) AT_OL_P2_L31(-80) AT_OL_P2_L32(-79) AT_OL_P2_L33(-78) AT_OL_P2_L34(-77) AT_OL_P2_L41(-76) AT_OL_P2_L42(-75) AT_OL_P2_L43(-74) AT_OL_P2_L44(-73) AT_OL_P3_L01(-72) AT_OL_P3_L02(-71) AT_OL_P3_L03(-70) AT_OL_P3_L04(-69) AT_OL_P3_L11(-68) AT_OL_P3_L12(-67) AT_OL_P3_L13(-66) AT_OL_P3_L14(-65) AT_OL_P3_L31(-60) AT_OL_P3_L32(-59) AT_OL_P3_L33(-58) AT_OL_P3_L34(-57) AT_OL_P3_L41(-56) AT_OL_P3_L42(-55) AT_OL_P3_L43(-54) AT_OL_P3_L44(-53) AT_OL_P4_L01(-52) AT_OL_P4_L02(-51) AT_OL_P4_L03(-50) AT_OL_P4_L04(-49) AT_OL_P4_L11(-48) AT_OL_P4_L12(-47) AT_OL_P4_L13(-46) AT_OL_P4_L14(-45) AT_OL_P4_L21(-44) AT_OL_P4_L22(-43) AT_OL_P4_L23(-42) AT_OL_P4_L24(-41) AT_OL_P4_L31(-40) AT_OL_P4_L32(-39) AT_OL_P4_L33(-38) AT_OL_P4_L34(-37) AT_OA_P0_L10(-31) AT_OA_P0_L20(-30) AT_OA_P0_L30(-29) AT_OA_P0_L40(-28) AT_OA_P1_L00(-27) AT_OA_P1_L10(-26) AT_OA_P1_L30(-24) AT_OA_P1_L40(-23) AT_OA_P2_L00(-22) AT_OA_P2_L10(-21) AT_OA_P2_L20(-20) AT_OA_P2_L30(-19) AT_OA_P2_L40(-18) AT_OA_P3_L00(-17) AT_OA_P3_L10(-16) AT_OA_P3_L30(-14) AT_OA_P3_L40(-13) AT_OA_P4_L00(-12) AT_OA_P4_L10(-11) AT_OA_P4_L20(-10) AT_OA_P4_L30(-9) AT_AA_A0_L10(-6) AT_AA_A0_L20(-5) AT_AA_A0_L30(-4) AT_AA_A0_L40(-3) FALSE(-1) FOO(2) AT_AA_A0_L00(7) AT_OL_P2_L14(85) AT_TA_T3_L30(134) AT_TL_T4_L43(139) AT_TL_T2_L22(148) AT_TL_T1_L11(153) AT_TL_T0_L03(155) IN_CITY_A_L40_C4(158) IN_CITY_A_L30_C3(159) IN_CITY_A_L20_C2(160) IN_CITY_A_L10_C1(161) IN_CITY_A_L00_C0(162) IN_CITY_L_L44_C4(163) IN_CITY_L_L43_C4(164) IN_CITY_L_L42_C4(165) IN_CITY_L_L41_C4(166) IN_CITY_L_L34_C3(167) IN_CITY_L_L33_C3(168) IN_CITY_L_L32_C3(169) IN_CITY_L_L31_C3(170) IN_CITY_L_L24_C2(171) IN_CITY_L_L23_C2(172) IN_CITY_L_L22_C2(173) IN_CITY_L_L21_C2(174) IN_CITY_L_L14_C1(175) IN_CITY_L_L13_C1(176) IN_CITY_L_L12_C1(177) IN_CITY_L_L11_C1(178) IN_CITY_L_L04_C0(179) IN_CITY_L_L03_C0(180) IN_CITY_L_L02_C0(181) IN_CITY_L_L01_C0(182) IN_CITY_T_T4_C4(183) IN_CITY_T_T3_C3(184) IN_CITY_T_T2_C2(185) IN_CITY_T_T1_C1(186) IN_CITY_T_T0_C0(187) 
+IMPLIES_WITH_INIT: From lit AT_OL_P2_L13(86) obtaing the following lits:IN_OT_P0_T0(-217) IN_OT_P0_T1(-216) IN_OT_P0_T2(-215) IN_OT_P0_T3(-214) IN_OT_P0_T4(-213) IN_OT_P1_T0(-212) IN_OT_P1_T1(-211) IN_OT_P1_T2(-210) IN_OT_P1_T3(-209) IN_OT_P1_T4(-208) IN_OT_P2_T0(-207) IN_OT_P2_T1(-206) IN_OT_P2_T2(-205) IN_OT_P2_T3(-204) IN_OT_P2_T4(-203) IN_OT_P3_T0(-202) IN_OT_P3_T1(-201) IN_OT_P3_T2(-200) IN_OT_P3_T3(-199) IN_OT_P3_T4(-198) IN_OT_P4_T0(-197) IN_OT_P4_T1(-196) IN_OT_P4_T2(-195) IN_OT_P4_T3(-194) IN_OT_P4_T4(-193) IN_OA_P0_A0(-192) IN_OA_P1_A0(-191) IN_OA_P2_A0(-190) IN_OA_P3_A0(-189) IN_OA_P4_A0(-188) AT_TL_T0_L01(-157) AT_TL_T0_L02(-156) AT_TL_T0_L04(-154) AT_TL_T1_L12(-152) AT_TL_T1_L13(-151) AT_TL_T1_L14(-150) AT_TL_T2_L21(-149) AT_TL_T2_L23(-147) AT_TL_T2_L24(-146) AT_TL_T3_L31(-145) AT_TL_T3_L32(-144) AT_TL_T3_L33(-143) AT_TL_T3_L34(-142) AT_TL_T4_L41(-141) AT_TL_T4_L42(-140) AT_TL_T4_L44(-138) AT_TA_T0_L00(-137) AT_TA_T1_L10(-136) AT_TA_T2_L20(-135) AT_TA_T4_L40(-133) AT_OL_P0_L11(-128) AT_OL_P0_L12(-127) AT_OL_P0_L13(-126) AT_OL_P0_L14(-125) AT_OL_P0_L21(-124) AT_OL_P0_L22(-123) AT_OL_P0_L23(-122) AT_OL_P0_L24(-121) AT_OL_P0_L31(-120) AT_OL_P0_L32(-119) AT_OL_P0_L33(-118) AT_OL_P0_L34(-117) AT_OL_P0_L41(-116) AT_OL_P0_L42(-115) AT_OL_P0_L43(-114) AT_OL_P0_L44(-113) AT_OL_P1_L01(-112) AT_OL_P1_L02(-111) AT_OL_P1_L03(-110) AT_OL_P1_L04(-109) AT_OL_P1_L11(-108) AT_OL_P1_L12(-107) AT_OL_P1_L13(-106) AT_OL_P1_L14(-105) AT_OL_P1_L31(-100) AT_OL_P1_L32(-99) AT_OL_P1_L33(-98) AT_OL_P1_L34(-97) AT_OL_P1_L41(-96) AT_OL_P1_L42(-95) AT_OL_P1_L43(-94) AT_OL_P1_L44(-93) AT_OL_P2_L01(-92) AT_OL_P2_L02(-91) AT_OL_P2_L03(-90) AT_OL_P2_L04(-89) AT_OL_P2_L11(-88) AT_OL_P2_L12(-87) AT_OL_P2_L14(-85) AT_OL_P2_L21(-84) AT_OL_P2_L22(-83) AT_OL_P2_L23(-82) AT_OL_P2_L24(-81) AT_OL_P2_L31(-80) AT_OL_P2_L32(-79) AT_OL_P2_L33(-78) AT_OL_P2_L34(-77) AT_OL_P2_L41(-76) AT_OL_P2_L42(-75) AT_OL_P2_L43(-74) AT_OL_P2_L44(-73) AT_OL_P3_L01(-72) AT_OL_P3_L02(-71) AT_OL_P3_L03(-70) AT_OL_P3_L04(-69) AT_OL_P3_L11(-68) AT_OL_P3_L12(-67) AT_OL_P3_L13(-66) AT_OL_P3_L14(-65) AT_OL_P3_L31(-60) AT_OL_P3_L32(-59) AT_OL_P3_L33(-58) AT_OL_P3_L34(-57) AT_OL_P3_L41(-56) AT_OL_P3_L42(-55) AT_OL_P3_L43(-54) AT_OL_P3_L44(-53) AT_OL_P4_L01(-52) AT_OL_P4_L02(-51) AT_OL_P4_L03(-50) AT_OL_P4_L04(-49) AT_OL_P4_L11(-48) AT_OL_P4_L12(-47) AT_OL_P4_L13(-46) AT_OL_P4_L14(-45) AT_OL_P4_L21(-44) AT_OL_P4_L22(-43) AT_OL_P4_L23(-42) AT_OL_P4_L24(-41) AT_OL_P4_L31(-40) AT_OL_P4_L32(-39) AT_OL_P4_L33(-38) AT_OL_P4_L34(-37) AT_OA_P0_L10(-31) AT_OA_P0_L20(-30) AT_OA_P0_L30(-29) AT_OA_P0_L40(-28) AT_OA_P1_L00(-27) AT_OA_P1_L10(-26) AT_OA_P1_L30(-24) AT_OA_P1_L40(-23) AT_OA_P2_L00(-22) AT_OA_P2_L10(-21) AT_OA_P2_L20(-20) AT_OA_P2_L30(-19) AT_OA_P2_L40(-18) AT_OA_P3_L00(-17) AT_OA_P3_L10(-16) AT_OA_P3_L30(-14) AT_OA_P3_L40(-13) AT_OA_P4_L00(-12) AT_OA_P4_L10(-11) AT_OA_P4_L20(-10) AT_OA_P4_L30(-9) AT_AA_A0_L10(-6) AT_AA_A0_L20(-5) AT_AA_A0_L30(-4) AT_AA_A0_L40(-3) FALSE(-1) FOO(2) AT_AA_A0_L00(7) AT_OL_P2_L13(86) AT_TA_T3_L30(134) AT_TL_T4_L43(139) AT_TL_T2_L22(148) AT_TL_T1_L11(153) AT_TL_T0_L03(155) IN_CITY_A_L40_C4(158) IN_CITY_A_L30_C3(159) IN_CITY_A_L20_C2(160) IN_CITY_A_L10_C1(161) IN_CITY_A_L00_C0(162) IN_CITY_L_L44_C4(163) IN_CITY_L_L43_C4(164) IN_CITY_L_L42_C4(165) IN_CITY_L_L41_C4(166) IN_CITY_L_L34_C3(167) IN_CITY_L_L33_C3(168) IN_CITY_L_L32_C3(169) IN_CITY_L_L31_C3(170) IN_CITY_L_L24_C2(171) IN_CITY_L_L23_C2(172) IN_CITY_L_L22_C2(173) IN_CITY_L_L21_C2(174) IN_CITY_L_L14_C1(175) IN_CITY_L_L13_C1(176) IN_CITY_L_L12_C1(177) IN_CITY_L_L11_C1(178) IN_CITY_L_L04_C0(179) IN_CITY_L_L03_C0(180) IN_CITY_L_L02_C0(181) IN_CITY_L_L01_C0(182) IN_CITY_T_T4_C4(183) IN_CITY_T_T3_C3(184) IN_CITY_T_T2_C2(185) IN_CITY_T_T1_C1(186) IN_CITY_T_T0_C0(187) 
+IMPLIES_WITH_INIT: From lit AT_OL_P2_L12(87) obtaing the following lits:IN_OT_P0_T0(-217) IN_OT_P0_T1(-216) IN_OT_P0_T2(-215) IN_OT_P0_T3(-214) IN_OT_P0_T4(-213) IN_OT_P1_T0(-212) IN_OT_P1_T1(-211) IN_OT_P1_T2(-210) IN_OT_P1_T3(-209) IN_OT_P1_T4(-208) IN_OT_P2_T0(-207) IN_OT_P2_T1(-206) IN_OT_P2_T2(-205) IN_OT_P2_T3(-204) IN_OT_P2_T4(-203) IN_OT_P3_T0(-202) IN_OT_P3_T1(-201) IN_OT_P3_T2(-200) IN_OT_P3_T3(-199) IN_OT_P3_T4(-198) IN_OT_P4_T0(-197) IN_OT_P4_T1(-196) IN_OT_P4_T2(-195) IN_OT_P4_T3(-194) IN_OT_P4_T4(-193) IN_OA_P0_A0(-192) IN_OA_P1_A0(-191) IN_OA_P2_A0(-190) IN_OA_P3_A0(-189) IN_OA_P4_A0(-188) AT_TL_T0_L01(-157) AT_TL_T0_L02(-156) AT_TL_T0_L04(-154) AT_TL_T1_L12(-152) AT_TL_T1_L13(-151) AT_TL_T1_L14(-150) AT_TL_T2_L21(-149) AT_TL_T2_L23(-147) AT_TL_T2_L24(-146) AT_TL_T3_L31(-145) AT_TL_T3_L32(-144) AT_TL_T3_L33(-143) AT_TL_T3_L34(-142) AT_TL_T4_L41(-141) AT_TL_T4_L42(-140) AT_TL_T4_L44(-138) AT_TA_T0_L00(-137) AT_TA_T1_L10(-136) AT_TA_T2_L20(-135) AT_TA_T4_L40(-133) AT_OL_P0_L11(-128) AT_OL_P0_L12(-127) AT_OL_P0_L13(-126) AT_OL_P0_L14(-125) AT_OL_P0_L21(-124) AT_OL_P0_L22(-123) AT_OL_P0_L23(-122) AT_OL_P0_L24(-121) AT_OL_P0_L31(-120) AT_OL_P0_L32(-119) AT_OL_P0_L33(-118) AT_OL_P0_L34(-117) AT_OL_P0_L41(-116) AT_OL_P0_L42(-115) AT_OL_P0_L43(-114) AT_OL_P0_L44(-113) AT_OL_P1_L01(-112) AT_OL_P1_L02(-111) AT_OL_P1_L03(-110) AT_OL_P1_L04(-109) AT_OL_P1_L11(-108) AT_OL_P1_L12(-107) AT_OL_P1_L13(-106) AT_OL_P1_L14(-105) AT_OL_P1_L31(-100) AT_OL_P1_L32(-99) AT_OL_P1_L33(-98) AT_OL_P1_L34(-97) AT_OL_P1_L41(-96) AT_OL_P1_L42(-95) AT_OL_P1_L43(-94) AT_OL_P1_L44(-93) AT_OL_P2_L01(-92) AT_OL_P2_L02(-91) AT_OL_P2_L03(-90) AT_OL_P2_L04(-89) AT_OL_P2_L11(-88) AT_OL_P2_L13(-86) AT_OL_P2_L14(-85) AT_OL_P2_L21(-84) AT_OL_P2_L22(-83) AT_OL_P2_L23(-82) AT_OL_P2_L24(-81) AT_OL_P2_L31(-80) AT_OL_P2_L32(-79) AT_OL_P2_L33(-78) AT_OL_P2_L34(-77) AT_OL_P2_L41(-76) AT_OL_P2_L42(-75) AT_OL_P2_L43(-74) AT_OL_P2_L44(-73) AT_OL_P3_L01(-72) AT_OL_P3_L02(-71) AT_OL_P3_L03(-70) AT_OL_P3_L04(-69) AT_OL_P3_L11(-68) AT_OL_P3_L12(-67) AT_OL_P3_L13(-66) AT_OL_P3_L14(-65) AT_OL_P3_L31(-60) AT_OL_P3_L32(-59) AT_OL_P3_L33(-58) AT_OL_P3_L34(-57) AT_OL_P3_L41(-56) AT_OL_P3_L42(-55) AT_OL_P3_L43(-54) AT_OL_P3_L44(-53) AT_OL_P4_L01(-52) AT_OL_P4_L02(-51) AT_OL_P4_L03(-50) AT_OL_P4_L04(-49) AT_OL_P4_L11(-48) AT_OL_P4_L12(-47) AT_OL_P4_L13(-46) AT_OL_P4_L14(-45) AT_OL_P4_L21(-44) AT_OL_P4_L22(-43) AT_OL_P4_L23(-42) AT_OL_P4_L24(-41) AT_OL_P4_L31(-40) AT_OL_P4_L32(-39) AT_OL_P4_L33(-38) AT_OL_P4_L34(-37) AT_OA_P0_L10(-31) AT_OA_P0_L20(-30) AT_OA_P0_L30(-29) AT_OA_P0_L40(-28) AT_OA_P1_L00(-27) AT_OA_P1_L10(-26) AT_OA_P1_L30(-24) AT_OA_P1_L40(-23) AT_OA_P2_L00(-22) AT_OA_P2_L10(-21) AT_OA_P2_L20(-20) AT_OA_P2_L30(-19) AT_OA_P2_L40(-18) AT_OA_P3_L00(-17) AT_OA_P3_L10(-16) AT_OA_P3_L30(-14) AT_OA_P3_L40(-13) AT_OA_P4_L00(-12) AT_OA_P4_L10(-11) AT_OA_P4_L20(-10) AT_OA_P4_L30(-9) AT_AA_A0_L10(-6) AT_AA_A0_L20(-5) AT_AA_A0_L30(-4) AT_AA_A0_L40(-3) FALSE(-1) FOO(2) AT_AA_A0_L00(7) AT_OL_P2_L12(87) AT_TA_T3_L30(134) AT_TL_T4_L43(139) AT_TL_T2_L22(148) AT_TL_T1_L11(153) AT_TL_T0_L03(155) IN_CITY_A_L40_C4(158) IN_CITY_A_L30_C3(159) IN_CITY_A_L20_C2(160) IN_CITY_A_L10_C1(161) IN_CITY_A_L00_C0(162) IN_CITY_L_L44_C4(163) IN_CITY_L_L43_C4(164) IN_CITY_L_L42_C4(165) IN_CITY_L_L41_C4(166) IN_CITY_L_L34_C3(167) IN_CITY_L_L33_C3(168) IN_CITY_L_L32_C3(169) IN_CITY_L_L31_C3(170) IN_CITY_L_L24_C2(171) IN_CITY_L_L23_C2(172) IN_CITY_L_L22_C2(173) IN_CITY_L_L21_C2(174) IN_CITY_L_L14_C1(175) IN_CITY_L_L13_C1(176) IN_CITY_L_L12_C1(177) IN_CITY_L_L11_C1(178) IN_CITY_L_L04_C0(179) IN_CITY_L_L03_C0(180) IN_CITY_L_L02_C0(181) IN_CITY_L_L01_C0(182) IN_CITY_T_T4_C4(183) IN_CITY_T_T3_C3(184) IN_CITY_T_T2_C2(185) IN_CITY_T_T1_C1(186) IN_CITY_T_T0_C0(187) 
+IMPLIES_WITH_INIT: From lit AT_OL_P2_L11(88) obtaing the following lits:IN_OT_P0_T0(-217) IN_OT_P0_T1(-216) IN_OT_P0_T2(-215) IN_OT_P0_T3(-214) IN_OT_P0_T4(-213) IN_OT_P1_T0(-212) IN_OT_P1_T1(-211) IN_OT_P1_T2(-210) IN_OT_P1_T3(-209) IN_OT_P1_T4(-208) IN_OT_P2_T0(-207) IN_OT_P2_T1(-206) IN_OT_P2_T2(-205) IN_OT_P2_T3(-204) IN_OT_P2_T4(-203) IN_OT_P3_T0(-202) IN_OT_P3_T1(-201) IN_OT_P3_T2(-200) IN_OT_P3_T3(-199) IN_OT_P3_T4(-198) IN_OT_P4_T0(-197) IN_OT_P4_T1(-196) IN_OT_P4_T2(-195) IN_OT_P4_T3(-194) IN_OT_P4_T4(-193) IN_OA_P0_A0(-192) IN_OA_P1_A0(-191) IN_OA_P2_A0(-190) IN_OA_P3_A0(-189) IN_OA_P4_A0(-188) AT_TL_T0_L01(-157) AT_TL_T0_L02(-156) AT_TL_T0_L04(-154) AT_TL_T1_L12(-152) AT_TL_T1_L13(-151) AT_TL_T1_L14(-150) AT_TL_T2_L21(-149) AT_TL_T2_L23(-147) AT_TL_T2_L24(-146) AT_TL_T3_L31(-145) AT_TL_T3_L32(-144) AT_TL_T3_L33(-143) AT_TL_T3_L34(-142) AT_TL_T4_L41(-141) AT_TL_T4_L42(-140) AT_TL_T4_L44(-138) AT_TA_T0_L00(-137) AT_TA_T1_L10(-136) AT_TA_T2_L20(-135) AT_TA_T4_L40(-133) AT_OL_P0_L11(-128) AT_OL_P0_L12(-127) AT_OL_P0_L13(-126) AT_OL_P0_L14(-125) AT_OL_P0_L21(-124) AT_OL_P0_L22(-123) AT_OL_P0_L23(-122) AT_OL_P0_L24(-121) AT_OL_P0_L31(-120) AT_OL_P0_L32(-119) AT_OL_P0_L33(-118) AT_OL_P0_L34(-117) AT_OL_P0_L41(-116) AT_OL_P0_L42(-115) AT_OL_P0_L43(-114) AT_OL_P0_L44(-113) AT_OL_P1_L01(-112) AT_OL_P1_L02(-111) AT_OL_P1_L03(-110) AT_OL_P1_L04(-109) AT_OL_P1_L11(-108) AT_OL_P1_L12(-107) AT_OL_P1_L13(-106) AT_OL_P1_L14(-105) AT_OL_P1_L31(-100) AT_OL_P1_L32(-99) AT_OL_P1_L33(-98) AT_OL_P1_L34(-97) AT_OL_P1_L41(-96) AT_OL_P1_L42(-95) AT_OL_P1_L43(-94) AT_OL_P1_L44(-93) AT_OL_P2_L01(-92) AT_OL_P2_L02(-91) AT_OL_P2_L03(-90) AT_OL_P2_L04(-89) AT_OL_P2_L12(-87) AT_OL_P2_L13(-86) AT_OL_P2_L14(-85) AT_OL_P2_L21(-84) AT_OL_P2_L22(-83) AT_OL_P2_L23(-82) AT_OL_P2_L24(-81) AT_OL_P2_L31(-80) AT_OL_P2_L32(-79) AT_OL_P2_L33(-78) AT_OL_P2_L34(-77) AT_OL_P2_L41(-76) AT_OL_P2_L42(-75) AT_OL_P2_L43(-74) AT_OL_P2_L44(-73) AT_OL_P3_L01(-72) AT_OL_P3_L02(-71) AT_OL_P3_L03(-70) AT_OL_P3_L04(-69) AT_OL_P3_L11(-68) AT_OL_P3_L12(-67) AT_OL_P3_L13(-66) AT_OL_P3_L14(-65) AT_OL_P3_L31(-60) AT_OL_P3_L32(-59) AT_OL_P3_L33(-58) AT_OL_P3_L34(-57) AT_OL_P3_L41(-56) AT_OL_P3_L42(-55) AT_OL_P3_L43(-54) AT_OL_P3_L44(-53) AT_OL_P4_L01(-52) AT_OL_P4_L02(-51) AT_OL_P4_L03(-50) AT_OL_P4_L04(-49) AT_OL_P4_L11(-48) AT_OL_P4_L12(-47) AT_OL_P4_L13(-46) AT_OL_P4_L14(-45) AT_OL_P4_L21(-44) AT_OL_P4_L22(-43) AT_OL_P4_L23(-42) AT_OL_P4_L24(-41) AT_OL_P4_L31(-40) AT_OL_P4_L32(-39) AT_OL_P4_L33(-38) AT_OL_P4_L34(-37) AT_OA_P0_L10(-31) AT_OA_P0_L20(-30) AT_OA_P0_L30(-29) AT_OA_P0_L40(-28) AT_OA_P1_L00(-27) AT_OA_P1_L10(-26) AT_OA_P1_L30(-24) AT_OA_P1_L40(-23) AT_OA_P2_L00(-22) AT_OA_P2_L10(-21) AT_OA_P2_L20(-20) AT_OA_P2_L30(-19) AT_OA_P2_L40(-18) AT_OA_P3_L00(-17) AT_OA_P3_L10(-16) AT_OA_P3_L30(-14) AT_OA_P3_L40(-13) AT_OA_P4_L00(-12) AT_OA_P4_L10(-11) AT_OA_P4_L20(-10) AT_OA_P4_L30(-9) AT_AA_A0_L10(-6) AT_AA_A0_L20(-5) AT_AA_A0_L30(-4) AT_AA_A0_L40(-3) FALSE(-1) FOO(2) AT_AA_A0_L00(7) AT_OL_P2_L11(88) AT_TA_T3_L30(134) AT_TL_T4_L43(139) AT_TL_T2_L22(148) AT_TL_T1_L11(153) AT_TL_T0_L03(155) IN_CITY_A_L40_C4(158) IN_CITY_A_L30_C3(159) IN_CITY_A_L20_C2(160) IN_CITY_A_L10_C1(161) IN_CITY_A_L00_C0(162) IN_CITY_L_L44_C4(163) IN_CITY_L_L43_C4(164) IN_CITY_L_L42_C4(165) IN_CITY_L_L41_C4(166) IN_CITY_L_L34_C3(167) IN_CITY_L_L33_C3(168) IN_CITY_L_L32_C3(169) IN_CITY_L_L31_C3(170) IN_CITY_L_L24_C2(171) IN_CITY_L_L23_C2(172) IN_CITY_L_L22_C2(173) IN_CITY_L_L21_C2(174) IN_CITY_L_L14_C1(175) IN_CITY_L_L13_C1(176) IN_CITY_L_L12_C1(177) IN_CITY_L_L11_C1(178) IN_CITY_L_L04_C0(179) IN_CITY_L_L03_C0(180) IN_CITY_L_L02_C0(181) IN_CITY_L_L01_C0(182) IN_CITY_T_T4_C4(183) IN_CITY_T_T3_C3(184) IN_CITY_T_T2_C2(185) IN_CITY_T_T1_C1(186) IN_CITY_T_T0_C0(187) 
+IMPLIES_WITH_INIT: From lit AT_OL_P1_L24(101) obtaing the following lits:IN_OT_P0_T0(-217) IN_OT_P0_T1(-216) IN_OT_P0_T2(-215) IN_OT_P0_T3(-214) IN_OT_P0_T4(-213) IN_OT_P1_T0(-212) IN_OT_P1_T1(-211) IN_OT_P1_T2(-210) IN_OT_P1_T3(-209) IN_OT_P1_T4(-208) IN_OT_P2_T0(-207) IN_OT_P2_T1(-206) IN_OT_P2_T2(-205) IN_OT_P2_T3(-204) IN_OT_P2_T4(-203) IN_OT_P3_T0(-202) IN_OT_P3_T1(-201) IN_OT_P3_T2(-200) IN_OT_P3_T3(-199) IN_OT_P3_T4(-198) IN_OT_P4_T0(-197) IN_OT_P4_T1(-196) IN_OT_P4_T2(-195) IN_OT_P4_T3(-194) IN_OT_P4_T4(-193) IN_OA_P0_A0(-192) IN_OA_P1_A0(-191) IN_OA_P2_A0(-190) IN_OA_P3_A0(-189) IN_OA_P4_A0(-188) AT_TL_T0_L01(-157) AT_TL_T0_L02(-156) AT_TL_T0_L04(-154) AT_TL_T1_L12(-152) AT_TL_T1_L13(-151) AT_TL_T1_L14(-150) AT_TL_T2_L21(-149) AT_TL_T2_L23(-147) AT_TL_T2_L24(-146) AT_TL_T3_L31(-145) AT_TL_T3_L32(-144) AT_TL_T3_L33(-143) AT_TL_T3_L34(-142) AT_TL_T4_L41(-141) AT_TL_T4_L42(-140) AT_TL_T4_L44(-138) AT_TA_T0_L00(-137) AT_TA_T1_L10(-136) AT_TA_T2_L20(-135) AT_TA_T4_L40(-133) AT_OL_P0_L11(-128) AT_OL_P0_L12(-127) AT_OL_P0_L13(-126) AT_OL_P0_L14(-125) AT_OL_P0_L21(-124) AT_OL_P0_L22(-123) AT_OL_P0_L23(-122) AT_OL_P0_L24(-121) AT_OL_P0_L31(-120) AT_OL_P0_L32(-119) AT_OL_P0_L33(-118) AT_OL_P0_L34(-117) AT_OL_P0_L41(-116) AT_OL_P0_L42(-115) AT_OL_P0_L43(-114) AT_OL_P0_L44(-113) AT_OL_P1_L01(-112) AT_OL_P1_L02(-111) AT_OL_P1_L03(-110) AT_OL_P1_L04(-109) AT_OL_P1_L11(-108) AT_OL_P1_L12(-107) AT_OL_P1_L13(-106) AT_OL_P1_L14(-105) AT_OL_P1_L21(-104) AT_OL_P1_L22(-103) AT_OL_P1_L23(-102) AT_OL_P1_L31(-100) AT_OL_P1_L32(-99) AT_OL_P1_L33(-98) AT_OL_P1_L34(-97) AT_OL_P1_L41(-96) AT_OL_P1_L42(-95) AT_OL_P1_L43(-94) AT_OL_P1_L44(-93) AT_OL_P2_L01(-92) AT_OL_P2_L02(-91) AT_OL_P2_L03(-90) AT_OL_P2_L04(-89) AT_OL_P2_L21(-84) AT_OL_P2_L22(-83) AT_OL_P2_L23(-82) AT_OL_P2_L24(-81) AT_OL_P2_L31(-80) AT_OL_P2_L32(-79) AT_OL_P2_L33(-78) AT_OL_P2_L34(-77) AT_OL_P2_L41(-76) AT_OL_P2_L42(-75) AT_OL_P2_L43(-74) AT_OL_P2_L44(-73) AT_OL_P3_L01(-72) AT_OL_P3_L02(-71) AT_OL_P3_L03(-70) AT_OL_P3_L04(-69) AT_OL_P3_L11(-68) AT_OL_P3_L12(-67) AT_OL_P3_L13(-66) AT_OL_P3_L14(-65) AT_OL_P3_L31(-60) AT_OL_P3_L32(-59) AT_OL_P3_L33(-58) AT_OL_P3_L34(-57) AT_OL_P3_L41(-56) AT_OL_P3_L42(-55) AT_OL_P3_L43(-54) AT_OL_P3_L44(-53) AT_OL_P4_L01(-52) AT_OL_P4_L02(-51) AT_OL_P4_L03(-50) AT_OL_P4_L04(-49) AT_OL_P4_L11(-48) AT_OL_P4_L12(-47) AT_OL_P4_L13(-46) AT_OL_P4_L14(-45) AT_OL_P4_L21(-44) AT_OL_P4_L22(-43) AT_OL_P4_L23(-42) AT_OL_P4_L24(-41) AT_OL_P4_L31(-40) AT_OL_P4_L32(-39) AT_OL_P4_L33(-38) AT_OL_P4_L34(-37) AT_OA_P0_L10(-31) AT_OA_P0_L20(-30) AT_OA_P0_L30(-29) AT_OA_P0_L40(-28) AT_OA_P1_L00(-27) AT_OA_P1_L10(-26) AT_OA_P1_L20(-25) AT_OA_P1_L30(-24) AT_OA_P1_L40(-23) AT_OA_P2_L00(-22) AT_OA_P2_L20(-20) AT_OA_P2_L30(-19) AT_OA_P2_L40(-18) AT_OA_P3_L00(-17) AT_OA_P3_L10(-16) AT_OA_P3_L30(-14) AT_OA_P3_L40(-13) AT_OA_P4_L00(-12) AT_OA_P4_L10(-11) AT_OA_P4_L20(-10) AT_OA_P4_L30(-9) AT_AA_A0_L10(-6) AT_AA_A0_L20(-5) AT_AA_A0_L30(-4) AT_AA_A0_L40(-3) FALSE(-1) FOO(2) AT_AA_A0_L00(7) AT_OL_P1_L24(101) AT_TA_T3_L30(134) AT_TL_T4_L43(139) AT_TL_T2_L22(148) AT_TL_T1_L11(153) AT_TL_T0_L03(155) IN_CITY_A_L40_C4(158) IN_CITY_A_L30_C3(159) IN_CITY_A_L20_C2(160) IN_CITY_A_L10_C1(161) IN_CITY_A_L00_C0(162) IN_CITY_L_L44_C4(163) IN_CITY_L_L43_C4(164) IN_CITY_L_L42_C4(165) IN_CITY_L_L41_C4(166) IN_CITY_L_L34_C3(167) IN_CITY_L_L33_C3(168) IN_CITY_L_L32_C3(169) IN_CITY_L_L31_C3(170) IN_CITY_L_L24_C2(171) IN_CITY_L_L23_C2(172) IN_CITY_L_L22_C2(173) IN_CITY_L_L21_C2(174) IN_CITY_L_L14_C1(175) IN_CITY_L_L13_C1(176) IN_CITY_L_L12_C1(177) IN_CITY_L_L11_C1(178) IN_CITY_L_L04_C0(179) IN_CITY_L_L03_C0(180) IN_CITY_L_L02_C0(181) IN_CITY_L_L01_C0(182) IN_CITY_T_T4_C4(183) IN_CITY_T_T3_C3(184) IN_CITY_T_T2_C2(185) IN_CITY_T_T1_C1(186) IN_CITY_T_T0_C0(187) 
+IMPLIES_WITH_INIT: From lit AT_OL_P1_L23(102) obtaing the following lits:IN_OT_P0_T0(-217) IN_OT_P0_T1(-216) IN_OT_P0_T2(-215) IN_OT_P0_T3(-214) IN_OT_P0_T4(-213) IN_OT_P1_T0(-212) IN_OT_P1_T1(-211) IN_OT_P1_T2(-210) IN_OT_P1_T3(-209) IN_OT_P1_T4(-208) IN_OT_P2_T0(-207) IN_OT_P2_T1(-206) IN_OT_P2_T2(-205) IN_OT_P2_T3(-204) IN_OT_P2_T4(-203) IN_OT_P3_T0(-202) IN_OT_P3_T1(-201) IN_OT_P3_T2(-200) IN_OT_P3_T3(-199) IN_OT_P3_T4(-198) IN_OT_P4_T0(-197) IN_OT_P4_T1(-196) IN_OT_P4_T2(-195) IN_OT_P4_T3(-194) IN_OT_P4_T4(-193) IN_OA_P0_A0(-192) IN_OA_P1_A0(-191) IN_OA_P2_A0(-190) IN_OA_P3_A0(-189) IN_OA_P4_A0(-188) AT_TL_T0_L01(-157) AT_TL_T0_L02(-156) AT_TL_T0_L04(-154) AT_TL_T1_L12(-152) AT_TL_T1_L13(-151) AT_TL_T1_L14(-150) AT_TL_T2_L21(-149) AT_TL_T2_L23(-147) AT_TL_T2_L24(-146) AT_TL_T3_L31(-145) AT_TL_T3_L32(-144) AT_TL_T3_L33(-143) AT_TL_T3_L34(-142) AT_TL_T4_L41(-141) AT_TL_T4_L42(-140) AT_TL_T4_L44(-138) AT_TA_T0_L00(-137) AT_TA_T1_L10(-136) AT_TA_T2_L20(-135) AT_TA_T4_L40(-133) AT_OL_P0_L11(-128) AT_OL_P0_L12(-127) AT_OL_P0_L13(-126) AT_OL_P0_L14(-125) AT_OL_P0_L21(-124) AT_OL_P0_L22(-123) AT_OL_P0_L23(-122) AT_OL_P0_L24(-121) AT_OL_P0_L31(-120) AT_OL_P0_L32(-119) AT_OL_P0_L33(-118) AT_OL_P0_L34(-117) AT_OL_P0_L41(-116) AT_OL_P0_L42(-115) AT_OL_P0_L43(-114) AT_OL_P0_L44(-113) AT_OL_P1_L01(-112) AT_OL_P1_L02(-111) AT_OL_P1_L03(-110) AT_OL_P1_L04(-109) AT_OL_P1_L11(-108) AT_OL_P1_L12(-107) AT_OL_P1_L13(-106) AT_OL_P1_L14(-105) AT_OL_P1_L21(-104) AT_OL_P1_L22(-103) AT_OL_P1_L24(-101) AT_OL_P1_L31(-100) AT_OL_P1_L32(-99) AT_OL_P1_L33(-98) AT_OL_P1_L34(-97) AT_OL_P1_L41(-96) AT_OL_P1_L42(-95) AT_OL_P1_L43(-94) AT_OL_P1_L44(-93) AT_OL_P2_L01(-92) AT_OL_P2_L02(-91) AT_OL_P2_L03(-90) AT_OL_P2_L04(-89) AT_OL_P2_L21(-84) AT_OL_P2_L22(-83) AT_OL_P2_L23(-82) AT_OL_P2_L24(-81) AT_OL_P2_L31(-80) AT_OL_P2_L32(-79) AT_OL_P2_L33(-78) AT_OL_P2_L34(-77) AT_OL_P2_L41(-76) AT_OL_P2_L42(-75) AT_OL_P2_L43(-74) AT_OL_P2_L44(-73) AT_OL_P3_L01(-72) AT_OL_P3_L02(-71) AT_OL_P3_L03(-70) AT_OL_P3_L04(-69) AT_OL_P3_L11(-68) AT_OL_P3_L12(-67) AT_OL_P3_L13(-66) AT_OL_P3_L14(-65) AT_OL_P3_L31(-60) AT_OL_P3_L32(-59) AT_OL_P3_L33(-58) AT_OL_P3_L34(-57) AT_OL_P3_L41(-56) AT_OL_P3_L42(-55) AT_OL_P3_L43(-54) AT_OL_P3_L44(-53) AT_OL_P4_L01(-52) AT_OL_P4_L02(-51) AT_OL_P4_L03(-50) AT_OL_P4_L04(-49) AT_OL_P4_L11(-48) AT_OL_P4_L12(-47) AT_OL_P4_L13(-46) AT_OL_P4_L14(-45) AT_OL_P4_L21(-44) AT_OL_P4_L22(-43) AT_OL_P4_L23(-42) AT_OL_P4_L24(-41) AT_OL_P4_L31(-40) AT_OL_P4_L32(-39) AT_OL_P4_L33(-38) AT_OL_P4_L34(-37) AT_OA_P0_L10(-31) AT_OA_P0_L20(-30) AT_OA_P0_L30(-29) AT_OA_P0_L40(-28) AT_OA_P1_L00(-27) AT_OA_P1_L10(-26) AT_OA_P1_L20(-25) AT_OA_P1_L30(-24) AT_OA_P1_L40(-23) AT_OA_P2_L00(-22) AT_OA_P2_L20(-20) AT_OA_P2_L30(-19) AT_OA_P2_L40(-18) AT_OA_P3_L00(-17) AT_OA_P3_L10(-16) AT_OA_P3_L30(-14) AT_OA_P3_L40(-13) AT_OA_P4_L00(-12) AT_OA_P4_L10(-11) AT_OA_P4_L20(-10) AT_OA_P4_L30(-9) AT_AA_A0_L10(-6) AT_AA_A0_L20(-5) AT_AA_A0_L30(-4) AT_AA_A0_L40(-3) FALSE(-1) FOO(2) AT_AA_A0_L00(7) AT_OL_P1_L23(102) AT_TA_T3_L30(134) AT_TL_T4_L43(139) AT_TL_T2_L22(148) AT_TL_T1_L11(153) AT_TL_T0_L03(155) IN_CITY_A_L40_C4(158) IN_CITY_A_L30_C3(159) IN_CITY_A_L20_C2(160) IN_CITY_A_L10_C1(161) IN_CITY_A_L00_C0(162) IN_CITY_L_L44_C4(163) IN_CITY_L_L43_C4(164) IN_CITY_L_L42_C4(165) IN_CITY_L_L41_C4(166) IN_CITY_L_L34_C3(167) IN_CITY_L_L33_C3(168) IN_CITY_L_L32_C3(169) IN_CITY_L_L31_C3(170) IN_CITY_L_L24_C2(171) IN_CITY_L_L23_C2(172) IN_CITY_L_L22_C2(173) IN_CITY_L_L21_C2(174) IN_CITY_L_L14_C1(175) IN_CITY_L_L13_C1(176) IN_CITY_L_L12_C1(177) IN_CITY_L_L11_C1(178) IN_CITY_L_L04_C0(179) IN_CITY_L_L03_C0(180) IN_CITY_L_L02_C0(181) IN_CITY_L_L01_C0(182) IN_CITY_T_T4_C4(183) IN_CITY_T_T3_C3(184) IN_CITY_T_T2_C2(185) IN_CITY_T_T1_C1(186) IN_CITY_T_T0_C0(187) 
+IMPLIES_WITH_INIT: From lit AT_OL_P1_L22(103) obtaing the following lits:IN_OT_P0_T0(-217) IN_OT_P0_T1(-216) IN_OT_P0_T2(-215) IN_OT_P0_T3(-214) IN_OT_P0_T4(-213) IN_OT_P1_T0(-212) IN_OT_P1_T1(-211) IN_OT_P1_T2(-210) IN_OT_P1_T3(-209) IN_OT_P1_T4(-208) IN_OT_P2_T0(-207) IN_OT_P2_T1(-206) IN_OT_P2_T2(-205) IN_OT_P2_T3(-204) IN_OT_P2_T4(-203) IN_OT_P3_T0(-202) IN_OT_P3_T1(-201) IN_OT_P3_T2(-200) IN_OT_P3_T3(-199) IN_OT_P3_T4(-198) IN_OT_P4_T0(-197) IN_OT_P4_T1(-196) IN_OT_P4_T2(-195) IN_OT_P4_T3(-194) IN_OT_P4_T4(-193) IN_OA_P0_A0(-192) IN_OA_P1_A0(-191) IN_OA_P2_A0(-190) IN_OA_P3_A0(-189) IN_OA_P4_A0(-188) AT_TL_T0_L01(-157) AT_TL_T0_L02(-156) AT_TL_T0_L04(-154) AT_TL_T1_L12(-152) AT_TL_T1_L13(-151) AT_TL_T1_L14(-150) AT_TL_T2_L21(-149) AT_TL_T2_L23(-147) AT_TL_T2_L24(-146) AT_TL_T3_L31(-145) AT_TL_T3_L32(-144) AT_TL_T3_L33(-143) AT_TL_T3_L34(-142) AT_TL_T4_L41(-141) AT_TL_T4_L42(-140) AT_TL_T4_L44(-138) AT_TA_T0_L00(-137) AT_TA_T1_L10(-136) AT_TA_T2_L20(-135) AT_TA_T4_L40(-133) AT_OL_P0_L11(-128) AT_OL_P0_L12(-127) AT_OL_P0_L13(-126) AT_OL_P0_L14(-125) AT_OL_P0_L21(-124) AT_OL_P0_L22(-123) AT_OL_P0_L23(-122) AT_OL_P0_L24(-121) AT_OL_P0_L31(-120) AT_OL_P0_L32(-119) AT_OL_P0_L33(-118) AT_OL_P0_L34(-117) AT_OL_P0_L41(-116) AT_OL_P0_L42(-115) AT_OL_P0_L43(-114) AT_OL_P0_L44(-113) AT_OL_P1_L01(-112) AT_OL_P1_L02(-111) AT_OL_P1_L03(-110) AT_OL_P1_L04(-109) AT_OL_P1_L11(-108) AT_OL_P1_L12(-107) AT_OL_P1_L13(-106) AT_OL_P1_L14(-105) AT_OL_P1_L21(-104) AT_OL_P1_L23(-102) AT_OL_P1_L24(-101) AT_OL_P1_L31(-100) AT_OL_P1_L32(-99) AT_OL_P1_L33(-98) AT_OL_P1_L34(-97) AT_OL_P1_L41(-96) AT_OL_P1_L42(-95) AT_OL_P1_L43(-94) AT_OL_P1_L44(-93) AT_OL_P2_L01(-92) AT_OL_P2_L02(-91) AT_OL_P2_L03(-90) AT_OL_P2_L04(-89) AT_OL_P2_L21(-84) AT_OL_P2_L22(-83) AT_OL_P2_L23(-82) AT_OL_P2_L24(-81) AT_OL_P2_L31(-80) AT_OL_P2_L32(-79) AT_OL_P2_L33(-78) AT_OL_P2_L34(-77) AT_OL_P2_L41(-76) AT_OL_P2_L42(-75) AT_OL_P2_L43(-74) AT_OL_P2_L44(-73) AT_OL_P3_L01(-72) AT_OL_P3_L02(-71) AT_OL_P3_L03(-70) AT_OL_P3_L04(-69) AT_OL_P3_L11(-68) AT_OL_P3_L12(-67) AT_OL_P3_L13(-66) AT_OL_P3_L14(-65) AT_OL_P3_L31(-60) AT_OL_P3_L32(-59) AT_OL_P3_L33(-58) AT_OL_P3_L34(-57) AT_OL_P3_L41(-56) AT_OL_P3_L42(-55) AT_OL_P3_L43(-54) AT_OL_P3_L44(-53) AT_OL_P4_L01(-52) AT_OL_P4_L02(-51) AT_OL_P4_L03(-50) AT_OL_P4_L04(-49) AT_OL_P4_L11(-48) AT_OL_P4_L12(-47) AT_OL_P4_L13(-46) AT_OL_P4_L14(-45) AT_OL_P4_L21(-44) AT_OL_P4_L22(-43) AT_OL_P4_L23(-42) AT_OL_P4_L24(-41) AT_OL_P4_L31(-40) AT_OL_P4_L32(-39) AT_OL_P4_L33(-38) AT_OL_P4_L34(-37) AT_OA_P0_L10(-31) AT_OA_P0_L20(-30) AT_OA_P0_L30(-29) AT_OA_P0_L40(-28) AT_OA_P1_L00(-27) AT_OA_P1_L10(-26) AT_OA_P1_L20(-25) AT_OA_P1_L30(-24) AT_OA_P1_L40(-23) AT_OA_P2_L00(-22) AT_OA_P2_L20(-20) AT_OA_P2_L30(-19) AT_OA_P2_L40(-18) AT_OA_P3_L00(-17) AT_OA_P3_L10(-16) AT_OA_P3_L30(-14) AT_OA_P3_L40(-13) AT_OA_P4_L00(-12) AT_OA_P4_L10(-11) AT_OA_P4_L20(-10) AT_OA_P4_L30(-9) AT_AA_A0_L10(-6) AT_AA_A0_L20(-5) AT_AA_A0_L30(-4) AT_AA_A0_L40(-3) FALSE(-1) FOO(2) AT_AA_A0_L00(7) AT_OL_P1_L22(103) AT_TA_T3_L30(134) AT_TL_T4_L43(139) AT_TL_T2_L22(148) AT_TL_T1_L11(153) AT_TL_T0_L03(155) IN_CITY_A_L40_C4(158) IN_CITY_A_L30_C3(159) IN_CITY_A_L20_C2(160) IN_CITY_A_L10_C1(161) IN_CITY_A_L00_C0(162) IN_CITY_L_L44_C4(163) IN_CITY_L_L43_C4(164) IN_CITY_L_L42_C4(165) IN_CITY_L_L41_C4(166) IN_CITY_L_L34_C3(167) IN_CITY_L_L33_C3(168) IN_CITY_L_L32_C3(169) IN_CITY_L_L31_C3(170) IN_CITY_L_L24_C2(171) IN_CITY_L_L23_C2(172) IN_CITY_L_L22_C2(173) IN_CITY_L_L21_C2(174) IN_CITY_L_L14_C1(175) IN_CITY_L_L13_C1(176) IN_CITY_L_L12_C1(177) IN_CITY_L_L11_C1(178) IN_CITY_L_L04_C0(179) IN_CITY_L_L03_C0(180) IN_CITY_L_L02_C0(181) IN_CITY_L_L01_C0(182) IN_CITY_T_T4_C4(183) IN_CITY_T_T3_C3(184) IN_CITY_T_T2_C2(185) IN_CITY_T_T1_C1(186) IN_CITY_T_T0_C0(187) 
+IMPLIES_WITH_INIT: From lit AT_OL_P1_L21(104) obtaing the following lits:IN_OT_P0_T0(-217) IN_OT_P0_T1(-216) IN_OT_P0_T2(-215) IN_OT_P0_T3(-214) IN_OT_P0_T4(-213) IN_OT_P1_T0(-212) IN_OT_P1_T1(-211) IN_OT_P1_T2(-210) IN_OT_P1_T3(-209) IN_OT_P1_T4(-208) IN_OT_P2_T0(-207) IN_OT_P2_T1(-206) IN_OT_P2_T2(-205) IN_OT_P2_T3(-204) IN_OT_P2_T4(-203) IN_OT_P3_T0(-202) IN_OT_P3_T1(-201) IN_OT_P3_T2(-200) IN_OT_P3_T3(-199) IN_OT_P3_T4(-198) IN_OT_P4_T0(-197) IN_OT_P4_T1(-196) IN_OT_P4_T2(-195) IN_OT_P4_T3(-194) IN_OT_P4_T4(-193) IN_OA_P0_A0(-192) IN_OA_P1_A0(-191) IN_OA_P2_A0(-190) IN_OA_P3_A0(-189) IN_OA_P4_A0(-188) AT_TL_T0_L01(-157) AT_TL_T0_L02(-156) AT_TL_T0_L04(-154) AT_TL_T1_L12(-152) AT_TL_T1_L13(-151) AT_TL_T1_L14(-150) AT_TL_T2_L21(-149) AT_TL_T2_L23(-147) AT_TL_T2_L24(-146) AT_TL_T3_L31(-145) AT_TL_T3_L32(-144) AT_TL_T3_L33(-143) AT_TL_T3_L34(-142) AT_TL_T4_L41(-141) AT_TL_T4_L42(-140) AT_TL_T4_L44(-138) AT_TA_T0_L00(-137) AT_TA_T1_L10(-136) AT_TA_T2_L20(-135) AT_TA_T4_L40(-133) AT_OL_P0_L11(-128) AT_OL_P0_L12(-127) AT_OL_P0_L13(-126) AT_OL_P0_L14(-125) AT_OL_P0_L21(-124) AT_OL_P0_L22(-123) AT_OL_P0_L23(-122) AT_OL_P0_L24(-121) AT_OL_P0_L31(-120) AT_OL_P0_L32(-119) AT_OL_P0_L33(-118) AT_OL_P0_L34(-117) AT_OL_P0_L41(-116) AT_OL_P0_L42(-115) AT_OL_P0_L43(-114) AT_OL_P0_L44(-113) AT_OL_P1_L01(-112) AT_OL_P1_L02(-111) AT_OL_P1_L03(-110) AT_OL_P1_L04(-109) AT_OL_P1_L11(-108) AT_OL_P1_L12(-107) AT_OL_P1_L13(-106) AT_OL_P1_L14(-105) AT_OL_P1_L22(-103) AT_OL_P1_L23(-102) AT_OL_P1_L24(-101) AT_OL_P1_L31(-100) AT_OL_P1_L32(-99) AT_OL_P1_L33(-98) AT_OL_P1_L34(-97) AT_OL_P1_L41(-96) AT_OL_P1_L42(-95) AT_OL_P1_L43(-94) AT_OL_P1_L44(-93) AT_OL_P2_L01(-92) AT_OL_P2_L02(-91) AT_OL_P2_L03(-90) AT_OL_P2_L04(-89) AT_OL_P2_L21(-84) AT_OL_P2_L22(-83) AT_OL_P2_L23(-82) AT_OL_P2_L24(-81) AT_OL_P2_L31(-80) AT_OL_P2_L32(-79) AT_OL_P2_L33(-78) AT_OL_P2_L34(-77) AT_OL_P2_L41(-76) AT_OL_P2_L42(-75) AT_OL_P2_L43(-74) AT_OL_P2_L44(-73) AT_OL_P3_L01(-72) AT_OL_P3_L02(-71) AT_OL_P3_L03(-70) AT_OL_P3_L04(-69) AT_OL_P3_L11(-68) AT_OL_P3_L12(-67) AT_OL_P3_L13(-66) AT_OL_P3_L14(-65) AT_OL_P3_L31(-60) AT_OL_P3_L32(-59) AT_OL_P3_L33(-58) AT_OL_P3_L34(-57) AT_OL_P3_L41(-56) AT_OL_P3_L42(-55) AT_OL_P3_L43(-54) AT_OL_P3_L44(-53) AT_OL_P4_L01(-52) AT_OL_P4_L02(-51) AT_OL_P4_L03(-50) AT_OL_P4_L04(-49) AT_OL_P4_L11(-48) AT_OL_P4_L12(-47) AT_OL_P4_L13(-46) AT_OL_P4_L14(-45) AT_OL_P4_L21(-44) AT_OL_P4_L22(-43) AT_OL_P4_L23(-42) AT_OL_P4_L24(-41) AT_OL_P4_L31(-40) AT_OL_P4_L32(-39) AT_OL_P4_L33(-38) AT_OL_P4_L34(-37) AT_OA_P0_L10(-31) AT_OA_P0_L20(-30) AT_OA_P0_L30(-29) AT_OA_P0_L40(-28) AT_OA_P1_L00(-27) AT_OA_P1_L10(-26) AT_OA_P1_L20(-25) AT_OA_P1_L30(-24) AT_OA_P1_L40(-23) AT_OA_P2_L00(-22) AT_OA_P2_L20(-20) AT_OA_P2_L30(-19) AT_OA_P2_L40(-18) AT_OA_P3_L00(-17) AT_OA_P3_L10(-16) AT_OA_P3_L30(-14) AT_OA_P3_L40(-13) AT_OA_P4_L00(-12) AT_OA_P4_L10(-11) AT_OA_P4_L20(-10) AT_OA_P4_L30(-9) AT_AA_A0_L10(-6) AT_AA_A0_L20(-5) AT_AA_A0_L30(-4) AT_AA_A0_L40(-3) FALSE(-1) FOO(2) AT_AA_A0_L00(7) AT_OL_P1_L21(104) AT_TA_T3_L30(134) AT_TL_T4_L43(139) AT_TL_T2_L22(148) AT_TL_T1_L11(153) AT_TL_T0_L03(155) IN_CITY_A_L40_C4(158) IN_CITY_A_L30_C3(159) IN_CITY_A_L20_C2(160) IN_CITY_A_L10_C1(161) IN_CITY_A_L00_C0(162) IN_CITY_L_L44_C4(163) IN_CITY_L_L43_C4(164) IN_CITY_L_L42_C4(165) IN_CITY_L_L41_C4(166) IN_CITY_L_L34_C3(167) IN_CITY_L_L33_C3(168) IN_CITY_L_L32_C3(169) IN_CITY_L_L31_C3(170) IN_CITY_L_L24_C2(171) IN_CITY_L_L23_C2(172) IN_CITY_L_L22_C2(173) IN_CITY_L_L21_C2(174) IN_CITY_L_L14_C1(175) IN_CITY_L_L13_C1(176) IN_CITY_L_L12_C1(177) IN_CITY_L_L11_C1(178) IN_CITY_L_L04_C0(179) IN_CITY_L_L03_C0(180) IN_CITY_L_L02_C0(181) IN_CITY_L_L01_C0(182) IN_CITY_T_T4_C4(183) IN_CITY_T_T3_C3(184) IN_CITY_T_T2_C2(185) IN_CITY_T_T1_C1(186) IN_CITY_T_T0_C0(187) 
+IMPLIES_WITH_INIT: From lit AT_OL_P0_L04(129) obtaing the following lits:IN_OT_P0_T0(-217) IN_OT_P0_T1(-216) IN_OT_P0_T2(-215) IN_OT_P0_T3(-214) IN_OT_P0_T4(-213) IN_OT_P1_T0(-212) IN_OT_P1_T1(-211) IN_OT_P1_T2(-210) IN_OT_P1_T3(-209) IN_OT_P1_T4(-208) IN_OT_P2_T0(-207) IN_OT_P2_T1(-206) IN_OT_P2_T2(-205) IN_OT_P2_T3(-204) IN_OT_P2_T4(-203) IN_OT_P3_T0(-202) IN_OT_P3_T1(-201) IN_OT_P3_T2(-200) IN_OT_P3_T3(-199) IN_OT_P3_T4(-198) IN_OT_P4_T0(-197) IN_OT_P4_T1(-196) IN_OT_P4_T2(-195) IN_OT_P4_T3(-194) IN_OT_P4_T4(-193) IN_OA_P0_A0(-192) IN_OA_P1_A0(-191) IN_OA_P2_A0(-190) IN_OA_P3_A0(-189) IN_OA_P4_A0(-188) AT_TL_T0_L01(-157) AT_TL_T0_L02(-156) AT_TL_T0_L04(-154) AT_TL_T1_L12(-152) AT_TL_T1_L13(-151) AT_TL_T1_L14(-150) AT_TL_T2_L21(-149) AT_TL_T2_L23(-147) AT_TL_T2_L24(-146) AT_TL_T3_L31(-145) AT_TL_T3_L32(-144) AT_TL_T3_L33(-143) AT_TL_T3_L34(-142) AT_TL_T4_L41(-141) AT_TL_T4_L42(-140) AT_TL_T4_L44(-138) AT_TA_T0_L00(-137) AT_TA_T1_L10(-136) AT_TA_T2_L20(-135) AT_TA_T4_L40(-133) AT_OL_P0_L01(-132) AT_OL_P0_L02(-131) AT_OL_P0_L03(-130) AT_OL_P0_L11(-128) AT_OL_P0_L12(-127) AT_OL_P0_L13(-126) AT_OL_P0_L14(-125) AT_OL_P0_L21(-124) AT_OL_P0_L22(-123) AT_OL_P0_L23(-122) AT_OL_P0_L24(-121) AT_OL_P0_L31(-120) AT_OL_P0_L32(-119) AT_OL_P0_L33(-118) AT_OL_P0_L34(-117) AT_OL_P0_L41(-116) AT_OL_P0_L42(-115) AT_OL_P0_L43(-114) AT_OL_P0_L44(-113) AT_OL_P1_L01(-112) AT_OL_P1_L02(-111) AT_OL_P1_L03(-110) AT_OL_P1_L04(-109) AT_OL_P1_L11(-108) AT_OL_P1_L12(-107) AT_OL_P1_L13(-106) AT_OL_P1_L14(-105) AT_OL_P1_L31(-100) AT_OL_P1_L32(-99) AT_OL_P1_L33(-98) AT_OL_P1_L34(-97) AT_OL_P1_L41(-96) AT_OL_P1_L42(-95) AT_OL_P1_L43(-94) AT_OL_P1_L44(-93) AT_OL_P2_L01(-92) AT_OL_P2_L02(-91) AT_OL_P2_L03(-90) AT_OL_P2_L04(-89) AT_OL_P2_L21(-84) AT_OL_P2_L22(-83) AT_OL_P2_L23(-82) AT_OL_P2_L24(-81) AT_OL_P2_L31(-80) AT_OL_P2_L32(-79) AT_OL_P2_L33(-78) AT_OL_P2_L34(-77) AT_OL_P2_L41(-76) AT_OL_P2_L42(-75) AT_OL_P2_L43(-74) AT_OL_P2_L44(-73) AT_OL_P3_L01(-72) AT_OL_P3_L02(-71) AT_OL_P3_L03(-70) AT_OL_P3_L04(-69) AT_OL_P3_L11(-68) AT_OL_P3_L12(-67) AT_OL_P3_L13(-66) AT_OL_P3_L14(-65) AT_OL_P3_L31(-60) AT_OL_P3_L32(-59) AT_OL_P3_L33(-58) AT_OL_P3_L34(-57) AT_OL_P3_L41(-56) AT_OL_P3_L42(-55) AT_OL_P3_L43(-54) AT_OL_P3_L44(-53) AT_OL_P4_L01(-52) AT_OL_P4_L02(-51) AT_OL_P4_L03(-50) AT_OL_P4_L04(-49) AT_OL_P4_L11(-48) AT_OL_P4_L12(-47) AT_OL_P4_L13(-46) AT_OL_P4_L14(-45) AT_OL_P4_L21(-44) AT_OL_P4_L22(-43) AT_OL_P4_L23(-42) AT_OL_P4_L24(-41) AT_OL_P4_L31(-40) AT_OL_P4_L32(-39) AT_OL_P4_L33(-38) AT_OL_P4_L34(-37) AT_OA_P0_L00(-32) AT_OA_P0_L10(-31) AT_OA_P0_L20(-30) AT_OA_P0_L30(-29) AT_OA_P0_L40(-28) AT_OA_P1_L00(-27) AT_OA_P1_L10(-26) AT_OA_P1_L30(-24) AT_OA_P1_L40(-23) AT_OA_P2_L00(-22) AT_OA_P2_L20(-20) AT_OA_P2_L30(-19) AT_OA_P2_L40(-18) AT_OA_P3_L00(-17) AT_OA_P3_L10(-16) AT_OA_P3_L30(-14) AT_OA_P3_L40(-13) AT_OA_P4_L00(-12) AT_OA_P4_L10(-11) AT_OA_P4_L20(-10) AT_OA_P4_L30(-9) AT_AA_A0_L10(-6) AT_AA_A0_L20(-5) AT_AA_A0_L30(-4) AT_AA_A0_L40(-3) FALSE(-1) FOO(2) AT_AA_A0_L00(7) AT_OL_P0_L04(129) AT_TA_T3_L30(134) AT_TL_T4_L43(139) AT_TL_T2_L22(148) AT_TL_T1_L11(153) AT_TL_T0_L03(155) IN_CITY_A_L40_C4(158) IN_CITY_A_L30_C3(159) IN_CITY_A_L20_C2(160) IN_CITY_A_L10_C1(161) IN_CITY_A_L00_C0(162) IN_CITY_L_L44_C4(163) IN_CITY_L_L43_C4(164) IN_CITY_L_L42_C4(165) IN_CITY_L_L41_C4(166) IN_CITY_L_L34_C3(167) IN_CITY_L_L33_C3(168) IN_CITY_L_L32_C3(169) IN_CITY_L_L31_C3(170) IN_CITY_L_L24_C2(171) IN_CITY_L_L23_C2(172) IN_CITY_L_L22_C2(173) IN_CITY_L_L21_C2(174) IN_CITY_L_L14_C1(175) IN_CITY_L_L13_C1(176) IN_CITY_L_L12_C1(177) IN_CITY_L_L11_C1(178) IN_CITY_L_L04_C0(179) IN_CITY_L_L03_C0(180) IN_CITY_L_L02_C0(181) IN_CITY_L_L01_C0(182) IN_CITY_T_T4_C4(183) IN_CITY_T_T3_C3(184) IN_CITY_T_T2_C2(185) IN_CITY_T_T1_C1(186) IN_CITY_T_T0_C0(187) 
+IMPLIES_WITH_INIT: From lit AT_OL_P0_L03(130) obtaing the following lits:IN_OT_P0_T0(-217) IN_OT_P0_T1(-216) IN_OT_P0_T2(-215) IN_OT_P0_T3(-214) IN_OT_P0_T4(-213) IN_OT_P1_T0(-212) IN_OT_P1_T1(-211) IN_OT_P1_T2(-210) IN_OT_P1_T3(-209) IN_OT_P1_T4(-208) IN_OT_P2_T0(-207) IN_OT_P2_T1(-206) IN_OT_P2_T2(-205) IN_OT_P2_T3(-204) IN_OT_P2_T4(-203) IN_OT_P3_T0(-202) IN_OT_P3_T1(-201) IN_OT_P3_T2(-200) IN_OT_P3_T3(-199) IN_OT_P3_T4(-198) IN_OT_P4_T0(-197) IN_OT_P4_T1(-196) IN_OT_P4_T2(-195) IN_OT_P4_T3(-194) IN_OT_P4_T4(-193) IN_OA_P0_A0(-192) IN_OA_P1_A0(-191) IN_OA_P2_A0(-190) IN_OA_P3_A0(-189) IN_OA_P4_A0(-188) AT_TL_T0_L01(-157) AT_TL_T0_L02(-156) AT_TL_T0_L04(-154) AT_TL_T1_L12(-152) AT_TL_T1_L13(-151) AT_TL_T1_L14(-150) AT_TL_T2_L21(-149) AT_TL_T2_L23(-147) AT_TL_T2_L24(-146) AT_TL_T3_L31(-145) AT_TL_T3_L32(-144) AT_TL_T3_L33(-143) AT_TL_T3_L34(-142) AT_TL_T4_L41(-141) AT_TL_T4_L42(-140) AT_TL_T4_L44(-138) AT_TA_T0_L00(-137) AT_TA_T1_L10(-136) AT_TA_T2_L20(-135) AT_TA_T4_L40(-133) AT_OL_P0_L01(-132) AT_OL_P0_L02(-131) AT_OL_P0_L04(-129) AT_OL_P0_L11(-128) AT_OL_P0_L12(-127) AT_OL_P0_L13(-126) AT_OL_P0_L14(-125) AT_OL_P0_L21(-124) AT_OL_P0_L22(-123) AT_OL_P0_L23(-122) AT_OL_P0_L24(-121) AT_OL_P0_L31(-120) AT_OL_P0_L32(-119) AT_OL_P0_L33(-118) AT_OL_P0_L34(-117) AT_OL_P0_L41(-116) AT_OL_P0_L42(-115) AT_OL_P0_L43(-114) AT_OL_P0_L44(-113) AT_OL_P1_L01(-112) AT_OL_P1_L02(-111) AT_OL_P1_L03(-110) AT_OL_P1_L04(-109) AT_OL_P1_L11(-108) AT_OL_P1_L12(-107) AT_OL_P1_L13(-106) AT_OL_P1_L14(-105) AT_OL_P1_L31(-100) AT_OL_P1_L32(-99) AT_OL_P1_L33(-98) AT_OL_P1_L34(-97) AT_OL_P1_L41(-96) AT_OL_P1_L42(-95) AT_OL_P1_L43(-94) AT_OL_P1_L44(-93) AT_OL_P2_L01(-92) AT_OL_P2_L02(-91) AT_OL_P2_L03(-90) AT_OL_P2_L04(-89) AT_OL_P2_L21(-84) AT_OL_P2_L22(-83) AT_OL_P2_L23(-82) AT_OL_P2_L24(-81) AT_OL_P2_L31(-80) AT_OL_P2_L32(-79) AT_OL_P2_L33(-78) AT_OL_P2_L34(-77) AT_OL_P2_L41(-76) AT_OL_P2_L42(-75) AT_OL_P2_L43(-74) AT_OL_P2_L44(-73) AT_OL_P3_L01(-72) AT_OL_P3_L02(-71) AT_OL_P3_L03(-70) AT_OL_P3_L04(-69) AT_OL_P3_L11(-68) AT_OL_P3_L12(-67) AT_OL_P3_L13(-66) AT_OL_P3_L14(-65) AT_OL_P3_L31(-60) AT_OL_P3_L32(-59) AT_OL_P3_L33(-58) AT_OL_P3_L34(-57) AT_OL_P3_L41(-56) AT_OL_P3_L42(-55) AT_OL_P3_L43(-54) AT_OL_P3_L44(-53) AT_OL_P4_L01(-52) AT_OL_P4_L02(-51) AT_OL_P4_L03(-50) AT_OL_P4_L04(-49) AT_OL_P4_L11(-48) AT_OL_P4_L12(-47) AT_OL_P4_L13(-46) AT_OL_P4_L14(-45) AT_OL_P4_L21(-44) AT_OL_P4_L22(-43) AT_OL_P4_L23(-42) AT_OL_P4_L24(-41) AT_OL_P4_L31(-40) AT_OL_P4_L32(-39) AT_OL_P4_L33(-38) AT_OL_P4_L34(-37) AT_OA_P0_L00(-32) AT_OA_P0_L10(-31) AT_OA_P0_L20(-30) AT_OA_P0_L30(-29) AT_OA_P0_L40(-28) AT_OA_P1_L00(-27) AT_OA_P1_L10(-26) AT_OA_P1_L30(-24) AT_OA_P1_L40(-23) AT_OA_P2_L00(-22) AT_OA_P2_L20(-20) AT_OA_P2_L30(-19) AT_OA_P2_L40(-18) AT_OA_P3_L00(-17) AT_OA_P3_L10(-16) AT_OA_P3_L30(-14) AT_OA_P3_L40(-13) AT_OA_P4_L00(-12) AT_OA_P4_L10(-11) AT_OA_P4_L20(-10) AT_OA_P4_L30(-9) AT_AA_A0_L10(-6) AT_AA_A0_L20(-5) AT_AA_A0_L30(-4) AT_AA_A0_L40(-3) FALSE(-1) FOO(2) AT_AA_A0_L00(7) AT_OL_P0_L03(130) AT_TA_T3_L30(134) AT_TL_T4_L43(139) AT_TL_T2_L22(148) AT_TL_T1_L11(153) AT_TL_T0_L03(155) IN_CITY_A_L40_C4(158) IN_CITY_A_L30_C3(159) IN_CITY_A_L20_C2(160) IN_CITY_A_L10_C1(161) IN_CITY_A_L00_C0(162) IN_CITY_L_L44_C4(163) IN_CITY_L_L43_C4(164) IN_CITY_L_L42_C4(165) IN_CITY_L_L41_C4(166) IN_CITY_L_L34_C3(167) IN_CITY_L_L33_C3(168) IN_CITY_L_L32_C3(169) IN_CITY_L_L31_C3(170) IN_CITY_L_L24_C2(171) IN_CITY_L_L23_C2(172) IN_CITY_L_L22_C2(173) IN_CITY_L_L21_C2(174) IN_CITY_L_L14_C1(175) IN_CITY_L_L13_C1(176) IN_CITY_L_L12_C1(177) IN_CITY_L_L11_C1(178) IN_CITY_L_L04_C0(179) IN_CITY_L_L03_C0(180) IN_CITY_L_L02_C0(181) IN_CITY_L_L01_C0(182) IN_CITY_T_T4_C4(183) IN_CITY_T_T3_C3(184) IN_CITY_T_T2_C2(185) IN_CITY_T_T1_C1(186) IN_CITY_T_T0_C0(187) 
+IMPLIES_WITH_INIT: From lit AT_OL_P0_L02(131) obtaing the following lits:IN_OT_P0_T0(-217) IN_OT_P0_T1(-216) IN_OT_P0_T2(-215) IN_OT_P0_T3(-214) IN_OT_P0_T4(-213) IN_OT_P1_T0(-212) IN_OT_P1_T1(-211) IN_OT_P1_T2(-210) IN_OT_P1_T3(-209) IN_OT_P1_T4(-208) IN_OT_P2_T0(-207) IN_OT_P2_T1(-206) IN_OT_P2_T2(-205) IN_OT_P2_T3(-204) IN_OT_P2_T4(-203) IN_OT_P3_T0(-202) IN_OT_P3_T1(-201) IN_OT_P3_T2(-200) IN_OT_P3_T3(-199) IN_OT_P3_T4(-198) IN_OT_P4_T0(-197) IN_OT_P4_T1(-196) IN_OT_P4_T2(-195) IN_OT_P4_T3(-194) IN_OT_P4_T4(-193) IN_OA_P0_A0(-192) IN_OA_P1_A0(-191) IN_OA_P2_A0(-190) IN_OA_P3_A0(-189) IN_OA_P4_A0(-188) AT_TL_T0_L01(-157) AT_TL_T0_L02(-156) AT_TL_T0_L04(-154) AT_TL_T1_L12(-152) AT_TL_T1_L13(-151) AT_TL_T1_L14(-150) AT_TL_T2_L21(-149) AT_TL_T2_L23(-147) AT_TL_T2_L24(-146) AT_TL_T3_L31(-145) AT_TL_T3_L32(-144) AT_TL_T3_L33(-143) AT_TL_T3_L34(-142) AT_TL_T4_L41(-141) AT_TL_T4_L42(-140) AT_TL_T4_L44(-138) AT_TA_T0_L00(-137) AT_TA_T1_L10(-136) AT_TA_T2_L20(-135) AT_TA_T4_L40(-133) AT_OL_P0_L01(-132) AT_OL_P0_L03(-130) AT_OL_P0_L04(-129) AT_OL_P0_L11(-128) AT_OL_P0_L12(-127) AT_OL_P0_L13(-126) AT_OL_P0_L14(-125) AT_OL_P0_L21(-124) AT_OL_P0_L22(-123) AT_OL_P0_L23(-122) AT_OL_P0_L24(-121) AT_OL_P0_L31(-120) AT_OL_P0_L32(-119) AT_OL_P0_L33(-118) AT_OL_P0_L34(-117) AT_OL_P0_L41(-116) AT_OL_P0_L42(-115) AT_OL_P0_L43(-114) AT_OL_P0_L44(-113) AT_OL_P1_L01(-112) AT_OL_P1_L02(-111) AT_OL_P1_L03(-110) AT_OL_P1_L04(-109) AT_OL_P1_L11(-108) AT_OL_P1_L12(-107) AT_OL_P1_L13(-106) AT_OL_P1_L14(-105) AT_OL_P1_L31(-100) AT_OL_P1_L32(-99) AT_OL_P1_L33(-98) AT_OL_P1_L34(-97) AT_OL_P1_L41(-96) AT_OL_P1_L42(-95) AT_OL_P1_L43(-94) AT_OL_P1_L44(-93) AT_OL_P2_L01(-92) AT_OL_P2_L02(-91) AT_OL_P2_L03(-90) AT_OL_P2_L04(-89) AT_OL_P2_L21(-84) AT_OL_P2_L22(-83) AT_OL_P2_L23(-82) AT_OL_P2_L24(-81) AT_OL_P2_L31(-80) AT_OL_P2_L32(-79) AT_OL_P2_L33(-78) AT_OL_P2_L34(-77) AT_OL_P2_L41(-76) AT_OL_P2_L42(-75) AT_OL_P2_L43(-74) AT_OL_P2_L44(-73) AT_OL_P3_L01(-72) AT_OL_P3_L02(-71) AT_OL_P3_L03(-70) AT_OL_P3_L04(-69) AT_OL_P3_L11(-68) AT_OL_P3_L12(-67) AT_OL_P3_L13(-66) AT_OL_P3_L14(-65) AT_OL_P3_L31(-60) AT_OL_P3_L32(-59) AT_OL_P3_L33(-58) AT_OL_P3_L34(-57) AT_OL_P3_L41(-56) AT_OL_P3_L42(-55) AT_OL_P3_L43(-54) AT_OL_P3_L44(-53) AT_OL_P4_L01(-52) AT_OL_P4_L02(-51) AT_OL_P4_L03(-50) AT_OL_P4_L04(-49) AT_OL_P4_L11(-48) AT_OL_P4_L12(-47) AT_OL_P4_L13(-46) AT_OL_P4_L14(-45) AT_OL_P4_L21(-44) AT_OL_P4_L22(-43) AT_OL_P4_L23(-42) AT_OL_P4_L24(-41) AT_OL_P4_L31(-40) AT_OL_P4_L32(-39) AT_OL_P4_L33(-38) AT_OL_P4_L34(-37) AT_OA_P0_L00(-32) AT_OA_P0_L10(-31) AT_OA_P0_L20(-30) AT_OA_P0_L30(-29) AT_OA_P0_L40(-28) AT_OA_P1_L00(-27) AT_OA_P1_L10(-26) AT_OA_P1_L30(-24) AT_OA_P1_L40(-23) AT_OA_P2_L00(-22) AT_OA_P2_L20(-20) AT_OA_P2_L30(-19) AT_OA_P2_L40(-18) AT_OA_P3_L00(-17) AT_OA_P3_L10(-16) AT_OA_P3_L30(-14) AT_OA_P3_L40(-13) AT_OA_P4_L00(-12) AT_OA_P4_L10(-11) AT_OA_P4_L20(-10) AT_OA_P4_L30(-9) AT_AA_A0_L10(-6) AT_AA_A0_L20(-5) AT_AA_A0_L30(-4) AT_AA_A0_L40(-3) FALSE(-1) FOO(2) AT_AA_A0_L00(7) AT_OL_P0_L02(131) AT_TA_T3_L30(134) AT_TL_T4_L43(139) AT_TL_T2_L22(148) AT_TL_T1_L11(153) AT_TL_T0_L03(155) IN_CITY_A_L40_C4(158) IN_CITY_A_L30_C3(159) IN_CITY_A_L20_C2(160) IN_CITY_A_L10_C1(161) IN_CITY_A_L00_C0(162) IN_CITY_L_L44_C4(163) IN_CITY_L_L43_C4(164) IN_CITY_L_L42_C4(165) IN_CITY_L_L41_C4(166) IN_CITY_L_L34_C3(167) IN_CITY_L_L33_C3(168) IN_CITY_L_L32_C3(169) IN_CITY_L_L31_C3(170) IN_CITY_L_L24_C2(171) IN_CITY_L_L23_C2(172) IN_CITY_L_L22_C2(173) IN_CITY_L_L21_C2(174) IN_CITY_L_L14_C1(175) IN_CITY_L_L13_C1(176) IN_CITY_L_L12_C1(177) IN_CITY_L_L11_C1(178) IN_CITY_L_L04_C0(179) IN_CITY_L_L03_C0(180) IN_CITY_L_L02_C0(181) IN_CITY_L_L01_C0(182) IN_CITY_T_T4_C4(183) IN_CITY_T_T3_C3(184) IN_CITY_T_T2_C2(185) IN_CITY_T_T1_C1(186) IN_CITY_T_T0_C0(187) 
+IMPLIES_WITH_INIT: From lit AT_OL_P0_L01(132) obtaing the following lits:IN_OT_P0_T0(-217) IN_OT_P0_T1(-216) IN_OT_P0_T2(-215) IN_OT_P0_T3(-214) IN_OT_P0_T4(-213) IN_OT_P1_T0(-212) IN_OT_P1_T1(-211) IN_OT_P1_T2(-210) IN_OT_P1_T3(-209) IN_OT_P1_T4(-208) IN_OT_P2_T0(-207) IN_OT_P2_T1(-206) IN_OT_P2_T2(-205) IN_OT_P2_T3(-204) IN_OT_P2_T4(-203) IN_OT_P3_T0(-202) IN_OT_P3_T1(-201) IN_OT_P3_T2(-200) IN_OT_P3_T3(-199) IN_OT_P3_T4(-198) IN_OT_P4_T0(-197) IN_OT_P4_T1(-196) IN_OT_P4_T2(-195) IN_OT_P4_T3(-194) IN_OT_P4_T4(-193) IN_OA_P0_A0(-192) IN_OA_P1_A0(-191) IN_OA_P2_A0(-190) IN_OA_P3_A0(-189) IN_OA_P4_A0(-188) AT_TL_T0_L01(-157) AT_TL_T0_L02(-156) AT_TL_T0_L04(-154) AT_TL_T1_L12(-152) AT_TL_T1_L13(-151) AT_TL_T1_L14(-150) AT_TL_T2_L21(-149) AT_TL_T2_L23(-147) AT_TL_T2_L24(-146) AT_TL_T3_L31(-145) AT_TL_T3_L32(-144) AT_TL_T3_L33(-143) AT_TL_T3_L34(-142) AT_TL_T4_L41(-141) AT_TL_T4_L42(-140) AT_TL_T4_L44(-138) AT_TA_T0_L00(-137) AT_TA_T1_L10(-136) AT_TA_T2_L20(-135) AT_TA_T4_L40(-133) AT_OL_P0_L02(-131) AT_OL_P0_L03(-130) AT_OL_P0_L04(-129) AT_OL_P0_L11(-128) AT_OL_P0_L12(-127) AT_OL_P0_L13(-126) AT_OL_P0_L14(-125) AT_OL_P0_L21(-124) AT_OL_P0_L22(-123) AT_OL_P0_L23(-122) AT_OL_P0_L24(-121) AT_OL_P0_L31(-120) AT_OL_P0_L32(-119) AT_OL_P0_L33(-118) AT_OL_P0_L34(-117) AT_OL_P0_L41(-116) AT_OL_P0_L42(-115) AT_OL_P0_L43(-114) AT_OL_P0_L44(-113) AT_OL_P1_L01(-112) AT_OL_P1_L02(-111) AT_OL_P1_L03(-110) AT_OL_P1_L04(-109) AT_OL_P1_L11(-108) AT_OL_P1_L12(-107) AT_OL_P1_L13(-106) AT_OL_P1_L14(-105) AT_OL_P1_L31(-100) AT_OL_P1_L32(-99) AT_OL_P1_L33(-98) AT_OL_P1_L34(-97) AT_OL_P1_L41(-96) AT_OL_P1_L42(-95) AT_OL_P1_L43(-94) AT_OL_P1_L44(-93) AT_OL_P2_L01(-92) AT_OL_P2_L02(-91) AT_OL_P2_L03(-90) AT_OL_P2_L04(-89) AT_OL_P2_L21(-84) AT_OL_P2_L22(-83) AT_OL_P2_L23(-82) AT_OL_P2_L24(-81) AT_OL_P2_L31(-80) AT_OL_P2_L32(-79) AT_OL_P2_L33(-78) AT_OL_P2_L34(-77) AT_OL_P2_L41(-76) AT_OL_P2_L42(-75) AT_OL_P2_L43(-74) AT_OL_P2_L44(-73) AT_OL_P3_L01(-72) AT_OL_P3_L02(-71) AT_OL_P3_L03(-70) AT_OL_P3_L04(-69) AT_OL_P3_L11(-68) AT_OL_P3_L12(-67) AT_OL_P3_L13(-66) AT_OL_P3_L14(-65) AT_OL_P3_L31(-60) AT_OL_P3_L32(-59) AT_OL_P3_L33(-58) AT_OL_P3_L34(-57) AT_OL_P3_L41(-56) AT_OL_P3_L42(-55) AT_OL_P3_L43(-54) AT_OL_P3_L44(-53) AT_OL_P4_L01(-52) AT_OL_P4_L02(-51) AT_OL_P4_L03(-50) AT_OL_P4_L04(-49) AT_OL_P4_L11(-48) AT_OL_P4_L12(-47) AT_OL_P4_L13(-46) AT_OL_P4_L14(-45) AT_OL_P4_L21(-44) AT_OL_P4_L22(-43) AT_OL_P4_L23(-42) AT_OL_P4_L24(-41) AT_OL_P4_L31(-40) AT_OL_P4_L32(-39) AT_OL_P4_L33(-38) AT_OL_P4_L34(-37) AT_OA_P0_L00(-32) AT_OA_P0_L10(-31) AT_OA_P0_L20(-30) AT_OA_P0_L30(-29) AT_OA_P0_L40(-28) AT_OA_P1_L00(-27) AT_OA_P1_L10(-26) AT_OA_P1_L30(-24) AT_OA_P1_L40(-23) AT_OA_P2_L00(-22) AT_OA_P2_L20(-20) AT_OA_P2_L30(-19) AT_OA_P2_L40(-18) AT_OA_P3_L00(-17) AT_OA_P3_L10(-16) AT_OA_P3_L30(-14) AT_OA_P3_L40(-13) AT_OA_P4_L00(-12) AT_OA_P4_L10(-11) AT_OA_P4_L20(-10) AT_OA_P4_L30(-9) AT_AA_A0_L10(-6) AT_AA_A0_L20(-5) AT_AA_A0_L30(-4) AT_AA_A0_L40(-3) FALSE(-1) FOO(2) AT_AA_A0_L00(7) AT_OL_P0_L01(132) AT_TA_T3_L30(134) AT_TL_T4_L43(139) AT_TL_T2_L22(148) AT_TL_T1_L11(153) AT_TL_T0_L03(155) IN_CITY_A_L40_C4(158) IN_CITY_A_L30_C3(159) IN_CITY_A_L20_C2(160) IN_CITY_A_L10_C1(161) IN_CITY_A_L00_C0(162) IN_CITY_L_L44_C4(163) IN_CITY_L_L43_C4(164) IN_CITY_L_L42_C4(165) IN_CITY_L_L41_C4(166) IN_CITY_L_L34_C3(167) IN_CITY_L_L33_C3(168) IN_CITY_L_L32_C3(169) IN_CITY_L_L31_C3(170) IN_CITY_L_L24_C2(171) IN_CITY_L_L23_C2(172) IN_CITY_L_L22_C2(173) IN_CITY_L_L21_C2(174) IN_CITY_L_L14_C1(175) IN_CITY_L_L13_C1(176) IN_CITY_L_L12_C1(177) IN_CITY_L_L11_C1(178) IN_CITY_L_L04_C0(179) IN_CITY_L_L03_C0(180) IN_CITY_L_L02_C0(181) IN_CITY_L_L01_C0(182) IN_CITY_T_T4_C4(183) IN_CITY_T_T3_C3(184) IN_CITY_T_T2_C2(185) IN_CITY_T_T1_C1(186) IN_CITY_T_T0_C0(187) 
+REGISTER (entering): printNewPDDL()
+Generating PDDL
+printing 1931 actions
+printing 150 observations
+STAT old-Actions: 360
+STAT old-Atoms: 220
+STAT old-cond-effects: 361
+STAT old-condicionales: 720
+STAT KP-NActions: 1931
+STAT KP-NAtoms: 3464
+STAT KP-deleted-NAtoms: 0
+STAT KP-Nconds-effects-and-notused: 10360
+STAT KP-Ncond-effects: 10360
+STAT KP-Numero_lit_en_efectos_condicionales: 27616
+REGISTER: printNewPDDL() took 0.55824 secs
+REGISTER: main() took 2.12367 secs
+
+ff: parsing domain file
+domain 'LOGISTICS_CONF' defined
+ ... done.
+ff: parsing problem file
+problem 'LOGISTICS-C5-S5-P5-A1' defined
+ ... done.
+
+STATS quality of hash table of predicates: max_bucket_size = 5, ave_bucket_size = 0.562835
+ff-cond: no description file
+fact T0_FAIL_K0 tagged as 2352  
+
+
+Skipping All searches!
+Starting K procedure.
+
+          h:                        80            [1]
+          h:                        80  , h_  :   79       
+::::::::::::::::::::::::current action:::LOAD_TRUCK_LOC_P3_T2_L22_C2
+
+          h:                        79            [1]
+          h:                        79  , h_  :   78       
+::::::::::::::::::::::::current action:::LOAD_TRUCK_LOC_P1_T2_L22_C2
+
+          h:                        78            [1]
+          h:                        78  , h_  :   77       
+::::::::::::::::::::::::current action:::LOAD_TRUCK_LOC_P0_T0_L03_C0
+
+          h:                        77            [1]
+          h:                        77  , h_  :   76       
+::::::::::::::::::::::::current action:::LOAD_AIRPLANE_P0_A0_L00
+
+          h:                        76            [1]
+          h:                        76  , h_  :   75       
+::::::::::::::::::::::::current action:::LOAD_TRUCK_LOC_P4_T4_L43_C4
+
+          h:                        75            [1]
+          h:                        75  , h_  :   74       
+::::::::::::::::::::::::current action:::DRIVE_TRUCK_LOC_AP_T4_L43_L40_C4
+
+          h:                        74            [1]
+          h:                        74  , h_  :   73       
+::::::::::::::::::::::::current action:::LOAD_TRUCK_AP_P4_T4_L40_C4
+
+          h:                        73            [1]
+          h:                        73  , h_  :   64       
+::::::::::::::::::::::::current action:::DRIVE_TRUCK_LOC_AP_T2_L22_L20_C2
+
+          h:                        64            [1]
+          h:                        64  , h_  :   63       
+::::::::::::::::::::::::current action:::UNLOAD_TRUCK_AP_P3_T2_L20_C2
+
+          h:                        63            [1]
+          h:                        63  , h_  :   62       
+::::::::::::::::::::::::current action:::UNLOAD_TRUCK_AP_P1_T2_L20_C2
+
+          h:                        62            [1]
+          h:                        62  , h_  :   61       
+::::::::::::::::::::::::current action:::DRIVE_TRUCK_LOC_AP_T0_L03_L00_C0
+
+          h:                        61            [1]
+          h:                        61  , h_  :   59       
+::::::::::::::::::::::::current action:::UNLOAD_TRUCK_AP_P0_T0_L00_C0
+
+          h:                        59            [1]
+          h:                        59  , h_  :   58       
+::::::::::::::::::::::::current action:::LOAD_AIRPLANE_P0_A0_L00
+
+          h:                        58            [1][2]
+          h:                        58  , h_  :   57       
+::::::::::::::::::::::::current action:::DRIVE_TRUCK_AP_LOC_T4_L40_L44_C4
+
+::::::::::::::::::::::::current action:::LOAD_TRUCK_LOC_P4_T4_L44_C4
+
+          h:                        57            [1]
+          h:                        57  , h_  :   56       
+::::::::::::::::::::::::current action:::DRIVE_TRUCK_LOC_AP_T4_L44_L40_C4
+
+          h:                        56            [1]
+          h:                        56  , h_  :   55       
+::::::::::::::::::::::::current action:::DRIVE_TRUCK_AP_LOC_T4_L40_L41_C4
+
+          h:                        55            [1]
+          h:                        55  , h_  :   54       
+::::::::::::::::::::::::current action:::LOAD_TRUCK_LOC_P4_T4_L41_C4
+
+          h:                        54            [1]
+          h:                        54  , h_  :   53       
+::::::::::::::::::::::::current action:::DRIVE_TRUCK_LOC_AP_T4_L41_L40_C4
+
+          h:                        53            [1]
+          h:                        53  , h_  :   52       
+::::::::::::::::::::::::current action:::DRIVE_TRUCK_AP_LOC_T4_L40_L42_C4
+
+          h:                        52            [1]
+          h:                        52  , h_  :   51       
+::::::::::::::::::::::::current action:::UNLOAD_TRUCK_LOC_P4_T4_L42_C4
+
+          h:                        51            [1][2]
+          h:                        51  , h_  :   50       
+::::::::::::::::::::::::current action:::FLY_AIRPLANE_A0_L00_L20
+
+::::::::::::::::::::::::current action:::LOAD_AIRPLANE_P3_A0_L20
+
+          h:                        50            [1]
+          h:                        50  , h_  :   49       
+::::::::::::::::::::::::current action:::LOAD_AIRPLANE_P1_A0_L20
+
+          h:                        49            [1][2]
+          h:                        49  , h_  :   48       
+::::::::::::::::::::::::current action:::FLY_AIRPLANE_A0_L20_L30
+
+::::::::::::::::::::::::current action:::UNLOAD_AIRPLANE_P3_A0_L30
+
+          h:                        48            [1]
+          h:                        48  , h_  :   47       
+::::::::::::::::::::::::current action:::LOAD_TRUCK_AP_P3_T3_L30_C3
+
+          h:                        47            [1][2]
+          h:                        47  , h_  :   46       
+::::::::::::::::::::::::current action:::FLY_AIRPLANE_A0_L30_L10
+
+::::::::::::::::::::::::current action:::UNLOAD_AIRPLANE_P1_A0_L10
+
+          h:                        46            [1]
+          h:                        46  , h_  :   45       
+::::::::::::::::::::::::current action:::UNLOAD_AIRPLANE_P0_A0_L10
+
+          h:                        45            [1][2]
+          h:                        45  , h_  :   44       
+::::::::::::::::::::::::current action:::DRIVE_TRUCK_LOC_AP_T1_L11_L10_C1
+
+::::::::::::::::::::::::current action:::LOAD_TRUCK_AP_P2_T1_L10_C1
+
+          h:                        44            [1]
+          h:                        44  , h_  :   43       
+::::::::::::::::::::::::current action:::LOAD_TRUCK_AP_P1_T1_L10_C1
+
+          h:                        43            [1][2]
+          h:                        43  , h_  :   42       
+::::::::::::::::::::::::current action:::DRIVE_TRUCK_AP_LOC_T1_L10_L14_C1
+
+::::::::::::::::::::::::current action:::LOAD_TRUCK_LOC_P2_T1_L14_C1
+
+          h:                        42            [1]
+          h:                        42  , h_  :   41       
+::::::::::::::::::::::::current action:::DRIVE_TRUCK_LOC_AP_T1_L14_L10_C1
+
+          h:                        41            [1][2]
+          h:                        41  , h_  :   40       
+::::::::::::::::::::::::current action:::DRIVE_TRUCK_AP_LOC_T1_L10_L13_C1
+
+::::::::::::::::::::::::current action:::LOAD_TRUCK_LOC_P2_T1_L13_C1
+
+          h:                        40            [1]
+          h:                        40  , h_  :   39       
+::::::::::::::::::::::::current action:::DRIVE_TRUCK_LOC_AP_T1_L13_L10_C1
+
+          h:                        39            [1]
+          h:                        39  , h_  :   38       
+::::::::::::::::::::::::current action:::DRIVE_TRUCK_AP_LOC_T1_L10_L12_C1
+
+          h:                        38            [1]
+          h:                        38  , h_  :   37       
+::::::::::::::::::::::::current action:::LOAD_TRUCK_LOC_P2_T1_L12_C1
+
+          h:                        37            [1]
+          h:                        37  , h_  :   36       
+::::::::::::::::::::::::current action:::UNLOAD_TRUCK_LOC_P1_T1_L12_C1
+
+          h:                        36            [1][2]
+          h:                        36  , h_  :   35       
+::::::::::::::::::::::::current action:::DRIVE_TRUCK_AP_LOC_T3_L30_L32_C3
+
+::::::::::::::::::::::::current action:::UNLOAD_TRUCK_LOC_P3_T3_L32_C3
+
+          h:                        35            [1][2][3]
+          h:                        35  , h_  :   34       
+::::::::::::::::::::::::current action:::DRIVE_TRUCK_LOC_AP_T1_L12_L10_C1
+
+::::::::::::::::::::::::current action:::DRIVE_TRUCK_AP_LOC_T1_L10_L11_C1
+
+::::::::::::::::::::::::current action:::UNLOAD_TRUCK_LOC_P2_T1_L11_C1
+
+          h:                        34            [1]
+          h:                        34  , h_  :   33       
+::::::::::::::::::::::::current action:::DRIVE_TRUCK_LOC_AP_T1_L11_L10_C1
+
+          h:                        33            [1][2][3][4][5][6]
+          h:                        33  , h_  :   32       
+::::::::::::::::::::::::current action:::DRIVE_TRUCK_AP_LOC_T0_L00_L04_C0
+
+::::::::::::::::::::::::current action:::LOAD_TRUCK_LOC_P0_T0_L04_C0
+
+::::::::::::::::::::::::current action:::DRIVE_TRUCK_LOC_AP_T0_L04_L00_C0
+
+::::::::::::::::::::::::current action:::UNLOAD_TRUCK_AP_P0_T0_L00_C0
+
+::::::::::::::::::::::::current action:::FLY_AIRPLANE_A0_L10_L00
+
+::::::::::::::::::::::::current action:::LOAD_AIRPLANE_P0_A0_L00
+
+          h:                        32            [1][2]
+          h:                        32  , h_  :   31       
+::::::::::::::::::::::::current action:::FLY_AIRPLANE_A0_L00_L10
+
+::::::::::::::::::::::::current action:::UNLOAD_AIRPLANE_P0_A0_L10
+
+          h:                        31            [1][2][3][4]
+          h:                        31  , h_  :   29       
+::::::::::::::::::::::::current action:::DRIVE_TRUCK_AP_LOC_T0_L00_L02_C0
+
+::::::::::::::::::::::::current action:::LOAD_TRUCK_LOC_P0_T0_L02_C0
+
+::::::::::::::::::::::::current action:::DRIVE_TRUCK_LOC_AP_T0_L02_L00_C0
+
+::::::::::::::::::::::::current action:::DRIVE_TRUCK_AP_LOC_T0_L00_L01_C0
+
+          h:                        29            [1]
+          h:                        29  , h_  :   28       
+::::::::::::::::::::::::current action:::LOAD_TRUCK_LOC_P0_T0_L01_C0
+
+          h:                        28            [1]
+          h:                        28  , h_  :   27       
+::::::::::::::::::::::::current action:::DRIVE_TRUCK_LOC_AP_T0_L01_L00_C0
+
+          h:                        27            [1]
+          h:                        27  , h_  :   26       
+::::::::::::::::::::::::current action:::UNLOAD_TRUCK_AP_P0_T0_L00_C0
+
+          h:                        26            [1][2]
+          h:                        26  , h_  :   25       
+::::::::::::::::::::::::current action:::FLY_AIRPLANE_A0_L10_L00
+
+::::::::::::::::::::::::current action:::LOAD_AIRPLANE_P0_A0_L00
+
+          h:                        25            [1]
+          h:                        25  , h_  :   24       
+::::::::::::::::::::::::current action:::FLY_AIRPLANE_A0_L00_L20
+
+          h:                        24            [1][2]
+          h:                        24  , h_  :   23       
+::::::::::::::::::::::::current action:::FLY_AIRPLANE_A0_L20_L10
+
+::::::::::::::::::::::::current action:::UNLOAD_AIRPLANE_P0_A0_L10
+
+          h:                        23            [1][2][3][4][5][6][7][8][9]
+          h:                        23  , h_  :   17       
+::::::::::::::::::::::::current action:::DRIVE_TRUCK_AP_LOC_T2_L20_L24_C2
+
+::::::::::::::::::::::::current action:::LOAD_TRUCK_LOC_P3_T2_L24_C2
+
+::::::::::::::::::::::::current action:::LOAD_TRUCK_LOC_P1_T2_L24_C2
+
+::::::::::::::::::::::::current action:::DRIVE_TRUCK_LOC_AP_T2_L24_L20_C2
+
+::::::::::::::::::::::::current action:::DRIVE_TRUCK_AP_LOC_T2_L20_L23_C2
+
+::::::::::::::::::::::::current action:::LOAD_TRUCK_LOC_P3_T2_L23_C2
+
+::::::::::::::::::::::::current action:::LOAD_TRUCK_LOC_P1_T2_L23_C2
+
+::::::::::::::::::::::::current action:::DRIVE_TRUCK_LOC_AP_T2_L23_L20_C2
+
+::::::::::::::::::::::::current action:::DRIVE_TRUCK_AP_LOC_T2_L20_L21_C2
+
+          h:                        17            [1]
+          h:                        17  , h_  :   16       
+::::::::::::::::::::::::current action:::LOAD_TRUCK_LOC_P3_T2_L21_C2
+
+          h:                        16            [1]
+          h:                        16  , h_  :   15       
+::::::::::::::::::::::::current action:::LOAD_TRUCK_LOC_P1_T2_L21_C2
+
+          h:                        15            [1]
+          h:                        15  , h_  :   14       
+::::::::::::::::::::::::current action:::DRIVE_TRUCK_LOC_AP_T2_L21_L20_C2
+
+          h:                        14            [1]
+          h:                        14  , h_  :   13       
+::::::::::::::::::::::::current action:::UNLOAD_TRUCK_AP_P3_T2_L20_C2
+
+          h:                        13            [1]
+          h:                        13  , h_  :   12       
+::::::::::::::::::::::::current action:::UNLOAD_TRUCK_AP_P1_T2_L20_C2
+
+          h:                        12            [1][2]
+          h:                        12  , h_  :   11       
+::::::::::::::::::::::::current action:::FLY_AIRPLANE_A0_L10_L20
+
+::::::::::::::::::::::::current action:::LOAD_AIRPLANE_P3_A0_L20
+
+          h:                        11            [1]
+          h:                        11  , h_  :   10       
+::::::::::::::::::::::::current action:::LOAD_AIRPLANE_P1_A0_L20
+
+          h:                        10            [1]
+          h:                        10  , h_  :    9       
+::::::::::::::::::::::::current action:::FLY_AIRPLANE_A0_L20_L30
+
+          h:                         9            [1]
+          h:                         9  , h_  :    8       
+::::::::::::::::::::::::current action:::UNLOAD_AIRPLANE_P3_A0_L30
+
+          h:                         8            [1]
+          h:                         8  , h_  :    7       
+::::::::::::::::::::::::current action:::FLY_AIRPLANE_A0_L30_L10
+
+          h:                         7            [1]
+          h:                         7  , h_  :    6       
+::::::::::::::::::::::::current action:::UNLOAD_AIRPLANE_P1_A0_L10
+
+          h:                         6            [1]
+          h:                         6  , h_  :    5       
+::::::::::::::::::::::::current action:::LOAD_TRUCK_AP_P1_T1_L10_C1
+
+          h:                         5            [1]
+          h:                         5  , h_  :    4       
+::::::::::::::::::::::::current action:::DRIVE_TRUCK_AP_LOC_T1_L10_L12_C1
+
+          h:                         4            [1]
+          h:                         4  , h_  :    3       
+::::::::::::::::::::::::current action:::UNLOAD_TRUCK_LOC_P1_T1_L12_C1
+
+          h:                         3            [1][2]
+          h:                         3  , h_  :    2       
+::::::::::::::::::::::::current action:::DRIVE_TRUCK_LOC_AP_T3_L32_L30_C3
+
+::::::::::::::::::::::::current action:::LOAD_TRUCK_AP_P3_T3_L30_C3
+
+          h:                         2            [1]
+          h:                         2  , h_  :    1       
+::::::::::::::::::::::::current action:::DRIVE_TRUCK_AP_LOC_T3_L30_L32_C3
+
+          h:                         1            [1]
+          h:                         1  , h_  :    0       
+::::::::::::::::::::::::current action:::UNLOAD_TRUCK_LOC_P3_T3_L32_C3
+
+Goal reached in a branch 
+root
+
+
+ff: found legal plan as follows
+
+Total branches in this plan: 1 
+Longest branch: 96
+Total spurious branches in this plan: 0
+Total number of actions: 96
+
+
+time spent:    0.50 seconds instantiating 2081 easy, 0 hard action templates
+               0.00 seconds reachability analysis, yielding 3790 facts and 2081 actions
+               0.02 seconds creating final representation with 3630 relevant facts
+               0.10 seconds building connectivity graph
+              19.08 seconds computing closures operations
+              53.00 seconds searching, evaluating 8371 states, expanding 8240 nodes, to a max depth of 9
+              53.62 seconds total time
+
+
+

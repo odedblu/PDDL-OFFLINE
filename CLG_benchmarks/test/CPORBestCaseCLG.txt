@@ -1,0 +1,4 @@
+Budget 2: Equal Trees
+Budget 3: Equal Trees
+Budget 4: Tree CLG is better than Tree CPORBestCase
+Budget 5: Equal Trees

@@ -1,0 +1,46 @@
+
+ff: parsing domain file
+domain 'BLOCKSWORLD' defined
+ ... done.
+ff: parsing problem file
+problem 'BW-RAND-3' defined
+ ... done.
+
+
+lowest leaf goal distance/initial state f value seen:      8/     8; maxdepth reached:    0
+                                                           2/     8                       1
+                                                           1/     8                       2
+                                                           1/     8                       3
+
+ff: found plan as follows
+-------------------------------------------------
+  0||0 --- SENSEONTABLE B3 --- TRUESON: 1||0 --- FALSESON: 1||1
+-------------------------------------------------
+  1||0 --- MOVE-B-TO-B B2 B3 B1 --- SON: 2||0
+  1||1 --- MOVE-TO-T B3 B2 --- SON: 2||1
+-------------------------------------------------
+  2||0 --- MOVE-T-TO-B B3 B2 --- SON: 3||-1
+  2||1 --- MOVE-T-TO-B B2 B1 --- SON: 3||0
+-------------------------------------------------
+  3||0 --- MOVE-T-TO-B B3 B2 --- SON: 4||-1
+-------------------------------------------------
+
+tree layers: 4
+total nr. actions: 6
+
+statistics:    0.00 seconds instantiating 60 easy, 0 hard action templates
+               0.00 seconds reachability analysis, yielding 30 facts and 60 actions
+               0.00 seconds creating final representation with 30 relevant facts (30 max U, 15 CNF max U)
+               final representation has 12 unknown facts and 24 observation actions    
+               0.00 seconds building connectivity graph
+               0.00 seconds (   0.00 pure) evaluating 83 states
+               0.00 seconds in DP for 26 RPG ini state implication checks
+               0.00 seconds in DP for 0 RPlan extract ini state implication checks (0 lits removed)
+               0.01 seconds generating,    0.00 seconds encoding 87 state transition base CNFs
+               0.00 seconds in DP solving 90 state transition CNFs
+               0.00 seconds checking for self-contradictions, including 0 DP calls
+               0.00 seconds checking for stagnating states (1 hits), including 0 DP calls
+                116 total DP calls, 890 total UP calls,    0.00 sec membership
+              0.00 seconds for remaining searching duties
+               0.01 seconds total time (+    0.06 secs for CNF memory allocation)
+

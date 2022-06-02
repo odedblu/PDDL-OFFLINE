@@ -1,0 +1,353 @@
+REGISTER (entering): main()
+cf2cs v 2.1 -- A compiler for contingent planning problems into classical models.
+CALL: ./cf2cs -sn -t0 -cond -cod -cmr -csl -ckit -ckinl -cminl -cmit -cdisjk0 -cdisjm0 -mac -cfc -fp benchmarks/rovers2/d.pddl benchmarks/rovers2/p.pddl
+-sn
+-t0
+-cond
+-cod
+-cmr
+-csl
+-ckit
+-ckinl
+-cminl
+-cmit
+-cdisjk0
+-cdisjm0
+-mac
+-cfc
+-fp
+benchmarks/rovers2/d.pddl
+benchmarks/rovers2/p.pddl
+Using only initial disjunctions for merge
+Clousuring for obtaining possible tags
+Full cancellation: Translating deletes properly. Maybe complete if '-s0' or '-f' option was used
+Propagating ramifications in effects
+Using action compilation + merge
+Merging only goals and preconditions
+REGISTER (entering): parse()
+predicates size = 1 for name = AT
+predicates size = 2 for name = AT_LANDER
+predicates size = 3 for name = CAN_TRAVERSE
+predicates size = 4 for name = EQUIPPED_FOR_IMAGING
+predicates size = 5 for name = EQUIPPED_FOR_SOIL_ANALYSIS
+predicates size = 6 for name = EQUIPPED_FOR_ROCK_ANALYSIS
+predicates size = 7 for name = EMPTY
+predicates size = 8 for name = HAVE_ROCK_ANALYSIS
+predicates size = 9 for name = HAVE_SOIL_ANALYSIS
+predicates size = 10 for name = FULL
+predicates size = 11 for name = CALIBRATED
+predicates size = 12 for name = SUPPORTS
+predicates size = 13 for name = AVAILABLE
+predicates size = 14 for name = VISIBLE
+predicates size = 15 for name = HAVE_IMAGE
+predicates size = 16 for name = COMMUNICATED_IMAGE_DATA
+predicates size = 17 for name = COMMUNICATED_SOIL_DATA
+predicates size = 18 for name = COMMUNICATED_ROCK_DATA
+predicates size = 19 for name = AT_SOIL_SAMPLE
+predicates size = 20 for name = AT_ROCK_SAMPLE
+predicates size = 21 for name = VISIBLE_FROM
+predicates size = 22 for name = STORE_OF
+predicates size = 23 for name = CALIBRATION_TARGET
+predicates size = 24 for name = ON_BOARD
+predicates size = 25 for name = CHANNEL_FREE
+Parsed: benchmarks/rovers2/d.pddl
+Parsed: benchmarks/rovers2/p.pddl
+REGISTER: parse() took 0.001199 secs
+REGISTER (entering): initialize()
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+REGISTER (entering): computeReachableAtoms()
+schema 0 de 12
+schema 1 de 12
+schema 2 de 12
+schema 3 de 12
+schema 4 de 12
+schema 5 de 12
+schema 6 de 12
+schema 7 de 12
+schema 8 de 12
+schema 9 de 12
+schema 10 de 12
+schema 11 de 12
+schema 0 de 12
+schema 1 de 12
+schema 2 de 12
+schema 3 de 12
+schema 4 de 12
+schema 5 de 12
+schema 6 de 12
+schema 7 de 12
+schema 8 de 12
+schema 9 de 12
+schema 10 de 12
+schema 11 de 12
+schema 0 de 12
+schema 1 de 12
+schema 2 de 12
+schema 3 de 12
+schema 4 de 12
+schema 5 de 12
+schema 6 de 12
+schema 7 de 12
+schema 8 de 12
+schema 9 de 12
+schema 10 de 12
+schema 11 de 12
+schema 0 de 12
+schema 1 de 12
+schema 2 de 12
+schema 3 de 12
+schema 4 de 12
+schema 5 de 12
+schema 6 de 12
+schema 7 de 12
+schema 8 de 12
+schema 9 de 12
+schema 10 de 12
+schema 11 de 12
+REGISTER: computeReachableAtoms() took 0.003343 secs
+GENERAL: number of atoms = 79
+GENERAL: number of reachable atoms = 50
+GENERAL: number of grounded operators = 36
+REGISTER: initialize() took 0.006034 secs
+REGISTER (entering): initInstanceDB()
+Unknown atoms: 2
+Simply unknown atoms: 0
+Known atoms: 56
+True literals (after unit resolution): 48
+Oneof (0): 2
+Or (0): 2
+Or (1): 2
+
+---- end uncertainty: 
+Reachable 50
+GENERAL: number of actions = 24
+REGISTER: initInstanceDB() took 1.47223e-10 secs
+Generating PDDL for contingent heuristic
+Objects: CAMERA0 COLOUR GENERAL HIGH_RES LOW_RES OBJECTIVE1 ROVER0 ROVER0STORE WAYPOINT0 WAYPOINT1 WAYPOINT2 WAYPOINT3 
+REGISTER (entering): finishInstanceDB(void)
+Unknown relevant = 2
+Unknown = 2
+HLP static oneof during collectin 51, 52, 
+Static oneof atoms: 51 52 
+REGISTER: finishInstanceDB(void) took 1.47223e-10 secs
+Static atoms (43): FALSE FOO AT_LANDER_GENERAL_WAYPOINT0 AT_ROCK_SAMPLE_WAYPOINT3 AT_ROCK_SAMPLE_WAYPOINT2 AT_ROCK_SAMPLE_WAYPOINT1 AT_ROCK_SAMPLE_WAYPOINT0 AT_SOIL_SAMPLE_WAYPOINT3 AT_SOIL_SAMPLE_WAYPOINT2 AT_SOIL_SAMPLE_WAYPOINT1 AT_SOIL_SAMPLE_WAYPOINT0 AVAILABLE_ROVER0 CALIBRATION_TARGET_CAMERA0_OBJECTIVE1 CAN_TRAVERSE_ROVER0_WAYPOINT3_WAYPOINT1 CAN_TRAVERSE_ROVER0_WAYPOINT3_WAYPOINT0 CAN_TRAVERSE_ROVER0_WAYPOINT2_WAYPOINT1 CAN_TRAVERSE_ROVER0_WAYPOINT1_WAYPOINT3 CAN_TRAVERSE_ROVER0_WAYPOINT1_WAYPOINT2 CAN_TRAVERSE_ROVER0_WAYPOINT0_WAYPOINT3 CHANNEL_FREE_GENERAL EQUIPPED_FOR_IMAGING_ROVER0 ON_BOARD_CAMERA0_ROVER0 SUPPORTS_CAMERA0_HIGH_RES SUPPORTS_CAMERA0_COLOUR VISIBLE_WAYPOINT3_WAYPOINT2 VISIBLE_WAYPOINT3_WAYPOINT1 VISIBLE_WAYPOINT3_WAYPOINT0 VISIBLE_WAYPOINT2_WAYPOINT3 VISIBLE_WAYPOINT2_WAYPOINT1 VISIBLE_WAYPOINT2_WAYPOINT0 VISIBLE_WAYPOINT1_WAYPOINT3 VISIBLE_WAYPOINT1_WAYPOINT2 VISIBLE_WAYPOINT1_WAYPOINT0 VISIBLE_WAYPOINT0_WAYPOINT3 VISIBLE_WAYPOINT0_WAYPOINT2 VISIBLE_WAYPOINT0_WAYPOINT1 VISIBLE_FROM_OBJECTIVE1_WAYPOINT3 VISIBLE_FROM_OBJECTIVE1_WAYPOINT2 VISIBLE_FROM_OBJECTIVE1_WAYPOINT1 VISIBLE_FROM_OBJECTIVE1_WAYPOINT0 ACTIVE ALL_END CONT_DUMMY 
+REGISTER (entering): calc_tags()
+REGISTER (entering): calc_relevant()
+starting iterations...
+REGISTER: calc_relevant() took 0.003546 secs
+REGISTER (entering): calc_relevant_obs()
+REGISTER: calc_relevant_obs() took 0 secs
+Accepted disjunction 51, 52, 
+STAT Max-width: 1
+Final disjunctions: 1
+51, 52, 
+==== End of Final disjunctions: 
+All tags: VISIBLE_FROM_OBJECTIVE1_WAYPOINT1(51) VISIBLE_FROM_OBJECTIVE1_WAYPOINT0(52) 
+For lit AT_ROVER0_WAYPOINT3(3) relevants tags are: 
+For lit AT_ROVER0_WAYPOINT2(4) relevants tags are: 
+For lit AT_ROVER0_WAYPOINT1(5) relevants tags are: 
+For lit AT_ROVER0_WAYPOINT0(6) relevants tags are: 
+For lit CALIBRATED_CAMERA0_ROVER0_WAYPOINT3_OBJECTIVE1(17) relevants tags are: 
+For lit CALIBRATED_CAMERA0_ROVER0_WAYPOINT2_OBJECTIVE1(18) relevants tags are: 
+For lit CALIBRATED_CAMERA0_ROVER0_WAYPOINT1_OBJECTIVE1(19) relevants tags are: 
+For lit CALIBRATED_CAMERA0_ROVER0_WAYPOINT0_OBJECTIVE1(20) relevants tags are: 
+For lit COMMUNICATED_IMAGE_DATA_OBJECTIVE1_HIGH_RES(29) relevants tags are: VISIBLE_FROM_OBJECTIVE1_WAYPOINT1(51) VISIBLE_FROM_OBJECTIVE1_WAYPOINT0(52) 
+IMPLIES_WITH_INIT: From lit VISIBLE_FROM_OBJECTIVE1_WAYPOINT1(51) obtaing the following lits:VISIBLE_FROM_OBJECTIVE1_WAYPOINT0(-52) VISIBLE_FROM_OBJECTIVE1_WAYPOINT1(51) 
+IMPLIES_WITH_INIT: From lit VISIBLE_FROM_OBJECTIVE1_WAYPOINT0(52) obtaing the following lits:VISIBLE_FROM_OBJECTIVE1_WAYPOINT1(-51) VISIBLE_FROM_OBJECTIVE1_WAYPOINT0(52) 
+For lit HAVE_IMAGE_ROVER0_OBJECTIVE1_HIGH_RES(32) relevants tags are: VISIBLE_FROM_OBJECTIVE1_WAYPOINT1(51) VISIBLE_FROM_OBJECTIVE1_WAYPOINT0(52) 
+For lit HAVE_IMAGE_ROVER0_OBJECTIVE1_COLOUR(33) relevants tags are: VISIBLE_FROM_OBJECTIVE1_WAYPOINT1(51) VISIBLE_FROM_OBJECTIVE1_WAYPOINT0(52) 
+REGISTER: calc_tags() took 0.003546 secs
+REGISTER (entering): make_k_0(m)
+REGISTER: make_k_0(m) took 0 secs
+REGISTER (entering): make_k_0(k)
+REGISTER: make_k_0(k) took 0 secs
+GENERAL: number of observations = 12
+Unknown atoms: 51 52 
+Unknown not in oneof: 
+REGISTER (entering): make_split_t0c()
+456 = k_VISIBLE_FROM_OBJECTIVE1_WAYPOINT0___VISIBLE_FROM_OBJECTIVE1_WAYPOINT1
+457 = k_HAVE_IMAGE_ROVER0_OBJECTIVE1_COLOUR___VISIBLE_FROM_OBJECTIVE1_WAYPOINT1
+458 = kn_VISIBLE_FROM_OBJECTIVE1_WAYPOINT0___VISIBLE_FROM_OBJECTIVE1_WAYPOINT1
+459 = kn_HAVE_IMAGE_ROVER0_OBJECTIVE1_COLOUR___VISIBLE_FROM_OBJECTIVE1_WAYPOINT1
+460 = k_VISIBLE_FROM_OBJECTIVE1_WAYPOINT0___VISIBLE_FROM_OBJECTIVE1_WAYPOINT0
+461 = k_HAVE_IMAGE_ROVER0_OBJECTIVE1_COLOUR___VISIBLE_FROM_OBJECTIVE1_WAYPOINT0
+462 = kn_HAVE_IMAGE_ROVER0_OBJECTIVE1_COLOUR___VISIBLE_FROM_OBJECTIVE1_WAYPOINT0
+463 = k_HAVE_IMAGE_ROVER0_OBJECTIVE1_HIGH_RES___VISIBLE_FROM_OBJECTIVE1_WAYPOINT1
+464 = kn_HAVE_IMAGE_ROVER0_OBJECTIVE1_HIGH_RES___VISIBLE_FROM_OBJECTIVE1_WAYPOINT1
+465 = k_HAVE_IMAGE_ROVER0_OBJECTIVE1_HIGH_RES___VISIBLE_FROM_OBJECTIVE1_WAYPOINT0
+466 = kn_HAVE_IMAGE_ROVER0_OBJECTIVE1_HIGH_RES___VISIBLE_FROM_OBJECTIVE1_WAYPOINT0
+467 = k_VISIBLE_FROM_OBJECTIVE1_WAYPOINT1___VISIBLE_FROM_OBJECTIVE1_WAYPOINT1
+468 = k_VISIBLE_FROM_OBJECTIVE1_WAYPOINT1___VISIBLE_FROM_OBJECTIVE1_WAYPOINT0
+469 = kn_VISIBLE_FROM_OBJECTIVE1_WAYPOINT1___VISIBLE_FROM_OBJECTIVE1_WAYPOINT0
+470 = k_COMMUNICATED_IMAGE_DATA_OBJECTIVE1_COLOUR___VISIBLE_FROM_OBJECTIVE1_WAYPOINT1
+471 = kn_COMMUNICATED_IMAGE_DATA_OBJECTIVE1_COLOUR___VISIBLE_FROM_OBJECTIVE1_WAYPOINT1
+472 = k_COMMUNICATED_IMAGE_DATA_OBJECTIVE1_COLOUR___VISIBLE_FROM_OBJECTIVE1_WAYPOINT0
+473 = kn_COMMUNICATED_IMAGE_DATA_OBJECTIVE1_COLOUR___VISIBLE_FROM_OBJECTIVE1_WAYPOINT0
+474 = k_COMMUNICATED_IMAGE_DATA_OBJECTIVE1_HIGH_RES___VISIBLE_FROM_OBJECTIVE1_WAYPOINT1
+475 = kn_COMMUNICATED_IMAGE_DATA_OBJECTIVE1_HIGH_RES___VISIBLE_FROM_OBJECTIVE1_WAYPOINT1
+476 = k_COMMUNICATED_IMAGE_DATA_OBJECTIVE1_HIGH_RES___VISIBLE_FROM_OBJECTIVE1_WAYPOINT0
+477 = kn_COMMUNICATED_IMAGE_DATA_OBJECTIVE1_HIGH_RES___VISIBLE_FROM_OBJECTIVE1_WAYPOINT0
+REGISTER: make_split_t0c() took 0.002658 secs
+
+
+Haciendo merge...
+REGISTER (entering): make_k_t0c()
+Trying to merge: COMMUNICATED_IMAGE_DATA_OBJECTIVE1_HIGH_RES(29)/(VISIBLE_FROM_OBJECTIVE1_WAYPOINT1(51), ) with var = 51
+Trying to make merge with (0) = (VISIBLE_FROM_OBJECTIVE1_WAYPOINT1(51), VISIBLE_FROM_OBJECTIVE1_WAYPOINT0(52), )
+accepting 51 tagged 
+accepting 52 tagged 
+Merging with (0) = (51,52,)
+Trying to merge: COMMUNICATED_IMAGE_DATA_OBJECTIVE1_HIGH_RES(29)/(VISIBLE_FROM_OBJECTIVE1_WAYPOINT0(52), ) with var = 52
+Trying to merge: HAVE_IMAGE_ROVER0_OBJECTIVE1_HIGH_RES(32)/(VISIBLE_FROM_OBJECTIVE1_WAYPOINT1(51), ) with var = 51
+Trying to make merge with (0) = (VISIBLE_FROM_OBJECTIVE1_WAYPOINT1(51), VISIBLE_FROM_OBJECTIVE1_WAYPOINT0(52), )
+accepting 51 tagged 
+accepting 52 tagged 
+Merging with (0) = (51,52,)
+Trying to merge: HAVE_IMAGE_ROVER0_OBJECTIVE1_HIGH_RES(32)/(VISIBLE_FROM_OBJECTIVE1_WAYPOINT0(52), ) with var = 52
+Trying to merge: HAVE_IMAGE_ROVER0_OBJECTIVE1_COLOUR(33)/(VISIBLE_FROM_OBJECTIVE1_WAYPOINT1(51), ) with var = 51
+Trying to make merge with (0) = (VISIBLE_FROM_OBJECTIVE1_WAYPOINT1(51), VISIBLE_FROM_OBJECTIVE1_WAYPOINT0(52), )
+accepting 51 tagged 
+accepting 52 tagged 
+Merging with (0) = (51,52,)
+Trying to merge: HAVE_IMAGE_ROVER0_OBJECTIVE1_COLOUR(33)/(VISIBLE_FROM_OBJECTIVE1_WAYPOINT0(52), ) with var = 52
+REGISTER: make_k_t0c() took 4.04358e-10 secs
+484 = kn_VISIBLE_FROM_OBJECTIVE1_WAYPOINT0___VISIBLE_FROM_OBJECTIVE1_WAYPOINT0
+485 = kn_VISIBLE_FROM_OBJECTIVE1_WAYPOINT1___VISIBLE_FROM_OBJECTIVE1_WAYPOINT1
+REGISTER (entering): make_merge_act()
+REGISTER: make_merge_act() took 0 secs
+REGISTER (entering): make_merge_act()
+REGISTER: make_merge_act() took 0 secs
+REGISTER (entering): make_merge_act()
+REGISTER: make_merge_act() took 0 secs
+REGISTER (entering): clean_actions()
+fixpoint 0
+fixpoint 0
+fixpoint 1
+Number of Atoms to del: 0
+REGISTER: clean_actions() took 0 secs
+IMPLIES_WITH_INIT: From lit VISIBLE_FROM_OBJECTIVE1_WAYPOINT1(51) obtaing the following lits:VISIBLE_FROM_OBJECTIVE1_WAYPOINT0(-52) VISIBLE_FROM_OBJECTIVE1_WAYPOINT2(-50) VISIBLE_FROM_OBJECTIVE1_WAYPOINT3(-49) HAVE_IMAGE_ROVER0_OBJECTIVE1_COLOUR(-33) HAVE_IMAGE_ROVER0_OBJECTIVE1_HIGH_RES(-32) COMMUNICATED_IMAGE_DATA_OBJECTIVE1_COLOUR(-30) COMMUNICATED_IMAGE_DATA_OBJECTIVE1_HIGH_RES(-29) CALIBRATED_CAMERA0_ROVER0_WAYPOINT0_OBJECTIVE1(-20) CALIBRATED_CAMERA0_ROVER0_WAYPOINT1_OBJECTIVE1(-19) CALIBRATED_CAMERA0_ROVER0_WAYPOINT2_OBJECTIVE1(-18) CALIBRATED_CAMERA0_ROVER0_WAYPOINT3_OBJECTIVE1(-17) AT_SOIL_SAMPLE_WAYPOINT0(-15) AT_SOIL_SAMPLE_WAYPOINT1(-14) AT_SOIL_SAMPLE_WAYPOINT2(-13) AT_SOIL_SAMPLE_WAYPOINT3(-12) AT_ROCK_SAMPLE_WAYPOINT0(-11) AT_ROCK_SAMPLE_WAYPOINT1(-10) AT_ROCK_SAMPLE_WAYPOINT2(-9) AT_ROCK_SAMPLE_WAYPOINT3(-8) AT_ROVER0_WAYPOINT0(-6) AT_ROVER0_WAYPOINT1(-5) AT_ROVER0_WAYPOINT2(-4) FALSE(-1) FOO(2) AT_ROVER0_WAYPOINT3(3) AT_LANDER_GENERAL_WAYPOINT0(7) AVAILABLE_ROVER0(16) CALIBRATION_TARGET_CAMERA0_OBJECTIVE1(21) CAN_TRAVERSE_ROVER0_WAYPOINT3_WAYPOINT1(22) CAN_TRAVERSE_ROVER0_WAYPOINT3_WAYPOINT0(23) CAN_TRAVERSE_ROVER0_WAYPOINT2_WAYPOINT1(24) CAN_TRAVERSE_ROVER0_WAYPOINT1_WAYPOINT3(25) CAN_TRAVERSE_ROVER0_WAYPOINT1_WAYPOINT2(26) CAN_TRAVERSE_ROVER0_WAYPOINT0_WAYPOINT3(27) CHANNEL_FREE_GENERAL(28) EQUIPPED_FOR_IMAGING_ROVER0(31) ON_BOARD_CAMERA0_ROVER0(34) SUPPORTS_CAMERA0_HIGH_RES(35) SUPPORTS_CAMERA0_COLOUR(36) VISIBLE_WAYPOINT3_WAYPOINT2(37) VISIBLE_WAYPOINT3_WAYPOINT1(38) VISIBLE_WAYPOINT3_WAYPOINT0(39) VISIBLE_WAYPOINT2_WAYPOINT3(40) VISIBLE_WAYPOINT2_WAYPOINT1(41) VISIBLE_WAYPOINT2_WAYPOINT0(42) VISIBLE_WAYPOINT1_WAYPOINT3(43) VISIBLE_WAYPOINT1_WAYPOINT2(44) VISIBLE_WAYPOINT1_WAYPOINT0(45) VISIBLE_WAYPOINT0_WAYPOINT3(46) VISIBLE_WAYPOINT0_WAYPOINT2(47) VISIBLE_WAYPOINT0_WAYPOINT1(48) VISIBLE_FROM_OBJECTIVE1_WAYPOINT1(51) 
+IMPLIES_WITH_INIT: From lit VISIBLE_FROM_OBJECTIVE1_WAYPOINT0(52) obtaing the following lits:VISIBLE_FROM_OBJECTIVE1_WAYPOINT1(-51) VISIBLE_FROM_OBJECTIVE1_WAYPOINT2(-50) VISIBLE_FROM_OBJECTIVE1_WAYPOINT3(-49) HAVE_IMAGE_ROVER0_OBJECTIVE1_COLOUR(-33) HAVE_IMAGE_ROVER0_OBJECTIVE1_HIGH_RES(-32) COMMUNICATED_IMAGE_DATA_OBJECTIVE1_COLOUR(-30) COMMUNICATED_IMAGE_DATA_OBJECTIVE1_HIGH_RES(-29) CALIBRATED_CAMERA0_ROVER0_WAYPOINT0_OBJECTIVE1(-20) CALIBRATED_CAMERA0_ROVER0_WAYPOINT1_OBJECTIVE1(-19) CALIBRATED_CAMERA0_ROVER0_WAYPOINT2_OBJECTIVE1(-18) CALIBRATED_CAMERA0_ROVER0_WAYPOINT3_OBJECTIVE1(-17) AT_SOIL_SAMPLE_WAYPOINT0(-15) AT_SOIL_SAMPLE_WAYPOINT1(-14) AT_SOIL_SAMPLE_WAYPOINT2(-13) AT_SOIL_SAMPLE_WAYPOINT3(-12) AT_ROCK_SAMPLE_WAYPOINT0(-11) AT_ROCK_SAMPLE_WAYPOINT1(-10) AT_ROCK_SAMPLE_WAYPOINT2(-9) AT_ROCK_SAMPLE_WAYPOINT3(-8) AT_ROVER0_WAYPOINT0(-6) AT_ROVER0_WAYPOINT1(-5) AT_ROVER0_WAYPOINT2(-4) FALSE(-1) FOO(2) AT_ROVER0_WAYPOINT3(3) AT_LANDER_GENERAL_WAYPOINT0(7) AVAILABLE_ROVER0(16) CALIBRATION_TARGET_CAMERA0_OBJECTIVE1(21) CAN_TRAVERSE_ROVER0_WAYPOINT3_WAYPOINT1(22) CAN_TRAVERSE_ROVER0_WAYPOINT3_WAYPOINT0(23) CAN_TRAVERSE_ROVER0_WAYPOINT2_WAYPOINT1(24) CAN_TRAVERSE_ROVER0_WAYPOINT1_WAYPOINT3(25) CAN_TRAVERSE_ROVER0_WAYPOINT1_WAYPOINT2(26) CAN_TRAVERSE_ROVER0_WAYPOINT0_WAYPOINT3(27) CHANNEL_FREE_GENERAL(28) EQUIPPED_FOR_IMAGING_ROVER0(31) ON_BOARD_CAMERA0_ROVER0(34) SUPPORTS_CAMERA0_HIGH_RES(35) SUPPORTS_CAMERA0_COLOUR(36) VISIBLE_WAYPOINT3_WAYPOINT2(37) VISIBLE_WAYPOINT3_WAYPOINT1(38) VISIBLE_WAYPOINT3_WAYPOINT0(39) VISIBLE_WAYPOINT2_WAYPOINT3(40) VISIBLE_WAYPOINT2_WAYPOINT1(41) VISIBLE_WAYPOINT2_WAYPOINT0(42) VISIBLE_WAYPOINT1_WAYPOINT3(43) VISIBLE_WAYPOINT1_WAYPOINT2(44) VISIBLE_WAYPOINT1_WAYPOINT0(45) VISIBLE_WAYPOINT0_WAYPOINT3(46) VISIBLE_WAYPOINT0_WAYPOINT2(47) VISIBLE_WAYPOINT0_WAYPOINT1(48) VISIBLE_FROM_OBJECTIVE1_WAYPOINT0(52) 
+REGISTER (entering): printNewPDDL()
+Generating PDDL
+printing 64 actions
+printing 12 observations
+STAT old-Actions: 24
+STAT old-Atoms: 55
+STAT old-cond-effects: 33
+STAT old-condicionales: 44
+STAT KP-NActions: 64
+STAT KP-NAtoms: 486
+STAT KP-deleted-NAtoms: 0
+STAT KP-Nconds-effects-and-notused: 295
+STAT KP-Ncond-effects: 295
+STAT KP-Numero_lit_en_efectos_condicionales: 701
+REGISTER: printNewPDDL() took 0.022087 secs
+REGISTER: main() took 0.03882 secs
+
+ff: parsing domain file
+domain 'ROVER' defined
+ ... done.
+ff: parsing problem file
+problem 'ROVERPROB1234' defined
+ ... done.
+
+STATS quality of hash table of predicates: max_bucket_size = 4, ave_bucket_size = 0.629389
+ff-cond: no description file
+fact T0_FAIL_K0 tagged as 88  
+
+
+Skipping All searches!
+Starting K procedure.
+
+          h:                         8            [1][2]
+          h:                         8  , h_  :    7       
+
+::::::::::::::::::::::::current action:::sensedoor_d1
+
+Branching....
+	Popping state:2
+          h:                         5            [1]
+          h:                         5  , h_  :    4       
+::::::::::::::::::::::::current action:::go-left_d1_d2
+
+          h:                         4            [1]
+          h:                         4  , h_  :    3       
+::::::::::::::::::::::::current action:::go-left_d2_d3
+
+          h:                         3            [1]
+          h:                         3  , h_  :    2       
+::::::::::::::::::::::::current action:::gothrow_d3
+
+
+Goal reached in a branch 
+
+          h:                         4            [1]
+          h:                         4  , h_  :    3       
+::::::::::::::::::::::::current action:::gothrow_d1
+
+Goal reached in a branch 
+root
+
+
+ff: found legal plan as follows
+
+Total branches in this plan: 2 
+Longest branch: 7
+Total spurious branches in this plan: 0
+Total number of actions: 11
+
+
+time spent:    0.02 seconds instantiating 76 easy, 0 hard action templates
+               0.00 seconds reachability analysis, yielding 173 facts and 76 actions
+               0.00 seconds creating final representation with 137 relevant facts
+               0.00 seconds building connectivity graph
+               0.00 seconds computing closures operations
+               0.00 seconds searching, evaluating 34 states, expanding 13 nodes, to a max depth of 2
+               0.02 seconds total time
+
+
+

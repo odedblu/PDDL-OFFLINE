@@ -1,0 +1,96 @@
+1076) sensep_p0_b0
+	1077) sensep_p1_b0
+		1078) sensep_p2_b0
+			1079) sensep_p3_b0
+				1080) sensep_p4_b0
+					1081) sensep_p5_b0
+						1082) sensep_p6_b0
+							1083) sensep_p7_b0
+								1084) sensep_p8_b0
+									1085) dunk_p9_b0_t0
+
+									1088) dunk_p8_b0_t0
+
+								1091) dunk_p7_b0_t0
+
+							1094) dunk_p6_b0_t0
+
+						1097) dunk_p5_b0_t0
+
+					1100) dunk_p4_b0_t0
+
+				1103) dunk_p3_b0_t0
+
+			1106) dunk_p2_b0_t0
+
+		1109) dunk_p1_b0_t0
+
+	1112) dunk_p0_b0_t0
+
+Goals 
+#2 :  , (in p0 b0) , (not (in p1 b0)) , (not (in p2 b0)) , (not (in p3 b0)) , (not (in p4 b0)) , (not (in p5 b0)) , (not (in p6 b0)) , (not (in p7 b0)) , (not (in p8 b0)) , (not (in p9 b0))
+3 :  , (in p1 b0) , (not (in p2 b0)) , (not (in p3 b0)) , (not (in p4 b0)) , (not (in p5 b0)) , (not (in p6 b0)) , (not (in p7 b0)) , (not (in p8 b0)) , (not (in p9 b0)) , (not (in p0 b0))
+4 :  , (in p2 b0) , (not (in p3 b0)) , (not (in p4 b0)) , (not (in p5 b0)) , (not (in p6 b0)) , (not (in p7 b0)) , (not (in p8 b0)) , (not (in p9 b0)) , (not (in p1 b0)) , (not (in p0 b0))
+5 :  , (in p3 b0) , (not (in p4 b0)) , (not (in p5 b0)) , (not (in p6 b0)) , (not (in p7 b0)) , (not (in p8 b0)) , (not (in p9 b0)) , (not (in p2 b0)) , (not (in p1 b0)) , (not (in p0 b0))
+6 :  , (in p4 b0) , (not (in p5 b0)) , (not (in p6 b0)) , (not (in p7 b0)) , (not (in p8 b0)) , (not (in p9 b0)) , (not (in p3 b0)) , (not (in p2 b0)) , (not (in p1 b0)) , (not (in p0 b0))
+7 :  , (in p5 b0) , (not (in p6 b0)) , (not (in p7 b0)) , (not (in p8 b0)) , (not (in p9 b0)) , (not (in p4 b0)) , (not (in p3 b0)) , (not (in p2 b0)) , (not (in p1 b0)) , (not (in p0 b0))
+8 :  , (in p6 b0) , (not (in p7 b0)) , (not (in p8 b0)) , (not (in p9 b0)) , (not (in p5 b0)) , (not (in p4 b0)) , (not (in p3 b0)) , (not (in p2 b0)) , (not (in p1 b0)) , (not (in p0 b0))
+9 :  , (in p7 b0) , (not (in p8 b0)) , (not (in p9 b0)) , (not (in p6 b0)) , (not (in p5 b0)) , (not (in p4 b0)) , (not (in p3 b0)) , (not (in p2 b0)) , (not (in p1 b0)) , (not (in p0 b0))
+10 :  , (in p8 b0) , (not (in p9 b0)) , (not (in p7 b0)) , (not (in p6 b0)) , (not (in p5 b0)) , (not (in p4 b0)) , (not (in p3 b0)) , (not (in p2 b0)) , (not (in p1 b0)) , (not (in p0 b0))
+10 :  , (not (in p8 b0)) , (in p9 b0) , (not (in p7 b0)) , (not (in p6 b0)) , (not (in p5 b0)) , (not (in p4 b0)) , (not (in p3 b0)) , (not (in p2 b0)) , (not (in p1 b0)) , (not (in p0 b0))
+#
+Union Goals Budget
+#2 :  , (in p0 b0) , (not (in p1 b0)) , (not (in p2 b0)) , (not (in p3 b0)) , (not (in p4 b0)) , (not (in p5 b0)) , (not (in p6 b0)) , (not (in p7 b0)) , (not (in p8 b0)) , (not (in p9 b0))
+3 :  , (in p1 b0) , (not (in p2 b0)) , (not (in p3 b0)) , (not (in p4 b0)) , (not (in p5 b0)) , (not (in p6 b0)) , (not (in p7 b0)) , (not (in p8 b0)) , (not (in p9 b0)) , (not (in p0 b0))
+4 :  , (in p2 b0) , (not (in p3 b0)) , (not (in p4 b0)) , (not (in p5 b0)) , (not (in p6 b0)) , (not (in p7 b0)) , (not (in p8 b0)) , (not (in p9 b0)) , (not (in p1 b0)) , (not (in p0 b0))
+5 :  , (in p3 b0) , (not (in p4 b0)) , (not (in p5 b0)) , (not (in p6 b0)) , (not (in p7 b0)) , (not (in p8 b0)) , (not (in p9 b0)) , (not (in p2 b0)) , (not (in p1 b0)) , (not (in p0 b0))
+6 :  , (in p4 b0) , (not (in p5 b0)) , (not (in p6 b0)) , (not (in p7 b0)) , (not (in p8 b0)) , (not (in p9 b0)) , (not (in p3 b0)) , (not (in p2 b0)) , (not (in p1 b0)) , (not (in p0 b0))
+7 :  , (in p5 b0) , (not (in p6 b0)) , (not (in p7 b0)) , (not (in p8 b0)) , (not (in p9 b0)) , (not (in p4 b0)) , (not (in p3 b0)) , (not (in p2 b0)) , (not (in p1 b0)) , (not (in p0 b0))
+8 :  , (in p6 b0) , (not (in p7 b0)) , (not (in p8 b0)) , (not (in p9 b0)) , (not (in p5 b0)) , (not (in p4 b0)) , (not (in p3 b0)) , (not (in p2 b0)) , (not (in p1 b0)) , (not (in p0 b0))
+9 :  , (in p7 b0) , (not (in p8 b0)) , (not (in p9 b0)) , (not (in p6 b0)) , (not (in p5 b0)) , (not (in p4 b0)) , (not (in p3 b0)) , (not (in p2 b0)) , (not (in p1 b0)) , (not (in p0 b0))
+10 :  , (in p8 b0) , (not (in p9 b0)) , (not (in p7 b0)) , (not (in p6 b0)) , (not (in p5 b0)) , (not (in p4 b0)) , (not (in p3 b0)) , (not (in p2 b0)) , (not (in p1 b0)) , (not (in p0 b0))
+10 :  , (not (in p8 b0)) , (in p9 b0) , (not (in p7 b0)) , (not (in p6 b0)) , (not (in p5 b0)) , (not (in p4 b0)) , (not (in p3 b0)) , (not (in p2 b0)) , (not (in p1 b0)) , (not (in p0 b0))
+10 :  , (not (in p6 b0)) , (not (in p5 b0)) , (not (in p4 b0)) , (not (in p3 b0)) , (not (in p2 b0)) , (not (in p1 b0)) , (not (in p0 b0))
+10 :  , (not (in p5 b0)) , (not (in p4 b0)) , (not (in p3 b0)) , (not (in p2 b0)) , (not (in p1 b0)) , (not (in p0 b0))
+10 :  , (not (in p4 b0)) , (not (in p3 b0)) , (not (in p2 b0)) , (not (in p1 b0)) , (not (in p0 b0))
+10 :  , (not (in p3 b0)) , (not (in p2 b0)) , (not (in p1 b0)) , (not (in p0 b0))
+10 :  , (not (in p2 b0)) , (not (in p1 b0)) , (not (in p0 b0))
+10 :  , (not (in p1 b0)) , (not (in p0 b0))
+10 :  , (not (in p0 b0))
+10 : 
+10 : 
+#
+
+
+
+Goals Fault Tolerance
+#1 : 0 :  , (in p0 b0) , (not (in p1 b0)) , (not (in p2 b0)) , (not (in p3 b0)) , (not (in p4 b0)) , (not (in p5 b0)) , (not (in p6 b0)) , (not (in p7 b0)) , (not (in p8 b0)) , (not (in p9 b0))
+2 : 1 :  , (in p1 b0) , (not (in p2 b0)) , (not (in p3 b0)) , (not (in p4 b0)) , (not (in p5 b0)) , (not (in p6 b0)) , (not (in p7 b0)) , (not (in p8 b0)) , (not (in p9 b0)) , (not (in p0 b0))
+3 : 2 :  , (in p2 b0) , (not (in p3 b0)) , (not (in p4 b0)) , (not (in p5 b0)) , (not (in p6 b0)) , (not (in p7 b0)) , (not (in p8 b0)) , (not (in p9 b0)) , (not (in p1 b0)) , (not (in p0 b0))
+4 : 3 :  , (in p3 b0) , (not (in p4 b0)) , (not (in p5 b0)) , (not (in p6 b0)) , (not (in p7 b0)) , (not (in p8 b0)) , (not (in p9 b0)) , (not (in p2 b0)) , (not (in p1 b0)) , (not (in p0 b0))
+5 : 4 :  , (in p4 b0) , (not (in p5 b0)) , (not (in p6 b0)) , (not (in p7 b0)) , (not (in p8 b0)) , (not (in p9 b0)) , (not (in p3 b0)) , (not (in p2 b0)) , (not (in p1 b0)) , (not (in p0 b0))
+6 : 5 :  , (in p5 b0) , (not (in p6 b0)) , (not (in p7 b0)) , (not (in p8 b0)) , (not (in p9 b0)) , (not (in p4 b0)) , (not (in p3 b0)) , (not (in p2 b0)) , (not (in p1 b0)) , (not (in p0 b0))
+7 : 6 :  , (in p6 b0) , (not (in p7 b0)) , (not (in p8 b0)) , (not (in p9 b0)) , (not (in p5 b0)) , (not (in p4 b0)) , (not (in p3 b0)) , (not (in p2 b0)) , (not (in p1 b0)) , (not (in p0 b0))
+8 : 7 :  , (in p7 b0) , (not (in p8 b0)) , (not (in p9 b0)) , (not (in p6 b0)) , (not (in p5 b0)) , (not (in p4 b0)) , (not (in p3 b0)) , (not (in p2 b0)) , (not (in p1 b0)) , (not (in p0 b0))
+9 : 8 :  , (in p8 b0) , (not (in p9 b0)) , (not (in p7 b0)) , (not (in p6 b0)) , (not (in p5 b0)) , (not (in p4 b0)) , (not (in p3 b0)) , (not (in p2 b0)) , (not (in p1 b0)) , (not (in p0 b0))
+9 : 9 :  , (not (in p8 b0)) , (in p9 b0) , (not (in p7 b0)) , (not (in p6 b0)) , (not (in p5 b0)) , (not (in p4 b0)) , (not (in p3 b0)) , (not (in p2 b0)) , (not (in p1 b0)) , (not (in p0 b0))
+#
+
+
+
+Goals Fault Tolerance
+##
+
+
+
+Simplicitity
+#nodes: 19
+branch: 9
+originalSize: 67
+compreesedSize: 65
+compreesedRatio: 1.03076923076923#
+
+
+
+Simplicitity
+#

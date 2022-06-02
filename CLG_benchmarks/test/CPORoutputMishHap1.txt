@@ -1,0 +1,4 @@
+1140) go-left_d1_d2
+1141) go-left_d2_d3
+1142) gothrow_d3
+)goal

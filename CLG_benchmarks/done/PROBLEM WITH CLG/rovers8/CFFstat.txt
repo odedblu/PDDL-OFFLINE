@@ -1,0 +1,15 @@
+
+Goals Budget
+#32 :  , (at_soil_sample waypoint4) , (not (at_soil_sample waypoint5)) , (visible_from objective1 waypoint4) , (not (visible_from objective1 waypoint0))
+82 :  , (not (at_soil_sample waypoint4)) , (at_soil_sample waypoint5) , (visible_from objective1 waypoint4) , (not (visible_from objective1 waypoint0))
+31 :  , (at_soil_sample waypoint4) , (not (at_soil_sample waypoint5)) , (not (visible_from objective1 waypoint4)) , (visible_from objective1 waypoint0)
+48 :  , (not (at_soil_sample waypoint4)) , (at_soil_sample waypoint5) , (not (visible_from objective1 waypoint4)) , (visible_from objective1 waypoint0)
+#
+
+
+
+Goals Fault Tolerance
+#2 :  , (at_soil_sample waypoint4) , (not (at_soil_sample waypoint5)) , (visible_from objective1 waypoint4) , (not (visible_from objective1 waypoint0))
+1 :  , (not (at_soil_sample waypoint4)) , (at_soil_sample waypoint5) , (visible_from objective1 waypoint4) , (not (visible_from objective1 waypoint0))
+1 :  , (at_soil_sample waypoint4) , (not (at_soil_sample waypoint5)) , (not (visible_from objective1 waypoint4)) , (visible_from objective1 waypoint0)
+0 :  , (not (at_soil_sample waypoint4)) , (at_soil_sample waypoint5) , (not (visible_from objective1 waypoint4)) , (visible_from objective1 waypoint0)

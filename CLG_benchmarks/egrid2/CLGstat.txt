@@ -1,0 +1,41 @@
+4809) pickup_f0-2f_key0-0
+4810) move_f0-2f_f0-1f
+4811) move_f0-1f_f1-1f
+4812) move_f1-1f_f1-0f
+4813) putdown_f1-0f_key0-0
+4814) pickup_f1-0f_key1-0
+4815) move_f1-0f_f1-1f
+4816) move_f1-1f_f0-1f
+4817) putdown_f0-1f_key1-0
+
+Goals 
+#9 : 
+#
+Union Goals Budget
+#9 : 
+#
+
+
+
+Goals Fault Tolerance
+#0 : 0 : 
+#
+
+
+
+Goals Fault Tolerance
+##
+
+
+
+Simplicitity
+#nodes: 9
+branch: 0
+originalSize: 27
+compreesedSize: 47
+compreesedRatio: 0.574468085106383#
+
+
+
+Simplicitity
+#

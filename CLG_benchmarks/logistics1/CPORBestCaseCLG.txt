@@ -1,0 +1,6 @@
+Budget 4: Tree CPORBestCase is better than Tree CLG
+Budget 5: Tree CPORBestCase is better than Tree CLG
+Budget 6: Tree CPORBestCase is better than Tree CLG
+Budget 7: Tree CPORBestCase is better than Tree CLG
+Budget 8: Tree CPORBestCase is better than Tree CLG
+Budget 9: Equal Trees

@@ -1,0 +1,365 @@
+REGISTER (entering): main()
+cf2cs v 2.1 -- A compiler for contingent planning problems into classical models.
+CALL: ./cf2cs -sn -t0 -cond -cod -cmr -csl -ckit -ckinl -cminl -cmit -cdisjk0 -cdisjm0 -mac -cfc -fp benchmarks/ebtcs10/d.pddl benchmarks/ebtcs10/p.pddl
+-sn
+-t0
+-cond
+-cod
+-cmr
+-csl
+-ckit
+-ckinl
+-cminl
+-cmit
+-cdisjk0
+-cdisjm0
+-mac
+-cfc
+-fp
+benchmarks/ebtcs10/d.pddl
+benchmarks/ebtcs10/p.pddl
+Using only initial disjunctions for merge
+Clousuring for obtaining possible tags
+Full cancellation: Translating deletes properly. Maybe complete if '-s0' or '-f' option was used
+Propagating ramifications in effects
+Using action compilation + merge
+Merging only goals and preconditions
+REGISTER (entering): parse()
+predicates size = 1 for name = IN
+predicates size = 2 for name = DEFUSED
+predicates size = 3 for name = CLOG
+Parsed: benchmarks/ebtcs10/d.pddl
+Parsed: benchmarks/ebtcs10/p.pddl
+REGISTER: parse() took 0.000461 secs
+REGISTER (entering): initialize()
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+REGISTER (entering): computeReachableAtoms()
+schema 0 de 3
+schema 1 de 3
+schema 2 de 3
+schema 0 de 3
+schema 1 de 3
+schema 2 de 3
+
+ff: parsing domain file
+domain 'BTS' defined
+ ... done.
+ff: parsing problem file
+problem 'BTS-70-1' defined
+ ... done.
+
+STATS quality of hash table of predicates: max_bucket_size = 5, ave_bucket_size = 0.869884
+ff-cond: no description file
+fact T0_FAIL_K0 tagged as 5395  
+
+
+Skipping All searches!
+Starting K procedure.
+
+          h:                        70            [1]
+          h:                        70  , h_  :   69       
+::::::::::::::::::::::::current action:::DUNK_P9_B0_T0
+
+          h:                        69            [1]
+          h:                        69  , h_  :   68       
+::::::::::::::::::::::::current action:::DUNK_P8_B0_T0
+
+          h:                        68            [1]
+          h:                        68  , h_  :   67       
+::::::::::::::::::::::::current action:::DUNK_P7_B0_T0
+
+          h:                        67            [1]
+          h:                        67  , h_  :   66       
+::::::::::::::::::::::::current action:::DUNK_P69_B0_T0
+
+          h:                        66            [1]
+          h:                        66  , h_  :   65       
+::::::::::::::::::::::::current action:::DUNK_P68_B0_T0
+
+          h:                        65            [1]
+          h:                        65  , h_  :   64       
+::::::::::::::::::::::::current action:::DUNK_P67_B0_T0
+
+          h:                        64            [1]
+          h:                        64  , h_  :   63       
+::::::::::::::::::::::::current action:::DUNK_P66_B0_T0
+
+          h:                        63            [1]
+          h:                        63  , h_  :   62       
+::::::::::::::::::::::::current action:::DUNK_P65_B0_T0
+
+          h:                        62            [1]
+          h:                        62  , h_  :   61       
+::::::::::::::::::::::::current action:::DUNK_P64_B0_T0
+
+          h:                        61            [1]
+          h:                        61  , h_  :   60       
+::::::::::::::::::::::::current action:::DUNK_P63_B0_T0
+
+          h:                        60            [1]
+          h:                        60  , h_  :   59       
+::::::::::::::::::::::::current action:::DUNK_P62_B0_T0
+
+          h:                        59            [1]
+          h:                        59  , h_  :   58       
+::::::::::::::::::::::::current action:::DUNK_P61_B0_T0
+
+          h:                        58            [1]
+          h:                        58  , h_  :   57       
+::::::::::::::::::::::::current action:::DUNK_P60_B0_T0
+
+          h:                        57            [1]
+          h:                        57  , h_  :   56       
+::::::::::::::::::::::::current action:::DUNK_P6_B0_T0
+
+          h:                        56            [1]
+          h:                        56  , h_  :   55       
+::::::::::::::::::::::::current action:::DUNK_P59_B0_T0
+
+          h:                        55            [1]
+          h:                        55  , h_  :   54       
+::::::::::::::::::::::::current action:::DUNK_P58_B0_T0
+
+          h:                        54            [1]
+          h:                        54  , h_  :   53       
+::::::::::::::::::::::::current action:::DUNK_P57_B0_T0
+
+          h:                        53            [1]
+          h:                        53  , h_  :   52       
+::::::::::::::::::::::::current action:::DUNK_P56_B0_T0
+
+          h:                        52            [1]
+          h:                        52  , h_  :   51       
+::::::::::::::::::::::::current action:::DUNK_P55_B0_T0
+
+          h:                        51            [1]
+          h:                        51  , h_  :   50       
+::::::::::::::::::::::::current action:::DUNK_P54_B0_T0
+
+          h:                        50            [1]
+          h:                        50  , h_  :   49       
+::::::::::::::::::::::::current action:::DUNK_P53_B0_T0
+
+          h:                        49            [1]
+          h:                        49  , h_  :   48       
+::::::::::::::::::::::::current action:::DUNK_P52_B0_T0
+
+          h:                        48            [1]
+          h:                        48  , h_  :   47       
+::::::::::::::::::::::::current action:::DUNK_P51_B0_T0
+
+          h:                        47            [1]
+          h:                        47  , h_  :   46       
+::::::::::::::::::::::::current action:::DUNK_P50_B0_T0
+
+          h:                        46            [1]
+          h:                        46  , h_  :   45       
+::::::::::::::::::::::::current action:::DUNK_P5_B0_T0
+
+          h:                        45            [1]
+          h:                        45  , h_  :   44       
+::::::::::::::::::::::::current action:::DUNK_P49_B0_T0
+
+          h:                        44            [1]
+          h:                        44  , h_  :   43       
+::::::::::::::::::::::::current action:::DUNK_P48_B0_T0
+
+          h:                        43            [1]
+          h:                        43  , h_  :   42       
+::::::::::::::::::::::::current action:::DUNK_P47_B0_T0
+
+          h:                        42            [1]
+          h:                        42  , h_  :   41       
+::::::::::::::::::::::::current action:::DUNK_P46_B0_T0
+
+          h:                        41            [1]
+          h:                        41  , h_  :   40       
+::::::::::::::::::::::::current action:::DUNK_P45_B0_T0
+
+          h:                        40            [1]
+          h:                        40  , h_  :   39       
+::::::::::::::::::::::::current action:::DUNK_P44_B0_T0
+
+          h:                        39            [1]
+          h:                        39  , h_  :   38       
+::::::::::::::::::::::::current action:::DUNK_P43_B0_T0
+
+          h:                        38            [1]
+          h:                        38  , h_  :   37       
+::::::::::::::::::::::::current action:::DUNK_P42_B0_T0
+
+          h:                        37            [1]
+          h:                        37  , h_  :   36       
+::::::::::::::::::::::::current action:::DUNK_P41_B0_T0
+
+          h:                        36            [1]
+          h:                        36  , h_  :   35       
+::::::::::::::::::::::::current action:::DUNK_P40_B0_T0
+
+          h:                        35            [1]
+          h:                        35  , h_  :   34       
+::::::::::::::::::::::::current action:::DUNK_P4_B0_T0
+
+          h:                        34            [1]
+          h:                        34  , h_  :   33       
+::::::::::::::::::::::::current action:::DUNK_P39_B0_T0
+
+          h:                        33            [1]
+          h:                        33  , h_  :   32       
+::::::::::::::::::::::::current action:::DUNK_P38_B0_T0
+
+          h:                        32            [1]
+          h:                        32  , h_  :   31       
+::::::::::::::::::::::::current action:::DUNK_P37_B0_T0
+
+          h:                        31            [1]
+          h:                        31  , h_  :   30       
+::::::::::::::::::::::::current action:::DUNK_P36_B0_T0
+
+          h:                        30            [1]
+          h:                        30  , h_  :   29       
+::::::::::::::::::::::::current action:::DUNK_P35_B0_T0
+
+          h:                        29            [1]
+          h:                        29  , h_  :   28       
+::::::::::::::::::::::::current action:::DUNK_P34_B0_T0
+
+          h:                        28            [1]
+          h:                        28  , h_  :   27       
+::::::::::::::::::::::::current action:::DUNK_P33_B0_T0
+
+          h:                        27            [1]
+          h:                        27  , h_  :   26       
+::::::::::::::::::::::::current action:::DUNK_P32_B0_T0
+
+          h:                        26            [1]
+          h:                        26  , h_  :   25       
+::::::::::::::::::::::::current action:::DUNK_P31_B0_T0
+
+          h:                        25            [1]
+          h:                        25  , h_  :   24       
+::::::::::::::::::::::::current action:::DUNK_P30_B0_T0
+
+          h:                        24            [1]
+          h:                        24  , h_  :   23       
+::::::::::::::::::::::::current action:::DUNK_P3_B0_T0
+
+          h:                        23            [1]
+          h:                        23  , h_  :   22       
+::::::::::::::::::::::::current action:::DUNK_P29_B0_T0
+
+          h:                        22            [1]
+          h:                        22  , h_  :   21       
+::::::::::::::::::::::::current action:::DUNK_P28_B0_T0
+
+          h:                        21            [1]
+          h:                        21  , h_  :   20       
+::::::::::::::::::::::::current action:::DUNK_P27_B0_T0
+
+          h:                        20            [1]
+          h:                        20  , h_  :   19       
+::::::::::::::::::::::::current action:::DUNK_P26_B0_T0
+
+          h:                        19            [1]
+          h:                        19  , h_  :   18       
+::::::::::::::::::::::::current action:::DUNK_P25_B0_T0
+
+          h:                        18            [1]
+          h:                        18  , h_  :   17       
+::::::::::::::::::::::::current action:::DUNK_P24_B0_T0
+
+          h:                        17            [1]
+          h:                        17  , h_  :   16       
+::::::::::::::::::::::::current action:::DUNK_P23_B0_T0
+
+          h:                        16            [1]
+          h:                        16  , h_  :   15       
+::::::::::::::::::::::::current action:::DUNK_P22_B0_T0
+
+          h:                        15            [1]
+          h:                        15  , h_  :   14       
+::::::::::::::::::::::::current action:::DUNK_P21_B0_T0
+
+          h:                        14            [1]
+          h:                        14  , h_  :   13       
+::::::::::::::::::::::::current action:::DUNK_P20_B0_T0
+
+          h:                        13            [1]
+          h:                        13  , h_  :   12       
+::::::::::::::::::::::::current action:::DUNK_P2_B0_T0
+
+          h:                        12            [1]
+          h:                        12  , h_  :   11       
+::::::::::::::::::::::::current action:::DUNK_P19_B0_T0
+
+          h:                        11            [1]
+          h:                        11  , h_  :   10       
+::::::::::::::::::::::::current action:::DUNK_P18_B0_T0
+
+          h:                        10            [1]
+          h:                        10  , h_  :    9       
+::::::::::::::::::::::::current action:::DUNK_P17_B0_T0
+
+          h:                         9            [1]
+          h:                         9  , h_  :    8       
+::::::::::::::::::::::::current action:::DUNK_P16_B0_T0
+
+          h:                         8            [1]
+          h:                         8  , h_  :    7       
+::::::::::::::::::::::::current action:::DUNK_P15_B0_T0
+
+          h:                         7            [1]
+          h:                         7  , h_  :    6       
+::::::::::::::::::::::::current action:::DUNK_P14_B0_T0
+
+          h:                         6            [1]
+          h:                         6  , h_  :    5       
+::::::::::::::::::::::::current action:::DUNK_P13_B0_T0
+
+          h:                         5            [1]
+          h:                         5  , h_  :    4       
+::::::::::::::::::::::::current action:::DUNK_P12_B0_T0
+
+          h:                         4            [1]
+          h:                         4  , h_  :    3       
+::::::::::::::::::::::::current action:::DUNK_P11_B0_T0
+
+          h:                         3            [1]
+          h:                         3  , h_  :    2       
+::::::::::::::::::::::::current action:::DUNK_P10_B0_T0
+
+          h:                         2            [1]
+          h:                         2  , h_  :    1       
+::::::::::::::::::::::::current action:::DUNK_P1_B0_T0
+
+          h:                         1            [1]
+          h:                         1  , h_  :    0       
+::::::::::::::::::::::::current action:::DUNK_P0_B0_T0
+
+Goal reached in a branch 
+root
+
+
+ff: found legal plan as follows
+
+Total branches in this plan: 1 
+Longest branch: 70
+Total spurious branches in this plan: 0
+Total number of actions: 70
+
+
+time spent:   23.88 seconds instantiating 10090 easy, 0 hard action templates
+               0.04 seconds reachability analysis, yielding 10510 facts and 10090 actions
+               0.08 seconds creating final representation with 5609 relevant facts
+               0.88 seconds building connectivity graph
+               0.20 seconds computing closures operations
+               1.36 seconds searching, evaluating 211 states, expanding 70 nodes, to a max depth of 1
+              26.24 seconds total time
+
+
+

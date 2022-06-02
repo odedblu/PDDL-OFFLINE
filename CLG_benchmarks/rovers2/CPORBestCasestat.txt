@@ -1,0 +1,48 @@
+120) navigate_rover0_waypoint3_waypoint1_camera0_objective1
+121) calibrate_rover0_camera0_objective1_waypoint1
+122) sense_vis_rover0_objective1_waypoint1
+	123) navigate_rover0_waypoint1_waypoint3_camera0_objective1
+	124) navigate_rover0_waypoint3_waypoint0_camera0_objective1
+	125) calibrate_rover0_camera0_objective1_waypoint0
+	126) take_image_rover0_waypoint0_objective1_camera0_high_res
+	127) navigate_rover0_waypoint0_waypoint3_camera0_objective1
+	128) communicate_image_data_rover0_general_objective1_high_res_waypoint3_waypoint0
+
+	131) take_image_rover0_waypoint1_objective1_camera0_high_res
+	132) communicate_image_data_rover0_general_objective1_high_res_waypoint1_waypoint0
+
+Goals 
+#5 :  , (visible_from objective1 waypoint1) , (not (visible_from objective1 waypoint0))
+9 :  , (not (visible_from objective1 waypoint1)) , (visible_from objective1 waypoint0)
+#
+Union Goals Budget
+#5 :  , (visible_from objective1 waypoint1) , (not (visible_from objective1 waypoint0))
+9 :  , (not (visible_from objective1 waypoint1)) , (visible_from objective1 waypoint0)
+9 : 
+#
+
+
+
+Goals Fault Tolerance
+#1 : 0 :  , (visible_from objective1 waypoint1) , (not (visible_from objective1 waypoint0))
+1 : 1 :  , (not (visible_from objective1 waypoint1)) , (visible_from objective1 waypoint0)
+#
+
+
+
+Goals Fault Tolerance
+##
+
+
+
+Simplicitity
+#nodes: 11
+branch: 1
+originalSize: 35
+compreesedSize: 52
+compreesedRatio: 0.673076923076923#
+
+
+
+Simplicitity
+#

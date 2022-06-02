@@ -1,0 +1,461 @@
+384) move_p1-1_p1-2
+385) move_p1-2_p1-3
+386) activate-sensor-at-p1-3-h0
+387) observe-sensor
+	388) move_p1-3_p2-3
+	389) move_p2-3_p2-2
+	390) move_p2-2_p2-1
+	391) activate-sensor-at-p2-1-h0
+	392) observe-sensor
+		393) move_p2-1_p2-2
+		394) move_p2-2_p2-3
+		395) move_p2-3_p2-4
+		396) move_p2-4_p2-5
+		397) move_p2-5_p2-6
+		398) move_p2-6_p2-7
+		399) move_p2-7_p2-8
+		400) activate-sensor-at-p2-8-h0
+		401) observe-sensor
+			402) move_p2-8_p2-7
+			403) move_p2-7_p2-6
+			404) move_p2-6_p2-5
+			405) move_p2-5_p2-4
+			406) move_p2-4_p3-4
+			407) move_p3-4_p4-4
+			408) move_p4-4_p5-4
+			409) move_p5-4_p6-4
+			410) move_p6-4_p7-4
+			411) activate-sensor-at-p7-4-h0
+			412) observe-sensor
+				413) move_p7-4_p7-3
+				414) move_p7-3_p7-2
+				415) move_p7-2_p7-1
+				416) activate-sensor-at-p7-1-h0
+				417) observe-sensor
+
+					420) sample_r4_p7-1
+
+				423) sample_r0_p7-4
+				424) move_p7-4_p7-3
+				425) move_p7-3_p7-2
+				426) move_p7-2_p7-1
+				427) activate-sensor-at-p7-1-h0
+				428) observe-sensor
+
+					431) sample_r4_p7-1
+
+			434) sample_r1_p2-8
+			435) move_p2-8_p3-8
+			436) move_p3-8_p4-8
+			437) move_p4-8_p5-8
+			438) move_p5-8_p6-8
+			439) move_p6-8_p7-8
+			440) move_p7-8_p7-7
+			441) move_p7-7_p7-6
+			442) move_p7-6_p7-5
+			443) move_p7-5_p7-4
+			444) activate-sensor-at-p7-4-h0
+			445) observe-sensor
+				446) move_p7-4_p7-3
+				447) move_p7-3_p7-2
+				448) move_p7-2_p7-1
+				449) activate-sensor-at-p7-1-h0
+				450) observe-sensor
+
+					453) sample_r4_p7-1
+
+				456) sample_r0_p7-4
+				457) move_p7-4_p7-3
+				458) move_p7-3_p7-2
+				459) move_p7-2_p7-1
+				460) activate-sensor-at-p7-1-h0
+				461) observe-sensor
+
+					464) sample_r4_p7-1
+
+		467) sample_r3_p2-1
+		468) move_p2-1_p3-1
+		469) move_p3-1_p4-1
+		470) move_p4-1_p5-1
+		471) move_p5-1_p6-1
+		472) move_p6-1_p7-1
+		473) move_p7-1_p7-2
+		474) move_p7-2_p7-3
+		475) move_p7-3_p7-4
+		476) activate-sensor-at-p7-4-h0
+		477) observe-sensor
+			478) move_p7-4_p7-3
+			479) move_p7-3_p7-2
+			480) move_p7-2_p7-1
+			481) activate-sensor-at-p7-1-h0
+			482) observe-sensor
+				483) move_p7-1_p6-1
+				484) move_p6-1_p5-1
+				485) move_p5-1_p4-1
+				486) move_p4-1_p3-1
+				487) move_p3-1_p2-1
+				488) move_p2-1_p2-2
+				489) move_p2-2_p2-3
+				490) move_p2-3_p2-4
+				491) move_p2-4_p2-5
+				492) move_p2-5_p2-6
+				493) move_p2-6_p2-7
+				494) move_p2-7_p2-8
+				495) activate-sensor-at-p2-8-h0
+				496) observe-sensor
+
+					499) sample_r1_p2-8
+
+				502) sample_r4_p7-1
+				503) move_p7-1_p6-1
+				504) move_p6-1_p5-1
+				505) move_p5-1_p4-1
+				506) move_p4-1_p3-1
+				507) move_p3-1_p2-1
+				508) move_p2-1_p2-2
+				509) move_p2-2_p2-3
+				510) move_p2-3_p2-4
+				511) move_p2-4_p2-5
+				512) move_p2-5_p2-6
+				513) move_p2-6_p2-7
+				514) move_p2-7_p2-8
+				515) activate-sensor-at-p2-8-h0
+				516) observe-sensor
+
+					519) sample_r1_p2-8
+
+			522) sample_r0_p7-4
+			523) move_p7-4_p7-3
+			524) move_p7-3_p7-2
+			525) move_p7-2_p7-1
+			526) activate-sensor-at-p7-1-h0
+			527) observe-sensor
+				528) move_p7-1_p6-1
+				529) move_p6-1_p5-1
+				530) move_p5-1_p4-1
+				531) move_p4-1_p3-1
+				532) move_p3-1_p2-1
+				533) move_p2-1_p2-2
+				534) move_p2-2_p2-3
+				535) move_p2-3_p2-4
+				536) move_p2-4_p2-5
+				537) move_p2-5_p2-6
+				538) move_p2-6_p2-7
+				539) move_p2-7_p2-8
+				540) activate-sensor-at-p2-8-h0
+				541) observe-sensor
+
+					544) sample_r1_p2-8
+
+				547) sample_r4_p7-1
+				548) move_p7-1_p6-1
+				549) move_p6-1_p5-1
+				550) move_p5-1_p4-1
+				551) move_p4-1_p3-1
+				552) move_p3-1_p2-1
+				553) move_p2-1_p2-2
+				554) move_p2-2_p2-3
+				555) move_p2-3_p2-4
+				556) move_p2-4_p2-5
+				557) move_p2-5_p2-6
+				558) move_p2-6_p2-7
+				559) move_p2-7_p2-8
+				560) activate-sensor-at-p2-8-h0
+				561) observe-sensor
+
+					564) sample_r1_p2-8
+
+	567) sample_r2_p1-3
+	568) move_p1-3_p2-3
+	569) move_p2-3_p2-2
+	570) move_p2-2_p2-1
+	571) activate-sensor-at-p2-1-h0
+	572) observe-sensor
+		573) move_p2-1_p2-2
+		574) move_p2-2_p2-3
+		575) move_p2-3_p2-4
+		576) move_p2-4_p2-5
+		577) move_p2-5_p2-6
+		578) move_p2-6_p2-7
+		579) move_p2-7_p2-8
+		580) activate-sensor-at-p2-8-h0
+		581) observe-sensor
+			582) move_p2-8_p2-7
+			583) move_p2-7_p2-6
+			584) move_p2-6_p2-5
+			585) move_p2-5_p2-4
+			586) move_p2-4_p3-4
+			587) move_p3-4_p4-4
+			588) move_p4-4_p5-4
+			589) move_p5-4_p6-4
+			590) move_p6-4_p7-4
+			591) activate-sensor-at-p7-4-h0
+			592) observe-sensor
+				593) move_p7-4_p7-3
+				594) move_p7-3_p7-2
+				595) move_p7-2_p7-1
+				596) activate-sensor-at-p7-1-h0
+				597) observe-sensor
+
+					600) sample_r4_p7-1
+
+				603) sample_r0_p7-4
+				604) move_p7-4_p7-3
+				605) move_p7-3_p7-2
+				606) move_p7-2_p7-1
+				607) activate-sensor-at-p7-1-h0
+				608) observe-sensor
+
+					611) sample_r4_p7-1
+
+			614) sample_r1_p2-8
+			615) move_p2-8_p3-8
+			616) move_p3-8_p4-8
+			617) move_p4-8_p5-8
+			618) move_p5-8_p6-8
+			619) move_p6-8_p7-8
+			620) move_p7-8_p7-7
+			621) move_p7-7_p7-6
+			622) move_p7-6_p7-5
+			623) move_p7-5_p7-4
+			624) activate-sensor-at-p7-4-h0
+			625) observe-sensor
+				626) move_p7-4_p7-3
+				627) move_p7-3_p7-2
+				628) move_p7-2_p7-1
+				629) activate-sensor-at-p7-1-h0
+				630) observe-sensor
+
+					633) sample_r4_p7-1
+
+				636) sample_r0_p7-4
+				637) move_p7-4_p7-3
+				638) move_p7-3_p7-2
+				639) move_p7-2_p7-1
+				640) activate-sensor-at-p7-1-h0
+				641) observe-sensor
+
+					644) sample_r4_p7-1
+
+		647) sample_r3_p2-1
+		648) move_p2-1_p2-2
+		649) move_p2-2_p2-3
+		650) move_p2-3_p2-4
+		651) move_p2-4_p2-5
+		652) move_p2-5_p2-6
+		653) move_p2-6_p2-7
+		654) move_p2-7_p2-8
+		655) activate-sensor-at-p2-8-h0
+		656) observe-sensor
+			657) move_p2-8_p2-7
+			658) move_p2-7_p2-6
+			659) move_p2-6_p2-5
+			660) move_p2-5_p2-4
+			661) move_p2-4_p3-4
+			662) move_p3-4_p4-4
+			663) move_p4-4_p5-4
+			664) move_p5-4_p6-4
+			665) move_p6-4_p7-4
+			666) activate-sensor-at-p7-4-h0
+			667) observe-sensor
+				668) move_p7-4_p7-3
+				669) move_p7-3_p7-2
+				670) move_p7-2_p7-1
+				671) activate-sensor-at-p7-1-h0
+				672) observe-sensor
+
+					675) sample_r4_p7-1
+
+				678) sample_r0_p7-4
+				679) move_p7-4_p7-3
+				680) move_p7-3_p7-2
+				681) move_p7-2_p7-1
+				682) activate-sensor-at-p7-1-h0
+				683) observe-sensor
+
+					686) sample_r4_p7-1
+
+			689) sample_r1_p2-8
+			690) move_p2-8_p2-7
+			691) move_p2-7_p2-6
+			692) move_p2-6_p2-5
+			693) move_p2-5_p2-4
+			694) move_p2-4_p3-4
+			695) move_p3-4_p4-4
+			696) move_p4-4_p5-4
+			697) move_p5-4_p6-4
+			698) move_p6-4_p7-4
+			699) activate-sensor-at-p7-4-h0
+			700) observe-sensor
+				701) move_p7-4_p7-3
+				702) move_p7-3_p7-2
+				703) move_p7-2_p7-1
+				704) activate-sensor-at-p7-1-h0
+				705) observe-sensor
+
+					708) sample_r4_p7-1
+
+				711) sample_r0_p7-4
+				712) move_p7-4_p7-3
+				713) move_p7-3_p7-2
+				714) move_p7-2_p7-1
+				715) activate-sensor-at-p7-1-h0
+				716) observe-sensor
+
+					719) sample_r4_p7-1
+
+Goals 
+#39 :  , (good r4) , (good r0) , (good r1) , (good r3) , (good-rocks-in-range ) , (good r2)
+38 :  , (good r0) , (good r1) , (good r3) , (good-rocks-in-range ) , (good r2)
+38 :  , (not (good r0)) , (good r4) , (good r1) , (good r3) , (good-rocks-in-range ) , (good r2)
+37 :  , (good r1) , (not (good r0)) , (good r3) , (good-rocks-in-range ) , (good r2)
+38 :  , (good r4) , (not (good r1)) , (good r0) , (good r3) , (good-rocks-in-range ) , (good r2)
+37 :  , (not (good r1)) , (good r0) , (good r3) , (good-rocks-in-range ) , (good r2)
+37 :  , (not (good r0)) , (good r4) , (good r3) , (not (good r1)) , (good-rocks-in-range ) , (good r2)
+36 :  , (good r3) , (not (good r0)) , (not (good r1)) , (good-rocks-in-range ) , (good r2)
+38 :  , (good r4) , (good r0) , (not (good r3)) , (good r1) , (good-rocks-in-range ) , (good r2)
+37 :  , (good r0) , (not (good r3)) , (good r1) , (good-rocks-in-range ) , (good r2)
+37 :  , (not (good r0)) , (good r4) , (not (good r3)) , (good r1) , (good-rocks-in-range ) , (good r2)
+36 :  , (good r1) , (not (good r0)) , (good r2) , (not (good r3))
+37 :  , (good r4) , (not (good r1)) , (good r0) , (good r2) , (not (good r3))
+36 :  , (not (good r1)) , (good r0) , (good r2) , (not (good r3))
+36 :  , (not (good r0)) , (good r4) , (good r2) , (not (good r1)) , (not (good r3))
+35 :  , (good r2) , (not (good r0)) , (not (good r1)) , (not (good r3))
+42 :  , (good r1) , (good r4) , (good r0) , (not (good r2)) , (good r3)
+41 :  , (good r4) , (good r0) , (not (good r2)) , (good r3)
+41 :  , (not (good r4)) , (good r1) , (good r0) , (not (good r2)) , (good r3)
+40 :  , (good r0) , (not (good r4)) , (not (good r2)) , (good r3)
+41 :  , (good r1) , (not (good r0)) , (good r4) , (not (good r2)) , (good r3)
+40 :  , (not (good r0)) , (good r4) , (not (good r2)) , (good r3)
+40 :  , (not (good r4)) , (good r1) , (good r3) , (not (good r0)) , (not (good-rocks-in-range )) , (not (good r2))
+39 :  , (good r3) , (not (good r4)) , (not (good r0)) , (not (good-rocks-in-range )) , (not (good r2))
+37 :  , (good r4) , (good r0) , (not (good r3)) , (good r1) , (not (good-rocks-in-range )) , (not (good r2))
+36 :  , (good r0) , (not (good r3)) , (good r1) , (not (good-rocks-in-range )) , (not (good r2))
+36 :  , (not (good r0)) , (good r4) , (not (good r3)) , (good r1) , (not (good-rocks-in-range )) , (not (good r2))
+35 :  , (good r1) , (not (good r0)) , (not (good-rocks-in-range )) , (not (good r3)) , (not (good r2))
+36 :  , (good r4) , (not (good r1)) , (good r0) , (not (good-rocks-in-range )) , (not (good r3)) , (not (good r2))
+35 :  , (not (good r1)) , (good r0) , (not (good-rocks-in-range )) , (not (good r3)) , (not (good r2))
+35 :  , (not (good r0)) , (good r4) , (not (good-rocks-in-range )) , (not (good r1)) , (not (good r3)) , (not (good r2))
+34 :  , (not (good-rocks-in-range )) , (not (good r0)) , (not (good r1)) , (not (good r3)) , (not (good r2))
+#
+Union Goals Budget
+#39 :  , (good r4) , (good r0) , (good r1) , (good r3) , (good-rocks-in-range ) , (good r2)
+38 :  , (good r0) , (good r1) , (good r3) , (good-rocks-in-range ) , (good r2)
+39 :  , (good r0) , (good r1) , (good r3) , (good-rocks-in-range ) , (good r2)
+38 :  , (not (good r0)) , (good r4) , (good r1) , (good r3) , (good-rocks-in-range ) , (good r2)
+37 :  , (good r1) , (not (good r0)) , (good r3) , (good-rocks-in-range ) , (good r2)
+38 :  , (good r1) , (not (good r0)) , (good r3) , (good-rocks-in-range ) , (good r2)
+39 :  , (good r1) , (good r3) , (good-rocks-in-range ) , (good r2)
+38 :  , (good r4) , (not (good r1)) , (good r0) , (good r3) , (good-rocks-in-range ) , (good r2)
+37 :  , (not (good r1)) , (good r0) , (good r3) , (good-rocks-in-range ) , (good r2)
+38 :  , (not (good r1)) , (good r0) , (good r3) , (good-rocks-in-range ) , (good r2)
+37 :  , (not (good r0)) , (good r4) , (good r3) , (not (good r1)) , (good-rocks-in-range ) , (good r2)
+36 :  , (good r3) , (not (good r0)) , (not (good r1)) , (good-rocks-in-range ) , (good r2)
+37 :  , (good r3) , (not (good r0)) , (not (good r1)) , (good-rocks-in-range ) , (good r2)
+38 :  , (good r3) , (not (good r1)) , (good-rocks-in-range ) , (good r2)
+39 :  , (good r3) , (good-rocks-in-range ) , (good r2)
+38 :  , (good r4) , (good r0) , (not (good r3)) , (good r1) , (good-rocks-in-range ) , (good r2)
+37 :  , (good r0) , (not (good r3)) , (good r1) , (good-rocks-in-range ) , (good r2)
+38 :  , (good r0) , (not (good r3)) , (good r1) , (good-rocks-in-range ) , (good r2)
+37 :  , (not (good r0)) , (good r4) , (not (good r3)) , (good r1) , (good-rocks-in-range ) , (good r2)
+36 :  , (good r1) , (not (good r0)) , (good r2) , (not (good r3))
+37 :  , (good r1) , (not (good r0)) , (good r2) , (not (good r3))
+38 :  , (not (good r3)) , (good r1) , (good-rocks-in-range ) , (good r2)
+37 :  , (good r4) , (not (good r1)) , (good r0) , (good r2) , (not (good r3))
+36 :  , (not (good r1)) , (good r0) , (good r2) , (not (good r3))
+37 :  , (not (good r1)) , (good r0) , (good r2) , (not (good r3))
+36 :  , (not (good r0)) , (good r4) , (good r2) , (not (good r1)) , (not (good r3))
+35 :  , (good r2) , (not (good r0)) , (not (good r1)) , (not (good r3))
+36 :  , (good r2) , (not (good r0)) , (not (good r1)) , (not (good r3))
+37 :  , (good r2) , (not (good r1)) , (not (good r3))
+38 :  , (good r2) , (not (good r3))
+39 :  , (good-rocks-in-range ) , (good r2)
+42 :  , (good r1) , (good r4) , (good r0) , (not (good r2)) , (good r3)
+41 :  , (good r4) , (good r0) , (not (good r2)) , (good r3)
+42 :  , (good r4) , (good r0) , (not (good r2)) , (good r3)
+41 :  , (not (good r4)) , (good r1) , (good r0) , (not (good r2)) , (good r3)
+40 :  , (good r0) , (not (good r4)) , (not (good r2)) , (good r3)
+41 :  , (good r0) , (not (good r4)) , (not (good r2)) , (good r3)
+42 :  , (good r0) , (not (good r2)) , (good r3)
+41 :  , (good r1) , (not (good r0)) , (good r4) , (not (good r2)) , (good r3)
+40 :  , (not (good r0)) , (good r4) , (not (good r2)) , (good r3)
+41 :  , (not (good r0)) , (good r4) , (not (good r2)) , (good r3)
+40 :  , (not (good r4)) , (good r1) , (good r3) , (not (good r0)) , (not (good-rocks-in-range )) , (not (good r2))
+39 :  , (good r3) , (not (good r4)) , (not (good r0)) , (not (good-rocks-in-range )) , (not (good r2))
+40 :  , (good r3) , (not (good r4)) , (not (good r0)) , (not (good-rocks-in-range )) , (not (good r2))
+41 :  , (good r3) , (not (good r0)) , (not (good-rocks-in-range )) , (not (good r2))
+42 :  , (not (good r2)) , (good r3)
+37 :  , (good r4) , (good r0) , (not (good r3)) , (good r1) , (not (good-rocks-in-range )) , (not (good r2))
+36 :  , (good r0) , (not (good r3)) , (good r1) , (not (good-rocks-in-range )) , (not (good r2))
+37 :  , (good r0) , (not (good r3)) , (good r1) , (not (good-rocks-in-range )) , (not (good r2))
+36 :  , (not (good r0)) , (good r4) , (not (good r3)) , (good r1) , (not (good-rocks-in-range )) , (not (good r2))
+35 :  , (good r1) , (not (good r0)) , (not (good-rocks-in-range )) , (not (good r3)) , (not (good r2))
+36 :  , (good r1) , (not (good r0)) , (not (good-rocks-in-range )) , (not (good r3)) , (not (good r2))
+37 :  , (not (good r3)) , (good r1) , (not (good-rocks-in-range )) , (not (good r2))
+36 :  , (good r4) , (not (good r1)) , (good r0) , (not (good-rocks-in-range )) , (not (good r3)) , (not (good r2))
+35 :  , (not (good r1)) , (good r0) , (not (good-rocks-in-range )) , (not (good r3)) , (not (good r2))
+36 :  , (not (good r1)) , (good r0) , (not (good-rocks-in-range )) , (not (good r3)) , (not (good r2))
+35 :  , (not (good r0)) , (good r4) , (not (good-rocks-in-range )) , (not (good r1)) , (not (good r3)) , (not (good r2))
+34 :  , (not (good-rocks-in-range )) , (not (good r0)) , (not (good r1)) , (not (good r3)) , (not (good r2))
+35 :  , (not (good-rocks-in-range )) , (not (good r0)) , (not (good r1)) , (not (good r3)) , (not (good r2))
+36 :  , (not (good-rocks-in-range )) , (not (good r1)) , (not (good r3)) , (not (good r2))
+37 :  , (not (good-rocks-in-range )) , (not (good r3)) , (not (good r2))
+42 :  , (not (good-rocks-in-range )) , (not (good r2))
+42 : 
+#
+
+
+
+Goals Fault Tolerance
+#5 : 0 :  , (good r4) , (good r0) , (good r1) , (good r3) , (good-rocks-in-range ) , (good r2)
+5 : 1 :  , (good r0) , (good r1) , (good r3) , (good-rocks-in-range ) , (good r2)
+5 : 1 :  , (not (good r0)) , (good r4) , (good r1) , (good r3) , (good-rocks-in-range ) , (good r2)
+5 : 2 :  , (good r1) , (not (good r0)) , (good r3) , (good-rocks-in-range ) , (good r2)
+5 : 1 :  , (good r4) , (not (good r1)) , (good r0) , (good r3) , (good-rocks-in-range ) , (good r2)
+5 : 2 :  , (not (good r1)) , (good r0) , (good r3) , (good-rocks-in-range ) , (good r2)
+5 : 2 :  , (not (good r0)) , (good r4) , (good r3) , (not (good r1)) , (good-rocks-in-range ) , (good r2)
+5 : 3 :  , (good r3) , (not (good r0)) , (not (good r1)) , (good-rocks-in-range ) , (good r2)
+5 : 1 :  , (good r4) , (good r0) , (not (good r3)) , (good r1) , (good-rocks-in-range ) , (good r2)
+5 : 2 :  , (good r0) , (not (good r3)) , (good r1) , (good-rocks-in-range ) , (good r2)
+5 : 2 :  , (not (good r0)) , (good r4) , (not (good r3)) , (good r1) , (good-rocks-in-range ) , (good r2)
+5 : 3 :  , (good r1) , (not (good r0)) , (good r2) , (not (good r3))
+5 : 2 :  , (good r4) , (not (good r1)) , (good r0) , (good r2) , (not (good r3))
+5 : 3 :  , (not (good r1)) , (good r0) , (good r2) , (not (good r3))
+5 : 3 :  , (not (good r0)) , (good r4) , (good r2) , (not (good r1)) , (not (good r3))
+5 : 4 :  , (good r2) , (not (good r0)) , (not (good r1)) , (not (good r3))
+5 : 1 :  , (good r1) , (good r4) , (good r0) , (not (good r2)) , (good r3)
+5 : 2 :  , (good r4) , (good r0) , (not (good r2)) , (good r3)
+5 : 2 :  , (not (good r4)) , (good r1) , (good r0) , (not (good r2)) , (good r3)
+5 : 3 :  , (good r0) , (not (good r4)) , (not (good r2)) , (good r3)
+5 : 2 :  , (good r1) , (not (good r0)) , (good r4) , (not (good r2)) , (good r3)
+5 : 3 :  , (not (good r0)) , (good r4) , (not (good r2)) , (good r3)
+5 : 3 :  , (not (good r4)) , (good r1) , (good r3) , (not (good r0)) , (not (good-rocks-in-range )) , (not (good r2))
+5 : 4 :  , (good r3) , (not (good r4)) , (not (good r0)) , (not (good-rocks-in-range )) , (not (good r2))
+5 : 2 :  , (good r4) , (good r0) , (not (good r3)) , (good r1) , (not (good-rocks-in-range )) , (not (good r2))
+5 : 3 :  , (good r0) , (not (good r3)) , (good r1) , (not (good-rocks-in-range )) , (not (good r2))
+5 : 3 :  , (not (good r0)) , (good r4) , (not (good r3)) , (good r1) , (not (good-rocks-in-range )) , (not (good r2))
+5 : 4 :  , (good r1) , (not (good r0)) , (not (good-rocks-in-range )) , (not (good r3)) , (not (good r2))
+5 : 3 :  , (good r4) , (not (good r1)) , (good r0) , (not (good-rocks-in-range )) , (not (good r3)) , (not (good r2))
+5 : 4 :  , (not (good r1)) , (good r0) , (not (good-rocks-in-range )) , (not (good r3)) , (not (good r2))
+5 : 4 :  , (not (good r0)) , (good r4) , (not (good-rocks-in-range )) , (not (good r1)) , (not (good r3)) , (not (good r2))
+5 : 5 :  , (not (good-rocks-in-range )) , (not (good r0)) , (not (good r1)) , (not (good r3)) , (not (good r2))
+#
+
+
+
+Goals Fault Tolerance
+##
+
+
+
+Simplicitity
+#nodes: 274
+branch: 31
+originalSize: 1047
+compreesedSize: 168
+compreesedRatio: 6.23214285714286#
+
+
+
+Simplicitity
+#

@@ -1,0 +1,36 @@
+Budget 4: Equal Trees
+Budget 5: Equal Trees
+Budget 6: Equal Trees
+Budget 7: Equal Trees
+Budget 8: Equal Trees
+Budget 9: Equal Trees
+Budget 10: Equal Trees
+Budget 11: Equal Trees
+Budget 12: Equal Trees
+Budget 13: Equal Trees
+Budget 14: Equal Trees
+Budget 15: Equal Trees
+Budget 16: Equal Trees
+Budget 17: Equal Trees
+Budget 18: Equal Trees
+Budget 19: Equal Trees
+Budget 20: Equal Trees
+Budget 21: Equal Trees
+Budget 22: Equal Trees
+Budget 23: Equal Trees
+Budget 24: Equal Trees
+Budget 25: Equal Trees
+Budget 26: Equal Trees
+Budget 27: Equal Trees
+Budget 28: Equal Trees
+Budget 29: Tree CPORBestCase is better than Tree CLG
+Budget 30: Can not compare the trees 
+Budget 31: Can not compare the trees 
+Budget 32: Can not compare the trees 
+Budget 33: Can not compare the trees 
+Budget 34: Can not compare the trees 
+Budget 35: Can not compare the trees 
+Budget 36: Can not compare the trees 
+Budget 37: Tree CPORBestCase is better than Tree CLG
+Budget 38: Tree CPORBestCase is better than Tree CLG
+Budget 39: Equal Trees

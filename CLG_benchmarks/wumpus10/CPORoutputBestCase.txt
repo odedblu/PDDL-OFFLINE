@@ -1,0 +1,2702 @@
+0) move_p1-1_p1-2
+1) move_p1-2_p1-3
+2) move_p1-3_p1-4
+3) move_p1-4_p2-4
+4) move_p2-4_p2-5
+5) move_p2-5_p3-5
+6) move_p3-5_p3-6
+7) move_p3-6_p4-6
+8) move_p4-6_p4-7
+9) move_p4-7_p5-7
+10) move_p5-7_p5-8
+11) move_p5-8_p6-8
+12) move_p6-8_p6-9
+13) move_p6-9_p7-9
+14) move_p7-9_p7-10
+15) move_p7-10_p8-10
+16) smell_wumpus_p8-10
+branching...
+	19) feel-breeze_p8-10
+branching...
+		24) move_p8-10_p9-10
+		27) move_p9-10_p10-10
+		28) grab_p10-10
+)goal
+		23) move_p8-10_p7-10
+		30) move_p7-10_p7-9
+		31) feel-breeze_p7-9
+branching...
+			34) move_p7-9_p8-9
+			37) move_p8-9_p9-9
+			38) move_p9-9_p10-9
+			39) move_p10-9_p10-10
+)connect to 28
+			33) smell_wumpus_p7-9
+branching...
+				43) move_p7-9_p6-9
+				448) move_p6-9_p6-8
+				449) smell_wumpus_p6-8
+branching...
+					452) feel-breeze_p6-8
+branching...
+						457) move_p6-8_p7-8
+						460) move_p7-8_p8-8
+						461) move_p8-8_p9-8
+						65) move_p9-8_p9-9
+						66) smell_wumpus_p9-9
+branching...
+							70) move_p9-9_p9-8
+							74) move_p9-8_p10-8
+							75) feel-breeze_p10-8
+branching...
+								78) move_p10-8_p10-9
+)connect to 39
+								77) move_p10-8_p9-8
+								82) move_p9-8_p9-9
+								69) move_p9-9_p9-10
+)connect to 27
+)connect to 69
+						456) move_p6-8_p5-8
+						464) move_p5-8_p5-7
+						465) smell_wumpus_p5-7
+branching...
+							468) feel-breeze_p5-7
+branching...
+								234) move_p5-7_p6-7
+								237) move_p6-7_p7-7
+								238) move_p7-7_p8-7
+								239) move_p8-7_p9-7
+								240) move_p9-7_p10-7
+								241) move_p10-7_p10-8
+								242) smell_wumpus_p10-8
+branching...
+									245) feel-breeze_p10-8
+branching...
+)connect to 78
+										249) move_p10-8_p10-7
+										253) move_p10-7_p9-7
+										254) feel-breeze_p9-7
+branching...
+											257) move_p9-7_p9-8
+)connect to 82
+											256) move_p9-7_p10-7
+											261) move_p10-7_p10-8
+)connect to 78
+									244) feel-breeze_p10-8
+branching...
+										265) move_p10-8_p10-7
+										268) move_p10-7_p9-7
+										269) smell_wumpus_p9-7
+branching...
+)connect to 257
+)connect to 256
+)connect to 249
+								472) move_p5-7_p4-7
+								476) move_p4-7_p4-6
+								477) smell_wumpus_p4-6
+branching...
+									480) feel-breeze_p4-6
+branching...
+										485) move_p4-6_p5-6
+										488) move_p5-6_p6-6
+										489) move_p6-6_p7-6
+										490) move_p7-6_p8-6
+										491) move_p8-6_p9-6
+										492) move_p9-6_p9-7
+										493) move_p9-7_p10-7
+										494) move_p10-7_p10-8
+										495) smell_wumpus_p10-8
+branching...
+											498) feel-breeze_p10-8
+branching...
+)connect to 78
+												502) move_p10-8_p10-7
+												506) move_p10-7_p9-7
+												507) feel-breeze_p9-7
+branching...
+)connect to 257
+													509) smell_wumpus_p9-7
+branching...
+														515) move_p9-7_p9-6
+														518) move_p9-6_p8-6
+														519) feel-breeze_p8-6
+branching...
+															522) move_p8-6_p9-6
+															525) move_p9-6_p10-6
+															526) move_p10-6_p10-7
+)connect to 261
+															521) move_p8-6_p9-6
+															528) move_p9-6_p9-7
+)connect to 257
+)connect to 257
+											497) feel-breeze_p10-8
+branching...
+												532) move_p10-8_p10-7
+												535) move_p10-7_p9-7
+												536) smell_wumpus_p9-7
+branching...
+)connect to 257
+													538) feel-breeze_p9-7
+branching...
+														544) move_p9-7_p9-6
+														547) move_p9-6_p8-6
+														548) smell_wumpus_p8-6
+branching...
+)connect to 522
+)connect to 521
+)connect to 257
+												531) move_p10-8_p10-7
+												554) move_p10-7_p9-7
+												555) smell_wumpus_p9-7
+branching...
+)connect to 257
+)connect to 544
+										484) move_p4-6_p3-6
+										561) move_p3-6_p3-5
+										562) smell_wumpus_p3-5
+branching...
+											565) feel-breeze_p3-5
+branching...
+												570) move_p3-5_p4-5
+												573) move_p4-5_p5-5
+												574) move_p5-5_p6-5
+												575) move_p6-5_p7-5
+												576) move_p7-5_p8-5
+												577) move_p8-5_p8-6
+												578) move_p8-6_p9-6
+												579) move_p9-6_p9-7
+												580) move_p9-7_p10-7
+												581) move_p10-7_p10-8
+												582) smell_wumpus_p10-8
+branching...
+													585) feel-breeze_p10-8
+branching...
+)connect to 78
+														589) move_p10-8_p10-7
+														593) move_p10-7_p9-7
+														594) feel-breeze_p9-7
+branching...
+)connect to 257
+															596) smell_wumpus_p9-7
+branching...
+																602) move_p9-7_p9-6
+																605) move_p9-6_p8-6
+																606) smell_wumpus_p8-6
+branching...
+																	609) feel-breeze_p8-6
+branching...
+)connect to 522
+																		613) move_p8-6_p8-5
+																		617) move_p8-5_p7-5
+																		618) feel-breeze_p7-5
+branching...
+																			621) move_p7-5_p8-5
+																			624) move_p8-5_p9-5
+																			625) move_p9-5_p9-6
+)connect to 528
+																			620) move_p7-5_p8-5
+																			627) move_p8-5_p8-6
+)connect to 522
+)connect to 522
+)connect to 257
+													584) feel-breeze_p10-8
+branching...
+														631) move_p10-8_p10-7
+														634) move_p10-7_p9-7
+														635) smell_wumpus_p9-7
+branching...
+)connect to 257
+															637) feel-breeze_p9-7
+branching...
+																643) move_p9-7_p9-6
+																646) move_p9-6_p8-6
+																647) smell_wumpus_p8-6
+branching...
+)connect to 522
+																	649) move_p8-6_p8-5
+																	653) move_p8-5_p7-5
+																	654) smell_wumpus_p7-5
+branching...
+)connect to 621
+)connect to 620
+)connect to 257
+														630) move_p10-8_p10-7
+														660) move_p10-7_p9-7
+														661) smell_wumpus_p9-7
+branching...
+)connect to 257
+)connect to 643
+												569) move_p3-5_p2-5
+												667) move_p2-5_p2-4
+												668) smell_wumpus_p2-4
+branching...
+													671) feel-breeze_p2-4
+branching...
+														676) move_p2-4_p3-4
+														679) move_p3-4_p4-4
+														680) move_p4-4_p5-4
+														681) move_p5-4_p6-4
+														682) move_p6-4_p7-4
+														683) move_p7-4_p7-5
+														684) move_p7-5_p8-5
+														685) move_p8-5_p8-6
+														686) move_p8-6_p9-6
+														687) move_p9-6_p9-7
+														688) move_p9-7_p10-7
+														689) move_p10-7_p10-8
+														690) smell_wumpus_p10-8
+branching...
+															693) feel-breeze_p10-8
+branching...
+)connect to 78
+																697) move_p10-8_p10-7
+																701) move_p10-7_p9-7
+																702) feel-breeze_p9-7
+branching...
+)connect to 257
+																	704) smell_wumpus_p9-7
+branching...
+																		710) move_p9-7_p9-6
+																		713) move_p9-6_p8-6
+																		714) smell_wumpus_p8-6
+branching...
+																			717) feel-breeze_p8-6
+branching...
+)connect to 522
+																				721) move_p8-6_p8-5
+																				725) move_p8-5_p7-5
+																				726) smell_wumpus_p7-5
+branching...
+																					729) feel-breeze_p7-5
+branching...
+)connect to 621
+																						733) move_p7-5_p7-4
+																						737) move_p7-4_p6-4
+																						738) feel-breeze_p6-4
+branching...
+																							741) move_p6-4_p6-5
+																							744) move_p6-5_p7-5
+)connect to 620
+																							740) move_p6-4_p7-4
+																							746) move_p7-4_p7-5
+)connect to 621
+)connect to 621
+)connect to 522
+)connect to 257
+															692) feel-breeze_p10-8
+branching...
+																750) move_p10-8_p10-7
+																753) move_p10-7_p9-7
+																754) smell_wumpus_p9-7
+branching...
+)connect to 257
+																	756) feel-breeze_p9-7
+branching...
+																		762) move_p9-7_p9-6
+																		765) move_p9-6_p8-6
+																		766) smell_wumpus_p8-6
+branching...
+)connect to 522
+																			768) feel-breeze_p8-6
+branching...
+																				774) move_p8-6_p8-5
+																				777) move_p8-5_p7-5
+																				778) feel-breeze_p7-5
+branching...
+																					781) smell_wumpus_p7-5
+branching...
+)connect to 621
+																						785) move_p7-5_p7-4
+																						789) move_p7-4_p6-4
+																						790) smell_wumpus_p6-4
+branching...
+)connect to 741
+)connect to 740
+)connect to 621
+)connect to 522
+)connect to 257
+																749) move_p10-8_p10-7
+																796) move_p10-7_p9-7
+																797) smell_wumpus_p9-7
+branching...
+)connect to 257
+																	799) feel-breeze_p9-7
+branching...
+)connect to 257
+																		804) move_p9-7_p9-6
+																		808) move_p9-6_p8-6
+																		809) feel-breeze_p8-6
+branching...
+)connect to 522
+																			811) smell_wumpus_p8-6
+branching...
+)connect to 522
+																				816) move_p8-6_p8-5
+																				820) move_p8-5_p7-5
+)connect to 729
+														675) move_p2-4_p1-4
+														822) move_p1-4_p1-3
+														823) feel-breeze_p1-3
+branching...
+															826) move_p1-3_p2-3
+															829) move_p2-3_p3-3
+															830) move_p3-3_p4-3
+															831) move_p4-3_p5-3
+															832) move_p5-3_p6-3
+															833) move_p6-3_p6-4
+															834) move_p6-4_p7-4
+															835) move_p7-4_p7-5
+															836) move_p7-5_p8-5
+															837) move_p8-5_p8-6
+															838) move_p8-6_p9-6
+															839) move_p9-6_p9-7
+															840) move_p9-7_p10-7
+															841) move_p10-7_p10-8
+															842) smell_wumpus_p10-8
+branching...
+																845) feel-breeze_p10-8
+branching...
+)connect to 78
+																	849) move_p10-8_p10-7
+																	853) move_p10-7_p9-7
+																	854) feel-breeze_p9-7
+branching...
+)connect to 257
+																		856) smell_wumpus_p9-7
+branching...
+																			862) move_p9-7_p9-6
+																			865) move_p9-6_p8-6
+																			866) smell_wumpus_p8-6
+branching...
+																				869) feel-breeze_p8-6
+branching...
+)connect to 522
+																					873) move_p8-6_p8-5
+																					877) move_p8-5_p7-5
+																					878) smell_wumpus_p7-5
+branching...
+																						881) feel-breeze_p7-5
+branching...
+)connect to 621
+																							885) move_p7-5_p7-4
+																							889) move_p7-4_p6-4
+																							890) smell_wumpus_p6-4
+branching...
+																								893) feel-breeze_p6-4
+branching...
+)connect to 741
+																									897) move_p6-4_p6-3
+																									901) move_p6-3_p5-3
+																									902) feel-breeze_p5-3
+branching...
+																										905) move_p5-3_p5-4
+																										908) move_p5-4_p5-5
+																										909) move_p5-5_p5-6
+																										911) move_p5-6_p6-6
+																										912) move_p6-6_p7-6
+																										913) move_p7-6_p8-6
+)connect to 521
+																										904) move_p5-3_p6-3
+																										915) move_p6-3_p6-4
+)connect to 741
+)connect to 741
+)connect to 621
+)connect to 522
+)connect to 257
+																844) feel-breeze_p10-8
+branching...
+																	919) move_p10-8_p10-7
+																	922) move_p10-7_p9-7
+																	923) smell_wumpus_p9-7
+branching...
+)connect to 257
+																		925) feel-breeze_p9-7
+branching...
+																			931) move_p9-7_p9-6
+																			934) move_p9-6_p8-6
+																			935) smell_wumpus_p8-6
+branching...
+)connect to 522
+																				937) feel-breeze_p8-6
+branching...
+																					943) move_p8-6_p8-5
+																					946) move_p8-5_p7-5
+																					947) feel-breeze_p7-5
+branching...
+																						950) smell_wumpus_p7-5
+branching...
+)connect to 621
+																							954) move_p7-5_p7-4
+																							958) move_p7-4_p6-4
+																							959) feel-breeze_p6-4
+branching...
+																								962) smell_wumpus_p6-4
+branching...
+)connect to 741
+																									966) move_p6-4_p6-3
+																									970) move_p6-3_p5-3
+																									971) smell_wumpus_p5-3
+branching...
+)connect to 905
+)connect to 904
+)connect to 741
+)connect to 621
+)connect to 522
+)connect to 257
+																	918) move_p10-8_p10-7
+																	977) move_p10-7_p9-7
+																	978) smell_wumpus_p9-7
+branching...
+)connect to 257
+																		980) feel-breeze_p9-7
+branching...
+)connect to 257
+																			985) move_p9-7_p9-6
+																			989) move_p9-6_p8-6
+																			990) feel-breeze_p8-6
+branching...
+)connect to 522
+																				992) smell_wumpus_p8-6
+branching...
+)connect to 522
+																					997) move_p8-6_p8-5
+																					1001) move_p8-5_p7-5
+																					1002) smell_wumpus_p7-5
+branching...
+)connect to 621
+																						1004) feel-breeze_p7-5
+branching...
+)connect to 621
+																							1009) move_p7-5_p7-4
+																							1013) move_p7-4_p6-4
+)connect to 893
+															825) move_p1-3_p1-2
+															1015) move_p1-2_p2-2
+															1016) move_p2-2_p3-2
+															1017) move_p3-2_p4-2
+															1018) move_p4-2_p5-2
+															1019) move_p5-2_p5-3
+															1020) move_p5-3_p6-3
+															1021) move_p6-3_p6-4
+															1022) move_p6-4_p7-4
+															1023) move_p7-4_p7-5
+															1024) move_p7-5_p8-5
+															1025) move_p8-5_p8-6
+															1026) move_p8-6_p9-6
+															1027) move_p9-6_p9-7
+															1028) move_p9-7_p10-7
+															1029) move_p10-7_p10-8
+															1030) smell_wumpus_p10-8
+branching...
+																1033) feel-breeze_p10-8
+branching...
+)connect to 78
+																	1037) move_p10-8_p10-7
+																	1041) move_p10-7_p9-7
+																	1042) feel-breeze_p9-7
+branching...
+)connect to 257
+																		1044) smell_wumpus_p9-7
+branching...
+																			1050) move_p9-7_p9-6
+																			1053) move_p9-6_p8-6
+																			1054) smell_wumpus_p8-6
+branching...
+																				1057) feel-breeze_p8-6
+branching...
+)connect to 522
+																					1061) move_p8-6_p8-5
+																					1065) move_p8-5_p7-5
+																					1066) smell_wumpus_p7-5
+branching...
+																						1069) feel-breeze_p7-5
+branching...
+)connect to 621
+																							1073) move_p7-5_p7-4
+																							1077) move_p7-4_p6-4
+																							1078) smell_wumpus_p6-4
+branching...
+																								1081) feel-breeze_p6-4
+branching...
+)connect to 741
+																									1085) move_p6-4_p6-3
+																									1089) move_p6-3_p5-3
+																									1090) smell_wumpus_p5-3
+branching...
+																										1093) feel-breeze_p5-3
+branching...
+)connect to 905
+																											1097) move_p5-3_p5-2
+																											1101) move_p5-2_p4-2
+																											1102) feel-breeze_p4-2
+branching...
+																												1105) move_p4-2_p4-3
+																												1108) move_p4-3_p4-4
+																												1109) move_p4-4_p4-5
+																												1111) move_p4-5_p5-5
+																												1112) move_p5-5_p6-5
+)connect to 744
+																												1104) move_p4-2_p5-2
+																												1114) move_p5-2_p5-3
+)connect to 905
+)connect to 905
+)connect to 741
+)connect to 621
+)connect to 522
+)connect to 257
+																1032) feel-breeze_p10-8
+branching...
+																	1118) move_p10-8_p10-7
+																	1121) move_p10-7_p9-7
+																	1122) smell_wumpus_p9-7
+branching...
+)connect to 257
+																		1124) feel-breeze_p9-7
+branching...
+																			1130) move_p9-7_p9-6
+																			1133) move_p9-6_p8-6
+																			1134) smell_wumpus_p8-6
+branching...
+)connect to 522
+																				1136) feel-breeze_p8-6
+branching...
+																					1142) move_p8-6_p8-5
+																					1145) move_p8-5_p7-5
+																					1146) feel-breeze_p7-5
+branching...
+																						1149) smell_wumpus_p7-5
+branching...
+)connect to 621
+																							1153) move_p7-5_p7-4
+																							1157) move_p7-4_p6-4
+																							1158) feel-breeze_p6-4
+branching...
+																								1161) smell_wumpus_p6-4
+branching...
+)connect to 741
+																									1165) move_p6-4_p6-3
+																									1169) move_p6-3_p5-3
+																									1170) feel-breeze_p5-3
+branching...
+																										1173) smell_wumpus_p5-3
+branching...
+)connect to 905
+																											1177) move_p5-3_p5-2
+																											1181) move_p5-2_p4-2
+																											1182) smell_wumpus_p4-2
+branching...
+)connect to 1105
+)connect to 1104
+)connect to 905
+)connect to 741
+)connect to 621
+)connect to 522
+)connect to 257
+																	1117) move_p10-8_p10-7
+																	1188) move_p10-7_p9-7
+																	1189) smell_wumpus_p9-7
+branching...
+)connect to 257
+																		1191) feel-breeze_p9-7
+branching...
+)connect to 257
+																			1196) move_p9-7_p9-6
+																			1200) move_p9-6_p8-6
+																			1201) feel-breeze_p8-6
+branching...
+)connect to 522
+																				1203) smell_wumpus_p8-6
+branching...
+)connect to 522
+																					1208) move_p8-6_p8-5
+																					1212) move_p8-5_p7-5
+																					1213) smell_wumpus_p7-5
+branching...
+)connect to 621
+																						1215) feel-breeze_p7-5
+branching...
+)connect to 621
+																							1220) move_p7-5_p7-4
+																							1224) move_p7-4_p6-4
+																							1225) smell_wumpus_p6-4
+branching...
+)connect to 741
+																								1227) feel-breeze_p6-4
+branching...
+)connect to 741
+																									1232) move_p6-4_p6-3
+																									1236) move_p6-3_p5-3
+)connect to 1093
+													670) feel-breeze_p2-4
+branching...
+)connect to 676
+														1239) move_p2-4_p1-4
+														1243) move_p1-4_p1-3
+)connect to 825
+											564) feel-breeze_p3-5
+branching...
+)connect to 570
+												1246) move_p3-5_p2-5
+												1250) move_p2-5_p2-4
+												1251) feel-breeze_p2-4
+branching...
+													1254) move_p2-4_p1-4
+													1257) move_p1-4_p1-3
+													1258) smell_wumpus_p1-3
+branching...
+														1261) move_p1-3_p2-3
+														1264) move_p2-3_p3-3
+														1265) move_p3-3_p4-3
+														1266) move_p4-3_p4-4
+)connect to 680
+														1260) move_p1-3_p1-2
+														1268) move_p1-2_p2-2
+														1269) move_p2-2_p3-2
+														1270) move_p3-2_p3-3
+)connect to 1265
+													1253) move_p2-4_p1-4
+													1272) move_p1-4_p1-3
+													1273) smell_wumpus_p1-3
+branching...
+														1276) feel-breeze_p1-3
+branching...
+)connect to 826
+															1280) move_p1-3_p1-2
+															1284) move_p1-2_p2-2
+															1285) move_p2-2_p3-2
+															1286) move_p3-2_p3-3
+)connect to 830
+)connect to 1280
+									479) feel-breeze_p4-6
+branching...
+)connect to 485
+										1289) move_p4-6_p3-6
+										1293) move_p3-6_p2-6
+										1294) move_p2-6_p2-5
+										1295) move_p2-5_p2-4
+										1296) smell_wumpus_p2-4
+branching...
+											1299) feel-breeze_p2-4
+branching...
+)connect to 676
+												1303) move_p2-4_p2-5
+												1307) move_p2-5_p3-5
+												1308) feel-breeze_p3-5
+branching...
+													1311) move_p3-5_p3-4
+													1314) move_p3-4_p4-4
+													1315) move_p4-4_p5-4
+													1316) move_p5-4_p6-4
+													1317) move_p6-4_p6-5
+)connect to 575
+													1310) move_p3-5_p2-5
+													1319) move_p2-5_p2-4
+													1320) move_p2-4_p1-4
+													1321) move_p1-4_p1-3
+													1322) feel-breeze_p1-3
+branching...
+)connect to 1261
+														1324) move_p1-3_p1-2
+														1328) move_p1-2_p2-2
+														1329) move_p2-2_p3-2
+														1330) move_p3-2_p4-2
+														1331) move_p4-2_p5-2
+														1332) move_p5-2_p5-3
+														1333) move_p5-3_p5-4
+)connect to 681
+											1298) move_p2-4_p2-5
+											1335) move_p2-5_p3-5
+											1336) feel-breeze_p3-5
+branching...
+												1339) move_p3-5_p2-5
+												1342) move_p2-5_p1-5
+												1343) move_p1-5_p1-4
+												1344) move_p1-4_p1-3
+												1345) move_p1-3_p1-2
+												1346) move_p1-2_p1-1
+												1347) move_p1-1_p2-1
+												1348) move_p2-1_p3-1
+												1349) move_p3-1_p4-1
+												1350) move_p4-1_p5-1
+												1351) move_p5-1_p5-2
+												1352) move_p5-2_p5-3
+												1353) move_p5-3_p5-4
+)connect to 1316
+												1338) move_p3-5_p2-5
+												1355) move_p2-5_p2-4
+												1356) feel-breeze_p2-4
+branching...
+													1359) move_p2-4_p1-4
+													1362) move_p1-4_p1-3
+													1363) move_p1-3_p1-2
+													1364) move_p1-2_p1-1
+													1365) move_p1-1_p2-1
+													1366) move_p2-1_p3-1
+													1367) move_p3-1_p4-1
+													1368) move_p4-1_p5-1
+													1369) move_p5-1_p5-2
+)connect to 1332
+)connect to 1359
+							467) feel-breeze_p5-7
+branching...
+)connect to 234
+								1372) move_p5-7_p4-7
+								1376) move_p4-7_p3-7
+								1377) move_p3-7_p3-6
+								1378) move_p3-6_p3-5
+								1379) smell_wumpus_p3-5
+branching...
+									1382) feel-breeze_p3-5
+branching...
+)connect to 570
+										1386) move_p3-5_p3-6
+										1390) move_p3-6_p4-6
+										1391) feel-breeze_p4-6
+branching...
+											1394) move_p4-6_p4-5
+											1397) move_p4-5_p5-5
+											1398) move_p5-5_p6-5
+											1399) move_p6-5_p7-5
+											1400) move_p7-5_p7-6
+)connect to 490
+											1393) move_p4-6_p3-6
+											1402) move_p3-6_p2-6
+											1403) move_p2-6_p2-5
+											1404) move_p2-5_p2-4
+											1405) feel-breeze_p2-4
+branching...
+												1408) move_p2-4_p3-4
+)connect to 1314
+												1407) smell_wumpus_p2-4
+branching...
+													1414) move_p2-4_p1-4
+													1428) move_p1-4_p1-3
+													1429) feel-breeze_p1-3
+branching...
+														1432) move_p1-3_p2-3
+														1435) move_p2-3_p3-3
+														1436) move_p3-3_p4-3
+														1437) move_p4-3_p5-3
+														1425) move_p5-3_p6-3
+														1426) move_p6-3_p6-4
+)connect to 1317
+														1418) move_p1-3_p1-2
+														1420) move_p1-2_p2-2
+														1421) move_p2-2_p3-2
+														1422) move_p3-2_p4-2
+														1423) move_p4-2_p5-2
+														1424) move_p5-2_p5-3
+)connect to 1425
+													1413) move_p2-4_p1-4
+													1417) move_p1-4_p1-3
+)connect to 1418
+									1381) move_p3-5_p3-6
+									1439) move_p3-6_p4-6
+									1440) feel-breeze_p4-6
+branching...
+										1443) move_p4-6_p3-6
+										1446) move_p3-6_p3-5
+										1447) feel-breeze_p3-5
+branching...
+											1450) move_p3-5_p2-5
+											1453) move_p2-5_p2-4
+											1454) feel-breeze_p2-4
+branching...
+												1457) smell_wumpus_p2-4
+branching...
+													1462) move_p2-4_p3-4
+													1465) move_p3-4_p4-4
+													1466) move_p4-4_p5-4
+													1467) move_p5-4_p5-5
+)connect to 1398
+													1461) move_p2-4_p1-4
+													1469) move_p1-4_p1-3
+													1470) smell_wumpus_p1-3
+branching...
+														1473) move_p1-3_p2-3
+														1476) move_p2-3_p3-3
+														1477) move_p3-3_p4-3
+														1478) move_p4-3_p5-3
+														1479) move_p5-3_p6-3
+														1480) move_p6-3_p6-4
+														1481) move_p6-4_p6-5
+)connect to 1399
+														1472) move_p1-3_p1-2
+														1483) move_p1-2_p2-2
+														1484) move_p2-2_p3-2
+														1485) move_p3-2_p4-2
+														1486) move_p4-2_p5-2
+														1487) move_p5-2_p5-3
+)connect to 1479
+												1456) smell_wumpus_p2-4
+branching...
+)connect to 1462
+													1490) move_p2-4_p1-4
+													1494) move_p1-4_p1-3
+)connect to 1472
+											1449) move_p3-5_p2-5
+											1496) move_p2-5_p1-5
+											1497) move_p1-5_p1-4
+											1498) move_p1-4_p1-3
+											1499) smell_wumpus_p1-3
+branching...
+												1502) move_p1-3_p1-2
+												1505) move_p1-2_p1-1
+												1506) move_p1-1_p2-1
+												1507) move_p2-1_p3-1
+												1508) move_p3-1_p4-1
+												1509) move_p4-1_p5-1
+												1510) move_p5-1_p6-1
+												1511) move_p6-1_p6-2
+												1512) move_p6-2_p6-3
+)connect to 1480
+)connect to 1472
+										1442) move_p4-6_p3-6
+										1514) move_p3-6_p2-6
+										1515) move_p2-6_p2-5
+										1516) move_p2-5_p2-4
+										1517) feel-breeze_p2-4
+branching...
+											1520) smell_wumpus_p2-4
+branching...
+)connect to 1408
+												1524) move_p2-4_p1-4
+												1528) move_p1-4_p1-3
+												1529) smell_wumpus_p1-3
+branching...
+)connect to 1432
+)connect to 1418
+											1519) smell_wumpus_p2-4
+branching...
+												1537) move_p2-4_p2-5
+)connect to 1342
+												1536) move_p2-4_p2-5
+												1541) move_p2-5_p3-5
+												1542) feel-breeze_p3-5
+branching...
+													1545) move_p3-5_p2-5
+													1557) move_p2-5_p1-5
+													1558) move_p1-5_p1-4
+)connect to 1417
+													1544) move_p3-5_p2-5
+													1548) move_p2-5_p1-5
+													1549) move_p1-5_p1-4
+													1550) move_p1-4_p1-3
+													1551) smell_wumpus_p1-3
+branching...
+)connect to 1429
+)connect to 1418
+					451) feel-breeze_p6-8
+branching...
+)connect to 457
+						1561) move_p6-8_p5-8
+						1565) move_p5-8_p4-8
+						1566) move_p4-8_p4-7
+						1567) move_p4-7_p4-6
+						1568) smell_wumpus_p4-6
+branching...
+							1571) feel-breeze_p4-6
+branching...
+)connect to 485
+								1575) move_p4-6_p4-7
+								1579) move_p4-7_p5-7
+								1580) feel-breeze_p5-7
+branching...
+									440) move_p5-7_p4-7
+									444) move_p4-7_p3-7
+									445) move_p3-7_p3-6
+									446) move_p3-6_p3-5
+									411) move_p3-5_p2-5
+									414) move_p2-5_p1-5
+									415) move_p1-5_p1-4
+									416) move_p1-4_p1-3
+									417) move_p1-3_p1-2
+									418) move_p1-2_p1-1
+									419) move_p1-1_p2-1
+									420) move_p2-1_p3-1
+									421) move_p3-1_p4-1
+									422) move_p4-1_p5-1
+									423) move_p5-1_p5-2
+									335) move_p5-2_p5-3
+									336) move_p5-3_p6-3
+									337) move_p6-3_p6-4
+									320) move_p6-4_p7-4
+									321) move_p7-4_p7-5
+									306) move_p7-5_p8-5
+									307) move_p8-5_p8-6
+									308) move_p8-6_p8-7
+)connect to 239
+									1582) move_p5-7_p4-7
+									1586) move_p4-7_p3-7
+									1587) move_p3-7_p3-6
+									1588) move_p3-6_p3-5
+									1589) feel-breeze_p3-5
+branching...
+										1592) move_p3-5_p4-5
+)connect to 1397
+										1591) smell_wumpus_p3-5
+branching...
+											1598) move_p3-5_p2-5
+											1601) move_p2-5_p2-4
+											1602) smell_wumpus_p2-4
+branching...
+												1605) feel-breeze_p2-4
+branching...
+													1610) move_p2-4_p3-4
+													1613) move_p3-4_p4-4
+													1614) move_p4-4_p5-4
+													1615) move_p5-4_p6-4
+													1616) move_p6-4_p7-4
+													1617) move_p7-4_p7-5
+)connect to 1400
+													1609) move_p2-4_p1-4
+													1619) move_p1-4_p1-3
+													1620) feel-breeze_p1-3
+branching...
+														1623) move_p1-3_p2-3
+														1626) move_p2-3_p3-3
+														1627) move_p3-3_p4-3
+														1628) move_p4-3_p5-3
+														1629) move_p5-3_p6-3
+														1630) move_p6-3_p6-4
+)connect to 1616
+														1622) move_p1-3_p1-2
+														1632) move_p1-2_p2-2
+														1633) move_p2-2_p3-2
+														1634) move_p3-2_p4-2
+														1635) move_p4-2_p5-2
+														1636) move_p5-2_p5-3
+)connect to 1629
+												1604) feel-breeze_p2-4
+branching...
+)connect to 1610
+													1639) move_p2-4_p1-4
+													1643) move_p1-4_p1-3
+)connect to 1622
+											1597) move_p3-5_p2-5
+											1645) move_p2-5_p2-4
+											1646) feel-breeze_p2-4
+branching...
+												1649) move_p2-4_p1-4
+												1652) move_p1-4_p1-3
+												1653) smell_wumpus_p1-3
+branching...
+)connect to 1623
+)connect to 1622
+												1648) move_p2-4_p1-4
+												1659) move_p1-4_p1-3
+												1660) smell_wumpus_p1-3
+branching...
+)connect to 1620
+)connect to 1622
+							1570) move_p4-6_p4-7
+							1666) move_p4-7_p5-7
+							1667) feel-breeze_p5-7
+branching...
+)connect to 440
+								1669) move_p5-7_p4-7
+								1673) move_p4-7_p3-7
+								1674) move_p3-7_p3-6
+								1675) move_p3-6_p3-5
+								1676) feel-breeze_p3-5
+branching...
+									1679) smell_wumpus_p3-5
+branching...
+)connect to 1592
+										1683) move_p3-5_p3-6
+										1687) move_p3-6_p4-6
+										1688) feel-breeze_p4-6
+branching...
+											1691) move_p4-6_p3-6
+											1705) move_p3-6_p3-5
+											1706) move_p3-5_p2-5
+											1707) move_p2-5_p2-4
+											1708) feel-breeze_p2-4
+branching...
+												1711) smell_wumpus_p2-4
+branching...
+)connect to 1610
+													1715) move_p2-4_p1-4
+													1719) move_p1-4_p1-3
+													1720) smell_wumpus_p1-3
+branching...
+)connect to 1623
+)connect to 1622
+)connect to 1639
+											1690) move_p4-6_p3-6
+											1694) move_p3-6_p2-6
+											1695) move_p2-6_p2-5
+											1696) move_p2-5_p2-4
+											1697) smell_wumpus_p2-4
+branching...
+)connect to 1462
+												1699) move_p2-4_p1-4
+												1703) move_p1-4_p1-3
+)connect to 1502
+									1678) smell_wumpus_p3-5
+branching...
+										1728) move_p3-5_p3-6
+										1731) move_p3-6_p4-6
+										1732) feel-breeze_p4-6
+branching...
+)connect to 1394
+											1734) move_p4-6_p3-6
+											1738) move_p3-6_p2-6
+											1739) move_p2-6_p2-5
+											1740) move_p2-5_p2-4
+)connect to 1699
+										1727) move_p3-5_p3-6
+										1742) move_p3-6_p4-6
+										1743) feel-breeze_p4-6
+branching...
+											1746) move_p4-6_p3-6
+											1784) move_p3-6_p2-6
+											1785) move_p2-6_p1-6
+											1786) move_p1-6_p1-5
+											1787) move_p1-5_p1-4
+)connect to 1659
+											1745) move_p4-6_p3-6
+											1749) move_p3-6_p2-6
+											1750) move_p2-6_p2-5
+											1751) move_p2-5_p2-4
+											1752) smell_wumpus_p2-4
+branching...
+												1755) feel-breeze_p2-4
+branching...
+)connect to 1610
+													1759) move_p2-4_p1-4
+													1763) move_p1-4_p1-3
+													1764) feel-breeze_p1-3
+branching...
+)connect to 1623
+)connect to 1622
+												1754) feel-breeze_p2-4
+branching...
+													1772) move_p2-4_p1-4
+													1775) move_p1-4_p1-3
+													1776) move_p1-3_p1-2
+													1777) move_p1-2_p1-1
+													1778) move_p1-1_p2-1
+													1779) move_p2-1_p3-1
+													1780) move_p3-1_p4-1
+													1781) move_p4-1_p5-1
+													1782) move_p5-1_p5-2
+)connect to 1636
+)connect to 1772
+				42) move_p7-9_p6-9
+				46) move_p6-9_p6-8
+				47) feel-breeze_p6-8
+branching...
+					51) move_p6-8_p5-8
+					54) move_p5-8_p5-7
+					55) smell_wumpus_p5-7
+branching...
+						58) move_p5-7_p6-7
+						61) move_p6-7_p7-7
+						62) move_p7-7_p8-7
+						63) move_p8-7_p9-7
+						64) move_p9-7_p9-8
+)connect to 65
+						57) feel-breeze_p5-7
+branching...
+							86) move_p5-7_p4-7
+							89) move_p4-7_p4-6
+							90) feel-breeze_p4-6
+branching...
+								93) smell_wumpus_p4-6
+branching...
+									98) move_p4-6_p5-6
+									101) move_p5-6_p6-6
+									102) move_p6-6_p7-6
+									103) move_p7-6_p7-7
+)connect to 62
+									97) move_p4-6_p3-6
+									105) move_p3-6_p3-5
+									106) smell_wumpus_p3-5
+branching...
+										109) move_p3-5_p4-5
+										112) move_p4-5_p5-5
+										113) move_p5-5_p6-5
+										114) move_p6-5_p7-5
+										115) move_p7-5_p8-5
+										116) move_p8-5_p8-6
+										117) move_p8-6_p8-7
+)connect to 63
+										108) feel-breeze_p3-5
+branching...
+											121) move_p3-5_p2-5
+											124) move_p2-5_p2-4
+											125) feel-breeze_p2-4
+branching...
+												128) smell_wumpus_p2-4
+branching...
+													133) move_p2-4_p3-4
+													136) move_p3-4_p4-4
+													137) move_p4-4_p5-4
+													138) move_p5-4_p6-4
+													139) move_p6-4_p7-4
+													140) move_p7-4_p7-5
+)connect to 115
+													132) move_p2-4_p1-4
+													142) move_p1-4_p1-3
+													143) smell_wumpus_p1-3
+branching...
+														146) move_p1-3_p2-3
+														149) move_p2-3_p3-3
+														150) move_p3-3_p4-3
+														151) move_p4-3_p5-3
+														152) move_p5-3_p6-3
+														153) move_p6-3_p6-4
+)connect to 139
+														145) move_p1-3_p1-2
+														155) move_p1-2_p2-2
+														156) move_p2-2_p3-2
+														157) move_p3-2_p4-2
+														158) move_p4-2_p5-2
+														159) move_p5-2_p5-3
+)connect to 152
+												127) smell_wumpus_p2-4
+branching...
+)connect to 133
+													162) move_p2-4_p1-4
+													166) move_p1-4_p1-3
+)connect to 145
+											120) move_p3-5_p2-5
+											168) move_p2-5_p1-5
+											169) move_p1-5_p1-4
+											170) move_p1-4_p1-3
+											171) smell_wumpus_p1-3
+branching...
+												174) move_p1-3_p1-2
+												177) move_p1-2_p1-1
+												178) move_p1-1_p2-1
+												179) move_p2-1_p3-1
+												180) move_p3-1_p4-1
+												181) move_p4-1_p5-1
+												182) move_p5-1_p6-1
+												183) move_p6-1_p6-2
+												184) move_p6-2_p6-3
+)connect to 153
+)connect to 145
+								92) smell_wumpus_p4-6
+branching...
+)connect to 98
+									187) move_p4-6_p3-6
+									191) move_p3-6_p2-6
+									192) move_p2-6_p2-5
+									193) move_p2-5_p2-4
+									194) smell_wumpus_p2-4
+branching...
+										197) feel-breeze_p2-4
+branching...
+)connect to 133
+											201) move_p2-4_p2-5
+											205) move_p2-5_p3-5
+											206) smell_wumpus_p3-5
+branching...
+												209) move_p3-5_p2-5
+												212) move_p2-5_p1-5
+												213) move_p1-5_p1-4
+												214) move_p1-4_p1-3
+)connect to 174
+)connect to 209
+)connect to 201
+							85) move_p5-7_p4-7
+							216) move_p4-7_p4-6
+							217) smell_wumpus_p4-6
+branching...
+								220) move_p4-6_p3-6
+								223) move_p3-6_p3-5
+)connect to 209
+)connect to 220
+					50) move_p6-8_p5-8
+					225) move_p5-8_p5-7
+					226) smell_wumpus_p5-7
+branching...
+						229) feel-breeze_p5-7
+branching...
+)connect to 234
+							233) move_p5-7_p4-7
+							275) move_p4-7_p4-6
+							276) feel-breeze_p4-6
+branching...
+								279) move_p4-6_p5-6
+								282) move_p5-6_p6-6
+								283) move_p6-6_p7-6
+								284) move_p7-6_p7-7
+)connect to 238
+								278) smell_wumpus_p4-6
+branching...
+									288) move_p4-6_p3-6
+									291) move_p3-6_p3-5
+									292) smell_wumpus_p3-5
+branching...
+										295) feel-breeze_p3-5
+branching...
+											300) move_p3-5_p4-5
+											303) move_p4-5_p5-5
+											304) move_p5-5_p6-5
+											305) move_p6-5_p7-5
+)connect to 306
+											299) move_p3-5_p2-5
+											310) move_p2-5_p2-4
+											311) feel-breeze_p2-4
+branching...
+												314) move_p2-4_p3-4
+												317) move_p3-4_p4-4
+												318) move_p4-4_p5-4
+												319) move_p5-4_p6-4
+)connect to 320
+												313) smell_wumpus_p2-4
+branching...
+													325) move_p2-4_p1-4
+													339) move_p1-4_p1-3
+													340) feel-breeze_p1-3
+branching...
+														343) move_p1-3_p2-3
+														346) move_p2-3_p3-3
+														347) move_p3-3_p4-3
+														348) move_p4-3_p5-3
+)connect to 336
+														329) move_p1-3_p1-2
+														331) move_p1-2_p2-2
+														332) move_p2-2_p3-2
+														333) move_p3-2_p4-2
+														334) move_p4-2_p5-2
+)connect to 335
+													324) move_p2-4_p1-4
+													328) move_p1-4_p1-3
+)connect to 329
+										294) feel-breeze_p3-5
+branching...
+)connect to 300
+											351) move_p3-5_p2-5
+											355) move_p2-5_p2-4
+											356) feel-breeze_p2-4
+branching...
+												359) move_p2-4_p1-4
+												362) move_p1-4_p1-3
+												363) smell_wumpus_p1-3
+branching...
+)connect to 343
+)connect to 329
+												358) move_p2-4_p1-4
+												369) move_p1-4_p1-3
+												370) smell_wumpus_p1-3
+branching...
+)connect to 340
+)connect to 329
+									287) move_p4-6_p3-6
+									376) move_p3-6_p2-6
+									377) move_p2-6_p2-5
+									378) move_p2-5_p2-4
+									379) smell_wumpus_p2-4
+branching...
+										382) feel-breeze_p2-4
+branching...
+)connect to 314
+											386) move_p2-4_p2-5
+											390) move_p2-5_p3-5
+											391) feel-breeze_p3-5
+branching...
+												394) move_p3-5_p3-4
+)connect to 317
+												393) move_p3-5_p2-5
+												398) move_p2-5_p2-4
+												399) move_p2-4_p1-4
+												400) move_p1-4_p1-3
+												401) feel-breeze_p1-3
+branching...
+)connect to 343
+)connect to 329
+										381) move_p2-4_p2-5
+										407) move_p2-5_p3-5
+										408) feel-breeze_p3-5
+branching...
+)connect to 411
+)connect to 411
+						228) move_p5-7_p4-7
+						425) move_p4-7_p4-6
+						426) feel-breeze_p4-6
+branching...
+							429) smell_wumpus_p4-6
+branching...
+)connect to 279
+								433) move_p4-6_p4-7
+								437) move_p4-7_p5-7
+								438) feel-breeze_p5-7
+branching...
+)connect to 440
+)connect to 440
+)connect to 433
+	18) feel-breeze_p8-10
+branching...
+		1791) move_p8-10_p7-10
+		1794) move_p7-10_p7-9
+		1795) smell_wumpus_p7-9
+branching...
+)connect to 34
+			1797) feel-breeze_p7-9
+branching...
+				1803) move_p7-9_p6-9
+				2010) move_p6-9_p6-8
+				2011) feel-breeze_p6-8
+branching...
+					2014) smell_wumpus_p6-8
+branching...
+						2019) move_p6-8_p7-8
+						2022) move_p7-8_p8-8
+						2023) move_p8-8_p9-8
+						1825) move_p9-8_p9-9
+						1826) feel-breeze_p9-9
+branching...
+							1830) move_p9-9_p9-8
+							1833) move_p9-8_p10-8
+							1834) smell_wumpus_p10-8
+branching...
+)connect to 78
+)connect to 77
+)connect to 69
+						2018) move_p6-8_p5-8
+						2026) move_p5-8_p5-7
+						2027) feel-breeze_p5-7
+branching...
+							2030) smell_wumpus_p5-7
+branching...
+)connect to 234
+								2034) move_p5-7_p4-7
+								2038) move_p4-7_p4-6
+								2039) feel-breeze_p4-6
+branching...
+									2042) smell_wumpus_p4-6
+branching...
+)connect to 485
+										2046) move_p4-6_p3-6
+										2050) move_p3-6_p3-5
+										2051) feel-breeze_p3-5
+branching...
+											2054) smell_wumpus_p3-5
+branching...
+)connect to 570
+												2058) move_p3-5_p2-5
+												2062) move_p2-5_p2-4
+												2063) feel-breeze_p2-4
+branching...
+													2066) smell_wumpus_p2-4
+branching...
+)connect to 676
+														2070) move_p2-4_p1-4
+														2074) move_p1-4_p1-3
+														2075) smell_wumpus_p1-3
+branching...
+)connect to 826
+)connect to 825
+)connect to 1239
+											2053) smell_wumpus_p3-5
+branching...
+)connect to 570
+												2082) move_p3-5_p2-5
+												2086) move_p2-5_p1-5
+												2087) move_p1-5_p1-4
+)connect to 1272
+									2041) smell_wumpus_p4-6
+branching...
+)connect to 485
+										2090) move_p4-6_p3-6
+										2094) move_p3-6_p2-6
+										2095) move_p2-6_p2-5
+)connect to 1355
+							2029) smell_wumpus_p5-7
+branching...
+)connect to 234
+								2098) move_p5-7_p4-7
+								2102) move_p4-7_p3-7
+								2103) move_p3-7_p3-6
+								2104) move_p3-6_p3-5
+								2105) smell_wumpus_p3-5
+branching...
+									2108) feel-breeze_p3-5
+branching...
+)connect to 570
+										2112) move_p3-5_p2-5
+										2116) move_p2-5_p2-4
+										2117) smell_wumpus_p2-4
+branching...
+											2120) feel-breeze_p2-4
+branching...
+)connect to 1408
+												2124) move_p2-4_p2-5
+												2128) move_p2-5_p3-5
+												2129) move_p3-5_p3-6
+												2130) move_p3-6_p4-6
+												2131) smell_wumpus_p4-6
+branching...
+)connect to 1734
+													2133) move_p4-6_p3-6
+													2137) move_p3-6_p2-6
+													2138) move_p2-6_p1-6
+													2139) move_p1-6_p1-5
+													2140) move_p1-5_p1-4
+													2141) move_p1-4_p1-3
+													2142) feel-breeze_p1-3
+branching...
+)connect to 1432
+)connect to 1418
+)connect to 1413
+									2107) feel-breeze_p3-5
+branching...
+										2150) move_p3-5_p3-6
+										2153) move_p3-6_p4-6
+										2154) smell_wumpus_p4-6
+branching...
+)connect to 1394
+											2156) move_p4-6_p3-6
+											2160) move_p3-6_p2-6
+											2161) move_p2-6_p2-5
+											2162) move_p2-5_p2-4
+											2163) smell_wumpus_p2-4
+branching...
+)connect to 1408
+												2165) feel-breeze_p2-4
+branching...
+													2171) move_p2-4_p1-4
+													2174) move_p1-4_p1-3
+													2175) smell_wumpus_p1-3
+branching...
+)connect to 1432
+)connect to 1418
+)connect to 1413
+										2149) move_p3-5_p3-6
+										2181) move_p3-6_p4-6
+										2182) smell_wumpus_p4-6
+branching...
+)connect to 1734
+											2184) move_p4-6_p3-6
+											2188) move_p3-6_p2-6
+											2189) move_p2-6_p2-5
+											2190) move_p2-5_p2-4
+											2191) smell_wumpus_p2-4
+branching...
+)connect to 1537
+												2193) feel-breeze_p2-4
+branching...
+)connect to 1537
+													2198) move_p2-4_p1-4
+													2202) move_p1-4_p1-3
+													2203) smell_wumpus_p1-3
+branching...
+)connect to 1429
+)connect to 1418
+					2013) smell_wumpus_p6-8
+branching...
+)connect to 2019
+						2210) move_p6-8_p5-8
+						2214) move_p5-8_p4-8
+						2215) move_p4-8_p4-7
+						2216) move_p4-7_p4-6
+						2217) smell_wumpus_p4-6
+branching...
+							2220) feel-breeze_p4-6
+branching...
+)connect to 485
+								2224) move_p4-6_p3-6
+								2228) move_p3-6_p3-5
+								2229) smell_wumpus_p3-5
+branching...
+									2232) feel-breeze_p3-5
+branching...
+)connect to 1592
+										2236) move_p3-5_p3-6
+										2240) move_p3-6_p4-6
+										2241) move_p4-6_p4-7
+										2242) move_p4-7_p5-7
+										2243) smell_wumpus_p5-7
+branching...
+)connect to 440
+											2245) move_p5-7_p4-7
+											2249) move_p4-7_p3-7
+											2250) move_p3-7_p2-7
+											2251) move_p2-7_p2-6
+											2252) move_p2-6_p2-5
+											2253) move_p2-5_p2-4
+)connect to 1772
+)connect to 1597
+							2219) feel-breeze_p4-6
+branching...
+								2257) move_p4-6_p4-7
+)connect to 2249
+)connect to 2257
+				1802) move_p7-9_p6-9
+				1806) move_p6-9_p6-8
+				1807) smell_wumpus_p6-8
+branching...
+					1811) move_p6-8_p5-8
+					1814) move_p5-8_p5-7
+					1815) feel-breeze_p5-7
+branching...
+						1818) move_p5-7_p6-7
+						1821) move_p6-7_p7-7
+						1822) move_p7-7_p8-7
+						1823) move_p8-7_p9-7
+						1824) move_p9-7_p9-8
+)connect to 1825
+						1817) smell_wumpus_p5-7
+branching...
+							1842) move_p5-7_p4-7
+							1845) move_p4-7_p4-6
+							1846) smell_wumpus_p4-6
+branching...
+								1849) feel-breeze_p4-6
+branching...
+									1854) move_p4-6_p5-6
+									1857) move_p5-6_p6-6
+									1858) move_p6-6_p7-6
+									1859) move_p7-6_p7-7
+)connect to 1822
+									1853) move_p4-6_p3-6
+									1861) move_p3-6_p3-5
+									1862) feel-breeze_p3-5
+branching...
+										1865) move_p3-5_p4-5
+										1868) move_p4-5_p5-5
+										1869) move_p5-5_p6-5
+										1870) move_p6-5_p7-5
+										1871) move_p7-5_p8-5
+										1872) move_p8-5_p8-6
+										1873) move_p8-6_p8-7
+)connect to 1823
+										1864) smell_wumpus_p3-5
+branching...
+											1877) move_p3-5_p2-5
+											1880) move_p2-5_p2-4
+											1881) smell_wumpus_p2-4
+branching...
+												1884) feel-breeze_p2-4
+branching...
+													1889) move_p2-4_p3-4
+													1892) move_p3-4_p4-4
+													1893) move_p4-4_p5-4
+													1894) move_p5-4_p6-4
+													1895) move_p6-4_p7-4
+													1896) move_p7-4_p7-5
+)connect to 1871
+													1888) move_p2-4_p1-4
+													1898) move_p1-4_p1-3
+													1899) feel-breeze_p1-3
+branching...
+														1902) move_p1-3_p2-3
+														1905) move_p2-3_p3-3
+														1906) move_p3-3_p4-3
+														1907) move_p4-3_p5-3
+														1908) move_p5-3_p6-3
+														1909) move_p6-3_p6-4
+)connect to 1895
+														1901) move_p1-3_p1-2
+														1911) move_p1-2_p2-2
+														1912) move_p2-2_p3-2
+														1913) move_p3-2_p4-2
+														1914) move_p4-2_p5-2
+														1915) move_p5-2_p5-3
+)connect to 1908
+												1883) feel-breeze_p2-4
+branching...
+)connect to 1889
+													1918) move_p2-4_p1-4
+													1922) move_p1-4_p1-3
+)connect to 1901
+											1876) move_p3-5_p2-5
+											1924) move_p2-5_p2-4
+											1925) feel-breeze_p2-4
+branching...
+												1928) move_p2-4_p1-4
+												1931) move_p1-4_p1-3
+												1932) smell_wumpus_p1-3
+branching...
+)connect to 1902
+)connect to 1901
+												1927) move_p2-4_p1-4
+												1938) move_p1-4_p1-3
+												1939) smell_wumpus_p1-3
+branching...
+)connect to 1899
+)connect to 1901
+								1848) feel-breeze_p4-6
+branching...
+)connect to 1854
+									1946) move_p4-6_p3-6
+									1950) move_p3-6_p2-6
+									1951) move_p2-6_p2-5
+									1952) move_p2-5_p2-4
+									1953) smell_wumpus_p2-4
+branching...
+										1956) feel-breeze_p2-4
+branching...
+)connect to 1889
+											1960) move_p2-4_p2-5
+											1964) move_p2-5_p3-5
+											1965) feel-breeze_p3-5
+branching...
+												1968) move_p3-5_p3-4
+)connect to 1892
+												1967) move_p3-5_p2-5
+												1972) move_p2-5_p2-4
+												1973) move_p2-4_p1-4
+												1974) move_p1-4_p1-3
+												1975) feel-breeze_p1-3
+branching...
+)connect to 1902
+)connect to 1901
+										1955) move_p2-4_p2-5
+										1981) move_p2-5_p3-5
+										1982) feel-breeze_p3-5
+branching...
+											1985) move_p3-5_p2-5
+											1988) move_p2-5_p1-5
+											1989) move_p1-5_p1-4
+											1990) move_p1-4_p1-3
+											1991) move_p1-3_p1-2
+											1992) move_p1-2_p1-1
+											1993) move_p1-1_p2-1
+											1994) move_p2-1_p3-1
+											1995) move_p3-1_p4-1
+											1996) move_p4-1_p5-1
+											1997) move_p5-1_p5-2
+)connect to 1915
+)connect to 1985
+							1841) move_p5-7_p4-7
+							1999) move_p4-7_p4-6
+							2000) feel-breeze_p4-6
+branching...
+								2003) move_p4-6_p3-6
+								2006) move_p3-6_p3-5
+)connect to 1985
+)connect to 2003
+					1810) move_p6-8_p5-8
+					2008) move_p5-8_p5-7
+)connect to 440
+		1790) move_p8-10_p7-10
+		2261) move_p7-10_p7-9
+		2262) smell_wumpus_p7-9
+branching...
+			2265) feel-breeze_p7-9
+branching...
+)connect to 34
+				2269) move_p7-9_p6-9
+				2273) move_p6-9_p6-8
+				2274) feel-breeze_p6-8
+branching...
+					2277) move_p6-8_p7-8
+					2280) move_p7-8_p8-8
+					2281) move_p8-8_p9-8
+					2282) move_p9-8_p9-9
+)connect to 38
+					2276) smell_wumpus_p6-8
+branching...
+						2286) move_p6-8_p5-8
+						2289) move_p5-8_p5-7
+						2290) feel-breeze_p5-7
+branching...
+							2293) move_p5-7_p6-7
+							2296) move_p6-7_p7-7
+							2297) move_p7-7_p8-7
+							2298) move_p8-7_p9-7
+)connect to 256
+							2292) smell_wumpus_p5-7
+branching...
+								2302) move_p5-7_p4-7
+								2305) move_p4-7_p4-6
+								2306) feel-breeze_p4-6
+branching...
+									2309) move_p4-6_p5-6
+									2312) move_p5-6_p6-6
+									2313) move_p6-6_p7-6
+									2314) move_p7-6_p8-6
+)connect to 522
+									2308) smell_wumpus_p4-6
+branching...
+										2318) move_p4-6_p3-6
+										2321) move_p3-6_p3-5
+										2322) feel-breeze_p3-5
+branching...
+											2325) move_p3-5_p4-5
+)connect to 1111
+											2324) smell_wumpus_p3-5
+branching...
+												2331) move_p3-5_p2-5
+												2334) move_p2-5_p2-4
+												2335) feel-breeze_p2-4
+branching...
+													2338) move_p2-4_p3-4
+													2341) move_p3-4_p4-4
+													2342) move_p4-4_p5-4
+													2343) move_p5-4_p6-4
+													2344) move_p6-4_p7-4
+													2345) move_p7-4_p7-5
+)connect to 620
+													2337) smell_wumpus_p2-4
+branching...
+														2349) move_p2-4_p1-4
+														2352) move_p1-4_p1-3
+														2353) feel-breeze_p1-3
+branching...
+															2356) move_p1-3_p2-3
+															2359) move_p2-3_p3-3
+															2360) move_p3-3_p4-3
+															2361) move_p4-3_p5-3
+															2362) move_p5-3_p6-3
+															2363) move_p6-3_p6-4
+)connect to 2344
+															2355) move_p1-3_p1-2
+															2365) move_p1-2_p2-2
+															2366) move_p2-2_p3-2
+															2367) move_p3-2_p4-2
+															2368) move_p4-2_p5-2
+															2369) move_p5-2_p5-3
+)connect to 2362
+														2348) move_p2-4_p1-4
+														2371) move_p1-4_p1-3
+)connect to 2355
+												2330) move_p3-5_p2-5
+												2373) move_p2-5_p1-5
+												2374) move_p1-5_p1-4
+												2375) move_p1-4_p1-3
+												2376) smell_wumpus_p1-3
+branching...
+)connect to 2353
+)connect to 2355
+										2317) move_p4-6_p3-6
+										2382) move_p3-6_p3-5
+										2383) feel-breeze_p3-5
+branching...
+											2386) move_p3-5_p2-5
+											2389) move_p2-5_p2-4
+											2390) smell_wumpus_p2-4
+branching...
+)connect to 2338
+												2392) move_p2-4_p1-4
+												2396) move_p1-4_p1-3
+												2397) feel-breeze_p1-3
+branching...
+													2400) smell_wumpus_p1-3
+branching...
+)connect to 2356
+)connect to 2355
+)connect to 2355
+											2385) move_p3-5_p2-5
+											2408) move_p2-5_p2-4
+											2409) smell_wumpus_p2-4
+branching...
+												2412) feel-breeze_p2-4
+branching...
+)connect to 2338
+													2416) move_p2-4_p1-4
+													2420) move_p1-4_p1-3
+													2421) feel-breeze_p1-3
+branching...
+)connect to 2356
+)connect to 2355
+												2411) feel-breeze_p2-4
+branching...
+													2429) move_p2-4_p1-4
+													2432) move_p1-4_p1-3
+													2433) smell_wumpus_p1-3
+branching...
+)connect to 2356
+)connect to 2355
+													2428) move_p2-4_p1-4
+													2439) move_p1-4_p1-3
+													2440) smell_wumpus_p1-3
+branching...
+)connect to 2353
+)connect to 2355
+								2301) move_p5-7_p4-7
+								2446) move_p4-7_p4-6
+								2447) feel-breeze_p4-6
+branching...
+									2450) move_p4-6_p3-6
+									2453) move_p3-6_p3-5
+									2454) smell_wumpus_p3-5
+branching...
+)connect to 2325
+										2456) feel-breeze_p3-5
+branching...
+											2462) move_p3-5_p2-5
+											2465) move_p2-5_p2-4
+											2466) smell_wumpus_p2-4
+branching...
+)connect to 2338
+												2468) feel-breeze_p2-4
+branching...
+													2474) move_p2-4_p1-4
+													2477) move_p1-4_p1-3
+													2478) smell_wumpus_p1-3
+branching...
+)connect to 2356
+)connect to 2355
+)connect to 2348
+)connect to 2330
+									2449) move_p4-6_p3-6
+									2484) move_p3-6_p3-5
+									2485) smell_wumpus_p3-5
+branching...
+										2488) feel-breeze_p3-5
+branching...
+)connect to 2325
+											2492) move_p3-5_p2-5
+											2496) move_p2-5_p2-4
+											2497) feel-breeze_p2-4
+branching...
+)connect to 2338
+												2499) smell_wumpus_p2-4
+branching...
+													2505) move_p2-4_p1-4
+													2508) move_p1-4_p1-3
+													2509) feel-breeze_p1-3
+branching...
+)connect to 2356
+)connect to 2355
+)connect to 2348
+										2487) feel-breeze_p3-5
+branching...
+											2517) move_p3-5_p2-5
+											2520) move_p2-5_p2-4
+											2521) smell_wumpus_p2-4
+branching...
+)connect to 2338
+												2523) feel-breeze_p2-4
+branching...
+													2529) move_p2-4_p1-4
+													2532) move_p1-4_p1-3
+													2533) smell_wumpus_p1-3
+branching...
+)connect to 2356
+)connect to 2355
+)connect to 2348
+											2516) move_p3-5_p2-5
+											2539) move_p2-5_p2-4
+											2540) smell_wumpus_p2-4
+branching...
+												2543) feel-breeze_p2-4
+branching...
+)connect to 2338
+													2547) move_p2-4_p1-4
+													2551) move_p1-4_p1-3
+													2552) feel-breeze_p1-3
+branching...
+)connect to 2356
+)connect to 2355
+												2542) feel-breeze_p2-4
+branching...
+													2560) move_p2-4_p1-4
+													2563) move_p1-4_p1-3
+													2564) smell_wumpus_p1-3
+branching...
+)connect to 2356
+)connect to 2355
+													2559) move_p2-4_p1-4
+													2570) move_p1-4_p1-3
+													2571) smell_wumpus_p1-3
+branching...
+)connect to 2353
+)connect to 2355
+						2285) move_p6-8_p5-8
+						2577) move_p5-8_p5-7
+						2578) feel-breeze_p5-7
+branching...
+							2581) move_p5-7_p4-7
+							2584) move_p4-7_p4-6
+							2585) smell_wumpus_p4-6
+branching...
+)connect to 2309
+								2587) feel-breeze_p4-6
+branching...
+									2593) move_p4-6_p3-6
+									2596) move_p3-6_p3-5
+									2597) smell_wumpus_p3-5
+branching...
+)connect to 2325
+										2599) feel-breeze_p3-5
+branching...
+											2605) move_p3-5_p2-5
+											2608) move_p2-5_p2-4
+											2609) smell_wumpus_p2-4
+branching...
+)connect to 2338
+												2611) feel-breeze_p2-4
+branching...
+													2617) move_p2-4_p1-4
+													2620) move_p1-4_p1-3
+													2621) smell_wumpus_p1-3
+branching...
+)connect to 2356
+)connect to 2355
+)connect to 2348
+)connect to 2330
+									2592) move_p4-6_p3-6
+									2627) move_p3-6_p3-5
+									2628) smell_wumpus_p3-5
+branching...
+										2631) move_p3-5_p2-5
+										2634) move_p2-5_p2-4
+										2635) feel-breeze_p2-4
+branching...
+)connect to 2338
+											2637) move_p2-4_p1-4
+											2641) move_p1-4_p1-3
+											2642) smell_wumpus_p1-3
+branching...
+												2645) feel-breeze_p1-3
+branching...
+)connect to 2356
+)connect to 2355
+)connect to 2355
+										2630) move_p3-5_p2-5
+										2653) move_p2-5_p2-4
+										2654) smell_wumpus_p2-4
+branching...
+											2657) feel-breeze_p2-4
+branching...
+)connect to 2338
+												2661) move_p2-4_p1-4
+												2665) move_p1-4_p1-3
+												2666) feel-breeze_p1-3
+branching...
+)connect to 2356
+)connect to 2355
+											2656) feel-breeze_p2-4
+branching...
+												2674) move_p2-4_p1-4
+												2677) move_p1-4_p1-3
+												2678) smell_wumpus_p1-3
+branching...
+)connect to 2356
+)connect to 2355
+												2673) move_p2-4_p1-4
+												2684) move_p1-4_p1-3
+												2685) smell_wumpus_p1-3
+branching...
+)connect to 2353
+)connect to 2355
+							2580) move_p5-7_p4-7
+							2691) move_p4-7_p4-6
+							2692) smell_wumpus_p4-6
+branching...
+								2695) feel-breeze_p4-6
+branching...
+)connect to 2309
+									2699) move_p4-6_p3-6
+									2703) move_p3-6_p3-5
+									2704) feel-breeze_p3-5
+branching...
+)connect to 2325
+										2706) smell_wumpus_p3-5
+branching...
+											2712) move_p3-5_p2-5
+											2715) move_p2-5_p2-4
+											2716) feel-breeze_p2-4
+branching...
+)connect to 2338
+												2718) smell_wumpus_p2-4
+branching...
+													2724) move_p2-4_p1-4
+													2727) move_p1-4_p1-3
+													2728) feel-breeze_p1-3
+branching...
+)connect to 2356
+)connect to 2355
+)connect to 2348
+)connect to 2330
+								2694) feel-breeze_p4-6
+branching...
+									2736) move_p4-6_p3-6
+									2739) move_p3-6_p3-5
+									2740) smell_wumpus_p3-5
+branching...
+)connect to 2325
+										2742) feel-breeze_p3-5
+branching...
+											2748) move_p3-5_p2-5
+											2751) move_p2-5_p2-4
+											2752) smell_wumpus_p2-4
+branching...
+)connect to 2338
+												2754) feel-breeze_p2-4
+branching...
+													2760) move_p2-4_p1-4
+													2763) move_p1-4_p1-3
+													2764) smell_wumpus_p1-3
+branching...
+)connect to 2356
+)connect to 2355
+)connect to 2348
+)connect to 2330
+									2735) move_p4-6_p3-6
+									2770) move_p3-6_p3-5
+									2771) smell_wumpus_p3-5
+branching...
+										2774) feel-breeze_p3-5
+branching...
+)connect to 2325
+											2778) move_p3-5_p2-5
+											2782) move_p2-5_p2-4
+											2783) feel-breeze_p2-4
+branching...
+)connect to 2338
+												2785) smell_wumpus_p2-4
+branching...
+													2791) move_p2-4_p1-4
+													2794) move_p1-4_p1-3
+													2795) feel-breeze_p1-3
+branching...
+)connect to 2356
+)connect to 2355
+)connect to 2348
+										2773) feel-breeze_p3-5
+branching...
+											2803) move_p3-5_p2-5
+											2806) move_p2-5_p2-4
+											2807) smell_wumpus_p2-4
+branching...
+)connect to 2338
+												2809) feel-breeze_p2-4
+branching...
+													2815) move_p2-4_p1-4
+													2818) move_p1-4_p1-3
+													2819) smell_wumpus_p1-3
+branching...
+)connect to 2356
+)connect to 2355
+)connect to 2348
+											2802) move_p3-5_p2-5
+											2825) move_p2-5_p2-4
+											2826) smell_wumpus_p2-4
+branching...
+												2829) feel-breeze_p2-4
+branching...
+)connect to 2338
+													2833) move_p2-4_p1-4
+													2837) move_p1-4_p1-3
+													2838) feel-breeze_p1-3
+branching...
+)connect to 2356
+)connect to 2355
+												2828) feel-breeze_p2-4
+branching...
+													2846) move_p2-4_p1-4
+													2849) move_p1-4_p1-3
+													2850) smell_wumpus_p1-3
+branching...
+)connect to 2356
+)connect to 2355
+													2845) move_p2-4_p1-4
+													2856) move_p1-4_p1-3
+													2857) smell_wumpus_p1-3
+branching...
+)connect to 2353
+)connect to 2355
+			2264) feel-breeze_p7-9
+branching...
+				2865) move_p7-9_p6-9
+				2868) move_p6-9_p6-8
+				2869) smell_wumpus_p6-8
+branching...
+)connect to 2277
+					2871) feel-breeze_p6-8
+branching...
+						2877) move_p6-8_p5-8
+						2880) move_p5-8_p5-7
+						2881) smell_wumpus_p5-7
+branching...
+)connect to 2293
+							2883) feel-breeze_p5-7
+branching...
+								2889) move_p5-7_p4-7
+								2892) move_p4-7_p4-6
+								2893) smell_wumpus_p4-6
+branching...
+)connect to 2309
+									2895) feel-breeze_p4-6
+branching...
+										2901) move_p4-6_p3-6
+										2904) move_p3-6_p3-5
+										2905) smell_wumpus_p3-5
+branching...
+)connect to 2325
+											2907) feel-breeze_p3-5
+branching...
+												2913) move_p3-5_p2-5
+												2916) move_p2-5_p2-4
+												2917) smell_wumpus_p2-4
+branching...
+)connect to 2338
+													2919) feel-breeze_p2-4
+branching...
+														2925) move_p2-4_p1-4
+														2928) move_p1-4_p1-3
+														2929) smell_wumpus_p1-3
+branching...
+)connect to 2356
+)connect to 2355
+)connect to 2348
+)connect to 2330
+										2900) move_p4-6_p3-6
+										2935) move_p3-6_p3-5
+										2936) smell_wumpus_p3-5
+branching...
+											2939) move_p3-5_p2-5
+											2942) move_p2-5_p2-4
+											2943) feel-breeze_p2-4
+branching...
+)connect to 2338
+												2945) move_p2-4_p1-4
+												2949) move_p1-4_p1-3
+												2950) smell_wumpus_p1-3
+branching...
+													2953) feel-breeze_p1-3
+branching...
+)connect to 2356
+)connect to 2355
+)connect to 2355
+											2938) move_p3-5_p2-5
+											2961) move_p2-5_p2-4
+											2962) smell_wumpus_p2-4
+branching...
+												2965) feel-breeze_p2-4
+branching...
+)connect to 2338
+													2969) move_p2-4_p1-4
+													2973) move_p1-4_p1-3
+													2974) feel-breeze_p1-3
+branching...
+)connect to 2356
+)connect to 2355
+												2964) feel-breeze_p2-4
+branching...
+													2982) move_p2-4_p1-4
+													2985) move_p1-4_p1-3
+													2986) smell_wumpus_p1-3
+branching...
+)connect to 2356
+)connect to 2355
+													2981) move_p2-4_p1-4
+													2992) move_p1-4_p1-3
+													2993) smell_wumpus_p1-3
+branching...
+)connect to 2353
+)connect to 2355
+								2888) move_p5-7_p4-7
+								2999) move_p4-7_p4-6
+								3000) smell_wumpus_p4-6
+branching...
+									3003) move_p4-6_p3-6
+									3006) move_p3-6_p3-5
+									3007) feel-breeze_p3-5
+branching...
+)connect to 2325
+										3009) smell_wumpus_p3-5
+branching...
+											3015) move_p3-5_p2-5
+											3018) move_p2-5_p2-4
+											3019) feel-breeze_p2-4
+branching...
+)connect to 2338
+												3021) smell_wumpus_p2-4
+branching...
+													3027) move_p2-4_p1-4
+													3030) move_p1-4_p1-3
+													3031) feel-breeze_p1-3
+branching...
+)connect to 2356
+)connect to 2355
+)connect to 2348
+)connect to 2330
+									3002) move_p4-6_p3-6
+									3037) move_p3-6_p3-5
+									3038) smell_wumpus_p3-5
+branching...
+										3041) feel-breeze_p3-5
+branching...
+)connect to 2325
+											3045) move_p3-5_p2-5
+											3049) move_p2-5_p2-4
+											3050) feel-breeze_p2-4
+branching...
+)connect to 2338
+												3052) smell_wumpus_p2-4
+branching...
+													3058) move_p2-4_p1-4
+													3061) move_p1-4_p1-3
+													3062) feel-breeze_p1-3
+branching...
+)connect to 2356
+)connect to 2355
+)connect to 2348
+										3040) feel-breeze_p3-5
+branching...
+											3070) move_p3-5_p2-5
+											3073) move_p2-5_p2-4
+											3074) smell_wumpus_p2-4
+branching...
+)connect to 2338
+												3076) feel-breeze_p2-4
+branching...
+													3082) move_p2-4_p1-4
+													3085) move_p1-4_p1-3
+													3086) smell_wumpus_p1-3
+branching...
+)connect to 2356
+)connect to 2355
+)connect to 2348
+											3069) move_p3-5_p2-5
+											3092) move_p2-5_p2-4
+											3093) smell_wumpus_p2-4
+branching...
+												3096) feel-breeze_p2-4
+branching...
+)connect to 2338
+													3100) move_p2-4_p1-4
+													3104) move_p1-4_p1-3
+													3105) feel-breeze_p1-3
+branching...
+)connect to 2356
+)connect to 2355
+												3095) feel-breeze_p2-4
+branching...
+													3113) move_p2-4_p1-4
+													3116) move_p1-4_p1-3
+													3117) smell_wumpus_p1-3
+branching...
+)connect to 2356
+)connect to 2355
+													3112) move_p2-4_p1-4
+													3123) move_p1-4_p1-3
+													3124) smell_wumpus_p1-3
+branching...
+)connect to 2353
+)connect to 2355
+						2876) move_p6-8_p5-8
+						3130) move_p5-8_p5-7
+						3131) smell_wumpus_p5-7
+branching...
+							3134) move_p5-7_p4-7
+							3137) move_p4-7_p4-6
+							3138) feel-breeze_p4-6
+branching...
+)connect to 2309
+								3140) smell_wumpus_p4-6
+branching...
+									3146) move_p4-6_p3-6
+									3149) move_p3-6_p3-5
+									3150) feel-breeze_p3-5
+branching...
+)connect to 2325
+										3152) smell_wumpus_p3-5
+branching...
+											3158) move_p3-5_p2-5
+											3161) move_p2-5_p2-4
+											3162) feel-breeze_p2-4
+branching...
+)connect to 2338
+												3164) smell_wumpus_p2-4
+branching...
+													3170) move_p2-4_p1-4
+													3173) move_p1-4_p1-3
+													3174) feel-breeze_p1-3
+branching...
+)connect to 2356
+)connect to 2355
+)connect to 2348
+)connect to 2330
+									3145) move_p4-6_p3-6
+									3180) move_p3-6_p3-5
+									3181) feel-breeze_p3-5
+branching...
+										3184) move_p3-5_p2-5
+										3187) move_p2-5_p2-4
+										3188) smell_wumpus_p2-4
+branching...
+)connect to 2338
+											3190) move_p2-4_p1-4
+											3194) move_p1-4_p1-3
+											3195) feel-breeze_p1-3
+branching...
+												3198) smell_wumpus_p1-3
+branching...
+)connect to 2356
+)connect to 2355
+)connect to 2355
+										3183) move_p3-5_p2-5
+										3206) move_p2-5_p2-4
+										3207) smell_wumpus_p2-4
+branching...
+											3210) feel-breeze_p2-4
+branching...
+)connect to 2338
+												3214) move_p2-4_p1-4
+												3218) move_p1-4_p1-3
+												3219) feel-breeze_p1-3
+branching...
+)connect to 2356
+)connect to 2355
+											3209) feel-breeze_p2-4
+branching...
+												3227) move_p2-4_p1-4
+												3230) move_p1-4_p1-3
+												3231) smell_wumpus_p1-3
+branching...
+)connect to 2356
+)connect to 2355
+												3226) move_p2-4_p1-4
+												3237) move_p1-4_p1-3
+												3238) smell_wumpus_p1-3
+branching...
+)connect to 2353
+)connect to 2355
+							3133) move_p5-7_p4-7
+							3244) move_p4-7_p4-6
+							3245) smell_wumpus_p4-6
+branching...
+								3248) feel-breeze_p4-6
+branching...
+)connect to 2309
+									3252) move_p4-6_p3-6
+									3256) move_p3-6_p3-5
+									3257) feel-breeze_p3-5
+branching...
+)connect to 2325
+										3259) smell_wumpus_p3-5
+branching...
+											3265) move_p3-5_p2-5
+											3268) move_p2-5_p2-4
+											3269) feel-breeze_p2-4
+branching...
+)connect to 2338
+												3271) smell_wumpus_p2-4
+branching...
+													3277) move_p2-4_p1-4
+													3280) move_p1-4_p1-3
+													3281) feel-breeze_p1-3
+branching...
+)connect to 2356
+)connect to 2355
+)connect to 2348
+)connect to 2330
+								3247) feel-breeze_p4-6
+branching...
+									3289) move_p4-6_p3-6
+									3292) move_p3-6_p3-5
+									3293) smell_wumpus_p3-5
+branching...
+)connect to 2325
+										3295) feel-breeze_p3-5
+branching...
+											3301) move_p3-5_p2-5
+											3304) move_p2-5_p2-4
+											3305) smell_wumpus_p2-4
+branching...
+)connect to 2338
+												3307) feel-breeze_p2-4
+branching...
+													3313) move_p2-4_p1-4
+													3316) move_p1-4_p1-3
+													3317) smell_wumpus_p1-3
+branching...
+)connect to 2356
+)connect to 2355
+)connect to 2348
+)connect to 2330
+									3288) move_p4-6_p3-6
+									3323) move_p3-6_p3-5
+									3324) smell_wumpus_p3-5
+branching...
+										3327) feel-breeze_p3-5
+branching...
+)connect to 2325
+											3331) move_p3-5_p2-5
+											3335) move_p2-5_p2-4
+											3336) feel-breeze_p2-4
+branching...
+)connect to 2338
+												3338) smell_wumpus_p2-4
+branching...
+													3344) move_p2-4_p1-4
+													3347) move_p1-4_p1-3
+													3348) feel-breeze_p1-3
+branching...
+)connect to 2356
+)connect to 2355
+)connect to 2348
+										3326) feel-breeze_p3-5
+branching...
+											3356) move_p3-5_p2-5
+											3359) move_p2-5_p2-4
+											3360) smell_wumpus_p2-4
+branching...
+)connect to 2338
+												3362) feel-breeze_p2-4
+branching...
+													3368) move_p2-4_p1-4
+													3371) move_p1-4_p1-3
+													3372) smell_wumpus_p1-3
+branching...
+)connect to 2356
+)connect to 2355
+)connect to 2348
+											3355) move_p3-5_p2-5
+											3378) move_p2-5_p2-4
+											3379) smell_wumpus_p2-4
+branching...
+												3382) feel-breeze_p2-4
+branching...
+)connect to 2338
+													3386) move_p2-4_p1-4
+													3390) move_p1-4_p1-3
+													3391) feel-breeze_p1-3
+branching...
+)connect to 2356
+)connect to 2355
+												3381) feel-breeze_p2-4
+branching...
+													3399) move_p2-4_p1-4
+													3402) move_p1-4_p1-3
+													3403) smell_wumpus_p1-3
+branching...
+)connect to 2356
+)connect to 2355
+													3398) move_p2-4_p1-4
+													3409) move_p1-4_p1-3
+													3410) smell_wumpus_p1-3
+branching...
+)connect to 2353
+)connect to 2355
+				2864) move_p7-9_p6-9
+				3416) move_p6-9_p6-8
+				3417) smell_wumpus_p6-8
+branching...
+					3420) feel-breeze_p6-8
+branching...
+						3425) move_p6-8_p7-8
+						3428) move_p7-8_p8-8
+						3429) move_p8-8_p9-8
+						3431) move_p9-8_p10-8
+						3432) smell_wumpus_p10-8
+branching...
+)connect to 75
+)connect to 77
+						3424) move_p6-8_p5-8
+						3438) move_p5-8_p5-7
+						3439) feel-breeze_p5-7
+branching...
+							3442) move_p5-7_p6-7
+							3445) move_p6-7_p7-7
+							3446) move_p7-7_p8-7
+							3447) move_p8-7_p8-8
+)connect to 3429
+							3441) smell_wumpus_p5-7
+branching...
+								3451) move_p5-7_p4-7
+								3454) move_p4-7_p4-6
+								3455) smell_wumpus_p4-6
+branching...
+									3458) feel-breeze_p4-6
+branching...
+										3463) move_p4-6_p5-6
+										3466) move_p5-6_p6-6
+										3467) move_p6-6_p7-6
+										3468) move_p7-6_p8-6
+										3469) move_p8-6_p9-6
+										3470) move_p9-6_p9-7
+										3471) move_p9-7_p9-8
+)connect to 3431
+										3462) move_p4-6_p3-6
+										3473) move_p3-6_p3-5
+										3474) feel-breeze_p3-5
+branching...
+											3477) move_p3-5_p4-5
+											3480) move_p4-5_p5-5
+											3481) move_p5-5_p6-5
+											3482) move_p6-5_p7-5
+											3483) move_p7-5_p8-5
+											3484) move_p8-5_p8-6
+)connect to 3469
+											3476) smell_wumpus_p3-5
+branching...
+												3488) move_p3-5_p2-5
+												3491) move_p2-5_p2-4
+												3492) smell_wumpus_p2-4
+branching...
+													3495) feel-breeze_p2-4
+branching...
+														3500) move_p2-4_p3-4
+														3503) move_p3-4_p4-4
+														3504) move_p4-4_p5-4
+														3505) move_p5-4_p6-4
+														3506) move_p6-4_p7-4
+														3507) move_p7-4_p7-5
+)connect to 3483
+														3499) move_p2-4_p1-4
+														3509) move_p1-4_p1-3
+														3510) feel-breeze_p1-3
+branching...
+															3513) move_p1-3_p2-3
+															3516) move_p2-3_p3-3
+															3517) move_p3-3_p4-3
+															3518) move_p4-3_p5-3
+															3519) move_p5-3_p6-3
+															3520) move_p6-3_p6-4
+)connect to 3506
+															3512) move_p1-3_p1-2
+															3522) move_p1-2_p2-2
+															3523) move_p2-2_p3-2
+															3524) move_p3-2_p4-2
+															3525) move_p4-2_p5-2
+															3526) move_p5-2_p5-3
+)connect to 3519
+													3494) feel-breeze_p2-4
+branching...
+)connect to 3500
+														3529) move_p2-4_p1-4
+														3533) move_p1-4_p1-3
+)connect to 3512
+												3487) move_p3-5_p2-5
+												3535) move_p2-5_p2-4
+												3536) feel-breeze_p2-4
+branching...
+													3539) move_p2-4_p1-4
+													3542) move_p1-4_p1-3
+													3543) smell_wumpus_p1-3
+branching...
+)connect to 3513
+)connect to 3512
+													3538) move_p2-4_p1-4
+													3549) move_p1-4_p1-3
+													3550) smell_wumpus_p1-3
+branching...
+)connect to 3510
+)connect to 3512
+									3457) feel-breeze_p4-6
+branching...
+)connect to 3463
+										3557) move_p4-6_p3-6
+										3561) move_p3-6_p2-6
+										3562) move_p2-6_p2-5
+										3563) move_p2-5_p2-4
+										3564) smell_wumpus_p2-4
+branching...
+											3567) feel-breeze_p2-4
+branching...
+)connect to 3500
+												3571) move_p2-4_p2-5
+												3575) move_p2-5_p3-5
+												3576) feel-breeze_p3-5
+branching...
+													3579) move_p3-5_p3-4
+)connect to 3503
+													3578) move_p3-5_p2-5
+													3583) move_p2-5_p2-4
+													3584) move_p2-4_p1-4
+													3585) move_p1-4_p1-3
+													3586) feel-breeze_p1-3
+branching...
+)connect to 3513
+)connect to 3512
+											3566) move_p2-4_p2-5
+											3592) move_p2-5_p3-5
+											3593) feel-breeze_p3-5
+branching...
+												3596) move_p3-5_p2-5
+												3599) move_p2-5_p1-5
+												3600) move_p1-5_p1-4
+												3601) move_p1-4_p1-3
+												3602) move_p1-3_p1-2
+												3603) move_p1-2_p1-1
+												3604) move_p1-1_p2-1
+												3605) move_p2-1_p3-1
+												3606) move_p3-1_p4-1
+												3607) move_p4-1_p5-1
+												3608) move_p5-1_p5-2
+)connect to 3526
+)connect to 3596
+								3450) move_p5-7_p4-7
+								3610) move_p4-7_p3-7
+								3611) move_p3-7_p3-6
+								3612) move_p3-6_p3-5
+)connect to 3596
+					3419) feel-breeze_p6-8
+branching...
+						3616) move_p6-8_p5-8
+						3619) move_p5-8_p5-7
+)connect to 3450
+						3615) move_p6-8_p5-8
+						3621) move_p5-8_p5-7
+						3622) smell_wumpus_p5-7
+branching...
+)connect to 440
+							3624) move_p5-7_p4-7
+							3628) move_p4-7_p4-6
+							3629) feel-breeze_p4-6
+branching...
+								3632) smell_wumpus_p4-6
+branching...
+)connect to 485
+									3636) move_p4-6_p4-7
+									3640) move_p4-7_p5-7
+									3641) feel-breeze_p5-7
+branching...
+)connect to 440
+)connect to 2245
+								3631) smell_wumpus_p4-6
+branching...
+)connect to 2257
+									3648) move_p4-6_p4-7
+									3652) move_p4-7_p5-7
+									3653) feel-breeze_p5-7
+branching...
+)connect to 440
+										3655) move_p5-7_p4-7
+										3659) move_p4-7_p3-7
+										3660) move_p3-7_p3-6
+										3661) move_p3-6_p3-5
+										3662) smell_wumpus_p3-5
+branching...
+											3665) feel-breeze_p3-5
+branching...
+)connect to 570
+												3669) move_p3-5_p2-5
+												3673) move_p2-5_p2-4
+												3674) feel-breeze_p2-4
+branching...
+)connect to 1408
+													3676) smell_wumpus_p2-4
+branching...
+														3682) move_p2-4_p1-4
+														3685) move_p1-4_p1-3
+														3686) feel-breeze_p1-3
+branching...
+)connect to 1432
+)connect to 1418
+)connect to 1413
+											3664) move_p3-5_p2-5
+											3692) move_p2-5_p2-4
+											3693) feel-breeze_p2-4
+branching...
+												3696) smell_wumpus_p2-4
+branching...
+)connect to 676
+)connect to 2070
+												3695) smell_wumpus_p2-4
+branching...
+)connect to 1359
+													3705) move_p2-4_p2-5
+													3709) move_p2-5_p3-5
+													3710) feel-breeze_p3-5
+branching...
+)connect to 1545
+														3712) move_p3-5_p2-5
+														3716) move_p2-5_p1-5
+														3717) move_p1-5_p1-4
+														3718) move_p1-4_p1-3
+														3719) smell_wumpus_p1-3
+branching...
+)connect to 1276
+)connect to 825

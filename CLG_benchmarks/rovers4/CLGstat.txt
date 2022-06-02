@@ -1,0 +1,71 @@
+484) sense_vis_rover0_objective1_waypoint3
+	485) calibrate_rover0_camera0_objective1_waypoint3
+	486) take_image_rover0_waypoint3_objective1_camera0_high_res
+	487) navigate_rover0_waypoint3_waypoint0_camera0_objective1
+	488) sense_vis_rover0_objective1_waypoint0
+		489) calibrate_rover0_camera0_objective1_waypoint0
+		490) take_image_rover0_waypoint0_objective1_camera0_high_res
+		491) navigate_rover0_waypoint0_waypoint3_camera0_objective1
+		492) navigate_rover0_waypoint3_waypoint1_camera0_objective1
+		493) sense_vis_rover0_objective1_waypoint1
+			494) navigate_rover0_waypoint1_waypoint2_camera0_objective1
+			495) calibrate_rover0_camera0_objective1_waypoint2
+			496) take_image_rover0_waypoint2_objective1_camera0_high_res
+			497) communicate_image_data_rover0_general_objective1_high_res_waypoint2_waypoint0
+
+			500) calibrate_rover0_camera0_objective1_waypoint1
+			501) take_image_rover0_waypoint1_objective1_camera0_high_res
+			502) communicate_image_data_rover0_general_objective1_high_res_waypoint1_waypoint0
+
+		505) calibrate_rover0_camera0_objective1_waypoint0
+		506) take_image_rover0_waypoint0_objective1_camera0_high_res
+		507) navigate_rover0_waypoint0_waypoint3_camera0_objective1
+		508) communicate_image_data_rover0_general_objective1_high_res_waypoint3_waypoint0
+
+	511) calibrate_rover0_camera0_objective1_waypoint3
+	512) take_image_rover0_waypoint3_objective1_camera0_high_res
+	513) communicate_image_data_rover0_general_objective1_high_res_waypoint3_waypoint0
+
+Goals 
+#4 :  , (visible_from objective1 waypoint3) , (not (visible_from objective1 waypoint0)) , (not (visible_from objective1 waypoint1)) , (not (visible_from objective1 waypoint2))
+9 :  , (visible_from objective1 waypoint0) , (not (visible_from objective1 waypoint1)) , (not (visible_from objective1 waypoint2)) , (not (visible_from objective1 waypoint3))
+13 :  , (visible_from objective1 waypoint1) , (not (visible_from objective1 waypoint2)) , (not (visible_from objective1 waypoint0)) , (not (visible_from objective1 waypoint3))
+14 :  , (not (visible_from objective1 waypoint1)) , (visible_from objective1 waypoint2) , (not (visible_from objective1 waypoint0)) , (not (visible_from objective1 waypoint3))
+#
+Union Goals Budget
+#4 :  , (visible_from objective1 waypoint3) , (not (visible_from objective1 waypoint0)) , (not (visible_from objective1 waypoint1)) , (not (visible_from objective1 waypoint2))
+9 :  , (visible_from objective1 waypoint0) , (not (visible_from objective1 waypoint1)) , (not (visible_from objective1 waypoint2)) , (not (visible_from objective1 waypoint3))
+13 :  , (visible_from objective1 waypoint1) , (not (visible_from objective1 waypoint2)) , (not (visible_from objective1 waypoint0)) , (not (visible_from objective1 waypoint3))
+14 :  , (not (visible_from objective1 waypoint1)) , (visible_from objective1 waypoint2) , (not (visible_from objective1 waypoint0)) , (not (visible_from objective1 waypoint3))
+14 :  , (not (visible_from objective1 waypoint0)) , (not (visible_from objective1 waypoint3))
+14 :  , (not (visible_from objective1 waypoint3))
+14 : 
+#
+
+
+
+Goals Fault Tolerance
+#1 : 0 :  , (visible_from objective1 waypoint3) , (not (visible_from objective1 waypoint0)) , (not (visible_from objective1 waypoint1)) , (not (visible_from objective1 waypoint2))
+2 : 1 :  , (visible_from objective1 waypoint0) , (not (visible_from objective1 waypoint1)) , (not (visible_from objective1 waypoint2)) , (not (visible_from objective1 waypoint3))
+3 : 2 :  , (visible_from objective1 waypoint1) , (not (visible_from objective1 waypoint2)) , (not (visible_from objective1 waypoint0)) , (not (visible_from objective1 waypoint3))
+3 : 3 :  , (not (visible_from objective1 waypoint1)) , (visible_from objective1 waypoint2) , (not (visible_from objective1 waypoint0)) , (not (visible_from objective1 waypoint3))
+#
+
+
+
+Goals Fault Tolerance
+##
+
+
+
+Simplicitity
+#nodes: 24
+branch: 3
+originalSize: 82
+compreesedSize: 71
+compreesedRatio: 1.15492957746479#
+
+
+
+Simplicitity
+#

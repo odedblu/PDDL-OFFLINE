@@ -1,0 +1,7 @@
+RockSample4-3    &46&41&7&7&\\ \hline
+
+RockSample8-3    &73&72&7&7&\\ \hline
+
+RockSample8-5    &274&259&31&24&\\ \hline
+
+RockSample8-7    &1084&495&98&60&\\ \hline

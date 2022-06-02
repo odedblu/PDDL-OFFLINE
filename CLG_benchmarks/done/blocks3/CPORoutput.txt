@@ -1,0 +1,9 @@
+0) senseON_b2_b3
+branching...
+	3) move-to-t_b3_b2
+	8) move-t-to-b_b2_b1
+	6) move-t-to-b_b3_b2
+)goal
+	2) move-b-to-b_b2_b3_b1
+	6) move-t-to-b_b3_b2
+)goal

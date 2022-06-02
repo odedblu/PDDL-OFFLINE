@@ -1,0 +1,510 @@
+REGISTER (entering): main()
+cf2cs v 2.1 -- A compiler for contingent planning problems into classical models.
+CALL: ./cf2cs -sn -t0 -cond -cod -cmr -csl -ckit -ckinl -cminl -cmit -cdisjk0 -cdisjm0 -mac -cfc -fp benchmarks/bts10/d.pddl benchmarks/bts10/p.pddl
+-sn
+-t0
+-cond
+-cod
+-cmr
+-csl
+-ckit
+-ckinl
+-cminl
+-cmit
+-cdisjk0
+-cdisjm0
+-mac
+-cfc
+-fp
+benchmarks/bts10/d.pddl
+benchmarks/bts10/p.pddl
+Using only initial disjunctions for merge
+Clousuring for obtaining possible tags
+Full cancellation: Translating deletes properly. Maybe complete if '-s0' or '-f' option was used
+Propagating ramifications in effects
+Using action compilation + merge
+Merging only goals and preconditions
+REGISTER (entering): parse()
+predicates size = 1 for name = IN
+predicates size = 2 for name = DEFUSED
+Parsed: benchmarks/bts10/d.pddl
+Parsed: benchmarks/bts10/p.pddl
+REGISTER: parse() took 0.000319 secs
+REGISTER (entering): initialize()
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+REGISTER (entering): computeReachableAtoms()
+schema 0 de 2
+schema 1 de 2
+schema 0 de 2
+schema 1 de 2
+REGISTER: computeReachableAtoms() took 0.000324 secs
+GENERAL: number of atoms = 11
+GENERAL: number of reachable atoms = 11
+GENERAL: number of grounded operators = 20
+REGISTER: initialize() took 0.000415 secs
+REGISTER (entering): initInstanceDB()
+Unknown atoms: 10
+Simply unknown atoms: 0
+Known atoms: 17
+True literals (after unit resolution): 1
+Oneof (0): 10
+Or (0): 2
+Or (1): 2
+Or (2): 2
+Or (3): 2
+Or (4): 2
+Or (5): 2
+Or (6): 2
+Or (7): 2
+Or (8): 2
+Or (9): 2
+Or (10): 2
+Or (11): 2
+Or (12): 2
+Or (13): 2
+Or (14): 2
+Or (15): 2
+Or (16): 2
+Or (17): 2
+Or (18): 2
+Or (19): 2
+Or (20): 2
+Or (21): 2
+Or (22): 2
+Or (23): 2
+Or (24): 2
+Or (25): 2
+Or (26): 2
+Or (27): 2
+Or (28): 2
+Or (29): 2
+Or (30): 2
+Or (31): 2
+Or (32): 2
+Or (33): 2
+Or (34): 2
+Or (35): 2
+Or (36): 2
+Or (37): 2
+Or (38): 2
+Or (39): 2
+Or (40): 2
+Or (41): 2
+Or (42): 2
+Or (43): 2
+Or (44): 2
+Or (45): 10
+
+---- end uncertainty: 
+Reachable 11
+GENERAL: number of actions = 10
+REGISTER: initInstanceDB() took 0.002866 secs
+Generating PDDL for contingent heuristic
+Objects: B0 P0 P1 P2 P3 P4 P5 P6 P7 P8 P9 T0 
+REGISTER (entering): finishInstanceDB(void)
+Unknown relevant = 10
+Unknown = 10
+HLP static oneof during collectin 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 
+Static oneof atoms: 4 5 6 7 8 9 10 11 12 13 
+REGISTER: finishInstanceDB(void) took 0 secs
+Static atoms (15): FALSE FOO IN_P9_B0 IN_P8_B0 IN_P7_B0 IN_P6_B0 IN_P5_B0 IN_P4_B0 IN_P3_B0 IN_P2_B0 IN_P1_B0 IN_P0_B0 ACTIVE ALL_END CONT_DUMMY 
+REGISTER (entering): calc_tags()
+REGISTER (entering): calc_relevant()
+starting iterations...
+REGISTER: calc_relevant() took 0 secs
+REGISTER (entering): calc_relevant_obs()
+REGISTER: calc_relevant_obs() took 0 secs
+Accepted disjunction 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 
+STAT Max-width: 1
+Final disjunctions: 1
+4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 
+==== End of Final disjunctions: 
+All tags: IN_P9_B0(4) IN_P8_B0(5) IN_P7_B0(6) IN_P6_B0(7) IN_P5_B0(8) IN_P4_B0(9) IN_P3_B0(10) IN_P2_B0(11) IN_P1_B0(12) IN_P0_B0(13) 
+For lit DEFUSED_B0(3) relevants tags are: IN_P9_B0(4) IN_P8_B0(5) IN_P7_B0(6) IN_P6_B0(7) IN_P5_B0(8) IN_P4_B0(9) IN_P3_B0(10) IN_P2_B0(11) IN_P1_B0(12) IN_P0_B0(13) 
+IMPLIES_WITH_INIT: From lit IN_P9_B0(4) obtaing the following lits:IN_P0_B0(-13) IN_P1_B0(-12) IN_P2_B0(-11) IN_P3_B0(-10) IN_P4_B0(-9) IN_P5_B0(-8) IN_P6_B0(-7) IN_P7_B0(-6) IN_P8_B0(-5) IN_P9_B0(4) 
+IMPLIES_WITH_INIT: From lit IN_P8_B0(5) obtaing the following lits:IN_P0_B0(-13) IN_P1_B0(-12) IN_P2_B0(-11) IN_P3_B0(-10) IN_P4_B0(-9) IN_P5_B0(-8) IN_P6_B0(-7) IN_P7_B0(-6) IN_P9_B0(-4) IN_P8_B0(5) 
+IMPLIES_WITH_INIT: From lit IN_P7_B0(6) obtaing the following lits:IN_P0_B0(-13) IN_P1_B0(-12) IN_P2_B0(-11) IN_P3_B0(-10) IN_P4_B0(-9) IN_P5_B0(-8) IN_P6_B0(-7) IN_P8_B0(-5) IN_P9_B0(-4) IN_P7_B0(6) 
+IMPLIES_WITH_INIT: From lit IN_P6_B0(7) obtaing the following lits:IN_P0_B0(-13) IN_P1_B0(-12) IN_P2_B0(-11) IN_P3_B0(-10) IN_P4_B0(-9) IN_P5_B0(-8) IN_P7_B0(-6) IN_P8_B0(-5) IN_P9_B0(-4) IN_P6_B0(7) 
+IMPLIES_WITH_INIT: From lit IN_P5_B0(8) obtaing the following lits:IN_P0_B0(-13) IN_P1_B0(-12) IN_P2_B0(-11) IN_P3_B0(-10) IN_P4_B0(-9) IN_P6_B0(-7) IN_P7_B0(-6) IN_P8_B0(-5) IN_P9_B0(-4) IN_P5_B0(8) 
+IMPLIES_WITH_INIT: From lit IN_P4_B0(9) obtaing the following lits:IN_P0_B0(-13) IN_P1_B0(-12) IN_P2_B0(-11) IN_P3_B0(-10) IN_P5_B0(-8) IN_P6_B0(-7) IN_P7_B0(-6) IN_P8_B0(-5) IN_P9_B0(-4) IN_P4_B0(9) 
+IMPLIES_WITH_INIT: From lit IN_P3_B0(10) obtaing the following lits:IN_P0_B0(-13) IN_P1_B0(-12) IN_P2_B0(-11) IN_P4_B0(-9) IN_P5_B0(-8) IN_P6_B0(-7) IN_P7_B0(-6) IN_P8_B0(-5) IN_P9_B0(-4) IN_P3_B0(10) 
+IMPLIES_WITH_INIT: From lit IN_P2_B0(11) obtaing the following lits:IN_P0_B0(-13) IN_P1_B0(-12) IN_P3_B0(-10) IN_P4_B0(-9) IN_P5_B0(-8) IN_P6_B0(-7) IN_P7_B0(-6) IN_P8_B0(-5) IN_P9_B0(-4) IN_P2_B0(11) 
+IMPLIES_WITH_INIT: From lit IN_P1_B0(12) obtaing the following lits:IN_P0_B0(-13) IN_P2_B0(-11) IN_P3_B0(-10) IN_P4_B0(-9) IN_P5_B0(-8) IN_P6_B0(-7) IN_P7_B0(-6) IN_P8_B0(-5) IN_P9_B0(-4) IN_P1_B0(12) 
+IMPLIES_WITH_INIT: From lit IN_P0_B0(13) obtaing the following lits:IN_P1_B0(-12) IN_P2_B0(-11) IN_P3_B0(-10) IN_P4_B0(-9) IN_P5_B0(-8) IN_P6_B0(-7) IN_P7_B0(-6) IN_P8_B0(-5) IN_P9_B0(-4) IN_P0_B0(13) 
+REGISTER: calc_tags() took 0.004342 secs
+REGISTER (entering): make_k_0(m)
+REGISTER: make_k_0(m) took 3.16858e-10 secs
+REGISTER (entering): make_k_0(k)
+REGISTER: make_k_0(k) took 3.16858e-10 secs
+GENERAL: number of observations = 10
+Unknown atoms: 4 5 6 7 8 9 10 11 12 13 
+Unknown not in oneof: 
+REGISTER (entering): make_split_t0c()
+142 = k_IN_P0_B0___IN_P9_B0
+143 = k_DEFUSED_B0___IN_P9_B0
+144 = kn_IN_P0_B0___IN_P9_B0
+145 = kn_DEFUSED_B0___IN_P9_B0
+146 = k_IN_P0_B0___IN_P8_B0
+147 = k_DEFUSED_B0___IN_P8_B0
+148 = kn_IN_P0_B0___IN_P8_B0
+149 = kn_DEFUSED_B0___IN_P8_B0
+150 = k_IN_P0_B0___IN_P7_B0
+151 = k_DEFUSED_B0___IN_P7_B0
+152 = kn_IN_P0_B0___IN_P7_B0
+153 = kn_DEFUSED_B0___IN_P7_B0
+154 = k_IN_P0_B0___IN_P6_B0
+155 = k_DEFUSED_B0___IN_P6_B0
+156 = kn_IN_P0_B0___IN_P6_B0
+157 = kn_DEFUSED_B0___IN_P6_B0
+158 = k_IN_P0_B0___IN_P5_B0
+159 = k_DEFUSED_B0___IN_P5_B0
+160 = kn_IN_P0_B0___IN_P5_B0
+161 = kn_DEFUSED_B0___IN_P5_B0
+162 = k_IN_P0_B0___IN_P4_B0
+163 = k_DEFUSED_B0___IN_P4_B0
+164 = kn_IN_P0_B0___IN_P4_B0
+165 = kn_DEFUSED_B0___IN_P4_B0
+166 = k_IN_P0_B0___IN_P3_B0
+167 = k_DEFUSED_B0___IN_P3_B0
+168 = kn_IN_P0_B0___IN_P3_B0
+169 = kn_DEFUSED_B0___IN_P3_B0
+170 = k_IN_P0_B0___IN_P2_B0
+171 = k_DEFUSED_B0___IN_P2_B0
+172 = kn_IN_P0_B0___IN_P2_B0
+173 = kn_DEFUSED_B0___IN_P2_B0
+174 = k_IN_P0_B0___IN_P1_B0
+175 = k_DEFUSED_B0___IN_P1_B0
+176 = kn_IN_P0_B0___IN_P1_B0
+177 = kn_DEFUSED_B0___IN_P1_B0
+178 = k_IN_P0_B0___IN_P0_B0
+179 = k_DEFUSED_B0___IN_P0_B0
+180 = kn_DEFUSED_B0___IN_P0_B0
+181 = k_IN_P1_B0___IN_P9_B0
+182 = kn_IN_P1_B0___IN_P9_B0
+183 = k_IN_P1_B0___IN_P8_B0
+184 = kn_IN_P1_B0___IN_P8_B0
+185 = k_IN_P1_B0___IN_P7_B0
+186 = kn_IN_P1_B0___IN_P7_B0
+187 = k_IN_P1_B0___IN_P6_B0
+188 = kn_IN_P1_B0___IN_P6_B0
+189 = k_IN_P1_B0___IN_P5_B0
+190 = kn_IN_P1_B0___IN_P5_B0
+191 = k_IN_P1_B0___IN_P4_B0
+192 = kn_IN_P1_B0___IN_P4_B0
+193 = k_IN_P1_B0___IN_P3_B0
+194 = kn_IN_P1_B0___IN_P3_B0
+195 = k_IN_P1_B0___IN_P2_B0
+196 = kn_IN_P1_B0___IN_P2_B0
+197 = k_IN_P1_B0___IN_P1_B0
+198 = k_IN_P1_B0___IN_P0_B0
+199 = kn_IN_P1_B0___IN_P0_B0
+200 = k_IN_P2_B0___IN_P9_B0
+201 = kn_IN_P2_B0___IN_P9_B0
+202 = k_IN_P2_B0___IN_P8_B0
+203 = kn_IN_P2_B0___IN_P8_B0
+204 = k_IN_P2_B0___IN_P7_B0
+205 = kn_IN_P2_B0___IN_P7_B0
+206 = k_IN_P2_B0___IN_P6_B0
+207 = kn_IN_P2_B0___IN_P6_B0
+208 = k_IN_P2_B0___IN_P5_B0
+209 = kn_IN_P2_B0___IN_P5_B0
+210 = k_IN_P2_B0___IN_P4_B0
+211 = kn_IN_P2_B0___IN_P4_B0
+212 = k_IN_P2_B0___IN_P3_B0
+213 = kn_IN_P2_B0___IN_P3_B0
+214 = k_IN_P2_B0___IN_P2_B0
+215 = k_IN_P2_B0___IN_P1_B0
+216 = kn_IN_P2_B0___IN_P1_B0
+217 = k_IN_P2_B0___IN_P0_B0
+218 = kn_IN_P2_B0___IN_P0_B0
+219 = k_IN_P3_B0___IN_P9_B0
+220 = kn_IN_P3_B0___IN_P9_B0
+221 = k_IN_P3_B0___IN_P8_B0
+222 = kn_IN_P3_B0___IN_P8_B0
+223 = k_IN_P3_B0___IN_P7_B0
+224 = kn_IN_P3_B0___IN_P7_B0
+225 = k_IN_P3_B0___IN_P6_B0
+226 = kn_IN_P3_B0___IN_P6_B0
+227 = k_IN_P3_B0___IN_P5_B0
+228 = kn_IN_P3_B0___IN_P5_B0
+229 = k_IN_P3_B0___IN_P4_B0
+230 = kn_IN_P3_B0___IN_P4_B0
+231 = k_IN_P3_B0___IN_P3_B0
+232 = k_IN_P3_B0___IN_P2_B0
+233 = kn_IN_P3_B0___IN_P2_B0
+234 = k_IN_P3_B0___IN_P1_B0
+235 = kn_IN_P3_B0___IN_P1_B0
+236 = k_IN_P3_B0___IN_P0_B0
+237 = kn_IN_P3_B0___IN_P0_B0
+238 = k_IN_P4_B0___IN_P9_B0
+239 = kn_IN_P4_B0___IN_P9_B0
+240 = k_IN_P4_B0___IN_P8_B0
+241 = kn_IN_P4_B0___IN_P8_B0
+242 = k_IN_P4_B0___IN_P7_B0
+243 = kn_IN_P4_B0___IN_P7_B0
+244 = k_IN_P4_B0___IN_P6_B0
+245 = kn_IN_P4_B0___IN_P6_B0
+246 = k_IN_P4_B0___IN_P5_B0
+247 = kn_IN_P4_B0___IN_P5_B0
+248 = k_IN_P4_B0___IN_P4_B0
+249 = k_IN_P4_B0___IN_P3_B0
+250 = kn_IN_P4_B0___IN_P3_B0
+251 = k_IN_P4_B0___IN_P2_B0
+252 = kn_IN_P4_B0___IN_P2_B0
+253 = k_IN_P4_B0___IN_P1_B0
+254 = kn_IN_P4_B0___IN_P1_B0
+255 = k_IN_P4_B0___IN_P0_B0
+256 = kn_IN_P4_B0___IN_P0_B0
+257 = k_IN_P5_B0___IN_P9_B0
+258 = kn_IN_P5_B0___IN_P9_B0
+259 = k_IN_P5_B0___IN_P8_B0
+260 = kn_IN_P5_B0___IN_P8_B0
+261 = k_IN_P5_B0___IN_P7_B0
+262 = kn_IN_P5_B0___IN_P7_B0
+263 = k_IN_P5_B0___IN_P6_B0
+264 = kn_IN_P5_B0___IN_P6_B0
+265 = k_IN_P5_B0___IN_P5_B0
+266 = k_IN_P5_B0___IN_P4_B0
+267 = kn_IN_P5_B0___IN_P4_B0
+268 = k_IN_P5_B0___IN_P3_B0
+269 = kn_IN_P5_B0___IN_P3_B0
+270 = k_IN_P5_B0___IN_P2_B0
+271 = kn_IN_P5_B0___IN_P2_B0
+272 = k_IN_P5_B0___IN_P1_B0
+273 = kn_IN_P5_B0___IN_P1_B0
+274 = k_IN_P5_B0___IN_P0_B0
+275 = kn_IN_P5_B0___IN_P0_B0
+276 = k_IN_P6_B0___IN_P9_B0
+277 = kn_IN_P6_B0___IN_P9_B0
+278 = k_IN_P6_B0___IN_P8_B0
+279 = kn_IN_P6_B0___IN_P8_B0
+280 = k_IN_P6_B0___IN_P7_B0
+281 = kn_IN_P6_B0___IN_P7_B0
+282 = k_IN_P6_B0___IN_P6_B0
+283 = k_IN_P6_B0___IN_P5_B0
+284 = kn_IN_P6_B0___IN_P5_B0
+285 = k_IN_P6_B0___IN_P4_B0
+286 = kn_IN_P6_B0___IN_P4_B0
+287 = k_IN_P6_B0___IN_P3_B0
+288 = kn_IN_P6_B0___IN_P3_B0
+289 = k_IN_P6_B0___IN_P2_B0
+290 = kn_IN_P6_B0___IN_P2_B0
+291 = k_IN_P6_B0___IN_P1_B0
+292 = kn_IN_P6_B0___IN_P1_B0
+293 = k_IN_P6_B0___IN_P0_B0
+294 = kn_IN_P6_B0___IN_P0_B0
+295 = k_IN_P7_B0___IN_P9_B0
+296 = kn_IN_P7_B0___IN_P9_B0
+297 = k_IN_P7_B0___IN_P8_B0
+298 = kn_IN_P7_B0___IN_P8_B0
+299 = k_IN_P7_B0___IN_P7_B0
+300 = k_IN_P7_B0___IN_P6_B0
+301 = kn_IN_P7_B0___IN_P6_B0
+302 = k_IN_P7_B0___IN_P5_B0
+303 = kn_IN_P7_B0___IN_P5_B0
+304 = k_IN_P7_B0___IN_P4_B0
+305 = kn_IN_P7_B0___IN_P4_B0
+306 = k_IN_P7_B0___IN_P3_B0
+307 = kn_IN_P7_B0___IN_P3_B0
+308 = k_IN_P7_B0___IN_P2_B0
+309 = kn_IN_P7_B0___IN_P2_B0
+310 = k_IN_P7_B0___IN_P1_B0
+311 = kn_IN_P7_B0___IN_P1_B0
+312 = k_IN_P7_B0___IN_P0_B0
+313 = kn_IN_P7_B0___IN_P0_B0
+314 = k_IN_P8_B0___IN_P9_B0
+315 = kn_IN_P8_B0___IN_P9_B0
+316 = k_IN_P8_B0___IN_P8_B0
+317 = k_IN_P8_B0___IN_P7_B0
+318 = kn_IN_P8_B0___IN_P7_B0
+319 = k_IN_P8_B0___IN_P6_B0
+320 = kn_IN_P8_B0___IN_P6_B0
+321 = k_IN_P8_B0___IN_P5_B0
+322 = kn_IN_P8_B0___IN_P5_B0
+323 = k_IN_P8_B0___IN_P4_B0
+324 = kn_IN_P8_B0___IN_P4_B0
+325 = k_IN_P8_B0___IN_P3_B0
+326 = kn_IN_P8_B0___IN_P3_B0
+327 = k_IN_P8_B0___IN_P2_B0
+328 = kn_IN_P8_B0___IN_P2_B0
+329 = k_IN_P8_B0___IN_P1_B0
+330 = kn_IN_P8_B0___IN_P1_B0
+331 = k_IN_P8_B0___IN_P0_B0
+332 = kn_IN_P8_B0___IN_P0_B0
+333 = k_IN_P9_B0___IN_P9_B0
+334 = k_IN_P9_B0___IN_P8_B0
+335 = kn_IN_P9_B0___IN_P8_B0
+336 = k_IN_P9_B0___IN_P7_B0
+337 = kn_IN_P9_B0___IN_P7_B0
+338 = k_IN_P9_B0___IN_P6_B0
+339 = kn_IN_P9_B0___IN_P6_B0
+340 = k_IN_P9_B0___IN_P5_B0
+341 = kn_IN_P9_B0___IN_P5_B0
+342 = k_IN_P9_B0___IN_P4_B0
+343 = kn_IN_P9_B0___IN_P4_B0
+344 = k_IN_P9_B0___IN_P3_B0
+345 = kn_IN_P9_B0___IN_P3_B0
+346 = k_IN_P9_B0___IN_P2_B0
+347 = kn_IN_P9_B0___IN_P2_B0
+348 = k_IN_P9_B0___IN_P1_B0
+349 = kn_IN_P9_B0___IN_P1_B0
+350 = k_IN_P9_B0___IN_P0_B0
+351 = kn_IN_P9_B0___IN_P0_B0
+REGISTER: make_split_t0c() took 0.006068 secs
+
+
+Haciendo merge...
+REGISTER (entering): make_k_t0c()
+Trying to merge: DEFUSED_B0(3)/(IN_P9_B0(4), ) with var = 4
+Trying to make merge with (0) = (IN_P9_B0(4), IN_P8_B0(5), IN_P7_B0(6), IN_P6_B0(7), IN_P5_B0(8), IN_P4_B0(9), IN_P3_B0(10), IN_P2_B0(11), IN_P1_B0(12), IN_P0_B0(13), )
+accepting 4 tagged 
+accepting 5 tagged 
+accepting 6 tagged 
+accepting 7 tagged 
+accepting 8 tagged 
+accepting 9 tagged 
+accepting 10 tagged 
+accepting 11 tagged 
+accepting 12 tagged 
+accepting 13 tagged 
+Merging with (0) = (4,5,6,7,8,9,10,11,12,13,)
+Trying to merge: DEFUSED_B0(3)/(IN_P8_B0(5), ) with var = 5
+Trying to merge: DEFUSED_B0(3)/(IN_P7_B0(6), ) with var = 6
+Trying to merge: DEFUSED_B0(3)/(IN_P6_B0(7), ) with var = 7
+Trying to merge: DEFUSED_B0(3)/(IN_P5_B0(8), ) with var = 8
+Trying to merge: DEFUSED_B0(3)/(IN_P4_B0(9), ) with var = 9
+Trying to merge: DEFUSED_B0(3)/(IN_P3_B0(10), ) with var = 10
+Trying to merge: DEFUSED_B0(3)/(IN_P2_B0(11), ) with var = 11
+Trying to merge: DEFUSED_B0(3)/(IN_P1_B0(12), ) with var = 12
+Trying to merge: DEFUSED_B0(3)/(IN_P0_B0(13), ) with var = 13
+REGISTER: make_k_t0c() took 0 secs
+362 = kn_IN_P0_B0___IN_P0_B0
+363 = kn_IN_P1_B0___IN_P1_B0
+364 = kn_IN_P2_B0___IN_P2_B0
+365 = kn_IN_P3_B0___IN_P3_B0
+366 = kn_IN_P4_B0___IN_P4_B0
+367 = kn_IN_P5_B0___IN_P5_B0
+368 = kn_IN_P6_B0___IN_P6_B0
+369 = kn_IN_P7_B0___IN_P7_B0
+370 = kn_IN_P8_B0___IN_P8_B0
+371 = kn_IN_P9_B0___IN_P9_B0
+REGISTER (entering): make_merge_act()
+REGISTER: make_merge_act() took 0.008645 secs
+REGISTER (entering): make_merge_act()
+REGISTER: make_merge_act() took 1.04594e-09 secs
+REGISTER (entering): make_merge_act()
+REGISTER: make_merge_act() took 0.003109 secs
+REGISTER (entering): clean_actions()
+fixpoint 0
+fixpoint 0
+fixpoint 1
+Number of Atoms to del: 0
+REGISTER: clean_actions() took 0.00268 secs
+IMPLIES_WITH_INIT: From lit IN_P9_B0(4) obtaing the following lits:IN_P0_B0(-13) IN_P1_B0(-12) IN_P2_B0(-11) IN_P3_B0(-10) IN_P4_B0(-9) IN_P5_B0(-8) IN_P6_B0(-7) IN_P7_B0(-6) IN_P8_B0(-5) DEFUSED_B0(-3) FALSE(-1) FOO(2) IN_P9_B0(4) 
+IMPLIES_WITH_INIT: From lit IN_P8_B0(5) obtaing the following lits:IN_P0_B0(-13) IN_P1_B0(-12) IN_P2_B0(-11) IN_P3_B0(-10) IN_P4_B0(-9) IN_P5_B0(-8) IN_P6_B0(-7) IN_P7_B0(-6) IN_P9_B0(-4) DEFUSED_B0(-3) FALSE(-1) FOO(2) IN_P8_B0(5) 
+IMPLIES_WITH_INIT: From lit IN_P7_B0(6) obtaing the following lits:IN_P0_B0(-13) IN_P1_B0(-12) IN_P2_B0(-11) IN_P3_B0(-10) IN_P4_B0(-9) IN_P5_B0(-8) IN_P6_B0(-7) IN_P8_B0(-5) IN_P9_B0(-4) DEFUSED_B0(-3) FALSE(-1) FOO(2) IN_P7_B0(6) 
+IMPLIES_WITH_INIT: From lit IN_P6_B0(7) obtaing the following lits:IN_P0_B0(-13) IN_P1_B0(-12) IN_P2_B0(-11) IN_P3_B0(-10) IN_P4_B0(-9) IN_P5_B0(-8) IN_P7_B0(-6) IN_P8_B0(-5) IN_P9_B0(-4) DEFUSED_B0(-3) FALSE(-1) FOO(2) IN_P6_B0(7) 
+IMPLIES_WITH_INIT: From lit IN_P5_B0(8) obtaing the following lits:IN_P0_B0(-13) IN_P1_B0(-12) IN_P2_B0(-11) IN_P3_B0(-10) IN_P4_B0(-9) IN_P6_B0(-7) IN_P7_B0(-6) IN_P8_B0(-5) IN_P9_B0(-4) DEFUSED_B0(-3) FALSE(-1) FOO(2) IN_P5_B0(8) 
+IMPLIES_WITH_INIT: From lit IN_P4_B0(9) obtaing the following lits:IN_P0_B0(-13) IN_P1_B0(-12) IN_P2_B0(-11) IN_P3_B0(-10) IN_P5_B0(-8) IN_P6_B0(-7) IN_P7_B0(-6) IN_P8_B0(-5) IN_P9_B0(-4) DEFUSED_B0(-3) FALSE(-1) FOO(2) IN_P4_B0(9) 
+IMPLIES_WITH_INIT: From lit IN_P3_B0(10) obtaing the following lits:IN_P0_B0(-13) IN_P1_B0(-12) IN_P2_B0(-11) IN_P4_B0(-9) IN_P5_B0(-8) IN_P6_B0(-7) IN_P7_B0(-6) IN_P8_B0(-5) IN_P9_B0(-4) DEFUSED_B0(-3) FALSE(-1) FOO(2) IN_P3_B0(10) 
+IMPLIES_WITH_INIT: From lit IN_P2_B0(11) obtaing the following lits:IN_P0_B0(-13) IN_P1_B0(-12) IN_P3_B0(-10) IN_P4_B0(-9) IN_P5_B0(-8) IN_P6_B0(-7) IN_P7_B0(-6) IN_P8_B0(-5) IN_P9_B0(-4) DEFUSED_B0(-3) FALSE(-1) FOO(2) IN_P2_B0(11) 
+IMPLIES_WITH_INIT: From lit IN_P1_B0(12) obtaing the following lits:IN_P0_B0(-13) IN_P2_B0(-11) IN_P3_B0(-10) IN_P4_B0(-9) IN_P5_B0(-8) IN_P6_B0(-7) IN_P7_B0(-6) IN_P8_B0(-5) IN_P9_B0(-4) DEFUSED_B0(-3) FALSE(-1) FOO(2) IN_P1_B0(12) 
+IMPLIES_WITH_INIT: From lit IN_P0_B0(13) obtaing the following lits:IN_P1_B0(-12) IN_P2_B0(-11) IN_P3_B0(-10) IN_P4_B0(-9) IN_P5_B0(-8) IN_P6_B0(-7) IN_P7_B0(-6) IN_P8_B0(-5) IN_P9_B0(-4) DEFUSED_B0(-3) FALSE(-1) FOO(2) IN_P0_B0(13) 
+REGISTER (entering): printNewPDDL()
+Generating PDDL
+printing 240 actions
+printing 10 observations
+STAT old-Actions: 10
+STAT old-Atoms: 16
+STAT old-cond-effects: 11
+STAT old-condicionales: 10
+STAT KP-NActions: 240
+STAT KP-NAtoms: 372
+STAT KP-deleted-NAtoms: 0
+STAT KP-Nconds-effects-and-notused: 1168
+STAT KP-Ncond-effects: 1168
+STAT KP-Numero_lit_en_efectos_condicionales: 5138
+REGISTER: printNewPDDL() took 0.065701 secs
+REGISTER: main() took 0.115841 secs
+
+ff: parsing domain file
+domain 'BTS' defined
+ ... done.
+ff: parsing problem file
+problem 'BTS-10-1' defined
+ ... done.
+
+STATS quality of hash table of predicates: max_bucket_size = 4, ave_bucket_size = 0.951157
+ff-cond: no description file
+fact T0_FAIL_K0 tagged as 175  
+
+
+Skipping All searches!
+Starting K procedure.
+
+          h:                        10            [1]
+          h:                        10  , h_  :    9       
+::::::::::::::::::::::::current action:::DUNK_P9_B0_T0
+
+          h:                         9            [1]
+          h:                         9  , h_  :    8       
+::::::::::::::::::::::::current action:::DUNK_P8_B0_T0
+
+          h:                         8            [1]
+          h:                         8  , h_  :    7       
+::::::::::::::::::::::::current action:::DUNK_P7_B0_T0
+
+          h:                         7            [1]
+          h:                         7  , h_  :    6       
+::::::::::::::::::::::::current action:::DUNK_P6_B0_T0
+
+          h:                         6            [1]
+          h:                         6  , h_  :    5       
+::::::::::::::::::::::::current action:::DUNK_P5_B0_T0
+
+          h:                         5            [1]
+          h:                         5  , h_  :    4       
+::::::::::::::::::::::::current action:::DUNK_P4_B0_T0
+
+          h:                         4            [1]
+          h:                         4  , h_  :    3       
+::::::::::::::::::::::::current action:::DUNK_P3_B0_T0
+
+          h:                         3            [1]
+          h:                         3  , h_  :    2       
+::::::::::::::::::::::::current action:::DUNK_P2_B0_T0
+
+          h:                         2            [1]
+          h:                         2  , h_  :    1       
+::::::::::::::::::::::::current action:::DUNK_P1_B0_T0
+
+          h:                         1            [1]
+          h:                         1  , h_  :    0       
+::::::::::::::::::::::::current action:::DUNK_P0_B0_T0
+
+Goal reached in a branch 
+root
+
+
+ff: found legal plan as follows
+
+Total branches in this plan: 1 
+Longest branch: 10
+Total spurious branches in this plan: 0
+Total number of actions: 10
+
+
+time spent:    0.04 seconds instantiating 250 easy, 0 hard action templates
+               0.00 seconds reachability analysis, yielding 310 facts and 250 actions
+               0.00 seconds creating final representation with 209 relevant facts
+               0.02 seconds building connectivity graph
+               0.00 seconds computing closures operations
+               0.00 seconds searching, evaluating 31 states, expanding 10 nodes, to a max depth of 1
+               0.06 seconds total time
+
+
+

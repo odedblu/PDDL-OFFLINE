@@ -1,0 +1,151 @@
+
+ff: parsing domain file
+domain 'BTCS' defined
+ ... done.
+ff: parsing problem file
+problem 'BTCS-30-1' defined
+ ... done.
+
+
+lowest leaf goal distance/initial state f value seen:     60/    60; maxdepth reached:    0
+                                                           1/    60                       1
+                                                           1/    60                       2
+                                                           1/    60                       3
+                                                           1/    60                       4
+                                                           1/    60                       5
+                                                           1/    60                       6
+                                                           1/    60                       7
+                                                           1/    60                       8
+                                                           1/    60                       9
+                                                           1/    60                      10
+                                                           1/    60                      11
+                                                           1/    60                      12
+                                                           1/    60                      13
+                                                           1/    60                      14
+                                                           1/    60                      15
+                                                           1/    60                      16
+                                                           1/    60                      17
+                                                           1/    60                      18
+                                                           1/    60                      19
+                                                           1/    60                      20
+                                                           1/    60                      21
+                                                           1/    60                      22
+                                                           1/    60                      23
+                                                           1/    60                      24
+                                                           1/    60                      25
+                                                           1/    60                      26
+                                                           1/    60                      27
+                                                           1/    60                      28
+                                                           1/    60                      29
+
+ff: found plan as follows
+-------------------------------------------------
+  0||0 --- SENSEP P29 B0 --- TRUESON: 1||0 --- FALSESON: 1||1
+-------------------------------------------------
+  1||0 --- DUNK P29 B0 T0 --- SON: 2||-1
+  1||1 --- SENSEP P28 B0 --- TRUESON: 2||0 --- FALSESON: 2||1
+-------------------------------------------------
+  2||0 --- DUNK P28 B0 T0 --- SON: 3||-1
+  2||1 --- SENSEP P27 B0 --- TRUESON: 3||0 --- FALSESON: 3||1
+-------------------------------------------------
+  3||0 --- DUNK P27 B0 T0 --- SON: 4||-1
+  3||1 --- SENSEP P26 B0 --- TRUESON: 4||0 --- FALSESON: 4||1
+-------------------------------------------------
+  4||0 --- DUNK P26 B0 T0 --- SON: 5||-1
+  4||1 --- SENSEP P25 B0 --- TRUESON: 5||0 --- FALSESON: 5||1
+-------------------------------------------------
+  5||0 --- DUNK P25 B0 T0 --- SON: 6||-1
+  5||1 --- SENSEP P24 B0 --- TRUESON: 6||0 --- FALSESON: 6||1
+-------------------------------------------------
+  6||0 --- DUNK P24 B0 T0 --- SON: 7||-1
+  6||1 --- SENSEP P23 B0 --- TRUESON: 7||0 --- FALSESON: 7||1
+-------------------------------------------------
+  7||0 --- DUNK P23 B0 T0 --- SON: 8||-1
+  7||1 --- SENSEP P22 B0 --- TRUESON: 8||0 --- FALSESON: 8||1
+-------------------------------------------------
+  8||0 --- DUNK P22 B0 T0 --- SON: 9||-1
+  8||1 --- SENSEP P21 B0 --- TRUESON: 9||0 --- FALSESON: 9||1
+-------------------------------------------------
+  9||0 --- DUNK P21 B0 T0 --- SON: 10||-1
+  9||1 --- SENSEP P20 B0 --- TRUESON: 10||0 --- FALSESON: 10||1
+-------------------------------------------------
+ 10||0 --- DUNK P20 B0 T0 --- SON: 11||-1
+ 10||1 --- SENSEP P19 B0 --- TRUESON: 11||0 --- FALSESON: 11||1
+-------------------------------------------------
+ 11||0 --- DUNK P19 B0 T0 --- SON: 12||-1
+ 11||1 --- SENSEP P18 B0 --- TRUESON: 12||0 --- FALSESON: 12||1
+-------------------------------------------------
+ 12||0 --- DUNK P18 B0 T0 --- SON: 13||-1
+ 12||1 --- SENSEP P17 B0 --- TRUESON: 13||0 --- FALSESON: 13||1
+-------------------------------------------------
+ 13||0 --- DUNK P17 B0 T0 --- SON: 14||-1
+ 13||1 --- SENSEP P16 B0 --- TRUESON: 14||0 --- FALSESON: 14||1
+-------------------------------------------------
+ 14||0 --- DUNK P16 B0 T0 --- SON: 15||-1
+ 14||1 --- SENSEP P15 B0 --- TRUESON: 15||0 --- FALSESON: 15||1
+-------------------------------------------------
+ 15||0 --- DUNK P15 B0 T0 --- SON: 16||-1
+ 15||1 --- SENSEP P14 B0 --- TRUESON: 16||0 --- FALSESON: 16||1
+-------------------------------------------------
+ 16||0 --- DUNK P14 B0 T0 --- SON: 17||-1
+ 16||1 --- SENSEP P13 B0 --- TRUESON: 17||0 --- FALSESON: 17||1
+-------------------------------------------------
+ 17||0 --- DUNK P13 B0 T0 --- SON: 18||-1
+ 17||1 --- SENSEP P12 B0 --- TRUESON: 18||0 --- FALSESON: 18||1
+-------------------------------------------------
+ 18||0 --- DUNK P12 B0 T0 --- SON: 19||-1
+ 18||1 --- SENSEP P11 B0 --- TRUESON: 19||0 --- FALSESON: 19||1
+-------------------------------------------------
+ 19||0 --- DUNK P11 B0 T0 --- SON: 20||-1
+ 19||1 --- SENSEP P10 B0 --- TRUESON: 20||0 --- FALSESON: 20||1
+-------------------------------------------------
+ 20||0 --- DUNK P10 B0 T0 --- SON: 21||-1
+ 20||1 --- SENSEP P9 B0 --- TRUESON: 21||0 --- FALSESON: 21||1
+-------------------------------------------------
+ 21||0 --- DUNK P9 B0 T0 --- SON: 22||-1
+ 21||1 --- SENSEP P8 B0 --- TRUESON: 22||0 --- FALSESON: 22||1
+-------------------------------------------------
+ 22||0 --- DUNK P8 B0 T0 --- SON: 23||-1
+ 22||1 --- SENSEP P7 B0 --- TRUESON: 23||0 --- FALSESON: 23||1
+-------------------------------------------------
+ 23||0 --- DUNK P7 B0 T0 --- SON: 24||-1
+ 23||1 --- SENSEP P6 B0 --- TRUESON: 24||0 --- FALSESON: 24||1
+-------------------------------------------------
+ 24||0 --- DUNK P6 B0 T0 --- SON: 25||-1
+ 24||1 --- SENSEP P5 B0 --- TRUESON: 25||0 --- FALSESON: 25||1
+-------------------------------------------------
+ 25||0 --- DUNK P5 B0 T0 --- SON: 26||-1
+ 25||1 --- SENSEP P4 B0 --- TRUESON: 26||0 --- FALSESON: 26||1
+-------------------------------------------------
+ 26||0 --- DUNK P4 B0 T0 --- SON: 27||-1
+ 26||1 --- SENSEP P3 B0 --- TRUESON: 27||0 --- FALSESON: 27||1
+-------------------------------------------------
+ 27||0 --- DUNK P3 B0 T0 --- SON: 28||-1
+ 27||1 --- SENSEP P2 B0 --- TRUESON: 28||0 --- FALSESON: 28||1
+-------------------------------------------------
+ 28||0 --- DUNK P2 B0 T0 --- SON: 29||-1
+ 28||1 --- SENSEP P1 B0 --- TRUESON: 29||0 --- FALSESON: 29||1
+-------------------------------------------------
+ 29||0 --- DUNK P1 B0 T0 --- SON: 30||-1
+ 29||1 --- DUNK P0 B0 T0 --- SON: 30||-1
+-------------------------------------------------
+
+tree layers: 30
+total nr. actions: 59
+
+statistics:    0.00 seconds instantiating 61 easy, 0 hard action templates
+               0.00 seconds reachability analysis, yielding 63 facts and 61 actions
+               0.00 seconds creating final representation with 63 relevant facts (63 max U, 32 CNF max U)
+               final representation has 60 unknown facts and 16 observation actions    
+               0.00 seconds building connectivity graph
+               0.97 seconds (   0.74 pure) evaluating 987 states
+               0.23 seconds in DP for 37808 RPG ini state implication checks
+               0.00 seconds in DP for 0 RPlan extract ini state implication checks (0 lits removed)
+               0.03 seconds generating,    0.04 seconds encoding 1017 state transition base CNFs
+               0.56 seconds in DP solving 26970 state transition CNFs
+               0.00 seconds checking for self-contradictions, including 0 DP calls
+               0.00 seconds checking for stagnating states (1 hits), including 60 DP calls
+              64838 total DP calls, 493006 total UP calls,    0.00 sec membership
+              0.03 seconds for remaining searching duties
+               1.63 seconds total time (+    0.17 secs for CNF memory allocation)
+

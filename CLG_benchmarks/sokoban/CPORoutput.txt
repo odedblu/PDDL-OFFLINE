@@ -1,0 +1,30 @@
+0) observestone_player-01_stone-01_pos-08-09_pos-09-09_dir-right
+branching...
+	2) move_player-01_pos-08-09_pos-09-09_dir-right
+	5) push-to-nongoal_player-01_stone-01_pos-09-09_pos-09-08_pos-09-07_dir-up
+	6) push-to-nongoal_player-01_stone-01_pos-09-08_pos-09-07_pos-09-06_dir-up
+	7) push-to-nongoal_player-01_stone-01_pos-09-07_pos-09-06_pos-09-05_dir-up
+	8) push-to-nongoal_player-01_stone-01_pos-09-06_pos-09-05_pos-09-04_dir-up
+	9) push-to-nongoal_player-01_stone-01_pos-09-05_pos-09-04_pos-09-03_dir-up
+	10) push-to-nongoal_player-01_stone-01_pos-09-04_pos-09-03_pos-09-02_dir-up
+	11) push-to-goal_player-01_stone-01_pos-09-03_pos-09-02_pos-09-01_dir-up
+	12) move_player-01_pos-09-02_pos-08-02_dir-left
+	13) move_player-01_pos-08-02_pos-07-02_dir-left
+	14) move_player-01_pos-07-02_pos-06-02_dir-left
+	15) move_player-01_pos-06-02_pos-05-02_dir-left
+	16) move_player-01_pos-05-02_pos-04-02_dir-left
+	17) move_player-01_pos-04-02_pos-03-02_dir-left
+	18) move_player-01_pos-03-02_pos-02-02_dir-left
+	19) observestone_player-01_stone-02_pos-02-02_pos-01-02_dir-left
+branching...
+		21) move_player-01_pos-02-02_pos-02-03_dir-down
+		27) move_player-01_pos-02-03_pos-02-04_dir-down
+		28) move_player-01_pos-02-04_pos-01-04_dir-left
+		29) push-to-nongoal_player-01_stone-02_pos-01-04_pos-01-03_pos-01-02_dir-up
+		30) push-to-goal_player-01_stone-02_pos-01-03_pos-01-02_pos-01-01_dir-up
+)goal
+		20) move_player-01_pos-02-02_pos-02-03_dir-down
+		24) move_player-01_pos-02-03_pos-01-03_dir-left
+		25) push-to-goal_player-01_stone-02_pos-01-03_pos-01-02_pos-01-01_dir-up
+)goal
+)deadEnd

@@ -1,0 +1,6 @@
+
+(oneof (good r0) (not (good r0)))
+
+(oneof (good r1) (not (good r1)))
+
+

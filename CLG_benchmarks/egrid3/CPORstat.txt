@@ -1,0 +1,202 @@
+10976) move_f1-2f_f2-2f
+10977) pickup_f2-2f_key1-0
+10978) move_f2-2f_f2-1f
+10979) move_f2-1f_f1-1f
+10980) observe-lock-shape_f1-1f_f0-1f_shape0
+	10981) observe-lock-shape_f1-1f_f1-0f_shape0
+		10982) unlock_f1-1f_f1-0f_key1-0_shape1
+		10983) putdown_f1-1f_key1-0
+		10984) move_f1-1f_f1-2f
+		10985) pickup_f1-2f_key0-0
+		10986) move_f1-2f_f1-1f
+		10987) move_f1-1f_f1-0f
+		10988) observe-lock-shape_f1-0f_f0-0f_shape0
+			10989) move_f1-0f_f1-1f
+			10990) putdown_f1-1f_key0-0
+			10991) pickup_f1-1f_key1-0
+			10992) move_f1-1f_f1-0f
+			10993) unlock_f1-0f_f0-0f_key1-0_shape1
+			10994) move_f1-0f_f1-1f
+			10995) putdown_f1-1f_key1-0
+			10996) pickup_f1-1f_key0-0
+			10997) move_f1-1f_f1-0f
+			10998) move_f1-0f_f0-0f
+			10999) putdown_f0-0f_key0-0
+
+			11002) unlock_f1-0f_f0-0f_key0-0_shape0
+			11003) move_f1-0f_f0-0f
+			11004) putdown_f0-0f_key0-0
+
+		11007) unlock_f1-1f_f0-1f_key1-0_shape1
+		11008) putdown_f1-1f_key1-0
+		11009) move_f1-1f_f1-2f
+		11010) pickup_f1-2f_key0-0
+		11011) move_f1-2f_f1-1f
+		11012) move_f1-1f_f0-1f
+		11013) observe-lock-shape_f0-1f_f0-0f_shape0
+			11014) putdown_f0-1f_key0-0
+			11015) pickup_f0-1f_key1-1
+			11016) unlock_f0-1f_f0-0f_key1-1_shape1
+			11017) putdown_f0-1f_key1-1
+			11018) pickup_f0-1f_key0-0
+			11019) move_f0-1f_f0-0f
+			11020) putdown_f0-0f_key0-0
+
+			11023) unlock_f0-1f_f0-0f_key0-0_shape0
+			11024) move_f0-1f_f0-0f
+			11025) putdown_f0-0f_key0-0
+
+	11028) observe-lock-shape_f1-1f_f1-0f_shape0
+		11029) unlock_f1-1f_f1-0f_key1-0_shape1
+		11030) putdown_f1-1f_key1-0
+		11031) move_f1-1f_f1-2f
+		11032) pickup_f1-2f_key0-0
+		11033) move_f1-2f_f1-1f
+		11034) move_f1-1f_f1-0f
+		11035) observe-lock-shape_f1-0f_f2-0f_shape0
+			11036) observe-lock-shape_f1-0f_f0-0f_shape1
+				11037) unlock_f1-0f_f0-0f_key0-0_shape0
+				11038) move_f1-0f_f0-0f
+				11039) putdown_f0-0f_key0-0
+
+				11042) move_f1-0f_f1-1f
+				11043) unlock_f1-1f_f0-1f_key0-0_shape0
+				11044) move_f1-1f_f0-1f
+				11045) putdown_f0-1f_key0-0
+				11046) pickup_f0-1f_key1-1
+				11047) unlock_f0-1f_f0-0f_key1-1_shape1
+				11048) putdown_f0-1f_key1-1
+				11049) pickup_f0-1f_key0-0
+				11050) move_f0-1f_f0-0f
+				11051) putdown_f0-0f_key0-0
+
+			11054) observe-lock-shape_f1-0f_f0-0f_shape0
+				11055) move_f1-0f_f1-1f
+				11056) unlock_f1-1f_f0-1f_key0-0_shape0
+				11057) move_f1-1f_f0-1f
+				11058) putdown_f0-1f_key0-0
+				11059) pickup_f0-1f_key1-1
+				11060) unlock_f0-1f_f0-0f_key1-1_shape1
+				11061) putdown_f0-1f_key1-1
+				11062) pickup_f0-1f_key0-0
+				11063) move_f0-1f_f0-0f
+				11064) putdown_f0-0f_key0-0
+
+				11067) unlock_f1-0f_f0-0f_key0-0_shape0
+				11068) move_f1-0f_f0-0f
+				11069) putdown_f0-0f_key0-0
+
+		11072) putdown_f1-1f_key1-0
+		11073) move_f1-1f_f1-2f
+		11074) pickup_f1-2f_key0-0
+		11075) move_f1-2f_f1-1f
+		11076) unlock_f1-1f_f1-0f_key0-0_shape0
+		11077) move_f1-1f_f1-0f
+		11078) observe-lock-shape_f1-0f_f2-0f_shape0
+			11079) observe-lock-shape_f1-0f_f0-0f_shape1
+				11080) unlock_f1-0f_f0-0f_key0-0_shape0
+				11081) move_f1-0f_f0-0f
+				11082) putdown_f0-0f_key0-0
+
+				11085) move_f1-0f_f1-1f
+				11086) unlock_f1-1f_f0-1f_key0-0_shape0
+				11087) move_f1-1f_f0-1f
+				11088) putdown_f0-1f_key0-0
+				11089) pickup_f0-1f_key1-1
+				11090) unlock_f0-1f_f0-0f_key1-1_shape1
+				11091) putdown_f0-1f_key1-1
+				11092) pickup_f0-1f_key0-0
+				11093) move_f0-1f_f0-0f
+				11094) putdown_f0-0f_key0-0
+
+			11097) observe-lock-shape_f1-0f_f0-0f_shape0
+				11098) move_f1-0f_f1-1f
+				11099) unlock_f1-1f_f0-1f_key0-0_shape0
+				11100) move_f1-1f_f0-1f
+				11101) putdown_f0-1f_key0-0
+				11102) pickup_f0-1f_key1-1
+				11103) unlock_f0-1f_f0-0f_key1-1_shape1
+				11104) putdown_f0-1f_key1-1
+				11105) pickup_f0-1f_key0-0
+				11106) move_f0-1f_f0-0f
+				11107) putdown_f0-0f_key0-0
+
+				11110) unlock_f1-0f_f0-0f_key0-0_shape0
+				11111) move_f1-0f_f0-0f
+				11112) putdown_f0-0f_key0-0
+
+Goals 
+#17 :  , (lock-shape f0-0f shape0) , (not (lock-shape f0-0f shape1)) , (lock-shape f2-0f shape0) , (not (lock-shape f2-0f shape1)) , (lock-shape f1-0f shape0) , (not (lock-shape f1-0f shape1)) , (lock-shape f0-1f shape0) , (not (lock-shape f0-1f shape1))
+24 :  , (not (lock-shape f0-0f shape0)) , (lock-shape f0-0f shape1) , (lock-shape f2-0f shape0) , (not (lock-shape f2-0f shape1)) , (lock-shape f1-0f shape0) , (not (lock-shape f1-0f shape1)) , (lock-shape f0-1f shape0) , (not (lock-shape f0-1f shape1))
+24 :  , (lock-shape f0-0f shape1) , (not (lock-shape f0-0f shape0)) , (not (lock-shape f2-0f shape0)) , (lock-shape f2-0f shape1) , (lock-shape f1-0f shape0) , (not (lock-shape f1-0f shape1)) , (lock-shape f0-1f shape0) , (not (lock-shape f0-1f shape1))
+17 :  , (not (lock-shape f0-0f shape1)) , (lock-shape f0-0f shape0) , (not (lock-shape f2-0f shape0)) , (lock-shape f2-0f shape1) , (lock-shape f1-0f shape0) , (not (lock-shape f1-0f shape1)) , (lock-shape f0-1f shape0) , (not (lock-shape f0-1f shape1))
+17 :  , (lock-shape f0-0f shape0) , (not (lock-shape f0-0f shape1)) , (lock-shape f2-0f shape0) , (not (lock-shape f2-0f shape1)) , (not (lock-shape f1-0f shape0)) , (lock-shape f1-0f shape1) , (lock-shape f0-1f shape0) , (not (lock-shape f0-1f shape1))
+24 :  , (not (lock-shape f0-0f shape0)) , (lock-shape f0-0f shape1) , (lock-shape f2-0f shape0) , (not (lock-shape f2-0f shape1)) , (not (lock-shape f1-0f shape0)) , (lock-shape f1-0f shape1) , (lock-shape f0-1f shape0) , (not (lock-shape f0-1f shape1))
+24 :  , (lock-shape f0-0f shape1) , (not (lock-shape f0-0f shape0)) , (not (lock-shape f2-0f shape0)) , (lock-shape f2-0f shape1) , (not (lock-shape f1-0f shape0)) , (lock-shape f1-0f shape1) , (lock-shape f0-1f shape0) , (not (lock-shape f0-1f shape1))
+17 :  , (not (lock-shape f0-0f shape1)) , (lock-shape f0-0f shape0) , (not (lock-shape f2-0f shape0)) , (lock-shape f2-0f shape1) , (not (lock-shape f1-0f shape0)) , (lock-shape f1-0f shape1) , (lock-shape f0-1f shape0) , (not (lock-shape f0-1f shape1))
+16 :  , (lock-shape f0-0f shape0) , (not (lock-shape f0-0f shape1)) , (lock-shape f1-0f shape0) , (not (lock-shape f1-0f shape1)) , (not (lock-shape f0-1f shape0)) , (lock-shape f0-1f shape1)
+20 :  , (not (lock-shape f0-0f shape0)) , (lock-shape f0-0f shape1) , (lock-shape f1-0f shape0) , (not (lock-shape f1-0f shape1)) , (not (lock-shape f0-1f shape0)) , (lock-shape f0-1f shape1)
+16 :  , (lock-shape f0-0f shape0) , (not (lock-shape f0-0f shape1)) , (not (lock-shape f1-0f shape0)) , (lock-shape f1-0f shape1) , (not (lock-shape f0-1f shape0)) , (lock-shape f0-1f shape1)
+24 :  , (not (lock-shape f0-0f shape0)) , (lock-shape f0-0f shape1) , (not (lock-shape f1-0f shape0)) , (lock-shape f1-0f shape1) , (not (lock-shape f0-1f shape0)) , (lock-shape f0-1f shape1)
+#
+Union Goals Budget
+#17 :  , (lock-shape f0-0f shape0) , (not (lock-shape f0-0f shape1)) , (lock-shape f2-0f shape0) , (not (lock-shape f2-0f shape1)) , (lock-shape f1-0f shape0) , (not (lock-shape f1-0f shape1)) , (lock-shape f0-1f shape0) , (not (lock-shape f0-1f shape1))
+24 :  , (not (lock-shape f0-0f shape0)) , (lock-shape f0-0f shape1) , (lock-shape f2-0f shape0) , (not (lock-shape f2-0f shape1)) , (lock-shape f1-0f shape0) , (not (lock-shape f1-0f shape1)) , (lock-shape f0-1f shape0) , (not (lock-shape f0-1f shape1))
+24 :  , (lock-shape f1-0f shape0) , (not (lock-shape f1-0f shape1)) , (lock-shape f0-1f shape0) , (not (lock-shape f0-1f shape1))
+24 :  , (lock-shape f0-0f shape1) , (not (lock-shape f0-0f shape0)) , (not (lock-shape f2-0f shape0)) , (lock-shape f2-0f shape1) , (lock-shape f1-0f shape0) , (not (lock-shape f1-0f shape1)) , (lock-shape f0-1f shape0) , (not (lock-shape f0-1f shape1))
+17 :  , (not (lock-shape f0-0f shape1)) , (lock-shape f0-0f shape0) , (not (lock-shape f2-0f shape0)) , (lock-shape f2-0f shape1) , (lock-shape f1-0f shape0) , (not (lock-shape f1-0f shape1)) , (lock-shape f0-1f shape0) , (not (lock-shape f0-1f shape1))
+24 :  , (lock-shape f1-0f shape0) , (not (lock-shape f1-0f shape1)) , (lock-shape f0-1f shape0) , (not (lock-shape f0-1f shape1))
+24 :  , (lock-shape f1-0f shape0) , (not (lock-shape f1-0f shape1)) , (lock-shape f0-1f shape0) , (not (lock-shape f0-1f shape1))
+17 :  , (lock-shape f0-0f shape0) , (not (lock-shape f0-0f shape1)) , (lock-shape f2-0f shape0) , (not (lock-shape f2-0f shape1)) , (not (lock-shape f1-0f shape0)) , (lock-shape f1-0f shape1) , (lock-shape f0-1f shape0) , (not (lock-shape f0-1f shape1))
+24 :  , (not (lock-shape f0-0f shape0)) , (lock-shape f0-0f shape1) , (lock-shape f2-0f shape0) , (not (lock-shape f2-0f shape1)) , (not (lock-shape f1-0f shape0)) , (lock-shape f1-0f shape1) , (lock-shape f0-1f shape0) , (not (lock-shape f0-1f shape1))
+24 :  , (not (lock-shape f1-0f shape0)) , (lock-shape f1-0f shape1) , (lock-shape f0-1f shape0) , (not (lock-shape f0-1f shape1))
+24 :  , (lock-shape f0-0f shape1) , (not (lock-shape f0-0f shape0)) , (not (lock-shape f2-0f shape0)) , (lock-shape f2-0f shape1) , (not (lock-shape f1-0f shape0)) , (lock-shape f1-0f shape1) , (lock-shape f0-1f shape0) , (not (lock-shape f0-1f shape1))
+17 :  , (not (lock-shape f0-0f shape1)) , (lock-shape f0-0f shape0) , (not (lock-shape f2-0f shape0)) , (lock-shape f2-0f shape1) , (not (lock-shape f1-0f shape0)) , (lock-shape f1-0f shape1) , (lock-shape f0-1f shape0) , (not (lock-shape f0-1f shape1))
+24 :  , (not (lock-shape f1-0f shape0)) , (lock-shape f1-0f shape1) , (lock-shape f0-1f shape0) , (not (lock-shape f0-1f shape1))
+24 :  , (not (lock-shape f1-0f shape0)) , (lock-shape f1-0f shape1) , (lock-shape f0-1f shape0) , (not (lock-shape f0-1f shape1))
+24 : 
+16 :  , (lock-shape f0-0f shape0) , (not (lock-shape f0-0f shape1)) , (lock-shape f1-0f shape0) , (not (lock-shape f1-0f shape1)) , (not (lock-shape f0-1f shape0)) , (lock-shape f0-1f shape1)
+20 :  , (not (lock-shape f0-0f shape0)) , (lock-shape f0-0f shape1) , (lock-shape f1-0f shape0) , (not (lock-shape f1-0f shape1)) , (not (lock-shape f0-1f shape0)) , (lock-shape f0-1f shape1)
+20 :  , (lock-shape f1-0f shape0) , (not (lock-shape f1-0f shape1)) , (not (lock-shape f0-1f shape0)) , (lock-shape f0-1f shape1)
+16 :  , (lock-shape f0-0f shape0) , (not (lock-shape f0-0f shape1)) , (not (lock-shape f1-0f shape0)) , (lock-shape f1-0f shape1) , (not (lock-shape f0-1f shape0)) , (lock-shape f0-1f shape1)
+24 :  , (not (lock-shape f0-0f shape0)) , (lock-shape f0-0f shape1) , (not (lock-shape f1-0f shape0)) , (lock-shape f1-0f shape1) , (not (lock-shape f0-1f shape0)) , (lock-shape f0-1f shape1)
+24 :  , (not (lock-shape f1-0f shape0)) , (lock-shape f1-0f shape1) , (not (lock-shape f0-1f shape0)) , (lock-shape f0-1f shape1)
+24 : 
+24 : 
+#
+
+
+
+Goals Fault Tolerance
+#4 : 0 :  , (lock-shape f0-0f shape0) , (not (lock-shape f0-0f shape1)) , (lock-shape f2-0f shape0) , (not (lock-shape f2-0f shape1)) , (lock-shape f1-0f shape0) , (not (lock-shape f1-0f shape1)) , (lock-shape f0-1f shape0) , (not (lock-shape f0-1f shape1))
+4 : 1 :  , (not (lock-shape f0-0f shape0)) , (lock-shape f0-0f shape1) , (lock-shape f2-0f shape0) , (not (lock-shape f2-0f shape1)) , (lock-shape f1-0f shape0) , (not (lock-shape f1-0f shape1)) , (lock-shape f0-1f shape0) , (not (lock-shape f0-1f shape1))
+4 : 1 :  , (lock-shape f0-0f shape1) , (not (lock-shape f0-0f shape0)) , (not (lock-shape f2-0f shape0)) , (lock-shape f2-0f shape1) , (lock-shape f1-0f shape0) , (not (lock-shape f1-0f shape1)) , (lock-shape f0-1f shape0) , (not (lock-shape f0-1f shape1))
+4 : 2 :  , (not (lock-shape f0-0f shape1)) , (lock-shape f0-0f shape0) , (not (lock-shape f2-0f shape0)) , (lock-shape f2-0f shape1) , (lock-shape f1-0f shape0) , (not (lock-shape f1-0f shape1)) , (lock-shape f0-1f shape0) , (not (lock-shape f0-1f shape1))
+4 : 1 :  , (lock-shape f0-0f shape0) , (not (lock-shape f0-0f shape1)) , (lock-shape f2-0f shape0) , (not (lock-shape f2-0f shape1)) , (not (lock-shape f1-0f shape0)) , (lock-shape f1-0f shape1) , (lock-shape f0-1f shape0) , (not (lock-shape f0-1f shape1))
+4 : 2 :  , (not (lock-shape f0-0f shape0)) , (lock-shape f0-0f shape1) , (lock-shape f2-0f shape0) , (not (lock-shape f2-0f shape1)) , (not (lock-shape f1-0f shape0)) , (lock-shape f1-0f shape1) , (lock-shape f0-1f shape0) , (not (lock-shape f0-1f shape1))
+4 : 2 :  , (lock-shape f0-0f shape1) , (not (lock-shape f0-0f shape0)) , (not (lock-shape f2-0f shape0)) , (lock-shape f2-0f shape1) , (not (lock-shape f1-0f shape0)) , (lock-shape f1-0f shape1) , (lock-shape f0-1f shape0) , (not (lock-shape f0-1f shape1))
+4 : 3 :  , (not (lock-shape f0-0f shape1)) , (lock-shape f0-0f shape0) , (not (lock-shape f2-0f shape0)) , (lock-shape f2-0f shape1) , (not (lock-shape f1-0f shape0)) , (lock-shape f1-0f shape1) , (lock-shape f0-1f shape0) , (not (lock-shape f0-1f shape1))
+3 : 1 :  , (lock-shape f0-0f shape0) , (not (lock-shape f0-0f shape1)) , (lock-shape f1-0f shape0) , (not (lock-shape f1-0f shape1)) , (not (lock-shape f0-1f shape0)) , (lock-shape f0-1f shape1)
+3 : 2 :  , (not (lock-shape f0-0f shape0)) , (lock-shape f0-0f shape1) , (lock-shape f1-0f shape0) , (not (lock-shape f1-0f shape1)) , (not (lock-shape f0-1f shape0)) , (lock-shape f0-1f shape1)
+3 : 2 :  , (lock-shape f0-0f shape0) , (not (lock-shape f0-0f shape1)) , (not (lock-shape f1-0f shape0)) , (lock-shape f1-0f shape1) , (not (lock-shape f0-1f shape0)) , (lock-shape f0-1f shape1)
+3 : 3 :  , (not (lock-shape f0-0f shape0)) , (lock-shape f0-0f shape1) , (not (lock-shape f1-0f shape0)) , (lock-shape f1-0f shape1) , (not (lock-shape f0-1f shape0)) , (lock-shape f0-1f shape1)
+#
+
+
+
+Goals Fault Tolerance
+##
+
+
+
+Simplicitity
+#nodes: 115
+branch: 11
+originalSize: 442
+compreesedSize: 130
+compreesedRatio: 3.4#
+
+
+
+Simplicitity
+#

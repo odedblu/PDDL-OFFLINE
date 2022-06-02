@@ -1,0 +1,369 @@
+
+ff: parsing domain file
+domain 'ROVER' defined
+ ... done.
+ff: parsing problem file
+problem 'ROVERPROB1234' defined
+ ... done.
+
+
+domination test not valid. turning full state equality on.
+
+
+lowest leaf goal distance/initial state f value seen:     15/    15; maxdepth reached:    0
+                                                          15/    15                       1
+                                                          15/    15                       2
+                                                          15/    15                       3
+                                                          15/    15                       4
+                                                          15/    15                       5
+                                                          15/    15                       6
+                                                          11/    15                       7
+                                                           9/    15                       8
+                                                           8/    15                       9
+                                                           7/    15                      10
+                                                           7/    15                      11
+                                                           7/    15                      12
+                                                           6/    15                      13
+                                                           6/    15                      14
+                                                           6/    15                      15
+                                                           6/    15                      16
+                                                           6/    15                      17
+                                                           6/    15                      18
+                                                           6/    15                      19
+                                                           6/    15                      20
+                                                           6/    15                      21
+                                                           6/    15                      22
+                                                           6/    15                      23
+                                                           6/    15                      24
+                                                           6/    15                      25
+                                                           6/    15                      26
+                                                           5/    15                      27
+                                                           4/    15                      28
+                                                           3/    15                      29
+                                                           2/    15                      30
+                                                           1/    15                      31
+                                                           1/    15                      32
+                                                           1/    15                      33
+                                                           1/    15                      34
+                                                           1/    15                      35
+                                                           1/    15                      36
+                                                           1/    15                      37
+                                                           1/    15                      38
+                                                           1/    15                      39
+                                                           1/    15                      40
+                                                           1/    15                      41
+                                                           1/    15                      42
+                                                           1/    15                      43
+                                                           1/    15                      44
+                                                           1/    15                      45
+                                                           1/    15                      46
+                                                           1/    15                      47
+                                                           1/    15                      48
+                                                           1/    15                      49
+                                                           1/    15                      50
+                                                           1/    15                      51
+                                                           1/    15                      52
+                                                           1/    15                      53
+                                                           1/    15                      54
+                                                           1/    15                      55
+                                                           1/    15                      56
+                                                           1/    15                      57
+                                                           1/    15                      58
+                                                           1/    15                      59
+                                                           1/    15                      60
+                                                           1/    15                      61
+                                                           1/    15                      62
+                                                           1/    15                      63
+                                                           1/    15                      64
+                                                           1/    15                      65
+                                                           1/    15                      66
+                                                           1/    15                      67
+                                                           1/    15                      68
+                                                           1/    15                      69
+                                                           1/    15                      70
+                                                           1/    15                      71
+                                                           1/    15                      72
+                                                           1/    15                      73
+                                                           1/    15                      74
+                                                           1/    15                      75
+                                                           1/    15                      76
+                                                           1/    15                      77
+                                                           1/    15                      78
+                                                           1/    15                      79
+                                                           1/    15                      80
+                                                           1/    15                      81
+
+ff: found plan as follows
+-------------------------------------------------
+  0||0 --- CALIBRATE ROVER0 CAMERA0 OBJECTIVE1 WAYPOINT3 --- SON: 1||0
+-------------------------------------------------
+  1||0 --- NAVIGATE ROVER0 WAYPOINT3 WAYPOINT1 CAMERA0 OBJECTIVE1 --- SON: 2||0
+-------------------------------------------------
+  2||0 --- NAVIGATE ROVER0 WAYPOINT1 WAYPOINT2 CAMERA0 OBJECTIVE1 --- SON: 3||0
+-------------------------------------------------
+  3||0 --- CALIBRATE ROVER0 CAMERA0 OBJECTIVE1 WAYPOINT2 --- SON: 4||0
+-------------------------------------------------
+  4||0 --- NAVIGATE ROVER0 WAYPOINT2 WAYPOINT1 CAMERA0 OBJECTIVE1 --- SON: 5||0
+-------------------------------------------------
+  5||0 --- NAVIGATE ROVER0 WAYPOINT1 WAYPOINT4 CAMERA0 OBJECTIVE1 --- SON: 6||0
+-------------------------------------------------
+  6||0 --- SENSE_VIS ROVER0 OBJECTIVE1 WAYPOINT4 --- TRUESON: 7||0 --- FALSESON: 7||1
+-------------------------------------------------
+  7||0 --- SENSE_SOIL ROVER0 OBJECTIVE1 WAYPOINT4 --- TRUESON: 8||0 --- FALSESON: 8||1
+  7||1 --- SENSE_SOIL ROVER0 OBJECTIVE1 WAYPOINT4 --- TRUESON: 8||2 --- FALSESON: 8||3
+-------------------------------------------------
+  8||0 --- CALIBRATE ROVER0 CAMERA0 OBJECTIVE1 WAYPOINT4 --- SON: 9||0
+  8||1 --- CALIBRATE ROVER0 CAMERA0 OBJECTIVE1 WAYPOINT4 --- SON: 9||1
+  8||2 --- DROP ROVER0 ROVER0STORE --- SON: 9||2
+  8||3 --- DROP ROVER0 ROVER0STORE --- SON: 9||3
+-------------------------------------------------
+  9||0 --- TAKE_IMAGE ROVER0 WAYPOINT4 OBJECTIVE1 CAMERA0 HIGH_RES --- SON: 10||0
+  9||1 --- TAKE_IMAGE ROVER0 WAYPOINT4 OBJECTIVE1 CAMERA0 HIGH_RES --- SON: 10||1
+  9||2 --- CALIBRATE ROVER0 CAMERA0 OBJECTIVE1 WAYPOINT4 --- SON: 10||2
+  9||3 --- CALIBRATE ROVER0 CAMERA0 OBJECTIVE1 WAYPOINT4 --- SON: 10||3
+-------------------------------------------------
+ 10||0 --- CALIBRATE ROVER0 CAMERA0 OBJECTIVE1 WAYPOINT4 --- SON: 11||0
+ 10||1 --- CALIBRATE ROVER0 CAMERA0 OBJECTIVE1 WAYPOINT4 --- SON: 11||1
+ 10||2 --- NAVIGATE ROVER0 WAYPOINT4 WAYPOINT1 CAMERA0 OBJECTIVE1 --- SON: 11||2
+ 10||3 --- NAVIGATE ROVER0 WAYPOINT4 WAYPOINT5 CAMERA0 OBJECTIVE1 --- SON: 11||3
+-------------------------------------------------
+ 11||0 --- NAVIGATE ROVER0 WAYPOINT4 WAYPOINT1 CAMERA0 OBJECTIVE1 --- SON: 12||0
+ 11||1 --- NAVIGATE ROVER0 WAYPOINT4 WAYPOINT5 CAMERA0 OBJECTIVE1 --- SON: 12||1
+ 11||2 --- NAVIGATE ROVER0 WAYPOINT1 WAYPOINT2 CAMERA0 OBJECTIVE1 --- SON: 12||2
+ 11||3 --- CALIBRATE ROVER0 CAMERA0 OBJECTIVE1 WAYPOINT5 --- SON: 12||3
+-------------------------------------------------
+ 12||0 --- COMMUNICATE_IMAGE_DATA ROVER0 GENERAL OBJECTIVE1 HIGH_RES WAYPOINT1 WAYPOINT0 --- SON: 13||0
+ 12||1 --- CALIBRATE ROVER0 CAMERA0 OBJECTIVE1 WAYPOINT5 --- SON: 13||1
+ 12||2 --- NAVIGATE ROVER0 WAYPOINT2 WAYPOINT1 CAMERA0 OBJECTIVE1 --- SON: 13||2
+ 12||3 --- NAVIGATE ROVER0 WAYPOINT5 WAYPOINT4 CAMERA0 OBJECTIVE1 --- SON: 13||3
+-------------------------------------------------
+ 13||0 --- NAVIGATE ROVER0 WAYPOINT1 WAYPOINT2 CAMERA0 OBJECTIVE1 --- SON: 14||0
+ 13||1 --- NAVIGATE ROVER0 WAYPOINT5 WAYPOINT4 CAMERA0 OBJECTIVE1 --- SON: 14||1
+ 13||2 --- NAVIGATE ROVER0 WAYPOINT1 WAYPOINT4 CAMERA0 OBJECTIVE1 --- SON: 14||2
+ 13||3 --- CALIBRATE ROVER0 CAMERA0 OBJECTIVE1 WAYPOINT4 --- SON: 14||3
+-------------------------------------------------
+ 14||0 --- NAVIGATE ROVER0 WAYPOINT2 WAYPOINT1 CAMERA0 OBJECTIVE1 --- SON: 15||0
+ 14||1 --- CALIBRATE ROVER0 CAMERA0 OBJECTIVE1 WAYPOINT4 --- SON: 15||1
+ 14||2 --- CALIBRATE ROVER0 CAMERA0 OBJECTIVE1 WAYPOINT4 --- SON: 15||2
+ 14||3 --- NAVIGATE ROVER0 WAYPOINT4 WAYPOINT1 CAMERA0 OBJECTIVE1 --- SON: 15||3
+-------------------------------------------------
+ 15||0 --- NAVIGATE ROVER0 WAYPOINT1 WAYPOINT4 CAMERA0 OBJECTIVE1 --- SON: 16||0
+ 15||1 --- NAVIGATE ROVER0 WAYPOINT4 WAYPOINT1 CAMERA0 OBJECTIVE1 --- SON: 16||1
+ 15||2 --- SAMPLE_SOIL ROVER0 ROVER0STORE WAYPOINT4 --- SON: 16||2
+ 15||3 --- NAVIGATE ROVER0 WAYPOINT1 WAYPOINT2 CAMERA0 OBJECTIVE1 --- SON: 16||3
+-------------------------------------------------
+ 16||0 --- CALIBRATE ROVER0 CAMERA0 OBJECTIVE1 WAYPOINT4 --- SON: 17||0
+ 16||1 --- COMMUNICATE_IMAGE_DATA ROVER0 GENERAL OBJECTIVE1 HIGH_RES WAYPOINT1 WAYPOINT0 --- SON: 17||1
+ 16||2 --- DROP ROVER0 ROVER0STORE --- SON: 17||2
+ 16||3 --- NAVIGATE ROVER0 WAYPOINT2 WAYPOINT1 CAMERA0 OBJECTIVE1 --- SON: 17||3
+-------------------------------------------------
+ 17||0 --- TAKE_IMAGE ROVER0 WAYPOINT4 OBJECTIVE1 CAMERA0 COLOUR --- SON: 18||0
+ 17||1 --- NAVIGATE ROVER0 WAYPOINT1 WAYPOINT2 CAMERA0 OBJECTIVE1 --- SON: 18||1
+ 17||2 --- NAVIGATE ROVER0 WAYPOINT4 WAYPOINT1 CAMERA0 OBJECTIVE1 --- SON: 18||2
+ 17||3 --- NAVIGATE ROVER0 WAYPOINT1 WAYPOINT4 CAMERA0 OBJECTIVE1 --- SON: 18||3
+-------------------------------------------------
+ 18||0 --- CALIBRATE ROVER0 CAMERA0 OBJECTIVE1 WAYPOINT4 --- SON: 19||0
+ 18||1 --- NAVIGATE ROVER0 WAYPOINT2 WAYPOINT1 CAMERA0 OBJECTIVE1 --- SON: 19||1
+ 18||2 --- COMMUNICATE_SOIL_DATA ROVER0 GENERAL WAYPOINT1 WAYPOINT0 --- SON: 19||2
+ 18||3 --- CALIBRATE ROVER0 CAMERA0 OBJECTIVE1 WAYPOINT4 --- SON: 19||3
+-------------------------------------------------
+ 19||0 --- NAVIGATE ROVER0 WAYPOINT4 WAYPOINT1 CAMERA0 OBJECTIVE1 --- SON: 20||0
+ 19||1 --- NAVIGATE ROVER0 WAYPOINT1 WAYPOINT4 CAMERA0 OBJECTIVE1 --- SON: 20||1
+ 19||2 --- NAVIGATE ROVER0 WAYPOINT1 WAYPOINT2 CAMERA0 OBJECTIVE1 --- SON: 20||2
+ 19||3 --- NAVIGATE ROVER0 WAYPOINT4 WAYPOINT5 CAMERA0 OBJECTIVE1 --- SON: 20||3
+-------------------------------------------------
+ 20||0 --- NAVIGATE ROVER0 WAYPOINT1 WAYPOINT2 CAMERA0 OBJECTIVE1 --- SON: 21||0
+ 20||1 --- CALIBRATE ROVER0 CAMERA0 OBJECTIVE1 WAYPOINT4 --- SON: 21||1
+ 20||2 --- SAMPLE_ROCK ROVER0 ROVER0STORE WAYPOINT2 --- SON: 21||2
+ 20||3 --- NAVIGATE ROVER0 WAYPOINT5 WAYPOINT4 CAMERA0 OBJECTIVE1 --- SON: 21||3
+-------------------------------------------------
+ 21||0 --- COMMUNICATE_IMAGE_DATA ROVER0 GENERAL OBJECTIVE1 COLOUR WAYPOINT2 WAYPOINT0 --- SON: 22||0
+ 21||1 --- NAVIGATE ROVER0 WAYPOINT4 WAYPOINT5 CAMERA0 OBJECTIVE1 --- SON: 22||1
+ 21||2 --- NAVIGATE ROVER0 WAYPOINT2 WAYPOINT1 CAMERA0 OBJECTIVE1 --- SON: 22||2
+ 21||3 --- CALIBRATE ROVER0 CAMERA0 OBJECTIVE1 WAYPOINT4 --- SON: 22||3
+-------------------------------------------------
+ 22||0 --- NAVIGATE ROVER0 WAYPOINT2 WAYPOINT1 CAMERA0 OBJECTIVE1 --- SON: 23||0
+ 22||1 --- NAVIGATE ROVER0 WAYPOINT5 WAYPOINT4 CAMERA0 OBJECTIVE1 --- SON: 23||1
+ 22||2 --- NAVIGATE ROVER0 WAYPOINT1 WAYPOINT3 CAMERA0 OBJECTIVE1 --- SON: 23||2
+ 22||3 --- NAVIGATE ROVER0 WAYPOINT4 WAYPOINT1 CAMERA0 OBJECTIVE1 --- SON: 23||3
+-------------------------------------------------
+ 23||0 --- NAVIGATE ROVER0 WAYPOINT1 WAYPOINT4 CAMERA0 OBJECTIVE1 --- SON: 24||0
+ 23||1 --- CALIBRATE ROVER0 CAMERA0 OBJECTIVE1 WAYPOINT4 --- SON: 24||1
+ 23||2 --- COMMUNICATE_ROCK_DATA ROVER0 GENERAL WAYPOINT3 WAYPOINT0 --- SON: 24||2
+ 23||3 --- NAVIGATE ROVER0 WAYPOINT1 WAYPOINT2 CAMERA0 OBJECTIVE1 --- SON: 24||3
+-------------------------------------------------
+ 24||0 --- CALIBRATE ROVER0 CAMERA0 OBJECTIVE1 WAYPOINT4 --- SON: 25||0
+ 24||1 --- NAVIGATE ROVER0 WAYPOINT4 WAYPOINT1 CAMERA0 OBJECTIVE1 --- SON: 25||1
+ 24||2 --- DROP ROVER0 ROVER0STORE --- SON: 25||2
+ 24||3 --- CALIBRATE ROVER0 CAMERA0 OBJECTIVE1 WAYPOINT2 --- SON: 25||3
+-------------------------------------------------
+ 25||0 --- SAMPLE_SOIL ROVER0 ROVER0STORE WAYPOINT4 --- SON: 26||0
+ 25||1 --- NAVIGATE ROVER0 WAYPOINT1 WAYPOINT2 CAMERA0 OBJECTIVE1 --- SON: 26||1
+ 25||2 --- CALIBRATE ROVER0 CAMERA0 OBJECTIVE1 WAYPOINT3 --- SON: 26||2
+ 25||3 --- NAVIGATE ROVER0 WAYPOINT2 WAYPOINT1 CAMERA0 OBJECTIVE1 --- SON: 26||3
+-------------------------------------------------
+ 26||0 --- DROP ROVER0 ROVER0STORE --- SON: 27||0
+ 26||1 --- CALIBRATE ROVER0 CAMERA0 OBJECTIVE1 WAYPOINT2 --- SON: 27||1
+ 26||2 --- NAVIGATE ROVER0 WAYPOINT3 WAYPOINT0 CAMERA0 OBJECTIVE1 --- SON: 27||2
+ 26||3 --- CALIBRATE ROVER0 CAMERA0 OBJECTIVE1 WAYPOINT1 --- SON: 27||3
+-------------------------------------------------
+ 27||0 --- NAVIGATE ROVER0 WAYPOINT4 WAYPOINT1 CAMERA0 OBJECTIVE1 --- SON: 28||0
+ 27||1 --- NAVIGATE ROVER0 WAYPOINT2 WAYPOINT1 CAMERA0 OBJECTIVE1 --- SON: 28||1
+ 27||2 --- CALIBRATE ROVER0 CAMERA0 OBJECTIVE1 WAYPOINT0 --- SON: 28||2
+ 27||3 --- NAVIGATE ROVER0 WAYPOINT1 WAYPOINT2 CAMERA0 OBJECTIVE1 --- SON: 28||3
+-------------------------------------------------
+ 28||0 --- NAVIGATE ROVER0 WAYPOINT1 WAYPOINT2 CAMERA0 OBJECTIVE1 --- SON: 29||0
+ 28||1 --- NAVIGATE ROVER0 WAYPOINT1 WAYPOINT4 CAMERA0 OBJECTIVE1 --- SON: 29||1
+ 28||2 --- TAKE_IMAGE ROVER0 WAYPOINT0 OBJECTIVE1 CAMERA0 HIGH_RES --- SON: 29||2
+ 28||3 --- CALIBRATE ROVER0 CAMERA0 OBJECTIVE1 WAYPOINT2 --- SON: 29||3
+-------------------------------------------------
+ 29||0 --- COMMUNICATE_SOIL_DATA ROVER0 GENERAL WAYPOINT2 WAYPOINT0 --- SON: 30||0
+ 29||1 --- CALIBRATE ROVER0 CAMERA0 OBJECTIVE1 WAYPOINT4 --- SON: 30||1
+ 29||2 --- NAVIGATE ROVER0 WAYPOINT0 WAYPOINT3 CAMERA0 OBJECTIVE1 --- SON: 30||2
+ 29||3 --- SAMPLE_ROCK ROVER0 ROVER0STORE WAYPOINT2 --- SON: 30||3
+-------------------------------------------------
+ 30||0 --- SAMPLE_ROCK ROVER0 ROVER0STORE WAYPOINT2 --- SON: 31||0
+ 30||1 --- NAVIGATE ROVER0 WAYPOINT4 WAYPOINT5 CAMERA0 OBJECTIVE1 --- SON: 31||1
+ 30||2 --- COMMUNICATE_IMAGE_DATA ROVER0 GENERAL OBJECTIVE1 HIGH_RES WAYPOINT3 WAYPOINT0 --- SON: 31||-1
+ 30||3 --- DROP ROVER0 ROVER0STORE --- SON: 31||2
+-------------------------------------------------
+ 31||0 --- COMMUNICATE_ROCK_DATA ROVER0 GENERAL WAYPOINT2 WAYPOINT0 --- SON: 32||-1
+ 31||1 --- CALIBRATE ROVER0 CAMERA0 OBJECTIVE1 WAYPOINT5 --- SON: 32||0
+ 31||2 --- NAVIGATE ROVER0 WAYPOINT2 WAYPOINT1 CAMERA0 OBJECTIVE1 --- SON: 32||1
+-------------------------------------------------
+ 32||0 --- NAVIGATE ROVER0 WAYPOINT5 WAYPOINT4 CAMERA0 OBJECTIVE1 --- SON: 33||0
+ 32||1 --- COMMUNICATE_ROCK_DATA ROVER0 GENERAL WAYPOINT1 WAYPOINT0 --- SON: 33||1
+-------------------------------------------------
+ 33||0 --- CALIBRATE ROVER0 CAMERA0 OBJECTIVE1 WAYPOINT4 --- SON: 34||0
+ 33||1 --- NAVIGATE ROVER0 WAYPOINT1 WAYPOINT4 CAMERA0 OBJECTIVE1 --- SON: 34||1
+-------------------------------------------------
+ 34||0 --- TAKE_IMAGE ROVER0 WAYPOINT4 OBJECTIVE1 CAMERA0 COLOUR --- SON: 35||0
+ 34||1 --- CALIBRATE ROVER0 CAMERA0 OBJECTIVE1 WAYPOINT4 --- SON: 35||1
+-------------------------------------------------
+ 35||0 --- CALIBRATE ROVER0 CAMERA0 OBJECTIVE1 WAYPOINT4 --- SON: 36||0
+ 35||1 --- NAVIGATE ROVER0 WAYPOINT4 WAYPOINT5 CAMERA0 OBJECTIVE1 --- SON: 36||1
+-------------------------------------------------
+ 36||0 --- NAVIGATE ROVER0 WAYPOINT4 WAYPOINT5 CAMERA0 OBJECTIVE1 --- SON: 37||0
+ 36||1 --- SAMPLE_SOIL ROVER0 ROVER0STORE WAYPOINT5 --- SON: 37||1
+-------------------------------------------------
+ 37||0 --- NAVIGATE ROVER0 WAYPOINT5 WAYPOINT4 CAMERA0 OBJECTIVE1 --- SON: 38||0
+ 37||1 --- NAVIGATE ROVER0 WAYPOINT5 WAYPOINT4 CAMERA0 OBJECTIVE1 --- SON: 38||1
+-------------------------------------------------
+ 38||0 --- CALIBRATE ROVER0 CAMERA0 OBJECTIVE1 WAYPOINT4 --- SON: 39||0
+ 38||1 --- NAVIGATE ROVER0 WAYPOINT4 WAYPOINT1 CAMERA0 OBJECTIVE1 --- SON: 39||1
+-------------------------------------------------
+ 39||0 --- NAVIGATE ROVER0 WAYPOINT4 WAYPOINT1 CAMERA0 OBJECTIVE1 --- SON: 40||0
+ 39||1 --- NAVIGATE ROVER0 WAYPOINT1 WAYPOINT3 CAMERA0 OBJECTIVE1 --- SON: 40||1
+-------------------------------------------------
+ 40||0 --- NAVIGATE ROVER0 WAYPOINT1 WAYPOINT2 CAMERA0 OBJECTIVE1 --- SON: 41||0
+ 40||1 --- COMMUNICATE_SOIL_DATA ROVER0 GENERAL WAYPOINT3 WAYPOINT0 --- SON: 41||1
+-------------------------------------------------
+ 41||0 --- NAVIGATE ROVER0 WAYPOINT2 WAYPOINT1 CAMERA0 OBJECTIVE1 --- SON: 42||0
+ 41||1 --- DROP ROVER0 ROVER0STORE --- SON: 42||1
+-------------------------------------------------
+ 42||0 --- NAVIGATE ROVER0 WAYPOINT1 WAYPOINT4 CAMERA0 OBJECTIVE1 --- SON: 43||0
+ 42||1 --- CALIBRATE ROVER0 CAMERA0 OBJECTIVE1 WAYPOINT3 --- SON: 43||1
+-------------------------------------------------
+ 43||0 --- CALIBRATE ROVER0 CAMERA0 OBJECTIVE1 WAYPOINT4 --- SON: 44||0
+ 43||1 --- NAVIGATE ROVER0 WAYPOINT3 WAYPOINT0 CAMERA0 OBJECTIVE1 --- SON: 44||1
+-------------------------------------------------
+ 44||0 --- NAVIGATE ROVER0 WAYPOINT4 WAYPOINT5 CAMERA0 OBJECTIVE1 --- SON: 45||0
+ 44||1 --- CALIBRATE ROVER0 CAMERA0 OBJECTIVE1 WAYPOINT0 --- SON: 45||1
+-------------------------------------------------
+ 45||0 --- CALIBRATE ROVER0 CAMERA0 OBJECTIVE1 WAYPOINT5 --- SON: 46||0
+ 45||1 --- TAKE_IMAGE ROVER0 WAYPOINT0 OBJECTIVE1 CAMERA0 HIGH_RES --- SON: 46||1
+-------------------------------------------------
+ 46||0 --- NAVIGATE ROVER0 WAYPOINT5 WAYPOINT4 CAMERA0 OBJECTIVE1 --- SON: 47||0
+ 46||1 --- NAVIGATE ROVER0 WAYPOINT0 WAYPOINT3 CAMERA0 OBJECTIVE1 --- SON: 47||1
+-------------------------------------------------
+ 47||0 --- CALIBRATE ROVER0 CAMERA0 OBJECTIVE1 WAYPOINT4 --- SON: 48||0
+ 47||1 --- COMMUNICATE_IMAGE_DATA ROVER0 GENERAL OBJECTIVE1 HIGH_RES WAYPOINT3 WAYPOINT0 --- SON: 48||-1
+-------------------------------------------------
+ 48||0 --- NAVIGATE ROVER0 WAYPOINT4 WAYPOINT1 CAMERA0 OBJECTIVE1 --- SON: 49||0
+-------------------------------------------------
+ 49||0 --- NAVIGATE ROVER0 WAYPOINT1 WAYPOINT2 CAMERA0 OBJECTIVE1 --- SON: 50||0
+-------------------------------------------------
+ 50||0 --- COMMUNICATE_IMAGE_DATA ROVER0 GENERAL OBJECTIVE1 COLOUR WAYPOINT2 WAYPOINT0 --- SON: 51||0
+-------------------------------------------------
+ 51||0 --- NAVIGATE ROVER0 WAYPOINT2 WAYPOINT1 CAMERA0 OBJECTIVE1 --- SON: 52||0
+-------------------------------------------------
+ 52||0 --- NAVIGATE ROVER0 WAYPOINT1 WAYPOINT4 CAMERA0 OBJECTIVE1 --- SON: 53||0
+-------------------------------------------------
+ 53||0 --- CALIBRATE ROVER0 CAMERA0 OBJECTIVE1 WAYPOINT4 --- SON: 54||0
+-------------------------------------------------
+ 54||0 --- NAVIGATE ROVER0 WAYPOINT4 WAYPOINT5 CAMERA0 OBJECTIVE1 --- SON: 55||0
+-------------------------------------------------
+ 55||0 --- NAVIGATE ROVER0 WAYPOINT5 WAYPOINT4 CAMERA0 OBJECTIVE1 --- SON: 56||0
+-------------------------------------------------
+ 56||0 --- CALIBRATE ROVER0 CAMERA0 OBJECTIVE1 WAYPOINT4 --- SON: 57||0
+-------------------------------------------------
+ 57||0 --- NAVIGATE ROVER0 WAYPOINT4 WAYPOINT1 CAMERA0 OBJECTIVE1 --- SON: 58||0
+-------------------------------------------------
+ 58||0 --- NAVIGATE ROVER0 WAYPOINT1 WAYPOINT2 CAMERA0 OBJECTIVE1 --- SON: 59||0
+-------------------------------------------------
+ 59||0 --- CALIBRATE ROVER0 CAMERA0 OBJECTIVE1 WAYPOINT2 --- SON: 60||0
+-------------------------------------------------
+ 60||0 --- NAVIGATE ROVER0 WAYPOINT2 WAYPOINT1 CAMERA0 OBJECTIVE1 --- SON: 61||0
+-------------------------------------------------
+ 61||0 --- NAVIGATE ROVER0 WAYPOINT1 WAYPOINT4 CAMERA0 OBJECTIVE1 --- SON: 62||0
+-------------------------------------------------
+ 62||0 --- CALIBRATE ROVER0 CAMERA0 OBJECTIVE1 WAYPOINT4 --- SON: 63||0
+-------------------------------------------------
+ 63||0 --- NAVIGATE ROVER0 WAYPOINT4 WAYPOINT5 CAMERA0 OBJECTIVE1 --- SON: 64||0
+-------------------------------------------------
+ 64||0 --- CALIBRATE ROVER0 CAMERA0 OBJECTIVE1 WAYPOINT5 --- SON: 65||0
+-------------------------------------------------
+ 65||0 --- NAVIGATE ROVER0 WAYPOINT5 WAYPOINT4 CAMERA0 OBJECTIVE1 --- SON: 66||0
+-------------------------------------------------
+ 66||0 --- CALIBRATE ROVER0 CAMERA0 OBJECTIVE1 WAYPOINT4 --- SON: 67||0
+-------------------------------------------------
+ 67||0 --- NAVIGATE ROVER0 WAYPOINT4 WAYPOINT1 CAMERA0 OBJECTIVE1 --- SON: 68||0
+-------------------------------------------------
+ 68||0 --- CALIBRATE ROVER0 CAMERA0 OBJECTIVE1 WAYPOINT1 --- SON: 69||0
+-------------------------------------------------
+ 69||0 --- NAVIGATE ROVER0 WAYPOINT1 WAYPOINT2 CAMERA0 OBJECTIVE1 --- SON: 70||0
+-------------------------------------------------
+ 70||0 --- CALIBRATE ROVER0 CAMERA0 OBJECTIVE1 WAYPOINT2 --- SON: 71||0
+-------------------------------------------------
+ 71||0 --- SAMPLE_ROCK ROVER0 ROVER0STORE WAYPOINT2 --- SON: 72||0
+-------------------------------------------------
+ 72||0 --- DROP ROVER0 ROVER0STORE --- SON: 73||0
+-------------------------------------------------
+ 73||0 --- NAVIGATE ROVER0 WAYPOINT2 WAYPOINT1 CAMERA0 OBJECTIVE1 --- SON: 74||0
+-------------------------------------------------
+ 74||0 --- COMMUNICATE_ROCK_DATA ROVER0 GENERAL WAYPOINT1 WAYPOINT0 --- SON: 75||0
+-------------------------------------------------
+ 75||0 --- NAVIGATE ROVER0 WAYPOINT1 WAYPOINT4 CAMERA0 OBJECTIVE1 --- SON: 76||0
+-------------------------------------------------
+ 76||0 --- CALIBRATE ROVER0 CAMERA0 OBJECTIVE1 WAYPOINT4 --- SON: 77||0
+-------------------------------------------------
+ 77||0 --- NAVIGATE ROVER0 WAYPOINT4 WAYPOINT5 CAMERA0 OBJECTIVE1 --- SON: 78||0
+-------------------------------------------------
+ 78||0 --- SAMPLE_SOIL ROVER0 ROVER0STORE WAYPOINT5 --- SON: 79||0
+-------------------------------------------------
+ 79||0 --- NAVIGATE ROVER0 WAYPOINT5 WAYPOINT4 CAMERA0 OBJECTIVE1 --- SON: 80||0
+-------------------------------------------------
+ 80||0 --- NAVIGATE ROVER0 WAYPOINT4 WAYPOINT1 CAMERA0 OBJECTIVE1 --- SON: 81||0
+-------------------------------------------------
+ 81||0 --- COMMUNICATE_SOIL_DATA ROVER0 GENERAL WAYPOINT1 WAYPOINT0 --- SON: 82||-1
+-------------------------------------------------
+
+tree layers: 82
+total nr. actions: 170
+
+statistics:    0.00 seconds instantiating 74 easy, 0 hard action templates
+               0.00 seconds reachability analysis, yielding 46 facts and 71 actions
+               0.00 seconds creating final representation with 33 relevant facts (14 max U, 9 CNF max U)
+               final representation has 8 unknown facts and 17 observation actions    
+               0.00 seconds building connectivity graph
+               0.07 seconds (   0.07 pure) evaluating 1046 states
+               0.00 seconds in DP for 1104 RPG ini state implication checks
+               0.00 seconds in DP for 0 RPlan extract ini state implication checks (0 lits removed)
+               0.10 seconds generating,    0.00 seconds encoding 2061 state transition base CNFs
+               0.00 seconds in DP solving 54 state transition CNFs
+               0.00 seconds checking for self-contradictions, including 0 DP calls
+               0.00 seconds checking for stagnating states (1010 hits), including 232 DP calls
+               1390 total DP calls, 28480 total UP calls,    0.00 sec membership
+              0.01 seconds for remaining searching duties
+               0.18 seconds total time (+    0.03 secs for CNF memory allocation)
+

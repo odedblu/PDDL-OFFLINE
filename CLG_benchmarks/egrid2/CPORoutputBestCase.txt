@@ -1,0 +1,10 @@
+686) pickup_f0-2f_key0-0
+687) move_f0-2f_f0-1f
+688) move_f0-1f_f1-1f
+689) move_f1-1f_f1-0f
+690) putdown_f1-0f_key0-0
+691) pickup_f1-0f_key1-0
+692) move_f1-0f_f1-1f
+693) move_f1-1f_f0-1f
+694) putdown_f0-1f_key1-0
+)goal

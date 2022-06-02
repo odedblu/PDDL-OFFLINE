@@ -1,0 +1,13 @@
+move_p5-1_p4-1_a2_t1_t2
+	move_p4-1_p3-1_a2_t2_t3
+		observe-box_p3-1_a2_b1_t3_t4
+			(f)no-op_t4_t5
+			(f)	move_p3-1_p4-1_a2_t5_t6
+			(f)		move_p4-1_p5-1_a2_t6_t7
+			(f)			observe-box_p5-1_a2_b2_t7_t8
+			(f)				(t)push_p5-1_p5-2_b2_a2_t8_t9
+			(t)push_p3-1_p3-2_b1_a2_t4_t5
+			(t)	move_p3-1_p4-1_a2_t5_t6
+			(t)		move_p4-1_p5-1_a2_t6_t7
+			(t)			observe-box_p5-1_a2_b2_t7_t8
+			(t)				(t)push_p5-1_p5-2_b2_a2_t8_t9

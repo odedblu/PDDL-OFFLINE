@@ -1,0 +1,101 @@
+0) edge-obs_v0_e1
+branching...
+	2) move-along_v0_v1_e0
+	5) edge-obs_v1_e3
+branching...
+		7) move-along_v1_v2_e2
+		10) edge-obs_v2_e5
+branching...
+			12) move-along_v2_v3_e4
+			15) edge-obs_v3_e7
+branching...
+				17) move-along_v3_v4_e6
+				20) edge-obs_v4_e9
+branching...
+					22) move-along_v4_v5_e8
+					25) edge-obs_v5_e11
+branching...
+						27) move-along_v5_v6_e10
+						30) edge-obs_v6_e13
+branching...
+							32) move-along_v6_v7_e12
+							35) edge-obs_v7_e15
+branching...
+								37) move-along_v7_v8_e14
+								40) edge-obs_v8_e17
+branching...
+									42) move-along_v8_v9_e16
+									45) edge-obs_v9_e19
+branching...
+										47) move-along_v9_v10_e18
+										50) edge-obs_v10_e21
+branching...
+											52) move-along_v10_v11_e20
+											55) edge-obs_v11_e23
+branching...
+												57) move-along_v11_v12_e22
+												60) edge-obs_v12_e25
+branching...
+													62) move-along_v12_v13_e24
+													65) edge-obs_v13_e27
+branching...
+														67) move-along_v13_v14_e26
+														70) edge-obs_v14_e29
+branching...
+															72) move-along_v14_v15_e28
+															75) edge-obs_v15_e31
+branching...
+																77) move-along_v15_v16_e30
+																80) edge-obs_v16_e33
+branching...
+																	82) move-along_v16_v17_e32
+																	85) edge-obs_v17_e35
+branching...
+																		87) move-along_v17_v18_e34
+																		90) edge-obs_v18_e37
+branching...
+																			92) move-along_v18_v19_e36
+																			95) edge-obs_v19_e39
+branching...
+																				97) move-along_v19_v20_e38
+)goal
+																				96) move-along_v19_v20_e39
+)goal
+																			91) move-along_v18_v19_e37
+)connect to 95
+																		86) move-along_v17_v18_e35
+)connect to 90
+																	81) move-along_v16_v17_e33
+)connect to 85
+																76) move-along_v15_v16_e31
+)connect to 80
+															71) move-along_v14_v15_e29
+)connect to 75
+														66) move-along_v13_v14_e27
+)connect to 70
+													61) move-along_v12_v13_e25
+)connect to 65
+												56) move-along_v11_v12_e23
+)connect to 60
+											51) move-along_v10_v11_e21
+)connect to 55
+										46) move-along_v9_v10_e19
+)connect to 50
+									41) move-along_v8_v9_e17
+)connect to 45
+								36) move-along_v7_v8_e15
+)connect to 40
+							31) move-along_v6_v7_e13
+)connect to 35
+						26) move-along_v5_v6_e11
+)connect to 30
+					21) move-along_v4_v5_e9
+)connect to 25
+				16) move-along_v3_v4_e7
+)connect to 20
+			11) move-along_v2_v3_e5
+)connect to 15
+		6) move-along_v1_v2_e3
+)connect to 10
+	1) move-along_v0_v1_e1
+)connect to 5

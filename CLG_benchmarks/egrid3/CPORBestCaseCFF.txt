@@ -1,0 +1,25 @@
+Budget 17: Can not compare the trees 
+Budget 18: Can not compare the trees 
+Budget 19: Can not compare the trees 
+Budget 20: Can not compare the trees 
+Budget 21: Can not compare the trees 
+Budget 22: Tree CPORBestCase is better than Tree CFF
+Budget 23: Tree CPORBestCase is better than Tree CFF
+Budget 24: Tree CPORBestCase is better than Tree CFF
+Budget 25: Tree CPORBestCase is better than Tree CFF
+Budget 26: Tree CPORBestCase is better than Tree CFF
+Budget 27: Tree CPORBestCase is better than Tree CFF
+Budget 28: Tree CPORBestCase is better than Tree CFF
+Budget 29: Tree CPORBestCase is better than Tree CFF
+Budget 30: Tree CPORBestCase is better than Tree CFF
+Budget 31: Tree CPORBestCase is better than Tree CFF
+Budget 32: Tree CPORBestCase is better than Tree CFF
+Budget 33: Tree CPORBestCase is better than Tree CFF
+Budget 34: Tree CPORBestCase is better than Tree CFF
+Budget 35: Tree CPORBestCase is better than Tree CFF
+Budget 36: Tree CPORBestCase is better than Tree CFF
+Budget 37: Tree CPORBestCase is better than Tree CFF
+Budget 38: Tree CPORBestCase is better than Tree CFF
+Budget 39: Tree CPORBestCase is better than Tree CFF
+Budget 40: Tree CPORBestCase is better than Tree CFF
+Budget 41: Equal Trees

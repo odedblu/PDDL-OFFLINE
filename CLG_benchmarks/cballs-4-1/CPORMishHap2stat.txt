@@ -1,0 +1,543 @@
+6512) observe-ball_p2-2_o1
+	6513) move_p2-2_p1-2
+	6514) observe-ball_p1-2_o1
+		6515) move_p1-2_p1-3
+		6516) observe-ball_p1-3_o1
+			6517) move_p1-3_p2-3
+			6518) observe-ball_p2-3_o1
+				6519) move_p2-3_p2-4
+				6520) observe-ball_p2-4_o1
+					6521) move_p2-4_p3-4
+					6522) observe-ball_p3-4_o1
+						6523) move_p3-4_p3-3
+						6524) observe-ball_p3-3_o1
+							6525) move_p3-3_p4-3
+							6526) observe-ball_p4-3_o1
+								6527) move_p4-3_p4-2
+								6528) observe-ball_p4-2_o1
+									6529) move_p4-2_p3-2
+									6530) observe-ball_p3-2_o1
+										6531) move_p3-2_p3-1
+										6532) observe-ball_p3-1_o1
+											6533) move_p3-1_p2-1
+											6534) pickup_o1_p2-1
+											6535) move_p2-1_p1-1
+											6536) observe-color_red_o1
+												6537) observe-color_purple_o1
+													6538) observe-color_green_o1
+														6539) move_p1-1_p1-2
+														6540) move_p1-2_p1-3
+														6541) move_p1-3_p1-4
+														6542) trash_o1_blue_t2_p1-4
+
+														6545) move_p1-1_p2-1
+														6546) move_p2-1_p3-1
+														6547) move_p3-1_p4-1
+														6548) trash_o1_green_t3_p4-1
+
+													6551) move_p1-1_p1-2
+													6552) move_p1-2_p1-3
+													6553) move_p1-3_p1-4
+													6554) move_p1-4_p2-4
+													6555) move_p2-4_p3-4
+													6556) move_p3-4_p4-4
+													6557) trash_o1_purple_t4_p4-4
+
+												6560) trash_o1_red_t1_p1-1
+
+											6563) pickup_o1_p3-1
+											6564) observe-color_green_o1
+												6565) move_p3-1_p2-1
+												6566) observe-color_red_o1
+													6567) move_p2-1_p1-1
+													6568) observe-color_purple_o1
+														6569) move_p1-1_p1-2
+														6570) move_p1-2_p1-3
+														6571) move_p1-3_p1-4
+														6572) trash_o1_blue_t2_p1-4
+
+														6575) move_p1-1_p1-2
+														6576) move_p1-2_p1-3
+														6577) move_p1-3_p1-4
+														6578) move_p1-4_p2-4
+														6579) move_p2-4_p3-4
+														6580) move_p3-4_p4-4
+														6581) trash_o1_purple_t4_p4-4
+
+													6584) move_p2-1_p1-1
+													6585) trash_o1_red_t1_p1-1
+
+												6588) move_p3-1_p4-1
+												6589) trash_o1_green_t3_p4-1
+
+										6592) pickup_o1_p3-2
+										6593) move_p3-2_p3-1
+										6594) observe-color_green_o1
+											6595) move_p3-1_p2-1
+											6596) observe-color_red_o1
+												6597) move_p2-1_p1-1
+												6598) observe-color_purple_o1
+													6599) move_p1-1_p1-2
+													6600) move_p1-2_p1-3
+													6601) move_p1-3_p1-4
+													6602) trash_o1_blue_t2_p1-4
+
+													6605) move_p1-1_p1-2
+													6606) move_p1-2_p1-3
+													6607) move_p1-3_p1-4
+													6608) move_p1-4_p2-4
+													6609) move_p2-4_p3-4
+													6610) move_p3-4_p4-4
+													6611) trash_o1_purple_t4_p4-4
+
+												6614) move_p2-1_p1-1
+												6615) trash_o1_red_t1_p1-1
+
+											6618) move_p3-1_p4-1
+											6619) trash_o1_green_t3_p4-1
+
+									6622) pickup_o1_p4-2
+									6623) move_p4-2_p4-1
+									6624) observe-color_green_o1
+										6625) observe-color_purple_o1
+											6626) observe-color_blue_o1
+												6627) move_p4-1_p3-1
+												6628) move_p3-1_p2-1
+												6629) move_p2-1_p1-1
+												6630) trash_o1_red_t1_p1-1
+
+												6633) move_p4-1_p3-1
+												6634) move_p3-1_p2-1
+												6635) move_p2-1_p1-1
+												6636) move_p1-1_p1-2
+												6637) move_p1-2_p1-3
+												6638) move_p1-3_p1-4
+												6639) trash_o1_blue_t2_p1-4
+
+											6642) move_p4-1_p4-2
+											6643) move_p4-2_p4-3
+											6644) move_p4-3_p4-4
+											6645) trash_o1_purple_t4_p4-4
+
+										6648) trash_o1_green_t3_p4-1
+
+								6651) pickup_o1_p4-3
+								6652) move_p4-3_p4-4
+								6653) observe-color_purple_o1
+									6654) observe-color_green_o1
+										6655) observe-color_blue_o1
+											6656) move_p4-4_p3-4
+											6657) move_p3-4_p2-4
+											6658) move_p2-4_p1-4
+											6659) move_p1-4_p1-3
+											6660) move_p1-3_p1-2
+											6661) move_p1-2_p1-1
+											6662) trash_o1_red_t1_p1-1
+
+											6665) move_p4-4_p3-4
+											6666) move_p3-4_p2-4
+											6667) move_p2-4_p1-4
+											6668) trash_o1_blue_t2_p1-4
+
+										6671) move_p4-4_p4-3
+										6672) move_p4-3_p4-2
+										6673) move_p4-2_p4-1
+										6674) trash_o1_green_t3_p4-1
+
+									6677) trash_o1_purple_t4_p4-4
+
+							6680) pickup_o1_p3-3
+							6681) move_p3-3_p3-4
+							6682) move_p3-4_p4-4
+							6683) observe-color_purple_o1
+								6684) observe-color_green_o1
+									6685) observe-color_blue_o1
+										6686) move_p4-4_p3-4
+										6687) move_p3-4_p2-4
+										6688) move_p2-4_p1-4
+										6689) move_p1-4_p1-3
+										6690) move_p1-3_p1-2
+										6691) move_p1-2_p1-1
+										6692) trash_o1_red_t1_p1-1
+
+										6695) move_p4-4_p3-4
+										6696) move_p3-4_p2-4
+										6697) move_p2-4_p1-4
+										6698) trash_o1_blue_t2_p1-4
+
+									6701) move_p4-4_p4-3
+									6702) move_p4-3_p4-2
+									6703) move_p4-2_p4-1
+									6704) trash_o1_green_t3_p4-1
+
+								6707) trash_o1_purple_t4_p4-4
+
+						6710) pickup_o1_p3-4
+						6711) move_p3-4_p4-4
+						6712) observe-color_purple_o1
+							6713) observe-color_green_o1
+								6714) observe-color_blue_o1
+									6715) move_p4-4_p3-4
+									6716) move_p3-4_p2-4
+									6717) move_p2-4_p1-4
+									6718) move_p1-4_p1-3
+									6719) move_p1-3_p1-2
+									6720) move_p1-2_p1-1
+									6721) trash_o1_red_t1_p1-1
+
+									6724) move_p4-4_p3-4
+									6725) move_p3-4_p2-4
+									6726) move_p2-4_p1-4
+									6727) trash_o1_blue_t2_p1-4
+
+								6730) move_p4-4_p4-3
+								6731) move_p4-3_p4-2
+								6732) move_p4-2_p4-1
+								6733) trash_o1_green_t3_p4-1
+
+							6736) trash_o1_purple_t4_p4-4
+
+					6739) pickup_o1_p2-4
+					6740) move_p2-4_p1-4
+					6741) observe-color_blue_o1
+						6742) observe-color_purple_o1
+							6743) observe-color_green_o1
+								6744) move_p1-4_p1-3
+								6745) move_p1-3_p1-2
+								6746) move_p1-2_p1-1
+								6747) trash_o1_red_t1_p1-1
+
+								6750) move_p1-4_p1-3
+								6751) move_p1-3_p1-2
+								6752) move_p1-2_p1-1
+								6753) move_p1-1_p2-1
+								6754) move_p2-1_p3-1
+								6755) move_p3-1_p4-1
+								6756) trash_o1_green_t3_p4-1
+
+							6759) move_p1-4_p2-4
+							6760) move_p2-4_p3-4
+							6761) move_p3-4_p4-4
+							6762) trash_o1_purple_t4_p4-4
+
+						6765) trash_o1_blue_t2_p1-4
+
+				6768) pickup_o1_p2-3
+				6769) move_p2-3_p1-3
+				6770) move_p1-3_p1-4
+				6771) observe-color_blue_o1
+					6772) observe-color_purple_o1
+						6773) observe-color_green_o1
+							6774) move_p1-4_p1-3
+							6775) move_p1-3_p1-2
+							6776) move_p1-2_p1-1
+							6777) trash_o1_red_t1_p1-1
+
+							6780) move_p1-4_p1-3
+							6781) move_p1-3_p1-2
+							6782) move_p1-2_p1-1
+							6783) move_p1-1_p2-1
+							6784) move_p2-1_p3-1
+							6785) move_p3-1_p4-1
+							6786) trash_o1_green_t3_p4-1
+
+						6789) move_p1-4_p2-4
+						6790) move_p2-4_p3-4
+						6791) move_p3-4_p4-4
+						6792) trash_o1_purple_t4_p4-4
+
+					6795) trash_o1_blue_t2_p1-4
+
+			6798) pickup_o1_p1-3
+			6799) move_p1-3_p1-4
+			6800) observe-color_blue_o1
+				6801) observe-color_purple_o1
+					6802) observe-color_green_o1
+						6803) move_p1-4_p1-3
+						6804) move_p1-3_p1-2
+						6805) move_p1-2_p1-1
+						6806) trash_o1_red_t1_p1-1
+
+						6809) move_p1-4_p1-3
+						6810) move_p1-3_p1-2
+						6811) move_p1-2_p1-1
+						6812) move_p1-1_p2-1
+						6813) move_p2-1_p3-1
+						6814) move_p3-1_p4-1
+						6815) trash_o1_green_t3_p4-1
+
+					6818) move_p1-4_p2-4
+					6819) move_p2-4_p3-4
+					6820) move_p3-4_p4-4
+					6821) trash_o1_purple_t4_p4-4
+
+				6824) trash_o1_blue_t2_p1-4
+
+		6827) pickup_o1_p1-2
+		6828) observe-color_purple_o1
+			6829) move_p1-2_p1-1
+			6830) observe-color_blue_o1
+				6831) observe-color_red_o1
+					6832) move_p1-1_p2-1
+					6833) move_p2-1_p3-1
+					6834) move_p3-1_p4-1
+					6835) trash_o1_green_t3_p4-1
+
+					6838) trash_o1_red_t1_p1-1
+
+				6841) move_p1-1_p1-2
+				6842) move_p1-2_p1-3
+				6843) move_p1-3_p1-4
+				6844) trash_o1_blue_t2_p1-4
+
+			6847) move_p1-2_p1-3
+			6848) move_p1-3_p1-4
+			6849) move_p1-4_p2-4
+			6850) move_p2-4_p3-4
+			6851) move_p3-4_p4-4
+			6852) trash_o1_purple_t4_p4-4
+
+	6855) pickup_o1_p2-2
+	6856) move_p2-2_p1-2
+	6857) observe-color_purple_o1
+		6858) move_p1-2_p1-1
+		6859) observe-color_blue_o1
+			6860) observe-color_red_o1
+				6861) move_p1-1_p2-1
+				6862) move_p2-1_p3-1
+				6863) move_p3-1_p4-1
+				6864) trash_o1_green_t3_p4-1
+
+				6867) trash_o1_red_t1_p1-1
+
+			6870) move_p1-1_p1-2
+			6871) move_p1-2_p1-3
+			6872) move_p1-3_p1-4
+			6873) trash_o1_blue_t2_p1-4
+
+		6876) move_p1-2_p1-3
+		6877) move_p1-3_p1-4
+		6878) move_p1-4_p2-4
+		6879) move_p2-4_p3-4
+		6880) move_p3-4_p4-4
+		6881) trash_o1_purple_t4_p4-4
+
+Goals 
+#10 :  , (color o1 purple) , (not (color o1 red)) , (not (color o1 blue)) , (not (color o1 green)) , (obj-at o1 p2-2) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3))
+10 :  , (color o1 blue) , (not (color o1 red)) , (not (color o1 green)) , (not (color o1 purple)) , (obj-at o1 p2-2) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3))
+8 :  , (color o1 red) , (not (color o1 green)) , (not (color o1 blue)) , (not (color o1 purple)) , (obj-at o1 p2-2) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3))
+11 :  , (not (color o1 red)) , (color o1 green) , (not (color o1 blue)) , (not (color o1 purple)) , (obj-at o1 p2-2) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3))
+11 :  , (color o1 purple) , (not (color o1 red)) , (not (color o1 blue)) , (not (color o1 green)) , (obj-at o1 p1-2) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p2-2))
+11 :  , (color o1 blue) , (not (color o1 red)) , (not (color o1 green)) , (not (color o1 purple)) , (obj-at o1 p1-2) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p2-2))
+9 :  , (color o1 red) , (not (color o1 green)) , (not (color o1 blue)) , (not (color o1 purple)) , (obj-at o1 p1-2) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p2-2))
+12 :  , (not (color o1 red)) , (color o1 green) , (not (color o1 blue)) , (not (color o1 purple)) , (obj-at o1 p1-2) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p2-2))
+9 :  , (color o1 blue) , (not (color o1 red)) , (not (color o1 green)) , (not (color o1 purple)) , (obj-at o1 p1-3) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+13 :  , (color o1 purple) , (not (color o1 red)) , (not (color o1 green)) , (not (color o1 blue)) , (obj-at o1 p1-3) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+17 :  , (color o1 green) , (not (color o1 red)) , (not (color o1 purple)) , (not (color o1 blue)) , (obj-at o1 p1-3) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+14 :  , (not (color o1 green)) , (color o1 red) , (not (color o1 purple)) , (not (color o1 blue)) , (obj-at o1 p1-3) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+12 :  , (color o1 blue) , (not (color o1 red)) , (not (color o1 green)) , (not (color o1 purple)) , (obj-at o1 p2-3) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+16 :  , (color o1 purple) , (not (color o1 red)) , (not (color o1 green)) , (not (color o1 blue)) , (obj-at o1 p2-3) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+20 :  , (color o1 green) , (not (color o1 red)) , (not (color o1 purple)) , (not (color o1 blue)) , (obj-at o1 p2-3) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+17 :  , (not (color o1 green)) , (color o1 red) , (not (color o1 purple)) , (not (color o1 blue)) , (obj-at o1 p2-3) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+13 :  , (color o1 blue) , (not (color o1 red)) , (not (color o1 green)) , (not (color o1 purple)) , (obj-at o1 p2-4) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+17 :  , (color o1 purple) , (not (color o1 red)) , (not (color o1 green)) , (not (color o1 blue)) , (obj-at o1 p2-4) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+21 :  , (color o1 green) , (not (color o1 red)) , (not (color o1 purple)) , (not (color o1 blue)) , (obj-at o1 p2-4) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+18 :  , (not (color o1 green)) , (color o1 red) , (not (color o1 purple)) , (not (color o1 blue)) , (obj-at o1 p2-4) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+15 :  , (color o1 purple) , (not (color o1 red)) , (not (color o1 blue)) , (not (color o1 green)) , (obj-at o1 p3-4) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+19 :  , (color o1 green) , (not (color o1 red)) , (not (color o1 blue)) , (not (color o1 purple)) , (obj-at o1 p3-4) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+20 :  , (color o1 blue) , (not (color o1 red)) , (not (color o1 green)) , (not (color o1 purple)) , (obj-at o1 p3-4) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+23 :  , (not (color o1 blue)) , (color o1 red) , (not (color o1 green)) , (not (color o1 purple)) , (obj-at o1 p3-4) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+18 :  , (color o1 purple) , (not (color o1 red)) , (not (color o1 blue)) , (not (color o1 green)) , (obj-at o1 p3-3) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+22 :  , (color o1 green) , (not (color o1 red)) , (not (color o1 blue)) , (not (color o1 purple)) , (obj-at o1 p3-3) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+23 :  , (color o1 blue) , (not (color o1 red)) , (not (color o1 green)) , (not (color o1 purple)) , (obj-at o1 p3-3) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+26 :  , (not (color o1 blue)) , (color o1 red) , (not (color o1 green)) , (not (color o1 purple)) , (obj-at o1 p3-3) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+19 :  , (color o1 purple) , (not (color o1 red)) , (not (color o1 blue)) , (not (color o1 green)) , (obj-at o1 p4-3) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+23 :  , (color o1 green) , (not (color o1 red)) , (not (color o1 blue)) , (not (color o1 purple)) , (obj-at o1 p4-3) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+24 :  , (color o1 blue) , (not (color o1 red)) , (not (color o1 green)) , (not (color o1 purple)) , (obj-at o1 p4-3) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+27 :  , (not (color o1 blue)) , (color o1 red) , (not (color o1 green)) , (not (color o1 purple)) , (obj-at o1 p4-3) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+21 :  , (color o1 green) , (not (color o1 red)) , (not (color o1 blue)) , (not (color o1 purple)) , (obj-at o1 p4-2) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+25 :  , (color o1 purple) , (not (color o1 red)) , (not (color o1 blue)) , (not (color o1 green)) , (obj-at o1 p4-2) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+29 :  , (color o1 blue) , (not (color o1 red)) , (not (color o1 purple)) , (not (color o1 green)) , (obj-at o1 p4-2) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+26 :  , (not (color o1 blue)) , (color o1 red) , (not (color o1 purple)) , (not (color o1 green)) , (obj-at o1 p4-2) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+24 :  , (color o1 green) , (not (color o1 red)) , (not (color o1 blue)) , (not (color o1 purple)) , (obj-at o1 p3-2) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+26 :  , (color o1 red) , (not (color o1 blue)) , (not (color o1 purple)) , (not (color o1 green)) , (obj-at o1 p3-2) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+33 :  , (color o1 purple) , (not (color o1 blue)) , (not (color o1 red)) , (not (color o1 green)) , (obj-at o1 p3-2) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+30 :  , (not (color o1 purple)) , (color o1 blue) , (not (color o1 red)) , (not (color o1 green)) , (obj-at o1 p3-2) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+25 :  , (color o1 green) , (not (color o1 red)) , (not (color o1 blue)) , (not (color o1 purple)) , (obj-at o1 p3-1) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+27 :  , (color o1 red) , (not (color o1 blue)) , (not (color o1 purple)) , (not (color o1 green)) , (obj-at o1 p3-1) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+34 :  , (color o1 purple) , (not (color o1 blue)) , (not (color o1 red)) , (not (color o1 green)) , (obj-at o1 p3-1) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+31 :  , (not (color o1 purple)) , (color o1 blue) , (not (color o1 red)) , (not (color o1 green)) , (obj-at o1 p3-1) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+26 :  , (color o1 red) , (not (color o1 blue)) , (not (color o1 green)) , (not (color o1 purple)) , (not (obj-at o1 p3-1)) , (obj-at o1 p2-1) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+33 :  , (color o1 purple) , (not (color o1 blue)) , (not (color o1 green)) , (not (color o1 red)) , (not (obj-at o1 p3-1)) , (obj-at o1 p2-1) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+31 :  , (color o1 green) , (not (color o1 blue)) , (not (color o1 purple)) , (not (color o1 red)) , (not (obj-at o1 p3-1)) , (obj-at o1 p2-1) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+31 :  , (not (color o1 green)) , (color o1 blue) , (not (color o1 purple)) , (not (color o1 red)) , (not (obj-at o1 p3-1)) , (obj-at o1 p2-1) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+#
+Union Goals Budget
+#10 :  , (color o1 purple) , (not (color o1 red)) , (not (color o1 blue)) , (not (color o1 green)) , (obj-at o1 p2-2) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3))
+10 :  , (color o1 blue) , (not (color o1 red)) , (not (color o1 green)) , (not (color o1 purple)) , (obj-at o1 p2-2) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3))
+8 :  , (color o1 red) , (not (color o1 green)) , (not (color o1 blue)) , (not (color o1 purple)) , (obj-at o1 p2-2) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3))
+11 :  , (not (color o1 red)) , (color o1 green) , (not (color o1 blue)) , (not (color o1 purple)) , (obj-at o1 p2-2) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3))
+11 :  , (not (color o1 purple)) , (obj-at o1 p2-2) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3))
+11 :  , (not (color o1 purple)) , (obj-at o1 p2-2) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3))
+11 :  , (obj-at o1 p2-2) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3))
+11 :  , (color o1 purple) , (not (color o1 red)) , (not (color o1 blue)) , (not (color o1 green)) , (obj-at o1 p1-2) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p2-2))
+11 :  , (color o1 blue) , (not (color o1 red)) , (not (color o1 green)) , (not (color o1 purple)) , (obj-at o1 p1-2) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p2-2))
+9 :  , (color o1 red) , (not (color o1 green)) , (not (color o1 blue)) , (not (color o1 purple)) , (obj-at o1 p1-2) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p2-2))
+12 :  , (not (color o1 red)) , (color o1 green) , (not (color o1 blue)) , (not (color o1 purple)) , (obj-at o1 p1-2) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p2-2))
+12 :  , (not (color o1 purple)) , (obj-at o1 p1-2) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p2-2))
+12 :  , (not (color o1 purple)) , (obj-at o1 p1-2) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p2-2))
+12 :  , (obj-at o1 p1-2) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p2-2))
+9 :  , (color o1 blue) , (not (color o1 red)) , (not (color o1 green)) , (not (color o1 purple)) , (obj-at o1 p1-3) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+13 :  , (color o1 purple) , (not (color o1 red)) , (not (color o1 green)) , (not (color o1 blue)) , (obj-at o1 p1-3) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+17 :  , (color o1 green) , (not (color o1 red)) , (not (color o1 purple)) , (not (color o1 blue)) , (obj-at o1 p1-3) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+14 :  , (not (color o1 green)) , (color o1 red) , (not (color o1 purple)) , (not (color o1 blue)) , (obj-at o1 p1-3) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+17 :  , (not (color o1 blue)) , (obj-at o1 p1-3) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+17 :  , (obj-at o1 p1-3) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+17 :  , (obj-at o1 p1-3) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+12 :  , (color o1 blue) , (not (color o1 red)) , (not (color o1 green)) , (not (color o1 purple)) , (obj-at o1 p2-3) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+16 :  , (color o1 purple) , (not (color o1 red)) , (not (color o1 green)) , (not (color o1 blue)) , (obj-at o1 p2-3) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+20 :  , (color o1 green) , (not (color o1 red)) , (not (color o1 purple)) , (not (color o1 blue)) , (obj-at o1 p2-3) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+17 :  , (not (color o1 green)) , (color o1 red) , (not (color o1 purple)) , (not (color o1 blue)) , (obj-at o1 p2-3) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+20 :  , (not (color o1 blue)) , (obj-at o1 p2-3) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+20 :  , (obj-at o1 p2-3) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+20 :  , (obj-at o1 p2-3) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+13 :  , (color o1 blue) , (not (color o1 red)) , (not (color o1 green)) , (not (color o1 purple)) , (obj-at o1 p2-4) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+17 :  , (color o1 purple) , (not (color o1 red)) , (not (color o1 green)) , (not (color o1 blue)) , (obj-at o1 p2-4) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+21 :  , (color o1 green) , (not (color o1 red)) , (not (color o1 purple)) , (not (color o1 blue)) , (obj-at o1 p2-4) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+18 :  , (not (color o1 green)) , (color o1 red) , (not (color o1 purple)) , (not (color o1 blue)) , (obj-at o1 p2-4) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+21 :  , (not (color o1 blue)) , (obj-at o1 p2-4) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+21 :  , (obj-at o1 p2-4) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+21 :  , (obj-at o1 p2-4) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+15 :  , (color o1 purple) , (not (color o1 red)) , (not (color o1 blue)) , (not (color o1 green)) , (obj-at o1 p3-4) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+19 :  , (color o1 green) , (not (color o1 red)) , (not (color o1 blue)) , (not (color o1 purple)) , (obj-at o1 p3-4) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+20 :  , (color o1 blue) , (not (color o1 red)) , (not (color o1 green)) , (not (color o1 purple)) , (obj-at o1 p3-4) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+23 :  , (not (color o1 blue)) , (color o1 red) , (not (color o1 green)) , (not (color o1 purple)) , (obj-at o1 p3-4) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+23 :  , (not (color o1 purple)) , (obj-at o1 p3-4) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+23 :  , (obj-at o1 p3-4) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+23 :  , (obj-at o1 p3-4) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+18 :  , (color o1 purple) , (not (color o1 red)) , (not (color o1 blue)) , (not (color o1 green)) , (obj-at o1 p3-3) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+22 :  , (color o1 green) , (not (color o1 red)) , (not (color o1 blue)) , (not (color o1 purple)) , (obj-at o1 p3-3) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+23 :  , (color o1 blue) , (not (color o1 red)) , (not (color o1 green)) , (not (color o1 purple)) , (obj-at o1 p3-3) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+26 :  , (not (color o1 blue)) , (color o1 red) , (not (color o1 green)) , (not (color o1 purple)) , (obj-at o1 p3-3) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+26 :  , (not (color o1 purple)) , (obj-at o1 p3-3) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+26 :  , (obj-at o1 p3-3) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+26 :  , (obj-at o1 p3-3) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+19 :  , (color o1 purple) , (not (color o1 red)) , (not (color o1 blue)) , (not (color o1 green)) , (obj-at o1 p4-3) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+23 :  , (color o1 green) , (not (color o1 red)) , (not (color o1 blue)) , (not (color o1 purple)) , (obj-at o1 p4-3) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+24 :  , (color o1 blue) , (not (color o1 red)) , (not (color o1 green)) , (not (color o1 purple)) , (obj-at o1 p4-3) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+27 :  , (not (color o1 blue)) , (color o1 red) , (not (color o1 green)) , (not (color o1 purple)) , (obj-at o1 p4-3) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+27 :  , (not (color o1 purple)) , (obj-at o1 p4-3) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+27 :  , (obj-at o1 p4-3) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+27 :  , (obj-at o1 p4-3) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+21 :  , (color o1 green) , (not (color o1 red)) , (not (color o1 blue)) , (not (color o1 purple)) , (obj-at o1 p4-2) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+25 :  , (color o1 purple) , (not (color o1 red)) , (not (color o1 blue)) , (not (color o1 green)) , (obj-at o1 p4-2) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+29 :  , (color o1 blue) , (not (color o1 red)) , (not (color o1 purple)) , (not (color o1 green)) , (obj-at o1 p4-2) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+26 :  , (not (color o1 blue)) , (color o1 red) , (not (color o1 purple)) , (not (color o1 green)) , (obj-at o1 p4-2) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+29 :  , (not (color o1 green)) , (obj-at o1 p4-2) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+29 :  , (obj-at o1 p4-2) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+29 :  , (obj-at o1 p4-2) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+24 :  , (color o1 green) , (not (color o1 red)) , (not (color o1 blue)) , (not (color o1 purple)) , (obj-at o1 p3-2) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+26 :  , (color o1 red) , (not (color o1 blue)) , (not (color o1 purple)) , (not (color o1 green)) , (obj-at o1 p3-2) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+33 :  , (color o1 purple) , (not (color o1 blue)) , (not (color o1 red)) , (not (color o1 green)) , (obj-at o1 p3-2) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+30 :  , (not (color o1 purple)) , (color o1 blue) , (not (color o1 red)) , (not (color o1 green)) , (obj-at o1 p3-2) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+33 :  , (not (color o1 red)) , (not (color o1 green)) , (obj-at o1 p3-2) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+33 :  , (not (color o1 green)) , (obj-at o1 p3-2) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+33 :  , (obj-at o1 p3-2) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+25 :  , (color o1 green) , (not (color o1 red)) , (not (color o1 blue)) , (not (color o1 purple)) , (obj-at o1 p3-1) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+27 :  , (color o1 red) , (not (color o1 blue)) , (not (color o1 purple)) , (not (color o1 green)) , (obj-at o1 p3-1) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+34 :  , (color o1 purple) , (not (color o1 blue)) , (not (color o1 red)) , (not (color o1 green)) , (obj-at o1 p3-1) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+31 :  , (not (color o1 purple)) , (color o1 blue) , (not (color o1 red)) , (not (color o1 green)) , (obj-at o1 p3-1) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+34 :  , (not (color o1 red)) , (not (color o1 green)) , (obj-at o1 p3-1) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+34 :  , (not (color o1 green)) , (obj-at o1 p3-1) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+34 :  , (obj-at o1 p3-1) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+26 :  , (color o1 red) , (not (color o1 blue)) , (not (color o1 green)) , (not (color o1 purple)) , (not (obj-at o1 p3-1)) , (obj-at o1 p2-1) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+33 :  , (color o1 purple) , (not (color o1 blue)) , (not (color o1 green)) , (not (color o1 red)) , (not (obj-at o1 p3-1)) , (obj-at o1 p2-1) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+31 :  , (color o1 green) , (not (color o1 blue)) , (not (color o1 purple)) , (not (color o1 red)) , (not (obj-at o1 p3-1)) , (obj-at o1 p2-1) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+31 :  , (not (color o1 green)) , (color o1 blue) , (not (color o1 purple)) , (not (color o1 red)) , (not (obj-at o1 p3-1)) , (obj-at o1 p2-1) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+31 :  , (not (color o1 red)) , (not (obj-at o1 p3-1)) , (obj-at o1 p2-1) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+33 :  , (not (obj-at o1 p3-1)) , (obj-at o1 p2-1) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+33 :  , (not (obj-at o1 p3-1)) , (obj-at o1 p2-1) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+34 :  , (not (obj-at o1 p3-2)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+34 :  , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+34 :  , (not (obj-at o1 p4-3)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+34 :  , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+34 :  , (not (obj-at o1 p3-4)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+34 :  , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+34 :  , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+34 :  , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+34 :  , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+34 :  , (not (obj-at o1 p2-2))
+34 : 
+#
+
+
+
+Goals Fault Tolerance
+#2 : 0 :  , (color o1 purple) , (not (color o1 red)) , (not (color o1 blue)) , (not (color o1 green)) , (obj-at o1 p2-2) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3))
+3 : 1 :  , (color o1 blue) , (not (color o1 red)) , (not (color o1 green)) , (not (color o1 purple)) , (obj-at o1 p2-2) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3))
+4 : 2 :  , (color o1 red) , (not (color o1 green)) , (not (color o1 blue)) , (not (color o1 purple)) , (obj-at o1 p2-2) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3))
+4 : 3 :  , (not (color o1 red)) , (color o1 green) , (not (color o1 blue)) , (not (color o1 purple)) , (obj-at o1 p2-2) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3))
+3 : 1 :  , (color o1 purple) , (not (color o1 red)) , (not (color o1 blue)) , (not (color o1 green)) , (obj-at o1 p1-2) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p2-2))
+4 : 2 :  , (color o1 blue) , (not (color o1 red)) , (not (color o1 green)) , (not (color o1 purple)) , (obj-at o1 p1-2) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p2-2))
+5 : 3 :  , (color o1 red) , (not (color o1 green)) , (not (color o1 blue)) , (not (color o1 purple)) , (obj-at o1 p1-2) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p2-2))
+5 : 4 :  , (not (color o1 red)) , (color o1 green) , (not (color o1 blue)) , (not (color o1 purple)) , (obj-at o1 p1-2) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p2-2))
+4 : 2 :  , (color o1 blue) , (not (color o1 red)) , (not (color o1 green)) , (not (color o1 purple)) , (obj-at o1 p1-3) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+5 : 3 :  , (color o1 purple) , (not (color o1 red)) , (not (color o1 green)) , (not (color o1 blue)) , (obj-at o1 p1-3) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+6 : 4 :  , (color o1 green) , (not (color o1 red)) , (not (color o1 purple)) , (not (color o1 blue)) , (obj-at o1 p1-3) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+6 : 5 :  , (not (color o1 green)) , (color o1 red) , (not (color o1 purple)) , (not (color o1 blue)) , (obj-at o1 p1-3) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+5 : 3 :  , (color o1 blue) , (not (color o1 red)) , (not (color o1 green)) , (not (color o1 purple)) , (obj-at o1 p2-3) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+6 : 4 :  , (color o1 purple) , (not (color o1 red)) , (not (color o1 green)) , (not (color o1 blue)) , (obj-at o1 p2-3) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+7 : 5 :  , (color o1 green) , (not (color o1 red)) , (not (color o1 purple)) , (not (color o1 blue)) , (obj-at o1 p2-3) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+7 : 6 :  , (not (color o1 green)) , (color o1 red) , (not (color o1 purple)) , (not (color o1 blue)) , (obj-at o1 p2-3) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+6 : 4 :  , (color o1 blue) , (not (color o1 red)) , (not (color o1 green)) , (not (color o1 purple)) , (obj-at o1 p2-4) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+7 : 5 :  , (color o1 purple) , (not (color o1 red)) , (not (color o1 green)) , (not (color o1 blue)) , (obj-at o1 p2-4) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+8 : 6 :  , (color o1 green) , (not (color o1 red)) , (not (color o1 purple)) , (not (color o1 blue)) , (obj-at o1 p2-4) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+8 : 7 :  , (not (color o1 green)) , (color o1 red) , (not (color o1 purple)) , (not (color o1 blue)) , (obj-at o1 p2-4) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+7 : 5 :  , (color o1 purple) , (not (color o1 red)) , (not (color o1 blue)) , (not (color o1 green)) , (obj-at o1 p3-4) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+8 : 6 :  , (color o1 green) , (not (color o1 red)) , (not (color o1 blue)) , (not (color o1 purple)) , (obj-at o1 p3-4) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+9 : 7 :  , (color o1 blue) , (not (color o1 red)) , (not (color o1 green)) , (not (color o1 purple)) , (obj-at o1 p3-4) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+9 : 8 :  , (not (color o1 blue)) , (color o1 red) , (not (color o1 green)) , (not (color o1 purple)) , (obj-at o1 p3-4) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+8 : 6 :  , (color o1 purple) , (not (color o1 red)) , (not (color o1 blue)) , (not (color o1 green)) , (obj-at o1 p3-3) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+9 : 7 :  , (color o1 green) , (not (color o1 red)) , (not (color o1 blue)) , (not (color o1 purple)) , (obj-at o1 p3-3) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+10 : 8 :  , (color o1 blue) , (not (color o1 red)) , (not (color o1 green)) , (not (color o1 purple)) , (obj-at o1 p3-3) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+10 : 9 :  , (not (color o1 blue)) , (color o1 red) , (not (color o1 green)) , (not (color o1 purple)) , (obj-at o1 p3-3) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+9 : 7 :  , (color o1 purple) , (not (color o1 red)) , (not (color o1 blue)) , (not (color o1 green)) , (obj-at o1 p4-3) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+10 : 8 :  , (color o1 green) , (not (color o1 red)) , (not (color o1 blue)) , (not (color o1 purple)) , (obj-at o1 p4-3) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+11 : 9 :  , (color o1 blue) , (not (color o1 red)) , (not (color o1 green)) , (not (color o1 purple)) , (obj-at o1 p4-3) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+11 : 10 :  , (not (color o1 blue)) , (color o1 red) , (not (color o1 green)) , (not (color o1 purple)) , (obj-at o1 p4-3) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+10 : 8 :  , (color o1 green) , (not (color o1 red)) , (not (color o1 blue)) , (not (color o1 purple)) , (obj-at o1 p4-2) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+11 : 9 :  , (color o1 purple) , (not (color o1 red)) , (not (color o1 blue)) , (not (color o1 green)) , (obj-at o1 p4-2) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+12 : 10 :  , (color o1 blue) , (not (color o1 red)) , (not (color o1 purple)) , (not (color o1 green)) , (obj-at o1 p4-2) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+12 : 11 :  , (not (color o1 blue)) , (color o1 red) , (not (color o1 purple)) , (not (color o1 green)) , (obj-at o1 p4-2) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+11 : 9 :  , (color o1 green) , (not (color o1 red)) , (not (color o1 blue)) , (not (color o1 purple)) , (obj-at o1 p3-2) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+12 : 10 :  , (color o1 red) , (not (color o1 blue)) , (not (color o1 purple)) , (not (color o1 green)) , (obj-at o1 p3-2) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+13 : 11 :  , (color o1 purple) , (not (color o1 blue)) , (not (color o1 red)) , (not (color o1 green)) , (obj-at o1 p3-2) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+13 : 12 :  , (not (color o1 purple)) , (color o1 blue) , (not (color o1 red)) , (not (color o1 green)) , (obj-at o1 p3-2) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-1)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+12 : 10 :  , (color o1 green) , (not (color o1 red)) , (not (color o1 blue)) , (not (color o1 purple)) , (obj-at o1 p3-1) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+13 : 11 :  , (color o1 red) , (not (color o1 blue)) , (not (color o1 purple)) , (not (color o1 green)) , (obj-at o1 p3-1) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+14 : 12 :  , (color o1 purple) , (not (color o1 blue)) , (not (color o1 red)) , (not (color o1 green)) , (obj-at o1 p3-1) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+14 : 13 :  , (not (color o1 purple)) , (color o1 blue) , (not (color o1 red)) , (not (color o1 green)) , (obj-at o1 p3-1) , (not (obj-at o1 p2-1)) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+12 : 11 :  , (color o1 red) , (not (color o1 blue)) , (not (color o1 green)) , (not (color o1 purple)) , (not (obj-at o1 p3-1)) , (obj-at o1 p2-1) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+13 : 12 :  , (color o1 purple) , (not (color o1 blue)) , (not (color o1 green)) , (not (color o1 red)) , (not (obj-at o1 p3-1)) , (obj-at o1 p2-1) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+14 : 13 :  , (color o1 green) , (not (color o1 blue)) , (not (color o1 purple)) , (not (color o1 red)) , (not (obj-at o1 p3-1)) , (obj-at o1 p2-1) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+14 : 14 :  , (not (color o1 green)) , (color o1 blue) , (not (color o1 purple)) , (not (color o1 red)) , (not (obj-at o1 p3-1)) , (obj-at o1 p2-1) , (not (obj-at o1 p3-2)) , (not (obj-at o1 p4-2)) , (not (obj-at o1 p4-3)) , (not (obj-at o1 p3-3)) , (not (obj-at o1 p3-4)) , (not (obj-at o1 p2-4)) , (not (obj-at o1 p2-3)) , (not (obj-at o1 p1-3)) , (not (obj-at o1 p1-2)) , (not (obj-at o1 p2-2))
+#
+
+
+
+Goals Fault Tolerance
+##
+
+
+
+Simplicitity
+#nodes: 276
+branch: 47
+originalSize: 1083
+compreesedSize: 237
+compreesedRatio: 4.56962025316456#
+
+
+
+Simplicitity
+#

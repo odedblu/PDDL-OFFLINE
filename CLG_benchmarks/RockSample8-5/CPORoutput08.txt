@@ -1,0 +1,384 @@
+331) move_p1-1_p2-1
+332) activate-sensor-at-p2-1-h0
+333) observe-sensor
+branching...
+	335) move_p2-1_p2-2
+	585) move_p2-2_p2-3
+	586) move_p2-3_p1-3
+	587) activate-sensor-at-p1-3-h0
+	588) observe-sensor
+branching...
+		590) move_p1-3_p2-3
+		835) move_p2-3_p3-3
+		836) move_p3-3_p4-3
+		837) move_p4-3_p5-3
+		838) move_p5-3_p6-3
+		839) move_p6-3_p7-3
+		840) move_p7-3_p7-4
+		841) activate-sensor-at-p7-4-h0
+		842) observe-sensor
+branching...
+			844) move_p7-4_p6-4
+			893) move_p6-4_p5-4
+			894) move_p5-4_p4-4
+			895) move_p4-4_p3-4
+			896) move_p3-4_p2-4
+			897) move_p2-4_p2-5
+			898) move_p2-5_p2-6
+			899) move_p2-6_p2-7
+			900) move_p2-7_p2-8
+			901) activate-sensor-at-p2-8-h0
+			902) observe-sensor
+branching...
+				904) move_p2-8_p2-7
+				926) move_p2-7_p2-6
+				927) move_p2-6_p2-5
+				928) move_p2-5_p2-4
+				929) move_p2-4_p2-3
+				930) move_p2-3_p2-2
+				931) move_p2-2_p2-1
+				932) move_p2-1_p3-1
+				933) move_p3-1_p4-1
+				934) move_p4-1_p5-1
+				935) move_p5-1_p6-1
+				936) move_p6-1_p7-1
+				937) activate-sensor-at-p7-1-h0
+				938) observe-sensor
+branching...
+)goal
+					939) sample_r4_p7-1
+)goal
+				903) sample_r1_p2-8
+				907) move_p2-8_p2-7
+				908) move_p2-7_p2-6
+				909) move_p2-6_p2-5
+				910) move_p2-5_p2-4
+				911) move_p2-4_p2-3
+				912) move_p2-3_p2-2
+				913) move_p2-2_p2-1
+				914) move_p2-1_p3-1
+				915) move_p3-1_p4-1
+				916) move_p4-1_p5-1
+				917) move_p5-1_p6-1
+				918) move_p6-1_p7-1
+				919) activate-sensor-at-p7-1-h0
+				920) observe-sensor
+branching...
+)goal
+					921) sample_r4_p7-1
+)goal
+			843) sample_r0_p7-4
+			847) move_p7-4_p7-3
+			848) move_p7-3_p7-2
+			849) move_p7-2_p7-1
+			850) activate-sensor-at-p7-1-h0
+			851) observe-sensor
+branching...
+				853) move_p7-1_p6-1
+				875) move_p6-1_p5-1
+				876) move_p5-1_p4-1
+				877) move_p4-1_p3-1
+				878) move_p3-1_p2-1
+				879) move_p2-1_p2-2
+				880) move_p2-2_p2-3
+				881) move_p2-3_p2-4
+				882) move_p2-4_p2-5
+				883) move_p2-5_p2-6
+				884) move_p2-6_p2-7
+				885) move_p2-7_p2-8
+				886) activate-sensor-at-p2-8-h0
+				887) observe-sensor
+branching...
+)goal
+					888) sample_r1_p2-8
+)goal
+				852) sample_r4_p7-1
+				856) move_p7-1_p6-1
+				857) move_p6-1_p5-1
+				858) move_p5-1_p4-1
+				859) move_p4-1_p3-1
+				860) move_p3-1_p2-1
+				861) move_p2-1_p2-2
+				862) move_p2-2_p2-3
+				863) move_p2-3_p2-4
+				864) move_p2-4_p2-5
+				865) move_p2-5_p2-6
+				866) move_p2-6_p2-7
+				867) move_p2-7_p2-8
+				868) activate-sensor-at-p2-8-h0
+				869) observe-sensor
+branching...
+)goal
+					870) sample_r1_p2-8
+)goal
+		589) sample_r2_p1-3
+		593) move_p1-3_p2-3
+		594) move_p2-3_p3-3
+		595) move_p3-3_p4-3
+		596) move_p4-3_p5-3
+		597) move_p5-3_p6-3
+		598) move_p6-3_p7-3
+		599) move_p7-3_p7-4
+		600) activate-sensor-at-p7-4-h0
+		751) move_p6-4_p5-4
+		752) move_p5-4_p4-4
+		753) move_p4-4_p3-4
+		754) move_p3-4_p2-4
+		755) move_p2-4_p2-5
+		756) move_p2-5_p2-6
+		757) move_p2-6_p2-7
+		758) move_p2-7_p2-8
+		759) activate-sensor-at-p2-8-h0
+		760) observe-sensor
+branching...
+			762) move_p2-8_p2-7
+			799) move_p2-7_p2-6
+			800) move_p2-6_p2-5
+			801) move_p2-5_p2-4
+			802) move_p2-4_p2-3
+			803) move_p2-3_p2-2
+			804) move_p2-2_p2-1
+			805) move_p2-1_p3-1
+			806) move_p3-1_p4-1
+			807) move_p4-1_p5-1
+			808) move_p5-1_p6-1
+			809) move_p6-1_p7-1
+			810) activate-sensor-at-p7-1-h0
+			811) observe-sensor
+branching...
+				813) move_p7-1_p7-2
+				826) move_p7-2_p7-3
+				827) move_p7-3_p7-4
+				828) activate-sensor-at-p7-4-h0
+				829) observe-sensor
+branching...
+)goal
+					830) sample_r0_p7-4
+)goal
+				812) sample_r4_p7-1
+				816) move_p7-1_p7-2
+				817) move_p7-2_p7-3
+				818) move_p7-3_p7-4
+				819) activate-sensor-at-p7-4-h0
+				820) observe-sensor
+branching...
+)goal
+					821) sample_r0_p7-4
+)goal
+			761) sample_r1_p2-8
+			765) move_p2-8_p2-7
+			766) move_p2-7_p2-6
+			767) move_p2-6_p2-5
+			768) move_p2-5_p2-4
+			769) move_p2-4_p3-4
+			770) move_p3-4_p4-4
+			771) move_p4-4_p5-4
+			772) move_p5-4_p6-4
+			773) move_p6-4_p7-4
+			774) activate-sensor-at-p7-4-h0
+			775) observe-sensor
+branching...
+				777) move_p7-4_p7-3
+				790) move_p7-3_p7-2
+				791) move_p7-2_p7-1
+				792) activate-sensor-at-p7-1-h0
+				793) observe-sensor
+branching...
+)goal
+					794) sample_r4_p7-1
+)goal
+				776) sample_r0_p7-4
+				780) move_p7-4_p7-3
+				781) move_p7-3_p7-2
+				782) move_p7-2_p7-1
+				783) activate-sensor-at-p7-1-h0
+				784) observe-sensor
+branching...
+)goal
+					785) sample_r4_p7-1
+)goal
+	334) sample_r3_p2-1
+	338) move_p2-1_p2-2
+	339) move_p2-2_p3-2
+	340) move_p3-2_p4-2
+	341) move_p4-2_p5-2
+	342) move_p5-2_p6-2
+	343) move_p6-2_p7-2
+	344) move_p7-2_p7-3
+	345) move_p7-3_p7-4
+	346) activate-sensor-at-p7-4-h0
+	347) observe-sensor
+branching...
+		349) move_p7-4_p7-3
+		460) move_p7-3_p7-2
+		461) move_p7-2_p7-1
+		462) activate-sensor-at-p7-1-h0
+		463) observe-sensor
+branching...
+			465) move_p7-1_p6-1
+			543) move_p6-1_p5-1
+			544) move_p5-1_p4-1
+			545) move_p4-1_p3-1
+			546) move_p3-1_p2-1
+			547) move_p2-1_p2-2
+			548) move_p2-2_p2-3
+			549) move_p2-3_p2-4
+			550) move_p2-4_p2-5
+			551) move_p2-5_p2-6
+			552) move_p2-6_p2-7
+			553) move_p2-7_p2-8
+			554) activate-sensor-at-p2-8-h0
+			555) observe-sensor
+branching...
+				557) move_p2-8_p2-7
+				573) move_p2-7_p2-6
+				574) move_p2-6_p2-5
+				575) move_p2-5_p2-4
+				576) move_p2-4_p2-3
+				577) move_p2-3_p1-3
+				578) activate-sensor-at-p1-3-h0
+				579) observe-sensor
+branching...
+)goal
+					580) sample_r2_p1-3
+)goal
+				556) sample_r1_p2-8
+				560) move_p2-8_p1-8
+				561) move_p1-8_p1-7
+				562) move_p1-7_p1-6
+				563) move_p1-6_p1-5
+				564) move_p1-5_p1-4
+				565) move_p1-4_p1-3
+				566) activate-sensor-at-p1-3-h0
+				567) observe-sensor
+branching...
+)goal
+					568) sample_r2_p1-3
+)goal
+			464) sample_r4_p7-1
+			468) move_p7-1_p6-1
+			469) move_p6-1_p5-1
+			470) move_p5-1_p4-1
+			471) move_p4-1_p3-1
+			472) move_p3-1_p2-1
+			473) move_p2-1_p1-1
+			474) move_p1-1_p1-2
+			475) move_p1-2_p1-3
+			476) activate-sensor-at-p1-3-h0
+			513) observe-sensor
+branching...
+				515) move_p1-3_p2-3
+				531) move_p2-3_p2-4
+				532) move_p2-4_p2-5
+				533) move_p2-5_p2-6
+				534) move_p2-6_p2-7
+				535) move_p2-7_p2-8
+				536) activate-sensor-at-p2-8-h0
+				537) observe-sensor
+branching...
+)goal
+					538) sample_r1_p2-8
+)goal
+				514) sample_r2_p1-3
+				518) move_p1-3_p1-4
+				519) move_p1-4_p2-4
+				520) move_p2-4_p2-5
+				521) move_p2-5_p2-6
+				522) move_p2-6_p2-7
+				523) move_p2-7_p2-8
+				524) activate-sensor-at-p2-8-h0
+				525) observe-sensor
+branching...
+)goal
+					526) sample_r1_p2-8
+)goal
+		348) sample_r0_p7-4
+		352) move_p7-4_p6-4
+		353) move_p6-4_p5-4
+		354) move_p5-4_p4-4
+		355) move_p4-4_p3-4
+		356) move_p3-4_p2-4
+		357) move_p2-4_p2-5
+		358) move_p2-5_p2-6
+		359) move_p2-6_p2-7
+		360) move_p2-7_p2-8
+		361) activate-sensor-at-p2-8-h0
+		362) observe-sensor
+branching...
+			364) move_p2-8_p2-7
+			414) move_p2-7_p2-6
+			415) move_p2-6_p2-5
+			416) move_p2-5_p2-4
+			417) move_p2-4_p2-3
+			418) move_p2-3_p1-3
+			419) activate-sensor-at-p1-3-h0
+			420) observe-sensor
+branching...
+				422) move_p1-3_p1-2
+				446) move_p1-2_p1-1
+				447) move_p1-1_p2-1
+				448) move_p2-1_p3-1
+				449) move_p3-1_p4-1
+				450) move_p4-1_p5-1
+				451) move_p5-1_p6-1
+				452) move_p6-1_p7-1
+				453) activate-sensor-at-p7-1-h0
+				454) observe-sensor
+branching...
+)goal
+					455) sample_r4_p7-1
+)goal
+				421) sample_r2_p1-3
+				425) move_p1-3_p1-2
+				426) move_p1-2_p1-1
+				427) move_p1-1_p2-1
+				428) move_p2-1_p3-1
+				429) move_p3-1_p4-1
+				430) move_p4-1_p5-1
+				431) move_p5-1_p6-1
+				432) move_p6-1_p7-1
+				433) activate-sensor-at-p7-1-h0
+				440) observe-sensor
+branching...
+)goal
+					441) sample_r4_p7-1
+)goal
+			363) sample_r1_p2-8
+			367) move_p2-8_p2-7
+			368) move_p2-7_p2-6
+			369) move_p2-6_p2-5
+			370) move_p2-5_p2-4
+			371) move_p2-4_p2-3
+			372) move_p2-3_p1-3
+			373) activate-sensor-at-p1-3-h0
+			374) observe-sensor
+branching...
+				376) move_p1-3_p1-2
+				400) move_p1-2_p1-1
+				401) move_p1-1_p2-1
+				402) move_p2-1_p3-1
+				403) move_p3-1_p4-1
+				404) move_p4-1_p5-1
+				405) move_p5-1_p6-1
+				406) move_p6-1_p7-1
+				407) activate-sensor-at-p7-1-h0
+				408) observe-sensor
+branching...
+)goal
+					409) sample_r4_p7-1
+)goal
+				375) sample_r2_p1-3
+				379) move_p1-3_p1-2
+				380) move_p1-2_p1-1
+				381) move_p1-1_p2-1
+				382) move_p2-1_p3-1
+				383) move_p3-1_p4-1
+				384) move_p4-1_p5-1
+				385) move_p5-1_p6-1
+				386) move_p6-1_p7-1
+				387) activate-sensor-at-p7-1-h0
+				394) observe-sensor
+branching...
+)goal
+					395) sample_r4_p7-1
+)goal

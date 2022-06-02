@@ -1,0 +1,59 @@
+
+ff: parsing domain file
+domain 'GRID' defined
+ ... done.
+ff: parsing problem file
+problem 'GRID-X3-Y3-T2-K11-L22-P100' defined
+ ... done.
+
+
+lowest leaf goal distance/initial state f value seen:      7/     7; maxdepth reached:    0
+                                                           7/     7                       1
+                                                           6/     7                       2
+                                                           6/     7                       3
+                                                           5/     7                       4
+                                                           4/     7                       5
+                                                           3/     7                       6
+                                                           2/     7                       7
+                                                           1/     7                       8
+
+ff: found plan as follows
+-------------------------------------------------
+  0||0 --- PICKUP F0-2F KEY0-0 --- SON: 1||0
+-------------------------------------------------
+  1||0 --- MOVE F0-2F F0-1F --- SON: 2||0
+-------------------------------------------------
+  2||0 --- MOVE F0-1F F1-1F --- SON: 3||0
+-------------------------------------------------
+  3||0 --- MOVE F1-1F F1-0F --- SON: 4||0
+-------------------------------------------------
+  4||0 --- PUTDOWN F1-0F KEY0-0 --- SON: 5||0
+-------------------------------------------------
+  5||0 --- PICKUP F1-0F KEY1-0 --- SON: 6||0
+-------------------------------------------------
+  6||0 --- MOVE F1-0F F1-1F --- SON: 7||0
+-------------------------------------------------
+  7||0 --- MOVE F1-1F F0-1F --- SON: 8||0
+-------------------------------------------------
+  8||0 --- PUTDOWN F0-1F KEY1-0 --- SON: 9||-1
+-------------------------------------------------
+
+tree layers: 9
+total nr. actions: 9
+
+statistics:    0.00 seconds instantiating 156 easy, 0 hard action templates
+               0.00 seconds reachability analysis, yielding 220 facts and 128 actions
+               0.00 seconds creating final representation with 54 relevant facts (24 max U, 16 CNF max U)
+               final representation has 16 unknown facts and 43 observation actions    
+               0.00 seconds building connectivity graph
+               0.00 seconds (   0.00 pure) evaluating 71 states
+               0.00 seconds in DP for 2916 RPG ini state implication checks
+               0.00 seconds in DP for 0 RPlan extract ini state implication checks (0 lits removed)
+               0.02 seconds generating,    0.00 seconds encoding 79 state transition base CNFs
+               0.01 seconds in DP solving 756 state transition CNFs
+               0.00 seconds checking for self-contradictions, including 0 DP calls
+               0.01 seconds checking for stagnating states (8 hits), including 128 DP calls
+               3800 total DP calls, 166932 total UP calls,    0.00 sec membership
+              0.00 seconds for remaining searching duties
+               0.04 seconds total time (+    0.05 secs for CNF memory allocation)
+

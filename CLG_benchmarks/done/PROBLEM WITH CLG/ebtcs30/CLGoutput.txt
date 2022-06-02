@@ -1,0 +1,117 @@
+REGISTER (entering): main()
+cf2cs v 2.1 -- A compiler for contingent planning problems into classical models.
+CALL: ./cf2cs -sn -t0 -cond -cod -cmr -csl -ckit -ckinl -cminl -cmit -cdisjk0 -cdisjm0 -mac -cfc -fp benchmarks/ebtcs30/d.pddl benchmarks/ebtcs30/p.pddl
+-sn
+-t0
+-cond
+-cod
+-cmr
+-csl
+-ckit
+-ckinl
+-cminl
+-cmit
+-cdisjk0
+-cdisjm0
+-mac
+-cfc
+-fp
+benchmarks/ebtcs30/d.pddl
+benchmarks/ebtcs30/p.pddl
+Using only initial disjunctions for merge
+Clousuring for obtaining possible tags
+Full cancellation: Translating deletes properly. Maybe complete if '-s0' or '-f' option was used
+Propagating ramifications in effects
+Using action compilation + merge
+Merging only goals and preconditions
+REGISTER (entering): parse()
+predicates size = 1 for name = IN
+predicates size = 2 for name = DEFUSED
+predicates size = 3 for name = CLOG
+Parsed: benchmarks/ebtcs30/d.pddl
+Parsed: benchmarks/ebtcs30/p.pddl
+REGISTER: parse() took 0.000646 secs
+REGISTER (entering): initialize()
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+REGISTER (entering): computeReachableAtoms()
+schema 0 de 3
+schema 1 de 3
+schema 2 de 3
+schema 0 de 3
+schema 1 de 3
+schema 2 de 3
+
+ff: parsing domain file
+domain 'GRID' defined
+ ... done.
+ff: parsing problem file
+problem 'GRID-X3-Y3-T2-K11-L22-P100' defined
+ ... done.
+
+STATS quality of hash table of predicates: max_bucket_size = 4, ave_bucket_size = 0.580708
+ff-cond: no description file
+fact T0_FAIL_K0 tagged as 1025  
+
+
+Skipping All searches!
+Starting K procedure.
+
+          h:                         7            [1]
+          h:                         7  , h_  :    6       
+::::::::::::::::::::::::current action:::PICKUP_F0-2F_KEY0-0
+
+          h:                         6            [1]
+          h:                         6  , h_  :    5       
+::::::::::::::::::::::::current action:::MOVE_F0-2F_F0-1F
+
+          h:                         5            [1][2][3]
+          h:                         5  , h_  :    4       
+::::::::::::::::::::::::current action:::MOVE_F0-1F_F1-1F
+
+::::::::::::::::::::::::current action:::MOVE_F1-1F_F1-0F
+
+::::::::::::::::::::::::current action:::PUTDOWN_F1-0F_KEY0-0
+
+          h:                         4            [1]
+          h:                         4  , h_  :    3       
+::::::::::::::::::::::::current action:::PICKUP_F1-0F_KEY1-0
+
+          h:                         3            [1]
+          h:                         3  , h_  :    2       
+::::::::::::::::::::::::current action:::MOVE_F1-0F_F1-1F
+
+          h:                         2            [1]
+          h:                         2  , h_  :    1       
+::::::::::::::::::::::::current action:::MOVE_F1-1F_F0-1F
+
+          h:                         1            [1]
+          h:                         1  , h_  :    0       
+::::::::::::::::::::::::current action:::PUTDOWN_F0-1F_KEY1-0
+
+Goal reached in a branch 
+root
+
+
+ff: found legal plan as follows
+
+Total branches in this plan: 1 
+Longest branch: 9
+Total spurious branches in this plan: 0
+Total number of actions: 9
+
+
+time spent:    0.26 seconds instantiating 1207 easy, 0 hard action templates
+               0.00 seconds reachability analysis, yielding 1543 facts and 1207 actions
+               0.02 seconds creating final representation with 1477 relevant facts
+               0.02 seconds building connectivity graph
+               0.02 seconds computing closures operations
+               0.02 seconds searching, evaluating 26 states, expanding 11 nodes, to a max depth of 3
+               0.32 seconds total time
+
+
+

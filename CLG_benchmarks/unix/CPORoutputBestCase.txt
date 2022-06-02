@@ -1,0 +1,36 @@
+0) cd_down_root_sub1
+1) cd_down_sub1_sub11
+2) ls_sub11_my_file
+branching...
+	5) cd_down_sub11_sub111
+	9) ls_sub111_my_file
+branching...
+		12) cd_up_sub111_sub11
+		16) cd_up_sub11_sub1
+		17) cd_down_sub1_sub12
+		18) ls_sub12_my_file
+branching...
+			21) cd_up_sub12_sub1
+			25) cd_up_sub1_root
+			26) cd_down_root_sub2
+			27) cd_down_sub2_sub21
+			28) ls_sub21_my_file
+branching...
+				31) cd_down_sub21_sub211
+				35) ls_sub211_my_file
+branching...
+					38) cd_up_sub211_sub21
+					42) cd_up_sub21_sub2
+					43) cd_down_sub2_sub22
+					44) mv_my_file_sub22_root
+)goal
+					37) mv_my_file_sub211_root
+)goal
+				30) mv_my_file_sub21_root
+)goal
+			20) mv_my_file_sub12_root
+)goal
+		11) mv_my_file_sub111_root
+)goal
+	4) mv_my_file_sub11_root
+)goal

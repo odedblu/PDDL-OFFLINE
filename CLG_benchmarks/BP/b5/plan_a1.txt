@@ -1,0 +1,16 @@
+observe-box_p1-1_a1_b0_t1_t2
+	(f)art-joint-push_p1-1_p1-2_b0_a1_a2_t4_t5
+	(f)	move_p1-1_p2-1_a1_t2_t3
+	(f)		observe-box_p2-1_a1_b1_t3_t4
+	(f)			(f)art-joint-push_p2-1_p2-2_b1_a1_a2_t7_t8
+	(f)			(t)no-op_t4_t5
+	(f)			(t)	no-op_t5_t6
+	(f)			(t)		no-op_t6_t7
+	(f)			(t)			joint-push_p2-1_p2-2_b1_a1_a2_t7_t8
+	(t)no-op_t2_t3
+	(t)	no-op_t3_t4
+	(t)		joint-push_p1-1_p1-2_b0_a1_a2_t4_t5
+	(t)			move_p1-1_p2-1_a1_t5_t6
+	(t)				observe-box_p2-1_a1_b1_t6_t7
+	(t)					(f)art-joint-push_p2-1_p2-2_b1_a1_a2_t7_t8
+	(t)					(t)joint-push_p2-1_p2-2_b1_a1_a2_t7_t8

@@ -1,0 +1,11 @@
+Budget 4: Equal Trees
+Budget 5: Equal Trees
+Budget 6: Equal Trees
+Budget 7: Tree CFF is better than Tree CLG
+Budget 8: Tree CFF is better than Tree CLG
+Budget 9: Can not compare the trees 
+Budget 10: Can not compare the trees 
+Budget 11: Can not compare the trees 
+Budget 12: Can not compare the trees 
+Budget 13: Can not compare the trees 
+Budget 14: Equal Trees

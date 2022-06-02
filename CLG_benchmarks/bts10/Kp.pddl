@@ -1,0 +1,18 @@
+(define (problem Kbts-10-1)
+(:domain Kbts)
+;;BestCase
+(:init
+(KNdefused b0)
+(KNin p9 b0)
+(KNin p8 b0)
+(KNin p7 b0)
+(KNin p6 b0)
+(KNin p5 b0)
+(KNin p4 b0)
+(KNin p3 b0)
+(KNin p2 b0)
+(KNin p1 b0)
+(Kin p0 b0)
+)
+(:goal (Kdefused b0))
+)

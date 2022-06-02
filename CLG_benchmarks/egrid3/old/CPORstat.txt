@@ -1,0 +1,29 @@
+
+Goals Budget
+#20 :  , (lock-shape f0-0f shape0) , (not (lock-shape f0-0f shape1)) , (lock-shape f1-0f shape0) , (not (lock-shape f1-0f shape1)) , (lock-shape f0-1f shape0) , (not (lock-shape f0-1f shape1))
+17 :  , (not (lock-shape f0-0f shape0)) , (lock-shape f0-0f shape1) , (lock-shape f1-0f shape0) , (not (lock-shape f1-0f shape1)) , (lock-shape f0-1f shape0) , (not (lock-shape f0-1f shape1))
+20 :  , (lock-shape f0-0f shape0) , (not (lock-shape f0-0f shape1)) , (not (lock-shape f1-0f shape0)) , (lock-shape f1-0f shape1) , (lock-shape f0-1f shape0) , (not (lock-shape f0-1f shape1))
+17 :  , (not (lock-shape f0-0f shape0)) , (lock-shape f0-0f shape1) , (not (lock-shape f1-0f shape0)) , (lock-shape f1-0f shape1) , (lock-shape f0-1f shape0) , (not (lock-shape f0-1f shape1))
+18 :  , (lock-shape f0-0f shape0) , (not (lock-shape f0-0f shape1)) , (lock-shape f1-0f shape0) , (not (lock-shape f1-0f shape1)) , (not (lock-shape f0-1f shape0)) , (lock-shape f0-1f shape1)
+22 :  , (not (lock-shape f0-0f shape0)) , (lock-shape f0-0f shape1) , (lock-shape f1-0f shape0) , (not (lock-shape f1-0f shape1)) , (not (lock-shape f0-1f shape0)) , (lock-shape f0-1f shape1)
+18 :  , (lock-shape f0-0f shape0) , (not (lock-shape f0-0f shape1)) , (not (lock-shape f1-0f shape0)) , (lock-shape f1-0f shape1) , (not (lock-shape f0-1f shape0)) , (lock-shape f0-1f shape1)
+22 :  , (not (lock-shape f0-0f shape0)) , (lock-shape f0-0f shape1) , (not (lock-shape f1-0f shape0)) , (lock-shape f1-0f shape1) , (not (lock-shape f0-1f shape0)) , (lock-shape f0-1f shape1)
+#
+
+
+
+Goals Fault Tolerance
+#3 : 3 :  , (lock-shape f0-0f shape0) , (not (lock-shape f0-0f shape1)) , (lock-shape f1-0f shape0) , (not (lock-shape f1-0f shape1)) , (lock-shape f0-1f shape0) , (not (lock-shape f0-1f shape1))
+3 : 2 :  , (not (lock-shape f0-0f shape0)) , (lock-shape f0-0f shape1) , (lock-shape f1-0f shape0) , (not (lock-shape f1-0f shape1)) , (lock-shape f0-1f shape0) , (not (lock-shape f0-1f shape1))
+3 : 2 :  , (lock-shape f0-0f shape0) , (not (lock-shape f0-0f shape1)) , (not (lock-shape f1-0f shape0)) , (lock-shape f1-0f shape1) , (lock-shape f0-1f shape0) , (not (lock-shape f0-1f shape1))
+3 : 1 :  , (not (lock-shape f0-0f shape0)) , (lock-shape f0-0f shape1) , (not (lock-shape f1-0f shape0)) , (lock-shape f1-0f shape1) , (lock-shape f0-1f shape0) , (not (lock-shape f0-1f shape1))
+3 : 2 :  , (lock-shape f0-0f shape0) , (not (lock-shape f0-0f shape1)) , (lock-shape f1-0f shape0) , (not (lock-shape f1-0f shape1)) , (not (lock-shape f0-1f shape0)) , (lock-shape f0-1f shape1)
+3 : 1 :  , (not (lock-shape f0-0f shape0)) , (lock-shape f0-0f shape1) , (lock-shape f1-0f shape0) , (not (lock-shape f1-0f shape1)) , (not (lock-shape f0-1f shape0)) , (lock-shape f0-1f shape1)
+3 : 1 :  , (lock-shape f0-0f shape0) , (not (lock-shape f0-0f shape1)) , (not (lock-shape f1-0f shape0)) , (lock-shape f1-0f shape1) , (not (lock-shape f0-1f shape0)) , (lock-shape f0-1f shape1)
+3 : 0 :  , (not (lock-shape f0-0f shape0)) , (lock-shape f0-0f shape1) , (not (lock-shape f1-0f shape0)) , (lock-shape f1-0f shape1) , (not (lock-shape f0-1f shape0)) , (lock-shape f0-1f shape1)
+#
+
+
+
+Goals Fault Tolerance
+#

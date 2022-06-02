@@ -1,0 +1,198 @@
+390) senseP_p0_b0
+branching...
+	393) senseP_p1_b0
+branching...
+		399) senseP_p2_b0
+branching...
+			405) senseP_p3_b0
+branching...
+				411) senseP_p4_b0
+branching...
+					417) senseP_p5_b0
+branching...
+						423) senseP_p6_b0
+branching...
+							429) senseP_p7_b0
+branching...
+								435) senseP_p8_b0
+branching...
+									441) senseP_p9_b0
+branching...
+										447) senseP_p10_b0
+branching...
+											453) senseP_p11_b0
+branching...
+												459) senseP_p12_b0
+branching...
+													465) senseP_p13_b0
+branching...
+														471) senseP_p14_b0
+branching...
+															477) senseP_p15_b0
+branching...
+																483) senseP_p16_b0
+branching...
+																	489) senseP_p17_b0
+branching...
+																		495) senseP_p18_b0
+branching...
+																			501) senseP_p19_b0
+branching...
+																				507) senseP_p20_b0
+branching...
+																					513) senseP_p21_b0
+branching...
+																						519) senseP_p22_b0
+branching...
+																							525) senseP_p23_b0
+branching...
+																								531) senseP_p24_b0
+branching...
+																									537) senseP_p25_b0
+branching...
+																										543) senseP_p26_b0
+branching...
+																											549) senseP_p27_b0
+branching...
+																												555) senseP_p28_b0
+branching...
+																													561) senseP_p29_b0
+branching...
+																														567) senseP_p30_b0
+branching...
+																															573) senseP_p31_b0
+branching...
+																																579) senseP_p32_b0
+branching...
+																																	585) senseP_p33_b0
+branching...
+																																		591) senseP_p34_b0
+branching...
+																																			597) senseP_p35_b0
+branching...
+																																				603) senseP_p36_b0
+branching...
+																																					609) senseP_p37_b0
+branching...
+																																						615) senseP_p38_b0
+branching...
+																																							621) senseP_p39_b0
+branching...
+																																								627) senseP_p40_b0
+branching...
+																																									633) senseP_p41_b0
+branching...
+																																										639) senseP_p42_b0
+branching...
+																																											645) senseP_p43_b0
+branching...
+																																												651) senseP_p44_b0
+branching...
+																																													657) senseP_p45_b0
+branching...
+																																														663) senseP_p46_b0
+branching...
+																																															669) senseP_p47_b0
+branching...
+																																																675) senseP_p48_b0
+branching...
+																																																	681) dunk_p49_b0_t0
+)goal
+																																																	680) dunk_p48_b0_t0
+)goal
+																																																674) dunk_p47_b0_t0
+)goal
+																																															668) dunk_p46_b0_t0
+)goal
+																																														662) dunk_p45_b0_t0
+)goal
+																																													656) dunk_p44_b0_t0
+)goal
+																																												650) dunk_p43_b0_t0
+)goal
+																																											644) dunk_p42_b0_t0
+)goal
+																																										638) dunk_p41_b0_t0
+)goal
+																																									632) dunk_p40_b0_t0
+)goal
+																																								626) dunk_p39_b0_t0
+)goal
+																																							620) dunk_p38_b0_t0
+)goal
+																																						614) dunk_p37_b0_t0
+)goal
+																																					608) dunk_p36_b0_t0
+)goal
+																																				602) dunk_p35_b0_t0
+)goal
+																																			596) dunk_p34_b0_t0
+)goal
+																																		590) dunk_p33_b0_t0
+)goal
+																																	584) dunk_p32_b0_t0
+)goal
+																																578) dunk_p31_b0_t0
+)goal
+																															572) dunk_p30_b0_t0
+)goal
+																														566) dunk_p29_b0_t0
+)goal
+																													560) dunk_p28_b0_t0
+)goal
+																												554) dunk_p27_b0_t0
+)goal
+																											548) dunk_p26_b0_t0
+)goal
+																										542) dunk_p25_b0_t0
+)goal
+																									536) dunk_p24_b0_t0
+)goal
+																								530) dunk_p23_b0_t0
+)goal
+																							524) dunk_p22_b0_t0
+)goal
+																						518) dunk_p21_b0_t0
+)goal
+																					512) dunk_p20_b0_t0
+)goal
+																				506) dunk_p19_b0_t0
+)goal
+																			500) dunk_p18_b0_t0
+)goal
+																		494) dunk_p17_b0_t0
+)goal
+																	488) dunk_p16_b0_t0
+)goal
+																482) dunk_p15_b0_t0
+)goal
+															476) dunk_p14_b0_t0
+)goal
+														470) dunk_p13_b0_t0
+)goal
+													464) dunk_p12_b0_t0
+)goal
+												458) dunk_p11_b0_t0
+)goal
+											452) dunk_p10_b0_t0
+)goal
+										446) dunk_p9_b0_t0
+)goal
+									440) dunk_p8_b0_t0
+)goal
+								434) dunk_p7_b0_t0
+)goal
+							428) dunk_p6_b0_t0
+)goal
+						422) dunk_p5_b0_t0
+)goal
+					416) dunk_p4_b0_t0
+)goal
+				410) dunk_p3_b0_t0
+)goal
+			404) dunk_p2_b0_t0
+)goal
+		398) dunk_p1_b0_t0
+)goal
+	392) dunk_p0_b0_t0
+)goal

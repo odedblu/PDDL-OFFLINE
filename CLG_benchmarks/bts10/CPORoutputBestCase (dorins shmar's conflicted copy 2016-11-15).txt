@@ -1,0 +1,38 @@
+0) senseP_p0_b0
+branching...
+	3) senseP_p1_b0
+branching...
+		9) senseP_p2_b0
+branching...
+			15) senseP_p3_b0
+branching...
+				21) senseP_p4_b0
+branching...
+					27) senseP_p5_b0
+branching...
+						33) senseP_p6_b0
+branching...
+							39) senseP_p7_b0
+branching...
+								45) senseP_p8_b0
+branching...
+									51) dunk_p9_b0_t0
+)goal
+									50) dunk_p8_b0_t0
+)goal
+								44) dunk_p7_b0_t0
+)goal
+							38) dunk_p6_b0_t0
+)goal
+						32) dunk_p5_b0_t0
+)goal
+					26) dunk_p4_b0_t0
+)goal
+				20) dunk_p3_b0_t0
+)goal
+			14) dunk_p2_b0_t0
+)goal
+		8) dunk_p1_b0_t0
+)goal
+	2) dunk_p0_b0_t0
+)goal

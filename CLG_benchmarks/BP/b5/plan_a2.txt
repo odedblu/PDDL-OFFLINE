@@ -1,0 +1,17 @@
+move_p3-1_p2-1_a2_t1_t2
+	observe-box_p2-1_a2_b1_t2_t3
+		(f)art-joint-push_p2-1_p2-2_b1_a2_a1_t7_t8
+		(f)	move_p2-1_p2-2_a2_t3_t4
+		(f)		observe-box_p2-2_a2_b1_t4_t5
+		(f)			(t)move_p2-2_p2-1_a2_t5_t6
+		(f)			(t)	move_p2-1_p3-1_a2_t6_t7
+		(f)			(t)		observe-box_p3-1_a2_b2_t7_t8
+		(f)			(t)			(t)push_p3-1_p3-2_b2_a2_t8_t9
+		(t)no-op_t3_t4
+		(t)	no-op_t4_t5
+		(t)		no-op_t5_t6
+		(t)			no-op_t6_t7
+		(t)				joint-push_p2-1_p2-2_b1_a2_a1_t7_t8
+		(t)					move_p2-1_p3-1_a2_t8_t9
+		(t)						observe-box_p3-1_a2_b2_t9_t10
+		(t)							(t)push_p3-1_p3-2_b2_a2_t10_t11

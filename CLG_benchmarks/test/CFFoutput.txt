@@ -1,0 +1,50 @@
+
+ff: parsing domain file
+domain 'ROVER' defined
+ ... done.
+ff: parsing problem file
+problem 'ROVERPROB1234' defined
+ ... done.
+
+
+lowest leaf goal distance/initial state f value seen:     12/    12; maxdepth reached:    0
+                                                           3/    12                       1
+                                                           2/    12                       2
+                                                           1/    12                       3
+                                                           1/    12                       4
+                                                           1/    12                       5
+                                                           1/    12                       6
+                                                           1/    12                       7
+                                                           1/    12                       8
+                                                           1/    12                       9
+                                                           1/    12                      10
+                                                           1/    12                      11
+                                                           1/    12                      12
+                                                           1/    12                      13
+
+ff: found plan as follows
+-------------------------------------------------
+  0||0 --- go-left_d1_d2 --- SON: 1||0
+  1||0 --- go-left_d2_d3 --- SON: 2||0
+  2||0 --- gothrow_d3 --- SON: 3||-1
+-------------------------------------------------
+
+tree layers: 14
+total nr. actions: 23
+
+statistics:    0.00 seconds instantiating 45 easy, 0 hard action templates
+               0.00 seconds reachability analysis, yielding 28 facts and 36 actions
+               0.00 seconds creating final representation with 20 relevant facts (10 max U, 6 CNF max U)
+               final representation has 8 unknown facts and 12 observation actions    
+               0.00 seconds building connectivity graph
+               0.00 seconds (   0.00 pure) evaluating 65 states
+               0.00 seconds in DP for 632 RPG ini state implication checks
+               0.00 seconds in DP for 0 RPlan extract ini state implication checks (0 lits removed)
+               0.00 seconds generating,    0.01 seconds encoding 83 state transition base CNFs
+               0.00 seconds in DP solving 20 state transition CNFs
+               0.00 seconds checking for self-contradictions, including 0 DP calls
+               0.00 seconds checking for stagnating states (15 hits), including 24 DP calls
+                676 total DP calls, 8833 total UP calls,    0.00 sec membership
+              0.00 seconds for remaining searching duties
+               0.01 seconds total time (+    0.02 secs for CNF memory allocation)
+

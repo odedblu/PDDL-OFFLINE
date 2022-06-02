@@ -1,0 +1,162 @@
+505) sense_package_loc_t_package2_bos_po_bos_truck
+branching...
+	508) sense_package_loc_t_package3_bos_po_bos_truck
+branching...
+		599) sense_package_loc_t_package1_pgh_po_pgh_truck
+branching...
+			644) LOAD_TRUCK_LOC_package1_phx_truck_phx_po_phx
+			664) LOAD_TRUCK_LOC_package2_pgh_truck_pgh_po_pgh
+			665) DRIVE_TRUCK_LOC_AP_pgh_truck_pgh_po_pgh_airport_pgh
+			666) LOAD_TRUCK_LOC_package3_phx_truck_phx_po_phx
+			667) DRIVE_TRUCK_LOC_AP_phx_truck_phx_po_phx_airport_phx
+			668) UNLOAD_TRUCK_AP_package1_phx_truck_phx_airport_phx
+			669) UNLOAD_TRUCK_AP_package2_pgh_truck_pgh_airport_pgh
+			670) UNLOAD_TRUCK_AP_package3_phx_truck_phx_airport_phx
+			671) LOAD_AIRPLANE_package2_airplane1_pgh_airport
+			672) FLY_AIRPLANE_airplane1_pgh_airport_phx_airport
+			673) LOAD_AIRPLANE_package1_airplane1_phx_airport
+			674) LOAD_AIRPLANE_package3_airplane1_phx_airport
+			675) UNLOAD_AIRPLANE_package2_airplane1_phx_airport
+			676) FLY_AIRPLANE_airplane1_phx_airport_bos_airport
+			677) UNLOAD_AIRPLANE_package1_airplane1_bos_airport
+			678) FLY_AIRPLANE_airplane1_bos_airport_pgh_airport
+			679) UNLOAD_AIRPLANE_package3_airplane1_pgh_airport
+)goal
+			643) LOAD_TRUCK_LOC_package1_pgh_truck_pgh_po_pgh
+			647) LOAD_TRUCK_LOC_package2_pgh_truck_pgh_po_pgh
+			648) DRIVE_TRUCK_LOC_AP_pgh_truck_pgh_po_pgh_airport_pgh
+			649) LOAD_TRUCK_LOC_package3_phx_truck_phx_po_phx
+			650) DRIVE_TRUCK_LOC_AP_phx_truck_phx_po_phx_airport_phx
+			651) UNLOAD_TRUCK_AP_package1_pgh_truck_pgh_airport_pgh
+			652) UNLOAD_TRUCK_AP_package2_pgh_truck_pgh_airport_pgh
+			653) UNLOAD_TRUCK_AP_package3_phx_truck_phx_airport_phx
+			654) LOAD_AIRPLANE_package1_airplane1_pgh_airport
+			655) LOAD_AIRPLANE_package2_airplane1_pgh_airport
+			656) FLY_AIRPLANE_airplane1_pgh_airport_bos_airport
+			657) UNLOAD_AIRPLANE_package1_airplane1_bos_airport
+			658) FLY_AIRPLANE_airplane1_bos_airport_phx_airport
+			659) LOAD_AIRPLANE_package3_airplane1_phx_airport
+			660) UNLOAD_AIRPLANE_package2_airplane1_phx_airport
+			661) FLY_AIRPLANE_airplane1_phx_airport_pgh_airport
+			662) UNLOAD_AIRPLANE_package3_airplane1_pgh_airport
+)goal
+		598) sense_package_loc_t_package1_pgh_po_pgh_truck
+branching...
+			604) LOAD_TRUCK_LOC_package1_phx_truck_phx_po_phx
+			624) DRIVE_TRUCK_LOC_AP_phx_truck_phx_po_phx_airport_phx
+			625) LOAD_TRUCK_LOC_package2_pgh_truck_pgh_po_pgh
+			626) DRIVE_TRUCK_LOC_AP_pgh_truck_pgh_po_pgh_airport_pgh
+			627) LOAD_TRUCK_LOC_package3_bos_truck_bos_po_bos
+			628) DRIVE_TRUCK_LOC_AP_bos_truck_bos_po_bos_airport_bos
+			629) UNLOAD_TRUCK_AP_package1_phx_truck_phx_airport_phx
+			630) UNLOAD_TRUCK_AP_package2_pgh_truck_pgh_airport_pgh
+			631) UNLOAD_TRUCK_AP_package3_bos_truck_bos_airport_bos
+			632) LOAD_AIRPLANE_package2_airplane1_pgh_airport
+			633) FLY_AIRPLANE_airplane1_pgh_airport_phx_airport
+			634) LOAD_AIRPLANE_package1_airplane1_phx_airport
+			635) UNLOAD_AIRPLANE_package2_airplane1_phx_airport
+			636) FLY_AIRPLANE_airplane1_phx_airport_bos_airport
+			637) LOAD_AIRPLANE_package3_airplane1_bos_airport
+			638) UNLOAD_AIRPLANE_package1_airplane1_bos_airport
+			639) FLY_AIRPLANE_airplane1_bos_airport_pgh_airport
+			640) UNLOAD_AIRPLANE_package3_airplane1_pgh_airport
+)goal
+			603) LOAD_TRUCK_LOC_package1_pgh_truck_pgh_po_pgh
+			607) LOAD_TRUCK_LOC_package2_pgh_truck_pgh_po_pgh
+			608) DRIVE_TRUCK_LOC_AP_pgh_truck_pgh_po_pgh_airport_pgh
+			609) LOAD_TRUCK_LOC_package3_bos_truck_bos_po_bos
+			610) DRIVE_TRUCK_LOC_AP_bos_truck_bos_po_bos_airport_bos
+			611) UNLOAD_TRUCK_AP_package1_pgh_truck_pgh_airport_pgh
+			612) UNLOAD_TRUCK_AP_package2_pgh_truck_pgh_airport_pgh
+			613) UNLOAD_TRUCK_AP_package3_bos_truck_bos_airport_bos
+			614) LOAD_AIRPLANE_package1_airplane1_pgh_airport
+			615) LOAD_AIRPLANE_package2_airplane1_pgh_airport
+			616) FLY_AIRPLANE_airplane1_pgh_airport_bos_airport
+			617) LOAD_AIRPLANE_package3_airplane1_bos_airport
+			618) UNLOAD_AIRPLANE_package1_airplane1_bos_airport
+			619) FLY_AIRPLANE_airplane1_bos_airport_phx_airport
+			620) UNLOAD_AIRPLANE_package2_airplane1_phx_airport
+			621) FLY_AIRPLANE_airplane1_phx_airport_pgh_airport
+			622) UNLOAD_AIRPLANE_package3_airplane1_pgh_airport
+)goal
+	507) sense_package_loc_t_package3_bos_po_bos_truck
+branching...
+		513) sense_package_loc_t_package1_pgh_po_pgh_truck
+branching...
+			558) LOAD_TRUCK_LOC_package1_phx_truck_phx_po_phx
+			579) LOAD_TRUCK_LOC_package2_bos_truck_bos_po_bos
+			580) DRIVE_TRUCK_LOC_AP_bos_truck_bos_po_bos_airport_bos
+			581) LOAD_TRUCK_LOC_package3_phx_truck_phx_po_phx
+			582) DRIVE_TRUCK_LOC_AP_phx_truck_phx_po_phx_airport_phx
+			583) UNLOAD_TRUCK_AP_package1_phx_truck_phx_airport_phx
+			584) UNLOAD_TRUCK_AP_package2_bos_truck_bos_airport_bos
+			585) UNLOAD_TRUCK_AP_package3_phx_truck_phx_airport_phx
+			586) FLY_AIRPLANE_airplane1_pgh_airport_bos_airport
+			587) LOAD_AIRPLANE_package2_airplane1_bos_airport
+			588) FLY_AIRPLANE_airplane1_bos_airport_phx_airport
+			589) LOAD_AIRPLANE_package1_airplane1_phx_airport
+			590) LOAD_AIRPLANE_package3_airplane1_phx_airport
+			591) UNLOAD_AIRPLANE_package2_airplane1_phx_airport
+			592) FLY_AIRPLANE_airplane1_phx_airport_bos_airport
+			593) UNLOAD_AIRPLANE_package1_airplane1_bos_airport
+			594) FLY_AIRPLANE_airplane1_bos_airport_pgh_airport
+			595) UNLOAD_AIRPLANE_package3_airplane1_pgh_airport
+)goal
+			557) LOAD_TRUCK_LOC_package1_pgh_truck_pgh_po_pgh
+			561) DRIVE_TRUCK_LOC_AP_pgh_truck_pgh_po_pgh_airport_pgh
+			562) LOAD_TRUCK_LOC_package2_bos_truck_bos_po_bos
+			563) DRIVE_TRUCK_LOC_AP_bos_truck_bos_po_bos_airport_bos
+			564) LOAD_TRUCK_LOC_package3_phx_truck_phx_po_phx
+			565) DRIVE_TRUCK_LOC_AP_phx_truck_phx_po_phx_airport_phx
+			566) UNLOAD_TRUCK_AP_package1_pgh_truck_pgh_airport_pgh
+			567) UNLOAD_TRUCK_AP_package2_bos_truck_bos_airport_bos
+			568) UNLOAD_TRUCK_AP_package3_phx_truck_phx_airport_phx
+			569) LOAD_AIRPLANE_package1_airplane1_pgh_airport
+			570) FLY_AIRPLANE_airplane1_pgh_airport_bos_airport
+			571) LOAD_AIRPLANE_package2_airplane1_bos_airport
+			572) UNLOAD_AIRPLANE_package1_airplane1_bos_airport
+			573) FLY_AIRPLANE_airplane1_bos_airport_phx_airport
+			574) LOAD_AIRPLANE_package3_airplane1_phx_airport
+			575) UNLOAD_AIRPLANE_package2_airplane1_phx_airport
+			576) FLY_AIRPLANE_airplane1_phx_airport_pgh_airport
+			577) UNLOAD_AIRPLANE_package3_airplane1_pgh_airport
+)goal
+		512) sense_package_loc_t_package1_pgh_po_pgh_truck
+branching...
+			518) LOAD_TRUCK_LOC_package1_phx_truck_phx_po_phx
+			538) DRIVE_TRUCK_LOC_AP_phx_truck_phx_po_phx_airport_phx
+			539) LOAD_TRUCK_LOC_package2_bos_truck_bos_po_bos
+			540) LOAD_TRUCK_LOC_package3_bos_truck_bos_po_bos
+			541) DRIVE_TRUCK_LOC_AP_bos_truck_bos_po_bos_airport_bos
+			542) UNLOAD_TRUCK_AP_package1_phx_truck_phx_airport_phx
+			543) UNLOAD_TRUCK_AP_package2_bos_truck_bos_airport_bos
+			544) UNLOAD_TRUCK_AP_package3_bos_truck_bos_airport_bos
+			545) FLY_AIRPLANE_airplane1_pgh_airport_bos_airport
+			546) LOAD_AIRPLANE_package2_airplane1_bos_airport
+			547) LOAD_AIRPLANE_package3_airplane1_bos_airport
+			548) FLY_AIRPLANE_airplane1_bos_airport_phx_airport
+			549) LOAD_AIRPLANE_package1_airplane1_phx_airport
+			550) UNLOAD_AIRPLANE_package2_airplane1_phx_airport
+			551) FLY_AIRPLANE_airplane1_phx_airport_bos_airport
+			552) UNLOAD_AIRPLANE_package1_airplane1_bos_airport
+			553) FLY_AIRPLANE_airplane1_bos_airport_pgh_airport
+			554) UNLOAD_AIRPLANE_package3_airplane1_pgh_airport
+)goal
+			517) LOAD_TRUCK_LOC_package1_pgh_truck_pgh_po_pgh
+			521) DRIVE_TRUCK_LOC_AP_pgh_truck_pgh_po_pgh_airport_pgh
+			522) LOAD_TRUCK_LOC_package2_bos_truck_bos_po_bos
+			523) LOAD_TRUCK_LOC_package3_bos_truck_bos_po_bos
+			524) DRIVE_TRUCK_LOC_AP_bos_truck_bos_po_bos_airport_bos
+			525) UNLOAD_TRUCK_AP_package1_pgh_truck_pgh_airport_pgh
+			526) UNLOAD_TRUCK_AP_package2_bos_truck_bos_airport_bos
+			527) UNLOAD_TRUCK_AP_package3_bos_truck_bos_airport_bos
+			528) LOAD_AIRPLANE_package1_airplane1_pgh_airport
+			529) FLY_AIRPLANE_airplane1_pgh_airport_bos_airport
+			530) LOAD_AIRPLANE_package2_airplane1_bos_airport
+			531) LOAD_AIRPLANE_package3_airplane1_bos_airport
+			532) UNLOAD_AIRPLANE_package1_airplane1_bos_airport
+			533) FLY_AIRPLANE_airplane1_bos_airport_phx_airport
+			534) UNLOAD_AIRPLANE_package2_airplane1_phx_airport
+			535) FLY_AIRPLANE_airplane1_phx_airport_pgh_airport
+			536) UNLOAD_AIRPLANE_package3_airplane1_pgh_airport
+)goal

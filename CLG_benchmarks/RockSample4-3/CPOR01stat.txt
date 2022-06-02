@@ -1,0 +1,113 @@
+2) move_p1-1_p1-2
+3) activate-sensor-at-p1-2-h0
+4) observe-sensor
+	5) move_p1-2_p1-3
+	6) move_p1-3_p1-4
+	7) activate-sensor-at-p1-4-h0
+	8) observe-sensor
+		9) move_p1-4_p1-3
+		10) move_p1-3_p1-2
+		11) move_p1-2_p2-2
+		12) move_p2-2_p3-2
+		13) move_p3-2_p4-2
+		14) activate-sensor-at-p4-2-h0
+		15) observe-sensor
+
+			18) sample_r0_p4-2
+
+		21) sample_r1_p1-4
+		22) move_p1-4_p2-4
+		23) move_p2-4_p3-4
+		24) move_p3-4_p4-4
+		25) move_p4-4_p4-3
+		26) move_p4-3_p4-2
+		27) activate-sensor-at-p4-2-h0
+		28) observe-sensor
+
+			31) sample_r0_p4-2
+
+	34) sample_r2_p1-2
+	35) move_p1-2_p1-3
+	36) move_p1-3_p1-4
+	37) activate-sensor-at-p1-4-h0
+	38) observe-sensor
+		39) move_p1-4_p1-3
+		40) move_p1-3_p1-2
+		41) move_p1-2_p2-2
+		42) move_p2-2_p3-2
+		43) move_p3-2_p4-2
+		44) activate-sensor-at-p4-2-h0
+		45) observe-sensor
+
+			48) sample_r0_p4-2
+
+		51) sample_r1_p1-4
+		52) move_p1-4_p1-3
+		53) move_p1-3_p1-2
+		54) move_p1-2_p2-2
+		55) move_p2-2_p3-2
+		56) move_p3-2_p4-2
+		57) activate-sensor-at-p4-2-h0
+		58) observe-sensor
+
+			61) sample_r0_p4-2
+
+Goals 
+#17 :  , (good r0) , (good r1) , (good-rocks-in-range ) , (good r2)
+16 :  , (good r1) , (good-rocks-in-range ) , (good r2)
+16 :  , (not (good r1)) , (good r0) , (good-rocks-in-range ) , (good r2)
+15 :  , (good r2) , (not (good r1))
+16 :  , (good r0) , (not (good r2)) , (good r1)
+15 :  , (not (good r2)) , (good r1)
+15 :  , (not (good r1)) , (good r0) , (not (good-rocks-in-range )) , (not (good r2))
+14 :  , (not (good-rocks-in-range )) , (not (good r1)) , (not (good r2))
+#
+Union Goals Budget
+#17 :  , (good r0) , (good r1) , (good-rocks-in-range ) , (good r2)
+16 :  , (good r1) , (good-rocks-in-range ) , (good r2)
+17 :  , (good r1) , (good-rocks-in-range ) , (good r2)
+16 :  , (not (good r1)) , (good r0) , (good-rocks-in-range ) , (good r2)
+15 :  , (good r2) , (not (good r1))
+16 :  , (good r2) , (not (good r1))
+17 :  , (good-rocks-in-range ) , (good r2)
+16 :  , (good r0) , (not (good r2)) , (good r1)
+15 :  , (not (good r2)) , (good r1)
+16 :  , (not (good r2)) , (good r1)
+15 :  , (not (good r1)) , (good r0) , (not (good-rocks-in-range )) , (not (good r2))
+14 :  , (not (good-rocks-in-range )) , (not (good r1)) , (not (good r2))
+15 :  , (not (good-rocks-in-range )) , (not (good r1)) , (not (good r2))
+16 :  , (not (good-rocks-in-range )) , (not (good r2))
+17 : 
+#
+
+
+
+Goals Fault Tolerance
+#3 : 0 :  , (good r0) , (good r1) , (good-rocks-in-range ) , (good r2)
+3 : 1 :  , (good r1) , (good-rocks-in-range ) , (good r2)
+3 : 1 :  , (not (good r1)) , (good r0) , (good-rocks-in-range ) , (good r2)
+3 : 2 :  , (good r2) , (not (good r1))
+3 : 1 :  , (good r0) , (not (good r2)) , (good r1)
+3 : 2 :  , (not (good r2)) , (good r1)
+3 : 2 :  , (not (good r1)) , (good r0) , (not (good-rocks-in-range )) , (not (good r2))
+3 : 3 :  , (not (good-rocks-in-range )) , (not (good r1)) , (not (good r2))
+#
+
+
+
+Goals Fault Tolerance
+##
+
+
+
+Simplicitity
+#nodes: 46
+branch: 7
+originalSize: 160
+compreesedSize: 80
+compreesedRatio: 2#
+
+
+
+Simplicitity
+#

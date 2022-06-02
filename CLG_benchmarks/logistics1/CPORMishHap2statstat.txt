@@ -1,0 +1,22 @@
+
+Goals 
+#7 :  , (at_ol package1 pgh_po) , (not (at_ol package1 bos_po))
+4 :  , (not (at_ol package1 pgh_po)) , (at_ol package1 bos_po)
+#
+Union Goals Budget
+#7 :  , (at_ol package1 pgh_po) , (not (at_ol package1 bos_po))
+4 :  , (not (at_ol package1 pgh_po)) , (at_ol package1 bos_po)
+7 : 
+#
+
+
+
+Goals Fault Tolerance
+#1 : 1 :  , (at_ol package1 pgh_po) , (not (at_ol package1 bos_po))
+1 : 0 :  , (not (at_ol package1 pgh_po)) , (at_ol package1 bos_po)
+#
+
+
+
+Goals Fault Tolerance
+#

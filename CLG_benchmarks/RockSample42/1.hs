@@ -1,0 +1,2 @@
+KN_GOOD_R0
+K_GOOD_R1

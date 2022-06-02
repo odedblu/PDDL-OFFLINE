@@ -1,0 +1,10 @@
+
+(oneof (lock-shape f0-2f shape0) (lock-shape f0-2f shape1))
+
+(oneof (lock-shape f2-2f shape0) (lock-shape f2-2f shape1))
+
+(oneof (lock-shape f0-1f shape0) (lock-shape f0-1f shape1))
+
+
+(oneof (lock-shape f1-2f shape0) (lock-shape f1-2f shape1))
+

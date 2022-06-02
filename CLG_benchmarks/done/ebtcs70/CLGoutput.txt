@@ -1,0 +1,407 @@
+REGISTER (entering): main()
+cf2cs v 2.1 -- A compiler for contingent planning problems into classical models.
+CALL: ./cf2cs -sn -t0 -cond -cod -cmr -csl -ckit -ckinl -cminl -cmit -cdisjk0 -cdisjm0 -mac -cfc -fp benchmarks/ebtcs70/d.pddl benchmarks/ebtcs70/p.pddl
+-sn
+-t0
+-cond
+-cod
+-cmr
+-csl
+-ckit
+-ckinl
+-cminl
+-cmit
+-cdisjk0
+-cdisjm0
+-mac
+-cfc
+-fp
+benchmarks/ebtcs70/d.pddl
+benchmarks/ebtcs70/p.pddl
+Using only initial disjunctions for merge
+Clousuring for obtaining possible tags
+Full cancellation: Translating deletes properly. Maybe complete if '-s0' or '-f' option was used
+Propagating ramifications in effects
+Using action compilation + merge
+Merging only goals and preconditions
+REGISTER (entering): parse()
+predicates size = 1 for name = IN
+predicates size = 2 for name = DEFUSED
+predicates size = 3 for name = CLOG
+Parsed: benchmarks/ebtcs70/d.pddl
+Parsed: benchmarks/ebtcs70/p.pddl
+REGISTER: parse() took 0.000807 secs
+REGISTER (entering): initialize()
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+REGISTER (entering): computeReachableAtoms()
+schema 0 de 3
+schema 1 de 3
+schema 2 de 3
+schema 0 de 3
+schema 1 de 3
+schema 2 de 3
+
+ff: parsing domain file
+domain 'LOGISTICS_CONF' defined
+ ... done.
+ff: parsing problem file
+problem 'LOGISTICS-C5-S5-P5-A1' defined
+ ... done.
+
+STATS quality of hash table of predicates: max_bucket_size = 5, ave_bucket_size = 0.562835
+ff-cond: no description file
+fact T0_FAIL_K0 tagged as 2352  
+
+
+Skipping All searches!
+Starting K procedure.
+
+          h:                        80            [1]
+          h:                        80  , h_  :   79       
+::::::::::::::::::::::::current action:::LOAD_TRUCK_LOC_P3_T2_L22_C2
+
+          h:                        79            [1]
+          h:                        79  , h_  :   78       
+::::::::::::::::::::::::current action:::LOAD_TRUCK_LOC_P1_T2_L22_C2
+
+          h:                        78            [1]
+          h:                        78  , h_  :   77       
+::::::::::::::::::::::::current action:::LOAD_TRUCK_LOC_P0_T0_L03_C0
+
+          h:                        77            [1]
+          h:                        77  , h_  :   76       
+::::::::::::::::::::::::current action:::LOAD_AIRPLANE_P0_A0_L00
+
+          h:                        76            [1]
+          h:                        76  , h_  :   75       
+::::::::::::::::::::::::current action:::LOAD_TRUCK_LOC_P4_T4_L43_C4
+
+          h:                        75            [1]
+          h:                        75  , h_  :   74       
+::::::::::::::::::::::::current action:::DRIVE_TRUCK_LOC_AP_T4_L43_L40_C4
+
+          h:                        74            [1]
+          h:                        74  , h_  :   73       
+::::::::::::::::::::::::current action:::LOAD_TRUCK_AP_P4_T4_L40_C4
+
+          h:                        73            [1]
+          h:                        73  , h_  :   64       
+::::::::::::::::::::::::current action:::DRIVE_TRUCK_LOC_AP_T2_L22_L20_C2
+
+          h:                        64            [1]
+          h:                        64  , h_  :   63       
+::::::::::::::::::::::::current action:::UNLOAD_TRUCK_AP_P3_T2_L20_C2
+
+          h:                        63            [1]
+          h:                        63  , h_  :   62       
+::::::::::::::::::::::::current action:::UNLOAD_TRUCK_AP_P1_T2_L20_C2
+
+          h:                        62            [1]
+          h:                        62  , h_  :   61       
+::::::::::::::::::::::::current action:::DRIVE_TRUCK_LOC_AP_T0_L03_L00_C0
+
+          h:                        61            [1]
+          h:                        61  , h_  :   59       
+::::::::::::::::::::::::current action:::UNLOAD_TRUCK_AP_P0_T0_L00_C0
+
+          h:                        59            [1]
+          h:                        59  , h_  :   58       
+::::::::::::::::::::::::current action:::LOAD_AIRPLANE_P0_A0_L00
+
+          h:                        58            [1][2]
+          h:                        58  , h_  :   57       
+::::::::::::::::::::::::current action:::DRIVE_TRUCK_AP_LOC_T4_L40_L44_C4
+
+::::::::::::::::::::::::current action:::LOAD_TRUCK_LOC_P4_T4_L44_C4
+
+          h:                        57            [1]
+          h:                        57  , h_  :   56       
+::::::::::::::::::::::::current action:::DRIVE_TRUCK_LOC_AP_T4_L44_L40_C4
+
+          h:                        56            [1]
+          h:                        56  , h_  :   55       
+::::::::::::::::::::::::current action:::DRIVE_TRUCK_AP_LOC_T4_L40_L41_C4
+
+          h:                        55            [1]
+          h:                        55  , h_  :   54       
+::::::::::::::::::::::::current action:::LOAD_TRUCK_LOC_P4_T4_L41_C4
+
+          h:                        54            [1]
+          h:                        54  , h_  :   53       
+::::::::::::::::::::::::current action:::DRIVE_TRUCK_LOC_AP_T4_L41_L40_C4
+
+          h:                        53            [1]
+          h:                        53  , h_  :   52       
+::::::::::::::::::::::::current action:::DRIVE_TRUCK_AP_LOC_T4_L40_L42_C4
+
+          h:                        52            [1]
+          h:                        52  , h_  :   51       
+::::::::::::::::::::::::current action:::UNLOAD_TRUCK_LOC_P4_T4_L42_C4
+
+          h:                        51            [1][2]
+          h:                        51  , h_  :   50       
+::::::::::::::::::::::::current action:::FLY_AIRPLANE_A0_L00_L20
+
+::::::::::::::::::::::::current action:::LOAD_AIRPLANE_P3_A0_L20
+
+          h:                        50            [1]
+          h:                        50  , h_  :   49       
+::::::::::::::::::::::::current action:::LOAD_AIRPLANE_P1_A0_L20
+
+          h:                        49            [1][2]
+          h:                        49  , h_  :   48       
+::::::::::::::::::::::::current action:::FLY_AIRPLANE_A0_L20_L30
+
+::::::::::::::::::::::::current action:::UNLOAD_AIRPLANE_P3_A0_L30
+
+          h:                        48            [1]
+          h:                        48  , h_  :   47       
+::::::::::::::::::::::::current action:::LOAD_TRUCK_AP_P3_T3_L30_C3
+
+          h:                        47            [1][2]
+          h:                        47  , h_  :   46       
+::::::::::::::::::::::::current action:::FLY_AIRPLANE_A0_L30_L10
+
+::::::::::::::::::::::::current action:::UNLOAD_AIRPLANE_P1_A0_L10
+
+          h:                        46            [1]
+          h:                        46  , h_  :   45       
+::::::::::::::::::::::::current action:::UNLOAD_AIRPLANE_P0_A0_L10
+
+          h:                        45            [1][2]
+          h:                        45  , h_  :   44       
+::::::::::::::::::::::::current action:::DRIVE_TRUCK_LOC_AP_T1_L11_L10_C1
+
+::::::::::::::::::::::::current action:::LOAD_TRUCK_AP_P2_T1_L10_C1
+
+          h:                        44            [1]
+          h:                        44  , h_  :   43       
+::::::::::::::::::::::::current action:::LOAD_TRUCK_AP_P1_T1_L10_C1
+
+          h:                        43            [1][2]
+          h:                        43  , h_  :   42       
+::::::::::::::::::::::::current action:::DRIVE_TRUCK_AP_LOC_T1_L10_L14_C1
+
+::::::::::::::::::::::::current action:::LOAD_TRUCK_LOC_P2_T1_L14_C1
+
+          h:                        42            [1]
+          h:                        42  , h_  :   41       
+::::::::::::::::::::::::current action:::DRIVE_TRUCK_LOC_AP_T1_L14_L10_C1
+
+          h:                        41            [1][2]
+          h:                        41  , h_  :   40       
+::::::::::::::::::::::::current action:::DRIVE_TRUCK_AP_LOC_T1_L10_L13_C1
+
+::::::::::::::::::::::::current action:::LOAD_TRUCK_LOC_P2_T1_L13_C1
+
+          h:                        40            [1]
+          h:                        40  , h_  :   39       
+::::::::::::::::::::::::current action:::DRIVE_TRUCK_LOC_AP_T1_L13_L10_C1
+
+          h:                        39            [1]
+          h:                        39  , h_  :   38       
+::::::::::::::::::::::::current action:::DRIVE_TRUCK_AP_LOC_T1_L10_L12_C1
+
+          h:                        38            [1]
+          h:                        38  , h_  :   37       
+::::::::::::::::::::::::current action:::LOAD_TRUCK_LOC_P2_T1_L12_C1
+
+          h:                        37            [1]
+          h:                        37  , h_  :   36       
+::::::::::::::::::::::::current action:::UNLOAD_TRUCK_LOC_P1_T1_L12_C1
+
+          h:                        36            [1][2]
+          h:                        36  , h_  :   35       
+::::::::::::::::::::::::current action:::DRIVE_TRUCK_AP_LOC_T3_L30_L32_C3
+
+::::::::::::::::::::::::current action:::UNLOAD_TRUCK_LOC_P3_T3_L32_C3
+
+          h:                        35            [1][2][3]
+          h:                        35  , h_  :   34       
+::::::::::::::::::::::::current action:::DRIVE_TRUCK_LOC_AP_T1_L12_L10_C1
+
+::::::::::::::::::::::::current action:::DRIVE_TRUCK_AP_LOC_T1_L10_L11_C1
+
+::::::::::::::::::::::::current action:::UNLOAD_TRUCK_LOC_P2_T1_L11_C1
+
+          h:                        34            [1]
+          h:                        34  , h_  :   33       
+::::::::::::::::::::::::current action:::DRIVE_TRUCK_LOC_AP_T1_L11_L10_C1
+
+          h:                        33            [1][2][3][4][5][6]
+          h:                        33  , h_  :   32       
+::::::::::::::::::::::::current action:::DRIVE_TRUCK_AP_LOC_T0_L00_L04_C0
+
+::::::::::::::::::::::::current action:::LOAD_TRUCK_LOC_P0_T0_L04_C0
+
+::::::::::::::::::::::::current action:::DRIVE_TRUCK_LOC_AP_T0_L04_L00_C0
+
+::::::::::::::::::::::::current action:::UNLOAD_TRUCK_AP_P0_T0_L00_C0
+
+::::::::::::::::::::::::current action:::FLY_AIRPLANE_A0_L10_L00
+
+::::::::::::::::::::::::current action:::LOAD_AIRPLANE_P0_A0_L00
+
+          h:                        32            [1][2]
+          h:                        32  , h_  :   31       
+::::::::::::::::::::::::current action:::FLY_AIRPLANE_A0_L00_L10
+
+::::::::::::::::::::::::current action:::UNLOAD_AIRPLANE_P0_A0_L10
+
+          h:                        31            [1][2][3][4]
+          h:                        31  , h_  :   29       
+::::::::::::::::::::::::current action:::DRIVE_TRUCK_AP_LOC_T0_L00_L02_C0
+
+::::::::::::::::::::::::current action:::LOAD_TRUCK_LOC_P0_T0_L02_C0
+
+::::::::::::::::::::::::current action:::DRIVE_TRUCK_LOC_AP_T0_L02_L00_C0
+
+::::::::::::::::::::::::current action:::DRIVE_TRUCK_AP_LOC_T0_L00_L01_C0
+
+          h:                        29            [1]
+          h:                        29  , h_  :   28       
+::::::::::::::::::::::::current action:::LOAD_TRUCK_LOC_P0_T0_L01_C0
+
+          h:                        28            [1]
+          h:                        28  , h_  :   27       
+::::::::::::::::::::::::current action:::DRIVE_TRUCK_LOC_AP_T0_L01_L00_C0
+
+          h:                        27            [1]
+          h:                        27  , h_  :   26       
+::::::::::::::::::::::::current action:::UNLOAD_TRUCK_AP_P0_T0_L00_C0
+
+          h:                        26            [1][2]
+          h:                        26  , h_  :   25       
+::::::::::::::::::::::::current action:::FLY_AIRPLANE_A0_L10_L00
+
+::::::::::::::::::::::::current action:::LOAD_AIRPLANE_P0_A0_L00
+
+          h:                        25            [1]
+          h:                        25  , h_  :   24       
+::::::::::::::::::::::::current action:::FLY_AIRPLANE_A0_L00_L20
+
+          h:                        24            [1][2]
+          h:                        24  , h_  :   23       
+::::::::::::::::::::::::current action:::FLY_AIRPLANE_A0_L20_L10
+
+::::::::::::::::::::::::current action:::UNLOAD_AIRPLANE_P0_A0_L10
+
+          h:                        23            [1][2][3][4][5][6][7][8][9]
+          h:                        23  , h_  :   17       
+::::::::::::::::::::::::current action:::DRIVE_TRUCK_AP_LOC_T2_L20_L24_C2
+
+::::::::::::::::::::::::current action:::LOAD_TRUCK_LOC_P3_T2_L24_C2
+
+::::::::::::::::::::::::current action:::LOAD_TRUCK_LOC_P1_T2_L24_C2
+
+::::::::::::::::::::::::current action:::DRIVE_TRUCK_LOC_AP_T2_L24_L20_C2
+
+::::::::::::::::::::::::current action:::DRIVE_TRUCK_AP_LOC_T2_L20_L23_C2
+
+::::::::::::::::::::::::current action:::LOAD_TRUCK_LOC_P3_T2_L23_C2
+
+::::::::::::::::::::::::current action:::LOAD_TRUCK_LOC_P1_T2_L23_C2
+
+::::::::::::::::::::::::current action:::DRIVE_TRUCK_LOC_AP_T2_L23_L20_C2
+
+::::::::::::::::::::::::current action:::DRIVE_TRUCK_AP_LOC_T2_L20_L21_C2
+
+          h:                        17            [1]
+          h:                        17  , h_  :   16       
+::::::::::::::::::::::::current action:::LOAD_TRUCK_LOC_P3_T2_L21_C2
+
+          h:                        16            [1]
+          h:                        16  , h_  :   15       
+::::::::::::::::::::::::current action:::LOAD_TRUCK_LOC_P1_T2_L21_C2
+
+          h:                        15            [1]
+          h:                        15  , h_  :   14       
+::::::::::::::::::::::::current action:::DRIVE_TRUCK_LOC_AP_T2_L21_L20_C2
+
+          h:                        14            [1]
+          h:                        14  , h_  :   13       
+::::::::::::::::::::::::current action:::UNLOAD_TRUCK_AP_P3_T2_L20_C2
+
+          h:                        13            [1]
+          h:                        13  , h_  :   12       
+::::::::::::::::::::::::current action:::UNLOAD_TRUCK_AP_P1_T2_L20_C2
+
+          h:                        12            [1][2]
+          h:                        12  , h_  :   11       
+::::::::::::::::::::::::current action:::FLY_AIRPLANE_A0_L10_L20
+
+::::::::::::::::::::::::current action:::LOAD_AIRPLANE_P3_A0_L20
+
+          h:                        11            [1]
+          h:                        11  , h_  :   10       
+::::::::::::::::::::::::current action:::LOAD_AIRPLANE_P1_A0_L20
+
+          h:                        10            [1]
+          h:                        10  , h_  :    9       
+::::::::::::::::::::::::current action:::FLY_AIRPLANE_A0_L20_L30
+
+          h:                         9            [1]
+          h:                         9  , h_  :    8       
+::::::::::::::::::::::::current action:::UNLOAD_AIRPLANE_P3_A0_L30
+
+          h:                         8            [1]
+          h:                         8  , h_  :    7       
+::::::::::::::::::::::::current action:::FLY_AIRPLANE_A0_L30_L10
+
+          h:                         7            [1]
+          h:                         7  , h_  :    6       
+::::::::::::::::::::::::current action:::UNLOAD_AIRPLANE_P1_A0_L10
+
+          h:                         6            [1]
+          h:                         6  , h_  :    5       
+::::::::::::::::::::::::current action:::LOAD_TRUCK_AP_P1_T1_L10_C1
+
+          h:                         5            [1]
+          h:                         5  , h_  :    4       
+::::::::::::::::::::::::current action:::DRIVE_TRUCK_AP_LOC_T1_L10_L12_C1
+
+          h:                         4            [1]
+          h:                         4  , h_  :    3       
+::::::::::::::::::::::::current action:::UNLOAD_TRUCK_LOC_P1_T1_L12_C1
+
+          h:                         3            [1][2]
+          h:                         3  , h_  :    2       
+::::::::::::::::::::::::current action:::DRIVE_TRUCK_LOC_AP_T3_L32_L30_C3
+
+::::::::::::::::::::::::current action:::LOAD_TRUCK_AP_P3_T3_L30_C3
+
+          h:                         2            [1]
+          h:                         2  , h_  :    1       
+::::::::::::::::::::::::current action:::DRIVE_TRUCK_AP_LOC_T3_L30_L32_C3
+
+          h:                         1            [1]
+          h:                         1  , h_  :    0       
+::::::::::::::::::::::::current action:::UNLOAD_TRUCK_LOC_P3_T3_L32_C3
+
+Goal reached in a branch 
+root
+
+
+ff: found legal plan as follows
+
+Total branches in this plan: 1 
+Longest branch: 96
+Total spurious branches in this plan: 0
+Total number of actions: 96
+
+
+time spent:    0.48 seconds instantiating 2081 easy, 0 hard action templates
+               0.02 seconds reachability analysis, yielding 3790 facts and 2081 actions
+               0.00 seconds creating final representation with 3630 relevant facts
+               0.08 seconds building connectivity graph
+              18.50 seconds computing closures operations
+              52.88 seconds searching, evaluating 8371 states, expanding 8240 nodes, to a max depth of 9
+              53.46 seconds total time
+
+
+

@@ -1,0 +1,282 @@
+
+ff: parsing domain file
+domain 'GRID' defined
+ ... done.
+ff: parsing problem file
+problem 'GRID-X3-Y3-T2-K12-L22-P100' defined
+ ... done.
+
+
+lowest leaf goal distance/initial state f value seen:     18/    18; maxdepth reached:    0
+                                                          18/    18                       1
+                                                          18/    18                       2
+                                                          15/    18                       3
+                                                          14/    18                       4
+                                                          13/    18                       5
+                                                           9/    18                       6
+                                                           8/    18                       7
+                                                           7/    18                       8
+                                                           6/    18                       9
+                                                           5/    18                      10
+                                                           4/    18                      11
+                                                           4/    18                      12
+                                                           4/    18                      13
+                                                           3/    18                      14
+                                                           2/    18                      15
+                                                           1/    18                      16
+                                                           1/    18                      17
+                                                           1/    18                      18
+                                                           1/    18                      19
+                                                           1/    18                      20
+                                                           1/    18                      21
+                                                           1/    18                      22
+                                                           1/    18                      23
+                                                           1/    18                      24
+                                                           1/    18                      25
+                                                           1/    18                      26
+                                                           1/    18                      27
+                                                           1/    18                      28
+                                                           1/    18                      29
+                                                           1/    18                      30
+                                                           1/    18                      31
+                                                           1/    18                      32
+                                                           1/    18                      33
+                                                           1/    18                      34
+                                                           1/    18                      35
+                                                           1/    18                      36
+                                                           1/    18                      37
+                                                           1/    18                      38
+                                                           1/    18                      39
+                                                           1/    18                      40
+
+ff: found plan as follows
+-------------------------------------------------
+  0||0 --- PICKUP F1-2F KEY0-0 --- SON: 1||0
+-------------------------------------------------
+  1||0 --- MOVE F1-2F F0-2F --- SON: 2||0
+-------------------------------------------------
+  2||0 --- OBSERVE-LOCK-SHAPE F0-2F F0-1F SHAPE1 --- TRUESON: 3||0 --- FALSESON: 3||1
+-------------------------------------------------
+  3||0 --- MOVE F0-2F F1-2F --- SON: 4||0
+  3||1 --- UNLOCK F0-2F F0-1F KEY0-0 SHAPE0 --- SON: 4||1
+-------------------------------------------------
+  4||0 --- MOVE F1-2F F1-1F --- SON: 5||0
+  4||1 --- MOVE F0-2F F0-1F --- SON: 5||1
+-------------------------------------------------
+  5||0 --- MOVE F1-1F F2-1F --- SON: 6||0
+  5||1 --- OBSERVE-LOCK-SHAPE F0-1F F0-0F SHAPE1 --- TRUESON: 6||1 --- FALSESON: 6||2
+-------------------------------------------------
+  6||0 --- PUTDOWN F2-1F KEY0-0 --- SON: 7||0
+  6||1 --- MOVE F0-1F F1-1F --- SON: 7||1
+  6||2 --- UNLOCK F0-1F F0-0F KEY0-0 SHAPE0 --- SON: 7||2
+-------------------------------------------------
+  7||0 --- MOVE F2-1F F1-1F --- SON: 8||0
+  7||1 --- MOVE F1-1F F2-1F --- SON: 8||1
+  7||2 --- MOVE F0-1F F0-0F --- SON: 8||2
+-------------------------------------------------
+  8||0 --- OBSERVE-LOCK-SHAPE F1-1F F1-0F SHAPE1 --- TRUESON: 9||0 --- FALSESON: 9||1
+  8||1 --- OBSERVE-LOCK-SHAPE F2-1F F2-0F SHAPE1 --- TRUESON: 9||2 --- FALSESON: 9||3
+  8||2 --- PUTDOWN F0-0F KEY0-0 --- SON: 9||4
+-------------------------------------------------
+  9||0 --- MOVE F1-1F F2-1F --- SON: 10||0
+  9||1 --- MOVE F1-1F F2-1F --- SON: 10||1
+  9||2 --- PUTDOWN F2-1F KEY0-0 --- SON: 10||2
+  9||3 --- PUTDOWN F2-1F KEY0-0 --- SON: 10||3
+  9||4 --- MOVE F0-0F F0-1F --- SON: 10||4
+-------------------------------------------------
+ 10||0 --- MOVE F2-1F F1-1F --- SON: 11||0
+ 10||1 --- MOVE F2-1F F1-1F --- SON: 11||1
+ 10||2 --- PICKUP F2-1F KEY0-0 --- SON: 11||2
+ 10||3 --- PICKUP F2-1F KEY0-0 --- SON: 11||3
+ 10||4 --- MOVE F0-1F F1-1F --- SON: 11||4
+-------------------------------------------------
+ 11||0 --- MOVE F1-1F F1-2F --- SON: 12||0
+ 11||1 --- MOVE F1-1F F1-2F --- SON: 12||1
+ 11||2 --- MOVE F2-1F F1-1F --- SON: 12||2
+ 11||3 --- UNLOCK F2-1F F2-0F KEY0-0 SHAPE0 --- SON: 12||3
+ 11||4 --- MOVE F1-1F F1-2F --- SON: 12||4
+-------------------------------------------------
+ 12||0 --- MOVE F1-2F F2-2F --- SON: 13||0
+ 12||1 --- MOVE F1-2F F2-2F --- SON: 13||1
+ 12||2 --- MOVE F1-1F F1-2F --- SON: 13||2
+ 12||3 --- PUTDOWN F2-1F KEY0-0 --- SON: 13||3
+ 12||4 --- MOVE F1-2F F2-2F --- SON: 13||4
+-------------------------------------------------
+ 13||0 --- PICKUP F2-2F KEY1-0 --- SON: 14||0
+ 13||1 --- PICKUP F2-2F KEY1-0 --- SON: 14||1
+ 13||2 --- PUTDOWN F1-2F KEY0-0 --- SON: 14||2
+ 13||3 --- MOVE F2-1F F1-1F --- SON: 14||3
+ 13||4 --- PICKUP F2-2F KEY1-0 --- SON: 14||4
+-------------------------------------------------
+ 14||0 --- MOVE F2-2F F2-1F --- SON: 15||0
+ 14||1 --- MOVE F2-2F F2-1F --- SON: 15||1
+ 14||2 --- MOVE F1-2F F1-1F --- SON: 15||2
+ 14||3 --- OBSERVE-LOCK-SHAPE F1-1F F1-0F SHAPE1 --- TRUESON: 15||3 --- FALSESON: 15||4
+ 14||4 --- MOVE F2-2F F2-1F --- SON: 15||5
+-------------------------------------------------
+ 15||0 --- MOVE F2-1F F1-1F --- SON: 16||0
+ 15||1 --- MOVE F2-1F F1-1F --- SON: 16||1
+ 15||2 --- MOVE F1-1F F2-1F --- SON: 16||2
+ 15||3 --- MOVE F1-1F F2-1F --- SON: 16||3
+ 15||4 --- MOVE F1-1F F2-1F --- SON: 16||4
+ 15||5 --- MOVE F2-1F F1-1F --- SON: 16||5
+-------------------------------------------------
+ 16||0 --- UNLOCK F1-1F F0-1F KEY1-0 SHAPE1 --- SON: 17||0
+ 16||1 --- UNLOCK F1-1F F0-1F KEY1-0 SHAPE1 --- SON: 17||1
+ 16||2 --- MOVE F2-1F F2-2F --- SON: 17||2
+ 16||3 --- PICKUP F2-1F KEY0-0 --- SON: 17||3
+ 16||4 --- PICKUP F2-1F KEY0-0 --- SON: 17||4
+ 16||5 --- PUTDOWN F1-1F KEY1-0 --- SON: 17||-1
+-------------------------------------------------
+ 17||0 --- PUTDOWN F1-1F KEY1-0 --- SON: 18||0
+ 17||1 --- PUTDOWN F1-1F KEY1-0 --- SON: 18||1
+ 17||2 --- PICKUP F2-2F KEY1-0 --- SON: 18||2
+ 17||3 --- MOVE F2-1F F1-1F --- SON: 18||3
+ 17||4 --- MOVE F2-1F F1-1F --- SON: 18||4
+-------------------------------------------------
+ 18||0 --- MOVE F1-1F F2-1F --- SON: 19||0
+ 18||1 --- MOVE F1-1F F2-1F --- SON: 19||1
+ 18||2 --- MOVE F2-2F F2-1F --- SON: 19||2
+ 18||3 --- MOVE F1-1F F1-2F --- SON: 19||3
+ 18||4 --- MOVE F1-1F F1-2F --- SON: 19||4
+-------------------------------------------------
+ 19||0 --- PICKUP F2-1F KEY0-0 --- SON: 20||0
+ 19||1 --- PICKUP F2-1F KEY0-0 --- SON: 20||1
+ 19||2 --- MOVE F2-1F F1-1F --- SON: 20||2
+ 19||3 --- PUTDOWN F1-2F KEY0-0 --- SON: 20||3
+ 19||4 --- PUTDOWN F1-2F KEY0-0 --- SON: 20||4
+-------------------------------------------------
+ 20||0 --- MOVE F2-1F F1-1F --- SON: 21||0
+ 20||1 --- MOVE F2-1F F1-1F --- SON: 21||1
+ 20||2 --- PUTDOWN F1-1F KEY1-0 --- SON: 21||2
+ 20||3 --- MOVE F1-2F F1-1F --- SON: 21||3
+ 20||4 --- MOVE F1-2F F1-1F --- SON: 21||4
+-------------------------------------------------
+ 21||0 --- MOVE F1-1F F0-1F --- SON: 22||0
+ 21||1 --- MOVE F1-1F F0-1F --- SON: 22||1
+ 21||2 --- MOVE F1-1F F0-1F --- SON: 22||2
+ 21||3 --- MOVE F1-1F F2-1F --- SON: 22||3
+ 21||4 --- MOVE F1-1F F2-1F --- SON: 22||4
+-------------------------------------------------
+ 22||0 --- OBSERVE-LOCK-SHAPE F0-1F F0-0F SHAPE1 --- TRUESON: 23||0 --- FALSESON: 23||1
+ 22||1 --- OBSERVE-LOCK-SHAPE F0-1F F0-0F SHAPE1 --- TRUESON: 23||2 --- FALSESON: 23||3
+ 22||2 --- MOVE F0-1F F0-2F --- SON: 23||4
+ 22||3 --- MOVE F2-1F F2-2F --- SON: 23||5
+ 22||4 --- MOVE F2-1F F2-2F --- SON: 23||6
+-------------------------------------------------
+ 23||0 --- PUTDOWN F0-1F KEY0-0 --- SON: 24||0
+ 23||1 --- UNLOCK F0-1F F0-0F KEY0-0 SHAPE0 --- SON: 24||1
+ 23||2 --- PUTDOWN F0-1F KEY0-0 --- SON: 24||2
+ 23||3 --- UNLOCK F0-1F F0-0F KEY0-0 SHAPE0 --- SON: 24||3
+ 23||4 --- MOVE F0-2F F1-2F --- SON: 24||4
+ 23||5 --- PICKUP F2-2F KEY1-0 --- SON: 24||5
+ 23||6 --- PICKUP F2-2F KEY1-0 --- SON: 24||6
+-------------------------------------------------
+ 24||0 --- PICKUP F0-1F KEY0-0 --- SON: 25||0
+ 24||1 --- MOVE F0-1F F0-0F --- SON: 25||1
+ 24||2 --- PICKUP F0-1F KEY0-0 --- SON: 25||2
+ 24||3 --- MOVE F0-1F F0-0F --- SON: 25||3
+ 24||4 --- PICKUP F1-2F KEY0-0 --- SON: 25||4
+ 24||5 --- MOVE F2-2F F2-1F --- SON: 25||5
+ 24||6 --- MOVE F2-2F F2-1F --- SON: 25||6
+-------------------------------------------------
+ 25||0 --- MOVE F0-1F F0-2F --- SON: 26||0
+ 25||1 --- PUTDOWN F0-0F KEY0-0 --- SON: 26||-1
+ 25||2 --- MOVE F0-1F F0-2F --- SON: 26||1
+ 25||3 --- PUTDOWN F0-0F KEY0-0 --- SON: 26||-1
+ 25||4 --- MOVE F1-2F F1-1F --- SON: 26||2
+ 25||5 --- MOVE F2-1F F1-1F --- SON: 26||3
+ 25||6 --- MOVE F2-1F F1-1F --- SON: 26||4
+-------------------------------------------------
+ 26||0 --- PUTDOWN F0-2F KEY0-0 --- SON: 27||0
+ 26||1 --- PUTDOWN F0-2F KEY0-0 --- SON: 27||1
+ 26||2 --- MOVE F1-1F F0-1F --- SON: 27||2
+ 26||3 --- UNLOCK F1-1F F1-0F KEY1-0 SHAPE1 --- SON: 27||3
+ 26||4 --- PUTDOWN F1-1F KEY1-0 --- SON: 27||4
+-------------------------------------------------
+ 27||0 --- MOVE F0-2F F0-1F --- SON: 28||0
+ 27||1 --- MOVE F0-2F F0-1F --- SON: 28||1
+ 27||2 --- PUTDOWN F0-1F KEY0-0 --- SON: 28||2
+ 27||3 --- PUTDOWN F1-1F KEY1-0 --- SON: 28||3
+ 27||4 --- MOVE F1-1F F0-1F --- SON: 28||4
+-------------------------------------------------
+ 28||0 --- PICKUP F0-1F KEY1-1 --- SON: 29||0
+ 28||1 --- PICKUP F0-1F KEY1-1 --- SON: 29||1
+ 28||2 --- PICKUP F0-1F KEY1-1 --- SON: 29||2
+ 28||3 --- MOVE F1-1F F0-1F --- SON: 29||3
+ 28||4 --- MOVE F0-1F F0-2F --- SON: 29||4
+-------------------------------------------------
+ 29||0 --- UNLOCK F0-1F F0-0F KEY1-1 SHAPE1 --- SON: 30||0
+ 29||1 --- UNLOCK F0-1F F0-0F KEY1-1 SHAPE1 --- SON: 30||1
+ 29||2 --- UNLOCK F0-1F F0-0F KEY1-1 SHAPE1 --- SON: 30||2
+ 29||3 --- MOVE F0-1F F0-2F --- SON: 30||3
+ 29||4 --- MOVE F0-2F F1-2F --- SON: 30||4
+-------------------------------------------------
+ 30||0 --- PUTDOWN F0-1F KEY1-1 --- SON: 31||0
+ 30||1 --- PUTDOWN F0-1F KEY1-1 --- SON: 31||1
+ 30||2 --- PUTDOWN F0-1F KEY1-1 --- SON: 31||2
+ 30||3 --- MOVE F0-2F F1-2F --- SON: 31||3
+ 30||4 --- PICKUP F1-2F KEY0-0 --- SON: 31||4
+-------------------------------------------------
+ 31||0 --- MOVE F0-1F F0-2F --- SON: 32||0
+ 31||1 --- MOVE F0-1F F0-2F --- SON: 32||1
+ 31||2 --- PICKUP F0-1F KEY0-0 --- SON: 32||2
+ 31||3 --- PICKUP F1-2F KEY0-0 --- SON: 32||3
+ 31||4 --- MOVE F1-2F F1-1F --- SON: 32||4
+-------------------------------------------------
+ 32||0 --- PICKUP F0-2F KEY0-0 --- SON: 33||0
+ 32||1 --- PICKUP F0-2F KEY0-0 --- SON: 33||1
+ 32||2 --- MOVE F0-1F F0-0F --- SON: 33||2
+ 32||3 --- MOVE F1-2F F1-1F --- SON: 33||3
+ 32||4 --- MOVE F1-1F F0-1F --- SON: 33||4
+-------------------------------------------------
+ 33||0 --- MOVE F0-2F F0-1F --- SON: 34||0
+ 33||1 --- MOVE F0-2F F0-1F --- SON: 34||1
+ 33||2 --- PUTDOWN F0-0F KEY0-0 --- SON: 34||-1
+ 33||3 --- MOVE F1-1F F0-1F --- SON: 34||2
+ 33||4 --- PUTDOWN F0-1F KEY0-0 --- SON: 34||3
+-------------------------------------------------
+ 34||0 --- MOVE F0-1F F0-0F --- SON: 35||0
+ 34||1 --- MOVE F0-1F F0-0F --- SON: 35||1
+ 34||2 --- PUTDOWN F0-1F KEY0-0 --- SON: 35||2
+ 34||3 --- PICKUP F0-1F KEY1-1 --- SON: 35||3
+-------------------------------------------------
+ 35||0 --- PUTDOWN F0-0F KEY0-0 --- SON: 36||-1
+ 35||1 --- PUTDOWN F0-0F KEY0-0 --- SON: 36||-1
+ 35||2 --- PICKUP F0-1F KEY1-1 --- SON: 36||0
+ 35||3 --- UNLOCK F0-1F F0-0F KEY1-1 SHAPE1 --- SON: 36||1
+-------------------------------------------------
+ 36||0 --- UNLOCK F0-1F F0-0F KEY1-1 SHAPE1 --- SON: 37||0
+ 36||1 --- PUTDOWN F0-1F KEY1-1 --- SON: 37||1
+-------------------------------------------------
+ 37||0 --- PUTDOWN F0-1F KEY1-1 --- SON: 38||0
+ 37||1 --- PICKUP F0-1F KEY0-0 --- SON: 38||1
+-------------------------------------------------
+ 38||0 --- PICKUP F0-1F KEY0-0 --- SON: 39||0
+ 38||1 --- MOVE F0-1F F0-0F --- SON: 39||1
+-------------------------------------------------
+ 39||0 --- MOVE F0-1F F0-0F --- SON: 40||0
+ 39||1 --- PUTDOWN F0-0F KEY0-0 --- SON: 40||-1
+-------------------------------------------------
+ 40||0 --- PUTDOWN F0-0F KEY0-0 --- SON: 41||-1
+-------------------------------------------------
+
+tree layers: 41
+total nr. actions: 168
+
+statistics:    0.00 seconds instantiating 198 easy, 0 hard action templates
+               0.00 seconds reachability analysis, yielding 257 facts and 156 actions
+               0.00 seconds creating final representation with 64 relevant facts (24 max U, 16 CNF max U)
+               final representation has 16 unknown facts and 53 observation actions    
+               0.00 seconds building connectivity graph
+               1.35 seconds (   0.94 pure) evaluating 9057 states
+               0.41 seconds in DP for 54103 RPG ini state implication checks
+               0.00 seconds in DP for 0 RPlan extract ini state implication checks (0 lits removed)
+               0.60 seconds generating,    0.12 seconds encoding 12424 state transition base CNFs
+               0.02 seconds in DP solving 2252 state transition CNFs
+               0.00 seconds checking for self-contradictions, including 0 DP calls
+               0.03 seconds checking for stagnating states (3306 hits), including 3376 DP calls
+              59731 total DP calls, 2808778 total UP calls,    0.00 sec membership
+              0.12 seconds for remaining searching duties
+               2.24 seconds total time (+    0.05 secs for CNF memory allocation)
+

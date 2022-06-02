@@ -1,0 +1,864 @@
+REGISTER (entering): main()
+cf2cs v 2.1 -- A compiler for contingent planning problems into classical models.
+CALL: ./cf2cs -sn -t0 -cond -cod -cmr -csl -ckit -ckinl -cminl -cmit -cdisjk0 -cdisjm0 -mac -cfc -fp benchmarks/blocks3/d.pddl benchmarks/blocks3/p.pddl
+-sn
+-t0
+-cond
+-cod
+-cmr
+-csl
+-ckit
+-ckinl
+-cminl
+-cmit
+-cdisjk0
+-cdisjm0
+-mac
+-cfc
+-fp
+benchmarks/blocks3/d.pddl
+benchmarks/blocks3/p.pddl
+Using only initial disjunctions for merge
+Clousuring for obtaining possible tags
+Full cancellation: Translating deletes properly. Maybe complete if '-s0' or '-f' option was used
+Propagating ramifications in effects
+Using action compilation + merge
+Merging only goals and preconditions
+REGISTER (entering): parse()
+predicates size = 1 for name = CLEAR
+predicates size = 2 for name = ON-TABLE
+predicates size = 3 for name = ON
+Parsed: benchmarks/blocks3/d.pddl
+Parsed: benchmarks/blocks3/p.pddl
+REGISTER: parse() took 0.001773 secs
+REGISTER (entering): initialize()
+REGISTER (entering): computeReachableAtoms()
+schema 0 de 6
+schema 1 de 6
+schema 2 de 6
+schema 3 de 6
+schema 4 de 6
+schema 5 de 6
+schema 0 de 6
+schema 1 de 6
+schema 2 de 6
+schema 3 de 6
+schema 4 de 6
+schema 5 de 6
+REGISTER: computeReachableAtoms() took 0.001311 secs
+GENERAL: number of atoms = 15
+GENERAL: number of reachable atoms = 12
+GENERAL: number of grounded operators = 30
+REGISTER: initialize() took 0.001311 secs
+REGISTER (entering): initInstanceDB()
+Unknown atoms: 6
+Simply unknown atoms: 0
+Known atoms: 18
+True literals (after unit resolution): 6
+Oneof (0): 2
+Oneof (1): 2
+Oneof (2): 2
+Oneof (3): 2
+Oneof (4): 2
+Oneof (5): 2
+Or (0): 2
+Or (1): 2
+Or (2): 2
+Or (3): 2
+Or (4): 2
+Or (5): 2
+Or (6): 2
+Or (7): 2
+Or (8): 2
+Or (9): 2
+Or (10): 2
+Or (11): 2
+Or (12): 2
+
+---- end uncertainty: 
+Reachable 12
+GENERAL: number of actions = 18
+REGISTER: initInstanceDB() took 0.001303 secs
+Generating PDDL for contingent heuristic
+Objects: B1 B2 B3 
+REGISTER (entering): finishInstanceDB(void)
+Unknown relevant = 6
+Unknown = 6
+Static oneof atoms: 
+REGISTER: finishInstanceDB(void) took 1.20312e-10 secs
+Static atoms (5): FALSE FOO ACTIVE ALL_END CONT_DUMMY 
+REGISTER (entering): calc_tags()
+REGISTER (entering): calc_relevant()
+starting iterations...
+REGISTER: calc_relevant() took 0.007596 secs
+REGISTER (entering): calc_relevant_obs()
+REGISTER: calc_relevant_obs() took 0 secs
+Accepted disjunction -8, -6, 
+Accepted disjunction 3, 4, 
+Accepted disjunction 3, 8, 
+Accepted disjunction 4, 6, 
+Accepted disjunction 6, 12, 
+Accepted disjunction 8, 13, 
+Accepted disjunction 12, 13, 
+STAT Max-width: 7
+Final disjunctions: 1
+-8, -6, 
+3, 4, 
+3, 8, 
+4, 6, 
+6, 12, 
+8, 13, 
+12, 13, 
+==== End of Final disjunctions: 
+All tags: ON_B2_B3(-8) ON_B3_B2(-6) CLEAR_B3(3) CLEAR_B2(4) ON_B3_B2(6) ON_B2_B3(8) ON-TABLE_B3(12) ON-TABLE_B2(13) 
+For lit CLEAR_B3(3) relevants tags are: ON_B2_B3(-8) ON_B3_B2(-6) CLEAR_B3(3) CLEAR_B2(4) ON_B3_B2(6) ON_B2_B3(8) ON-TABLE_B3(12) ON-TABLE_B2(13) 
+For lit CLEAR_B2(4) relevants tags are: ON_B2_B3(-8) ON_B3_B2(-6) CLEAR_B3(3) CLEAR_B2(4) ON_B3_B2(6) ON_B2_B3(8) ON-TABLE_B3(12) ON-TABLE_B2(13) 
+For lit CLEAR_B1(5) relevants tags are: ON_B2_B3(-8) ON_B3_B2(-6) CLEAR_B3(3) CLEAR_B2(4) ON_B3_B2(6) ON_B2_B3(8) ON-TABLE_B3(12) ON-TABLE_B2(13) 
+For lit ON_B3_B2(6) relevants tags are: ON_B2_B3(-8) ON_B3_B2(-6) CLEAR_B3(3) CLEAR_B2(4) ON_B3_B2(6) ON_B2_B3(8) ON-TABLE_B3(12) ON-TABLE_B2(13) 
+For lit ON_B3_B1(7) relevants tags are: ON_B2_B3(-8) ON_B3_B2(-6) CLEAR_B3(3) CLEAR_B2(4) ON_B3_B2(6) ON_B2_B3(8) ON-TABLE_B3(12) ON-TABLE_B2(13) 
+For lit ON_B2_B3(8) relevants tags are: ON_B2_B3(-8) ON_B3_B2(-6) CLEAR_B3(3) CLEAR_B2(4) ON_B3_B2(6) ON_B2_B3(8) ON-TABLE_B3(12) ON-TABLE_B2(13) 
+For lit ON_B2_B1(9) relevants tags are: ON_B2_B3(-8) ON_B3_B2(-6) CLEAR_B3(3) CLEAR_B2(4) ON_B3_B2(6) ON_B2_B3(8) ON-TABLE_B3(12) ON-TABLE_B2(13) 
+For lit ON_B1_B3(10) relevants tags are: ON_B2_B3(-8) ON_B3_B2(-6) CLEAR_B3(3) CLEAR_B2(4) ON_B3_B2(6) ON_B2_B3(8) ON-TABLE_B3(12) ON-TABLE_B2(13) 
+For lit ON_B1_B2(11) relevants tags are: ON_B2_B3(-8) ON_B3_B2(-6) CLEAR_B3(3) CLEAR_B2(4) ON_B3_B2(6) ON_B2_B3(8) ON-TABLE_B3(12) ON-TABLE_B2(13) 
+For lit ON-TABLE_B3(12) relevants tags are: ON_B2_B3(-8) ON_B3_B2(-6) CLEAR_B3(3) CLEAR_B2(4) ON_B3_B2(6) ON_B2_B3(8) ON-TABLE_B3(12) ON-TABLE_B2(13) 
+For lit ON-TABLE_B2(13) relevants tags are: ON_B2_B3(-8) ON_B3_B2(-6) CLEAR_B3(3) CLEAR_B2(4) ON_B3_B2(6) ON_B2_B3(8) ON-TABLE_B3(12) ON-TABLE_B2(13) 
+For lit ON-TABLE_B1(14) relevants tags are: ON_B2_B3(-8) ON_B3_B2(-6) CLEAR_B3(3) CLEAR_B2(4) ON_B3_B2(6) ON_B2_B3(8) ON-TABLE_B3(12) ON-TABLE_B2(13) 
+REGISTER: calc_tags() took 0.011273 secs
+REGISTER (entering): make_k_0(m)
+REGISTER: make_k_0(m) took 0.000352 secs
+REGISTER (entering): make_k_0(k)
+REGISTER: make_k_0(k) took 0.001535 secs
+GENERAL: number of observations = 12
+Unknown atoms: 3 4 6 8 12 13 
+Unknown not in oneof: 
+REGISTER (entering): make_split_t0c()
+152 = k_CLEAR_B3___-ON_B2_B3
+153 = k_CLEAR_B1___-ON_B2_B3
+154 = k_ON_B1_B2___-ON_B2_B3
+155 = kn_ON_B1_B2___-ON_B2_B3
+156 = kn_CLEAR_B3___-ON_B2_B3
+157 = k_CLEAR_B2___-ON_B2_B3
+158 = k_ON_B1_B3___-ON_B2_B3
+159 = kn_CLEAR_B1___-ON_B2_B3
+160 = kn_CLEAR_B2___-ON_B2_B3
+161 = kn_ON_B1_B3___-ON_B2_B3
+162 = k_CLEAR_B3___-ON_B3_B2
+163 = k_CLEAR_B1___-ON_B3_B2
+164 = k_ON_B1_B2___-ON_B3_B2
+165 = kn_ON_B1_B2___-ON_B3_B2
+166 = kn_CLEAR_B3___-ON_B3_B2
+167 = k_CLEAR_B2___-ON_B3_B2
+168 = k_ON_B1_B3___-ON_B3_B2
+169 = kn_CLEAR_B1___-ON_B3_B2
+170 = kn_CLEAR_B2___-ON_B3_B2
+171 = kn_ON_B1_B3___-ON_B3_B2
+172 = k_CLEAR_B3___CLEAR_B3
+173 = k_CLEAR_B1___CLEAR_B3
+174 = k_ON_B1_B2___CLEAR_B3
+175 = kn_ON_B1_B2___CLEAR_B3
+176 = kn_CLEAR_B3___CLEAR_B3
+177 = k_CLEAR_B2___CLEAR_B3
+178 = k_ON_B1_B3___CLEAR_B3
+179 = kn_CLEAR_B1___CLEAR_B3
+180 = kn_CLEAR_B2___CLEAR_B3
+181 = kn_ON_B1_B3___CLEAR_B3
+182 = k_CLEAR_B3___CLEAR_B2
+183 = k_CLEAR_B1___CLEAR_B2
+184 = k_ON_B1_B2___CLEAR_B2
+185 = kn_ON_B1_B2___CLEAR_B2
+186 = kn_CLEAR_B3___CLEAR_B2
+187 = k_CLEAR_B2___CLEAR_B2
+188 = k_ON_B1_B3___CLEAR_B2
+189 = kn_CLEAR_B1___CLEAR_B2
+190 = kn_CLEAR_B2___CLEAR_B2
+191 = kn_ON_B1_B3___CLEAR_B2
+192 = k_CLEAR_B3___ON_B3_B2
+193 = k_CLEAR_B1___ON_B3_B2
+194 = k_ON_B1_B2___ON_B3_B2
+195 = kn_ON_B1_B2___ON_B3_B2
+196 = kn_CLEAR_B3___ON_B3_B2
+197 = k_CLEAR_B2___ON_B3_B2
+198 = k_ON_B1_B3___ON_B3_B2
+199 = kn_CLEAR_B1___ON_B3_B2
+200 = kn_CLEAR_B2___ON_B3_B2
+201 = kn_ON_B1_B3___ON_B3_B2
+202 = k_CLEAR_B3___ON_B2_B3
+203 = k_CLEAR_B1___ON_B2_B3
+204 = k_ON_B1_B2___ON_B2_B3
+205 = kn_ON_B1_B2___ON_B2_B3
+206 = kn_CLEAR_B3___ON_B2_B3
+207 = k_CLEAR_B2___ON_B2_B3
+208 = k_ON_B1_B3___ON_B2_B3
+209 = kn_CLEAR_B1___ON_B2_B3
+210 = kn_CLEAR_B2___ON_B2_B3
+211 = kn_ON_B1_B3___ON_B2_B3
+212 = k_CLEAR_B3___ON-TABLE_B3
+213 = k_CLEAR_B1___ON-TABLE_B3
+214 = k_ON_B1_B2___ON-TABLE_B3
+215 = kn_ON_B1_B2___ON-TABLE_B3
+216 = kn_CLEAR_B3___ON-TABLE_B3
+217 = k_CLEAR_B2___ON-TABLE_B3
+218 = k_ON_B1_B3___ON-TABLE_B3
+219 = kn_CLEAR_B1___ON-TABLE_B3
+220 = kn_CLEAR_B2___ON-TABLE_B3
+221 = kn_ON_B1_B3___ON-TABLE_B3
+222 = k_CLEAR_B3___ON-TABLE_B2
+223 = k_CLEAR_B1___ON-TABLE_B2
+224 = k_ON_B1_B2___ON-TABLE_B2
+225 = kn_ON_B1_B2___ON-TABLE_B2
+226 = kn_CLEAR_B3___ON-TABLE_B2
+227 = k_CLEAR_B2___ON-TABLE_B2
+228 = k_ON_B1_B3___ON-TABLE_B2
+229 = kn_CLEAR_B1___ON-TABLE_B2
+230 = kn_CLEAR_B2___ON-TABLE_B2
+231 = kn_ON_B1_B3___ON-TABLE_B2
+232 = k_ON_B2_B1___-ON_B2_B3
+233 = kn_ON_B2_B1___-ON_B2_B3
+234 = k_ON_B2_B3___-ON_B2_B3
+235 = kn_ON_B2_B3___-ON_B2_B3
+236 = k_ON_B2_B1___-ON_B3_B2
+237 = kn_ON_B2_B1___-ON_B3_B2
+238 = k_ON_B2_B3___-ON_B3_B2
+239 = kn_ON_B2_B3___-ON_B3_B2
+240 = k_ON_B2_B1___CLEAR_B3
+241 = kn_ON_B2_B1___CLEAR_B3
+242 = k_ON_B2_B3___CLEAR_B3
+243 = kn_ON_B2_B3___CLEAR_B3
+244 = k_ON_B2_B1___CLEAR_B2
+245 = kn_ON_B2_B1___CLEAR_B2
+246 = k_ON_B2_B3___CLEAR_B2
+247 = kn_ON_B2_B3___CLEAR_B2
+248 = k_ON_B2_B1___ON_B3_B2
+249 = kn_ON_B2_B1___ON_B3_B2
+250 = k_ON_B2_B3___ON_B3_B2
+251 = kn_ON_B2_B3___ON_B3_B2
+252 = k_ON_B2_B1___ON_B2_B3
+253 = kn_ON_B2_B1___ON_B2_B3
+254 = k_ON_B2_B3___ON_B2_B3
+255 = kn_ON_B2_B3___ON_B2_B3
+256 = k_ON_B2_B1___ON-TABLE_B3
+257 = kn_ON_B2_B1___ON-TABLE_B3
+258 = k_ON_B2_B3___ON-TABLE_B3
+259 = kn_ON_B2_B3___ON-TABLE_B3
+260 = k_ON_B2_B1___ON-TABLE_B2
+261 = kn_ON_B2_B1___ON-TABLE_B2
+262 = k_ON_B2_B3___ON-TABLE_B2
+263 = kn_ON_B2_B3___ON-TABLE_B2
+264 = k_ON_B3_B1___-ON_B2_B3
+265 = kn_ON_B3_B1___-ON_B2_B3
+266 = k_ON_B3_B2___-ON_B2_B3
+267 = kn_ON_B3_B2___-ON_B2_B3
+268 = k_ON_B3_B1___-ON_B3_B2
+269 = kn_ON_B3_B1___-ON_B3_B2
+270 = k_ON_B3_B2___-ON_B3_B2
+271 = kn_ON_B3_B2___-ON_B3_B2
+272 = k_ON_B3_B1___CLEAR_B3
+273 = kn_ON_B3_B1___CLEAR_B3
+274 = k_ON_B3_B2___CLEAR_B3
+275 = kn_ON_B3_B2___CLEAR_B3
+276 = k_ON_B3_B1___CLEAR_B2
+277 = kn_ON_B3_B1___CLEAR_B2
+278 = k_ON_B3_B2___CLEAR_B2
+279 = kn_ON_B3_B2___CLEAR_B2
+280 = k_ON_B3_B1___ON_B3_B2
+281 = kn_ON_B3_B1___ON_B3_B2
+282 = k_ON_B3_B2___ON_B3_B2
+283 = kn_ON_B3_B2___ON_B3_B2
+284 = k_ON_B3_B1___ON_B2_B3
+285 = kn_ON_B3_B1___ON_B2_B3
+286 = k_ON_B3_B2___ON_B2_B3
+287 = kn_ON_B3_B2___ON_B2_B3
+288 = k_ON_B3_B1___ON-TABLE_B3
+289 = kn_ON_B3_B1___ON-TABLE_B3
+290 = k_ON_B3_B2___ON-TABLE_B3
+291 = kn_ON_B3_B2___ON-TABLE_B3
+292 = k_ON_B3_B1___ON-TABLE_B2
+293 = kn_ON_B3_B1___ON-TABLE_B2
+294 = k_ON_B3_B2___ON-TABLE_B2
+295 = kn_ON_B3_B2___ON-TABLE_B2
+296 = k_ON-TABLE_B1___-ON_B2_B3
+297 = kn_ON-TABLE_B1___-ON_B2_B3
+298 = k_ON-TABLE_B1___-ON_B3_B2
+299 = kn_ON-TABLE_B1___-ON_B3_B2
+300 = k_ON-TABLE_B1___CLEAR_B3
+301 = kn_ON-TABLE_B1___CLEAR_B3
+302 = k_ON-TABLE_B1___CLEAR_B2
+303 = kn_ON-TABLE_B1___CLEAR_B2
+304 = k_ON-TABLE_B1___ON_B3_B2
+305 = kn_ON-TABLE_B1___ON_B3_B2
+306 = k_ON-TABLE_B1___ON_B2_B3
+307 = kn_ON-TABLE_B1___ON_B2_B3
+308 = k_ON-TABLE_B1___ON-TABLE_B3
+309 = kn_ON-TABLE_B1___ON-TABLE_B3
+310 = k_ON-TABLE_B1___ON-TABLE_B2
+311 = kn_ON-TABLE_B1___ON-TABLE_B2
+312 = k_ON-TABLE_B2___-ON_B2_B3
+313 = kn_ON-TABLE_B2___-ON_B2_B3
+314 = k_ON-TABLE_B2___-ON_B3_B2
+315 = kn_ON-TABLE_B2___-ON_B3_B2
+316 = k_ON-TABLE_B2___CLEAR_B3
+317 = kn_ON-TABLE_B2___CLEAR_B3
+318 = k_ON-TABLE_B2___CLEAR_B2
+319 = kn_ON-TABLE_B2___CLEAR_B2
+320 = k_ON-TABLE_B2___ON_B3_B2
+321 = kn_ON-TABLE_B2___ON_B3_B2
+322 = k_ON-TABLE_B2___ON_B2_B3
+323 = kn_ON-TABLE_B2___ON_B2_B3
+324 = k_ON-TABLE_B2___ON-TABLE_B3
+325 = kn_ON-TABLE_B2___ON-TABLE_B3
+326 = k_ON-TABLE_B2___ON-TABLE_B2
+327 = kn_ON-TABLE_B2___ON-TABLE_B2
+328 = k_ON-TABLE_B3___-ON_B2_B3
+329 = kn_ON-TABLE_B3___-ON_B2_B3
+330 = k_ON-TABLE_B3___-ON_B3_B2
+331 = kn_ON-TABLE_B3___-ON_B3_B2
+332 = k_ON-TABLE_B3___CLEAR_B3
+333 = kn_ON-TABLE_B3___CLEAR_B3
+334 = k_ON-TABLE_B3___CLEAR_B2
+335 = kn_ON-TABLE_B3___CLEAR_B2
+336 = k_ON-TABLE_B3___ON_B3_B2
+337 = kn_ON-TABLE_B3___ON_B3_B2
+338 = k_ON-TABLE_B3___ON_B2_B3
+339 = kn_ON-TABLE_B3___ON_B2_B3
+340 = k_ON-TABLE_B3___ON-TABLE_B3
+341 = kn_ON-TABLE_B3___ON-TABLE_B3
+342 = k_ON-TABLE_B3___ON-TABLE_B2
+343 = kn_ON-TABLE_B3___ON-TABLE_B2
+REGISTER: make_split_t0c() took 0.012687 secs
+
+
+Haciendo merge...
+REGISTER (entering): make_k_t0c()
+Trying to merge: CLEAR_B3(3)/(ON_B2_B3(-8), ) with var = -8
+Trying to make merge with (0) = (ON_B2_B3(-8), ON_B3_B2(-6), )
+accepting -8 tagged 
+accepting -6 tagged 
+Merging with (0) = (-8,-6,)
+Trying to merge: CLEAR_B3(3)/(ON_B3_B2(-6), ) with var = -6
+Trying to merge: CLEAR_B3(3)/(CLEAR_B3(3), ) with var = 3
+Trying to make merge with (1) = (CLEAR_B3(3), CLEAR_B2(4), )
+accepting 3 tagged 
+accepting 4 tagged 
+Merging with (1) = (3,4,)
+Trying to make merge with (2) = (CLEAR_B3(3), ON_B2_B3(8), )
+accepting 3 tagged 
+accepting 8 tagged 
+Merging with (2) = (3,8,)
+Trying to merge: CLEAR_B3(3)/(CLEAR_B2(4), ) with var = 4
+Trying to make merge with (3) = (CLEAR_B2(4), ON_B3_B2(6), )
+accepting 4 tagged 
+accepting 6 tagged 
+Merging with (3) = (4,6,)
+Trying to merge: CLEAR_B3(3)/(ON_B3_B2(6), ) with var = 6
+Trying to make merge with (4) = (ON_B3_B2(6), ON-TABLE_B3(12), )
+accepting 6 tagged 
+accepting 12 tagged 
+Merging with (4) = (6,12,)
+Trying to merge: CLEAR_B3(3)/(ON_B2_B3(8), ) with var = 8
+Trying to make merge with (5) = (ON_B2_B3(8), ON-TABLE_B2(13), )
+accepting 8 tagged 
+accepting 13 tagged 
+Merging with (5) = (8,13,)
+Trying to merge: CLEAR_B3(3)/(ON-TABLE_B3(12), ) with var = 12
+Trying to make merge with (6) = (ON-TABLE_B3(12), ON-TABLE_B2(13), )
+accepting 12 tagged 
+accepting 13 tagged 
+Merging with (6) = (12,13,)
+Trying to merge: CLEAR_B3(3)/(ON-TABLE_B2(13), ) with var = 13
+Trying to merge: CLEAR_B2(4)/(ON_B2_B3(-8), ) with var = -8
+Trying to make merge with (0) = (ON_B2_B3(-8), ON_B3_B2(-6), )
+accepting -8 tagged 
+accepting -6 tagged 
+Merging with (0) = (-8,-6,)
+Trying to merge: CLEAR_B2(4)/(ON_B3_B2(-6), ) with var = -6
+Trying to merge: CLEAR_B2(4)/(CLEAR_B3(3), ) with var = 3
+Trying to make merge with (1) = (CLEAR_B3(3), CLEAR_B2(4), )
+accepting 3 tagged 
+accepting 4 tagged 
+Merging with (1) = (3,4,)
+Trying to make merge with (2) = (CLEAR_B3(3), ON_B2_B3(8), )
+accepting 3 tagged 
+accepting 8 tagged 
+Merging with (2) = (3,8,)
+Trying to merge: CLEAR_B2(4)/(CLEAR_B2(4), ) with var = 4
+Trying to make merge with (3) = (CLEAR_B2(4), ON_B3_B2(6), )
+accepting 4 tagged 
+accepting 6 tagged 
+Merging with (3) = (4,6,)
+Trying to merge: CLEAR_B2(4)/(ON_B3_B2(6), ) with var = 6
+Trying to make merge with (4) = (ON_B3_B2(6), ON-TABLE_B3(12), )
+accepting 6 tagged 
+accepting 12 tagged 
+Merging with (4) = (6,12,)
+Trying to merge: CLEAR_B2(4)/(ON_B2_B3(8), ) with var = 8
+Trying to make merge with (5) = (ON_B2_B3(8), ON-TABLE_B2(13), )
+accepting 8 tagged 
+accepting 13 tagged 
+Merging with (5) = (8,13,)
+Trying to merge: CLEAR_B2(4)/(ON-TABLE_B3(12), ) with var = 12
+Trying to make merge with (6) = (ON-TABLE_B3(12), ON-TABLE_B2(13), )
+accepting 12 tagged 
+accepting 13 tagged 
+Merging with (6) = (12,13,)
+Trying to merge: CLEAR_B2(4)/(ON-TABLE_B2(13), ) with var = 13
+Trying to merge: CLEAR_B1(5)/(ON_B2_B3(-8), ) with var = -8
+Trying to make merge with (0) = (ON_B2_B3(-8), ON_B3_B2(-6), )
+accepting -8 tagged 
+accepting -6 tagged 
+Merging with (0) = (-8,-6,)
+Trying to merge: CLEAR_B1(5)/(ON_B3_B2(-6), ) with var = -6
+Trying to merge: CLEAR_B1(5)/(CLEAR_B3(3), ) with var = 3
+Trying to make merge with (1) = (CLEAR_B3(3), CLEAR_B2(4), )
+accepting 3 tagged 
+accepting 4 tagged 
+Merging with (1) = (3,4,)
+Trying to make merge with (2) = (CLEAR_B3(3), ON_B2_B3(8), )
+accepting 3 tagged 
+accepting 8 tagged 
+Merging with (2) = (3,8,)
+Trying to merge: CLEAR_B1(5)/(CLEAR_B2(4), ) with var = 4
+Trying to make merge with (3) = (CLEAR_B2(4), ON_B3_B2(6), )
+accepting 4 tagged 
+accepting 6 tagged 
+Merging with (3) = (4,6,)
+Trying to merge: CLEAR_B1(5)/(ON_B3_B2(6), ) with var = 6
+Trying to make merge with (4) = (ON_B3_B2(6), ON-TABLE_B3(12), )
+accepting 6 tagged 
+accepting 12 tagged 
+Merging with (4) = (6,12,)
+Trying to merge: CLEAR_B1(5)/(ON_B2_B3(8), ) with var = 8
+Trying to make merge with (5) = (ON_B2_B3(8), ON-TABLE_B2(13), )
+accepting 8 tagged 
+accepting 13 tagged 
+Merging with (5) = (8,13,)
+Trying to merge: CLEAR_B1(5)/(ON-TABLE_B3(12), ) with var = 12
+Trying to make merge with (6) = (ON-TABLE_B3(12), ON-TABLE_B2(13), )
+accepting 12 tagged 
+accepting 13 tagged 
+Merging with (6) = (12,13,)
+Trying to merge: CLEAR_B1(5)/(ON-TABLE_B2(13), ) with var = 13
+Trying to merge: ON_B3_B2(6)/(ON_B2_B3(-8), ) with var = -8
+Trying to make merge with (0) = (ON_B2_B3(-8), ON_B3_B2(-6), )
+accepting -8 tagged 
+accepting -6 tagged 
+Merging with (0) = (-8,-6,)
+Trying to merge: ON_B3_B2(6)/(ON_B3_B2(-6), ) with var = -6
+Trying to merge: ON_B3_B2(6)/(CLEAR_B3(3), ) with var = 3
+Trying to make merge with (1) = (CLEAR_B3(3), CLEAR_B2(4), )
+accepting 3 tagged 
+accepting 4 tagged 
+Merging with (1) = (3,4,)
+Trying to make merge with (2) = (CLEAR_B3(3), ON_B2_B3(8), )
+accepting 3 tagged 
+accepting 8 tagged 
+Merging with (2) = (3,8,)
+Trying to merge: ON_B3_B2(6)/(CLEAR_B2(4), ) with var = 4
+Trying to make merge with (3) = (CLEAR_B2(4), ON_B3_B2(6), )
+accepting 4 tagged 
+accepting 6 tagged 
+Merging with (3) = (4,6,)
+Trying to merge: ON_B3_B2(6)/(ON_B3_B2(6), ) with var = 6
+Trying to make merge with (4) = (ON_B3_B2(6), ON-TABLE_B3(12), )
+accepting 6 tagged 
+accepting 12 tagged 
+Merging with (4) = (6,12,)
+Trying to merge: ON_B3_B2(6)/(ON_B2_B3(8), ) with var = 8
+Trying to make merge with (5) = (ON_B2_B3(8), ON-TABLE_B2(13), )
+accepting 8 tagged 
+accepting 13 tagged 
+Merging with (5) = (8,13,)
+Trying to merge: ON_B3_B2(6)/(ON-TABLE_B3(12), ) with var = 12
+Trying to make merge with (6) = (ON-TABLE_B3(12), ON-TABLE_B2(13), )
+accepting 12 tagged 
+accepting 13 tagged 
+Merging with (6) = (12,13,)
+Trying to merge: ON_B3_B2(6)/(ON-TABLE_B2(13), ) with var = 13
+Trying to merge: ON_B3_B1(7)/(ON_B2_B3(-8), ) with var = -8
+Trying to make merge with (0) = (ON_B2_B3(-8), ON_B3_B2(-6), )
+accepting -8 tagged 
+accepting -6 tagged 
+Merging with (0) = (-8,-6,)
+Trying to merge: ON_B3_B1(7)/(ON_B3_B2(-6), ) with var = -6
+Trying to merge: ON_B3_B1(7)/(CLEAR_B3(3), ) with var = 3
+Trying to make merge with (1) = (CLEAR_B3(3), CLEAR_B2(4), )
+accepting 3 tagged 
+accepting 4 tagged 
+Merging with (1) = (3,4,)
+Trying to make merge with (2) = (CLEAR_B3(3), ON_B2_B3(8), )
+accepting 3 tagged 
+accepting 8 tagged 
+Merging with (2) = (3,8,)
+Trying to merge: ON_B3_B1(7)/(CLEAR_B2(4), ) with var = 4
+Trying to make merge with (3) = (CLEAR_B2(4), ON_B3_B2(6), )
+accepting 4 tagged 
+accepting 6 tagged 
+Merging with (3) = (4,6,)
+Trying to merge: ON_B3_B1(7)/(ON_B3_B2(6), ) with var = 6
+Trying to make merge with (4) = (ON_B3_B2(6), ON-TABLE_B3(12), )
+accepting 6 tagged 
+accepting 12 tagged 
+Merging with (4) = (6,12,)
+Trying to merge: ON_B3_B1(7)/(ON_B2_B3(8), ) with var = 8
+Trying to make merge with (5) = (ON_B2_B3(8), ON-TABLE_B2(13), )
+accepting 8 tagged 
+accepting 13 tagged 
+Merging with (5) = (8,13,)
+Trying to merge: ON_B3_B1(7)/(ON-TABLE_B3(12), ) with var = 12
+Trying to make merge with (6) = (ON-TABLE_B3(12), ON-TABLE_B2(13), )
+accepting 12 tagged 
+accepting 13 tagged 
+Merging with (6) = (12,13,)
+Trying to merge: ON_B3_B1(7)/(ON-TABLE_B2(13), ) with var = 13
+Trying to merge: ON_B2_B3(8)/(ON_B2_B3(-8), ) with var = -8
+Trying to make merge with (0) = (ON_B2_B3(-8), ON_B3_B2(-6), )
+accepting -8 tagged 
+accepting -6 tagged 
+Merging with (0) = (-8,-6,)
+Trying to merge: ON_B2_B3(8)/(ON_B3_B2(-6), ) with var = -6
+Trying to merge: ON_B2_B3(8)/(CLEAR_B3(3), ) with var = 3
+Trying to make merge with (1) = (CLEAR_B3(3), CLEAR_B2(4), )
+accepting 3 tagged 
+accepting 4 tagged 
+Merging with (1) = (3,4,)
+Trying to make merge with (2) = (CLEAR_B3(3), ON_B2_B3(8), )
+accepting 3 tagged 
+accepting 8 tagged 
+Merging with (2) = (3,8,)
+Trying to merge: ON_B2_B3(8)/(CLEAR_B2(4), ) with var = 4
+Trying to make merge with (3) = (CLEAR_B2(4), ON_B3_B2(6), )
+accepting 4 tagged 
+accepting 6 tagged 
+Merging with (3) = (4,6,)
+Trying to merge: ON_B2_B3(8)/(ON_B3_B2(6), ) with var = 6
+Trying to make merge with (4) = (ON_B3_B2(6), ON-TABLE_B3(12), )
+accepting 6 tagged 
+accepting 12 tagged 
+Merging with (4) = (6,12,)
+Trying to merge: ON_B2_B3(8)/(ON_B2_B3(8), ) with var = 8
+Trying to make merge with (5) = (ON_B2_B3(8), ON-TABLE_B2(13), )
+accepting 8 tagged 
+accepting 13 tagged 
+Merging with (5) = (8,13,)
+Trying to merge: ON_B2_B3(8)/(ON-TABLE_B3(12), ) with var = 12
+Trying to make merge with (6) = (ON-TABLE_B3(12), ON-TABLE_B2(13), )
+accepting 12 tagged 
+accepting 13 tagged 
+Merging with (6) = (12,13,)
+Trying to merge: ON_B2_B3(8)/(ON-TABLE_B2(13), ) with var = 13
+Trying to merge: ON_B2_B1(9)/(ON_B2_B3(-8), ) with var = -8
+Trying to make merge with (0) = (ON_B2_B3(-8), ON_B3_B2(-6), )
+accepting -8 tagged 
+accepting -6 tagged 
+Merging with (0) = (-8,-6,)
+Trying to merge: ON_B2_B1(9)/(ON_B3_B2(-6), ) with var = -6
+Trying to merge: ON_B2_B1(9)/(CLEAR_B3(3), ) with var = 3
+Trying to make merge with (1) = (CLEAR_B3(3), CLEAR_B2(4), )
+accepting 3 tagged 
+accepting 4 tagged 
+Merging with (1) = (3,4,)
+Trying to make merge with (2) = (CLEAR_B3(3), ON_B2_B3(8), )
+accepting 3 tagged 
+accepting 8 tagged 
+Merging with (2) = (3,8,)
+Trying to merge: ON_B2_B1(9)/(CLEAR_B2(4), ) with var = 4
+Trying to make merge with (3) = (CLEAR_B2(4), ON_B3_B2(6), )
+accepting 4 tagged 
+accepting 6 tagged 
+Merging with (3) = (4,6,)
+Trying to merge: ON_B2_B1(9)/(ON_B3_B2(6), ) with var = 6
+Trying to make merge with (4) = (ON_B3_B2(6), ON-TABLE_B3(12), )
+accepting 6 tagged 
+accepting 12 tagged 
+Merging with (4) = (6,12,)
+Trying to merge: ON_B2_B1(9)/(ON_B2_B3(8), ) with var = 8
+Trying to make merge with (5) = (ON_B2_B3(8), ON-TABLE_B2(13), )
+accepting 8 tagged 
+accepting 13 tagged 
+Merging with (5) = (8,13,)
+Trying to merge: ON_B2_B1(9)/(ON-TABLE_B3(12), ) with var = 12
+Trying to make merge with (6) = (ON-TABLE_B3(12), ON-TABLE_B2(13), )
+accepting 12 tagged 
+accepting 13 tagged 
+Merging with (6) = (12,13,)
+Trying to merge: ON_B2_B1(9)/(ON-TABLE_B2(13), ) with var = 13
+Trying to merge: ON_B1_B3(10)/(ON_B2_B3(-8), ) with var = -8
+Trying to make merge with (0) = (ON_B2_B3(-8), ON_B3_B2(-6), )
+accepting -8 tagged 
+accepting -6 tagged 
+Merging with (0) = (-8,-6,)
+Trying to merge: ON_B1_B3(10)/(ON_B3_B2(-6), ) with var = -6
+Trying to merge: ON_B1_B3(10)/(CLEAR_B3(3), ) with var = 3
+Trying to make merge with (1) = (CLEAR_B3(3), CLEAR_B2(4), )
+accepting 3 tagged 
+accepting 4 tagged 
+Merging with (1) = (3,4,)
+Trying to make merge with (2) = (CLEAR_B3(3), ON_B2_B3(8), )
+accepting 3 tagged 
+accepting 8 tagged 
+Merging with (2) = (3,8,)
+Trying to merge: ON_B1_B3(10)/(CLEAR_B2(4), ) with var = 4
+Trying to make merge with (3) = (CLEAR_B2(4), ON_B3_B2(6), )
+accepting 4 tagged 
+accepting 6 tagged 
+Merging with (3) = (4,6,)
+Trying to merge: ON_B1_B3(10)/(ON_B3_B2(6), ) with var = 6
+Trying to make merge with (4) = (ON_B3_B2(6), ON-TABLE_B3(12), )
+accepting 6 tagged 
+accepting 12 tagged 
+Merging with (4) = (6,12,)
+Trying to merge: ON_B1_B3(10)/(ON_B2_B3(8), ) with var = 8
+Trying to make merge with (5) = (ON_B2_B3(8), ON-TABLE_B2(13), )
+accepting 8 tagged 
+accepting 13 tagged 
+Merging with (5) = (8,13,)
+Trying to merge: ON_B1_B3(10)/(ON-TABLE_B3(12), ) with var = 12
+Trying to make merge with (6) = (ON-TABLE_B3(12), ON-TABLE_B2(13), )
+accepting 12 tagged 
+accepting 13 tagged 
+Merging with (6) = (12,13,)
+Trying to merge: ON_B1_B3(10)/(ON-TABLE_B2(13), ) with var = 13
+Trying to merge: ON_B1_B2(11)/(ON_B2_B3(-8), ) with var = -8
+Trying to make merge with (0) = (ON_B2_B3(-8), ON_B3_B2(-6), )
+accepting -8 tagged 
+accepting -6 tagged 
+Merging with (0) = (-8,-6,)
+Trying to merge: ON_B1_B2(11)/(ON_B3_B2(-6), ) with var = -6
+Trying to merge: ON_B1_B2(11)/(CLEAR_B3(3), ) with var = 3
+Trying to make merge with (1) = (CLEAR_B3(3), CLEAR_B2(4), )
+accepting 3 tagged 
+accepting 4 tagged 
+Merging with (1) = (3,4,)
+Trying to make merge with (2) = (CLEAR_B3(3), ON_B2_B3(8), )
+accepting 3 tagged 
+accepting 8 tagged 
+Merging with (2) = (3,8,)
+Trying to merge: ON_B1_B2(11)/(CLEAR_B2(4), ) with var = 4
+Trying to make merge with (3) = (CLEAR_B2(4), ON_B3_B2(6), )
+accepting 4 tagged 
+accepting 6 tagged 
+Merging with (3) = (4,6,)
+Trying to merge: ON_B1_B2(11)/(ON_B3_B2(6), ) with var = 6
+Trying to make merge with (4) = (ON_B3_B2(6), ON-TABLE_B3(12), )
+accepting 6 tagged 
+accepting 12 tagged 
+Merging with (4) = (6,12,)
+Trying to merge: ON_B1_B2(11)/(ON_B2_B3(8), ) with var = 8
+Trying to make merge with (5) = (ON_B2_B3(8), ON-TABLE_B2(13), )
+accepting 8 tagged 
+accepting 13 tagged 
+Merging with (5) = (8,13,)
+Trying to merge: ON_B1_B2(11)/(ON-TABLE_B3(12), ) with var = 12
+Trying to make merge with (6) = (ON-TABLE_B3(12), ON-TABLE_B2(13), )
+accepting 12 tagged 
+accepting 13 tagged 
+Merging with (6) = (12,13,)
+Trying to merge: ON_B1_B2(11)/(ON-TABLE_B2(13), ) with var = 13
+Trying to merge: ON-TABLE_B3(12)/(ON_B2_B3(-8), ) with var = -8
+Trying to make merge with (0) = (ON_B2_B3(-8), ON_B3_B2(-6), )
+accepting -8 tagged 
+accepting -6 tagged 
+Merging with (0) = (-8,-6,)
+Trying to merge: ON-TABLE_B3(12)/(ON_B3_B2(-6), ) with var = -6
+Trying to merge: ON-TABLE_B3(12)/(CLEAR_B3(3), ) with var = 3
+Trying to make merge with (1) = (CLEAR_B3(3), CLEAR_B2(4), )
+accepting 3 tagged 
+accepting 4 tagged 
+Merging with (1) = (3,4,)
+Trying to make merge with (2) = (CLEAR_B3(3), ON_B2_B3(8), )
+accepting 3 tagged 
+accepting 8 tagged 
+Merging with (2) = (3,8,)
+Trying to merge: ON-TABLE_B3(12)/(CLEAR_B2(4), ) with var = 4
+Trying to make merge with (3) = (CLEAR_B2(4), ON_B3_B2(6), )
+accepting 4 tagged 
+accepting 6 tagged 
+Merging with (3) = (4,6,)
+Trying to merge: ON-TABLE_B3(12)/(ON_B3_B2(6), ) with var = 6
+Trying to make merge with (4) = (ON_B3_B2(6), ON-TABLE_B3(12), )
+accepting 6 tagged 
+accepting 12 tagged 
+Merging with (4) = (6,12,)
+Trying to merge: ON-TABLE_B3(12)/(ON_B2_B3(8), ) with var = 8
+Trying to make merge with (5) = (ON_B2_B3(8), ON-TABLE_B2(13), )
+accepting 8 tagged 
+accepting 13 tagged 
+Merging with (5) = (8,13,)
+Trying to merge: ON-TABLE_B3(12)/(ON-TABLE_B3(12), ) with var = 12
+Trying to make merge with (6) = (ON-TABLE_B3(12), ON-TABLE_B2(13), )
+accepting 12 tagged 
+accepting 13 tagged 
+Merging with (6) = (12,13,)
+Trying to merge: ON-TABLE_B3(12)/(ON-TABLE_B2(13), ) with var = 13
+Trying to merge: ON-TABLE_B2(13)/(ON_B2_B3(-8), ) with var = -8
+Trying to make merge with (0) = (ON_B2_B3(-8), ON_B3_B2(-6), )
+accepting -8 tagged 
+accepting -6 tagged 
+Merging with (0) = (-8,-6,)
+Trying to merge: ON-TABLE_B2(13)/(ON_B3_B2(-6), ) with var = -6
+Trying to merge: ON-TABLE_B2(13)/(CLEAR_B3(3), ) with var = 3
+Trying to make merge with (1) = (CLEAR_B3(3), CLEAR_B2(4), )
+accepting 3 tagged 
+accepting 4 tagged 
+Merging with (1) = (3,4,)
+Trying to make merge with (2) = (CLEAR_B3(3), ON_B2_B3(8), )
+accepting 3 tagged 
+accepting 8 tagged 
+Merging with (2) = (3,8,)
+Trying to merge: ON-TABLE_B2(13)/(CLEAR_B2(4), ) with var = 4
+Trying to make merge with (3) = (CLEAR_B2(4), ON_B3_B2(6), )
+accepting 4 tagged 
+accepting 6 tagged 
+Merging with (3) = (4,6,)
+Trying to merge: ON-TABLE_B2(13)/(ON_B3_B2(6), ) with var = 6
+Trying to make merge with (4) = (ON_B3_B2(6), ON-TABLE_B3(12), )
+accepting 6 tagged 
+accepting 12 tagged 
+Merging with (4) = (6,12,)
+Trying to merge: ON-TABLE_B2(13)/(ON_B2_B3(8), ) with var = 8
+Trying to make merge with (5) = (ON_B2_B3(8), ON-TABLE_B2(13), )
+accepting 8 tagged 
+accepting 13 tagged 
+Merging with (5) = (8,13,)
+Trying to merge: ON-TABLE_B2(13)/(ON-TABLE_B3(12), ) with var = 12
+Trying to make merge with (6) = (ON-TABLE_B3(12), ON-TABLE_B2(13), )
+accepting 12 tagged 
+accepting 13 tagged 
+Merging with (6) = (12,13,)
+Trying to merge: ON-TABLE_B2(13)/(ON-TABLE_B2(13), ) with var = 13
+Trying to merge: ON-TABLE_B1(14)/(ON_B2_B3(-8), ) with var = -8
+Trying to make merge with (0) = (ON_B2_B3(-8), ON_B3_B2(-6), )
+accepting -8 tagged 
+accepting -6 tagged 
+Merging with (0) = (-8,-6,)
+Trying to merge: ON-TABLE_B1(14)/(ON_B3_B2(-6), ) with var = -6
+Trying to merge: ON-TABLE_B1(14)/(CLEAR_B3(3), ) with var = 3
+Trying to make merge with (1) = (CLEAR_B3(3), CLEAR_B2(4), )
+accepting 3 tagged 
+accepting 4 tagged 
+Merging with (1) = (3,4,)
+Trying to make merge with (2) = (CLEAR_B3(3), ON_B2_B3(8), )
+accepting 3 tagged 
+accepting 8 tagged 
+Merging with (2) = (3,8,)
+Trying to merge: ON-TABLE_B1(14)/(CLEAR_B2(4), ) with var = 4
+Trying to make merge with (3) = (CLEAR_B2(4), ON_B3_B2(6), )
+accepting 4 tagged 
+accepting 6 tagged 
+Merging with (3) = (4,6,)
+Trying to merge: ON-TABLE_B1(14)/(ON_B3_B2(6), ) with var = 6
+Trying to make merge with (4) = (ON_B3_B2(6), ON-TABLE_B3(12), )
+accepting 6 tagged 
+accepting 12 tagged 
+Merging with (4) = (6,12,)
+Trying to merge: ON-TABLE_B1(14)/(ON_B2_B3(8), ) with var = 8
+Trying to make merge with (5) = (ON_B2_B3(8), ON-TABLE_B2(13), )
+accepting 8 tagged 
+accepting 13 tagged 
+Merging with (5) = (8,13,)
+Trying to merge: ON-TABLE_B1(14)/(ON-TABLE_B3(12), ) with var = 12
+Trying to make merge with (6) = (ON-TABLE_B3(12), ON-TABLE_B2(13), )
+accepting 12 tagged 
+accepting 13 tagged 
+Merging with (6) = (12,13,)
+Trying to merge: ON-TABLE_B1(14)/(ON-TABLE_B2(13), ) with var = 13
+REGISTER: make_k_t0c() took 0.030894 secs
+REGISTER (entering): make_merge_act()
+REGISTER: make_merge_act() took 0 secs
+REGISTER (entering): make_merge_act()
+REGISTER: make_merge_act() took 0 secs
+REGISTER (entering): make_merge_act()
+REGISTER: make_merge_act() took 0.000409997 secs
+REGISTER (entering): clean_actions()
+fixpoint 0
+fixpoint 0
+fixpoint 1
+Number of Atoms to del: 0
+REGISTER: clean_actions() took 0.005007 secs
+IMPLIES_WITH_INIT: From lit ON_B2_B3(-8) obtaing the following lits:ON-TABLE_B3(-12) ON_B1_B2(-11) ON_B1_B3(-10) ON_B2_B1(-9) ON_B2_B3(-8) ON_B3_B1(-7) CLEAR_B2(-4) FALSE(-1) FOO(2) CLEAR_B3(3) CLEAR_B1(5) ON_B3_B2(6) ON-TABLE_B2(13) ON-TABLE_B1(14) 
+IMPLIES_WITH_INIT: From lit ON_B3_B2(-6) obtaing the following lits:ON-TABLE_B2(-13) ON_B1_B2(-11) ON_B1_B3(-10) ON_B2_B1(-9) ON_B3_B1(-7) ON_B3_B2(-6) CLEAR_B3(-3) FALSE(-1) FOO(2) CLEAR_B2(4) CLEAR_B1(5) ON_B2_B3(8) ON-TABLE_B3(12) ON-TABLE_B1(14) 
+IMPLIES_WITH_INIT: From lit CLEAR_B3(3) obtaing the following lits:ON-TABLE_B3(-12) ON_B1_B2(-11) ON_B1_B3(-10) ON_B2_B1(-9) ON_B2_B3(-8) ON_B3_B1(-7) CLEAR_B2(-4) FALSE(-1) FOO(2) CLEAR_B3(3) CLEAR_B1(5) ON_B3_B2(6) ON-TABLE_B2(13) ON-TABLE_B1(14) 
+IMPLIES_WITH_INIT: From lit CLEAR_B2(4) obtaing the following lits:ON-TABLE_B2(-13) ON_B1_B2(-11) ON_B1_B3(-10) ON_B2_B1(-9) ON_B3_B1(-7) ON_B3_B2(-6) CLEAR_B3(-3) FALSE(-1) FOO(2) CLEAR_B2(4) CLEAR_B1(5) ON_B2_B3(8) ON-TABLE_B3(12) ON-TABLE_B1(14) 
+IMPLIES_WITH_INIT: From lit ON_B3_B2(6) obtaing the following lits:ON-TABLE_B3(-12) ON_B1_B2(-11) ON_B1_B3(-10) ON_B2_B1(-9) ON_B2_B3(-8) ON_B3_B1(-7) CLEAR_B2(-4) FALSE(-1) FOO(2) CLEAR_B3(3) CLEAR_B1(5) ON_B3_B2(6) ON-TABLE_B2(13) ON-TABLE_B1(14) 
+IMPLIES_WITH_INIT: From lit ON_B2_B3(8) obtaing the following lits:ON-TABLE_B2(-13) ON_B1_B2(-11) ON_B1_B3(-10) ON_B2_B1(-9) ON_B3_B1(-7) ON_B3_B2(-6) CLEAR_B3(-3) FALSE(-1) FOO(2) CLEAR_B2(4) CLEAR_B1(5) ON_B2_B3(8) ON-TABLE_B3(12) ON-TABLE_B1(14) 
+IMPLIES_WITH_INIT: From lit ON-TABLE_B3(12) obtaing the following lits:ON-TABLE_B2(-13) ON_B1_B2(-11) ON_B1_B3(-10) ON_B2_B1(-9) ON_B3_B1(-7) ON_B3_B2(-6) CLEAR_B3(-3) FALSE(-1) FOO(2) CLEAR_B2(4) CLEAR_B1(5) ON_B2_B3(8) ON-TABLE_B3(12) ON-TABLE_B1(14) 
+IMPLIES_WITH_INIT: From lit ON-TABLE_B2(13) obtaing the following lits:ON-TABLE_B3(-12) ON_B1_B2(-11) ON_B1_B3(-10) ON_B2_B1(-9) ON_B2_B3(-8) ON_B3_B1(-7) CLEAR_B2(-4) FALSE(-1) FOO(2) CLEAR_B3(3) CLEAR_B1(5) ON_B3_B2(6) ON-TABLE_B2(13) ON-TABLE_B1(14) 
+REGISTER (entering): printNewPDDL()
+Generating PDDL
+printing 468 actions
+printing 12 observations
+STAT old-Actions: 18
+STAT old-Atoms: 17
+STAT old-cond-effects: 19
+STAT old-condicionales: 60
+STAT KP-NActions: 468
+STAT KP-NAtoms: 440
+STAT KP-deleted-NAtoms: 0
+STAT KP-Nconds-effects-and-notused: 1655
+STAT KP-Ncond-effects: 1655
+STAT KP-Numero_lit_en_efectos_condicionales: 7539
+REGISTER: printNewPDDL() took 0.115504 secs
+REGISTER: main() took 0.19772 secs
+
+ff: parsing domain file
+domain 'BLOCKSWORLD' defined
+ ... done.
+ff: parsing problem file
+problem 'BW-RAND-3' defined
+ ... done.
+
+STATS quality of hash table of predicates: max_bucket_size = 5, ave_bucket_size = 0.569571
+ff-cond: no description file
+fact T0_FAIL_K0 tagged as 329  
+
+
+Skipping All searches!
+Starting K procedure.
+
+          h:                        10            [1]
+          h:                        10  , h_  :    9       
+::::::::::::::::::::::::current action:::SENSEON_B3_B2
+
+Branching....
+	Popping state:2
+          h:                         2            [1]
+          h:                         2  , h_  :    1       
+::::::::::::::::::::::::current action:::MOVE-B-TO-B_B2_B3_B1
+
+          h:                         1            [1]
+          h:                         1  , h_  :    0       
+::::::::::::::::::::::::current action:::MOVE-T-TO-B_B3_B2
+
+Goal reached in a branch 
+
+          h:                         2            [1][2]
+          h:                         2  , h_  :    1       
+::::::::::::::::::::::::current action:::MOVE-TO-T_B3_B2
+
+::::::::::::::::::::::::current action:::MOVE-T-TO-B_B2_B1
+
+          h:                         1            [1]
+          h:                         1  , h_  :    0       
+::::::::::::::::::::::::current action:::MOVE-T-TO-B_B3_B2
+
+Goal reached in a branch 
+root
+
+
+ff: found legal plan as follows
+
+Total branches in this plan: 2 
+Longest branch: 4
+Total spurious branches in this plan: 0
+Total number of actions: 6
+
+
+time spent:    0.08 seconds instantiating 480 easy, 0 hard action templates
+               0.00 seconds reachability analysis, yielding 503 facts and 480 actions
+               0.02 seconds creating final representation with 497 relevant facts
+               0.02 seconds building connectivity graph
+               0.00 seconds computing closures operations
+               0.02 seconds searching, evaluating 20 states, expanding 9 nodes, to a max depth of 2
+               0.14 seconds total time
+
+
+

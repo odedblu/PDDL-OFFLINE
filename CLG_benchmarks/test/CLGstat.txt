@@ -1,0 +1,22 @@
+
+Goals 
+#2 :  , (open d1)
+4 :  , (not (open d1))
+#
+Union Goals Budget
+#2 :  , (open d1)
+4 :  , (not (open d1))
+4 : 
+#
+
+
+
+Goals Fault Tolerance
+#1 : 0 :  , (open d1)
+1 : 1 :  , (not (open d1))
+#
+
+
+
+Goals Fault Tolerance
+#

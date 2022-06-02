@@ -1,0 +1,11 @@
+Budget 4: Equal Trees
+Budget 5: Equal Trees
+Budget 6: Equal Trees
+Budget 7: Tree CPOR is better than Tree CLG
+Budget 8: Tree CPOR is better than Tree CLG
+Budget 9: Tree CPOR is better than Tree CLG
+Budget 10: Tree CPOR is better than Tree CLG
+Budget 11: Tree CPOR is better than Tree CLG
+Budget 12: Tree CPOR is better than Tree CLG
+Budget 13: Tree CPOR is better than Tree CLG
+Budget 14: Equal Trees

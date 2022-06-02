@@ -1,0 +1,31 @@
+
+Goals Budget
+#25 :  , (at_rock_sample waypoint4) , (not (at_rock_sample waypoint5)) , (at_soil_sample waypoint4) , (not (at_soil_sample waypoint5)) , (visible_from objective1 waypoint4) , (not (visible_from objective1 waypoint0)) , (not (visible_from objective1 waypoint5))
+80 :  , (not (at_rock_sample waypoint4)) , (at_rock_sample waypoint5) , (at_soil_sample waypoint4) , (not (at_soil_sample waypoint5)) , (visible_from objective1 waypoint4) , (not (visible_from objective1 waypoint0)) , (not (visible_from objective1 waypoint5))
+80 :  , (at_rock_sample waypoint4) , (not (at_rock_sample waypoint5)) , (not (at_soil_sample waypoint4)) , (at_soil_sample waypoint5) , (visible_from objective1 waypoint4) , (not (visible_from objective1 waypoint0)) , (not (visible_from objective1 waypoint5))
+80 :  , (not (at_rock_sample waypoint4)) , (at_rock_sample waypoint5) , (not (at_soil_sample waypoint4)) , (at_soil_sample waypoint5) , (visible_from objective1 waypoint4) , (not (visible_from objective1 waypoint0)) , (not (visible_from objective1 waypoint5))
+24 :  , (visible_from objective1 waypoint5) , (not (visible_from objective1 waypoint0)) , (at_rock_sample waypoint4) , (not (at_rock_sample waypoint5)) , (at_soil_sample waypoint4) , (not (at_soil_sample waypoint5)) , (not (visible_from objective1 waypoint4))
+30 :  , (not (visible_from objective1 waypoint5)) , (visible_from objective1 waypoint0) , (at_rock_sample waypoint4) , (not (at_rock_sample waypoint5)) , (at_soil_sample waypoint4) , (not (at_soil_sample waypoint5)) , (not (visible_from objective1 waypoint4))
+37 :  , (visible_from objective1 waypoint5) , (not (visible_from objective1 waypoint0)) , (not (at_rock_sample waypoint4)) , (at_rock_sample waypoint5) , (at_soil_sample waypoint4) , (not (at_soil_sample waypoint5)) , (not (visible_from objective1 waypoint4))
+40 :  , (not (visible_from objective1 waypoint5)) , (visible_from objective1 waypoint0) , (not (at_rock_sample waypoint4)) , (at_rock_sample waypoint5) , (at_soil_sample waypoint4) , (not (at_soil_sample waypoint5)) , (not (visible_from objective1 waypoint4))
+37 :  , (visible_from objective1 waypoint5) , (not (visible_from objective1 waypoint0)) , (at_rock_sample waypoint4) , (not (at_rock_sample waypoint5)) , (not (at_soil_sample waypoint4)) , (at_soil_sample waypoint5) , (not (visible_from objective1 waypoint4))
+40 :  , (not (visible_from objective1 waypoint5)) , (visible_from objective1 waypoint0) , (at_rock_sample waypoint4) , (not (at_rock_sample waypoint5)) , (not (at_soil_sample waypoint4)) , (at_soil_sample waypoint5) , (not (visible_from objective1 waypoint4))
+83 :  , (visible_from objective1 waypoint5) , (not (visible_from objective1 waypoint0)) , (not (at_rock_sample waypoint4)) , (at_rock_sample waypoint5) , (not (at_soil_sample waypoint4)) , (at_soil_sample waypoint5) , (not (visible_from objective1 waypoint4))
+40 :  , (not (visible_from objective1 waypoint5)) , (visible_from objective1 waypoint0) , (not (at_rock_sample waypoint4)) , (at_rock_sample waypoint5) , (not (at_soil_sample waypoint4)) , (at_soil_sample waypoint5) , (not (visible_from objective1 waypoint4))
+#
+
+
+
+Goals Fault Tolerance
+#3 :  , (at_rock_sample waypoint4) , (not (at_rock_sample waypoint5)) , (at_soil_sample waypoint4) , (not (at_soil_sample waypoint5)) , (visible_from objective1 waypoint4) , (not (visible_from objective1 waypoint0)) , (not (visible_from objective1 waypoint5))
+2 :  , (not (at_rock_sample waypoint4)) , (at_rock_sample waypoint5) , (at_soil_sample waypoint4) , (not (at_soil_sample waypoint5)) , (visible_from objective1 waypoint4) , (not (visible_from objective1 waypoint0)) , (not (visible_from objective1 waypoint5))
+2 :  , (at_rock_sample waypoint4) , (not (at_rock_sample waypoint5)) , (not (at_soil_sample waypoint4)) , (at_soil_sample waypoint5) , (visible_from objective1 waypoint4) , (not (visible_from objective1 waypoint0)) , (not (visible_from objective1 waypoint5))
+1 :  , (not (at_rock_sample waypoint4)) , (at_rock_sample waypoint5) , (not (at_soil_sample waypoint4)) , (at_soil_sample waypoint5) , (visible_from objective1 waypoint4) , (not (visible_from objective1 waypoint0)) , (not (visible_from objective1 waypoint5))
+3 :  , (visible_from objective1 waypoint5) , (not (visible_from objective1 waypoint0)) , (at_rock_sample waypoint4) , (not (at_rock_sample waypoint5)) , (at_soil_sample waypoint4) , (not (at_soil_sample waypoint5)) , (not (visible_from objective1 waypoint4))
+2 :  , (not (visible_from objective1 waypoint5)) , (visible_from objective1 waypoint0) , (at_rock_sample waypoint4) , (not (at_rock_sample waypoint5)) , (at_soil_sample waypoint4) , (not (at_soil_sample waypoint5)) , (not (visible_from objective1 waypoint4))
+2 :  , (visible_from objective1 waypoint5) , (not (visible_from objective1 waypoint0)) , (not (at_rock_sample waypoint4)) , (at_rock_sample waypoint5) , (at_soil_sample waypoint4) , (not (at_soil_sample waypoint5)) , (not (visible_from objective1 waypoint4))
+1 :  , (not (visible_from objective1 waypoint5)) , (visible_from objective1 waypoint0) , (not (at_rock_sample waypoint4)) , (at_rock_sample waypoint5) , (at_soil_sample waypoint4) , (not (at_soil_sample waypoint5)) , (not (visible_from objective1 waypoint4))
+2 :  , (visible_from objective1 waypoint5) , (not (visible_from objective1 waypoint0)) , (at_rock_sample waypoint4) , (not (at_rock_sample waypoint5)) , (not (at_soil_sample waypoint4)) , (at_soil_sample waypoint5) , (not (visible_from objective1 waypoint4))
+1 :  , (not (visible_from objective1 waypoint5)) , (visible_from objective1 waypoint0) , (at_rock_sample waypoint4) , (not (at_rock_sample waypoint5)) , (not (at_soil_sample waypoint4)) , (at_soil_sample waypoint5) , (not (visible_from objective1 waypoint4))
+1 :  , (visible_from objective1 waypoint5) , (not (visible_from objective1 waypoint0)) , (not (at_rock_sample waypoint4)) , (at_rock_sample waypoint5) , (not (at_soil_sample waypoint4)) , (at_soil_sample waypoint5) , (not (visible_from objective1 waypoint4))
+0 :  , (not (visible_from objective1 waypoint5)) , (visible_from objective1 waypoint0) , (not (at_rock_sample waypoint4)) , (at_rock_sample waypoint5) , (not (at_soil_sample waypoint4)) , (at_soil_sample waypoint5) , (not (visible_from objective1 waypoint4))

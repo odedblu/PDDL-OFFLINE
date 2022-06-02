@@ -1,0 +1,135 @@
+10066) cd_down_root_sub1
+10067) cd_down_sub1_sub11
+10068) ls_sub11_my_file
+	10069) cd_down_sub11_sub111
+	10070) ls_sub111_my_file
+		10071) cd_up_sub111_sub11
+		10072) cd_down_sub11_sub112
+		10073) ls_sub112_my_file
+			10074) cd_up_sub112_sub11
+			10075) cd_up_sub11_sub1
+			10076) cd_down_sub1_sub12
+			10077) ls_sub12_my_file
+				10078) cd_down_sub12_sub121
+				10079) ls_sub121_my_file
+					10080) cd_up_sub121_sub12
+					10081) cd_down_sub12_sub122
+					10082) ls_sub122_my_file
+						10083) cd_up_sub122_sub12
+						10084) cd_up_sub12_sub1
+						10085) cd_up_sub1_root
+						10086) cd_down_root_sub2
+						10087) cd_down_sub2_sub21
+						10088) ls_sub21_my_file
+							10089) cd_down_sub21_sub211
+							10090) ls_sub211_my_file
+								10091) cd_up_sub211_sub21
+								10092) cd_down_sub21_sub212
+								10093) ls_sub212_my_file
+									10094) cd_up_sub212_sub21
+									10095) cd_up_sub21_sub2
+									10096) cd_down_sub2_sub22
+									10097) ls_sub22_my_file
+										10098) cd_down_sub22_sub221
+										10099) ls_sub221_my_file
+											10100) cd_up_sub221_sub22
+											10101) cd_down_sub22_sub222
+											10102) mv_my_file_sub222_root
+
+											10105) mv_my_file_sub221_root
+
+										10108) mv_my_file_sub22_root
+
+									10111) mv_my_file_sub212_root
+
+								10114) mv_my_file_sub211_root
+
+							10117) mv_my_file_sub21_root
+
+						10120) mv_my_file_sub122_root
+
+					10123) mv_my_file_sub121_root
+
+				10126) mv_my_file_sub12_root
+
+			10129) mv_my_file_sub112_root
+
+		10132) mv_my_file_sub111_root
+
+	10135) mv_my_file_sub11_root
+
+Goals 
+#4 :  , (file_in_dir my_file sub11) , (not (file_in_dir my_file sub21)) , (not (file_in_dir my_file sub12)) , (not (file_in_dir my_file sub22)) , (not (file_in_dir my_file sub111)) , (not (file_in_dir my_file sub211)) , (not (file_in_dir my_file sub121)) , (not (file_in_dir my_file sub221)) , (not (file_in_dir my_file sub112)) , (not (file_in_dir my_file sub212)) , (not (file_in_dir my_file sub122)) , (not (file_in_dir my_file sub222))
+6 :  , (file_in_dir my_file sub111) , (not (file_in_dir my_file sub21)) , (not (file_in_dir my_file sub12)) , (not (file_in_dir my_file sub22)) , (not (file_in_dir my_file sub211)) , (not (file_in_dir my_file sub121)) , (not (file_in_dir my_file sub221)) , (not (file_in_dir my_file sub112)) , (not (file_in_dir my_file sub212)) , (not (file_in_dir my_file sub122)) , (not (file_in_dir my_file sub222)) , (not (file_in_dir my_file sub11))
+9 :  , (file_in_dir my_file sub112) , (not (file_in_dir my_file sub21)) , (not (file_in_dir my_file sub12)) , (not (file_in_dir my_file sub22)) , (not (file_in_dir my_file sub211)) , (not (file_in_dir my_file sub121)) , (not (file_in_dir my_file sub221)) , (not (file_in_dir my_file sub212)) , (not (file_in_dir my_file sub122)) , (not (file_in_dir my_file sub222)) , (not (file_in_dir my_file sub111)) , (not (file_in_dir my_file sub11))
+13 :  , (file_in_dir my_file sub12) , (not (file_in_dir my_file sub21)) , (not (file_in_dir my_file sub22)) , (not (file_in_dir my_file sub211)) , (not (file_in_dir my_file sub121)) , (not (file_in_dir my_file sub221)) , (not (file_in_dir my_file sub212)) , (not (file_in_dir my_file sub122)) , (not (file_in_dir my_file sub222)) , (not (file_in_dir my_file sub112)) , (not (file_in_dir my_file sub111)) , (not (file_in_dir my_file sub11))
+15 :  , (file_in_dir my_file sub121) , (not (file_in_dir my_file sub21)) , (not (file_in_dir my_file sub22)) , (not (file_in_dir my_file sub211)) , (not (file_in_dir my_file sub221)) , (not (file_in_dir my_file sub212)) , (not (file_in_dir my_file sub122)) , (not (file_in_dir my_file sub222)) , (not (file_in_dir my_file sub12)) , (not (file_in_dir my_file sub112)) , (not (file_in_dir my_file sub111)) , (not (file_in_dir my_file sub11))
+18 :  , (file_in_dir my_file sub122) , (not (file_in_dir my_file sub21)) , (not (file_in_dir my_file sub22)) , (not (file_in_dir my_file sub211)) , (not (file_in_dir my_file sub221)) , (not (file_in_dir my_file sub212)) , (not (file_in_dir my_file sub222)) , (not (file_in_dir my_file sub121)) , (not (file_in_dir my_file sub12)) , (not (file_in_dir my_file sub112)) , (not (file_in_dir my_file sub111)) , (not (file_in_dir my_file sub11))
+24 :  , (file_in_dir my_file sub21) , (not (file_in_dir my_file sub22)) , (not (file_in_dir my_file sub211)) , (not (file_in_dir my_file sub221)) , (not (file_in_dir my_file sub212)) , (not (file_in_dir my_file sub222)) , (not (file_in_dir my_file sub122)) , (not (file_in_dir my_file sub121)) , (not (file_in_dir my_file sub12)) , (not (file_in_dir my_file sub112)) , (not (file_in_dir my_file sub111)) , (not (file_in_dir my_file sub11))
+26 :  , (file_in_dir my_file sub211) , (not (file_in_dir my_file sub22)) , (not (file_in_dir my_file sub221)) , (not (file_in_dir my_file sub212)) , (not (file_in_dir my_file sub222)) , (not (file_in_dir my_file sub21)) , (not (file_in_dir my_file sub122)) , (not (file_in_dir my_file sub121)) , (not (file_in_dir my_file sub12)) , (not (file_in_dir my_file sub112)) , (not (file_in_dir my_file sub111)) , (not (file_in_dir my_file sub11))
+29 :  , (file_in_dir my_file sub212) , (not (file_in_dir my_file sub22)) , (not (file_in_dir my_file sub221)) , (not (file_in_dir my_file sub222)) , (not (file_in_dir my_file sub211)) , (not (file_in_dir my_file sub21)) , (not (file_in_dir my_file sub122)) , (not (file_in_dir my_file sub121)) , (not (file_in_dir my_file sub12)) , (not (file_in_dir my_file sub112)) , (not (file_in_dir my_file sub111)) , (not (file_in_dir my_file sub11))
+33 :  , (file_in_dir my_file sub22) , (not (file_in_dir my_file sub221)) , (not (file_in_dir my_file sub222)) , (not (file_in_dir my_file sub212)) , (not (file_in_dir my_file sub211)) , (not (file_in_dir my_file sub21)) , (not (file_in_dir my_file sub122)) , (not (file_in_dir my_file sub121)) , (not (file_in_dir my_file sub12)) , (not (file_in_dir my_file sub112)) , (not (file_in_dir my_file sub111)) , (not (file_in_dir my_file sub11))
+35 :  , (file_in_dir my_file sub221) , (not (file_in_dir my_file sub222)) , (not (file_in_dir my_file sub22)) , (not (file_in_dir my_file sub212)) , (not (file_in_dir my_file sub211)) , (not (file_in_dir my_file sub21)) , (not (file_in_dir my_file sub122)) , (not (file_in_dir my_file sub121)) , (not (file_in_dir my_file sub12)) , (not (file_in_dir my_file sub112)) , (not (file_in_dir my_file sub111)) , (not (file_in_dir my_file sub11))
+37 :  , (not (file_in_dir my_file sub221)) , (file_in_dir my_file sub222) , (not (file_in_dir my_file sub22)) , (not (file_in_dir my_file sub212)) , (not (file_in_dir my_file sub211)) , (not (file_in_dir my_file sub21)) , (not (file_in_dir my_file sub122)) , (not (file_in_dir my_file sub121)) , (not (file_in_dir my_file sub12)) , (not (file_in_dir my_file sub112)) , (not (file_in_dir my_file sub111)) , (not (file_in_dir my_file sub11))
+#
+Union Goals Budget
+#4 :  , (file_in_dir my_file sub11) , (not (file_in_dir my_file sub21)) , (not (file_in_dir my_file sub12)) , (not (file_in_dir my_file sub22)) , (not (file_in_dir my_file sub111)) , (not (file_in_dir my_file sub211)) , (not (file_in_dir my_file sub121)) , (not (file_in_dir my_file sub221)) , (not (file_in_dir my_file sub112)) , (not (file_in_dir my_file sub212)) , (not (file_in_dir my_file sub122)) , (not (file_in_dir my_file sub222))
+6 :  , (file_in_dir my_file sub111) , (not (file_in_dir my_file sub21)) , (not (file_in_dir my_file sub12)) , (not (file_in_dir my_file sub22)) , (not (file_in_dir my_file sub211)) , (not (file_in_dir my_file sub121)) , (not (file_in_dir my_file sub221)) , (not (file_in_dir my_file sub112)) , (not (file_in_dir my_file sub212)) , (not (file_in_dir my_file sub122)) , (not (file_in_dir my_file sub222)) , (not (file_in_dir my_file sub11))
+9 :  , (file_in_dir my_file sub112) , (not (file_in_dir my_file sub21)) , (not (file_in_dir my_file sub12)) , (not (file_in_dir my_file sub22)) , (not (file_in_dir my_file sub211)) , (not (file_in_dir my_file sub121)) , (not (file_in_dir my_file sub221)) , (not (file_in_dir my_file sub212)) , (not (file_in_dir my_file sub122)) , (not (file_in_dir my_file sub222)) , (not (file_in_dir my_file sub111)) , (not (file_in_dir my_file sub11))
+13 :  , (file_in_dir my_file sub12) , (not (file_in_dir my_file sub21)) , (not (file_in_dir my_file sub22)) , (not (file_in_dir my_file sub211)) , (not (file_in_dir my_file sub121)) , (not (file_in_dir my_file sub221)) , (not (file_in_dir my_file sub212)) , (not (file_in_dir my_file sub122)) , (not (file_in_dir my_file sub222)) , (not (file_in_dir my_file sub112)) , (not (file_in_dir my_file sub111)) , (not (file_in_dir my_file sub11))
+15 :  , (file_in_dir my_file sub121) , (not (file_in_dir my_file sub21)) , (not (file_in_dir my_file sub22)) , (not (file_in_dir my_file sub211)) , (not (file_in_dir my_file sub221)) , (not (file_in_dir my_file sub212)) , (not (file_in_dir my_file sub122)) , (not (file_in_dir my_file sub222)) , (not (file_in_dir my_file sub12)) , (not (file_in_dir my_file sub112)) , (not (file_in_dir my_file sub111)) , (not (file_in_dir my_file sub11))
+18 :  , (file_in_dir my_file sub122) , (not (file_in_dir my_file sub21)) , (not (file_in_dir my_file sub22)) , (not (file_in_dir my_file sub211)) , (not (file_in_dir my_file sub221)) , (not (file_in_dir my_file sub212)) , (not (file_in_dir my_file sub222)) , (not (file_in_dir my_file sub121)) , (not (file_in_dir my_file sub12)) , (not (file_in_dir my_file sub112)) , (not (file_in_dir my_file sub111)) , (not (file_in_dir my_file sub11))
+24 :  , (file_in_dir my_file sub21) , (not (file_in_dir my_file sub22)) , (not (file_in_dir my_file sub211)) , (not (file_in_dir my_file sub221)) , (not (file_in_dir my_file sub212)) , (not (file_in_dir my_file sub222)) , (not (file_in_dir my_file sub122)) , (not (file_in_dir my_file sub121)) , (not (file_in_dir my_file sub12)) , (not (file_in_dir my_file sub112)) , (not (file_in_dir my_file sub111)) , (not (file_in_dir my_file sub11))
+26 :  , (file_in_dir my_file sub211) , (not (file_in_dir my_file sub22)) , (not (file_in_dir my_file sub221)) , (not (file_in_dir my_file sub212)) , (not (file_in_dir my_file sub222)) , (not (file_in_dir my_file sub21)) , (not (file_in_dir my_file sub122)) , (not (file_in_dir my_file sub121)) , (not (file_in_dir my_file sub12)) , (not (file_in_dir my_file sub112)) , (not (file_in_dir my_file sub111)) , (not (file_in_dir my_file sub11))
+29 :  , (file_in_dir my_file sub212) , (not (file_in_dir my_file sub22)) , (not (file_in_dir my_file sub221)) , (not (file_in_dir my_file sub222)) , (not (file_in_dir my_file sub211)) , (not (file_in_dir my_file sub21)) , (not (file_in_dir my_file sub122)) , (not (file_in_dir my_file sub121)) , (not (file_in_dir my_file sub12)) , (not (file_in_dir my_file sub112)) , (not (file_in_dir my_file sub111)) , (not (file_in_dir my_file sub11))
+33 :  , (file_in_dir my_file sub22) , (not (file_in_dir my_file sub221)) , (not (file_in_dir my_file sub222)) , (not (file_in_dir my_file sub212)) , (not (file_in_dir my_file sub211)) , (not (file_in_dir my_file sub21)) , (not (file_in_dir my_file sub122)) , (not (file_in_dir my_file sub121)) , (not (file_in_dir my_file sub12)) , (not (file_in_dir my_file sub112)) , (not (file_in_dir my_file sub111)) , (not (file_in_dir my_file sub11))
+35 :  , (file_in_dir my_file sub221) , (not (file_in_dir my_file sub222)) , (not (file_in_dir my_file sub22)) , (not (file_in_dir my_file sub212)) , (not (file_in_dir my_file sub211)) , (not (file_in_dir my_file sub21)) , (not (file_in_dir my_file sub122)) , (not (file_in_dir my_file sub121)) , (not (file_in_dir my_file sub12)) , (not (file_in_dir my_file sub112)) , (not (file_in_dir my_file sub111)) , (not (file_in_dir my_file sub11))
+37 :  , (not (file_in_dir my_file sub221)) , (file_in_dir my_file sub222) , (not (file_in_dir my_file sub22)) , (not (file_in_dir my_file sub212)) , (not (file_in_dir my_file sub211)) , (not (file_in_dir my_file sub21)) , (not (file_in_dir my_file sub122)) , (not (file_in_dir my_file sub121)) , (not (file_in_dir my_file sub12)) , (not (file_in_dir my_file sub112)) , (not (file_in_dir my_file sub111)) , (not (file_in_dir my_file sub11))
+37 :  , (not (file_in_dir my_file sub22)) , (not (file_in_dir my_file sub212)) , (not (file_in_dir my_file sub211)) , (not (file_in_dir my_file sub21)) , (not (file_in_dir my_file sub122)) , (not (file_in_dir my_file sub121)) , (not (file_in_dir my_file sub12)) , (not (file_in_dir my_file sub112)) , (not (file_in_dir my_file sub111)) , (not (file_in_dir my_file sub11))
+37 :  , (not (file_in_dir my_file sub212)) , (not (file_in_dir my_file sub211)) , (not (file_in_dir my_file sub21)) , (not (file_in_dir my_file sub122)) , (not (file_in_dir my_file sub121)) , (not (file_in_dir my_file sub12)) , (not (file_in_dir my_file sub112)) , (not (file_in_dir my_file sub111)) , (not (file_in_dir my_file sub11))
+37 :  , (not (file_in_dir my_file sub211)) , (not (file_in_dir my_file sub21)) , (not (file_in_dir my_file sub122)) , (not (file_in_dir my_file sub121)) , (not (file_in_dir my_file sub12)) , (not (file_in_dir my_file sub112)) , (not (file_in_dir my_file sub111)) , (not (file_in_dir my_file sub11))
+37 :  , (not (file_in_dir my_file sub21)) , (not (file_in_dir my_file sub122)) , (not (file_in_dir my_file sub121)) , (not (file_in_dir my_file sub12)) , (not (file_in_dir my_file sub112)) , (not (file_in_dir my_file sub111)) , (not (file_in_dir my_file sub11))
+37 :  , (not (file_in_dir my_file sub122)) , (not (file_in_dir my_file sub121)) , (not (file_in_dir my_file sub12)) , (not (file_in_dir my_file sub112)) , (not (file_in_dir my_file sub111)) , (not (file_in_dir my_file sub11))
+37 :  , (not (file_in_dir my_file sub121)) , (not (file_in_dir my_file sub12)) , (not (file_in_dir my_file sub112)) , (not (file_in_dir my_file sub111)) , (not (file_in_dir my_file sub11))
+37 :  , (not (file_in_dir my_file sub12)) , (not (file_in_dir my_file sub112)) , (not (file_in_dir my_file sub111)) , (not (file_in_dir my_file sub11))
+37 :  , (not (file_in_dir my_file sub112)) , (not (file_in_dir my_file sub111)) , (not (file_in_dir my_file sub11))
+37 :  , (not (file_in_dir my_file sub111)) , (not (file_in_dir my_file sub11))
+37 :  , (not (file_in_dir my_file sub11))
+37 : 
+#
+
+
+
+Goals Fault Tolerance
+#1 : 0 :  , (file_in_dir my_file sub11) , (not (file_in_dir my_file sub21)) , (not (file_in_dir my_file sub12)) , (not (file_in_dir my_file sub22)) , (not (file_in_dir my_file sub111)) , (not (file_in_dir my_file sub211)) , (not (file_in_dir my_file sub121)) , (not (file_in_dir my_file sub221)) , (not (file_in_dir my_file sub112)) , (not (file_in_dir my_file sub212)) , (not (file_in_dir my_file sub122)) , (not (file_in_dir my_file sub222))
+2 : 1 :  , (file_in_dir my_file sub111) , (not (file_in_dir my_file sub21)) , (not (file_in_dir my_file sub12)) , (not (file_in_dir my_file sub22)) , (not (file_in_dir my_file sub211)) , (not (file_in_dir my_file sub121)) , (not (file_in_dir my_file sub221)) , (not (file_in_dir my_file sub112)) , (not (file_in_dir my_file sub212)) , (not (file_in_dir my_file sub122)) , (not (file_in_dir my_file sub222)) , (not (file_in_dir my_file sub11))
+3 : 2 :  , (file_in_dir my_file sub112) , (not (file_in_dir my_file sub21)) , (not (file_in_dir my_file sub12)) , (not (file_in_dir my_file sub22)) , (not (file_in_dir my_file sub211)) , (not (file_in_dir my_file sub121)) , (not (file_in_dir my_file sub221)) , (not (file_in_dir my_file sub212)) , (not (file_in_dir my_file sub122)) , (not (file_in_dir my_file sub222)) , (not (file_in_dir my_file sub111)) , (not (file_in_dir my_file sub11))
+4 : 3 :  , (file_in_dir my_file sub12) , (not (file_in_dir my_file sub21)) , (not (file_in_dir my_file sub22)) , (not (file_in_dir my_file sub211)) , (not (file_in_dir my_file sub121)) , (not (file_in_dir my_file sub221)) , (not (file_in_dir my_file sub212)) , (not (file_in_dir my_file sub122)) , (not (file_in_dir my_file sub222)) , (not (file_in_dir my_file sub112)) , (not (file_in_dir my_file sub111)) , (not (file_in_dir my_file sub11))
+5 : 4 :  , (file_in_dir my_file sub121) , (not (file_in_dir my_file sub21)) , (not (file_in_dir my_file sub22)) , (not (file_in_dir my_file sub211)) , (not (file_in_dir my_file sub221)) , (not (file_in_dir my_file sub212)) , (not (file_in_dir my_file sub122)) , (not (file_in_dir my_file sub222)) , (not (file_in_dir my_file sub12)) , (not (file_in_dir my_file sub112)) , (not (file_in_dir my_file sub111)) , (not (file_in_dir my_file sub11))
+6 : 5 :  , (file_in_dir my_file sub122) , (not (file_in_dir my_file sub21)) , (not (file_in_dir my_file sub22)) , (not (file_in_dir my_file sub211)) , (not (file_in_dir my_file sub221)) , (not (file_in_dir my_file sub212)) , (not (file_in_dir my_file sub222)) , (not (file_in_dir my_file sub121)) , (not (file_in_dir my_file sub12)) , (not (file_in_dir my_file sub112)) , (not (file_in_dir my_file sub111)) , (not (file_in_dir my_file sub11))
+7 : 6 :  , (file_in_dir my_file sub21) , (not (file_in_dir my_file sub22)) , (not (file_in_dir my_file sub211)) , (not (file_in_dir my_file sub221)) , (not (file_in_dir my_file sub212)) , (not (file_in_dir my_file sub222)) , (not (file_in_dir my_file sub122)) , (not (file_in_dir my_file sub121)) , (not (file_in_dir my_file sub12)) , (not (file_in_dir my_file sub112)) , (not (file_in_dir my_file sub111)) , (not (file_in_dir my_file sub11))
+8 : 7 :  , (file_in_dir my_file sub211) , (not (file_in_dir my_file sub22)) , (not (file_in_dir my_file sub221)) , (not (file_in_dir my_file sub212)) , (not (file_in_dir my_file sub222)) , (not (file_in_dir my_file sub21)) , (not (file_in_dir my_file sub122)) , (not (file_in_dir my_file sub121)) , (not (file_in_dir my_file sub12)) , (not (file_in_dir my_file sub112)) , (not (file_in_dir my_file sub111)) , (not (file_in_dir my_file sub11))
+9 : 8 :  , (file_in_dir my_file sub212) , (not (file_in_dir my_file sub22)) , (not (file_in_dir my_file sub221)) , (not (file_in_dir my_file sub222)) , (not (file_in_dir my_file sub211)) , (not (file_in_dir my_file sub21)) , (not (file_in_dir my_file sub122)) , (not (file_in_dir my_file sub121)) , (not (file_in_dir my_file sub12)) , (not (file_in_dir my_file sub112)) , (not (file_in_dir my_file sub111)) , (not (file_in_dir my_file sub11))
+10 : 9 :  , (file_in_dir my_file sub22) , (not (file_in_dir my_file sub221)) , (not (file_in_dir my_file sub222)) , (not (file_in_dir my_file sub212)) , (not (file_in_dir my_file sub211)) , (not (file_in_dir my_file sub21)) , (not (file_in_dir my_file sub122)) , (not (file_in_dir my_file sub121)) , (not (file_in_dir my_file sub12)) , (not (file_in_dir my_file sub112)) , (not (file_in_dir my_file sub111)) , (not (file_in_dir my_file sub11))
+11 : 10 :  , (file_in_dir my_file sub221) , (not (file_in_dir my_file sub222)) , (not (file_in_dir my_file sub22)) , (not (file_in_dir my_file sub212)) , (not (file_in_dir my_file sub211)) , (not (file_in_dir my_file sub21)) , (not (file_in_dir my_file sub122)) , (not (file_in_dir my_file sub121)) , (not (file_in_dir my_file sub12)) , (not (file_in_dir my_file sub112)) , (not (file_in_dir my_file sub111)) , (not (file_in_dir my_file sub11))
+11 : 11 :  , (not (file_in_dir my_file sub221)) , (file_in_dir my_file sub222) , (not (file_in_dir my_file sub22)) , (not (file_in_dir my_file sub212)) , (not (file_in_dir my_file sub211)) , (not (file_in_dir my_file sub21)) , (not (file_in_dir my_file sub122)) , (not (file_in_dir my_file sub121)) , (not (file_in_dir my_file sub12)) , (not (file_in_dir my_file sub112)) , (not (file_in_dir my_file sub111)) , (not (file_in_dir my_file sub11))
+#
+
+
+
+Goals Fault Tolerance
+##
+
+
+
+Simplicitity
+#nodes: 48
+branch: 11
+originalSize: 183
+compreesedSize: 110
+compreesedRatio: 1.66363636363636#
+
+
+
+Simplicitity
+#

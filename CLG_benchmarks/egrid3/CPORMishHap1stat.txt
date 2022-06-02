@@ -1,0 +1,149 @@
+11276) move_f1-2f_f2-2f
+11277) pickup_f2-2f_key1-0
+11278) move_f2-2f_f2-1f
+11279) move_f2-1f_f1-1f
+11280) observe-lock-shape_f1-1f_f1-0f_shape1
+	11281) observe-lock-shape_f1-1f_f0-1f_shape0
+		11282) unlock_f1-1f_f0-1f_key1-0_shape1
+		11283) putdown_f1-1f_key1-0
+		11284) move_f1-1f_f1-2f
+		11285) pickup_f1-2f_key0-0
+		11286) move_f1-2f_f1-1f
+		11287) move_f1-1f_f0-1f
+		11288) observe-lock-shape_f0-1f_f0-0f_shape0
+			11289) putdown_f0-1f_key0-0
+			11290) pickup_f0-1f_key1-1
+			11291) unlock_f0-1f_f0-0f_key1-1_shape1
+			11292) putdown_f0-1f_key1-1
+			11293) pickup_f0-1f_key0-0
+			11294) move_f0-1f_f0-0f
+			11295) putdown_f0-0f_key0-0
+
+			11298) unlock_f0-1f_f0-0f_key0-0_shape0
+			11299) move_f0-1f_f0-0f
+			11300) putdown_f0-0f_key0-0
+
+		11303) putdown_f1-1f_key1-0
+		11304) move_f1-1f_f1-2f
+		11305) pickup_f1-2f_key0-0
+		11306) move_f1-2f_f1-1f
+		11307) unlock_f1-1f_f0-1f_key0-0_shape0
+		11308) move_f1-1f_f0-1f
+		11309) observe-lock-shape_f0-1f_f0-0f_shape0
+			11310) putdown_f0-1f_key0-0
+			11311) pickup_f0-1f_key1-1
+			11312) unlock_f0-1f_f0-0f_key1-1_shape1
+			11313) putdown_f0-1f_key1-1
+			11314) pickup_f0-1f_key0-0
+			11315) move_f0-1f_f0-0f
+			11316) putdown_f0-0f_key0-0
+
+			11319) unlock_f0-1f_f0-0f_key0-0_shape0
+			11320) move_f0-1f_f0-0f
+			11321) putdown_f0-0f_key0-0
+
+	11324) observe-lock-shape_f1-1f_f0-1f_shape0
+		11325) unlock_f1-1f_f1-0f_key1-0_shape1
+		11326) putdown_f1-1f_key1-0
+		11327) move_f1-1f_f1-2f
+		11328) pickup_f1-2f_key0-0
+		11329) move_f1-2f_f1-1f
+		11330) move_f1-1f_f1-0f
+		11331) observe-lock-shape_f1-0f_f0-0f_shape0
+			11332) move_f1-0f_f1-1f
+			11333) putdown_f1-1f_key0-0
+			11334) pickup_f1-1f_key1-0
+			11335) move_f1-1f_f1-0f
+			11336) unlock_f1-0f_f0-0f_key1-0_shape1
+			11337) move_f1-0f_f1-1f
+			11338) putdown_f1-1f_key1-0
+			11339) pickup_f1-1f_key0-0
+			11340) move_f1-1f_f1-0f
+			11341) move_f1-0f_f0-0f
+			11342) putdown_f0-0f_key0-0
+
+			11345) unlock_f1-0f_f0-0f_key0-0_shape0
+			11346) move_f1-0f_f0-0f
+			11347) putdown_f0-0f_key0-0
+
+		11350) unlock_f1-1f_f1-0f_key1-0_shape1
+		11351) putdown_f1-1f_key1-0
+		11352) move_f1-1f_f1-2f
+		11353) pickup_f1-2f_key0-0
+		11354) move_f1-2f_f1-1f
+		11355) move_f1-1f_f1-0f
+		11356) observe-lock-shape_f1-0f_f0-0f_shape0
+			11357) move_f1-0f_f1-1f
+			11358) unlock_f1-1f_f0-1f_key0-0_shape0
+			11359) move_f1-1f_f0-1f
+			11360) putdown_f0-1f_key0-0
+			11361) pickup_f0-1f_key1-1
+			11362) unlock_f0-1f_f0-0f_key1-1_shape1
+			11363) putdown_f0-1f_key1-1
+			11364) pickup_f0-1f_key0-0
+			11365) move_f0-1f_f0-0f
+			11366) putdown_f0-0f_key0-0
+
+			11369) unlock_f1-0f_f0-0f_key0-0_shape0
+			11370) move_f1-0f_f0-0f
+			11371) putdown_f0-0f_key0-0
+
+Goals 
+#16 :  , (lock-shape f0-0f shape0) , (not (lock-shape f0-0f shape1)) , (lock-shape f0-1f shape0) , (not (lock-shape f0-1f shape1)) , (lock-shape f1-0f shape1) , (not (lock-shape f1-0f shape0))
+23 :  , (not (lock-shape f0-0f shape0)) , (lock-shape f0-0f shape1) , (lock-shape f0-1f shape0) , (not (lock-shape f0-1f shape1)) , (lock-shape f1-0f shape1) , (not (lock-shape f1-0f shape0))
+16 :  , (lock-shape f0-0f shape0) , (not (lock-shape f0-0f shape1)) , (not (lock-shape f0-1f shape0)) , (lock-shape f0-1f shape1) , (lock-shape f1-0f shape1) , (not (lock-shape f1-0f shape0))
+24 :  , (not (lock-shape f0-0f shape0)) , (lock-shape f0-0f shape1) , (not (lock-shape f0-1f shape0)) , (lock-shape f0-1f shape1) , (lock-shape f1-0f shape1) , (not (lock-shape f1-0f shape0))
+16 :  , (lock-shape f0-0f shape0) , (not (lock-shape f0-0f shape1)) , (lock-shape f0-1f shape0) , (not (lock-shape f0-1f shape1)) , (not (lock-shape f1-0f shape1)) , (lock-shape f1-0f shape0)
+20 :  , (not (lock-shape f0-0f shape0)) , (lock-shape f0-0f shape1) , (lock-shape f0-1f shape0) , (not (lock-shape f0-1f shape1)) , (not (lock-shape f1-0f shape1)) , (lock-shape f1-0f shape0)
+16 :  , (lock-shape f0-0f shape0) , (not (lock-shape f0-0f shape1)) , (not (lock-shape f0-1f shape0)) , (lock-shape f0-1f shape1) , (not (lock-shape f1-0f shape1)) , (lock-shape f1-0f shape0)
+20 :  , (not (lock-shape f0-0f shape0)) , (lock-shape f0-0f shape1) , (not (lock-shape f0-1f shape0)) , (lock-shape f0-1f shape1) , (not (lock-shape f1-0f shape1)) , (lock-shape f1-0f shape0)
+#
+Union Goals Budget
+#16 :  , (lock-shape f0-0f shape0) , (not (lock-shape f0-0f shape1)) , (lock-shape f0-1f shape0) , (not (lock-shape f0-1f shape1)) , (lock-shape f1-0f shape1) , (not (lock-shape f1-0f shape0))
+23 :  , (not (lock-shape f0-0f shape0)) , (lock-shape f0-0f shape1) , (lock-shape f0-1f shape0) , (not (lock-shape f0-1f shape1)) , (lock-shape f1-0f shape1) , (not (lock-shape f1-0f shape0))
+23 :  , (lock-shape f0-1f shape0) , (not (lock-shape f0-1f shape1)) , (lock-shape f1-0f shape1) , (not (lock-shape f1-0f shape0))
+16 :  , (lock-shape f0-0f shape0) , (not (lock-shape f0-0f shape1)) , (not (lock-shape f0-1f shape0)) , (lock-shape f0-1f shape1) , (lock-shape f1-0f shape1) , (not (lock-shape f1-0f shape0))
+24 :  , (not (lock-shape f0-0f shape0)) , (lock-shape f0-0f shape1) , (not (lock-shape f0-1f shape0)) , (lock-shape f0-1f shape1) , (lock-shape f1-0f shape1) , (not (lock-shape f1-0f shape0))
+24 :  , (not (lock-shape f0-1f shape0)) , (lock-shape f0-1f shape1) , (lock-shape f1-0f shape1) , (not (lock-shape f1-0f shape0))
+24 : 
+16 :  , (lock-shape f0-0f shape0) , (not (lock-shape f0-0f shape1)) , (lock-shape f0-1f shape0) , (not (lock-shape f0-1f shape1)) , (not (lock-shape f1-0f shape1)) , (lock-shape f1-0f shape0)
+20 :  , (not (lock-shape f0-0f shape0)) , (lock-shape f0-0f shape1) , (lock-shape f0-1f shape0) , (not (lock-shape f0-1f shape1)) , (not (lock-shape f1-0f shape1)) , (lock-shape f1-0f shape0)
+20 :  , (lock-shape f0-1f shape0) , (not (lock-shape f0-1f shape1)) , (not (lock-shape f1-0f shape1)) , (lock-shape f1-0f shape0)
+16 :  , (lock-shape f0-0f shape0) , (not (lock-shape f0-0f shape1)) , (not (lock-shape f0-1f shape0)) , (lock-shape f0-1f shape1) , (not (lock-shape f1-0f shape1)) , (lock-shape f1-0f shape0)
+20 :  , (not (lock-shape f0-0f shape0)) , (lock-shape f0-0f shape1) , (not (lock-shape f0-1f shape0)) , (lock-shape f0-1f shape1) , (not (lock-shape f1-0f shape1)) , (lock-shape f1-0f shape0)
+20 :  , (not (lock-shape f0-1f shape0)) , (lock-shape f0-1f shape1) , (not (lock-shape f1-0f shape1)) , (lock-shape f1-0f shape0)
+20 : 
+24 : 
+#
+
+
+
+Goals Fault Tolerance
+#3 : 0 :  , (lock-shape f0-0f shape0) , (not (lock-shape f0-0f shape1)) , (lock-shape f0-1f shape0) , (not (lock-shape f0-1f shape1)) , (lock-shape f1-0f shape1) , (not (lock-shape f1-0f shape0))
+3 : 1 :  , (not (lock-shape f0-0f shape0)) , (lock-shape f0-0f shape1) , (lock-shape f0-1f shape0) , (not (lock-shape f0-1f shape1)) , (lock-shape f1-0f shape1) , (not (lock-shape f1-0f shape0))
+3 : 1 :  , (lock-shape f0-0f shape0) , (not (lock-shape f0-0f shape1)) , (not (lock-shape f0-1f shape0)) , (lock-shape f0-1f shape1) , (lock-shape f1-0f shape1) , (not (lock-shape f1-0f shape0))
+3 : 2 :  , (not (lock-shape f0-0f shape0)) , (lock-shape f0-0f shape1) , (not (lock-shape f0-1f shape0)) , (lock-shape f0-1f shape1) , (lock-shape f1-0f shape1) , (not (lock-shape f1-0f shape0))
+3 : 1 :  , (lock-shape f0-0f shape0) , (not (lock-shape f0-0f shape1)) , (lock-shape f0-1f shape0) , (not (lock-shape f0-1f shape1)) , (not (lock-shape f1-0f shape1)) , (lock-shape f1-0f shape0)
+3 : 2 :  , (not (lock-shape f0-0f shape0)) , (lock-shape f0-0f shape1) , (lock-shape f0-1f shape0) , (not (lock-shape f0-1f shape1)) , (not (lock-shape f1-0f shape1)) , (lock-shape f1-0f shape0)
+3 : 2 :  , (lock-shape f0-0f shape0) , (not (lock-shape f0-0f shape1)) , (not (lock-shape f0-1f shape0)) , (lock-shape f0-1f shape1) , (not (lock-shape f1-0f shape1)) , (lock-shape f1-0f shape0)
+3 : 3 :  , (not (lock-shape f0-0f shape0)) , (lock-shape f0-0f shape1) , (not (lock-shape f0-1f shape0)) , (lock-shape f0-1f shape1) , (not (lock-shape f1-0f shape1)) , (lock-shape f1-0f shape0)
+#
+
+
+
+Goals Fault Tolerance
+##
+
+
+
+Simplicitity
+#nodes: 82
+branch: 7
+originalSize: 311
+compreesedSize: 115
+compreesedRatio: 2.70434782608696#
+
+
+
+Simplicitity
+#

@@ -1,0 +1,71 @@
+
+ff: parsing domain file
+domain 'BTCS' defined
+ ... done.
+ff: parsing problem file
+problem 'BTCS-10-1' defined
+ ... done.
+
+
+lowest leaf goal distance/initial state f value seen:     20/    20; maxdepth reached:    0
+                                                           1/    20                       1
+                                                           1/    20                       2
+                                                           1/    20                       3
+                                                           1/    20                       4
+                                                           1/    20                       5
+                                                           1/    20                       6
+                                                           1/    20                       7
+                                                           1/    20                       8
+                                                           1/    20                       9
+
+ff: found plan as follows
+-------------------------------------------------
+  0||0 --- SENSEP P9 B0 --- TRUESON: 1||0 --- FALSESON: 1||1
+-------------------------------------------------
+  1||0 --- DUNK P9 B0 T0 --- SON: 2||-1
+  1||1 --- SENSEP P8 B0 --- TRUESON: 2||0 --- FALSESON: 2||1
+-------------------------------------------------
+  2||0 --- DUNK P8 B0 T0 --- SON: 3||-1
+  2||1 --- SENSEP P7 B0 --- TRUESON: 3||0 --- FALSESON: 3||1
+-------------------------------------------------
+  3||0 --- DUNK P7 B0 T0 --- SON: 4||-1
+  3||1 --- SENSEP P6 B0 --- TRUESON: 4||0 --- FALSESON: 4||1
+-------------------------------------------------
+  4||0 --- DUNK P6 B0 T0 --- SON: 5||-1
+  4||1 --- SENSEP P5 B0 --- TRUESON: 5||0 --- FALSESON: 5||1
+-------------------------------------------------
+  5||0 --- DUNK P5 B0 T0 --- SON: 6||-1
+  5||1 --- SENSEP P4 B0 --- TRUESON: 6||0 --- FALSESON: 6||1
+-------------------------------------------------
+  6||0 --- DUNK P4 B0 T0 --- SON: 7||-1
+  6||1 --- SENSEP P3 B0 --- TRUESON: 7||0 --- FALSESON: 7||1
+-------------------------------------------------
+  7||0 --- DUNK P3 B0 T0 --- SON: 8||-1
+  7||1 --- SENSEP P2 B0 --- TRUESON: 8||0 --- FALSESON: 8||1
+-------------------------------------------------
+  8||0 --- DUNK P2 B0 T0 --- SON: 9||-1
+  8||1 --- SENSEP P1 B0 --- TRUESON: 9||0 --- FALSESON: 9||1
+-------------------------------------------------
+  9||0 --- DUNK P1 B0 T0 --- SON: 10||-1
+  9||1 --- DUNK P0 B0 T0 --- SON: 10||-1
+-------------------------------------------------
+
+tree layers: 10
+total nr. actions: 19
+
+statistics:    0.00 seconds instantiating 21 easy, 0 hard action templates
+               0.00 seconds reachability analysis, yielding 23 facts and 21 actions
+               0.00 seconds creating final representation with 23 relevant facts (23 max U, 12 CNF max U)
+               final representation has 20 unknown facts and 8 observation actions    
+               0.00 seconds building connectivity graph
+               0.00 seconds (   0.00 pure) evaluating 127 states
+               0.00 seconds in DP for 1528 RPG ini state implication checks
+               0.00 seconds in DP for 0 RPlan extract ini state implication checks (0 lits removed)
+               0.01 seconds generating,    0.00 seconds encoding 137 state transition base CNFs
+               0.00 seconds in DP solving 990 state transition CNFs
+               0.00 seconds checking for self-contradictions, including 0 DP calls
+               0.00 seconds checking for stagnating states (1 hits), including 20 DP calls
+               2538 total DP calls, 12086 total UP calls,    0.00 sec membership
+              0.00 seconds for remaining searching duties
+               0.01 seconds total time (+    0.05 secs for CNF memory allocation)
+

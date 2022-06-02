@@ -1,0 +1,2700 @@
+REGISTER (entering): main()
+cf2cs v 2.1 -- A compiler for contingent planning problems into classical models.
+CALL: ./cf2cs -sn -t0 -cond -cod -cmr -csl -ckit -ckinl -cminl -cmit -cdisjk0 -cdisjm0 -mac -cfc -fp benchmarks/bts30/d.pddl benchmarks/bts30/p.pddl
+-sn
+-t0
+-cond
+-cod
+-cmr
+-csl
+-ckit
+-ckinl
+-cminl
+-cmit
+-cdisjk0
+-cdisjm0
+-mac
+-cfc
+-fp
+benchmarks/bts30/d.pddl
+benchmarks/bts30/p.pddl
+Using only initial disjunctions for merge
+Clousuring for obtaining possible tags
+Full cancellation: Translating deletes properly. Maybe complete if '-s0' or '-f' option was used
+Propagating ramifications in effects
+Using action compilation + merge
+Merging only goals and preconditions
+REGISTER (entering): parse()
+predicates size = 1 for name = IN
+predicates size = 2 for name = DEFUSED
+Parsed: benchmarks/bts30/d.pddl
+Parsed: benchmarks/bts30/p.pddl
+REGISTER: parse() took 0.000541 secs
+REGISTER (entering): initialize()
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+REGISTER (entering): computeReachableAtoms()
+schema 0 de 2
+schema 1 de 2
+schema 0 de 2
+schema 1 de 2
+REGISTER: computeReachableAtoms() took 0.000839 secs
+GENERAL: number of atoms = 31
+GENERAL: number of reachable atoms = 31
+GENERAL: number of grounded operators = 60
+REGISTER: initialize() took 0.001013 secs
+REGISTER (entering): initInstanceDB()
+Unknown atoms: 30
+Simply unknown atoms: 0
+Known atoms: 37
+True literals (after unit resolution): 1
+Oneof (0): 30
+Or (0): 2
+Or (1): 2
+Or (2): 2
+Or (3): 2
+Or (4): 2
+Or (5): 2
+Or (6): 2
+Or (7): 2
+Or (8): 2
+Or (9): 2
+Or (10): 2
+Or (11): 2
+Or (12): 2
+Or (13): 2
+Or (14): 2
+Or (15): 2
+Or (16): 2
+Or (17): 2
+Or (18): 2
+Or (19): 2
+Or (20): 2
+Or (21): 2
+Or (22): 2
+Or (23): 2
+Or (24): 2
+Or (25): 2
+Or (26): 2
+Or (27): 2
+Or (28): 2
+Or (29): 2
+Or (30): 2
+Or (31): 2
+Or (32): 2
+Or (33): 2
+Or (34): 2
+Or (35): 2
+Or (36): 2
+Or (37): 2
+Or (38): 2
+Or (39): 2
+Or (40): 2
+Or (41): 2
+Or (42): 2
+Or (43): 2
+Or (44): 2
+Or (45): 2
+Or (46): 2
+Or (47): 2
+Or (48): 2
+Or (49): 2
+Or (50): 2
+Or (51): 2
+Or (52): 2
+Or (53): 2
+Or (54): 2
+Or (55): 2
+Or (56): 2
+Or (57): 2
+Or (58): 2
+Or (59): 2
+Or (60): 2
+Or (61): 2
+Or (62): 2
+Or (63): 2
+Or (64): 2
+Or (65): 2
+Or (66): 2
+Or (67): 2
+Or (68): 2
+Or (69): 2
+Or (70): 2
+Or (71): 2
+Or (72): 2
+Or (73): 2
+Or (74): 2
+Or (75): 2
+Or (76): 2
+Or (77): 2
+Or (78): 2
+Or (79): 2
+Or (80): 2
+Or (81): 2
+Or (82): 2
+Or (83): 2
+Or (84): 2
+Or (85): 2
+Or (86): 2
+Or (87): 2
+Or (88): 2
+Or (89): 2
+Or (90): 2
+Or (91): 2
+Or (92): 2
+Or (93): 2
+Or (94): 2
+Or (95): 2
+Or (96): 2
+Or (97): 2
+Or (98): 2
+Or (99): 2
+Or (100): 2
+Or (101): 2
+Or (102): 2
+Or (103): 2
+Or (104): 2
+Or (105): 2
+Or (106): 2
+Or (107): 2
+Or (108): 2
+Or (109): 2
+Or (110): 2
+Or (111): 2
+Or (112): 2
+Or (113): 2
+Or (114): 2
+Or (115): 2
+Or (116): 2
+Or (117): 2
+Or (118): 2
+Or (119): 2
+Or (120): 2
+Or (121): 2
+Or (122): 2
+Or (123): 2
+Or (124): 2
+Or (125): 2
+Or (126): 2
+Or (127): 2
+Or (128): 2
+Or (129): 2
+Or (130): 2
+Or (131): 2
+Or (132): 2
+Or (133): 2
+Or (134): 2
+Or (135): 2
+Or (136): 2
+Or (137): 2
+Or (138): 2
+Or (139): 2
+Or (140): 2
+Or (141): 2
+Or (142): 2
+Or (143): 2
+Or (144): 2
+Or (145): 2
+Or (146): 2
+Or (147): 2
+Or (148): 2
+Or (149): 2
+Or (150): 2
+Or (151): 2
+Or (152): 2
+Or (153): 2
+Or (154): 2
+Or (155): 2
+Or (156): 2
+Or (157): 2
+Or (158): 2
+Or (159): 2
+Or (160): 2
+Or (161): 2
+Or (162): 2
+Or (163): 2
+Or (164): 2
+Or (165): 2
+Or (166): 2
+Or (167): 2
+Or (168): 2
+Or (169): 2
+Or (170): 2
+Or (171): 2
+Or (172): 2
+Or (173): 2
+Or (174): 2
+Or (175): 2
+Or (176): 2
+Or (177): 2
+Or (178): 2
+Or (179): 2
+Or (180): 2
+Or (181): 2
+Or (182): 2
+Or (183): 2
+Or (184): 2
+Or (185): 2
+Or (186): 2
+Or (187): 2
+Or (188): 2
+Or (189): 2
+Or (190): 2
+Or (191): 2
+Or (192): 2
+Or (193): 2
+Or (194): 2
+Or (195): 2
+Or (196): 2
+Or (197): 2
+Or (198): 2
+Or (199): 2
+Or (200): 2
+Or (201): 2
+Or (202): 2
+Or (203): 2
+Or (204): 2
+Or (205): 2
+Or (206): 2
+Or (207): 2
+Or (208): 2
+Or (209): 2
+Or (210): 2
+Or (211): 2
+Or (212): 2
+Or (213): 2
+Or (214): 2
+Or (215): 2
+Or (216): 2
+Or (217): 2
+Or (218): 2
+Or (219): 2
+Or (220): 2
+Or (221): 2
+Or (222): 2
+Or (223): 2
+Or (224): 2
+Or (225): 2
+Or (226): 2
+Or (227): 2
+Or (228): 2
+Or (229): 2
+Or (230): 2
+Or (231): 2
+Or (232): 2
+Or (233): 2
+Or (234): 2
+Or (235): 2
+Or (236): 2
+Or (237): 2
+Or (238): 2
+Or (239): 2
+Or (240): 2
+Or (241): 2
+Or (242): 2
+Or (243): 2
+Or (244): 2
+Or (245): 2
+Or (246): 2
+Or (247): 2
+Or (248): 2
+Or (249): 2
+Or (250): 2
+Or (251): 2
+Or (252): 2
+Or (253): 2
+Or (254): 2
+Or (255): 2
+Or (256): 2
+Or (257): 2
+Or (258): 2
+Or (259): 2
+Or (260): 2
+Or (261): 2
+Or (262): 2
+Or (263): 2
+Or (264): 2
+Or (265): 2
+Or (266): 2
+Or (267): 2
+Or (268): 2
+Or (269): 2
+Or (270): 2
+Or (271): 2
+Or (272): 2
+Or (273): 2
+Or (274): 2
+Or (275): 2
+Or (276): 2
+Or (277): 2
+Or (278): 2
+Or (279): 2
+Or (280): 2
+Or (281): 2
+Or (282): 2
+Or (283): 2
+Or (284): 2
+Or (285): 2
+Or (286): 2
+Or (287): 2
+Or (288): 2
+Or (289): 2
+Or (290): 2
+Or (291): 2
+Or (292): 2
+Or (293): 2
+Or (294): 2
+Or (295): 2
+Or (296): 2
+Or (297): 2
+Or (298): 2
+Or (299): 2
+Or (300): 2
+Or (301): 2
+Or (302): 2
+Or (303): 2
+Or (304): 2
+Or (305): 2
+Or (306): 2
+Or (307): 2
+Or (308): 2
+Or (309): 2
+Or (310): 2
+Or (311): 2
+Or (312): 2
+Or (313): 2
+Or (314): 2
+Or (315): 2
+Or (316): 2
+Or (317): 2
+Or (318): 2
+Or (319): 2
+Or (320): 2
+Or (321): 2
+Or (322): 2
+Or (323): 2
+Or (324): 2
+Or (325): 2
+Or (326): 2
+Or (327): 2
+Or (328): 2
+Or (329): 2
+Or (330): 2
+Or (331): 2
+Or (332): 2
+Or (333): 2
+Or (334): 2
+Or (335): 2
+Or (336): 2
+Or (337): 2
+Or (338): 2
+Or (339): 2
+Or (340): 2
+Or (341): 2
+Or (342): 2
+Or (343): 2
+Or (344): 2
+Or (345): 2
+Or (346): 2
+Or (347): 2
+Or (348): 2
+Or (349): 2
+Or (350): 2
+Or (351): 2
+Or (352): 2
+Or (353): 2
+Or (354): 2
+Or (355): 2
+Or (356): 2
+Or (357): 2
+Or (358): 2
+Or (359): 2
+Or (360): 2
+Or (361): 2
+Or (362): 2
+Or (363): 2
+Or (364): 2
+Or (365): 2
+Or (366): 2
+Or (367): 2
+Or (368): 2
+Or (369): 2
+Or (370): 2
+Or (371): 2
+Or (372): 2
+Or (373): 2
+Or (374): 2
+Or (375): 2
+Or (376): 2
+Or (377): 2
+Or (378): 2
+Or (379): 2
+Or (380): 2
+Or (381): 2
+Or (382): 2
+Or (383): 2
+Or (384): 2
+Or (385): 2
+Or (386): 2
+Or (387): 2
+Or (388): 2
+Or (389): 2
+Or (390): 2
+Or (391): 2
+Or (392): 2
+Or (393): 2
+Or (394): 2
+Or (395): 2
+Or (396): 2
+Or (397): 2
+Or (398): 2
+Or (399): 2
+Or (400): 2
+Or (401): 2
+Or (402): 2
+Or (403): 2
+Or (404): 2
+Or (405): 2
+Or (406): 2
+Or (407): 2
+Or (408): 2
+Or (409): 2
+Or (410): 2
+Or (411): 2
+Or (412): 2
+Or (413): 2
+Or (414): 2
+Or (415): 2
+Or (416): 2
+Or (417): 2
+Or (418): 2
+Or (419): 2
+Or (420): 2
+Or (421): 2
+Or (422): 2
+Or (423): 2
+Or (424): 2
+Or (425): 2
+Or (426): 2
+Or (427): 2
+Or (428): 2
+Or (429): 2
+Or (430): 2
+Or (431): 2
+Or (432): 2
+Or (433): 2
+Or (434): 2
+Or (435): 30
+
+---- end uncertainty: 
+Reachable 31
+GENERAL: number of actions = 30
+REGISTER: initInstanceDB() took 0.007055 secs
+Generating PDDL for contingent heuristic
+Objects: B0 P0 P1 P10 P11 P12 P13 P14 P15 P16 P17 P18 P19 P2 P20 P21 P22 P23 P24 P25 P26 P27 P28 P29 P3 P4 P5 P6 P7 P8 P9 T0 
+REGISTER (entering): finishInstanceDB(void)
+Unknown relevant = 30
+Unknown = 30
+HLP static oneof during collectin 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 
+Static oneof atoms: 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 
+REGISTER: finishInstanceDB(void) took 0.000222 secs
+Static atoms (35): FALSE FOO IN_P9_B0 IN_P8_B0 IN_P7_B0 IN_P6_B0 IN_P5_B0 IN_P4_B0 IN_P3_B0 IN_P29_B0 IN_P28_B0 IN_P27_B0 IN_P26_B0 IN_P25_B0 IN_P24_B0 IN_P23_B0 IN_P22_B0 IN_P21_B0 IN_P20_B0 IN_P2_B0 IN_P19_B0 IN_P18_B0 IN_P17_B0 IN_P16_B0 IN_P15_B0 IN_P14_B0 IN_P13_B0 IN_P12_B0 IN_P11_B0 IN_P10_B0 IN_P1_B0 IN_P0_B0 ACTIVE ALL_END CONT_DUMMY 
+REGISTER (entering): calc_tags()
+REGISTER (entering): calc_relevant()
+starting iterations...
+REGISTER: calc_relevant() took 0.000238 secs
+REGISTER (entering): calc_relevant_obs()
+REGISTER: calc_relevant_obs() took 0.003555 secs
+Accepted disjunction 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 
+STAT Max-width: 1
+Final disjunctions: 1
+4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 
+==== End of Final disjunctions: 
+All tags: IN_P9_B0(4) IN_P8_B0(5) IN_P7_B0(6) IN_P6_B0(7) IN_P5_B0(8) IN_P4_B0(9) IN_P3_B0(10) IN_P29_B0(11) IN_P28_B0(12) IN_P27_B0(13) IN_P26_B0(14) IN_P25_B0(15) IN_P24_B0(16) IN_P23_B0(17) IN_P22_B0(18) IN_P21_B0(19) IN_P20_B0(20) IN_P2_B0(21) IN_P19_B0(22) IN_P18_B0(23) IN_P17_B0(24) IN_P16_B0(25) IN_P15_B0(26) IN_P14_B0(27) IN_P13_B0(28) IN_P12_B0(29) IN_P11_B0(30) IN_P10_B0(31) IN_P1_B0(32) IN_P0_B0(33) 
+For lit DEFUSED_B0(3) relevants tags are: IN_P9_B0(4) IN_P8_B0(5) IN_P7_B0(6) IN_P6_B0(7) IN_P5_B0(8) IN_P4_B0(9) IN_P3_B0(10) IN_P29_B0(11) IN_P28_B0(12) IN_P27_B0(13) IN_P26_B0(14) IN_P25_B0(15) IN_P24_B0(16) IN_P23_B0(17) IN_P22_B0(18) IN_P21_B0(19) IN_P20_B0(20) IN_P2_B0(21) IN_P19_B0(22) IN_P18_B0(23) IN_P17_B0(24) IN_P16_B0(25) IN_P15_B0(26) IN_P14_B0(27) IN_P13_B0(28) IN_P12_B0(29) IN_P11_B0(30) IN_P10_B0(31) IN_P1_B0(32) IN_P0_B0(33) 
+IMPLIES_WITH_INIT: From lit IN_P9_B0(4) obtaing the following lits:IN_P0_B0(-33) IN_P1_B0(-32) IN_P10_B0(-31) IN_P11_B0(-30) IN_P12_B0(-29) IN_P13_B0(-28) IN_P14_B0(-27) IN_P15_B0(-26) IN_P16_B0(-25) IN_P17_B0(-24) IN_P18_B0(-23) IN_P19_B0(-22) IN_P2_B0(-21) IN_P20_B0(-20) IN_P21_B0(-19) IN_P22_B0(-18) IN_P23_B0(-17) IN_P24_B0(-16) IN_P25_B0(-15) IN_P26_B0(-14) IN_P27_B0(-13) IN_P28_B0(-12) IN_P29_B0(-11) IN_P3_B0(-10) IN_P4_B0(-9) IN_P5_B0(-8) IN_P6_B0(-7) IN_P7_B0(-6) IN_P8_B0(-5) IN_P9_B0(4) 
+IMPLIES_WITH_INIT: From lit IN_P8_B0(5) obtaing the following lits:IN_P0_B0(-33) IN_P1_B0(-32) IN_P10_B0(-31) IN_P11_B0(-30) IN_P12_B0(-29) IN_P13_B0(-28) IN_P14_B0(-27) IN_P15_B0(-26) IN_P16_B0(-25) IN_P17_B0(-24) IN_P18_B0(-23) IN_P19_B0(-22) IN_P2_B0(-21) IN_P20_B0(-20) IN_P21_B0(-19) IN_P22_B0(-18) IN_P23_B0(-17) IN_P24_B0(-16) IN_P25_B0(-15) IN_P26_B0(-14) IN_P27_B0(-13) IN_P28_B0(-12) IN_P29_B0(-11) IN_P3_B0(-10) IN_P4_B0(-9) IN_P5_B0(-8) IN_P6_B0(-7) IN_P7_B0(-6) IN_P9_B0(-4) IN_P8_B0(5) 
+IMPLIES_WITH_INIT: From lit IN_P7_B0(6) obtaing the following lits:IN_P0_B0(-33) IN_P1_B0(-32) IN_P10_B0(-31) IN_P11_B0(-30) IN_P12_B0(-29) IN_P13_B0(-28) IN_P14_B0(-27) IN_P15_B0(-26) IN_P16_B0(-25) IN_P17_B0(-24) IN_P18_B0(-23) IN_P19_B0(-22) IN_P2_B0(-21) IN_P20_B0(-20) IN_P21_B0(-19) IN_P22_B0(-18) IN_P23_B0(-17) IN_P24_B0(-16) IN_P25_B0(-15) IN_P26_B0(-14) IN_P27_B0(-13) IN_P28_B0(-12) IN_P29_B0(-11) IN_P3_B0(-10) IN_P4_B0(-9) IN_P5_B0(-8) IN_P6_B0(-7) IN_P8_B0(-5) IN_P9_B0(-4) IN_P7_B0(6) 
+IMPLIES_WITH_INIT: From lit IN_P6_B0(7) obtaing the following lits:IN_P0_B0(-33) IN_P1_B0(-32) IN_P10_B0(-31) IN_P11_B0(-30) IN_P12_B0(-29) IN_P13_B0(-28) IN_P14_B0(-27) IN_P15_B0(-26) IN_P16_B0(-25) IN_P17_B0(-24) IN_P18_B0(-23) IN_P19_B0(-22) IN_P2_B0(-21) IN_P20_B0(-20) IN_P21_B0(-19) IN_P22_B0(-18) IN_P23_B0(-17) IN_P24_B0(-16) IN_P25_B0(-15) IN_P26_B0(-14) IN_P27_B0(-13) IN_P28_B0(-12) IN_P29_B0(-11) IN_P3_B0(-10) IN_P4_B0(-9) IN_P5_B0(-8) IN_P7_B0(-6) IN_P8_B0(-5) IN_P9_B0(-4) IN_P6_B0(7) 
+IMPLIES_WITH_INIT: From lit IN_P5_B0(8) obtaing the following lits:IN_P0_B0(-33) IN_P1_B0(-32) IN_P10_B0(-31) IN_P11_B0(-30) IN_P12_B0(-29) IN_P13_B0(-28) IN_P14_B0(-27) IN_P15_B0(-26) IN_P16_B0(-25) IN_P17_B0(-24) IN_P18_B0(-23) IN_P19_B0(-22) IN_P2_B0(-21) IN_P20_B0(-20) IN_P21_B0(-19) IN_P22_B0(-18) IN_P23_B0(-17) IN_P24_B0(-16) IN_P25_B0(-15) IN_P26_B0(-14) IN_P27_B0(-13) IN_P28_B0(-12) IN_P29_B0(-11) IN_P3_B0(-10) IN_P4_B0(-9) IN_P6_B0(-7) IN_P7_B0(-6) IN_P8_B0(-5) IN_P9_B0(-4) IN_P5_B0(8) 
+IMPLIES_WITH_INIT: From lit IN_P4_B0(9) obtaing the following lits:IN_P0_B0(-33) IN_P1_B0(-32) IN_P10_B0(-31) IN_P11_B0(-30) IN_P12_B0(-29) IN_P13_B0(-28) IN_P14_B0(-27) IN_P15_B0(-26) IN_P16_B0(-25) IN_P17_B0(-24) IN_P18_B0(-23) IN_P19_B0(-22) IN_P2_B0(-21) IN_P20_B0(-20) IN_P21_B0(-19) IN_P22_B0(-18) IN_P23_B0(-17) IN_P24_B0(-16) IN_P25_B0(-15) IN_P26_B0(-14) IN_P27_B0(-13) IN_P28_B0(-12) IN_P29_B0(-11) IN_P3_B0(-10) IN_P5_B0(-8) IN_P6_B0(-7) IN_P7_B0(-6) IN_P8_B0(-5) IN_P9_B0(-4) IN_P4_B0(9) 
+IMPLIES_WITH_INIT: From lit IN_P3_B0(10) obtaing the following lits:IN_P0_B0(-33) IN_P1_B0(-32) IN_P10_B0(-31) IN_P11_B0(-30) IN_P12_B0(-29) IN_P13_B0(-28) IN_P14_B0(-27) IN_P15_B0(-26) IN_P16_B0(-25) IN_P17_B0(-24) IN_P18_B0(-23) IN_P19_B0(-22) IN_P2_B0(-21) IN_P20_B0(-20) IN_P21_B0(-19) IN_P22_B0(-18) IN_P23_B0(-17) IN_P24_B0(-16) IN_P25_B0(-15) IN_P26_B0(-14) IN_P27_B0(-13) IN_P28_B0(-12) IN_P29_B0(-11) IN_P4_B0(-9) IN_P5_B0(-8) IN_P6_B0(-7) IN_P7_B0(-6) IN_P8_B0(-5) IN_P9_B0(-4) IN_P3_B0(10) 
+IMPLIES_WITH_INIT: From lit IN_P29_B0(11) obtaing the following lits:IN_P0_B0(-33) IN_P1_B0(-32) IN_P10_B0(-31) IN_P11_B0(-30) IN_P12_B0(-29) IN_P13_B0(-28) IN_P14_B0(-27) IN_P15_B0(-26) IN_P16_B0(-25) IN_P17_B0(-24) IN_P18_B0(-23) IN_P19_B0(-22) IN_P2_B0(-21) IN_P20_B0(-20) IN_P21_B0(-19) IN_P22_B0(-18) IN_P23_B0(-17) IN_P24_B0(-16) IN_P25_B0(-15) IN_P26_B0(-14) IN_P27_B0(-13) IN_P28_B0(-12) IN_P3_B0(-10) IN_P4_B0(-9) IN_P5_B0(-8) IN_P6_B0(-7) IN_P7_B0(-6) IN_P8_B0(-5) IN_P9_B0(-4) IN_P29_B0(11) 
+IMPLIES_WITH_INIT: From lit IN_P28_B0(12) obtaing the following lits:IN_P0_B0(-33) IN_P1_B0(-32) IN_P10_B0(-31) IN_P11_B0(-30) IN_P12_B0(-29) IN_P13_B0(-28) IN_P14_B0(-27) IN_P15_B0(-26) IN_P16_B0(-25) IN_P17_B0(-24) IN_P18_B0(-23) IN_P19_B0(-22) IN_P2_B0(-21) IN_P20_B0(-20) IN_P21_B0(-19) IN_P22_B0(-18) IN_P23_B0(-17) IN_P24_B0(-16) IN_P25_B0(-15) IN_P26_B0(-14) IN_P27_B0(-13) IN_P29_B0(-11) IN_P3_B0(-10) IN_P4_B0(-9) IN_P5_B0(-8) IN_P6_B0(-7) IN_P7_B0(-6) IN_P8_B0(-5) IN_P9_B0(-4) IN_P28_B0(12) 
+IMPLIES_WITH_INIT: From lit IN_P27_B0(13) obtaing the following lits:IN_P0_B0(-33) IN_P1_B0(-32) IN_P10_B0(-31) IN_P11_B0(-30) IN_P12_B0(-29) IN_P13_B0(-28) IN_P14_B0(-27) IN_P15_B0(-26) IN_P16_B0(-25) IN_P17_B0(-24) IN_P18_B0(-23) IN_P19_B0(-22) IN_P2_B0(-21) IN_P20_B0(-20) IN_P21_B0(-19) IN_P22_B0(-18) IN_P23_B0(-17) IN_P24_B0(-16) IN_P25_B0(-15) IN_P26_B0(-14) IN_P28_B0(-12) IN_P29_B0(-11) IN_P3_B0(-10) IN_P4_B0(-9) IN_P5_B0(-8) IN_P6_B0(-7) IN_P7_B0(-6) IN_P8_B0(-5) IN_P9_B0(-4) IN_P27_B0(13) 
+IMPLIES_WITH_INIT: From lit IN_P26_B0(14) obtaing the following lits:IN_P0_B0(-33) IN_P1_B0(-32) IN_P10_B0(-31) IN_P11_B0(-30) IN_P12_B0(-29) IN_P13_B0(-28) IN_P14_B0(-27) IN_P15_B0(-26) IN_P16_B0(-25) IN_P17_B0(-24) IN_P18_B0(-23) IN_P19_B0(-22) IN_P2_B0(-21) IN_P20_B0(-20) IN_P21_B0(-19) IN_P22_B0(-18) IN_P23_B0(-17) IN_P24_B0(-16) IN_P25_B0(-15) IN_P27_B0(-13) IN_P28_B0(-12) IN_P29_B0(-11) IN_P3_B0(-10) IN_P4_B0(-9) IN_P5_B0(-8) IN_P6_B0(-7) IN_P7_B0(-6) IN_P8_B0(-5) IN_P9_B0(-4) IN_P26_B0(14) 
+IMPLIES_WITH_INIT: From lit IN_P25_B0(15) obtaing the following lits:IN_P0_B0(-33) IN_P1_B0(-32) IN_P10_B0(-31) IN_P11_B0(-30) IN_P12_B0(-29) IN_P13_B0(-28) IN_P14_B0(-27) IN_P15_B0(-26) IN_P16_B0(-25) IN_P17_B0(-24) IN_P18_B0(-23) IN_P19_B0(-22) IN_P2_B0(-21) IN_P20_B0(-20) IN_P21_B0(-19) IN_P22_B0(-18) IN_P23_B0(-17) IN_P24_B0(-16) IN_P26_B0(-14) IN_P27_B0(-13) IN_P28_B0(-12) IN_P29_B0(-11) IN_P3_B0(-10) IN_P4_B0(-9) IN_P5_B0(-8) IN_P6_B0(-7) IN_P7_B0(-6) IN_P8_B0(-5) IN_P9_B0(-4) IN_P25_B0(15) 
+IMPLIES_WITH_INIT: From lit IN_P24_B0(16) obtaing the following lits:IN_P0_B0(-33) IN_P1_B0(-32) IN_P10_B0(-31) IN_P11_B0(-30) IN_P12_B0(-29) IN_P13_B0(-28) IN_P14_B0(-27) IN_P15_B0(-26) IN_P16_B0(-25) IN_P17_B0(-24) IN_P18_B0(-23) IN_P19_B0(-22) IN_P2_B0(-21) IN_P20_B0(-20) IN_P21_B0(-19) IN_P22_B0(-18) IN_P23_B0(-17) IN_P25_B0(-15) IN_P26_B0(-14) IN_P27_B0(-13) IN_P28_B0(-12) IN_P29_B0(-11) IN_P3_B0(-10) IN_P4_B0(-9) IN_P5_B0(-8) IN_P6_B0(-7) IN_P7_B0(-6) IN_P8_B0(-5) IN_P9_B0(-4) IN_P24_B0(16) 
+IMPLIES_WITH_INIT: From lit IN_P23_B0(17) obtaing the following lits:IN_P0_B0(-33) IN_P1_B0(-32) IN_P10_B0(-31) IN_P11_B0(-30) IN_P12_B0(-29) IN_P13_B0(-28) IN_P14_B0(-27) IN_P15_B0(-26) IN_P16_B0(-25) IN_P17_B0(-24) IN_P18_B0(-23) IN_P19_B0(-22) IN_P2_B0(-21) IN_P20_B0(-20) IN_P21_B0(-19) IN_P22_B0(-18) IN_P24_B0(-16) IN_P25_B0(-15) IN_P26_B0(-14) IN_P27_B0(-13) IN_P28_B0(-12) IN_P29_B0(-11) IN_P3_B0(-10) IN_P4_B0(-9) IN_P5_B0(-8) IN_P6_B0(-7) IN_P7_B0(-6) IN_P8_B0(-5) IN_P9_B0(-4) IN_P23_B0(17) 
+IMPLIES_WITH_INIT: From lit IN_P22_B0(18) obtaing the following lits:IN_P0_B0(-33) IN_P1_B0(-32) IN_P10_B0(-31) IN_P11_B0(-30) IN_P12_B0(-29) IN_P13_B0(-28) IN_P14_B0(-27) IN_P15_B0(-26) IN_P16_B0(-25) IN_P17_B0(-24) IN_P18_B0(-23) IN_P19_B0(-22) IN_P2_B0(-21) IN_P20_B0(-20) IN_P21_B0(-19) IN_P23_B0(-17) IN_P24_B0(-16) IN_P25_B0(-15) IN_P26_B0(-14) IN_P27_B0(-13) IN_P28_B0(-12) IN_P29_B0(-11) IN_P3_B0(-10) IN_P4_B0(-9) IN_P5_B0(-8) IN_P6_B0(-7) IN_P7_B0(-6) IN_P8_B0(-5) IN_P9_B0(-4) IN_P22_B0(18) 
+IMPLIES_WITH_INIT: From lit IN_P21_B0(19) obtaing the following lits:IN_P0_B0(-33) IN_P1_B0(-32) IN_P10_B0(-31) IN_P11_B0(-30) IN_P12_B0(-29) IN_P13_B0(-28) IN_P14_B0(-27) IN_P15_B0(-26) IN_P16_B0(-25) IN_P17_B0(-24) IN_P18_B0(-23) IN_P19_B0(-22) IN_P2_B0(-21) IN_P20_B0(-20) IN_P22_B0(-18) IN_P23_B0(-17) IN_P24_B0(-16) IN_P25_B0(-15) IN_P26_B0(-14) IN_P27_B0(-13) IN_P28_B0(-12) IN_P29_B0(-11) IN_P3_B0(-10) IN_P4_B0(-9) IN_P5_B0(-8) IN_P6_B0(-7) IN_P7_B0(-6) IN_P8_B0(-5) IN_P9_B0(-4) IN_P21_B0(19) 
+IMPLIES_WITH_INIT: From lit IN_P20_B0(20) obtaing the following lits:IN_P0_B0(-33) IN_P1_B0(-32) IN_P10_B0(-31) IN_P11_B0(-30) IN_P12_B0(-29) IN_P13_B0(-28) IN_P14_B0(-27) IN_P15_B0(-26) IN_P16_B0(-25) IN_P17_B0(-24) IN_P18_B0(-23) IN_P19_B0(-22) IN_P2_B0(-21) IN_P21_B0(-19) IN_P22_B0(-18) IN_P23_B0(-17) IN_P24_B0(-16) IN_P25_B0(-15) IN_P26_B0(-14) IN_P27_B0(-13) IN_P28_B0(-12) IN_P29_B0(-11) IN_P3_B0(-10) IN_P4_B0(-9) IN_P5_B0(-8) IN_P6_B0(-7) IN_P7_B0(-6) IN_P8_B0(-5) IN_P9_B0(-4) IN_P20_B0(20) 
+IMPLIES_WITH_INIT: From lit IN_P2_B0(21) obtaing the following lits:IN_P0_B0(-33) IN_P1_B0(-32) IN_P10_B0(-31) IN_P11_B0(-30) IN_P12_B0(-29) IN_P13_B0(-28) IN_P14_B0(-27) IN_P15_B0(-26) IN_P16_B0(-25) IN_P17_B0(-24) IN_P18_B0(-23) IN_P19_B0(-22) IN_P20_B0(-20) IN_P21_B0(-19) IN_P22_B0(-18) IN_P23_B0(-17) IN_P24_B0(-16) IN_P25_B0(-15) IN_P26_B0(-14) IN_P27_B0(-13) IN_P28_B0(-12) IN_P29_B0(-11) IN_P3_B0(-10) IN_P4_B0(-9) IN_P5_B0(-8) IN_P6_B0(-7) IN_P7_B0(-6) IN_P8_B0(-5) IN_P9_B0(-4) IN_P2_B0(21) 
+IMPLIES_WITH_INIT: From lit IN_P19_B0(22) obtaing the following lits:IN_P0_B0(-33) IN_P1_B0(-32) IN_P10_B0(-31) IN_P11_B0(-30) IN_P12_B0(-29) IN_P13_B0(-28) IN_P14_B0(-27) IN_P15_B0(-26) IN_P16_B0(-25) IN_P17_B0(-24) IN_P18_B0(-23) IN_P2_B0(-21) IN_P20_B0(-20) IN_P21_B0(-19) IN_P22_B0(-18) IN_P23_B0(-17) IN_P24_B0(-16) IN_P25_B0(-15) IN_P26_B0(-14) IN_P27_B0(-13) IN_P28_B0(-12) IN_P29_B0(-11) IN_P3_B0(-10) IN_P4_B0(-9) IN_P5_B0(-8) IN_P6_B0(-7) IN_P7_B0(-6) IN_P8_B0(-5) IN_P9_B0(-4) IN_P19_B0(22) 
+IMPLIES_WITH_INIT: From lit IN_P18_B0(23) obtaing the following lits:IN_P0_B0(-33) IN_P1_B0(-32) IN_P10_B0(-31) IN_P11_B0(-30) IN_P12_B0(-29) IN_P13_B0(-28) IN_P14_B0(-27) IN_P15_B0(-26) IN_P16_B0(-25) IN_P17_B0(-24) IN_P19_B0(-22) IN_P2_B0(-21) IN_P20_B0(-20) IN_P21_B0(-19) IN_P22_B0(-18) IN_P23_B0(-17) IN_P24_B0(-16) IN_P25_B0(-15) IN_P26_B0(-14) IN_P27_B0(-13) IN_P28_B0(-12) IN_P29_B0(-11) IN_P3_B0(-10) IN_P4_B0(-9) IN_P5_B0(-8) IN_P6_B0(-7) IN_P7_B0(-6) IN_P8_B0(-5) IN_P9_B0(-4) IN_P18_B0(23) 
+IMPLIES_WITH_INIT: From lit IN_P17_B0(24) obtaing the following lits:IN_P0_B0(-33) IN_P1_B0(-32) IN_P10_B0(-31) IN_P11_B0(-30) IN_P12_B0(-29) IN_P13_B0(-28) IN_P14_B0(-27) IN_P15_B0(-26) IN_P16_B0(-25) IN_P18_B0(-23) IN_P19_B0(-22) IN_P2_B0(-21) IN_P20_B0(-20) IN_P21_B0(-19) IN_P22_B0(-18) IN_P23_B0(-17) IN_P24_B0(-16) IN_P25_B0(-15) IN_P26_B0(-14) IN_P27_B0(-13) IN_P28_B0(-12) IN_P29_B0(-11) IN_P3_B0(-10) IN_P4_B0(-9) IN_P5_B0(-8) IN_P6_B0(-7) IN_P7_B0(-6) IN_P8_B0(-5) IN_P9_B0(-4) IN_P17_B0(24) 
+IMPLIES_WITH_INIT: From lit IN_P16_B0(25) obtaing the following lits:IN_P0_B0(-33) IN_P1_B0(-32) IN_P10_B0(-31) IN_P11_B0(-30) IN_P12_B0(-29) IN_P13_B0(-28) IN_P14_B0(-27) IN_P15_B0(-26) IN_P17_B0(-24) IN_P18_B0(-23) IN_P19_B0(-22) IN_P2_B0(-21) IN_P20_B0(-20) IN_P21_B0(-19) IN_P22_B0(-18) IN_P23_B0(-17) IN_P24_B0(-16) IN_P25_B0(-15) IN_P26_B0(-14) IN_P27_B0(-13) IN_P28_B0(-12) IN_P29_B0(-11) IN_P3_B0(-10) IN_P4_B0(-9) IN_P5_B0(-8) IN_P6_B0(-7) IN_P7_B0(-6) IN_P8_B0(-5) IN_P9_B0(-4) IN_P16_B0(25) 
+IMPLIES_WITH_INIT: From lit IN_P15_B0(26) obtaing the following lits:IN_P0_B0(-33) IN_P1_B0(-32) IN_P10_B0(-31) IN_P11_B0(-30) IN_P12_B0(-29) IN_P13_B0(-28) IN_P14_B0(-27) IN_P16_B0(-25) IN_P17_B0(-24) IN_P18_B0(-23) IN_P19_B0(-22) IN_P2_B0(-21) IN_P20_B0(-20) IN_P21_B0(-19) IN_P22_B0(-18) IN_P23_B0(-17) IN_P24_B0(-16) IN_P25_B0(-15) IN_P26_B0(-14) IN_P27_B0(-13) IN_P28_B0(-12) IN_P29_B0(-11) IN_P3_B0(-10) IN_P4_B0(-9) IN_P5_B0(-8) IN_P6_B0(-7) IN_P7_B0(-6) IN_P8_B0(-5) IN_P9_B0(-4) IN_P15_B0(26) 
+IMPLIES_WITH_INIT: From lit IN_P14_B0(27) obtaing the following lits:IN_P0_B0(-33) IN_P1_B0(-32) IN_P10_B0(-31) IN_P11_B0(-30) IN_P12_B0(-29) IN_P13_B0(-28) IN_P15_B0(-26) IN_P16_B0(-25) IN_P17_B0(-24) IN_P18_B0(-23) IN_P19_B0(-22) IN_P2_B0(-21) IN_P20_B0(-20) IN_P21_B0(-19) IN_P22_B0(-18) IN_P23_B0(-17) IN_P24_B0(-16) IN_P25_B0(-15) IN_P26_B0(-14) IN_P27_B0(-13) IN_P28_B0(-12) IN_P29_B0(-11) IN_P3_B0(-10) IN_P4_B0(-9) IN_P5_B0(-8) IN_P6_B0(-7) IN_P7_B0(-6) IN_P8_B0(-5) IN_P9_B0(-4) IN_P14_B0(27) 
+IMPLIES_WITH_INIT: From lit IN_P13_B0(28) obtaing the following lits:IN_P0_B0(-33) IN_P1_B0(-32) IN_P10_B0(-31) IN_P11_B0(-30) IN_P12_B0(-29) IN_P14_B0(-27) IN_P15_B0(-26) IN_P16_B0(-25) IN_P17_B0(-24) IN_P18_B0(-23) IN_P19_B0(-22) IN_P2_B0(-21) IN_P20_B0(-20) IN_P21_B0(-19) IN_P22_B0(-18) IN_P23_B0(-17) IN_P24_B0(-16) IN_P25_B0(-15) IN_P26_B0(-14) IN_P27_B0(-13) IN_P28_B0(-12) IN_P29_B0(-11) IN_P3_B0(-10) IN_P4_B0(-9) IN_P5_B0(-8) IN_P6_B0(-7) IN_P7_B0(-6) IN_P8_B0(-5) IN_P9_B0(-4) IN_P13_B0(28) 
+IMPLIES_WITH_INIT: From lit IN_P12_B0(29) obtaing the following lits:IN_P0_B0(-33) IN_P1_B0(-32) IN_P10_B0(-31) IN_P11_B0(-30) IN_P13_B0(-28) IN_P14_B0(-27) IN_P15_B0(-26) IN_P16_B0(-25) IN_P17_B0(-24) IN_P18_B0(-23) IN_P19_B0(-22) IN_P2_B0(-21) IN_P20_B0(-20) IN_P21_B0(-19) IN_P22_B0(-18) IN_P23_B0(-17) IN_P24_B0(-16) IN_P25_B0(-15) IN_P26_B0(-14) IN_P27_B0(-13) IN_P28_B0(-12) IN_P29_B0(-11) IN_P3_B0(-10) IN_P4_B0(-9) IN_P5_B0(-8) IN_P6_B0(-7) IN_P7_B0(-6) IN_P8_B0(-5) IN_P9_B0(-4) IN_P12_B0(29) 
+IMPLIES_WITH_INIT: From lit IN_P11_B0(30) obtaing the following lits:IN_P0_B0(-33) IN_P1_B0(-32) IN_P10_B0(-31) IN_P12_B0(-29) IN_P13_B0(-28) IN_P14_B0(-27) IN_P15_B0(-26) IN_P16_B0(-25) IN_P17_B0(-24) IN_P18_B0(-23) IN_P19_B0(-22) IN_P2_B0(-21) IN_P20_B0(-20) IN_P21_B0(-19) IN_P22_B0(-18) IN_P23_B0(-17) IN_P24_B0(-16) IN_P25_B0(-15) IN_P26_B0(-14) IN_P27_B0(-13) IN_P28_B0(-12) IN_P29_B0(-11) IN_P3_B0(-10) IN_P4_B0(-9) IN_P5_B0(-8) IN_P6_B0(-7) IN_P7_B0(-6) IN_P8_B0(-5) IN_P9_B0(-4) IN_P11_B0(30) 
+IMPLIES_WITH_INIT: From lit IN_P10_B0(31) obtaing the following lits:IN_P0_B0(-33) IN_P1_B0(-32) IN_P11_B0(-30) IN_P12_B0(-29) IN_P13_B0(-28) IN_P14_B0(-27) IN_P15_B0(-26) IN_P16_B0(-25) IN_P17_B0(-24) IN_P18_B0(-23) IN_P19_B0(-22) IN_P2_B0(-21) IN_P20_B0(-20) IN_P21_B0(-19) IN_P22_B0(-18) IN_P23_B0(-17) IN_P24_B0(-16) IN_P25_B0(-15) IN_P26_B0(-14) IN_P27_B0(-13) IN_P28_B0(-12) IN_P29_B0(-11) IN_P3_B0(-10) IN_P4_B0(-9) IN_P5_B0(-8) IN_P6_B0(-7) IN_P7_B0(-6) IN_P8_B0(-5) IN_P9_B0(-4) IN_P10_B0(31) 
+IMPLIES_WITH_INIT: From lit IN_P1_B0(32) obtaing the following lits:IN_P0_B0(-33) IN_P10_B0(-31) IN_P11_B0(-30) IN_P12_B0(-29) IN_P13_B0(-28) IN_P14_B0(-27) IN_P15_B0(-26) IN_P16_B0(-25) IN_P17_B0(-24) IN_P18_B0(-23) IN_P19_B0(-22) IN_P2_B0(-21) IN_P20_B0(-20) IN_P21_B0(-19) IN_P22_B0(-18) IN_P23_B0(-17) IN_P24_B0(-16) IN_P25_B0(-15) IN_P26_B0(-14) IN_P27_B0(-13) IN_P28_B0(-12) IN_P29_B0(-11) IN_P3_B0(-10) IN_P4_B0(-9) IN_P5_B0(-8) IN_P6_B0(-7) IN_P7_B0(-6) IN_P8_B0(-5) IN_P9_B0(-4) IN_P1_B0(32) 
+IMPLIES_WITH_INIT: From lit IN_P0_B0(33) obtaing the following lits:IN_P1_B0(-32) IN_P10_B0(-31) IN_P11_B0(-30) IN_P12_B0(-29) IN_P13_B0(-28) IN_P14_B0(-27) IN_P15_B0(-26) IN_P16_B0(-25) IN_P17_B0(-24) IN_P18_B0(-23) IN_P19_B0(-22) IN_P2_B0(-21) IN_P20_B0(-20) IN_P21_B0(-19) IN_P22_B0(-18) IN_P23_B0(-17) IN_P24_B0(-16) IN_P25_B0(-15) IN_P26_B0(-14) IN_P27_B0(-13) IN_P28_B0(-12) IN_P29_B0(-11) IN_P3_B0(-10) IN_P4_B0(-9) IN_P5_B0(-8) IN_P6_B0(-7) IN_P7_B0(-6) IN_P8_B0(-5) IN_P9_B0(-4) IN_P0_B0(33) 
+REGISTER: calc_tags() took 0.061889 secs
+REGISTER (entering): make_k_0(m)
+REGISTER: make_k_0(m) took 3.50332e-09 secs
+REGISTER (entering): make_k_0(k)
+REGISTER: make_k_0(k) took 3.50332e-09 secs
+GENERAL: number of observations = 30
+Unknown atoms: 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 
+Unknown not in oneof: 
+REGISTER (entering): make_split_t0c()
+322 = k_IN_P0_B0___IN_P9_B0
+323 = k_DEFUSED_B0___IN_P9_B0
+324 = kn_IN_P0_B0___IN_P9_B0
+325 = kn_DEFUSED_B0___IN_P9_B0
+326 = k_IN_P0_B0___IN_P8_B0
+327 = k_DEFUSED_B0___IN_P8_B0
+328 = kn_IN_P0_B0___IN_P8_B0
+329 = kn_DEFUSED_B0___IN_P8_B0
+330 = k_IN_P0_B0___IN_P7_B0
+331 = k_DEFUSED_B0___IN_P7_B0
+332 = kn_IN_P0_B0___IN_P7_B0
+333 = kn_DEFUSED_B0___IN_P7_B0
+334 = k_IN_P0_B0___IN_P6_B0
+335 = k_DEFUSED_B0___IN_P6_B0
+336 = kn_IN_P0_B0___IN_P6_B0
+337 = kn_DEFUSED_B0___IN_P6_B0
+338 = k_IN_P0_B0___IN_P5_B0
+339 = k_DEFUSED_B0___IN_P5_B0
+340 = kn_IN_P0_B0___IN_P5_B0
+341 = kn_DEFUSED_B0___IN_P5_B0
+342 = k_IN_P0_B0___IN_P4_B0
+343 = k_DEFUSED_B0___IN_P4_B0
+344 = kn_IN_P0_B0___IN_P4_B0
+345 = kn_DEFUSED_B0___IN_P4_B0
+346 = k_IN_P0_B0___IN_P3_B0
+347 = k_DEFUSED_B0___IN_P3_B0
+348 = kn_IN_P0_B0___IN_P3_B0
+349 = kn_DEFUSED_B0___IN_P3_B0
+350 = k_IN_P0_B0___IN_P29_B0
+351 = k_DEFUSED_B0___IN_P29_B0
+352 = kn_IN_P0_B0___IN_P29_B0
+353 = kn_DEFUSED_B0___IN_P29_B0
+354 = k_IN_P0_B0___IN_P28_B0
+355 = k_DEFUSED_B0___IN_P28_B0
+356 = kn_IN_P0_B0___IN_P28_B0
+357 = kn_DEFUSED_B0___IN_P28_B0
+358 = k_IN_P0_B0___IN_P27_B0
+359 = k_DEFUSED_B0___IN_P27_B0
+360 = kn_IN_P0_B0___IN_P27_B0
+361 = kn_DEFUSED_B0___IN_P27_B0
+362 = k_IN_P0_B0___IN_P26_B0
+363 = k_DEFUSED_B0___IN_P26_B0
+364 = kn_IN_P0_B0___IN_P26_B0
+365 = kn_DEFUSED_B0___IN_P26_B0
+366 = k_IN_P0_B0___IN_P25_B0
+367 = k_DEFUSED_B0___IN_P25_B0
+368 = kn_IN_P0_B0___IN_P25_B0
+369 = kn_DEFUSED_B0___IN_P25_B0
+370 = k_IN_P0_B0___IN_P24_B0
+371 = k_DEFUSED_B0___IN_P24_B0
+372 = kn_IN_P0_B0___IN_P24_B0
+373 = kn_DEFUSED_B0___IN_P24_B0
+374 = k_IN_P0_B0___IN_P23_B0
+375 = k_DEFUSED_B0___IN_P23_B0
+376 = kn_IN_P0_B0___IN_P23_B0
+377 = kn_DEFUSED_B0___IN_P23_B0
+378 = k_IN_P0_B0___IN_P22_B0
+379 = k_DEFUSED_B0___IN_P22_B0
+380 = kn_IN_P0_B0___IN_P22_B0
+381 = kn_DEFUSED_B0___IN_P22_B0
+382 = k_IN_P0_B0___IN_P21_B0
+383 = k_DEFUSED_B0___IN_P21_B0
+384 = kn_IN_P0_B0___IN_P21_B0
+385 = kn_DEFUSED_B0___IN_P21_B0
+386 = k_IN_P0_B0___IN_P20_B0
+387 = k_DEFUSED_B0___IN_P20_B0
+388 = kn_IN_P0_B0___IN_P20_B0
+389 = kn_DEFUSED_B0___IN_P20_B0
+390 = k_IN_P0_B0___IN_P2_B0
+391 = k_DEFUSED_B0___IN_P2_B0
+392 = kn_IN_P0_B0___IN_P2_B0
+393 = kn_DEFUSED_B0___IN_P2_B0
+394 = k_IN_P0_B0___IN_P19_B0
+395 = k_DEFUSED_B0___IN_P19_B0
+396 = kn_IN_P0_B0___IN_P19_B0
+397 = kn_DEFUSED_B0___IN_P19_B0
+398 = k_IN_P0_B0___IN_P18_B0
+399 = k_DEFUSED_B0___IN_P18_B0
+400 = kn_IN_P0_B0___IN_P18_B0
+401 = kn_DEFUSED_B0___IN_P18_B0
+402 = k_IN_P0_B0___IN_P17_B0
+403 = k_DEFUSED_B0___IN_P17_B0
+404 = kn_IN_P0_B0___IN_P17_B0
+405 = kn_DEFUSED_B0___IN_P17_B0
+406 = k_IN_P0_B0___IN_P16_B0
+407 = k_DEFUSED_B0___IN_P16_B0
+408 = kn_IN_P0_B0___IN_P16_B0
+409 = kn_DEFUSED_B0___IN_P16_B0
+410 = k_IN_P0_B0___IN_P15_B0
+411 = k_DEFUSED_B0___IN_P15_B0
+412 = kn_IN_P0_B0___IN_P15_B0
+413 = kn_DEFUSED_B0___IN_P15_B0
+414 = k_IN_P0_B0___IN_P14_B0
+415 = k_DEFUSED_B0___IN_P14_B0
+416 = kn_IN_P0_B0___IN_P14_B0
+417 = kn_DEFUSED_B0___IN_P14_B0
+418 = k_IN_P0_B0___IN_P13_B0
+419 = k_DEFUSED_B0___IN_P13_B0
+420 = kn_IN_P0_B0___IN_P13_B0
+421 = kn_DEFUSED_B0___IN_P13_B0
+422 = k_IN_P0_B0___IN_P12_B0
+423 = k_DEFUSED_B0___IN_P12_B0
+424 = kn_IN_P0_B0___IN_P12_B0
+425 = kn_DEFUSED_B0___IN_P12_B0
+426 = k_IN_P0_B0___IN_P11_B0
+427 = k_DEFUSED_B0___IN_P11_B0
+428 = kn_IN_P0_B0___IN_P11_B0
+429 = kn_DEFUSED_B0___IN_P11_B0
+430 = k_IN_P0_B0___IN_P10_B0
+431 = k_DEFUSED_B0___IN_P10_B0
+432 = kn_IN_P0_B0___IN_P10_B0
+433 = kn_DEFUSED_B0___IN_P10_B0
+434 = k_IN_P0_B0___IN_P1_B0
+435 = k_DEFUSED_B0___IN_P1_B0
+436 = kn_IN_P0_B0___IN_P1_B0
+437 = kn_DEFUSED_B0___IN_P1_B0
+438 = k_IN_P0_B0___IN_P0_B0
+439 = k_DEFUSED_B0___IN_P0_B0
+440 = kn_DEFUSED_B0___IN_P0_B0
+441 = k_IN_P1_B0___IN_P9_B0
+442 = kn_IN_P1_B0___IN_P9_B0
+443 = k_IN_P1_B0___IN_P8_B0
+444 = kn_IN_P1_B0___IN_P8_B0
+445 = k_IN_P1_B0___IN_P7_B0
+446 = kn_IN_P1_B0___IN_P7_B0
+447 = k_IN_P1_B0___IN_P6_B0
+448 = kn_IN_P1_B0___IN_P6_B0
+449 = k_IN_P1_B0___IN_P5_B0
+450 = kn_IN_P1_B0___IN_P5_B0
+451 = k_IN_P1_B0___IN_P4_B0
+452 = kn_IN_P1_B0___IN_P4_B0
+453 = k_IN_P1_B0___IN_P3_B0
+454 = kn_IN_P1_B0___IN_P3_B0
+455 = k_IN_P1_B0___IN_P29_B0
+456 = kn_IN_P1_B0___IN_P29_B0
+457 = k_IN_P1_B0___IN_P28_B0
+458 = kn_IN_P1_B0___IN_P28_B0
+459 = k_IN_P1_B0___IN_P27_B0
+460 = kn_IN_P1_B0___IN_P27_B0
+461 = k_IN_P1_B0___IN_P26_B0
+462 = kn_IN_P1_B0___IN_P26_B0
+463 = k_IN_P1_B0___IN_P25_B0
+464 = kn_IN_P1_B0___IN_P25_B0
+465 = k_IN_P1_B0___IN_P24_B0
+466 = kn_IN_P1_B0___IN_P24_B0
+467 = k_IN_P1_B0___IN_P23_B0
+468 = kn_IN_P1_B0___IN_P23_B0
+469 = k_IN_P1_B0___IN_P22_B0
+470 = kn_IN_P1_B0___IN_P22_B0
+471 = k_IN_P1_B0___IN_P21_B0
+472 = kn_IN_P1_B0___IN_P21_B0
+473 = k_IN_P1_B0___IN_P20_B0
+474 = kn_IN_P1_B0___IN_P20_B0
+475 = k_IN_P1_B0___IN_P2_B0
+476 = kn_IN_P1_B0___IN_P2_B0
+477 = k_IN_P1_B0___IN_P19_B0
+478 = kn_IN_P1_B0___IN_P19_B0
+479 = k_IN_P1_B0___IN_P18_B0
+480 = kn_IN_P1_B0___IN_P18_B0
+481 = k_IN_P1_B0___IN_P17_B0
+482 = kn_IN_P1_B0___IN_P17_B0
+483 = k_IN_P1_B0___IN_P16_B0
+484 = kn_IN_P1_B0___IN_P16_B0
+485 = k_IN_P1_B0___IN_P15_B0
+486 = kn_IN_P1_B0___IN_P15_B0
+487 = k_IN_P1_B0___IN_P14_B0
+488 = kn_IN_P1_B0___IN_P14_B0
+489 = k_IN_P1_B0___IN_P13_B0
+490 = kn_IN_P1_B0___IN_P13_B0
+491 = k_IN_P1_B0___IN_P12_B0
+492 = kn_IN_P1_B0___IN_P12_B0
+493 = k_IN_P1_B0___IN_P11_B0
+494 = kn_IN_P1_B0___IN_P11_B0
+495 = k_IN_P1_B0___IN_P10_B0
+496 = kn_IN_P1_B0___IN_P10_B0
+497 = k_IN_P1_B0___IN_P1_B0
+498 = k_IN_P1_B0___IN_P0_B0
+499 = kn_IN_P1_B0___IN_P0_B0
+500 = k_IN_P10_B0___IN_P9_B0
+501 = kn_IN_P10_B0___IN_P9_B0
+502 = k_IN_P10_B0___IN_P8_B0
+503 = kn_IN_P10_B0___IN_P8_B0
+504 = k_IN_P10_B0___IN_P7_B0
+505 = kn_IN_P10_B0___IN_P7_B0
+506 = k_IN_P10_B0___IN_P6_B0
+507 = kn_IN_P10_B0___IN_P6_B0
+508 = k_IN_P10_B0___IN_P5_B0
+509 = kn_IN_P10_B0___IN_P5_B0
+510 = k_IN_P10_B0___IN_P4_B0
+511 = kn_IN_P10_B0___IN_P4_B0
+512 = k_IN_P10_B0___IN_P3_B0
+513 = kn_IN_P10_B0___IN_P3_B0
+514 = k_IN_P10_B0___IN_P29_B0
+515 = kn_IN_P10_B0___IN_P29_B0
+516 = k_IN_P10_B0___IN_P28_B0
+517 = kn_IN_P10_B0___IN_P28_B0
+518 = k_IN_P10_B0___IN_P27_B0
+519 = kn_IN_P10_B0___IN_P27_B0
+520 = k_IN_P10_B0___IN_P26_B0
+521 = kn_IN_P10_B0___IN_P26_B0
+522 = k_IN_P10_B0___IN_P25_B0
+523 = kn_IN_P10_B0___IN_P25_B0
+524 = k_IN_P10_B0___IN_P24_B0
+525 = kn_IN_P10_B0___IN_P24_B0
+526 = k_IN_P10_B0___IN_P23_B0
+527 = kn_IN_P10_B0___IN_P23_B0
+528 = k_IN_P10_B0___IN_P22_B0
+529 = kn_IN_P10_B0___IN_P22_B0
+530 = k_IN_P10_B0___IN_P21_B0
+531 = kn_IN_P10_B0___IN_P21_B0
+532 = k_IN_P10_B0___IN_P20_B0
+533 = kn_IN_P10_B0___IN_P20_B0
+534 = k_IN_P10_B0___IN_P2_B0
+535 = kn_IN_P10_B0___IN_P2_B0
+536 = k_IN_P10_B0___IN_P19_B0
+537 = kn_IN_P10_B0___IN_P19_B0
+538 = k_IN_P10_B0___IN_P18_B0
+539 = kn_IN_P10_B0___IN_P18_B0
+540 = k_IN_P10_B0___IN_P17_B0
+541 = kn_IN_P10_B0___IN_P17_B0
+542 = k_IN_P10_B0___IN_P16_B0
+543 = kn_IN_P10_B0___IN_P16_B0
+544 = k_IN_P10_B0___IN_P15_B0
+545 = kn_IN_P10_B0___IN_P15_B0
+546 = k_IN_P10_B0___IN_P14_B0
+547 = kn_IN_P10_B0___IN_P14_B0
+548 = k_IN_P10_B0___IN_P13_B0
+549 = kn_IN_P10_B0___IN_P13_B0
+550 = k_IN_P10_B0___IN_P12_B0
+551 = kn_IN_P10_B0___IN_P12_B0
+552 = k_IN_P10_B0___IN_P11_B0
+553 = kn_IN_P10_B0___IN_P11_B0
+554 = k_IN_P10_B0___IN_P10_B0
+555 = k_IN_P10_B0___IN_P1_B0
+556 = kn_IN_P10_B0___IN_P1_B0
+557 = k_IN_P10_B0___IN_P0_B0
+558 = kn_IN_P10_B0___IN_P0_B0
+559 = k_IN_P11_B0___IN_P9_B0
+560 = kn_IN_P11_B0___IN_P9_B0
+561 = k_IN_P11_B0___IN_P8_B0
+562 = kn_IN_P11_B0___IN_P8_B0
+563 = k_IN_P11_B0___IN_P7_B0
+564 = kn_IN_P11_B0___IN_P7_B0
+565 = k_IN_P11_B0___IN_P6_B0
+566 = kn_IN_P11_B0___IN_P6_B0
+567 = k_IN_P11_B0___IN_P5_B0
+568 = kn_IN_P11_B0___IN_P5_B0
+569 = k_IN_P11_B0___IN_P4_B0
+570 = kn_IN_P11_B0___IN_P4_B0
+571 = k_IN_P11_B0___IN_P3_B0
+572 = kn_IN_P11_B0___IN_P3_B0
+573 = k_IN_P11_B0___IN_P29_B0
+574 = kn_IN_P11_B0___IN_P29_B0
+575 = k_IN_P11_B0___IN_P28_B0
+576 = kn_IN_P11_B0___IN_P28_B0
+577 = k_IN_P11_B0___IN_P27_B0
+578 = kn_IN_P11_B0___IN_P27_B0
+579 = k_IN_P11_B0___IN_P26_B0
+580 = kn_IN_P11_B0___IN_P26_B0
+581 = k_IN_P11_B0___IN_P25_B0
+582 = kn_IN_P11_B0___IN_P25_B0
+583 = k_IN_P11_B0___IN_P24_B0
+584 = kn_IN_P11_B0___IN_P24_B0
+585 = k_IN_P11_B0___IN_P23_B0
+586 = kn_IN_P11_B0___IN_P23_B0
+587 = k_IN_P11_B0___IN_P22_B0
+588 = kn_IN_P11_B0___IN_P22_B0
+589 = k_IN_P11_B0___IN_P21_B0
+590 = kn_IN_P11_B0___IN_P21_B0
+591 = k_IN_P11_B0___IN_P20_B0
+592 = kn_IN_P11_B0___IN_P20_B0
+593 = k_IN_P11_B0___IN_P2_B0
+594 = kn_IN_P11_B0___IN_P2_B0
+595 = k_IN_P11_B0___IN_P19_B0
+596 = kn_IN_P11_B0___IN_P19_B0
+597 = k_IN_P11_B0___IN_P18_B0
+598 = kn_IN_P11_B0___IN_P18_B0
+599 = k_IN_P11_B0___IN_P17_B0
+600 = kn_IN_P11_B0___IN_P17_B0
+601 = k_IN_P11_B0___IN_P16_B0
+602 = kn_IN_P11_B0___IN_P16_B0
+603 = k_IN_P11_B0___IN_P15_B0
+604 = kn_IN_P11_B0___IN_P15_B0
+605 = k_IN_P11_B0___IN_P14_B0
+606 = kn_IN_P11_B0___IN_P14_B0
+607 = k_IN_P11_B0___IN_P13_B0
+608 = kn_IN_P11_B0___IN_P13_B0
+609 = k_IN_P11_B0___IN_P12_B0
+610 = kn_IN_P11_B0___IN_P12_B0
+611 = k_IN_P11_B0___IN_P11_B0
+612 = k_IN_P11_B0___IN_P10_B0
+613 = kn_IN_P11_B0___IN_P10_B0
+614 = k_IN_P11_B0___IN_P1_B0
+615 = kn_IN_P11_B0___IN_P1_B0
+616 = k_IN_P11_B0___IN_P0_B0
+617 = kn_IN_P11_B0___IN_P0_B0
+618 = k_IN_P12_B0___IN_P9_B0
+619 = kn_IN_P12_B0___IN_P9_B0
+620 = k_IN_P12_B0___IN_P8_B0
+621 = kn_IN_P12_B0___IN_P8_B0
+622 = k_IN_P12_B0___IN_P7_B0
+623 = kn_IN_P12_B0___IN_P7_B0
+624 = k_IN_P12_B0___IN_P6_B0
+625 = kn_IN_P12_B0___IN_P6_B0
+626 = k_IN_P12_B0___IN_P5_B0
+627 = kn_IN_P12_B0___IN_P5_B0
+628 = k_IN_P12_B0___IN_P4_B0
+629 = kn_IN_P12_B0___IN_P4_B0
+630 = k_IN_P12_B0___IN_P3_B0
+631 = kn_IN_P12_B0___IN_P3_B0
+632 = k_IN_P12_B0___IN_P29_B0
+633 = kn_IN_P12_B0___IN_P29_B0
+634 = k_IN_P12_B0___IN_P28_B0
+635 = kn_IN_P12_B0___IN_P28_B0
+636 = k_IN_P12_B0___IN_P27_B0
+637 = kn_IN_P12_B0___IN_P27_B0
+638 = k_IN_P12_B0___IN_P26_B0
+639 = kn_IN_P12_B0___IN_P26_B0
+640 = k_IN_P12_B0___IN_P25_B0
+641 = kn_IN_P12_B0___IN_P25_B0
+642 = k_IN_P12_B0___IN_P24_B0
+643 = kn_IN_P12_B0___IN_P24_B0
+644 = k_IN_P12_B0___IN_P23_B0
+645 = kn_IN_P12_B0___IN_P23_B0
+646 = k_IN_P12_B0___IN_P22_B0
+647 = kn_IN_P12_B0___IN_P22_B0
+648 = k_IN_P12_B0___IN_P21_B0
+649 = kn_IN_P12_B0___IN_P21_B0
+650 = k_IN_P12_B0___IN_P20_B0
+651 = kn_IN_P12_B0___IN_P20_B0
+652 = k_IN_P12_B0___IN_P2_B0
+653 = kn_IN_P12_B0___IN_P2_B0
+654 = k_IN_P12_B0___IN_P19_B0
+655 = kn_IN_P12_B0___IN_P19_B0
+656 = k_IN_P12_B0___IN_P18_B0
+657 = kn_IN_P12_B0___IN_P18_B0
+658 = k_IN_P12_B0___IN_P17_B0
+659 = kn_IN_P12_B0___IN_P17_B0
+660 = k_IN_P12_B0___IN_P16_B0
+661 = kn_IN_P12_B0___IN_P16_B0
+662 = k_IN_P12_B0___IN_P15_B0
+663 = kn_IN_P12_B0___IN_P15_B0
+664 = k_IN_P12_B0___IN_P14_B0
+665 = kn_IN_P12_B0___IN_P14_B0
+666 = k_IN_P12_B0___IN_P13_B0
+667 = kn_IN_P12_B0___IN_P13_B0
+668 = k_IN_P12_B0___IN_P12_B0
+669 = k_IN_P12_B0___IN_P11_B0
+670 = kn_IN_P12_B0___IN_P11_B0
+671 = k_IN_P12_B0___IN_P10_B0
+672 = kn_IN_P12_B0___IN_P10_B0
+673 = k_IN_P12_B0___IN_P1_B0
+674 = kn_IN_P12_B0___IN_P1_B0
+675 = k_IN_P12_B0___IN_P0_B0
+676 = kn_IN_P12_B0___IN_P0_B0
+677 = k_IN_P13_B0___IN_P9_B0
+678 = kn_IN_P13_B0___IN_P9_B0
+679 = k_IN_P13_B0___IN_P8_B0
+680 = kn_IN_P13_B0___IN_P8_B0
+681 = k_IN_P13_B0___IN_P7_B0
+682 = kn_IN_P13_B0___IN_P7_B0
+683 = k_IN_P13_B0___IN_P6_B0
+684 = kn_IN_P13_B0___IN_P6_B0
+685 = k_IN_P13_B0___IN_P5_B0
+686 = kn_IN_P13_B0___IN_P5_B0
+687 = k_IN_P13_B0___IN_P4_B0
+688 = kn_IN_P13_B0___IN_P4_B0
+689 = k_IN_P13_B0___IN_P3_B0
+690 = kn_IN_P13_B0___IN_P3_B0
+691 = k_IN_P13_B0___IN_P29_B0
+692 = kn_IN_P13_B0___IN_P29_B0
+693 = k_IN_P13_B0___IN_P28_B0
+694 = kn_IN_P13_B0___IN_P28_B0
+695 = k_IN_P13_B0___IN_P27_B0
+696 = kn_IN_P13_B0___IN_P27_B0
+697 = k_IN_P13_B0___IN_P26_B0
+698 = kn_IN_P13_B0___IN_P26_B0
+699 = k_IN_P13_B0___IN_P25_B0
+700 = kn_IN_P13_B0___IN_P25_B0
+701 = k_IN_P13_B0___IN_P24_B0
+702 = kn_IN_P13_B0___IN_P24_B0
+703 = k_IN_P13_B0___IN_P23_B0
+704 = kn_IN_P13_B0___IN_P23_B0
+705 = k_IN_P13_B0___IN_P22_B0
+706 = kn_IN_P13_B0___IN_P22_B0
+707 = k_IN_P13_B0___IN_P21_B0
+708 = kn_IN_P13_B0___IN_P21_B0
+709 = k_IN_P13_B0___IN_P20_B0
+710 = kn_IN_P13_B0___IN_P20_B0
+711 = k_IN_P13_B0___IN_P2_B0
+712 = kn_IN_P13_B0___IN_P2_B0
+713 = k_IN_P13_B0___IN_P19_B0
+714 = kn_IN_P13_B0___IN_P19_B0
+715 = k_IN_P13_B0___IN_P18_B0
+716 = kn_IN_P13_B0___IN_P18_B0
+717 = k_IN_P13_B0___IN_P17_B0
+718 = kn_IN_P13_B0___IN_P17_B0
+719 = k_IN_P13_B0___IN_P16_B0
+720 = kn_IN_P13_B0___IN_P16_B0
+721 = k_IN_P13_B0___IN_P15_B0
+722 = kn_IN_P13_B0___IN_P15_B0
+723 = k_IN_P13_B0___IN_P14_B0
+724 = kn_IN_P13_B0___IN_P14_B0
+725 = k_IN_P13_B0___IN_P13_B0
+726 = k_IN_P13_B0___IN_P12_B0
+727 = kn_IN_P13_B0___IN_P12_B0
+728 = k_IN_P13_B0___IN_P11_B0
+729 = kn_IN_P13_B0___IN_P11_B0
+730 = k_IN_P13_B0___IN_P10_B0
+731 = kn_IN_P13_B0___IN_P10_B0
+732 = k_IN_P13_B0___IN_P1_B0
+733 = kn_IN_P13_B0___IN_P1_B0
+734 = k_IN_P13_B0___IN_P0_B0
+735 = kn_IN_P13_B0___IN_P0_B0
+736 = k_IN_P14_B0___IN_P9_B0
+737 = kn_IN_P14_B0___IN_P9_B0
+738 = k_IN_P14_B0___IN_P8_B0
+739 = kn_IN_P14_B0___IN_P8_B0
+740 = k_IN_P14_B0___IN_P7_B0
+741 = kn_IN_P14_B0___IN_P7_B0
+742 = k_IN_P14_B0___IN_P6_B0
+743 = kn_IN_P14_B0___IN_P6_B0
+744 = k_IN_P14_B0___IN_P5_B0
+745 = kn_IN_P14_B0___IN_P5_B0
+746 = k_IN_P14_B0___IN_P4_B0
+747 = kn_IN_P14_B0___IN_P4_B0
+748 = k_IN_P14_B0___IN_P3_B0
+749 = kn_IN_P14_B0___IN_P3_B0
+750 = k_IN_P14_B0___IN_P29_B0
+751 = kn_IN_P14_B0___IN_P29_B0
+752 = k_IN_P14_B0___IN_P28_B0
+753 = kn_IN_P14_B0___IN_P28_B0
+754 = k_IN_P14_B0___IN_P27_B0
+755 = kn_IN_P14_B0___IN_P27_B0
+756 = k_IN_P14_B0___IN_P26_B0
+757 = kn_IN_P14_B0___IN_P26_B0
+758 = k_IN_P14_B0___IN_P25_B0
+759 = kn_IN_P14_B0___IN_P25_B0
+760 = k_IN_P14_B0___IN_P24_B0
+761 = kn_IN_P14_B0___IN_P24_B0
+762 = k_IN_P14_B0___IN_P23_B0
+763 = kn_IN_P14_B0___IN_P23_B0
+764 = k_IN_P14_B0___IN_P22_B0
+765 = kn_IN_P14_B0___IN_P22_B0
+766 = k_IN_P14_B0___IN_P21_B0
+767 = kn_IN_P14_B0___IN_P21_B0
+768 = k_IN_P14_B0___IN_P20_B0
+769 = kn_IN_P14_B0___IN_P20_B0
+770 = k_IN_P14_B0___IN_P2_B0
+771 = kn_IN_P14_B0___IN_P2_B0
+772 = k_IN_P14_B0___IN_P19_B0
+773 = kn_IN_P14_B0___IN_P19_B0
+774 = k_IN_P14_B0___IN_P18_B0
+775 = kn_IN_P14_B0___IN_P18_B0
+776 = k_IN_P14_B0___IN_P17_B0
+777 = kn_IN_P14_B0___IN_P17_B0
+778 = k_IN_P14_B0___IN_P16_B0
+779 = kn_IN_P14_B0___IN_P16_B0
+780 = k_IN_P14_B0___IN_P15_B0
+781 = kn_IN_P14_B0___IN_P15_B0
+782 = k_IN_P14_B0___IN_P14_B0
+783 = k_IN_P14_B0___IN_P13_B0
+784 = kn_IN_P14_B0___IN_P13_B0
+785 = k_IN_P14_B0___IN_P12_B0
+786 = kn_IN_P14_B0___IN_P12_B0
+787 = k_IN_P14_B0___IN_P11_B0
+788 = kn_IN_P14_B0___IN_P11_B0
+789 = k_IN_P14_B0___IN_P10_B0
+790 = kn_IN_P14_B0___IN_P10_B0
+791 = k_IN_P14_B0___IN_P1_B0
+792 = kn_IN_P14_B0___IN_P1_B0
+793 = k_IN_P14_B0___IN_P0_B0
+794 = kn_IN_P14_B0___IN_P0_B0
+795 = k_IN_P15_B0___IN_P9_B0
+796 = kn_IN_P15_B0___IN_P9_B0
+797 = k_IN_P15_B0___IN_P8_B0
+798 = kn_IN_P15_B0___IN_P8_B0
+799 = k_IN_P15_B0___IN_P7_B0
+800 = kn_IN_P15_B0___IN_P7_B0
+801 = k_IN_P15_B0___IN_P6_B0
+802 = kn_IN_P15_B0___IN_P6_B0
+803 = k_IN_P15_B0___IN_P5_B0
+804 = kn_IN_P15_B0___IN_P5_B0
+805 = k_IN_P15_B0___IN_P4_B0
+806 = kn_IN_P15_B0___IN_P4_B0
+807 = k_IN_P15_B0___IN_P3_B0
+808 = kn_IN_P15_B0___IN_P3_B0
+809 = k_IN_P15_B0___IN_P29_B0
+810 = kn_IN_P15_B0___IN_P29_B0
+811 = k_IN_P15_B0___IN_P28_B0
+812 = kn_IN_P15_B0___IN_P28_B0
+813 = k_IN_P15_B0___IN_P27_B0
+814 = kn_IN_P15_B0___IN_P27_B0
+815 = k_IN_P15_B0___IN_P26_B0
+816 = kn_IN_P15_B0___IN_P26_B0
+817 = k_IN_P15_B0___IN_P25_B0
+818 = kn_IN_P15_B0___IN_P25_B0
+819 = k_IN_P15_B0___IN_P24_B0
+820 = kn_IN_P15_B0___IN_P24_B0
+821 = k_IN_P15_B0___IN_P23_B0
+822 = kn_IN_P15_B0___IN_P23_B0
+823 = k_IN_P15_B0___IN_P22_B0
+824 = kn_IN_P15_B0___IN_P22_B0
+825 = k_IN_P15_B0___IN_P21_B0
+826 = kn_IN_P15_B0___IN_P21_B0
+827 = k_IN_P15_B0___IN_P20_B0
+828 = kn_IN_P15_B0___IN_P20_B0
+829 = k_IN_P15_B0___IN_P2_B0
+830 = kn_IN_P15_B0___IN_P2_B0
+831 = k_IN_P15_B0___IN_P19_B0
+832 = kn_IN_P15_B0___IN_P19_B0
+833 = k_IN_P15_B0___IN_P18_B0
+834 = kn_IN_P15_B0___IN_P18_B0
+835 = k_IN_P15_B0___IN_P17_B0
+836 = kn_IN_P15_B0___IN_P17_B0
+837 = k_IN_P15_B0___IN_P16_B0
+838 = kn_IN_P15_B0___IN_P16_B0
+839 = k_IN_P15_B0___IN_P15_B0
+840 = k_IN_P15_B0___IN_P14_B0
+841 = kn_IN_P15_B0___IN_P14_B0
+842 = k_IN_P15_B0___IN_P13_B0
+843 = kn_IN_P15_B0___IN_P13_B0
+844 = k_IN_P15_B0___IN_P12_B0
+845 = kn_IN_P15_B0___IN_P12_B0
+846 = k_IN_P15_B0___IN_P11_B0
+847 = kn_IN_P15_B0___IN_P11_B0
+848 = k_IN_P15_B0___IN_P10_B0
+849 = kn_IN_P15_B0___IN_P10_B0
+850 = k_IN_P15_B0___IN_P1_B0
+851 = kn_IN_P15_B0___IN_P1_B0
+852 = k_IN_P15_B0___IN_P0_B0
+853 = kn_IN_P15_B0___IN_P0_B0
+854 = k_IN_P16_B0___IN_P9_B0
+855 = kn_IN_P16_B0___IN_P9_B0
+856 = k_IN_P16_B0___IN_P8_B0
+857 = kn_IN_P16_B0___IN_P8_B0
+858 = k_IN_P16_B0___IN_P7_B0
+859 = kn_IN_P16_B0___IN_P7_B0
+860 = k_IN_P16_B0___IN_P6_B0
+861 = kn_IN_P16_B0___IN_P6_B0
+862 = k_IN_P16_B0___IN_P5_B0
+863 = kn_IN_P16_B0___IN_P5_B0
+864 = k_IN_P16_B0___IN_P4_B0
+865 = kn_IN_P16_B0___IN_P4_B0
+866 = k_IN_P16_B0___IN_P3_B0
+867 = kn_IN_P16_B0___IN_P3_B0
+868 = k_IN_P16_B0___IN_P29_B0
+869 = kn_IN_P16_B0___IN_P29_B0
+870 = k_IN_P16_B0___IN_P28_B0
+871 = kn_IN_P16_B0___IN_P28_B0
+872 = k_IN_P16_B0___IN_P27_B0
+873 = kn_IN_P16_B0___IN_P27_B0
+874 = k_IN_P16_B0___IN_P26_B0
+875 = kn_IN_P16_B0___IN_P26_B0
+876 = k_IN_P16_B0___IN_P25_B0
+877 = kn_IN_P16_B0___IN_P25_B0
+878 = k_IN_P16_B0___IN_P24_B0
+879 = kn_IN_P16_B0___IN_P24_B0
+880 = k_IN_P16_B0___IN_P23_B0
+881 = kn_IN_P16_B0___IN_P23_B0
+882 = k_IN_P16_B0___IN_P22_B0
+883 = kn_IN_P16_B0___IN_P22_B0
+884 = k_IN_P16_B0___IN_P21_B0
+885 = kn_IN_P16_B0___IN_P21_B0
+886 = k_IN_P16_B0___IN_P20_B0
+887 = kn_IN_P16_B0___IN_P20_B0
+888 = k_IN_P16_B0___IN_P2_B0
+889 = kn_IN_P16_B0___IN_P2_B0
+890 = k_IN_P16_B0___IN_P19_B0
+891 = kn_IN_P16_B0___IN_P19_B0
+892 = k_IN_P16_B0___IN_P18_B0
+893 = kn_IN_P16_B0___IN_P18_B0
+894 = k_IN_P16_B0___IN_P17_B0
+895 = kn_IN_P16_B0___IN_P17_B0
+896 = k_IN_P16_B0___IN_P16_B0
+897 = k_IN_P16_B0___IN_P15_B0
+898 = kn_IN_P16_B0___IN_P15_B0
+899 = k_IN_P16_B0___IN_P14_B0
+900 = kn_IN_P16_B0___IN_P14_B0
+901 = k_IN_P16_B0___IN_P13_B0
+902 = kn_IN_P16_B0___IN_P13_B0
+903 = k_IN_P16_B0___IN_P12_B0
+904 = kn_IN_P16_B0___IN_P12_B0
+905 = k_IN_P16_B0___IN_P11_B0
+906 = kn_IN_P16_B0___IN_P11_B0
+907 = k_IN_P16_B0___IN_P10_B0
+908 = kn_IN_P16_B0___IN_P10_B0
+909 = k_IN_P16_B0___IN_P1_B0
+910 = kn_IN_P16_B0___IN_P1_B0
+911 = k_IN_P16_B0___IN_P0_B0
+912 = kn_IN_P16_B0___IN_P0_B0
+913 = k_IN_P17_B0___IN_P9_B0
+914 = kn_IN_P17_B0___IN_P9_B0
+915 = k_IN_P17_B0___IN_P8_B0
+916 = kn_IN_P17_B0___IN_P8_B0
+917 = k_IN_P17_B0___IN_P7_B0
+918 = kn_IN_P17_B0___IN_P7_B0
+919 = k_IN_P17_B0___IN_P6_B0
+920 = kn_IN_P17_B0___IN_P6_B0
+921 = k_IN_P17_B0___IN_P5_B0
+922 = kn_IN_P17_B0___IN_P5_B0
+923 = k_IN_P17_B0___IN_P4_B0
+924 = kn_IN_P17_B0___IN_P4_B0
+925 = k_IN_P17_B0___IN_P3_B0
+926 = kn_IN_P17_B0___IN_P3_B0
+927 = k_IN_P17_B0___IN_P29_B0
+928 = kn_IN_P17_B0___IN_P29_B0
+929 = k_IN_P17_B0___IN_P28_B0
+930 = kn_IN_P17_B0___IN_P28_B0
+931 = k_IN_P17_B0___IN_P27_B0
+932 = kn_IN_P17_B0___IN_P27_B0
+933 = k_IN_P17_B0___IN_P26_B0
+934 = kn_IN_P17_B0___IN_P26_B0
+935 = k_IN_P17_B0___IN_P25_B0
+936 = kn_IN_P17_B0___IN_P25_B0
+937 = k_IN_P17_B0___IN_P24_B0
+938 = kn_IN_P17_B0___IN_P24_B0
+939 = k_IN_P17_B0___IN_P23_B0
+940 = kn_IN_P17_B0___IN_P23_B0
+941 = k_IN_P17_B0___IN_P22_B0
+942 = kn_IN_P17_B0___IN_P22_B0
+943 = k_IN_P17_B0___IN_P21_B0
+944 = kn_IN_P17_B0___IN_P21_B0
+945 = k_IN_P17_B0___IN_P20_B0
+946 = kn_IN_P17_B0___IN_P20_B0
+947 = k_IN_P17_B0___IN_P2_B0
+948 = kn_IN_P17_B0___IN_P2_B0
+949 = k_IN_P17_B0___IN_P19_B0
+950 = kn_IN_P17_B0___IN_P19_B0
+951 = k_IN_P17_B0___IN_P18_B0
+952 = kn_IN_P17_B0___IN_P18_B0
+953 = k_IN_P17_B0___IN_P17_B0
+954 = k_IN_P17_B0___IN_P16_B0
+955 = kn_IN_P17_B0___IN_P16_B0
+956 = k_IN_P17_B0___IN_P15_B0
+957 = kn_IN_P17_B0___IN_P15_B0
+958 = k_IN_P17_B0___IN_P14_B0
+959 = kn_IN_P17_B0___IN_P14_B0
+960 = k_IN_P17_B0___IN_P13_B0
+961 = kn_IN_P17_B0___IN_P13_B0
+962 = k_IN_P17_B0___IN_P12_B0
+963 = kn_IN_P17_B0___IN_P12_B0
+964 = k_IN_P17_B0___IN_P11_B0
+965 = kn_IN_P17_B0___IN_P11_B0
+966 = k_IN_P17_B0___IN_P10_B0
+967 = kn_IN_P17_B0___IN_P10_B0
+968 = k_IN_P17_B0___IN_P1_B0
+969 = kn_IN_P17_B0___IN_P1_B0
+970 = k_IN_P17_B0___IN_P0_B0
+971 = kn_IN_P17_B0___IN_P0_B0
+972 = k_IN_P18_B0___IN_P9_B0
+973 = kn_IN_P18_B0___IN_P9_B0
+974 = k_IN_P18_B0___IN_P8_B0
+975 = kn_IN_P18_B0___IN_P8_B0
+976 = k_IN_P18_B0___IN_P7_B0
+977 = kn_IN_P18_B0___IN_P7_B0
+978 = k_IN_P18_B0___IN_P6_B0
+979 = kn_IN_P18_B0___IN_P6_B0
+980 = k_IN_P18_B0___IN_P5_B0
+981 = kn_IN_P18_B0___IN_P5_B0
+982 = k_IN_P18_B0___IN_P4_B0
+983 = kn_IN_P18_B0___IN_P4_B0
+984 = k_IN_P18_B0___IN_P3_B0
+985 = kn_IN_P18_B0___IN_P3_B0
+986 = k_IN_P18_B0___IN_P29_B0
+987 = kn_IN_P18_B0___IN_P29_B0
+988 = k_IN_P18_B0___IN_P28_B0
+989 = kn_IN_P18_B0___IN_P28_B0
+990 = k_IN_P18_B0___IN_P27_B0
+991 = kn_IN_P18_B0___IN_P27_B0
+992 = k_IN_P18_B0___IN_P26_B0
+993 = kn_IN_P18_B0___IN_P26_B0
+994 = k_IN_P18_B0___IN_P25_B0
+995 = kn_IN_P18_B0___IN_P25_B0
+996 = k_IN_P18_B0___IN_P24_B0
+997 = kn_IN_P18_B0___IN_P24_B0
+998 = k_IN_P18_B0___IN_P23_B0
+999 = kn_IN_P18_B0___IN_P23_B0
+1000 = k_IN_P18_B0___IN_P22_B0
+1001 = kn_IN_P18_B0___IN_P22_B0
+1002 = k_IN_P18_B0___IN_P21_B0
+1003 = kn_IN_P18_B0___IN_P21_B0
+1004 = k_IN_P18_B0___IN_P20_B0
+1005 = kn_IN_P18_B0___IN_P20_B0
+1006 = k_IN_P18_B0___IN_P2_B0
+1007 = kn_IN_P18_B0___IN_P2_B0
+1008 = k_IN_P18_B0___IN_P19_B0
+1009 = kn_IN_P18_B0___IN_P19_B0
+1010 = k_IN_P18_B0___IN_P18_B0
+1011 = k_IN_P18_B0___IN_P17_B0
+1012 = kn_IN_P18_B0___IN_P17_B0
+1013 = k_IN_P18_B0___IN_P16_B0
+1014 = kn_IN_P18_B0___IN_P16_B0
+1015 = k_IN_P18_B0___IN_P15_B0
+1016 = kn_IN_P18_B0___IN_P15_B0
+1017 = k_IN_P18_B0___IN_P14_B0
+1018 = kn_IN_P18_B0___IN_P14_B0
+1019 = k_IN_P18_B0___IN_P13_B0
+1020 = kn_IN_P18_B0___IN_P13_B0
+1021 = k_IN_P18_B0___IN_P12_B0
+1022 = kn_IN_P18_B0___IN_P12_B0
+1023 = k_IN_P18_B0___IN_P11_B0
+1024 = kn_IN_P18_B0___IN_P11_B0
+1025 = k_IN_P18_B0___IN_P10_B0
+1026 = kn_IN_P18_B0___IN_P10_B0
+1027 = k_IN_P18_B0___IN_P1_B0
+1028 = kn_IN_P18_B0___IN_P1_B0
+1029 = k_IN_P18_B0___IN_P0_B0
+1030 = kn_IN_P18_B0___IN_P0_B0
+1031 = k_IN_P19_B0___IN_P9_B0
+1032 = kn_IN_P19_B0___IN_P9_B0
+1033 = k_IN_P19_B0___IN_P8_B0
+1034 = kn_IN_P19_B0___IN_P8_B0
+1035 = k_IN_P19_B0___IN_P7_B0
+1036 = kn_IN_P19_B0___IN_P7_B0
+1037 = k_IN_P19_B0___IN_P6_B0
+1038 = kn_IN_P19_B0___IN_P6_B0
+1039 = k_IN_P19_B0___IN_P5_B0
+1040 = kn_IN_P19_B0___IN_P5_B0
+1041 = k_IN_P19_B0___IN_P4_B0
+1042 = kn_IN_P19_B0___IN_P4_B0
+1043 = k_IN_P19_B0___IN_P3_B0
+1044 = kn_IN_P19_B0___IN_P3_B0
+1045 = k_IN_P19_B0___IN_P29_B0
+1046 = kn_IN_P19_B0___IN_P29_B0
+1047 = k_IN_P19_B0___IN_P28_B0
+1048 = kn_IN_P19_B0___IN_P28_B0
+1049 = k_IN_P19_B0___IN_P27_B0
+1050 = kn_IN_P19_B0___IN_P27_B0
+1051 = k_IN_P19_B0___IN_P26_B0
+1052 = kn_IN_P19_B0___IN_P26_B0
+1053 = k_IN_P19_B0___IN_P25_B0
+1054 = kn_IN_P19_B0___IN_P25_B0
+1055 = k_IN_P19_B0___IN_P24_B0
+1056 = kn_IN_P19_B0___IN_P24_B0
+1057 = k_IN_P19_B0___IN_P23_B0
+1058 = kn_IN_P19_B0___IN_P23_B0
+1059 = k_IN_P19_B0___IN_P22_B0
+1060 = kn_IN_P19_B0___IN_P22_B0
+1061 = k_IN_P19_B0___IN_P21_B0
+1062 = kn_IN_P19_B0___IN_P21_B0
+1063 = k_IN_P19_B0___IN_P20_B0
+1064 = kn_IN_P19_B0___IN_P20_B0
+1065 = k_IN_P19_B0___IN_P2_B0
+1066 = kn_IN_P19_B0___IN_P2_B0
+1067 = k_IN_P19_B0___IN_P19_B0
+1068 = k_IN_P19_B0___IN_P18_B0
+1069 = kn_IN_P19_B0___IN_P18_B0
+1070 = k_IN_P19_B0___IN_P17_B0
+1071 = kn_IN_P19_B0___IN_P17_B0
+1072 = k_IN_P19_B0___IN_P16_B0
+1073 = kn_IN_P19_B0___IN_P16_B0
+1074 = k_IN_P19_B0___IN_P15_B0
+1075 = kn_IN_P19_B0___IN_P15_B0
+1076 = k_IN_P19_B0___IN_P14_B0
+1077 = kn_IN_P19_B0___IN_P14_B0
+1078 = k_IN_P19_B0___IN_P13_B0
+1079 = kn_IN_P19_B0___IN_P13_B0
+1080 = k_IN_P19_B0___IN_P12_B0
+1081 = kn_IN_P19_B0___IN_P12_B0
+1082 = k_IN_P19_B0___IN_P11_B0
+1083 = kn_IN_P19_B0___IN_P11_B0
+1084 = k_IN_P19_B0___IN_P10_B0
+1085 = kn_IN_P19_B0___IN_P10_B0
+1086 = k_IN_P19_B0___IN_P1_B0
+1087 = kn_IN_P19_B0___IN_P1_B0
+1088 = k_IN_P19_B0___IN_P0_B0
+1089 = kn_IN_P19_B0___IN_P0_B0
+1090 = k_IN_P2_B0___IN_P9_B0
+1091 = kn_IN_P2_B0___IN_P9_B0
+1092 = k_IN_P2_B0___IN_P8_B0
+1093 = kn_IN_P2_B0___IN_P8_B0
+1094 = k_IN_P2_B0___IN_P7_B0
+1095 = kn_IN_P2_B0___IN_P7_B0
+1096 = k_IN_P2_B0___IN_P6_B0
+1097 = kn_IN_P2_B0___IN_P6_B0
+1098 = k_IN_P2_B0___IN_P5_B0
+1099 = kn_IN_P2_B0___IN_P5_B0
+1100 = k_IN_P2_B0___IN_P4_B0
+1101 = kn_IN_P2_B0___IN_P4_B0
+1102 = k_IN_P2_B0___IN_P3_B0
+1103 = kn_IN_P2_B0___IN_P3_B0
+1104 = k_IN_P2_B0___IN_P29_B0
+1105 = kn_IN_P2_B0___IN_P29_B0
+1106 = k_IN_P2_B0___IN_P28_B0
+1107 = kn_IN_P2_B0___IN_P28_B0
+1108 = k_IN_P2_B0___IN_P27_B0
+1109 = kn_IN_P2_B0___IN_P27_B0
+1110 = k_IN_P2_B0___IN_P26_B0
+1111 = kn_IN_P2_B0___IN_P26_B0
+1112 = k_IN_P2_B0___IN_P25_B0
+1113 = kn_IN_P2_B0___IN_P25_B0
+1114 = k_IN_P2_B0___IN_P24_B0
+1115 = kn_IN_P2_B0___IN_P24_B0
+1116 = k_IN_P2_B0___IN_P23_B0
+1117 = kn_IN_P2_B0___IN_P23_B0
+1118 = k_IN_P2_B0___IN_P22_B0
+1119 = kn_IN_P2_B0___IN_P22_B0
+1120 = k_IN_P2_B0___IN_P21_B0
+1121 = kn_IN_P2_B0___IN_P21_B0
+1122 = k_IN_P2_B0___IN_P20_B0
+1123 = kn_IN_P2_B0___IN_P20_B0
+1124 = k_IN_P2_B0___IN_P2_B0
+1125 = k_IN_P2_B0___IN_P19_B0
+1126 = kn_IN_P2_B0___IN_P19_B0
+1127 = k_IN_P2_B0___IN_P18_B0
+1128 = kn_IN_P2_B0___IN_P18_B0
+1129 = k_IN_P2_B0___IN_P17_B0
+1130 = kn_IN_P2_B0___IN_P17_B0
+1131 = k_IN_P2_B0___IN_P16_B0
+1132 = kn_IN_P2_B0___IN_P16_B0
+1133 = k_IN_P2_B0___IN_P15_B0
+1134 = kn_IN_P2_B0___IN_P15_B0
+1135 = k_IN_P2_B0___IN_P14_B0
+1136 = kn_IN_P2_B0___IN_P14_B0
+1137 = k_IN_P2_B0___IN_P13_B0
+1138 = kn_IN_P2_B0___IN_P13_B0
+1139 = k_IN_P2_B0___IN_P12_B0
+1140 = kn_IN_P2_B0___IN_P12_B0
+1141 = k_IN_P2_B0___IN_P11_B0
+1142 = kn_IN_P2_B0___IN_P11_B0
+1143 = k_IN_P2_B0___IN_P10_B0
+1144 = kn_IN_P2_B0___IN_P10_B0
+1145 = k_IN_P2_B0___IN_P1_B0
+1146 = kn_IN_P2_B0___IN_P1_B0
+1147 = k_IN_P2_B0___IN_P0_B0
+1148 = kn_IN_P2_B0___IN_P0_B0
+1149 = k_IN_P20_B0___IN_P9_B0
+1150 = kn_IN_P20_B0___IN_P9_B0
+1151 = k_IN_P20_B0___IN_P8_B0
+1152 = kn_IN_P20_B0___IN_P8_B0
+1153 = k_IN_P20_B0___IN_P7_B0
+1154 = kn_IN_P20_B0___IN_P7_B0
+1155 = k_IN_P20_B0___IN_P6_B0
+1156 = kn_IN_P20_B0___IN_P6_B0
+1157 = k_IN_P20_B0___IN_P5_B0
+1158 = kn_IN_P20_B0___IN_P5_B0
+1159 = k_IN_P20_B0___IN_P4_B0
+1160 = kn_IN_P20_B0___IN_P4_B0
+1161 = k_IN_P20_B0___IN_P3_B0
+1162 = kn_IN_P20_B0___IN_P3_B0
+1163 = k_IN_P20_B0___IN_P29_B0
+1164 = kn_IN_P20_B0___IN_P29_B0
+1165 = k_IN_P20_B0___IN_P28_B0
+1166 = kn_IN_P20_B0___IN_P28_B0
+1167 = k_IN_P20_B0___IN_P27_B0
+1168 = kn_IN_P20_B0___IN_P27_B0
+1169 = k_IN_P20_B0___IN_P26_B0
+1170 = kn_IN_P20_B0___IN_P26_B0
+1171 = k_IN_P20_B0___IN_P25_B0
+1172 = kn_IN_P20_B0___IN_P25_B0
+1173 = k_IN_P20_B0___IN_P24_B0
+1174 = kn_IN_P20_B0___IN_P24_B0
+1175 = k_IN_P20_B0___IN_P23_B0
+1176 = kn_IN_P20_B0___IN_P23_B0
+1177 = k_IN_P20_B0___IN_P22_B0
+1178 = kn_IN_P20_B0___IN_P22_B0
+1179 = k_IN_P20_B0___IN_P21_B0
+1180 = kn_IN_P20_B0___IN_P21_B0
+1181 = k_IN_P20_B0___IN_P20_B0
+1182 = k_IN_P20_B0___IN_P2_B0
+1183 = kn_IN_P20_B0___IN_P2_B0
+1184 = k_IN_P20_B0___IN_P19_B0
+1185 = kn_IN_P20_B0___IN_P19_B0
+1186 = k_IN_P20_B0___IN_P18_B0
+1187 = kn_IN_P20_B0___IN_P18_B0
+1188 = k_IN_P20_B0___IN_P17_B0
+1189 = kn_IN_P20_B0___IN_P17_B0
+1190 = k_IN_P20_B0___IN_P16_B0
+1191 = kn_IN_P20_B0___IN_P16_B0
+1192 = k_IN_P20_B0___IN_P15_B0
+1193 = kn_IN_P20_B0___IN_P15_B0
+1194 = k_IN_P20_B0___IN_P14_B0
+1195 = kn_IN_P20_B0___IN_P14_B0
+1196 = k_IN_P20_B0___IN_P13_B0
+1197 = kn_IN_P20_B0___IN_P13_B0
+1198 = k_IN_P20_B0___IN_P12_B0
+1199 = kn_IN_P20_B0___IN_P12_B0
+1200 = k_IN_P20_B0___IN_P11_B0
+1201 = kn_IN_P20_B0___IN_P11_B0
+1202 = k_IN_P20_B0___IN_P10_B0
+1203 = kn_IN_P20_B0___IN_P10_B0
+1204 = k_IN_P20_B0___IN_P1_B0
+1205 = kn_IN_P20_B0___IN_P1_B0
+1206 = k_IN_P20_B0___IN_P0_B0
+1207 = kn_IN_P20_B0___IN_P0_B0
+1208 = k_IN_P21_B0___IN_P9_B0
+1209 = kn_IN_P21_B0___IN_P9_B0
+1210 = k_IN_P21_B0___IN_P8_B0
+1211 = kn_IN_P21_B0___IN_P8_B0
+1212 = k_IN_P21_B0___IN_P7_B0
+1213 = kn_IN_P21_B0___IN_P7_B0
+1214 = k_IN_P21_B0___IN_P6_B0
+1215 = kn_IN_P21_B0___IN_P6_B0
+1216 = k_IN_P21_B0___IN_P5_B0
+1217 = kn_IN_P21_B0___IN_P5_B0
+1218 = k_IN_P21_B0___IN_P4_B0
+1219 = kn_IN_P21_B0___IN_P4_B0
+1220 = k_IN_P21_B0___IN_P3_B0
+1221 = kn_IN_P21_B0___IN_P3_B0
+1222 = k_IN_P21_B0___IN_P29_B0
+1223 = kn_IN_P21_B0___IN_P29_B0
+1224 = k_IN_P21_B0___IN_P28_B0
+1225 = kn_IN_P21_B0___IN_P28_B0
+1226 = k_IN_P21_B0___IN_P27_B0
+1227 = kn_IN_P21_B0___IN_P27_B0
+1228 = k_IN_P21_B0___IN_P26_B0
+1229 = kn_IN_P21_B0___IN_P26_B0
+1230 = k_IN_P21_B0___IN_P25_B0
+1231 = kn_IN_P21_B0___IN_P25_B0
+1232 = k_IN_P21_B0___IN_P24_B0
+1233 = kn_IN_P21_B0___IN_P24_B0
+1234 = k_IN_P21_B0___IN_P23_B0
+1235 = kn_IN_P21_B0___IN_P23_B0
+1236 = k_IN_P21_B0___IN_P22_B0
+1237 = kn_IN_P21_B0___IN_P22_B0
+1238 = k_IN_P21_B0___IN_P21_B0
+1239 = k_IN_P21_B0___IN_P20_B0
+1240 = kn_IN_P21_B0___IN_P20_B0
+1241 = k_IN_P21_B0___IN_P2_B0
+1242 = kn_IN_P21_B0___IN_P2_B0
+1243 = k_IN_P21_B0___IN_P19_B0
+1244 = kn_IN_P21_B0___IN_P19_B0
+1245 = k_IN_P21_B0___IN_P18_B0
+1246 = kn_IN_P21_B0___IN_P18_B0
+1247 = k_IN_P21_B0___IN_P17_B0
+1248 = kn_IN_P21_B0___IN_P17_B0
+1249 = k_IN_P21_B0___IN_P16_B0
+1250 = kn_IN_P21_B0___IN_P16_B0
+1251 = k_IN_P21_B0___IN_P15_B0
+1252 = kn_IN_P21_B0___IN_P15_B0
+1253 = k_IN_P21_B0___IN_P14_B0
+1254 = kn_IN_P21_B0___IN_P14_B0
+1255 = k_IN_P21_B0___IN_P13_B0
+1256 = kn_IN_P21_B0___IN_P13_B0
+1257 = k_IN_P21_B0___IN_P12_B0
+1258 = kn_IN_P21_B0___IN_P12_B0
+1259 = k_IN_P21_B0___IN_P11_B0
+1260 = kn_IN_P21_B0___IN_P11_B0
+1261 = k_IN_P21_B0___IN_P10_B0
+1262 = kn_IN_P21_B0___IN_P10_B0
+1263 = k_IN_P21_B0___IN_P1_B0
+1264 = kn_IN_P21_B0___IN_P1_B0
+1265 = k_IN_P21_B0___IN_P0_B0
+1266 = kn_IN_P21_B0___IN_P0_B0
+1267 = k_IN_P22_B0___IN_P9_B0
+1268 = kn_IN_P22_B0___IN_P9_B0
+1269 = k_IN_P22_B0___IN_P8_B0
+1270 = kn_IN_P22_B0___IN_P8_B0
+1271 = k_IN_P22_B0___IN_P7_B0
+1272 = kn_IN_P22_B0___IN_P7_B0
+1273 = k_IN_P22_B0___IN_P6_B0
+1274 = kn_IN_P22_B0___IN_P6_B0
+1275 = k_IN_P22_B0___IN_P5_B0
+1276 = kn_IN_P22_B0___IN_P5_B0
+1277 = k_IN_P22_B0___IN_P4_B0
+1278 = kn_IN_P22_B0___IN_P4_B0
+1279 = k_IN_P22_B0___IN_P3_B0
+1280 = kn_IN_P22_B0___IN_P3_B0
+1281 = k_IN_P22_B0___IN_P29_B0
+1282 = kn_IN_P22_B0___IN_P29_B0
+1283 = k_IN_P22_B0___IN_P28_B0
+1284 = kn_IN_P22_B0___IN_P28_B0
+1285 = k_IN_P22_B0___IN_P27_B0
+1286 = kn_IN_P22_B0___IN_P27_B0
+1287 = k_IN_P22_B0___IN_P26_B0
+1288 = kn_IN_P22_B0___IN_P26_B0
+1289 = k_IN_P22_B0___IN_P25_B0
+1290 = kn_IN_P22_B0___IN_P25_B0
+1291 = k_IN_P22_B0___IN_P24_B0
+1292 = kn_IN_P22_B0___IN_P24_B0
+1293 = k_IN_P22_B0___IN_P23_B0
+1294 = kn_IN_P22_B0___IN_P23_B0
+1295 = k_IN_P22_B0___IN_P22_B0
+1296 = k_IN_P22_B0___IN_P21_B0
+1297 = kn_IN_P22_B0___IN_P21_B0
+1298 = k_IN_P22_B0___IN_P20_B0
+1299 = kn_IN_P22_B0___IN_P20_B0
+1300 = k_IN_P22_B0___IN_P2_B0
+1301 = kn_IN_P22_B0___IN_P2_B0
+1302 = k_IN_P22_B0___IN_P19_B0
+1303 = kn_IN_P22_B0___IN_P19_B0
+1304 = k_IN_P22_B0___IN_P18_B0
+1305 = kn_IN_P22_B0___IN_P18_B0
+1306 = k_IN_P22_B0___IN_P17_B0
+1307 = kn_IN_P22_B0___IN_P17_B0
+1308 = k_IN_P22_B0___IN_P16_B0
+1309 = kn_IN_P22_B0___IN_P16_B0
+1310 = k_IN_P22_B0___IN_P15_B0
+1311 = kn_IN_P22_B0___IN_P15_B0
+1312 = k_IN_P22_B0___IN_P14_B0
+1313 = kn_IN_P22_B0___IN_P14_B0
+1314 = k_IN_P22_B0___IN_P13_B0
+1315 = kn_IN_P22_B0___IN_P13_B0
+1316 = k_IN_P22_B0___IN_P12_B0
+1317 = kn_IN_P22_B0___IN_P12_B0
+1318 = k_IN_P22_B0___IN_P11_B0
+1319 = kn_IN_P22_B0___IN_P11_B0
+1320 = k_IN_P22_B0___IN_P10_B0
+1321 = kn_IN_P22_B0___IN_P10_B0
+1322 = k_IN_P22_B0___IN_P1_B0
+1323 = kn_IN_P22_B0___IN_P1_B0
+1324 = k_IN_P22_B0___IN_P0_B0
+1325 = kn_IN_P22_B0___IN_P0_B0
+1326 = k_IN_P23_B0___IN_P9_B0
+1327 = kn_IN_P23_B0___IN_P9_B0
+1328 = k_IN_P23_B0___IN_P8_B0
+1329 = kn_IN_P23_B0___IN_P8_B0
+1330 = k_IN_P23_B0___IN_P7_B0
+1331 = kn_IN_P23_B0___IN_P7_B0
+1332 = k_IN_P23_B0___IN_P6_B0
+1333 = kn_IN_P23_B0___IN_P6_B0
+1334 = k_IN_P23_B0___IN_P5_B0
+1335 = kn_IN_P23_B0___IN_P5_B0
+1336 = k_IN_P23_B0___IN_P4_B0
+1337 = kn_IN_P23_B0___IN_P4_B0
+1338 = k_IN_P23_B0___IN_P3_B0
+1339 = kn_IN_P23_B0___IN_P3_B0
+1340 = k_IN_P23_B0___IN_P29_B0
+1341 = kn_IN_P23_B0___IN_P29_B0
+1342 = k_IN_P23_B0___IN_P28_B0
+1343 = kn_IN_P23_B0___IN_P28_B0
+1344 = k_IN_P23_B0___IN_P27_B0
+1345 = kn_IN_P23_B0___IN_P27_B0
+1346 = k_IN_P23_B0___IN_P26_B0
+1347 = kn_IN_P23_B0___IN_P26_B0
+1348 = k_IN_P23_B0___IN_P25_B0
+1349 = kn_IN_P23_B0___IN_P25_B0
+1350 = k_IN_P23_B0___IN_P24_B0
+1351 = kn_IN_P23_B0___IN_P24_B0
+1352 = k_IN_P23_B0___IN_P23_B0
+1353 = k_IN_P23_B0___IN_P22_B0
+1354 = kn_IN_P23_B0___IN_P22_B0
+1355 = k_IN_P23_B0___IN_P21_B0
+1356 = kn_IN_P23_B0___IN_P21_B0
+1357 = k_IN_P23_B0___IN_P20_B0
+1358 = kn_IN_P23_B0___IN_P20_B0
+1359 = k_IN_P23_B0___IN_P2_B0
+1360 = kn_IN_P23_B0___IN_P2_B0
+1361 = k_IN_P23_B0___IN_P19_B0
+1362 = kn_IN_P23_B0___IN_P19_B0
+1363 = k_IN_P23_B0___IN_P18_B0
+1364 = kn_IN_P23_B0___IN_P18_B0
+1365 = k_IN_P23_B0___IN_P17_B0
+1366 = kn_IN_P23_B0___IN_P17_B0
+1367 = k_IN_P23_B0___IN_P16_B0
+1368 = kn_IN_P23_B0___IN_P16_B0
+1369 = k_IN_P23_B0___IN_P15_B0
+1370 = kn_IN_P23_B0___IN_P15_B0
+1371 = k_IN_P23_B0___IN_P14_B0
+1372 = kn_IN_P23_B0___IN_P14_B0
+1373 = k_IN_P23_B0___IN_P13_B0
+1374 = kn_IN_P23_B0___IN_P13_B0
+1375 = k_IN_P23_B0___IN_P12_B0
+1376 = kn_IN_P23_B0___IN_P12_B0
+1377 = k_IN_P23_B0___IN_P11_B0
+1378 = kn_IN_P23_B0___IN_P11_B0
+1379 = k_IN_P23_B0___IN_P10_B0
+1380 = kn_IN_P23_B0___IN_P10_B0
+1381 = k_IN_P23_B0___IN_P1_B0
+1382 = kn_IN_P23_B0___IN_P1_B0
+1383 = k_IN_P23_B0___IN_P0_B0
+1384 = kn_IN_P23_B0___IN_P0_B0
+1385 = k_IN_P24_B0___IN_P9_B0
+1386 = kn_IN_P24_B0___IN_P9_B0
+1387 = k_IN_P24_B0___IN_P8_B0
+1388 = kn_IN_P24_B0___IN_P8_B0
+1389 = k_IN_P24_B0___IN_P7_B0
+1390 = kn_IN_P24_B0___IN_P7_B0
+1391 = k_IN_P24_B0___IN_P6_B0
+1392 = kn_IN_P24_B0___IN_P6_B0
+1393 = k_IN_P24_B0___IN_P5_B0
+1394 = kn_IN_P24_B0___IN_P5_B0
+1395 = k_IN_P24_B0___IN_P4_B0
+1396 = kn_IN_P24_B0___IN_P4_B0
+1397 = k_IN_P24_B0___IN_P3_B0
+1398 = kn_IN_P24_B0___IN_P3_B0
+1399 = k_IN_P24_B0___IN_P29_B0
+1400 = kn_IN_P24_B0___IN_P29_B0
+1401 = k_IN_P24_B0___IN_P28_B0
+1402 = kn_IN_P24_B0___IN_P28_B0
+1403 = k_IN_P24_B0___IN_P27_B0
+1404 = kn_IN_P24_B0___IN_P27_B0
+1405 = k_IN_P24_B0___IN_P26_B0
+1406 = kn_IN_P24_B0___IN_P26_B0
+1407 = k_IN_P24_B0___IN_P25_B0
+1408 = kn_IN_P24_B0___IN_P25_B0
+1409 = k_IN_P24_B0___IN_P24_B0
+1410 = k_IN_P24_B0___IN_P23_B0
+1411 = kn_IN_P24_B0___IN_P23_B0
+1412 = k_IN_P24_B0___IN_P22_B0
+1413 = kn_IN_P24_B0___IN_P22_B0
+1414 = k_IN_P24_B0___IN_P21_B0
+1415 = kn_IN_P24_B0___IN_P21_B0
+1416 = k_IN_P24_B0___IN_P20_B0
+1417 = kn_IN_P24_B0___IN_P20_B0
+1418 = k_IN_P24_B0___IN_P2_B0
+1419 = kn_IN_P24_B0___IN_P2_B0
+1420 = k_IN_P24_B0___IN_P19_B0
+1421 = kn_IN_P24_B0___IN_P19_B0
+1422 = k_IN_P24_B0___IN_P18_B0
+1423 = kn_IN_P24_B0___IN_P18_B0
+1424 = k_IN_P24_B0___IN_P17_B0
+1425 = kn_IN_P24_B0___IN_P17_B0
+1426 = k_IN_P24_B0___IN_P16_B0
+1427 = kn_IN_P24_B0___IN_P16_B0
+1428 = k_IN_P24_B0___IN_P15_B0
+1429 = kn_IN_P24_B0___IN_P15_B0
+1430 = k_IN_P24_B0___IN_P14_B0
+1431 = kn_IN_P24_B0___IN_P14_B0
+1432 = k_IN_P24_B0___IN_P13_B0
+1433 = kn_IN_P24_B0___IN_P13_B0
+1434 = k_IN_P24_B0___IN_P12_B0
+1435 = kn_IN_P24_B0___IN_P12_B0
+1436 = k_IN_P24_B0___IN_P11_B0
+1437 = kn_IN_P24_B0___IN_P11_B0
+1438 = k_IN_P24_B0___IN_P10_B0
+1439 = kn_IN_P24_B0___IN_P10_B0
+1440 = k_IN_P24_B0___IN_P1_B0
+1441 = kn_IN_P24_B0___IN_P1_B0
+1442 = k_IN_P24_B0___IN_P0_B0
+1443 = kn_IN_P24_B0___IN_P0_B0
+1444 = k_IN_P25_B0___IN_P9_B0
+1445 = kn_IN_P25_B0___IN_P9_B0
+1446 = k_IN_P25_B0___IN_P8_B0
+1447 = kn_IN_P25_B0___IN_P8_B0
+1448 = k_IN_P25_B0___IN_P7_B0
+1449 = kn_IN_P25_B0___IN_P7_B0
+1450 = k_IN_P25_B0___IN_P6_B0
+1451 = kn_IN_P25_B0___IN_P6_B0
+1452 = k_IN_P25_B0___IN_P5_B0
+1453 = kn_IN_P25_B0___IN_P5_B0
+1454 = k_IN_P25_B0___IN_P4_B0
+1455 = kn_IN_P25_B0___IN_P4_B0
+1456 = k_IN_P25_B0___IN_P3_B0
+1457 = kn_IN_P25_B0___IN_P3_B0
+1458 = k_IN_P25_B0___IN_P29_B0
+1459 = kn_IN_P25_B0___IN_P29_B0
+1460 = k_IN_P25_B0___IN_P28_B0
+1461 = kn_IN_P25_B0___IN_P28_B0
+1462 = k_IN_P25_B0___IN_P27_B0
+1463 = kn_IN_P25_B0___IN_P27_B0
+1464 = k_IN_P25_B0___IN_P26_B0
+1465 = kn_IN_P25_B0___IN_P26_B0
+1466 = k_IN_P25_B0___IN_P25_B0
+1467 = k_IN_P25_B0___IN_P24_B0
+1468 = kn_IN_P25_B0___IN_P24_B0
+1469 = k_IN_P25_B0___IN_P23_B0
+1470 = kn_IN_P25_B0___IN_P23_B0
+1471 = k_IN_P25_B0___IN_P22_B0
+1472 = kn_IN_P25_B0___IN_P22_B0
+1473 = k_IN_P25_B0___IN_P21_B0
+1474 = kn_IN_P25_B0___IN_P21_B0
+1475 = k_IN_P25_B0___IN_P20_B0
+1476 = kn_IN_P25_B0___IN_P20_B0
+1477 = k_IN_P25_B0___IN_P2_B0
+1478 = kn_IN_P25_B0___IN_P2_B0
+1479 = k_IN_P25_B0___IN_P19_B0
+1480 = kn_IN_P25_B0___IN_P19_B0
+1481 = k_IN_P25_B0___IN_P18_B0
+1482 = kn_IN_P25_B0___IN_P18_B0
+1483 = k_IN_P25_B0___IN_P17_B0
+1484 = kn_IN_P25_B0___IN_P17_B0
+1485 = k_IN_P25_B0___IN_P16_B0
+1486 = kn_IN_P25_B0___IN_P16_B0
+1487 = k_IN_P25_B0___IN_P15_B0
+1488 = kn_IN_P25_B0___IN_P15_B0
+1489 = k_IN_P25_B0___IN_P14_B0
+1490 = kn_IN_P25_B0___IN_P14_B0
+1491 = k_IN_P25_B0___IN_P13_B0
+1492 = kn_IN_P25_B0___IN_P13_B0
+1493 = k_IN_P25_B0___IN_P12_B0
+1494 = kn_IN_P25_B0___IN_P12_B0
+1495 = k_IN_P25_B0___IN_P11_B0
+1496 = kn_IN_P25_B0___IN_P11_B0
+1497 = k_IN_P25_B0___IN_P10_B0
+1498 = kn_IN_P25_B0___IN_P10_B0
+1499 = k_IN_P25_B0___IN_P1_B0
+1500 = kn_IN_P25_B0___IN_P1_B0
+1501 = k_IN_P25_B0___IN_P0_B0
+1502 = kn_IN_P25_B0___IN_P0_B0
+1503 = k_IN_P26_B0___IN_P9_B0
+1504 = kn_IN_P26_B0___IN_P9_B0
+1505 = k_IN_P26_B0___IN_P8_B0
+1506 = kn_IN_P26_B0___IN_P8_B0
+1507 = k_IN_P26_B0___IN_P7_B0
+1508 = kn_IN_P26_B0___IN_P7_B0
+1509 = k_IN_P26_B0___IN_P6_B0
+1510 = kn_IN_P26_B0___IN_P6_B0
+1511 = k_IN_P26_B0___IN_P5_B0
+1512 = kn_IN_P26_B0___IN_P5_B0
+1513 = k_IN_P26_B0___IN_P4_B0
+1514 = kn_IN_P26_B0___IN_P4_B0
+1515 = k_IN_P26_B0___IN_P3_B0
+1516 = kn_IN_P26_B0___IN_P3_B0
+1517 = k_IN_P26_B0___IN_P29_B0
+1518 = kn_IN_P26_B0___IN_P29_B0
+1519 = k_IN_P26_B0___IN_P28_B0
+1520 = kn_IN_P26_B0___IN_P28_B0
+1521 = k_IN_P26_B0___IN_P27_B0
+1522 = kn_IN_P26_B0___IN_P27_B0
+1523 = k_IN_P26_B0___IN_P26_B0
+1524 = k_IN_P26_B0___IN_P25_B0
+1525 = kn_IN_P26_B0___IN_P25_B0
+1526 = k_IN_P26_B0___IN_P24_B0
+1527 = kn_IN_P26_B0___IN_P24_B0
+1528 = k_IN_P26_B0___IN_P23_B0
+1529 = kn_IN_P26_B0___IN_P23_B0
+1530 = k_IN_P26_B0___IN_P22_B0
+1531 = kn_IN_P26_B0___IN_P22_B0
+1532 = k_IN_P26_B0___IN_P21_B0
+1533 = kn_IN_P26_B0___IN_P21_B0
+1534 = k_IN_P26_B0___IN_P20_B0
+1535 = kn_IN_P26_B0___IN_P20_B0
+1536 = k_IN_P26_B0___IN_P2_B0
+1537 = kn_IN_P26_B0___IN_P2_B0
+1538 = k_IN_P26_B0___IN_P19_B0
+1539 = kn_IN_P26_B0___IN_P19_B0
+1540 = k_IN_P26_B0___IN_P18_B0
+1541 = kn_IN_P26_B0___IN_P18_B0
+1542 = k_IN_P26_B0___IN_P17_B0
+1543 = kn_IN_P26_B0___IN_P17_B0
+1544 = k_IN_P26_B0___IN_P16_B0
+1545 = kn_IN_P26_B0___IN_P16_B0
+1546 = k_IN_P26_B0___IN_P15_B0
+1547 = kn_IN_P26_B0___IN_P15_B0
+1548 = k_IN_P26_B0___IN_P14_B0
+1549 = kn_IN_P26_B0___IN_P14_B0
+1550 = k_IN_P26_B0___IN_P13_B0
+1551 = kn_IN_P26_B0___IN_P13_B0
+1552 = k_IN_P26_B0___IN_P12_B0
+1553 = kn_IN_P26_B0___IN_P12_B0
+1554 = k_IN_P26_B0___IN_P11_B0
+1555 = kn_IN_P26_B0___IN_P11_B0
+1556 = k_IN_P26_B0___IN_P10_B0
+1557 = kn_IN_P26_B0___IN_P10_B0
+1558 = k_IN_P26_B0___IN_P1_B0
+1559 = kn_IN_P26_B0___IN_P1_B0
+1560 = k_IN_P26_B0___IN_P0_B0
+1561 = kn_IN_P26_B0___IN_P0_B0
+1562 = k_IN_P27_B0___IN_P9_B0
+1563 = kn_IN_P27_B0___IN_P9_B0
+1564 = k_IN_P27_B0___IN_P8_B0
+1565 = kn_IN_P27_B0___IN_P8_B0
+1566 = k_IN_P27_B0___IN_P7_B0
+1567 = kn_IN_P27_B0___IN_P7_B0
+1568 = k_IN_P27_B0___IN_P6_B0
+1569 = kn_IN_P27_B0___IN_P6_B0
+1570 = k_IN_P27_B0___IN_P5_B0
+1571 = kn_IN_P27_B0___IN_P5_B0
+1572 = k_IN_P27_B0___IN_P4_B0
+1573 = kn_IN_P27_B0___IN_P4_B0
+1574 = k_IN_P27_B0___IN_P3_B0
+1575 = kn_IN_P27_B0___IN_P3_B0
+1576 = k_IN_P27_B0___IN_P29_B0
+1577 = kn_IN_P27_B0___IN_P29_B0
+1578 = k_IN_P27_B0___IN_P28_B0
+1579 = kn_IN_P27_B0___IN_P28_B0
+1580 = k_IN_P27_B0___IN_P27_B0
+1581 = k_IN_P27_B0___IN_P26_B0
+1582 = kn_IN_P27_B0___IN_P26_B0
+1583 = k_IN_P27_B0___IN_P25_B0
+1584 = kn_IN_P27_B0___IN_P25_B0
+1585 = k_IN_P27_B0___IN_P24_B0
+1586 = kn_IN_P27_B0___IN_P24_B0
+1587 = k_IN_P27_B0___IN_P23_B0
+1588 = kn_IN_P27_B0___IN_P23_B0
+1589 = k_IN_P27_B0___IN_P22_B0
+1590 = kn_IN_P27_B0___IN_P22_B0
+1591 = k_IN_P27_B0___IN_P21_B0
+1592 = kn_IN_P27_B0___IN_P21_B0
+1593 = k_IN_P27_B0___IN_P20_B0
+1594 = kn_IN_P27_B0___IN_P20_B0
+1595 = k_IN_P27_B0___IN_P2_B0
+1596 = kn_IN_P27_B0___IN_P2_B0
+1597 = k_IN_P27_B0___IN_P19_B0
+1598 = kn_IN_P27_B0___IN_P19_B0
+1599 = k_IN_P27_B0___IN_P18_B0
+1600 = kn_IN_P27_B0___IN_P18_B0
+1601 = k_IN_P27_B0___IN_P17_B0
+1602 = kn_IN_P27_B0___IN_P17_B0
+1603 = k_IN_P27_B0___IN_P16_B0
+1604 = kn_IN_P27_B0___IN_P16_B0
+1605 = k_IN_P27_B0___IN_P15_B0
+1606 = kn_IN_P27_B0___IN_P15_B0
+1607 = k_IN_P27_B0___IN_P14_B0
+1608 = kn_IN_P27_B0___IN_P14_B0
+1609 = k_IN_P27_B0___IN_P13_B0
+1610 = kn_IN_P27_B0___IN_P13_B0
+1611 = k_IN_P27_B0___IN_P12_B0
+1612 = kn_IN_P27_B0___IN_P12_B0
+1613 = k_IN_P27_B0___IN_P11_B0
+1614 = kn_IN_P27_B0___IN_P11_B0
+1615 = k_IN_P27_B0___IN_P10_B0
+1616 = kn_IN_P27_B0___IN_P10_B0
+1617 = k_IN_P27_B0___IN_P1_B0
+1618 = kn_IN_P27_B0___IN_P1_B0
+1619 = k_IN_P27_B0___IN_P0_B0
+1620 = kn_IN_P27_B0___IN_P0_B0
+1621 = k_IN_P28_B0___IN_P9_B0
+1622 = kn_IN_P28_B0___IN_P9_B0
+1623 = k_IN_P28_B0___IN_P8_B0
+1624 = kn_IN_P28_B0___IN_P8_B0
+1625 = k_IN_P28_B0___IN_P7_B0
+1626 = kn_IN_P28_B0___IN_P7_B0
+1627 = k_IN_P28_B0___IN_P6_B0
+1628 = kn_IN_P28_B0___IN_P6_B0
+1629 = k_IN_P28_B0___IN_P5_B0
+1630 = kn_IN_P28_B0___IN_P5_B0
+1631 = k_IN_P28_B0___IN_P4_B0
+1632 = kn_IN_P28_B0___IN_P4_B0
+1633 = k_IN_P28_B0___IN_P3_B0
+1634 = kn_IN_P28_B0___IN_P3_B0
+1635 = k_IN_P28_B0___IN_P29_B0
+1636 = kn_IN_P28_B0___IN_P29_B0
+1637 = k_IN_P28_B0___IN_P28_B0
+1638 = k_IN_P28_B0___IN_P27_B0
+1639 = kn_IN_P28_B0___IN_P27_B0
+1640 = k_IN_P28_B0___IN_P26_B0
+1641 = kn_IN_P28_B0___IN_P26_B0
+1642 = k_IN_P28_B0___IN_P25_B0
+1643 = kn_IN_P28_B0___IN_P25_B0
+1644 = k_IN_P28_B0___IN_P24_B0
+1645 = kn_IN_P28_B0___IN_P24_B0
+1646 = k_IN_P28_B0___IN_P23_B0
+1647 = kn_IN_P28_B0___IN_P23_B0
+1648 = k_IN_P28_B0___IN_P22_B0
+1649 = kn_IN_P28_B0___IN_P22_B0
+1650 = k_IN_P28_B0___IN_P21_B0
+1651 = kn_IN_P28_B0___IN_P21_B0
+1652 = k_IN_P28_B0___IN_P20_B0
+1653 = kn_IN_P28_B0___IN_P20_B0
+1654 = k_IN_P28_B0___IN_P2_B0
+1655 = kn_IN_P28_B0___IN_P2_B0
+1656 = k_IN_P28_B0___IN_P19_B0
+1657 = kn_IN_P28_B0___IN_P19_B0
+1658 = k_IN_P28_B0___IN_P18_B0
+1659 = kn_IN_P28_B0___IN_P18_B0
+1660 = k_IN_P28_B0___IN_P17_B0
+1661 = kn_IN_P28_B0___IN_P17_B0
+1662 = k_IN_P28_B0___IN_P16_B0
+1663 = kn_IN_P28_B0___IN_P16_B0
+1664 = k_IN_P28_B0___IN_P15_B0
+1665 = kn_IN_P28_B0___IN_P15_B0
+1666 = k_IN_P28_B0___IN_P14_B0
+1667 = kn_IN_P28_B0___IN_P14_B0
+1668 = k_IN_P28_B0___IN_P13_B0
+1669 = kn_IN_P28_B0___IN_P13_B0
+1670 = k_IN_P28_B0___IN_P12_B0
+1671 = kn_IN_P28_B0___IN_P12_B0
+1672 = k_IN_P28_B0___IN_P11_B0
+1673 = kn_IN_P28_B0___IN_P11_B0
+1674 = k_IN_P28_B0___IN_P10_B0
+1675 = kn_IN_P28_B0___IN_P10_B0
+1676 = k_IN_P28_B0___IN_P1_B0
+1677 = kn_IN_P28_B0___IN_P1_B0
+1678 = k_IN_P28_B0___IN_P0_B0
+1679 = kn_IN_P28_B0___IN_P0_B0
+1680 = k_IN_P29_B0___IN_P9_B0
+1681 = kn_IN_P29_B0___IN_P9_B0
+1682 = k_IN_P29_B0___IN_P8_B0
+1683 = kn_IN_P29_B0___IN_P8_B0
+1684 = k_IN_P29_B0___IN_P7_B0
+1685 = kn_IN_P29_B0___IN_P7_B0
+1686 = k_IN_P29_B0___IN_P6_B0
+1687 = kn_IN_P29_B0___IN_P6_B0
+1688 = k_IN_P29_B0___IN_P5_B0
+1689 = kn_IN_P29_B0___IN_P5_B0
+1690 = k_IN_P29_B0___IN_P4_B0
+1691 = kn_IN_P29_B0___IN_P4_B0
+1692 = k_IN_P29_B0___IN_P3_B0
+1693 = kn_IN_P29_B0___IN_P3_B0
+1694 = k_IN_P29_B0___IN_P29_B0
+1695 = k_IN_P29_B0___IN_P28_B0
+1696 = kn_IN_P29_B0___IN_P28_B0
+1697 = k_IN_P29_B0___IN_P27_B0
+1698 = kn_IN_P29_B0___IN_P27_B0
+1699 = k_IN_P29_B0___IN_P26_B0
+1700 = kn_IN_P29_B0___IN_P26_B0
+1701 = k_IN_P29_B0___IN_P25_B0
+1702 = kn_IN_P29_B0___IN_P25_B0
+1703 = k_IN_P29_B0___IN_P24_B0
+1704 = kn_IN_P29_B0___IN_P24_B0
+1705 = k_IN_P29_B0___IN_P23_B0
+1706 = kn_IN_P29_B0___IN_P23_B0
+1707 = k_IN_P29_B0___IN_P22_B0
+1708 = kn_IN_P29_B0___IN_P22_B0
+1709 = k_IN_P29_B0___IN_P21_B0
+1710 = kn_IN_P29_B0___IN_P21_B0
+1711 = k_IN_P29_B0___IN_P20_B0
+1712 = kn_IN_P29_B0___IN_P20_B0
+1713 = k_IN_P29_B0___IN_P2_B0
+1714 = kn_IN_P29_B0___IN_P2_B0
+1715 = k_IN_P29_B0___IN_P19_B0
+1716 = kn_IN_P29_B0___IN_P19_B0
+1717 = k_IN_P29_B0___IN_P18_B0
+1718 = kn_IN_P29_B0___IN_P18_B0
+1719 = k_IN_P29_B0___IN_P17_B0
+1720 = kn_IN_P29_B0___IN_P17_B0
+1721 = k_IN_P29_B0___IN_P16_B0
+1722 = kn_IN_P29_B0___IN_P16_B0
+1723 = k_IN_P29_B0___IN_P15_B0
+1724 = kn_IN_P29_B0___IN_P15_B0
+1725 = k_IN_P29_B0___IN_P14_B0
+1726 = kn_IN_P29_B0___IN_P14_B0
+1727 = k_IN_P29_B0___IN_P13_B0
+1728 = kn_IN_P29_B0___IN_P13_B0
+1729 = k_IN_P29_B0___IN_P12_B0
+1730 = kn_IN_P29_B0___IN_P12_B0
+1731 = k_IN_P29_B0___IN_P11_B0
+1732 = kn_IN_P29_B0___IN_P11_B0
+1733 = k_IN_P29_B0___IN_P10_B0
+1734 = kn_IN_P29_B0___IN_P10_B0
+1735 = k_IN_P29_B0___IN_P1_B0
+1736 = kn_IN_P29_B0___IN_P1_B0
+1737 = k_IN_P29_B0___IN_P0_B0
+1738 = kn_IN_P29_B0___IN_P0_B0
+1739 = k_IN_P3_B0___IN_P9_B0
+1740 = kn_IN_P3_B0___IN_P9_B0
+1741 = k_IN_P3_B0___IN_P8_B0
+1742 = kn_IN_P3_B0___IN_P8_B0
+1743 = k_IN_P3_B0___IN_P7_B0
+1744 = kn_IN_P3_B0___IN_P7_B0
+1745 = k_IN_P3_B0___IN_P6_B0
+1746 = kn_IN_P3_B0___IN_P6_B0
+1747 = k_IN_P3_B0___IN_P5_B0
+1748 = kn_IN_P3_B0___IN_P5_B0
+1749 = k_IN_P3_B0___IN_P4_B0
+1750 = kn_IN_P3_B0___IN_P4_B0
+1751 = k_IN_P3_B0___IN_P3_B0
+1752 = k_IN_P3_B0___IN_P29_B0
+1753 = kn_IN_P3_B0___IN_P29_B0
+1754 = k_IN_P3_B0___IN_P28_B0
+1755 = kn_IN_P3_B0___IN_P28_B0
+1756 = k_IN_P3_B0___IN_P27_B0
+1757 = kn_IN_P3_B0___IN_P27_B0
+1758 = k_IN_P3_B0___IN_P26_B0
+1759 = kn_IN_P3_B0___IN_P26_B0
+1760 = k_IN_P3_B0___IN_P25_B0
+1761 = kn_IN_P3_B0___IN_P25_B0
+1762 = k_IN_P3_B0___IN_P24_B0
+1763 = kn_IN_P3_B0___IN_P24_B0
+1764 = k_IN_P3_B0___IN_P23_B0
+1765 = kn_IN_P3_B0___IN_P23_B0
+1766 = k_IN_P3_B0___IN_P22_B0
+1767 = kn_IN_P3_B0___IN_P22_B0
+1768 = k_IN_P3_B0___IN_P21_B0
+1769 = kn_IN_P3_B0___IN_P21_B0
+1770 = k_IN_P3_B0___IN_P20_B0
+1771 = kn_IN_P3_B0___IN_P20_B0
+1772 = k_IN_P3_B0___IN_P2_B0
+1773 = kn_IN_P3_B0___IN_P2_B0
+1774 = k_IN_P3_B0___IN_P19_B0
+1775 = kn_IN_P3_B0___IN_P19_B0
+1776 = k_IN_P3_B0___IN_P18_B0
+1777 = kn_IN_P3_B0___IN_P18_B0
+1778 = k_IN_P3_B0___IN_P17_B0
+1779 = kn_IN_P3_B0___IN_P17_B0
+1780 = k_IN_P3_B0___IN_P16_B0
+1781 = kn_IN_P3_B0___IN_P16_B0
+1782 = k_IN_P3_B0___IN_P15_B0
+1783 = kn_IN_P3_B0___IN_P15_B0
+1784 = k_IN_P3_B0___IN_P14_B0
+1785 = kn_IN_P3_B0___IN_P14_B0
+1786 = k_IN_P3_B0___IN_P13_B0
+1787 = kn_IN_P3_B0___IN_P13_B0
+1788 = k_IN_P3_B0___IN_P12_B0
+1789 = kn_IN_P3_B0___IN_P12_B0
+1790 = k_IN_P3_B0___IN_P11_B0
+1791 = kn_IN_P3_B0___IN_P11_B0
+1792 = k_IN_P3_B0___IN_P10_B0
+1793 = kn_IN_P3_B0___IN_P10_B0
+1794 = k_IN_P3_B0___IN_P1_B0
+1795 = kn_IN_P3_B0___IN_P1_B0
+1796 = k_IN_P3_B0___IN_P0_B0
+1797 = kn_IN_P3_B0___IN_P0_B0
+1798 = k_IN_P4_B0___IN_P9_B0
+1799 = kn_IN_P4_B0___IN_P9_B0
+1800 = k_IN_P4_B0___IN_P8_B0
+1801 = kn_IN_P4_B0___IN_P8_B0
+1802 = k_IN_P4_B0___IN_P7_B0
+1803 = kn_IN_P4_B0___IN_P7_B0
+1804 = k_IN_P4_B0___IN_P6_B0
+1805 = kn_IN_P4_B0___IN_P6_B0
+1806 = k_IN_P4_B0___IN_P5_B0
+1807 = kn_IN_P4_B0___IN_P5_B0
+1808 = k_IN_P4_B0___IN_P4_B0
+1809 = k_IN_P4_B0___IN_P3_B0
+1810 = kn_IN_P4_B0___IN_P3_B0
+1811 = k_IN_P4_B0___IN_P29_B0
+1812 = kn_IN_P4_B0___IN_P29_B0
+1813 = k_IN_P4_B0___IN_P28_B0
+1814 = kn_IN_P4_B0___IN_P28_B0
+1815 = k_IN_P4_B0___IN_P27_B0
+1816 = kn_IN_P4_B0___IN_P27_B0
+1817 = k_IN_P4_B0___IN_P26_B0
+1818 = kn_IN_P4_B0___IN_P26_B0
+1819 = k_IN_P4_B0___IN_P25_B0
+1820 = kn_IN_P4_B0___IN_P25_B0
+1821 = k_IN_P4_B0___IN_P24_B0
+1822 = kn_IN_P4_B0___IN_P24_B0
+1823 = k_IN_P4_B0___IN_P23_B0
+1824 = kn_IN_P4_B0___IN_P23_B0
+1825 = k_IN_P4_B0___IN_P22_B0
+1826 = kn_IN_P4_B0___IN_P22_B0
+1827 = k_IN_P4_B0___IN_P21_B0
+1828 = kn_IN_P4_B0___IN_P21_B0
+1829 = k_IN_P4_B0___IN_P20_B0
+1830 = kn_IN_P4_B0___IN_P20_B0
+1831 = k_IN_P4_B0___IN_P2_B0
+1832 = kn_IN_P4_B0___IN_P2_B0
+1833 = k_IN_P4_B0___IN_P19_B0
+1834 = kn_IN_P4_B0___IN_P19_B0
+1835 = k_IN_P4_B0___IN_P18_B0
+1836 = kn_IN_P4_B0___IN_P18_B0
+1837 = k_IN_P4_B0___IN_P17_B0
+1838 = kn_IN_P4_B0___IN_P17_B0
+1839 = k_IN_P4_B0___IN_P16_B0
+1840 = kn_IN_P4_B0___IN_P16_B0
+1841 = k_IN_P4_B0___IN_P15_B0
+1842 = kn_IN_P4_B0___IN_P15_B0
+1843 = k_IN_P4_B0___IN_P14_B0
+1844 = kn_IN_P4_B0___IN_P14_B0
+1845 = k_IN_P4_B0___IN_P13_B0
+1846 = kn_IN_P4_B0___IN_P13_B0
+1847 = k_IN_P4_B0___IN_P12_B0
+1848 = kn_IN_P4_B0___IN_P12_B0
+1849 = k_IN_P4_B0___IN_P11_B0
+1850 = kn_IN_P4_B0___IN_P11_B0
+1851 = k_IN_P4_B0___IN_P10_B0
+1852 = kn_IN_P4_B0___IN_P10_B0
+1853 = k_IN_P4_B0___IN_P1_B0
+1854 = kn_IN_P4_B0___IN_P1_B0
+1855 = k_IN_P4_B0___IN_P0_B0
+1856 = kn_IN_P4_B0___IN_P0_B0
+1857 = k_IN_P5_B0___IN_P9_B0
+1858 = kn_IN_P5_B0___IN_P9_B0
+1859 = k_IN_P5_B0___IN_P8_B0
+1860 = kn_IN_P5_B0___IN_P8_B0
+1861 = k_IN_P5_B0___IN_P7_B0
+1862 = kn_IN_P5_B0___IN_P7_B0
+1863 = k_IN_P5_B0___IN_P6_B0
+1864 = kn_IN_P5_B0___IN_P6_B0
+1865 = k_IN_P5_B0___IN_P5_B0
+1866 = k_IN_P5_B0___IN_P4_B0
+1867 = kn_IN_P5_B0___IN_P4_B0
+1868 = k_IN_P5_B0___IN_P3_B0
+1869 = kn_IN_P5_B0___IN_P3_B0
+1870 = k_IN_P5_B0___IN_P29_B0
+1871 = kn_IN_P5_B0___IN_P29_B0
+1872 = k_IN_P5_B0___IN_P28_B0
+1873 = kn_IN_P5_B0___IN_P28_B0
+1874 = k_IN_P5_B0___IN_P27_B0
+1875 = kn_IN_P5_B0___IN_P27_B0
+1876 = k_IN_P5_B0___IN_P26_B0
+1877 = kn_IN_P5_B0___IN_P26_B0
+1878 = k_IN_P5_B0___IN_P25_B0
+1879 = kn_IN_P5_B0___IN_P25_B0
+1880 = k_IN_P5_B0___IN_P24_B0
+1881 = kn_IN_P5_B0___IN_P24_B0
+1882 = k_IN_P5_B0___IN_P23_B0
+1883 = kn_IN_P5_B0___IN_P23_B0
+1884 = k_IN_P5_B0___IN_P22_B0
+1885 = kn_IN_P5_B0___IN_P22_B0
+1886 = k_IN_P5_B0___IN_P21_B0
+1887 = kn_IN_P5_B0___IN_P21_B0
+1888 = k_IN_P5_B0___IN_P20_B0
+1889 = kn_IN_P5_B0___IN_P20_B0
+1890 = k_IN_P5_B0___IN_P2_B0
+1891 = kn_IN_P5_B0___IN_P2_B0
+1892 = k_IN_P5_B0___IN_P19_B0
+1893 = kn_IN_P5_B0___IN_P19_B0
+1894 = k_IN_P5_B0___IN_P18_B0
+1895 = kn_IN_P5_B0___IN_P18_B0
+1896 = k_IN_P5_B0___IN_P17_B0
+1897 = kn_IN_P5_B0___IN_P17_B0
+1898 = k_IN_P5_B0___IN_P16_B0
+1899 = kn_IN_P5_B0___IN_P16_B0
+1900 = k_IN_P5_B0___IN_P15_B0
+1901 = kn_IN_P5_B0___IN_P15_B0
+1902 = k_IN_P5_B0___IN_P14_B0
+1903 = kn_IN_P5_B0___IN_P14_B0
+1904 = k_IN_P5_B0___IN_P13_B0
+1905 = kn_IN_P5_B0___IN_P13_B0
+1906 = k_IN_P5_B0___IN_P12_B0
+1907 = kn_IN_P5_B0___IN_P12_B0
+1908 = k_IN_P5_B0___IN_P11_B0
+1909 = kn_IN_P5_B0___IN_P11_B0
+1910 = k_IN_P5_B0___IN_P10_B0
+1911 = kn_IN_P5_B0___IN_P10_B0
+1912 = k_IN_P5_B0___IN_P1_B0
+1913 = kn_IN_P5_B0___IN_P1_B0
+1914 = k_IN_P5_B0___IN_P0_B0
+1915 = kn_IN_P5_B0___IN_P0_B0
+1916 = k_IN_P6_B0___IN_P9_B0
+1917 = kn_IN_P6_B0___IN_P9_B0
+1918 = k_IN_P6_B0___IN_P8_B0
+1919 = kn_IN_P6_B0___IN_P8_B0
+1920 = k_IN_P6_B0___IN_P7_B0
+1921 = kn_IN_P6_B0___IN_P7_B0
+1922 = k_IN_P6_B0___IN_P6_B0
+1923 = k_IN_P6_B0___IN_P5_B0
+1924 = kn_IN_P6_B0___IN_P5_B0
+1925 = k_IN_P6_B0___IN_P4_B0
+1926 = kn_IN_P6_B0___IN_P4_B0
+1927 = k_IN_P6_B0___IN_P3_B0
+1928 = kn_IN_P6_B0___IN_P3_B0
+1929 = k_IN_P6_B0___IN_P29_B0
+1930 = kn_IN_P6_B0___IN_P29_B0
+1931 = k_IN_P6_B0___IN_P28_B0
+1932 = kn_IN_P6_B0___IN_P28_B0
+1933 = k_IN_P6_B0___IN_P27_B0
+1934 = kn_IN_P6_B0___IN_P27_B0
+1935 = k_IN_P6_B0___IN_P26_B0
+1936 = kn_IN_P6_B0___IN_P26_B0
+1937 = k_IN_P6_B0___IN_P25_B0
+1938 = kn_IN_P6_B0___IN_P25_B0
+1939 = k_IN_P6_B0___IN_P24_B0
+1940 = kn_IN_P6_B0___IN_P24_B0
+1941 = k_IN_P6_B0___IN_P23_B0
+1942 = kn_IN_P6_B0___IN_P23_B0
+1943 = k_IN_P6_B0___IN_P22_B0
+1944 = kn_IN_P6_B0___IN_P22_B0
+1945 = k_IN_P6_B0___IN_P21_B0
+1946 = kn_IN_P6_B0___IN_P21_B0
+1947 = k_IN_P6_B0___IN_P20_B0
+1948 = kn_IN_P6_B0___IN_P20_B0
+1949 = k_IN_P6_B0___IN_P2_B0
+1950 = kn_IN_P6_B0___IN_P2_B0
+1951 = k_IN_P6_B0___IN_P19_B0
+1952 = kn_IN_P6_B0___IN_P19_B0
+1953 = k_IN_P6_B0___IN_P18_B0
+1954 = kn_IN_P6_B0___IN_P18_B0
+1955 = k_IN_P6_B0___IN_P17_B0
+1956 = kn_IN_P6_B0___IN_P17_B0
+1957 = k_IN_P6_B0___IN_P16_B0
+1958 = kn_IN_P6_B0___IN_P16_B0
+1959 = k_IN_P6_B0___IN_P15_B0
+1960 = kn_IN_P6_B0___IN_P15_B0
+1961 = k_IN_P6_B0___IN_P14_B0
+1962 = kn_IN_P6_B0___IN_P14_B0
+1963 = k_IN_P6_B0___IN_P13_B0
+1964 = kn_IN_P6_B0___IN_P13_B0
+1965 = k_IN_P6_B0___IN_P12_B0
+1966 = kn_IN_P6_B0___IN_P12_B0
+1967 = k_IN_P6_B0___IN_P11_B0
+1968 = kn_IN_P6_B0___IN_P11_B0
+1969 = k_IN_P6_B0___IN_P10_B0
+1970 = kn_IN_P6_B0___IN_P10_B0
+1971 = k_IN_P6_B0___IN_P1_B0
+1972 = kn_IN_P6_B0___IN_P1_B0
+1973 = k_IN_P6_B0___IN_P0_B0
+1974 = kn_IN_P6_B0___IN_P0_B0
+1975 = k_IN_P7_B0___IN_P9_B0
+1976 = kn_IN_P7_B0___IN_P9_B0
+1977 = k_IN_P7_B0___IN_P8_B0
+1978 = kn_IN_P7_B0___IN_P8_B0
+1979 = k_IN_P7_B0___IN_P7_B0
+1980 = k_IN_P7_B0___IN_P6_B0
+1981 = kn_IN_P7_B0___IN_P6_B0
+1982 = k_IN_P7_B0___IN_P5_B0
+1983 = kn_IN_P7_B0___IN_P5_B0
+1984 = k_IN_P7_B0___IN_P4_B0
+1985 = kn_IN_P7_B0___IN_P4_B0
+1986 = k_IN_P7_B0___IN_P3_B0
+1987 = kn_IN_P7_B0___IN_P3_B0
+1988 = k_IN_P7_B0___IN_P29_B0
+1989 = kn_IN_P7_B0___IN_P29_B0
+1990 = k_IN_P7_B0___IN_P28_B0
+1991 = kn_IN_P7_B0___IN_P28_B0
+1992 = k_IN_P7_B0___IN_P27_B0
+1993 = kn_IN_P7_B0___IN_P27_B0
+1994 = k_IN_P7_B0___IN_P26_B0
+1995 = kn_IN_P7_B0___IN_P26_B0
+1996 = k_IN_P7_B0___IN_P25_B0
+1997 = kn_IN_P7_B0___IN_P25_B0
+1998 = k_IN_P7_B0___IN_P24_B0
+1999 = kn_IN_P7_B0___IN_P24_B0
+2000 = k_IN_P7_B0___IN_P23_B0
+2001 = kn_IN_P7_B0___IN_P23_B0
+2002 = k_IN_P7_B0___IN_P22_B0
+2003 = kn_IN_P7_B0___IN_P22_B0
+2004 = k_IN_P7_B0___IN_P21_B0
+2005 = kn_IN_P7_B0___IN_P21_B0
+2006 = k_IN_P7_B0___IN_P20_B0
+2007 = kn_IN_P7_B0___IN_P20_B0
+2008 = k_IN_P7_B0___IN_P2_B0
+2009 = kn_IN_P7_B0___IN_P2_B0
+2010 = k_IN_P7_B0___IN_P19_B0
+2011 = kn_IN_P7_B0___IN_P19_B0
+2012 = k_IN_P7_B0___IN_P18_B0
+2013 = kn_IN_P7_B0___IN_P18_B0
+2014 = k_IN_P7_B0___IN_P17_B0
+2015 = kn_IN_P7_B0___IN_P17_B0
+2016 = k_IN_P7_B0___IN_P16_B0
+2017 = kn_IN_P7_B0___IN_P16_B0
+2018 = k_IN_P7_B0___IN_P15_B0
+2019 = kn_IN_P7_B0___IN_P15_B0
+2020 = k_IN_P7_B0___IN_P14_B0
+2021 = kn_IN_P7_B0___IN_P14_B0
+2022 = k_IN_P7_B0___IN_P13_B0
+2023 = kn_IN_P7_B0___IN_P13_B0
+2024 = k_IN_P7_B0___IN_P12_B0
+2025 = kn_IN_P7_B0___IN_P12_B0
+2026 = k_IN_P7_B0___IN_P11_B0
+2027 = kn_IN_P7_B0___IN_P11_B0
+2028 = k_IN_P7_B0___IN_P10_B0
+2029 = kn_IN_P7_B0___IN_P10_B0
+2030 = k_IN_P7_B0___IN_P1_B0
+2031 = kn_IN_P7_B0___IN_P1_B0
+2032 = k_IN_P7_B0___IN_P0_B0
+2033 = kn_IN_P7_B0___IN_P0_B0
+2034 = k_IN_P8_B0___IN_P9_B0
+2035 = kn_IN_P8_B0___IN_P9_B0
+2036 = k_IN_P8_B0___IN_P8_B0
+2037 = k_IN_P8_B0___IN_P7_B0
+2038 = kn_IN_P8_B0___IN_P7_B0
+2039 = k_IN_P8_B0___IN_P6_B0
+2040 = kn_IN_P8_B0___IN_P6_B0
+2041 = k_IN_P8_B0___IN_P5_B0
+2042 = kn_IN_P8_B0___IN_P5_B0
+2043 = k_IN_P8_B0___IN_P4_B0
+2044 = kn_IN_P8_B0___IN_P4_B0
+2045 = k_IN_P8_B0___IN_P3_B0
+2046 = kn_IN_P8_B0___IN_P3_B0
+2047 = k_IN_P8_B0___IN_P29_B0
+2048 = kn_IN_P8_B0___IN_P29_B0
+2049 = k_IN_P8_B0___IN_P28_B0
+2050 = kn_IN_P8_B0___IN_P28_B0
+2051 = k_IN_P8_B0___IN_P27_B0
+2052 = kn_IN_P8_B0___IN_P27_B0
+2053 = k_IN_P8_B0___IN_P26_B0
+2054 = kn_IN_P8_B0___IN_P26_B0
+2055 = k_IN_P8_B0___IN_P25_B0
+2056 = kn_IN_P8_B0___IN_P25_B0
+2057 = k_IN_P8_B0___IN_P24_B0
+2058 = kn_IN_P8_B0___IN_P24_B0
+2059 = k_IN_P8_B0___IN_P23_B0
+2060 = kn_IN_P8_B0___IN_P23_B0
+2061 = k_IN_P8_B0___IN_P22_B0
+2062 = kn_IN_P8_B0___IN_P22_B0
+2063 = k_IN_P8_B0___IN_P21_B0
+2064 = kn_IN_P8_B0___IN_P21_B0
+2065 = k_IN_P8_B0___IN_P20_B0
+2066 = kn_IN_P8_B0___IN_P20_B0
+2067 = k_IN_P8_B0___IN_P2_B0
+2068 = kn_IN_P8_B0___IN_P2_B0
+2069 = k_IN_P8_B0___IN_P19_B0
+2070 = kn_IN_P8_B0___IN_P19_B0
+2071 = k_IN_P8_B0___IN_P18_B0
+2072 = kn_IN_P8_B0___IN_P18_B0
+2073 = k_IN_P8_B0___IN_P17_B0
+2074 = kn_IN_P8_B0___IN_P17_B0
+2075 = k_IN_P8_B0___IN_P16_B0
+2076 = kn_IN_P8_B0___IN_P16_B0
+2077 = k_IN_P8_B0___IN_P15_B0
+2078 = kn_IN_P8_B0___IN_P15_B0
+2079 = k_IN_P8_B0___IN_P14_B0
+2080 = kn_IN_P8_B0___IN_P14_B0
+2081 = k_IN_P8_B0___IN_P13_B0
+2082 = kn_IN_P8_B0___IN_P13_B0
+2083 = k_IN_P8_B0___IN_P12_B0
+2084 = kn_IN_P8_B0___IN_P12_B0
+2085 = k_IN_P8_B0___IN_P11_B0
+2086 = kn_IN_P8_B0___IN_P11_B0
+2087 = k_IN_P8_B0___IN_P10_B0
+2088 = kn_IN_P8_B0___IN_P10_B0
+2089 = k_IN_P8_B0___IN_P1_B0
+2090 = kn_IN_P8_B0___IN_P1_B0
+2091 = k_IN_P8_B0___IN_P0_B0
+2092 = kn_IN_P8_B0___IN_P0_B0
+2093 = k_IN_P9_B0___IN_P9_B0
+2094 = k_IN_P9_B0___IN_P8_B0
+2095 = kn_IN_P9_B0___IN_P8_B0
+2096 = k_IN_P9_B0___IN_P7_B0
+2097 = kn_IN_P9_B0___IN_P7_B0
+2098 = k_IN_P9_B0___IN_P6_B0
+2099 = kn_IN_P9_B0___IN_P6_B0
+2100 = k_IN_P9_B0___IN_P5_B0
+2101 = kn_IN_P9_B0___IN_P5_B0
+2102 = k_IN_P9_B0___IN_P4_B0
+2103 = kn_IN_P9_B0___IN_P4_B0
+2104 = k_IN_P9_B0___IN_P3_B0
+2105 = kn_IN_P9_B0___IN_P3_B0
+2106 = k_IN_P9_B0___IN_P29_B0
+2107 = kn_IN_P9_B0___IN_P29_B0
+2108 = k_IN_P9_B0___IN_P28_B0
+2109 = kn_IN_P9_B0___IN_P28_B0
+2110 = k_IN_P9_B0___IN_P27_B0
+2111 = kn_IN_P9_B0___IN_P27_B0
+2112 = k_IN_P9_B0___IN_P26_B0
+2113 = kn_IN_P9_B0___IN_P26_B0
+2114 = k_IN_P9_B0___IN_P25_B0
+2115 = kn_IN_P9_B0___IN_P25_B0
+2116 = k_IN_P9_B0___IN_P24_B0
+2117 = kn_IN_P9_B0___IN_P24_B0
+2118 = k_IN_P9_B0___IN_P23_B0
+2119 = kn_IN_P9_B0___IN_P23_B0
+2120 = k_IN_P9_B0___IN_P22_B0
+2121 = kn_IN_P9_B0___IN_P22_B0
+2122 = k_IN_P9_B0___IN_P21_B0
+2123 = kn_IN_P9_B0___IN_P21_B0
+2124 = k_IN_P9_B0___IN_P20_B0
+2125 = kn_IN_P9_B0___IN_P20_B0
+2126 = k_IN_P9_B0___IN_P2_B0
+2127 = kn_IN_P9_B0___IN_P2_B0
+2128 = k_IN_P9_B0___IN_P19_B0
+2129 = kn_IN_P9_B0___IN_P19_B0
+2130 = k_IN_P9_B0___IN_P18_B0
+2131 = kn_IN_P9_B0___IN_P18_B0
+2132 = k_IN_P9_B0___IN_P17_B0
+2133 = kn_IN_P9_B0___IN_P17_B0
+2134 = k_IN_P9_B0___IN_P16_B0
+2135 = kn_IN_P9_B0___IN_P16_B0
+2136 = k_IN_P9_B0___IN_P15_B0
+2137 = kn_IN_P9_B0___IN_P15_B0
+2138 = k_IN_P9_B0___IN_P14_B0
+2139 = kn_IN_P9_B0___IN_P14_B0
+2140 = k_IN_P9_B0___IN_P13_B0
+2141 = kn_IN_P9_B0___IN_P13_B0
+2142 = k_IN_P9_B0___IN_P12_B0
+2143 = kn_IN_P9_B0___IN_P12_B0
+2144 = k_IN_P9_B0___IN_P11_B0
+2145 = kn_IN_P9_B0___IN_P11_B0
+2146 = k_IN_P9_B0___IN_P10_B0
+2147 = kn_IN_P9_B0___IN_P10_B0
+2148 = k_IN_P9_B0___IN_P1_B0
+2149 = kn_IN_P9_B0___IN_P1_B0
+2150 = k_IN_P9_B0___IN_P0_B0
+2151 = kn_IN_P9_B0___IN_P0_B0
+REGISTER: make_split_t0c() took 0.050503 secs
+
+
+Haciendo merge...
+REGISTER (entering): make_k_t0c()
+Trying to merge: DEFUSED_B0(3)/(IN_P9_B0(4), ) with var = 4
+Trying to make merge with (0) = (IN_P9_B0(4), IN_P8_B0(5), IN_P7_B0(6), IN_P6_B0(7), IN_P5_B0(8), IN_P4_B0(9), IN_P3_B0(10), IN_P29_B0(11), IN_P28_B0(12), IN_P27_B0(13), IN_P26_B0(14), IN_P25_B0(15), IN_P24_B0(16), IN_P23_B0(17), IN_P22_B0(18), IN_P21_B0(19), IN_P20_B0(20), IN_P2_B0(21), IN_P19_B0(22), IN_P18_B0(23), IN_P17_B0(24), IN_P16_B0(25), IN_P15_B0(26), IN_P14_B0(27), IN_P13_B0(28), IN_P12_B0(29), IN_P11_B0(30), IN_P10_B0(31), IN_P1_B0(32), IN_P0_B0(33), )
+accepting 4 tagged 
+accepting 5 tagged 
+accepting 6 tagged 
+accepting 7 tagged 
+accepting 8 tagged 
+accepting 9 tagged 
+accepting 10 tagged 
+accepting 11 tagged 
+accepting 12 tagged 
+accepting 13 tagged 
+accepting 14 tagged 
+accepting 15 tagged 
+accepting 16 tagged 
+accepting 17 tagged 
+accepting 18 tagged 
+accepting 19 tagged 
+accepting 20 tagged 
+accepting 21 tagged 
+accepting 22 tagged 
+accepting 23 tagged 
+accepting 24 tagged 
+accepting 25 tagged 
+accepting 26 tagged 
+accepting 27 tagged 
+accepting 28 tagged 
+accepting 29 tagged 
+accepting 30 tagged 
+accepting 31 tagged 
+accepting 32 tagged 
+accepting 33 tagged 
+Merging with (0) = (4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,)
+Trying to merge: DEFUSED_B0(3)/(IN_P8_B0(5), ) with var = 5
+Trying to merge: DEFUSED_B0(3)/(IN_P7_B0(6), ) with var = 6
+Trying to merge: DEFUSED_B0(3)/(IN_P6_B0(7), ) with var = 7
+Trying to merge: DEFUSED_B0(3)/(IN_P5_B0(8), ) with var = 8
+Trying to merge: DEFUSED_B0(3)/(IN_P4_B0(9), ) with var = 9
+Trying to merge: DEFUSED_B0(3)/(IN_P3_B0(10), ) with var = 10
+Trying to merge: DEFUSED_B0(3)/(IN_P29_B0(11), ) with var = 11
+Trying to merge: DEFUSED_B0(3)/(IN_P28_B0(12), ) with var = 12
+Trying to merge: DEFUSED_B0(3)/(IN_P27_B0(13), ) with var = 13
+Trying to merge: DEFUSED_B0(3)/(IN_P26_B0(14), ) with var = 14
+Trying to merge: DEFUSED_B0(3)/(IN_P25_B0(15), ) with var = 15
+Trying to merge: DEFUSED_B0(3)/(IN_P24_B0(16), ) with var = 16
+Trying to merge: DEFUSED_B0(3)/(IN_P23_B0(17), ) with var = 17
+Trying to merge: DEFUSED_B0(3)/(IN_P22_B0(18), ) with var = 18
+Trying to merge: DEFUSED_B0(3)/(IN_P21_B0(19), ) with var = 19
+Trying to merge: DEFUSED_B0(3)/(IN_P20_B0(20), ) with var = 20
+Trying to merge: DEFUSED_B0(3)/(IN_P2_B0(21), ) with var = 21
+Trying to merge: DEFUSED_B0(3)/(IN_P19_B0(22), ) with var = 22
+Trying to merge: DEFUSED_B0(3)/(IN_P18_B0(23), ) with var = 23
+Trying to merge: DEFUSED_B0(3)/(IN_P17_B0(24), ) with var = 24
+Trying to merge: DEFUSED_B0(3)/(IN_P16_B0(25), ) with var = 25
+Trying to merge: DEFUSED_B0(3)/(IN_P15_B0(26), ) with var = 26
+Trying to merge: DEFUSED_B0(3)/(IN_P14_B0(27), ) with var = 27
+Trying to merge: DEFUSED_B0(3)/(IN_P13_B0(28), ) with var = 28
+Trying to merge: DEFUSED_B0(3)/(IN_P12_B0(29), ) with var = 29
+Trying to merge: DEFUSED_B0(3)/(IN_P11_B0(30), ) with var = 30
+Trying to merge: DEFUSED_B0(3)/(IN_P10_B0(31), ) with var = 31
+Trying to merge: DEFUSED_B0(3)/(IN_P1_B0(32), ) with var = 32
+Trying to merge: DEFUSED_B0(3)/(IN_P0_B0(33), ) with var = 33
+REGISTER: make_k_t0c() took 0.004686 secs
+2182 = kn_IN_P0_B0___IN_P0_B0
+2183 = kn_IN_P1_B0___IN_P1_B0
+2184 = kn_IN_P10_B0___IN_P10_B0
+2185 = kn_IN_P11_B0___IN_P11_B0
+2186 = kn_IN_P12_B0___IN_P12_B0
+2187 = kn_IN_P13_B0___IN_P13_B0
+2188 = kn_IN_P14_B0___IN_P14_B0
+2189 = kn_IN_P15_B0___IN_P15_B0
+2190 = kn_IN_P16_B0___IN_P16_B0
+2191 = kn_IN_P17_B0___IN_P17_B0
+2192 = kn_IN_P18_B0___IN_P18_B0
+2193 = kn_IN_P19_B0___IN_P19_B0
+2194 = kn_IN_P2_B0___IN_P2_B0
+2195 = kn_IN_P20_B0___IN_P20_B0
+2196 = kn_IN_P21_B0___IN_P21_B0
+2197 = kn_IN_P22_B0___IN_P22_B0
+2198 = kn_IN_P23_B0___IN_P23_B0
+2199 = kn_IN_P24_B0___IN_P24_B0
+2200 = kn_IN_P25_B0___IN_P25_B0
+2201 = kn_IN_P26_B0___IN_P26_B0
+2202 = kn_IN_P27_B0___IN_P27_B0
+2203 = kn_IN_P28_B0___IN_P28_B0
+2204 = kn_IN_P29_B0___IN_P29_B0
+2205 = kn_IN_P3_B0___IN_P3_B0
+2206 = kn_IN_P4_B0___IN_P4_B0
+2207 = kn_IN_P5_B0___IN_P5_B0
+2208 = kn_IN_P6_B0___IN_P6_B0
+2209 = kn_IN_P7_B0___IN_P7_B0
+2210 = kn_IN_P8_B0___IN_P8_B0
+2211 = kn_IN_P9_B0___IN_P9_B0
+REGISTER (entering): make_merge_act()
+REGISTER: make_merge_act() took 0.233779 secs
+REGISTER (entering): make_merge_act()
+REGISTER: make_merge_act() took 0.00717101 secs
+REGISTER (entering): make_merge_act()
+REGISTER: make_merge_act() took 0.006002 secs
+REGISTER (entering): clean_actions()
+fixpoint 0
+fixpoint 0
+fixpoint 1
+Number of Atoms to del: 0
+REGISTER: clean_actions() took 0.037019 secs
+IMPLIES_WITH_INIT: From lit IN_P9_B0(4) obtaing the following lits:IN_P0_B0(-33) IN_P1_B0(-32) IN_P10_B0(-31) IN_P11_B0(-30) IN_P12_B0(-29) IN_P13_B0(-28) IN_P14_B0(-27) IN_P15_B0(-26) IN_P16_B0(-25) IN_P17_B0(-24) IN_P18_B0(-23) IN_P19_B0(-22) IN_P2_B0(-21) IN_P20_B0(-20) IN_P21_B0(-19) IN_P22_B0(-18) IN_P23_B0(-17) IN_P24_B0(-16) IN_P25_B0(-15) IN_P26_B0(-14) IN_P27_B0(-13) IN_P28_B0(-12) IN_P29_B0(-11) IN_P3_B0(-10) IN_P4_B0(-9) IN_P5_B0(-8) IN_P6_B0(-7) IN_P7_B0(-6) IN_P8_B0(-5) DEFUSED_B0(-3) FALSE(-1) FOO(2) IN_P9_B0(4) 
+IMPLIES_WITH_INIT: From lit IN_P8_B0(5) obtaing the following lits:IN_P0_B0(-33) IN_P1_B0(-32) IN_P10_B0(-31) IN_P11_B0(-30) IN_P12_B0(-29) IN_P13_B0(-28) IN_P14_B0(-27) IN_P15_B0(-26) IN_P16_B0(-25) IN_P17_B0(-24) IN_P18_B0(-23) IN_P19_B0(-22) IN_P2_B0(-21) IN_P20_B0(-20) IN_P21_B0(-19) IN_P22_B0(-18) IN_P23_B0(-17) IN_P24_B0(-16) IN_P25_B0(-15) IN_P26_B0(-14) IN_P27_B0(-13) IN_P28_B0(-12) IN_P29_B0(-11) IN_P3_B0(-10) IN_P4_B0(-9) IN_P5_B0(-8) IN_P6_B0(-7) IN_P7_B0(-6) IN_P9_B0(-4) DEFUSED_B0(-3) FALSE(-1) FOO(2) IN_P8_B0(5) 
+IMPLIES_WITH_INIT: From lit IN_P7_B0(6) obtaing the following lits:IN_P0_B0(-33) IN_P1_B0(-32) IN_P10_B0(-31) IN_P11_B0(-30) IN_P12_B0(-29) IN_P13_B0(-28) IN_P14_B0(-27) IN_P15_B0(-26) IN_P16_B0(-25) IN_P17_B0(-24) IN_P18_B0(-23) IN_P19_B0(-22) IN_P2_B0(-21) IN_P20_B0(-20) IN_P21_B0(-19) IN_P22_B0(-18) IN_P23_B0(-17) IN_P24_B0(-16) IN_P25_B0(-15) IN_P26_B0(-14) IN_P27_B0(-13) IN_P28_B0(-12) IN_P29_B0(-11) IN_P3_B0(-10) IN_P4_B0(-9) IN_P5_B0(-8) IN_P6_B0(-7) IN_P8_B0(-5) IN_P9_B0(-4) DEFUSED_B0(-3) FALSE(-1) FOO(2) IN_P7_B0(6) 
+IMPLIES_WITH_INIT: From lit IN_P6_B0(7) obtaing the following lits:IN_P0_B0(-33) IN_P1_B0(-32) IN_P10_B0(-31) IN_P11_B0(-30) IN_P12_B0(-29) IN_P13_B0(-28) IN_P14_B0(-27) IN_P15_B0(-26) IN_P16_B0(-25) IN_P17_B0(-24) IN_P18_B0(-23) IN_P19_B0(-22) IN_P2_B0(-21) IN_P20_B0(-20) IN_P21_B0(-19) IN_P22_B0(-18) IN_P23_B0(-17) IN_P24_B0(-16) IN_P25_B0(-15) IN_P26_B0(-14) IN_P27_B0(-13) IN_P28_B0(-12) IN_P29_B0(-11) IN_P3_B0(-10) IN_P4_B0(-9) IN_P5_B0(-8) IN_P7_B0(-6) IN_P8_B0(-5) IN_P9_B0(-4) DEFUSED_B0(-3) FALSE(-1) FOO(2) IN_P6_B0(7) 
+IMPLIES_WITH_INIT: From lit IN_P5_B0(8) obtaing the following lits:IN_P0_B0(-33) IN_P1_B0(-32) IN_P10_B0(-31) IN_P11_B0(-30) IN_P12_B0(-29) IN_P13_B0(-28) IN_P14_B0(-27) IN_P15_B0(-26) IN_P16_B0(-25) IN_P17_B0(-24) IN_P18_B0(-23) IN_P19_B0(-22) IN_P2_B0(-21) IN_P20_B0(-20) IN_P21_B0(-19) IN_P22_B0(-18) IN_P23_B0(-17) IN_P24_B0(-16) IN_P25_B0(-15) IN_P26_B0(-14) IN_P27_B0(-13) IN_P28_B0(-12) IN_P29_B0(-11) IN_P3_B0(-10) IN_P4_B0(-9) IN_P6_B0(-7) IN_P7_B0(-6) IN_P8_B0(-5) IN_P9_B0(-4) DEFUSED_B0(-3) FALSE(-1) FOO(2) IN_P5_B0(8) 
+IMPLIES_WITH_INIT: From lit IN_P4_B0(9) obtaing the following lits:IN_P0_B0(-33) IN_P1_B0(-32) IN_P10_B0(-31) IN_P11_B0(-30) IN_P12_B0(-29) IN_P13_B0(-28) IN_P14_B0(-27) IN_P15_B0(-26) IN_P16_B0(-25) IN_P17_B0(-24) IN_P18_B0(-23) IN_P19_B0(-22) IN_P2_B0(-21) IN_P20_B0(-20) IN_P21_B0(-19) IN_P22_B0(-18) IN_P23_B0(-17) IN_P24_B0(-16) IN_P25_B0(-15) IN_P26_B0(-14) IN_P27_B0(-13) IN_P28_B0(-12) IN_P29_B0(-11) IN_P3_B0(-10) IN_P5_B0(-8) IN_P6_B0(-7) IN_P7_B0(-6) IN_P8_B0(-5) IN_P9_B0(-4) DEFUSED_B0(-3) FALSE(-1) FOO(2) IN_P4_B0(9) 
+IMPLIES_WITH_INIT: From lit IN_P3_B0(10) obtaing the following lits:IN_P0_B0(-33) IN_P1_B0(-32) IN_P10_B0(-31) IN_P11_B0(-30) IN_P12_B0(-29) IN_P13_B0(-28) IN_P14_B0(-27) IN_P15_B0(-26) IN_P16_B0(-25) IN_P17_B0(-24) IN_P18_B0(-23) IN_P19_B0(-22) IN_P2_B0(-21) IN_P20_B0(-20) IN_P21_B0(-19) IN_P22_B0(-18) IN_P23_B0(-17) IN_P24_B0(-16) IN_P25_B0(-15) IN_P26_B0(-14) IN_P27_B0(-13) IN_P28_B0(-12) IN_P29_B0(-11) IN_P4_B0(-9) IN_P5_B0(-8) IN_P6_B0(-7) IN_P7_B0(-6) IN_P8_B0(-5) IN_P9_B0(-4) DEFUSED_B0(-3) FALSE(-1) FOO(2) IN_P3_B0(10) 
+IMPLIES_WITH_INIT: From lit IN_P29_B0(11) obtaing the following lits:IN_P0_B0(-33) IN_P1_B0(-32) IN_P10_B0(-31) IN_P11_B0(-30) IN_P12_B0(-29) IN_P13_B0(-28) IN_P14_B0(-27) IN_P15_B0(-26) IN_P16_B0(-25) IN_P17_B0(-24) IN_P18_B0(-23) IN_P19_B0(-22) IN_P2_B0(-21) IN_P20_B0(-20) IN_P21_B0(-19) IN_P22_B0(-18) IN_P23_B0(-17) IN_P24_B0(-16) IN_P25_B0(-15) IN_P26_B0(-14) IN_P27_B0(-13) IN_P28_B0(-12) IN_P3_B0(-10) IN_P4_B0(-9) IN_P5_B0(-8) IN_P6_B0(-7) IN_P7_B0(-6) IN_P8_B0(-5) IN_P9_B0(-4) DEFUSED_B0(-3) FALSE(-1) FOO(2) IN_P29_B0(11) 
+IMPLIES_WITH_INIT: From lit IN_P28_B0(12) obtaing the following lits:IN_P0_B0(-33) IN_P1_B0(-32) IN_P10_B0(-31) IN_P11_B0(-30) IN_P12_B0(-29) IN_P13_B0(-28) IN_P14_B0(-27) IN_P15_B0(-26) IN_P16_B0(-25) IN_P17_B0(-24) IN_P18_B0(-23) IN_P19_B0(-22) IN_P2_B0(-21) IN_P20_B0(-20) IN_P21_B0(-19) IN_P22_B0(-18) IN_P23_B0(-17) IN_P24_B0(-16) IN_P25_B0(-15) IN_P26_B0(-14) IN_P27_B0(-13) IN_P29_B0(-11) IN_P3_B0(-10) IN_P4_B0(-9) IN_P5_B0(-8) IN_P6_B0(-7) IN_P7_B0(-6) IN_P8_B0(-5) IN_P9_B0(-4) DEFUSED_B0(-3) FALSE(-1) FOO(2) IN_P28_B0(12) 
+IMPLIES_WITH_INIT: From lit IN_P27_B0(13) obtaing the following lits:IN_P0_B0(-33) IN_P1_B0(-32) IN_P10_B0(-31) IN_P11_B0(-30) IN_P12_B0(-29) IN_P13_B0(-28) IN_P14_B0(-27) IN_P15_B0(-26) IN_P16_B0(-25) IN_P17_B0(-24) IN_P18_B0(-23) IN_P19_B0(-22) IN_P2_B0(-21) IN_P20_B0(-20) IN_P21_B0(-19) IN_P22_B0(-18) IN_P23_B0(-17) IN_P24_B0(-16) IN_P25_B0(-15) IN_P26_B0(-14) IN_P28_B0(-12) IN_P29_B0(-11) IN_P3_B0(-10) IN_P4_B0(-9) IN_P5_B0(-8) IN_P6_B0(-7) IN_P7_B0(-6) IN_P8_B0(-5) IN_P9_B0(-4) DEFUSED_B0(-3) FALSE(-1) FOO(2) IN_P27_B0(13) 
+IMPLIES_WITH_INIT: From lit IN_P26_B0(14) obtaing the following lits:IN_P0_B0(-33) IN_P1_B0(-32) IN_P10_B0(-31) IN_P11_B0(-30) IN_P12_B0(-29) IN_P13_B0(-28) IN_P14_B0(-27) IN_P15_B0(-26) IN_P16_B0(-25) IN_P17_B0(-24) IN_P18_B0(-23) IN_P19_B0(-22) IN_P2_B0(-21) IN_P20_B0(-20) IN_P21_B0(-19) IN_P22_B0(-18) IN_P23_B0(-17) IN_P24_B0(-16) IN_P25_B0(-15) IN_P27_B0(-13) IN_P28_B0(-12) IN_P29_B0(-11) IN_P3_B0(-10) IN_P4_B0(-9) IN_P5_B0(-8) IN_P6_B0(-7) IN_P7_B0(-6) IN_P8_B0(-5) IN_P9_B0(-4) DEFUSED_B0(-3) FALSE(-1) FOO(2) IN_P26_B0(14) 
+IMPLIES_WITH_INIT: From lit IN_P25_B0(15) obtaing the following lits:IN_P0_B0(-33) IN_P1_B0(-32) IN_P10_B0(-31) IN_P11_B0(-30) IN_P12_B0(-29) IN_P13_B0(-28) IN_P14_B0(-27) IN_P15_B0(-26) IN_P16_B0(-25) IN_P17_B0(-24) IN_P18_B0(-23) IN_P19_B0(-22) IN_P2_B0(-21) IN_P20_B0(-20) IN_P21_B0(-19) IN_P22_B0(-18) IN_P23_B0(-17) IN_P24_B0(-16) IN_P26_B0(-14) IN_P27_B0(-13) IN_P28_B0(-12) IN_P29_B0(-11) IN_P3_B0(-10) IN_P4_B0(-9) IN_P5_B0(-8) IN_P6_B0(-7) IN_P7_B0(-6) IN_P8_B0(-5) IN_P9_B0(-4) DEFUSED_B0(-3) FALSE(-1) FOO(2) IN_P25_B0(15) 
+IMPLIES_WITH_INIT: From lit IN_P24_B0(16) obtaing the following lits:IN_P0_B0(-33) IN_P1_B0(-32) IN_P10_B0(-31) IN_P11_B0(-30) IN_P12_B0(-29) IN_P13_B0(-28) IN_P14_B0(-27) IN_P15_B0(-26) IN_P16_B0(-25) IN_P17_B0(-24) IN_P18_B0(-23) IN_P19_B0(-22) IN_P2_B0(-21) IN_P20_B0(-20) IN_P21_B0(-19) IN_P22_B0(-18) IN_P23_B0(-17) IN_P25_B0(-15) IN_P26_B0(-14) IN_P27_B0(-13) IN_P28_B0(-12) IN_P29_B0(-11) IN_P3_B0(-10) IN_P4_B0(-9) IN_P5_B0(-8) IN_P6_B0(-7) IN_P7_B0(-6) IN_P8_B0(-5) IN_P9_B0(-4) DEFUSED_B0(-3) FALSE(-1) FOO(2) IN_P24_B0(16) 
+IMPLIES_WITH_INIT: From lit IN_P23_B0(17) obtaing the following lits:IN_P0_B0(-33) IN_P1_B0(-32) IN_P10_B0(-31) IN_P11_B0(-30) IN_P12_B0(-29) IN_P13_B0(-28) IN_P14_B0(-27) IN_P15_B0(-26) IN_P16_B0(-25) IN_P17_B0(-24) IN_P18_B0(-23) IN_P19_B0(-22) IN_P2_B0(-21) IN_P20_B0(-20) IN_P21_B0(-19) IN_P22_B0(-18) IN_P24_B0(-16) IN_P25_B0(-15) IN_P26_B0(-14) IN_P27_B0(-13) IN_P28_B0(-12) IN_P29_B0(-11) IN_P3_B0(-10) IN_P4_B0(-9) IN_P5_B0(-8) IN_P6_B0(-7) IN_P7_B0(-6) IN_P8_B0(-5) IN_P9_B0(-4) DEFUSED_B0(-3) FALSE(-1) FOO(2) IN_P23_B0(17) 
+IMPLIES_WITH_INIT: From lit IN_P22_B0(18) obtaing the following lits:IN_P0_B0(-33) IN_P1_B0(-32) IN_P10_B0(-31) IN_P11_B0(-30) IN_P12_B0(-29) IN_P13_B0(-28) IN_P14_B0(-27) IN_P15_B0(-26) IN_P16_B0(-25) IN_P17_B0(-24) IN_P18_B0(-23) IN_P19_B0(-22) IN_P2_B0(-21) IN_P20_B0(-20) IN_P21_B0(-19) IN_P23_B0(-17) IN_P24_B0(-16) IN_P25_B0(-15) IN_P26_B0(-14) IN_P27_B0(-13) IN_P28_B0(-12) IN_P29_B0(-11) IN_P3_B0(-10) IN_P4_B0(-9) IN_P5_B0(-8) IN_P6_B0(-7) IN_P7_B0(-6) IN_P8_B0(-5) IN_P9_B0(-4) DEFUSED_B0(-3) FALSE(-1) FOO(2) IN_P22_B0(18) 
+IMPLIES_WITH_INIT: From lit IN_P21_B0(19) obtaing the following lits:IN_P0_B0(-33) IN_P1_B0(-32) IN_P10_B0(-31) IN_P11_B0(-30) IN_P12_B0(-29) IN_P13_B0(-28) IN_P14_B0(-27) IN_P15_B0(-26) IN_P16_B0(-25) IN_P17_B0(-24) IN_P18_B0(-23) IN_P19_B0(-22) IN_P2_B0(-21) IN_P20_B0(-20) IN_P22_B0(-18) IN_P23_B0(-17) IN_P24_B0(-16) IN_P25_B0(-15) IN_P26_B0(-14) IN_P27_B0(-13) IN_P28_B0(-12) IN_P29_B0(-11) IN_P3_B0(-10) IN_P4_B0(-9) IN_P5_B0(-8) IN_P6_B0(-7) IN_P7_B0(-6) IN_P8_B0(-5) IN_P9_B0(-4) DEFUSED_B0(-3) FALSE(-1) FOO(2) IN_P21_B0(19) 
+IMPLIES_WITH_INIT: From lit IN_P20_B0(20) obtaing the following lits:IN_P0_B0(-33) IN_P1_B0(-32) IN_P10_B0(-31) IN_P11_B0(-30) IN_P12_B0(-29) IN_P13_B0(-28) IN_P14_B0(-27) IN_P15_B0(-26) IN_P16_B0(-25) IN_P17_B0(-24) IN_P18_B0(-23) IN_P19_B0(-22) IN_P2_B0(-21) IN_P21_B0(-19) IN_P22_B0(-18) IN_P23_B0(-17) IN_P24_B0(-16) IN_P25_B0(-15) IN_P26_B0(-14) IN_P27_B0(-13) IN_P28_B0(-12) IN_P29_B0(-11) IN_P3_B0(-10) IN_P4_B0(-9) IN_P5_B0(-8) IN_P6_B0(-7) IN_P7_B0(-6) IN_P8_B0(-5) IN_P9_B0(-4) DEFUSED_B0(-3) FALSE(-1) FOO(2) IN_P20_B0(20) 
+IMPLIES_WITH_INIT: From lit IN_P2_B0(21) obtaing the following lits:IN_P0_B0(-33) IN_P1_B0(-32) IN_P10_B0(-31) IN_P11_B0(-30) IN_P12_B0(-29) IN_P13_B0(-28) IN_P14_B0(-27) IN_P15_B0(-26) IN_P16_B0(-25) IN_P17_B0(-24) IN_P18_B0(-23) IN_P19_B0(-22) IN_P20_B0(-20) IN_P21_B0(-19) IN_P22_B0(-18) IN_P23_B0(-17) IN_P24_B0(-16) IN_P25_B0(-15) IN_P26_B0(-14) IN_P27_B0(-13) IN_P28_B0(-12) IN_P29_B0(-11) IN_P3_B0(-10) IN_P4_B0(-9) IN_P5_B0(-8) IN_P6_B0(-7) IN_P7_B0(-6) IN_P8_B0(-5) IN_P9_B0(-4) DEFUSED_B0(-3) FALSE(-1) FOO(2) IN_P2_B0(21) 
+IMPLIES_WITH_INIT: From lit IN_P19_B0(22) obtaing the following lits:IN_P0_B0(-33) IN_P1_B0(-32) IN_P10_B0(-31) IN_P11_B0(-30) IN_P12_B0(-29) IN_P13_B0(-28) IN_P14_B0(-27) IN_P15_B0(-26) IN_P16_B0(-25) IN_P17_B0(-24) IN_P18_B0(-23) IN_P2_B0(-21) IN_P20_B0(-20) IN_P21_B0(-19) IN_P22_B0(-18) IN_P23_B0(-17) IN_P24_B0(-16) IN_P25_B0(-15) IN_P26_B0(-14) IN_P27_B0(-13) IN_P28_B0(-12) IN_P29_B0(-11) IN_P3_B0(-10) IN_P4_B0(-9) IN_P5_B0(-8) IN_P6_B0(-7) IN_P7_B0(-6) IN_P8_B0(-5) IN_P9_B0(-4) DEFUSED_B0(-3) FALSE(-1) FOO(2) IN_P19_B0(22) 
+IMPLIES_WITH_INIT: From lit IN_P18_B0(23) obtaing the following lits:IN_P0_B0(-33) IN_P1_B0(-32) IN_P10_B0(-31) IN_P11_B0(-30) IN_P12_B0(-29) IN_P13_B0(-28) IN_P14_B0(-27) IN_P15_B0(-26) IN_P16_B0(-25) IN_P17_B0(-24) IN_P19_B0(-22) IN_P2_B0(-21) IN_P20_B0(-20) IN_P21_B0(-19) IN_P22_B0(-18) IN_P23_B0(-17) IN_P24_B0(-16) IN_P25_B0(-15) IN_P26_B0(-14) IN_P27_B0(-13) IN_P28_B0(-12) IN_P29_B0(-11) IN_P3_B0(-10) IN_P4_B0(-9) IN_P5_B0(-8) IN_P6_B0(-7) IN_P7_B0(-6) IN_P8_B0(-5) IN_P9_B0(-4) DEFUSED_B0(-3) FALSE(-1) FOO(2) IN_P18_B0(23) 
+IMPLIES_WITH_INIT: From lit IN_P17_B0(24) obtaing the following lits:IN_P0_B0(-33) IN_P1_B0(-32) IN_P10_B0(-31) IN_P11_B0(-30) IN_P12_B0(-29) IN_P13_B0(-28) IN_P14_B0(-27) IN_P15_B0(-26) IN_P16_B0(-25) IN_P18_B0(-23) IN_P19_B0(-22) IN_P2_B0(-21) IN_P20_B0(-20) IN_P21_B0(-19) IN_P22_B0(-18) IN_P23_B0(-17) IN_P24_B0(-16) IN_P25_B0(-15) IN_P26_B0(-14) IN_P27_B0(-13) IN_P28_B0(-12) IN_P29_B0(-11) IN_P3_B0(-10) IN_P4_B0(-9) IN_P5_B0(-8) IN_P6_B0(-7) IN_P7_B0(-6) IN_P8_B0(-5) IN_P9_B0(-4) DEFUSED_B0(-3) FALSE(-1) FOO(2) IN_P17_B0(24) 
+IMPLIES_WITH_INIT: From lit IN_P16_B0(25) obtaing the following lits:IN_P0_B0(-33) IN_P1_B0(-32) IN_P10_B0(-31) IN_P11_B0(-30) IN_P12_B0(-29) IN_P13_B0(-28) IN_P14_B0(-27) IN_P15_B0(-26) IN_P17_B0(-24) IN_P18_B0(-23) IN_P19_B0(-22) IN_P2_B0(-21) IN_P20_B0(-20) IN_P21_B0(-19) IN_P22_B0(-18) IN_P23_B0(-17) IN_P24_B0(-16) IN_P25_B0(-15) IN_P26_B0(-14) IN_P27_B0(-13) IN_P28_B0(-12) IN_P29_B0(-11) IN_P3_B0(-10) IN_P4_B0(-9) IN_P5_B0(-8) IN_P6_B0(-7) IN_P7_B0(-6) IN_P8_B0(-5) IN_P9_B0(-4) DEFUSED_B0(-3) FALSE(-1) FOO(2) IN_P16_B0(25) 
+IMPLIES_WITH_INIT: From lit IN_P15_B0(26) obtaing the following lits:IN_P0_B0(-33) IN_P1_B0(-32) IN_P10_B0(-31) IN_P11_B0(-30) IN_P12_B0(-29) IN_P13_B0(-28) IN_P14_B0(-27) IN_P16_B0(-25) IN_P17_B0(-24) IN_P18_B0(-23) IN_P19_B0(-22) IN_P2_B0(-21) IN_P20_B0(-20) IN_P21_B0(-19) IN_P22_B0(-18) IN_P23_B0(-17) IN_P24_B0(-16) IN_P25_B0(-15) IN_P26_B0(-14) IN_P27_B0(-13) IN_P28_B0(-12) IN_P29_B0(-11) IN_P3_B0(-10) IN_P4_B0(-9) IN_P5_B0(-8) IN_P6_B0(-7) IN_P7_B0(-6) IN_P8_B0(-5) IN_P9_B0(-4) DEFUSED_B0(-3) FALSE(-1) FOO(2) IN_P15_B0(26) 
+IMPLIES_WITH_INIT: From lit IN_P14_B0(27) obtaing the following lits:IN_P0_B0(-33) IN_P1_B0(-32) IN_P10_B0(-31) IN_P11_B0(-30) IN_P12_B0(-29) IN_P13_B0(-28) IN_P15_B0(-26) IN_P16_B0(-25) IN_P17_B0(-24) IN_P18_B0(-23) IN_P19_B0(-22) IN_P2_B0(-21) IN_P20_B0(-20) IN_P21_B0(-19) IN_P22_B0(-18) IN_P23_B0(-17) IN_P24_B0(-16) IN_P25_B0(-15) IN_P26_B0(-14) IN_P27_B0(-13) IN_P28_B0(-12) IN_P29_B0(-11) IN_P3_B0(-10) IN_P4_B0(-9) IN_P5_B0(-8) IN_P6_B0(-7) IN_P7_B0(-6) IN_P8_B0(-5) IN_P9_B0(-4) DEFUSED_B0(-3) FALSE(-1) FOO(2) IN_P14_B0(27) 
+IMPLIES_WITH_INIT: From lit IN_P13_B0(28) obtaing the following lits:IN_P0_B0(-33) IN_P1_B0(-32) IN_P10_B0(-31) IN_P11_B0(-30) IN_P12_B0(-29) IN_P14_B0(-27) IN_P15_B0(-26) IN_P16_B0(-25) IN_P17_B0(-24) IN_P18_B0(-23) IN_P19_B0(-22) IN_P2_B0(-21) IN_P20_B0(-20) IN_P21_B0(-19) IN_P22_B0(-18) IN_P23_B0(-17) IN_P24_B0(-16) IN_P25_B0(-15) IN_P26_B0(-14) IN_P27_B0(-13) IN_P28_B0(-12) IN_P29_B0(-11) IN_P3_B0(-10) IN_P4_B0(-9) IN_P5_B0(-8) IN_P6_B0(-7) IN_P7_B0(-6) IN_P8_B0(-5) IN_P9_B0(-4) DEFUSED_B0(-3) FALSE(-1) FOO(2) IN_P13_B0(28) 
+IMPLIES_WITH_INIT: From lit IN_P12_B0(29) obtaing the following lits:IN_P0_B0(-33) IN_P1_B0(-32) IN_P10_B0(-31) IN_P11_B0(-30) IN_P13_B0(-28) IN_P14_B0(-27) IN_P15_B0(-26) IN_P16_B0(-25) IN_P17_B0(-24) IN_P18_B0(-23) IN_P19_B0(-22) IN_P2_B0(-21) IN_P20_B0(-20) IN_P21_B0(-19) IN_P22_B0(-18) IN_P23_B0(-17) IN_P24_B0(-16) IN_P25_B0(-15) IN_P26_B0(-14) IN_P27_B0(-13) IN_P28_B0(-12) IN_P29_B0(-11) IN_P3_B0(-10) IN_P4_B0(-9) IN_P5_B0(-8) IN_P6_B0(-7) IN_P7_B0(-6) IN_P8_B0(-5) IN_P9_B0(-4) DEFUSED_B0(-3) FALSE(-1) FOO(2) IN_P12_B0(29) 
+IMPLIES_WITH_INIT: From lit IN_P11_B0(30) obtaing the following lits:IN_P0_B0(-33) IN_P1_B0(-32) IN_P10_B0(-31) IN_P12_B0(-29) IN_P13_B0(-28) IN_P14_B0(-27) IN_P15_B0(-26) IN_P16_B0(-25) IN_P17_B0(-24) IN_P18_B0(-23) IN_P19_B0(-22) IN_P2_B0(-21) IN_P20_B0(-20) IN_P21_B0(-19) IN_P22_B0(-18) IN_P23_B0(-17) IN_P24_B0(-16) IN_P25_B0(-15) IN_P26_B0(-14) IN_P27_B0(-13) IN_P28_B0(-12) IN_P29_B0(-11) IN_P3_B0(-10) IN_P4_B0(-9) IN_P5_B0(-8) IN_P6_B0(-7) IN_P7_B0(-6) IN_P8_B0(-5) IN_P9_B0(-4) DEFUSED_B0(-3) FALSE(-1) FOO(2) IN_P11_B0(30) 
+IMPLIES_WITH_INIT: From lit IN_P10_B0(31) obtaing the following lits:IN_P0_B0(-33) IN_P1_B0(-32) IN_P11_B0(-30) IN_P12_B0(-29) IN_P13_B0(-28) IN_P14_B0(-27) IN_P15_B0(-26) IN_P16_B0(-25) IN_P17_B0(-24) IN_P18_B0(-23) IN_P19_B0(-22) IN_P2_B0(-21) IN_P20_B0(-20) IN_P21_B0(-19) IN_P22_B0(-18) IN_P23_B0(-17) IN_P24_B0(-16) IN_P25_B0(-15) IN_P26_B0(-14) IN_P27_B0(-13) IN_P28_B0(-12) IN_P29_B0(-11) IN_P3_B0(-10) IN_P4_B0(-9) IN_P5_B0(-8) IN_P6_B0(-7) IN_P7_B0(-6) IN_P8_B0(-5) IN_P9_B0(-4) DEFUSED_B0(-3) FALSE(-1) FOO(2) IN_P10_B0(31) 
+IMPLIES_WITH_INIT: From lit IN_P1_B0(32) obtaing the following lits:IN_P0_B0(-33) IN_P10_B0(-31) IN_P11_B0(-30) IN_P12_B0(-29) IN_P13_B0(-28) IN_P14_B0(-27) IN_P15_B0(-26) IN_P16_B0(-25) IN_P17_B0(-24) IN_P18_B0(-23) IN_P19_B0(-22) IN_P2_B0(-21) IN_P20_B0(-20) IN_P21_B0(-19) IN_P22_B0(-18) IN_P23_B0(-17) IN_P24_B0(-16) IN_P25_B0(-15) IN_P26_B0(-14) IN_P27_B0(-13) IN_P28_B0(-12) IN_P29_B0(-11) IN_P3_B0(-10) IN_P4_B0(-9) IN_P5_B0(-8) IN_P6_B0(-7) IN_P7_B0(-6) IN_P8_B0(-5) IN_P9_B0(-4) DEFUSED_B0(-3) FALSE(-1) FOO(2) IN_P1_B0(32) 
+IMPLIES_WITH_INIT: From lit IN_P0_B0(33) obtaing the following lits:IN_P1_B0(-32) IN_P10_B0(-31) IN_P11_B0(-30) IN_P12_B0(-29) IN_P13_B0(-28) IN_P14_B0(-27) IN_P15_B0(-26) IN_P16_B0(-25) IN_P17_B0(-24) IN_P18_B0(-23) IN_P19_B0(-22) IN_P2_B0(-21) IN_P20_B0(-20) IN_P21_B0(-19) IN_P22_B0(-18) IN_P23_B0(-17) IN_P24_B0(-16) IN_P25_B0(-15) IN_P26_B0(-14) IN_P27_B0(-13) IN_P28_B0(-12) IN_P29_B0(-11) IN_P3_B0(-10) IN_P4_B0(-9) IN_P5_B0(-8) IN_P6_B0(-7) IN_P7_B0(-6) IN_P8_B0(-5) IN_P9_B0(-4) DEFUSED_B0(-3) FALSE(-1) FOO(2) IN_P0_B0(33) 
+REGISTER (entering): printNewPDDL()
+Generating PDDL
+printing 1900 actions
+printing 30 observations
+STAT old-Actions: 30
+STAT old-Atoms: 36
+STAT old-cond-effects: 31
+STAT old-condicionales: 30
+STAT KP-NActions: 1900
+STAT KP-NAtoms: 2212
+STAT KP-deleted-NAtoms: 0
+STAT KP-Nconds-effects-and-notused: 9488
+STAT KP-Ncond-effects: 9488
+STAT KP-Numero_lit_en_efectos_condicionales: 98778
+REGISTER: printNewPDDL() took 0.594428 secs
+REGISTER: main() took 1.34335 secs
+
+ff: parsing domain file
+domain 'BTS' defined
+ ... done.
+ff: parsing problem file
+problem 'BTS-30-1' defined
+ ... done.
+
+STATS quality of hash table of predicates: max_bucket_size = 4, ave_bucket_size = 0.717766
+ff-cond: no description file
+fact T0_FAIL_K0 tagged as 1115  
+
+
+Skipping All searches!
+Starting K procedure.
+
+          h:                        30            [1]
+          h:                        30  , h_  :   29       
+::::::::::::::::::::::::current action:::DUNK_P9_B0_T0
+
+          h:                        29            [1]
+          h:                        29  , h_  :   28       
+::::::::::::::::::::::::current action:::DUNK_P8_B0_T0
+
+          h:                        28            [1]
+          h:                        28  , h_  :   27       
+::::::::::::::::::::::::current action:::DUNK_P7_B0_T0
+
+          h:                        27            [1]
+          h:                        27  , h_  :   26       
+::::::::::::::::::::::::current action:::DUNK_P6_B0_T0
+
+          h:                        26            [1]
+          h:                        26  , h_  :   25       
+::::::::::::::::::::::::current action:::DUNK_P5_B0_T0
+
+          h:                        25            [1]
+          h:                        25  , h_  :   24       
+::::::::::::::::::::::::current action:::DUNK_P4_B0_T0
+
+          h:                        24            [1]
+          h:                        24  , h_  :   23       
+::::::::::::::::::::::::current action:::DUNK_P3_B0_T0
+
+          h:                        23            [1]
+          h:                        23  , h_  :   22       
+::::::::::::::::::::::::current action:::DUNK_P29_B0_T0
+
+          h:                        22            [1]
+          h:                        22  , h_  :   21       
+::::::::::::::::::::::::current action:::DUNK_P28_B0_T0
+
+          h:                        21            [1]
+          h:                        21  , h_  :   20       
+::::::::::::::::::::::::current action:::DUNK_P27_B0_T0
+
+          h:                        20            [1]
+          h:                        20  , h_  :   19       
+::::::::::::::::::::::::current action:::DUNK_P26_B0_T0
+
+          h:                        19            [1]
+          h:                        19  , h_  :   18       
+::::::::::::::::::::::::current action:::DUNK_P25_B0_T0
+
+          h:                        18            [1]
+          h:                        18  , h_  :   17       
+::::::::::::::::::::::::current action:::DUNK_P24_B0_T0
+
+          h:                        17            [1]
+          h:                        17  , h_  :   16       
+::::::::::::::::::::::::current action:::DUNK_P23_B0_T0
+
+          h:                        16            [1]
+          h:                        16  , h_  :   15       
+::::::::::::::::::::::::current action:::DUNK_P22_B0_T0
+
+          h:                        15            [1]
+          h:                        15  , h_  :   14       
+::::::::::::::::::::::::current action:::DUNK_P21_B0_T0
+
+          h:                        14            [1]
+          h:                        14  , h_  :   13       
+::::::::::::::::::::::::current action:::DUNK_P20_B0_T0
+
+          h:                        13            [1]
+          h:                        13  , h_  :   12       
+::::::::::::::::::::::::current action:::DUNK_P2_B0_T0
+
+          h:                        12            [1]
+          h:                        12  , h_  :   11       
+::::::::::::::::::::::::current action:::DUNK_P19_B0_T0
+
+          h:                        11            [1]
+          h:                        11  , h_  :   10       
+::::::::::::::::::::::::current action:::DUNK_P18_B0_T0
+
+          h:                        10            [1]
+          h:                        10  , h_  :    9       
+::::::::::::::::::::::::current action:::DUNK_P17_B0_T0
+
+          h:                         9            [1]
+          h:                         9  , h_  :    8       
+::::::::::::::::::::::::current action:::DUNK_P16_B0_T0
+
+          h:                         8            [1]
+          h:                         8  , h_  :    7       
+::::::::::::::::::::::::current action:::DUNK_P15_B0_T0
+
+          h:                         7            [1]
+          h:                         7  , h_  :    6       
+::::::::::::::::::::::::current action:::DUNK_P14_B0_T0
+
+          h:                         6            [1]
+          h:                         6  , h_  :    5       
+::::::::::::::::::::::::current action:::DUNK_P13_B0_T0
+
+          h:                         5            [1]
+          h:                         5  , h_  :    4       
+::::::::::::::::::::::::current action:::DUNK_P12_B0_T0
+
+          h:                         4            [1]
+          h:                         4  , h_  :    3       
+::::::::::::::::::::::::current action:::DUNK_P11_B0_T0
+
+          h:                         3            [1]
+          h:                         3  , h_  :    2       
+::::::::::::::::::::::::current action:::DUNK_P10_B0_T0
+
+          h:                         2            [1]
+          h:                         2  , h_  :    1       
+::::::::::::::::::::::::current action:::DUNK_P1_B0_T0
+
+          h:                         1            [1]
+          h:                         1  , h_  :    0       
+::::::::::::::::::::::::current action:::DUNK_P0_B0_T0
+
+Goal reached in a branch 
+root
+
+
+ff: found legal plan as follows
+
+Total branches in this plan: 1 
+Longest branch: 30
+Total spurious branches in this plan: 0
+Total number of actions: 30
+
+
+time spent:    1.00 seconds instantiating 1930 easy, 0 hard action templates
+               0.00 seconds reachability analysis, yielding 2110 facts and 1930 actions
+               0.00 seconds creating final representation with 1209 relevant facts
+               0.08 seconds building connectivity graph
+               0.04 seconds computing closures operations
+               0.10 seconds searching, evaluating 91 states, expanding 30 nodes, to a max depth of 1
+               1.18 seconds total time
+
+
+

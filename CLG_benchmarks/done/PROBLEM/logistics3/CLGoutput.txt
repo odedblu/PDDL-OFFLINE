@@ -1,0 +1,379 @@
+REGISTER (entering): main()
+cf2cs v 2.1 -- A compiler for contingent planning problems into classical models.
+CALL: ./cf2cs -sn -t0 -cond -cod -cmr -csl -ckit -ckinl -cminl -cmit -cdisjk0 -cdisjm0 -mac -cfc -fp benchmarks/logistics3/d.pddl benchmarks/logistics3/p.pddl
+-sn
+-t0
+-cond
+-cod
+-cmr
+-csl
+-ckit
+-ckinl
+-cminl
+-cmit
+-cdisjk0
+-cdisjm0
+-mac
+-cfc
+-fp
+benchmarks/logistics3/d.pddl
+benchmarks/logistics3/p.pddl
+Using only initial disjunctions for merge
+Clousuring for obtaining possible tags
+Full cancellation: Translating deletes properly. Maybe complete if '-s0' or '-f' option was used
+Propagating ramifications in effects
+Using action compilation + merge
+Merging only goals and preconditions
+REGISTER (entering): parse()
+predicates size = 1 for name = AT_TL
+predicates size = 2 for name = AT_TA
+predicates size = 3 for name = AT_AA
+predicates size = 4 for name = AT_OL
+predicates size = 5 for name = AT_OA
+predicates size = 6 for name = IN_OT
+predicates size = 7 for name = IN_OA
+predicates size = 8 for name = IN_CITY_L
+predicates size = 9 for name = IN_CITY_A
+predicates size = 10 for name = IN_CITY_T
+Parsed: benchmarks/logistics3/d.pddl
+Parsed: benchmarks/logistics3/p.pddl
+REGISTER: parse() took 0.000904 secs
+REGISTER (entering): initialize()
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+REGISTER (entering): computeReachableAtoms()
+schema 0 de 12
+schema 1 de 12
+schema 2 de 12
+schema 3 de 12
+schema 4 de 12
+schema 5 de 12
+schema 6 de 12
+schema 7 de 12
+schema 8 de 12
+schema 9 de 12
+schema 10 de 12
+schema 11 de 12
+schema 0 de 12
+schema 1 de 12
+schema 2 de 12
+schema 3 de 12
+schema 4 de 12
+schema 5 de 12
+schema 6 de 12
+schema 7 de 12
+schema 8 de 12
+schema 9 de 12
+schema 10 de 12
+schema 11 de 12
+schema 0 de 12
+schema 1 de 12
+schema 2 de 12
+schema 3 de 12
+schema 4 de 12
+schema 5 de 12
+schema 6 de 12
+schema 7 de 12
+schema 8 de 12
+schema 9 de 12
+schema 10 de 12
+schema 11 de 12
+REGISTER: computeReachableAtoms() took 0.002437 secs
+GENERAL: number of atoms = 58
+GENERAL: number of reachable atoms = 28
+GENERAL: number of grounded operators = 39
+REGISTER: initialize() took 0.002693 secs
+REGISTER (entering): initInstanceDB()
+Unknown atoms: 3
+Simply unknown atoms: 0
+Known atoms: 34
+True literals (after unit resolution): 25
+Oneof (0): 3
+Or (0): 2
+Or (1): 2
+Or (2): 2
+Or (3): 3
+
+---- end uncertainty: 
+Reachable 28
+GENERAL: number of actions = 30
+REGISTER: initInstanceDB() took 0.002819 secs
+Generating PDDL for contingent heuristic
+Objects: AIRPLANE1 BOS BOS_AIRPORT BOS_PO BOS_TRUCK PACKAGE1 PGH PGH_AIRPORT PGH_PO PGH_TRUCK PHX PHX_AIRPORT PHX_PO PHX_TRUCK 
+REGISTER (entering): finishInstanceDB(void)
+Unknown relevant = 3
+Unknown = 3
+Static oneof atoms: 
+REGISTER: finishInstanceDB(void) took 0 secs
+Static atoms (14): FALSE FOO IN_CITY_A_PHX_AIRPORT_PHX IN_CITY_A_PGH_AIRPORT_PGH IN_CITY_A_BOS_AIRPORT_BOS IN_CITY_L_PHX_PO_PHX IN_CITY_L_PGH_PO_PGH IN_CITY_L_BOS_PO_BOS IN_CITY_T_PHX_TRUCK_PHX IN_CITY_T_PGH_TRUCK_PGH IN_CITY_T_BOS_TRUCK_BOS ACTIVE ALL_END CONT_DUMMY 
+REGISTER (entering): calc_tags()
+REGISTER (entering): calc_relevant()
+starting iterations...
+REGISTER: calc_relevant() took 0.007603 secs
+REGISTER (entering): calc_relevant_obs()
+REGISTER: calc_relevant_obs() took 0 secs
+Accepted disjunction 9, 10, 11, 
+STAT Max-width: 1
+Final disjunctions: 1
+9, 10, 11, 
+==== End of Final disjunctions: 
+All tags: AT_OL_PACKAGE1_PHX_PO(9) AT_OL_PACKAGE1_PGH_PO(10) AT_OL_PACKAGE1_BOS_PO(11) 
+For lit AT_AA_AIRPLANE1_PHX_AIRPORT(3) relevants tags are: 
+For lit AT_AA_AIRPLANE1_PGH_AIRPORT(4) relevants tags are: 
+For lit AT_AA_AIRPLANE1_BOS_AIRPORT(5) relevants tags are: 
+For lit AT_OA_PACKAGE1_BOS_AIRPORT(8) relevants tags are: AT_OL_PACKAGE1_PHX_PO(9) AT_OL_PACKAGE1_PGH_PO(10) AT_OL_PACKAGE1_BOS_PO(11) 
+IMPLIES_WITH_INIT: From lit AT_OL_PACKAGE1_PHX_PO(9) obtaing the following lits:AT_OL_PACKAGE1_BOS_PO(-11) AT_OL_PACKAGE1_PGH_PO(-10) AT_OL_PACKAGE1_PHX_PO(9) 
+IMPLIES_WITH_INIT: From lit AT_OL_PACKAGE1_PGH_PO(10) obtaing the following lits:AT_OL_PACKAGE1_BOS_PO(-11) AT_OL_PACKAGE1_PHX_PO(-9) AT_OL_PACKAGE1_PGH_PO(10) 
+IMPLIES_WITH_INIT: From lit AT_OL_PACKAGE1_BOS_PO(11) obtaing the following lits:AT_OL_PACKAGE1_PGH_PO(-10) AT_OL_PACKAGE1_PHX_PO(-9) AT_OL_PACKAGE1_BOS_PO(11) 
+For lit AT_TA_PHX_TRUCK_PHX_AIRPORT(12) relevants tags are: 
+For lit AT_TA_PGH_TRUCK_PGH_AIRPORT(13) relevants tags are: 
+For lit AT_TA_BOS_TRUCK_BOS_AIRPORT(14) relevants tags are: 
+For lit AT_TL_PHX_TRUCK_PHX_PO(15) relevants tags are: 
+For lit AT_TL_PGH_TRUCK_PGH_PO(16) relevants tags are: 
+For lit AT_TL_BOS_TRUCK_BOS_PO(17) relevants tags are: 
+REGISTER: calc_tags() took 0.007603 secs
+REGISTER (entering): make_k_0(m)
+REGISTER: make_k_0(m) took 0 secs
+REGISTER (entering): make_k_0(k)
+REGISTER: make_k_0(k) took 0.001287 secs
+GENERAL: number of observations = 6
+Unknown atoms: 9 10 11 
+Unknown not in oneof: 
+REGISTER (entering): make_split_t0c()
+274 = k_AT_OL_PACKAGE1_BOS_PO___AT_OL_PACKAGE1_PHX_PO
+275 = kn_AT_OL_PACKAGE1_BOS_PO___AT_OL_PACKAGE1_PHX_PO
+276 = k_IN_OT_PACKAGE1_BOS_TRUCK___AT_OL_PACKAGE1_PHX_PO
+277 = kn_IN_OT_PACKAGE1_BOS_TRUCK___AT_OL_PACKAGE1_PHX_PO
+278 = k_AT_OL_PACKAGE1_BOS_PO___AT_OL_PACKAGE1_PGH_PO
+279 = kn_AT_OL_PACKAGE1_BOS_PO___AT_OL_PACKAGE1_PGH_PO
+280 = k_IN_OT_PACKAGE1_BOS_TRUCK___AT_OL_PACKAGE1_PGH_PO
+281 = kn_IN_OT_PACKAGE1_BOS_TRUCK___AT_OL_PACKAGE1_PGH_PO
+282 = k_AT_OL_PACKAGE1_BOS_PO___AT_OL_PACKAGE1_BOS_PO
+283 = kn_AT_OL_PACKAGE1_BOS_PO___AT_OL_PACKAGE1_BOS_PO
+284 = k_IN_OT_PACKAGE1_BOS_TRUCK___AT_OL_PACKAGE1_BOS_PO
+285 = kn_IN_OT_PACKAGE1_BOS_TRUCK___AT_OL_PACKAGE1_BOS_PO
+286 = k_AT_OL_PACKAGE1_PGH_PO___AT_OL_PACKAGE1_PHX_PO
+287 = kn_AT_OL_PACKAGE1_PGH_PO___AT_OL_PACKAGE1_PHX_PO
+288 = k_IN_OT_PACKAGE1_PGH_TRUCK___AT_OL_PACKAGE1_PHX_PO
+289 = kn_IN_OT_PACKAGE1_PGH_TRUCK___AT_OL_PACKAGE1_PHX_PO
+290 = k_AT_OL_PACKAGE1_PGH_PO___AT_OL_PACKAGE1_PGH_PO
+291 = kn_AT_OL_PACKAGE1_PGH_PO___AT_OL_PACKAGE1_PGH_PO
+292 = k_IN_OT_PACKAGE1_PGH_TRUCK___AT_OL_PACKAGE1_PGH_PO
+293 = kn_IN_OT_PACKAGE1_PGH_TRUCK___AT_OL_PACKAGE1_PGH_PO
+294 = k_AT_OL_PACKAGE1_PGH_PO___AT_OL_PACKAGE1_BOS_PO
+295 = kn_AT_OL_PACKAGE1_PGH_PO___AT_OL_PACKAGE1_BOS_PO
+296 = k_IN_OT_PACKAGE1_PGH_TRUCK___AT_OL_PACKAGE1_BOS_PO
+297 = kn_IN_OT_PACKAGE1_PGH_TRUCK___AT_OL_PACKAGE1_BOS_PO
+298 = k_AT_OL_PACKAGE1_PHX_PO___AT_OL_PACKAGE1_PHX_PO
+299 = kn_AT_OL_PACKAGE1_PHX_PO___AT_OL_PACKAGE1_PHX_PO
+300 = k_IN_OT_PACKAGE1_PHX_TRUCK___AT_OL_PACKAGE1_PHX_PO
+301 = kn_IN_OT_PACKAGE1_PHX_TRUCK___AT_OL_PACKAGE1_PHX_PO
+302 = k_AT_OL_PACKAGE1_PHX_PO___AT_OL_PACKAGE1_PGH_PO
+303 = kn_AT_OL_PACKAGE1_PHX_PO___AT_OL_PACKAGE1_PGH_PO
+304 = k_IN_OT_PACKAGE1_PHX_TRUCK___AT_OL_PACKAGE1_PGH_PO
+305 = kn_IN_OT_PACKAGE1_PHX_TRUCK___AT_OL_PACKAGE1_PGH_PO
+306 = k_AT_OL_PACKAGE1_PHX_PO___AT_OL_PACKAGE1_BOS_PO
+307 = kn_AT_OL_PACKAGE1_PHX_PO___AT_OL_PACKAGE1_BOS_PO
+308 = k_IN_OT_PACKAGE1_PHX_TRUCK___AT_OL_PACKAGE1_BOS_PO
+309 = kn_IN_OT_PACKAGE1_PHX_TRUCK___AT_OL_PACKAGE1_BOS_PO
+310 = k_AT_OA_PACKAGE1_PGH_AIRPORT___AT_OL_PACKAGE1_PHX_PO
+311 = kn_AT_OA_PACKAGE1_PGH_AIRPORT___AT_OL_PACKAGE1_PHX_PO
+312 = k_IN_OA_PACKAGE1_AIRPLANE1___AT_OL_PACKAGE1_PHX_PO
+313 = kn_IN_OA_PACKAGE1_AIRPLANE1___AT_OL_PACKAGE1_PHX_PO
+314 = k_AT_OA_PACKAGE1_PGH_AIRPORT___AT_OL_PACKAGE1_PGH_PO
+315 = kn_AT_OA_PACKAGE1_PGH_AIRPORT___AT_OL_PACKAGE1_PGH_PO
+316 = k_IN_OA_PACKAGE1_AIRPLANE1___AT_OL_PACKAGE1_PGH_PO
+317 = kn_IN_OA_PACKAGE1_AIRPLANE1___AT_OL_PACKAGE1_PGH_PO
+318 = k_AT_OA_PACKAGE1_PGH_AIRPORT___AT_OL_PACKAGE1_BOS_PO
+319 = kn_AT_OA_PACKAGE1_PGH_AIRPORT___AT_OL_PACKAGE1_BOS_PO
+320 = k_IN_OA_PACKAGE1_AIRPLANE1___AT_OL_PACKAGE1_BOS_PO
+321 = kn_IN_OA_PACKAGE1_AIRPLANE1___AT_OL_PACKAGE1_BOS_PO
+322 = k_AT_OA_PACKAGE1_BOS_AIRPORT___AT_OL_PACKAGE1_PHX_PO
+323 = kn_AT_OA_PACKAGE1_BOS_AIRPORT___AT_OL_PACKAGE1_PHX_PO
+324 = k_AT_OA_PACKAGE1_BOS_AIRPORT___AT_OL_PACKAGE1_PGH_PO
+325 = kn_AT_OA_PACKAGE1_BOS_AIRPORT___AT_OL_PACKAGE1_PGH_PO
+326 = k_AT_OA_PACKAGE1_BOS_AIRPORT___AT_OL_PACKAGE1_BOS_PO
+327 = kn_AT_OA_PACKAGE1_BOS_AIRPORT___AT_OL_PACKAGE1_BOS_PO
+328 = k_AT_OA_PACKAGE1_PHX_AIRPORT___AT_OL_PACKAGE1_PHX_PO
+329 = kn_AT_OA_PACKAGE1_PHX_AIRPORT___AT_OL_PACKAGE1_PHX_PO
+330 = k_AT_OA_PACKAGE1_PHX_AIRPORT___AT_OL_PACKAGE1_PGH_PO
+331 = kn_AT_OA_PACKAGE1_PHX_AIRPORT___AT_OL_PACKAGE1_PGH_PO
+332 = k_AT_OA_PACKAGE1_PHX_AIRPORT___AT_OL_PACKAGE1_BOS_PO
+333 = kn_AT_OA_PACKAGE1_PHX_AIRPORT___AT_OL_PACKAGE1_BOS_PO
+REGISTER: make_split_t0c() took 0.002633 secs
+
+
+Haciendo merge...
+REGISTER (entering): make_k_t0c()
+Trying to merge: AT_OA_PACKAGE1_BOS_AIRPORT(8)/(AT_OL_PACKAGE1_PHX_PO(9), ) with var = 9
+Trying to make merge with (0) = (AT_OL_PACKAGE1_PHX_PO(9), AT_OL_PACKAGE1_PGH_PO(10), AT_OL_PACKAGE1_BOS_PO(11), )
+accepting 9 tagged 
+accepting 10 tagged 
+accepting 11 tagged 
+Merging with (0) = (9,10,11,)
+Trying to merge: AT_OA_PACKAGE1_BOS_AIRPORT(8)/(AT_OL_PACKAGE1_PGH_PO(10), ) with var = 10
+Trying to merge: AT_OA_PACKAGE1_BOS_AIRPORT(8)/(AT_OL_PACKAGE1_BOS_PO(11), ) with var = 11
+REGISTER: make_k_t0c() took 8.35299e-10 secs
+REGISTER (entering): make_merge_act()
+REGISTER: make_merge_act() took 0 secs
+REGISTER (entering): make_merge_act()
+REGISTER: make_merge_act() took 0 secs
+REGISTER (entering): make_merge_act()
+REGISTER: make_merge_act() took 0 secs
+REGISTER (entering): clean_actions()
+fixpoint 0
+fixpoint 0
+fixpoint 0
+fixpoint 0
+fixpoint 1
+Number of Atoms to del: 0
+REGISTER: clean_actions() took 0.001355 secs
+IMPLIES_WITH_INIT: From lit AT_OL_PACKAGE1_PHX_PO(9) obtaing the following lits:IN_OT_PACKAGE1_BOS_TRUCK(-30) IN_OT_PACKAGE1_PGH_TRUCK(-29) IN_OT_PACKAGE1_PHX_TRUCK(-28) IN_OA_PACKAGE1_AIRPLANE1(-27) AT_TA_BOS_TRUCK_BOS_AIRPORT(-14) AT_TA_PGH_TRUCK_PGH_AIRPORT(-13) AT_TA_PHX_TRUCK_PHX_AIRPORT(-12) AT_OL_PACKAGE1_BOS_PO(-11) AT_OL_PACKAGE1_PGH_PO(-10) AT_OA_PACKAGE1_BOS_AIRPORT(-8) AT_OA_PACKAGE1_PGH_AIRPORT(-7) AT_OA_PACKAGE1_PHX_AIRPORT(-6) AT_AA_AIRPLANE1_BOS_AIRPORT(-5) AT_AA_AIRPLANE1_PHX_AIRPORT(-3) FALSE(-1) FOO(2) AT_AA_AIRPLANE1_PGH_AIRPORT(4) AT_OL_PACKAGE1_PHX_PO(9) AT_TL_PHX_TRUCK_PHX_PO(15) AT_TL_PGH_TRUCK_PGH_PO(16) AT_TL_BOS_TRUCK_BOS_PO(17) IN_CITY_A_PHX_AIRPORT_PHX(18) IN_CITY_A_PGH_AIRPORT_PGH(19) IN_CITY_A_BOS_AIRPORT_BOS(20) IN_CITY_L_PHX_PO_PHX(21) IN_CITY_L_PGH_PO_PGH(22) IN_CITY_L_BOS_PO_BOS(23) IN_CITY_T_PHX_TRUCK_PHX(24) IN_CITY_T_PGH_TRUCK_PGH(25) IN_CITY_T_BOS_TRUCK_BOS(26) 
+IMPLIES_WITH_INIT: From lit AT_OL_PACKAGE1_PGH_PO(10) obtaing the following lits:IN_OT_PACKAGE1_BOS_TRUCK(-30) IN_OT_PACKAGE1_PGH_TRUCK(-29) IN_OT_PACKAGE1_PHX_TRUCK(-28) IN_OA_PACKAGE1_AIRPLANE1(-27) AT_TA_BOS_TRUCK_BOS_AIRPORT(-14) AT_TA_PGH_TRUCK_PGH_AIRPORT(-13) AT_TA_PHX_TRUCK_PHX_AIRPORT(-12) AT_OL_PACKAGE1_BOS_PO(-11) AT_OL_PACKAGE1_PHX_PO(-9) AT_OA_PACKAGE1_BOS_AIRPORT(-8) AT_OA_PACKAGE1_PGH_AIRPORT(-7) AT_OA_PACKAGE1_PHX_AIRPORT(-6) AT_AA_AIRPLANE1_BOS_AIRPORT(-5) AT_AA_AIRPLANE1_PHX_AIRPORT(-3) FALSE(-1) FOO(2) AT_AA_AIRPLANE1_PGH_AIRPORT(4) AT_OL_PACKAGE1_PGH_PO(10) AT_TL_PHX_TRUCK_PHX_PO(15) AT_TL_PGH_TRUCK_PGH_PO(16) AT_TL_BOS_TRUCK_BOS_PO(17) IN_CITY_A_PHX_AIRPORT_PHX(18) IN_CITY_A_PGH_AIRPORT_PGH(19) IN_CITY_A_BOS_AIRPORT_BOS(20) IN_CITY_L_PHX_PO_PHX(21) IN_CITY_L_PGH_PO_PGH(22) IN_CITY_L_BOS_PO_BOS(23) IN_CITY_T_PHX_TRUCK_PHX(24) IN_CITY_T_PGH_TRUCK_PGH(25) IN_CITY_T_BOS_TRUCK_BOS(26) 
+IMPLIES_WITH_INIT: From lit AT_OL_PACKAGE1_BOS_PO(11) obtaing the following lits:IN_OT_PACKAGE1_BOS_TRUCK(-30) IN_OT_PACKAGE1_PGH_TRUCK(-29) IN_OT_PACKAGE1_PHX_TRUCK(-28) IN_OA_PACKAGE1_AIRPLANE1(-27) AT_TA_BOS_TRUCK_BOS_AIRPORT(-14) AT_TA_PGH_TRUCK_PGH_AIRPORT(-13) AT_TA_PHX_TRUCK_PHX_AIRPORT(-12) AT_OL_PACKAGE1_PGH_PO(-10) AT_OL_PACKAGE1_PHX_PO(-9) AT_OA_PACKAGE1_BOS_AIRPORT(-8) AT_OA_PACKAGE1_PGH_AIRPORT(-7) AT_OA_PACKAGE1_PHX_AIRPORT(-6) AT_AA_AIRPLANE1_BOS_AIRPORT(-5) AT_AA_AIRPLANE1_PHX_AIRPORT(-3) FALSE(-1) FOO(2) AT_AA_AIRPLANE1_PGH_AIRPORT(4) AT_OL_PACKAGE1_BOS_PO(11) AT_TL_PHX_TRUCK_PHX_PO(15) AT_TL_PGH_TRUCK_PGH_PO(16) AT_TL_BOS_TRUCK_BOS_PO(17) IN_CITY_A_PHX_AIRPORT_PHX(18) IN_CITY_A_PGH_AIRPORT_PGH(19) IN_CITY_A_BOS_AIRPORT_BOS(20) IN_CITY_L_PHX_PO_PHX(21) IN_CITY_L_PGH_PO_PGH(22) IN_CITY_L_BOS_PO_BOS(23) IN_CITY_T_PHX_TRUCK_PHX(24) IN_CITY_T_PGH_TRUCK_PGH(25) IN_CITY_T_BOS_TRUCK_BOS(26) 
+REGISTER (entering): printNewPDDL()
+Generating PDDL
+printing 99 actions
+printing 9 observations
+STAT old-Actions: 30
+STAT old-Atoms: 33
+STAT old-cond-effects: 31
+STAT old-condicionales: 60
+STAT KP-NActions: 99
+STAT KP-NAtoms: 337
+STAT KP-deleted-NAtoms: 0
+STAT KP-Nconds-effects-and-notused: 467
+STAT KP-Ncond-effects: 467
+STAT KP-Numero_lit_en_efectos_condicionales: 1233
+REGISTER: printNewPDDL() took 0.029186 secs
+REGISTER: main() took 0.053726 secs
+
+ff: parsing domain file
+domain 'LOGISTICS_CONF' defined
+ ... done.
+ff: parsing problem file
+problem 'ATT_LOG0' defined
+ ... done.
+
+STATS quality of hash table of predicates: max_bucket_size = 4, ave_bucket_size = 0.861183
+ff-cond: no description file
+fact T0_FAIL_K0 tagged as 137  
+
+
+Skipping All searches!
+Starting K procedure.
+
+          h:                        14            [1]
+          h:                        14  , h_  :   13       
+::::::::::::::::::::::::current action:::LOAD_TRUCK_LOC_PACKAGE1_PHX_TRUCK_PHX_PO_PHX
+
+          h:                        13            [1]
+          h:                        13  , h_  :   12       
+::::::::::::::::::::::::current action:::LOAD_TRUCK_LOC_PACKAGE1_PGH_TRUCK_PGH_PO_PGH
+
+          h:                        12            [1]
+          h:                        12  , h_  :   11       
+::::::::::::::::::::::::current action:::LOAD_TRUCK_LOC_PACKAGE1_BOS_TRUCK_BOS_PO_BOS
+
+          h:                        11            [1]
+          h:                        11  , h_  :   10       
+::::::::::::::::::::::::current action:::DRIVE_TRUCK_LOC_AP_BOS_TRUCK_BOS_PO_BOS_AIRPORT_BOS
+
+          h:                        10            [1]
+          h:                        10  , h_  :    9       
+::::::::::::::::::::::::current action:::UNLOAD_TRUCK_AP_PACKAGE1_BOS_TRUCK_BOS_AIRPORT_BOS
+
+          h:                         9            [1][2]
+          h:                         9  , h_  :    8       
+::::::::::::::::::::::::current action:::DRIVE_TRUCK_LOC_AP_PHX_TRUCK_PHX_PO_PHX_AIRPORT_PHX
+
+::::::::::::::::::::::::current action:::UNLOAD_TRUCK_AP_PACKAGE1_PHX_TRUCK_PHX_AIRPORT_PHX
+
+          h:                         8            [1]
+          h:                         8  , h_  :    6       
+::::::::::::::::::::::::current action:::DRIVE_TRUCK_LOC_AP_PGH_TRUCK_PGH_PO_PGH_AIRPORT_PGH
+
+          h:                         6            [1][2]
+          h:                         6  , h_  :    5       
+::::::::::::::::::::::::current action:::UNLOAD_TRUCK_AP_PACKAGE1_PGH_TRUCK_PGH_AIRPORT_PGH
+
+::::::::::::::::::::::::current action:::LOAD_AIRPLANE_PACKAGE1_AIRPLANE1_PGH_AIRPORT
+
+          h:                         5            [1]
+          h:                         5  , h_  :    3       
+::::::::::::::::::::::::current action:::FLY_AIRPLANE_AIRPLANE1_PGH_AIRPORT_PHX_AIRPORT
+
+          h:                         3            [1]
+          h:                         3  , h_  :    2       
+::::::::::::::::::::::::current action:::LOAD_AIRPLANE_PACKAGE1_AIRPLANE1_PHX_AIRPORT
+
+          h:                         2            [1]
+          h:                         2  , h_  :    1       
+::::::::::::::::::::::::current action:::FLY_AIRPLANE_AIRPLANE1_PHX_AIRPORT_BOS_AIRPORT
+
+          h:                         1            [1]
+          h:                         1  , h_  :    0       
+::::::::::::::::::::::::current action:::UNLOAD_AIRPLANE_PACKAGE1_AIRPLANE1_BOS_AIRPORT
+
+Goal reached in a branch 
+root
+
+
+ff: found legal plan as follows
+
+Total branches in this plan: 1 
+Longest branch: 14
+Total spurious branches in this plan: 0
+Total number of actions: 14
+
+
+time spent:    0.02 seconds instantiating 108 easy, 0 hard action templates
+               0.00 seconds reachability analysis, yielding 233 facts and 108 actions
+               0.00 seconds creating final representation with 217 relevant facts
+               0.00 seconds building connectivity graph
+               0.00 seconds computing closures operations
+               0.00 seconds searching, evaluating 46 states, expanding 21 nodes, to a max depth of 2
+               0.02 seconds total time
+
+
+

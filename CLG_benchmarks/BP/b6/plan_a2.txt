@@ -1,0 +1,14 @@
+observe-box_p5-1_a2_b2_t1_t2
+	(f)art-joint-push_p5-1_p5-2_b2_a2_a1_t7_t8
+	(f)	move_p5-1_p5-2_a2_t2_t3
+	(f)		no-op_t3_t4
+	(f)			no-op_t4_t5
+	(f)				no-op_t5_t6
+	(f)					no-op_t6_t7
+	(f)						observe-box_p5-2_a2_b2_t7_t8
+	(t)no-op_t2_t3
+	(t)	no-op_t3_t4
+	(t)		no-op_t4_t5
+	(t)			no-op_t5_t6
+	(t)				no-op_t6_t7
+	(t)					joint-push_p5-1_p5-2_b2_a2_a1_t7_t8

@@ -1,0 +1,245 @@
+
+ff: parsing domain file
+domain 'BLOCKSWORLD' defined
+ ... done.
+ff: parsing problem file
+problem 'BW-RAND-15' defined
+ ... done.
+
+
+lowest leaf goal distance/initial state f value seen:     44/    44; maxdepth reached:    0
+                                                          33/    44                       1
+                                                          24/    44                       2
+                                                          16/    44                       3
+                                                          15/    44                       4
+                                                          14/    44                       5
+                                                          13/    44                       6
+                                                          12/    44                       7
+                                                          11/    44                       8
+                                                          10/    44                       9
+                                                          10/    44                      10
+                                                          10/    44                      11
+                                                           9/    44                      12
+                                                           8/    44                      13
+                                                           7/    44                      14
+                                                           6/    44                      15
+                                                           5/    44                      16
+                                                           4/    44                      17
+                                                           4/    44                      18
+                                                           4/    44                      19
+                                                           4/    44                      20
+                                                           3/    44                      21
+                                                           2/    44                      22
+                                                           1/    44                      23
+                                                           1/    44                      24
+
+ff: found plan as follows
+-------------------------------------------------
+  0||0 --- SENSECLEAR B2 --- TRUESON: 1||0 --- FALSESON: 1||1
+-------------------------------------------------
+  1||0 --- SENSECLEAR B9 --- TRUESON: 2||0 --- FALSESON: 2||1
+  1||1 --- SENSECLEAR B9 --- TRUESON: 2||2 --- FALSESON: 2||3
+-------------------------------------------------
+  2||0 --- SENSECLEAR B15 --- TRUESON: 3||0 --- FALSESON: 3||1
+  2||1 --- SENSECLEAR B15 --- TRUESON: 3||2 --- FALSESON: 3||3
+  2||2 --- SENSECLEAR B15 --- TRUESON: 3||4 --- FALSESON: 3||5
+  2||3 --- SENSECLEAR B15 --- TRUESON: 3||6 --- FALSESON: 3||7
+-------------------------------------------------
+  3||0 --- MOVE-TO-T B9 B6 --- SON: 4||0
+  3||1 --- MOVE-TO-T B10 B15 --- SON: 4||1
+  3||2 --- MOVE-B-TO-B B2 B1 B6 --- SON: 4||2
+  3||3 --- MOVE-B-TO-B B2 B1 B6 --- SON: 4||3
+  3||4 --- MOVE-TO-T B1 B2 --- SON: 4||4
+  3||5 --- MOVE-TO-T B1 B2 --- SON: 4||5
+  3||6 --- MOVE-TO-T B1 B2 --- SON: 4||6
+  3||7 --- MOVE-B-TO-B B1 B2 B6 --- SON: 4||7
+-------------------------------------------------
+  4||0 --- MOVE-TO-T B15 B10 --- SON: 5||0
+  4||1 --- MOVE-B-TO-B B15 B11 B10 --- SON: 5||1
+  4||2 --- MOVE-TO-T B15 B10 --- SON: 5||2
+  4||3 --- MOVE-TO-T B10 B15 --- SON: 5||3
+  4||4 --- MOVE-TO-T B9 B6 --- SON: 5||4
+  4||5 --- MOVE-TO-T B10 B15 --- SON: 5||5
+  4||6 --- MOVE-TO-T B2 B5 --- SON: 5||6
+  4||7 --- MOVE-TO-T B10 B15 --- SON: 5||7
+-------------------------------------------------
+  5||0 --- MOVE-TO-T B10 B11 --- SON: 6||0
+  5||1 --- MOVE-TO-T B9 B6 --- SON: 6||1
+  5||2 --- MOVE-TO-T B10 B11 --- SON: 6||2
+  5||3 --- MOVE-B-TO-B B15 B11 B10 --- SON: 6||3
+  5||4 --- MOVE-TO-T B15 B10 --- SON: 6||4
+  5||5 --- MOVE-B-TO-B B15 B11 B10 --- SON: 6||5
+  5||6 --- MOVE-TO-T B5 B4 --- SON: 6||6
+  5||7 --- MOVE-B-TO-B B15 B11 B10 --- SON: 6||7
+-------------------------------------------------
+  6||0 --- MOVE-T-TO-B B15 B10 --- SON: 7||0
+  6||1 --- MOVE-B-TO-B B6 B14 B15 --- SON: 7||1
+  6||2 --- MOVE-T-TO-B B15 B10 --- SON: 7||2
+  6||3 --- MOVE-TO-T B11 B13 --- SON: 7||3
+  6||4 --- MOVE-TO-T B10 B11 --- SON: 7||4
+  6||5 --- MOVE-TO-T B9 B6 --- SON: 7||5
+  6||6 --- MOVE-T-TO-B B1 B5 --- SON: 7||6
+  6||7 --- MOVE-TO-T B2 B5 --- SON: 7||7
+-------------------------------------------------
+  7||0 --- MOVE-B-TO-B B6 B14 B15 --- SON: 8||0
+  7||1 --- MOVE-TO-T B14 B8 --- SON: 8||1
+  7||2 --- MOVE-TO-T B11 B13 --- SON: 8||2
+  7||3 --- MOVE-TO-T B13 B7 --- SON: 8||3
+  7||4 --- MOVE-T-TO-B B15 B10 --- SON: 8||4
+  7||5 --- MOVE-B-TO-B B6 B14 B15 --- SON: 8||5
+  7||6 --- MOVE-T-TO-B B2 B1 --- SON: 8||6
+  7||7 --- MOVE-TO-T B11 B13 --- SON: 8||7
+-------------------------------------------------
+  8||0 --- MOVE-TO-T B14 B8 --- SON: 9||0
+  8||1 --- MOVE-B-TO-B B8 B12 B8 --- SON: 9||1
+  8||2 --- MOVE-TO-T B13 B7 --- SON: 9||2
+  8||3 --- MOVE-TO-T B1 B5 --- SON: 9||3
+  8||4 --- MOVE-B-TO-B B6 B14 B15 --- SON: 9||4
+  8||5 --- MOVE-TO-T B14 B8 --- SON: 9||5
+  8||6 --- MOVE-TO-T B15 B10 --- SON: 9||6
+  8||7 --- MOVE-TO-T B13 B7 --- SON: 9||7
+-------------------------------------------------
+  9||0 --- MOVE-B-TO-B B8 B12 B8 --- SON: 10||0
+  9||1 --- MOVE-TO-T B2 B1 --- SON: 10||1
+  9||2 --- MOVE-TO-T B1 B5 --- SON: 10||2
+  9||3 --- MOVE-TO-T B5 B4 --- SON: 10||3
+  9||4 --- MOVE-TO-T B14 B8 --- SON: 10||4
+  9||5 --- MOVE-B-TO-B B8 B12 B8 --- SON: 10||5
+  9||6 --- MOVE-TO-T B10 B11 --- SON: 10||6
+  9||7 --- MOVE-TO-T B5 B4 --- SON: 10||7
+-------------------------------------------------
+ 10||0 --- MOVE-TO-T B2 B1 --- SON: 11||0
+ 10||1 --- MOVE-TO-T B1 B5 --- SON: 11||1
+ 10||2 --- MOVE-TO-T B5 B4 --- SON: 11||2
+ 10||3 --- MOVE-T-TO-B B1 B5 --- SON: 11||3
+ 10||4 --- MOVE-B-TO-B B8 B12 B8 --- SON: 11||4
+ 10||5 --- MOVE-TO-T B2 B5 --- SON: 11||5
+ 10||6 --- MOVE-T-TO-B B15 B10 --- SON: 11||6
+ 10||7 --- MOVE-B-TO-B B1 B6 B5 --- SON: 11||7
+-------------------------------------------------
+ 11||0 --- MOVE-TO-T B1 B5 --- SON: 12||0
+ 11||1 --- MOVE-TO-T B5 B4 --- SON: 12||1
+ 11||2 --- MOVE-T-TO-B B1 B5 --- SON: 12||2
+ 11||3 --- MOVE-B-TO-B B2 B6 B1 --- SON: 12||3
+ 11||4 --- MOVE-TO-T B2 B5 --- SON: 12||4
+ 11||5 --- MOVE-TO-T B5 B4 --- SON: 12||5
+ 11||6 --- MOVE-B-TO-B B6 B9 B15 --- SON: 12||6
+ 11||7 --- MOVE-B-TO-B B6 B9 B15 --- SON: 12||7
+-------------------------------------------------
+ 12||0 --- MOVE-TO-T B5 B4 --- SON: 13||0
+ 12||1 --- MOVE-T-TO-B B1 B5 --- SON: 13||1
+ 12||2 --- MOVE-B-TO-B B2 B6 B1 --- SON: 13||2
+ 12||3 --- MOVE-B-TO-B B6 B9 B15 --- SON: 13||3
+ 12||4 --- MOVE-TO-T B5 B4 --- SON: 13||4
+ 12||5 --- MOVE-T-TO-B B1 B5 --- SON: 13||5
+ 12||6 --- MOVE-TO-T B11 B13 --- SON: 13||6
+ 12||7 --- MOVE-T-TO-B B2 B1 --- SON: 13||7
+-------------------------------------------------
+ 13||0 --- MOVE-T-TO-B B1 B5 --- SON: 14||0
+ 13||1 --- MOVE-T-TO-B B2 B1 --- SON: 14||1
+ 13||2 --- MOVE-B-TO-B B6 B9 B15 --- SON: 14||2
+ 13||3 --- MOVE-T-TO-B B4 B6 --- SON: 14||3
+ 13||4 --- MOVE-T-TO-B B1 B5 --- SON: 14||4
+ 13||5 --- MOVE-T-TO-B B2 B1 --- SON: 14||5
+ 13||6 --- MOVE-TO-T B13 B7 --- SON: 14||6
+ 13||7 --- MOVE-T-TO-B B4 B6 --- SON: 14||7
+-------------------------------------------------
+ 14||0 --- MOVE-T-TO-B B2 B1 --- SON: 15||0
+ 14||1 --- MOVE-B-TO-B B12 B3 B2 --- SON: 15||1
+ 14||2 --- MOVE-T-TO-B B4 B6 --- SON: 15||2
+ 14||3 --- MOVE-B-TO-B B9 B14 B4 --- SON: 15||3
+ 14||4 --- MOVE-T-TO-B B2 B1 --- SON: 15||4
+ 14||5 --- MOVE-B-TO-B B12 B3 B2 --- SON: 15||5
+ 14||6 --- MOVE-T-TO-B B4 B6 --- SON: 15||6
+ 14||7 --- MOVE-B-TO-B B9 B14 B4 --- SON: 15||7
+-------------------------------------------------
+ 15||0 --- MOVE-B-TO-B B12 B3 B2 --- SON: 16||0
+ 15||1 --- MOVE-T-TO-B B4 B6 --- SON: 16||1
+ 15||2 --- MOVE-B-TO-B B9 B14 B4 --- SON: 16||2
+ 15||3 --- MOVE-B-TO-B B14 B8 B13 --- SON: 16||3
+ 15||4 --- MOVE-B-TO-B B12 B3 B2 --- SON: 16||4
+ 15||5 --- MOVE-T-TO-B B4 B6 --- SON: 16||5
+ 15||6 --- MOVE-B-TO-B B9 B14 B4 --- SON: 16||6
+ 15||7 --- MOVE-B-TO-B B14 B8 B13 --- SON: 16||7
+-------------------------------------------------
+ 16||0 --- MOVE-T-TO-B B4 B6 --- SON: 17||0
+ 16||1 --- MOVE-T-TO-B B9 B4 --- SON: 17||1
+ 16||2 --- MOVE-B-TO-B B14 B8 B13 --- SON: 17||2
+ 16||3 --- MOVE-T-TO-B B11 B14 --- SON: 17||3
+ 16||4 --- MOVE-T-TO-B B4 B6 --- SON: 17||4
+ 16||5 --- MOVE-T-TO-B B9 B4 --- SON: 17||5
+ 16||6 --- MOVE-B-TO-B B14 B8 B13 --- SON: 17||6
+ 16||7 --- MOVE-T-TO-B B11 B14 --- SON: 17||7
+-------------------------------------------------
+ 17||0 --- MOVE-T-TO-B B9 B4 --- SON: 18||0
+ 17||1 --- MOVE-T-TO-B B14 B12 --- SON: 18||1
+ 17||2 --- MOVE-T-TO-B B11 B14 --- SON: 18||2
+ 17||3 --- MOVE-B-TO-B B8 B12 B11 --- SON: 18||3
+ 17||4 --- MOVE-T-TO-B B9 B4 --- SON: 18||4
+ 17||5 --- MOVE-T-TO-B B14 B12 --- SON: 18||5
+ 17||6 --- MOVE-T-TO-B B11 B14 --- SON: 18||6
+ 17||7 --- MOVE-B-TO-B B8 B12 B11 --- SON: 18||7
+-------------------------------------------------
+ 18||0 --- MOVE-T-TO-B B14 B12 --- SON: 19||0
+ 18||1 --- MOVE-B-TO-B B14 B12 B9 --- SON: 19||1
+ 18||2 --- MOVE-B-TO-B B8 B12 B11 --- SON: 19||2
+ 18||3 --- MOVE-B-TO-B B12 B3 B2 --- SON: 19||3
+ 18||4 --- MOVE-T-TO-B B14 B12 --- SON: 19||4
+ 18||5 --- MOVE-B-TO-B B14 B12 B9 --- SON: 19||5
+ 18||6 --- MOVE-B-TO-B B8 B12 B11 --- SON: 19||6
+ 18||7 --- MOVE-B-TO-B B12 B3 B2 --- SON: 19||7
+-------------------------------------------------
+ 19||0 --- MOVE-B-TO-B B14 B12 B9 --- SON: 20||0
+ 19||1 --- MOVE-B-TO-B B11 B13 B12 --- SON: 20||1
+ 19||2 --- MOVE-B-TO-B B12 B3 B2 --- SON: 20||2
+ 19||3 --- MOVE-T-TO-B B3 B7 --- SON: 20||-1
+ 19||4 --- MOVE-B-TO-B B14 B12 B9 --- SON: 20||3
+ 19||5 --- MOVE-B-TO-B B11 B13 B12 --- SON: 20||4
+ 19||6 --- MOVE-B-TO-B B12 B3 B2 --- SON: 20||5
+ 19||7 --- MOVE-T-TO-B B3 B7 --- SON: 20||-1
+-------------------------------------------------
+ 20||0 --- MOVE-B-TO-B B11 B13 B12 --- SON: 21||0
+ 20||1 --- MOVE-TO-T B13 B7 --- SON: 21||1
+ 20||2 --- MOVE-T-TO-B B3 B7 --- SON: 21||-1
+ 20||3 --- MOVE-B-TO-B B11 B13 B12 --- SON: 21||2
+ 20||4 --- MOVE-TO-T B13 B7 --- SON: 21||3
+ 20||5 --- MOVE-T-TO-B B3 B7 --- SON: 21||-1
+-------------------------------------------------
+ 21||0 --- MOVE-TO-T B13 B7 --- SON: 22||0
+ 21||1 --- MOVE-B-TO-B B14 B9 B13 --- SON: 22||1
+ 21||2 --- MOVE-TO-T B13 B7 --- SON: 22||2
+ 21||3 --- MOVE-B-TO-B B14 B9 B13 --- SON: 22||3
+-------------------------------------------------
+ 22||0 --- MOVE-B-TO-B B14 B9 B13 --- SON: 23||0
+ 22||1 --- MOVE-B-TO-B B11 B12 B14 --- SON: 23||1
+ 22||2 --- MOVE-B-TO-B B14 B9 B13 --- SON: 23||2
+ 22||3 --- MOVE-B-TO-B B11 B12 B14 --- SON: 23||3
+-------------------------------------------------
+ 23||0 --- MOVE-B-TO-B B11 B12 B14 --- SON: 24||0
+ 23||1 --- MOVE-T-TO-B B3 B7 --- SON: 24||-1
+ 23||2 --- MOVE-B-TO-B B11 B12 B14 --- SON: 24||1
+ 23||3 --- MOVE-T-TO-B B3 B7 --- SON: 24||-1
+-------------------------------------------------
+ 24||0 --- MOVE-T-TO-B B3 B7 --- SON: 25||-1
+ 24||1 --- MOVE-T-TO-B B3 B7 --- SON: 25||-1
+-------------------------------------------------
+
+tree layers: 25
+total nr. actions: 163
+
+statistics:    0.00 seconds instantiating 4080 easy, 0 hard action templates
+               0.00 seconds reachability analysis, yielding 510 facts and 4080 actions
+               0.00 seconds creating final representation with 510 relevant facts (510 max U, 255 CNF max U)
+               final representation has 36 unknown facts and 1631 observation actions    
+               0.01 seconds building connectivity graph
+              18.86 seconds (  18.60 pure) evaluating 18388 states
+               0.26 seconds in DP for 3090 RPG ini state implication checks
+               0.00 seconds in DP for 0 RPlan extract ini state implication checks (0 lits removed)
+               1.66 seconds generating,    0.05 seconds encoding 18840 state transition base CNFs
+               0.14 seconds in DP solving 2430 state transition CNFs
+               0.00 seconds checking for self-contradictions, including 0 DP calls
+               0.18 seconds checking for stagnating states (439 hits), including 0 DP calls
+               5520 total DP calls, 1588826 total UP calls,    0.00 sec membership
+              0.75 seconds for remaining searching duties
+              21.65 seconds total time (+    1.02 secs for CNF memory allocation)
+

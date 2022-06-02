@@ -1,0 +1,11 @@
+Budget 4: Equal Trees
+Budget 5: Equal Trees
+Budget 6: Equal Trees
+Budget 7: Can not compare the trees 
+Budget 8: Can not compare the trees 
+Budget 9: Can not compare the trees 
+Budget 10: Tree CPOR is better than Tree CFF
+Budget 11: Tree CPOR is better than Tree CFF
+Budget 12: Tree CPOR is better than Tree CFF
+Budget 13: Tree CPOR is better than Tree CFF
+Budget 14: Equal Trees

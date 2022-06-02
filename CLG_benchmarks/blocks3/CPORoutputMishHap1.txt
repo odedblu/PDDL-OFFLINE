@@ -1,0 +1,9 @@
+1127) senseCLEAR_b3
+branching...
+	1130) move-b-to-b_b2_b3_b1
+	1137) move-t-to-b_b3_b2
+)goal
+	1129) move-to-t_b3_b2
+	1136) move-t-to-b_b2_b1
+	1137) move-t-to-b_b3_b2
+)goal

@@ -1,0 +1,118 @@
+788) senseP_p0_b0
+branching...
+	791) senseP_p1_b0
+branching...
+		797) senseP_p2_b0
+branching...
+			803) senseP_p3_b0
+branching...
+				809) senseP_p4_b0
+branching...
+					815) senseP_p5_b0
+branching...
+						821) senseP_p6_b0
+branching...
+							827) senseP_p7_b0
+branching...
+								833) senseP_p8_b0
+branching...
+									839) senseP_p9_b0
+branching...
+										845) senseP_p10_b0
+branching...
+											851) senseP_p11_b0
+branching...
+												857) senseP_p12_b0
+branching...
+													863) senseP_p13_b0
+branching...
+														869) senseP_p14_b0
+branching...
+															875) senseP_p15_b0
+branching...
+																881) senseP_p16_b0
+branching...
+																	887) senseP_p17_b0
+branching...
+																		893) senseP_p18_b0
+branching...
+																			899) senseP_p19_b0
+branching...
+																				905) senseP_p20_b0
+branching...
+																					911) senseP_p21_b0
+branching...
+																						917) senseP_p22_b0
+branching...
+																							923) senseP_p23_b0
+branching...
+																								929) senseP_p24_b0
+branching...
+																									935) senseP_p25_b0
+branching...
+																										941) senseP_p26_b0
+branching...
+																											947) senseP_p27_b0
+branching...
+																												953) senseP_p28_b0
+branching...
+																													959) dunk_p29_b0_t0
+)goal
+																													958) dunk_p28_b0_t0
+)goal
+																												952) dunk_p27_b0_t0
+)goal
+																											946) dunk_p26_b0_t0
+)goal
+																										940) dunk_p25_b0_t0
+)goal
+																									934) dunk_p24_b0_t0
+)goal
+																								928) dunk_p23_b0_t0
+)goal
+																							922) dunk_p22_b0_t0
+)goal
+																						916) dunk_p21_b0_t0
+)goal
+																					910) dunk_p20_b0_t0
+)goal
+																				904) dunk_p19_b0_t0
+)goal
+																			898) dunk_p18_b0_t0
+)goal
+																		892) dunk_p17_b0_t0
+)goal
+																	886) dunk_p16_b0_t0
+)goal
+																880) dunk_p15_b0_t0
+)goal
+															874) dunk_p14_b0_t0
+)goal
+														868) dunk_p13_b0_t0
+)goal
+													862) dunk_p12_b0_t0
+)goal
+												856) dunk_p11_b0_t0
+)goal
+											850) dunk_p10_b0_t0
+)goal
+										844) dunk_p9_b0_t0
+)goal
+									838) dunk_p8_b0_t0
+)goal
+								832) dunk_p7_b0_t0
+)goal
+							826) dunk_p6_b0_t0
+)goal
+						820) dunk_p5_b0_t0
+)goal
+					814) dunk_p4_b0_t0
+)goal
+				808) dunk_p3_b0_t0
+)goal
+			802) dunk_p2_b0_t0
+)goal
+		796) dunk_p1_b0_t0
+)goal
+	790) dunk_p0_b0_t0
+)goal

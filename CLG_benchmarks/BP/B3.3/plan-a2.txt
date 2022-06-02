@@ -1,0 +1,9 @@
+move_p3-1_p3-2_a2_t1_t2
+	no-op_t2_t3
+		observe-box_p3-2_a2_b1_t3_t4
+			(f)move_p3-2_p2-2_a2_t4_t5
+			(f)	no-op_t5_t6
+			(f)		no-op_t6_t7
+			(f)			no-op_t7_t8
+			(t)no-op_t4_t5
+

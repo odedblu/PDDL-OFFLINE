@@ -1,0 +1,97 @@
+953) move_f1-2f_f2-2f
+954) pickup_f2-2f_key1-0
+955) move_f2-2f_f2-1f
+956) move_f2-1f_f1-1f
+957) observe-lock-shape_f1-1f_f1-0f_shape1
+branching...
+	960) observe-lock-shape_f1-1f_f0-1f_shape0
+branching...
+		1016) unlock_f1-1f_f0-1f_key1-0_shape1
+		1031) putdown_f1-1f_key1-0
+		1032) move_f1-1f_f1-2f
+		1033) pickup_f1-2f_key0-0
+		1034) move_f1-2f_f1-1f
+		1023) move_f1-1f_f0-1f
+		1024) observe-lock-shape_f0-1f_f0-0f_shape0
+branching...
+			987) putdown_f0-1f_key0-0
+			988) pickup_f0-1f_key1-1
+			989) unlock_f0-1f_f0-0f_key1-1_shape1
+			990) putdown_f0-1f_key1-1
+			991) pickup_f0-1f_key0-0
+			992) move_f0-1f_f0-0f
+			983) putdown_f0-0f_key0-0
+)goal
+			1026) unlock_f0-1f_f0-0f_key0-0_shape0
+			992) move_f0-1f_f0-0f
+			983) putdown_f0-0f_key0-0
+)goal
+		1015) putdown_f1-1f_key1-0
+		1019) move_f1-1f_f1-2f
+		1020) pickup_f1-2f_key0-0
+		1021) move_f1-2f_f1-1f
+		1022) unlock_f1-1f_f0-1f_key0-0_shape0
+		1023) move_f1-1f_f0-1f
+		1024) observe-lock-shape_f0-1f_f0-0f_shape0
+branching...
+			987) putdown_f0-1f_key0-0
+			988) pickup_f0-1f_key1-1
+			989) unlock_f0-1f_f0-0f_key1-1_shape1
+			990) putdown_f0-1f_key1-1
+			991) pickup_f0-1f_key0-0
+			992) move_f0-1f_f0-0f
+			983) putdown_f0-0f_key0-0
+)goal
+			1026) unlock_f0-1f_f0-0f_key0-0_shape0
+			992) move_f0-1f_f0-0f
+			983) putdown_f0-0f_key0-0
+)goal
+	959) observe-lock-shape_f1-1f_f0-1f_shape0
+branching...
+		968) unlock_f1-1f_f1-0f_key1-0_shape1
+		994) putdown_f1-1f_key1-0
+		995) move_f1-1f_f1-2f
+		996) pickup_f1-2f_key0-0
+		997) move_f1-2f_f1-1f
+		998) move_f1-1f_f1-0f
+		999) observe-lock-shape_f1-0f_f0-0f_shape0
+branching...
+			1002) move_f1-0f_f1-1f
+			1005) putdown_f1-1f_key0-0
+			1006) pickup_f1-1f_key1-0
+			1007) move_f1-1f_f1-0f
+			1008) unlock_f1-0f_f0-0f_key1-0_shape1
+			1009) move_f1-0f_f1-1f
+			1010) putdown_f1-1f_key1-0
+			1011) pickup_f1-1f_key0-0
+			1012) move_f1-1f_f1-0f
+			982) move_f1-0f_f0-0f
+			983) putdown_f0-0f_key0-0
+)goal
+			978) unlock_f1-0f_f0-0f_key0-0_shape0
+			982) move_f1-0f_f0-0f
+			983) putdown_f0-0f_key0-0
+)goal
+		967) unlock_f1-1f_f1-0f_key1-0_shape1
+		971) putdown_f1-1f_key1-0
+		972) move_f1-1f_f1-2f
+		973) pickup_f1-2f_key0-0
+		974) move_f1-2f_f1-1f
+		975) move_f1-1f_f1-0f
+		976) observe-lock-shape_f1-0f_f0-0f_shape0
+branching...
+			979) move_f1-0f_f1-1f
+			985) unlock_f1-1f_f0-1f_key0-0_shape0
+			986) move_f1-1f_f0-1f
+			987) putdown_f0-1f_key0-0
+			988) pickup_f0-1f_key1-1
+			989) unlock_f0-1f_f0-0f_key1-1_shape1
+			990) putdown_f0-1f_key1-1
+			991) pickup_f0-1f_key0-0
+			992) move_f0-1f_f0-0f
+			983) putdown_f0-0f_key0-0
+)goal
+			978) unlock_f1-0f_f0-0f_key0-0_shape0
+			982) move_f1-0f_f0-0f
+			983) putdown_f0-0f_key0-0
+)goal

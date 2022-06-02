@@ -1,0 +1,497 @@
+REGISTER (entering): main()
+cf2cs v 2.1 -- A compiler for contingent planning problems into classical models.
+CALL: ./cf2cs -sn -t0 -cond -cod -cmr -csl -ckit -ckinl -cminl -cmit -cdisjk0 -cdisjm0 -mac -cfc -fp benchmarks/ebtcs50/d.pddl benchmarks/ebtcs50/p.pddl
+-sn
+-t0
+-cond
+-cod
+-cmr
+-csl
+-ckit
+-ckinl
+-cminl
+-cmit
+-cdisjk0
+-cdisjm0
+-mac
+-cfc
+-fp
+benchmarks/ebtcs50/d.pddl
+benchmarks/ebtcs50/p.pddl
+Using only initial disjunctions for merge
+Clousuring for obtaining possible tags
+Full cancellation: Translating deletes properly. Maybe complete if '-s0' or '-f' option was used
+Propagating ramifications in effects
+Using action compilation + merge
+Merging only goals and preconditions
+REGISTER (entering): parse()
+predicates size = 1 for name = IN
+predicates size = 2 for name = DEFUSED
+predicates size = 3 for name = CLOG
+Parsed: benchmarks/ebtcs50/d.pddl
+Parsed: benchmarks/ebtcs50/p.pddl
+REGISTER: parse() took 0.000647 secs
+REGISTER (entering): initialize()
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+parser(generateVarsAndValues): using types without :typing requirements.
+REGISTER (entering): computeReachableAtoms()
+schema 0 de 3
+schema 1 de 3
+schema 2 de 3
+schema 0 de 3
+schema 1 de 3
+schema 2 de 3
+
+ff: parsing domain file
+domain 'GRID' defined
+ ... done.
+ff: parsing problem file
+problem 'GRID-X3-Y3-T2-K12-L22-P100' defined
+ ... done.
+
+STATS quality of hash table of predicates: max_bucket_size = 6, ave_bucket_size = 0.689834
+ff-cond: no description file
+fact T0_FAIL_K0 tagged as 1286  
+
+
+Skipping All searches!
+Starting K procedure.
+
+          h:                        16            [1][2]
+          h:                        16  , h_  :   15       
+::::::::::::::::::::::::current action:::MOVE_F1-2F_F1-1F
+
+::::::::::::::::::::::::current action:::OBSERVE-LOCK-SHAPE_F1-1F_F1-0F_SHAPE0
+
+Branching....
+	Popping state:2
+          h:                        19            [1]
+          h:                        19  , h_  :   18       
+::::::::::::::::::::::::current action:::OBSERVE-LOCK-SHAPE_F1-1F_F0-1F_SHAPE0
+
+Branching....
+	Popping state:3
+          h:                        14            [1]
+          h:                        14  , h_  :   13       
+::::::::::::::::::::::::current action:::MOVE_F1-1F_F1-2F
+
+          h:                        13            [1][2][3]
+          h:                        13  , h_  :   12       
+::::::::::::::::::::::::current action:::MOVE_F1-2F_F2-2F
+
+::::::::::::::::::::::::current action:::PICKUP_F2-2F_KEY1-0
+
+::::::::::::::::::::::::current action:::MOVE_F2-2F_F1-2F
+
+          h:                        12            [1]
+          h:                        12  , h_  :   11       
+::::::::::::::::::::::::current action:::MOVE_F1-2F_F1-1F
+
+          h:                        11            [1]
+          h:                        11  , h_  :   10       
+::::::::::::::::::::::::current action:::UNLOCK_F1-1F_F1-0F_KEY1-0_SHAPE1
+
+          h:                        10            [1][2]
+          h:                        10  , h_  :    9       
+::::::::::::::::::::::::current action:::MOVE_F1-1F_F1-0F
+
+::::::::::::::::::::::::current action:::OBSERVE-LOCK-SHAPE_F1-0F_F0-0F_SHAPE1
+
+Branching....
+	Popping state:4
+          h:                         8            [1]
+          h:                         8  , h_  :    7       
+::::::::::::::::::::::::current action:::MOVE_F1-0F_F1-1F
+
+          h:                         7            [1]
+          h:                         7  , h_  :    6       
+::::::::::::::::::::::::current action:::PUTDOWN_F1-1F_KEY1-0
+
+          h:                         6            [1][2]
+          h:                         6  , h_  :    5       
+::::::::::::::::::::::::current action:::MOVE_F1-1F_F1-2F
+
+::::::::::::::::::::::::current action:::PICKUP_F1-2F_KEY0-0
+
+          h:                         5            [1]
+          h:                         5  , h_  :    4       
+::::::::::::::::::::::::current action:::MOVE_F1-2F_F1-1F
+
+          h:                         4            [1]
+          h:                         4  , h_  :    3       
+::::::::::::::::::::::::current action:::MOVE_F1-1F_F1-0F
+
+          h:                         3            [1]
+          h:                         3  , h_  :    2       
+::::::::::::::::::::::::current action:::UNLOCK_F1-0F_F0-0F_KEY0-0_SHAPE0
+
+          h:                         2            [1]
+          h:                         2  , h_  :    1       
+::::::::::::::::::::::::current action:::MOVE_F1-0F_F0-0F
+
+          h:                         1            [1]
+          h:                         1  , h_  :    0       
+::::::::::::::::::::::::current action:::PUTDOWN_F0-0F_KEY0-0
+
+Goal reached in a branch 
+
+          h:                         8            [1]
+          h:                         8  , h_  :    7       
+::::::::::::::::::::::::current action:::UNLOCK_F1-0F_F0-0F_KEY1-0_SHAPE1
+
+          h:                         7            [1]
+          h:                         7  , h_  :    6       
+::::::::::::::::::::::::current action:::MOVE_F1-0F_F1-1F
+
+          h:                         6            [1]
+          h:                         6  , h_  :    5       
+::::::::::::::::::::::::current action:::PUTDOWN_F1-1F_KEY1-0
+
+          h:                         5            [1][2]
+          h:                         5  , h_  :    4       
+::::::::::::::::::::::::current action:::MOVE_F1-1F_F1-2F
+
+::::::::::::::::::::::::current action:::PICKUP_F1-2F_KEY0-0
+
+          h:                         4            [1]
+          h:                         4  , h_  :    3       
+::::::::::::::::::::::::current action:::MOVE_F1-2F_F1-1F
+
+          h:                         3            [1]
+          h:                         3  , h_  :    2       
+::::::::::::::::::::::::current action:::MOVE_F1-1F_F1-0F
+
+          h:                         2            [1]
+          h:                         2  , h_  :    1       
+::::::::::::::::::::::::current action:::MOVE_F1-0F_F0-0F
+
+          h:                         1            [1]
+          h:                         1  , h_  :    0       
+::::::::::::::::::::::::current action:::PUTDOWN_F0-0F_KEY0-0
+
+Goal reached in a branch 
+
+          h:                        14            [1]
+          h:                        14  , h_  :   13       
+::::::::::::::::::::::::current action:::MOVE_F1-1F_F1-2F
+
+          h:                        13            [1][2][3]
+          h:                        13  , h_  :   12       
+::::::::::::::::::::::::current action:::MOVE_F1-2F_F2-2F
+
+::::::::::::::::::::::::current action:::PICKUP_F2-2F_KEY1-0
+
+::::::::::::::::::::::::current action:::MOVE_F2-2F_F1-2F
+
+          h:                        12            [1]
+          h:                        12  , h_  :   11       
+::::::::::::::::::::::::current action:::MOVE_F1-2F_F1-1F
+
+          h:                        11            [1]
+          h:                        11  , h_  :   10       
+::::::::::::::::::::::::current action:::UNLOCK_F1-1F_F1-0F_KEY1-0_SHAPE1
+
+          h:                        10            [1][2]
+          h:                        10  , h_  :    9       
+::::::::::::::::::::::::current action:::MOVE_F1-1F_F1-0F
+
+::::::::::::::::::::::::current action:::OBSERVE-LOCK-SHAPE_F1-0F_F0-0F_SHAPE1
+
+Branching....
+	Popping state:3
+          h:                         8            [1]
+          h:                         8  , h_  :    7       
+::::::::::::::::::::::::current action:::MOVE_F1-0F_F1-1F
+
+          h:                         7            [1]
+          h:                         7  , h_  :    6       
+::::::::::::::::::::::::current action:::PUTDOWN_F1-1F_KEY1-0
+
+          h:                         6            [1][2]
+          h:                         6  , h_  :    5       
+::::::::::::::::::::::::current action:::MOVE_F1-1F_F1-2F
+
+::::::::::::::::::::::::current action:::PICKUP_F1-2F_KEY0-0
+
+          h:                         5            [1]
+          h:                         5  , h_  :    4       
+::::::::::::::::::::::::current action:::MOVE_F1-2F_F1-1F
+
+          h:                         4            [1]
+          h:                         4  , h_  :    3       
+::::::::::::::::::::::::current action:::MOVE_F1-1F_F1-0F
+
+          h:                         3            [1]
+          h:                         3  , h_  :    2       
+::::::::::::::::::::::::current action:::UNLOCK_F1-0F_F0-0F_KEY0-0_SHAPE0
+
+          h:                         2            [1]
+          h:                         2  , h_  :    1       
+::::::::::::::::::::::::current action:::MOVE_F1-0F_F0-0F
+
+          h:                         1            [1]
+          h:                         1  , h_  :    0       
+::::::::::::::::::::::::current action:::PUTDOWN_F0-0F_KEY0-0
+
+Goal reached in a branch 
+
+          h:                         8            [1]
+          h:                         8  , h_  :    7       
+::::::::::::::::::::::::current action:::UNLOCK_F1-0F_F0-0F_KEY1-0_SHAPE1
+
+          h:                         7            [1]
+          h:                         7  , h_  :    6       
+::::::::::::::::::::::::current action:::MOVE_F1-0F_F1-1F
+
+          h:                         6            [1]
+          h:                         6  , h_  :    5       
+::::::::::::::::::::::::current action:::PUTDOWN_F1-1F_KEY1-0
+
+          h:                         5            [1][2]
+          h:                         5  , h_  :    4       
+::::::::::::::::::::::::current action:::MOVE_F1-1F_F1-2F
+
+::::::::::::::::::::::::current action:::PICKUP_F1-2F_KEY0-0
+
+          h:                         4            [1]
+          h:                         4  , h_  :    3       
+::::::::::::::::::::::::current action:::MOVE_F1-2F_F1-1F
+
+          h:                         3            [1]
+          h:                         3  , h_  :    2       
+::::::::::::::::::::::::current action:::MOVE_F1-1F_F1-0F
+
+          h:                         2            [1]
+          h:                         2  , h_  :    1       
+::::::::::::::::::::::::current action:::MOVE_F1-0F_F0-0F
+
+          h:                         1            [1]
+          h:                         1  , h_  :    0       
+::::::::::::::::::::::::current action:::PUTDOWN_F0-0F_KEY0-0
+
+Goal reached in a branch 
+
+          h:                        14            [1]
+          h:                        14  , h_  :   13       
+::::::::::::::::::::::::current action:::MOVE_F1-1F_F1-2F
+
+          h:                        13            [1][2][3]
+          h:                        13  , h_  :   12       
+::::::::::::::::::::::::current action:::MOVE_F1-2F_F2-2F
+
+::::::::::::::::::::::::current action:::PICKUP_F2-2F_KEY1-0
+
+::::::::::::::::::::::::current action:::MOVE_F2-2F_F1-2F
+
+          h:                        12            [1][2]
+          h:                        12  , h_  :   11       
+::::::::::::::::::::::::current action:::MOVE_F1-2F_F1-1F
+
+::::::::::::::::::::::::current action:::OBSERVE-LOCK-SHAPE_F1-1F_F0-1F_SHAPE1
+
+Branching....
+	Popping state:2
+          h:                        11            [1][2][3][4][5][6][7]
+          h:                        11  , h_  :   10       
+::::::::::::::::::::::::current action:::MOVE_F1-1F_F1-2F
+
+::::::::::::::::::::::::current action:::PUTDOWN_F1-2F_KEY1-0
+
+::::::::::::::::::::::::current action:::PICKUP_F1-2F_KEY0-0
+
+::::::::::::::::::::::::current action:::MOVE_F1-2F_F1-1F
+
+::::::::::::::::::::::::current action:::UNLOCK_F1-1F_F1-0F_KEY0-0_SHAPE0
+
+::::::::::::::::::::::::current action:::MOVE_F1-1F_F1-0F
+
+::::::::::::::::::::::::current action:::OBSERVE-LOCK-SHAPE_F1-0F_F0-0F_SHAPE0
+
+Branching....
+	Popping state:3
+          h:                         8            [1][2][3][4]
+          h:                         8  , h_  :    7       
+::::::::::::::::::::::::current action:::MOVE_F1-0F_F1-1F
+
+::::::::::::::::::::::::current action:::PUTDOWN_F1-1F_KEY0-0
+
+::::::::::::::::::::::::current action:::MOVE_F1-1F_F1-2F
+
+::::::::::::::::::::::::current action:::PICKUP_F1-2F_KEY1-0
+
+          h:                         7            [1]
+          h:                         7  , h_  :    6       
+::::::::::::::::::::::::current action:::MOVE_F1-2F_F1-1F
+
+          h:                         6            [1][2]
+          h:                         6  , h_  :    5       
+::::::::::::::::::::::::current action:::MOVE_F1-1F_F1-0F
+
+::::::::::::::::::::::::current action:::UNLOCK_F1-0F_F0-0F_KEY1-0_SHAPE1
+
+          h:                         5            [1][2]
+          h:                         5  , h_  :    4       
+::::::::::::::::::::::::current action:::MOVE_F1-0F_F1-1F
+
+::::::::::::::::::::::::current action:::PUTDOWN_F1-1F_KEY1-0
+
+          h:                         4            [1]
+          h:                         4  , h_  :    3       
+::::::::::::::::::::::::current action:::PICKUP_F1-1F_KEY0-0
+
+          h:                         3            [1]
+          h:                         3  , h_  :    2       
+::::::::::::::::::::::::current action:::MOVE_F1-1F_F1-0F
+
+          h:                         2            [1]
+          h:                         2  , h_  :    1       
+::::::::::::::::::::::::current action:::MOVE_F1-0F_F0-0F
+
+          h:                         1            [1]
+          h:                         1  , h_  :    0       
+::::::::::::::::::::::::current action:::PUTDOWN_F0-0F_KEY0-0
+
+Goal reached in a branch 
+
+          h:                         7            [1][2]
+          h:                         7  , h_  :    6       
+::::::::::::::::::::::::current action:::UNLOCK_F1-0F_F0-0F_KEY0-0_SHAPE0
+
+::::::::::::::::::::::::current action:::MOVE_F1-0F_F0-0F
+
+          h:                         6            [1]
+          h:                         6  , h_  :    5       
+::::::::::::::::::::::::current action:::PUTDOWN_F0-0F_KEY0-0
+
+          h:                         5            [1]
+          h:                         5  , h_  :    4       
+::::::::::::::::::::::::current action:::MOVE_F0-0F_F1-0F
+
+          h:                         4            [1]
+          h:                         4  , h_  :    3       
+::::::::::::::::::::::::current action:::MOVE_F1-0F_F1-1F
+
+          h:                         3            [1][2]
+          h:                         3  , h_  :    2       
+::::::::::::::::::::::::current action:::MOVE_F1-1F_F1-2F
+
+::::::::::::::::::::::::current action:::PICKUP_F1-2F_KEY1-0
+
+          h:                         2            [1]
+          h:                         2  , h_  :    1       
+::::::::::::::::::::::::current action:::MOVE_F1-2F_F1-1F
+
+          h:                         1            [1]
+          h:                         1  , h_  :    0       
+::::::::::::::::::::::::current action:::PUTDOWN_F1-1F_KEY1-0
+
+Goal reached in a branch 
+
+          h:                        11            [1]
+          h:                        11  , h_  :   10       
+::::::::::::::::::::::::current action:::UNLOCK_F1-1F_F0-1F_KEY1-0_SHAPE1
+
+          h:                        10            [1][2]
+          h:                        10  , h_  :    9       
+::::::::::::::::::::::::current action:::MOVE_F1-1F_F0-1F
+
+::::::::::::::::::::::::current action:::OBSERVE-LOCK-SHAPE_F0-1F_F0-0F_SHAPE1
+
+Branching....
+	Popping state:2
+          h:                         8            [1]
+          h:                         8  , h_  :    7       
+::::::::::::::::::::::::current action:::MOVE_F0-1F_F1-1F
+
+          h:                         7            [1]
+          h:                         7  , h_  :    6       
+::::::::::::::::::::::::current action:::PUTDOWN_F1-1F_KEY1-0
+
+          h:                         6            [1][2]
+          h:                         6  , h_  :    5       
+::::::::::::::::::::::::current action:::MOVE_F1-1F_F1-2F
+
+::::::::::::::::::::::::current action:::PICKUP_F1-2F_KEY0-0
+
+          h:                         5            [1]
+          h:                         5  , h_  :    4       
+::::::::::::::::::::::::current action:::MOVE_F1-2F_F1-1F
+
+          h:                         4            [1]
+          h:                         4  , h_  :    3       
+::::::::::::::::::::::::current action:::MOVE_F1-1F_F0-1F
+
+          h:                         3            [1]
+          h:                         3  , h_  :    2       
+::::::::::::::::::::::::current action:::UNLOCK_F0-1F_F0-0F_KEY0-0_SHAPE0
+
+          h:                         2            [1]
+          h:                         2  , h_  :    1       
+::::::::::::::::::::::::current action:::MOVE_F0-1F_F0-0F
+
+          h:                         1            [1]
+          h:                         1  , h_  :    0       
+::::::::::::::::::::::::current action:::PUTDOWN_F0-0F_KEY0-0
+
+Goal reached in a branch 
+
+          h:                         8            [1]
+          h:                         8  , h_  :    7       
+::::::::::::::::::::::::current action:::UNLOCK_F0-1F_F0-0F_KEY1-0_SHAPE1
+
+          h:                         7            [1]
+          h:                         7  , h_  :    6       
+::::::::::::::::::::::::current action:::MOVE_F0-1F_F1-1F
+
+          h:                         6            [1]
+          h:                         6  , h_  :    5       
+::::::::::::::::::::::::current action:::PUTDOWN_F1-1F_KEY1-0
+
+          h:                         5            [1][2]
+          h:                         5  , h_  :    4       
+::::::::::::::::::::::::current action:::MOVE_F1-1F_F1-2F
+
+::::::::::::::::::::::::current action:::PICKUP_F1-2F_KEY0-0
+
+          h:                         4            [1]
+          h:                         4  , h_  :    3       
+::::::::::::::::::::::::current action:::MOVE_F1-2F_F1-1F
+
+          h:                         3            [1]
+          h:                         3  , h_  :    2       
+::::::::::::::::::::::::current action:::MOVE_F1-1F_F0-1F
+
+          h:                         2            [1]
+          h:                         2  , h_  :    1       
+::::::::::::::::::::::::current action:::MOVE_F0-1F_F0-0F
+
+          h:                         1            [1]
+          h:                         1  , h_  :    0       
+::::::::::::::::::::::::current action:::PUTDOWN_F0-0F_KEY0-0
+
+Goal reached in a branch 
+root
+
+
+ff: found legal plan as follows
+
+Total branches in this plan: 8 
+Longest branch: 28
+Total spurious branches in this plan: 0
+Total number of actions: 111
+
+
+time spent:    0.36 seconds instantiating 1515 easy, 0 hard action templates
+               0.00 seconds reachability analysis, yielding 1923 facts and 1515 actions
+               0.00 seconds creating final representation with 1847 relevant facts
+               0.04 seconds building connectivity graph
+               0.08 seconds computing closures operations
+               0.66 seconds searching, evaluating 355 states, expanding 192 nodes, to a max depth of 7
+               1.06 seconds total time
+
+
+

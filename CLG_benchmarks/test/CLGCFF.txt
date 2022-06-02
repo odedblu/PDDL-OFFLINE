@@ -1,0 +1,3 @@
+Budget 2: Tree CLG is better than Tree CFF
+Budget 3: Tree CFF is better than Tree CLG
+Budget 4: Equal Trees

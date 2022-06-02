@@ -1,0 +1,41 @@
+738) load_truck_loc_package1_pgh_truck_pgh_po_pgh
+739) load_truck_loc_package1_bos_truck_bos_po_bos
+740) drive_truck_loc_ap_pgh_truck_pgh_po_pgh_airport_pgh
+741) unload_truck_ap_package1_pgh_truck_pgh_airport_pgh
+742) load_airplane_package1_airplane1_pgh_airport
+743) fly_airplane_airplane1_pgh_airport_bos_airport
+744) unload_airplane_package1_airplane1_bos_airport
+745) drive_truck_loc_ap_bos_truck_bos_po_bos_airport_bos
+746) unload_truck_ap_package1_bos_truck_bos_airport_bos
+
+Goals 
+#9 : 
+#
+Union Goals Budget
+#9 : 
+#
+
+
+
+Goals Fault Tolerance
+#0 : 0 : 
+#
+
+
+
+Goals Fault Tolerance
+##
+
+
+
+Simplicitity
+#nodes: 9
+branch: 0
+originalSize: 27
+compreesedSize: 47
+compreesedRatio: 0.574468085106383#
+
+
+
+Simplicitity
+#

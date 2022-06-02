@@ -1,0 +1,4 @@
+Budget 5: Tree CPORBestCase is better than Tree CLG
+Budget 6: Can not compare the trees 
+Budget 7: Tree CLG is better than Tree CPORBestCase
+Budget 8: Equal Trees

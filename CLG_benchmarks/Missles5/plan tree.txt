@@ -1,0 +1,70 @@
+0) launcha
+1) observez_n0
+branching...
+        3) verifya_n0_n1_n2
+        62) launchd_n0_n2_n4_d3
+        63) moved_z_down_n4_n3
+        64) movea
+        65) verifya_n0_n1_n3
+        66) moved_y_down_n2_n1
+        67) movea
+        68) verifya_n0_n0_n3
+        69) moved_x_up_n3_n4
+        70) movea
+        71) verifya_n1_n0_n3
+        72) moved_x_up_n0_n1
+        73) movea
+        74) verifya_n1_n1_n3
+        75) moved_x_up_n4_n5
+        76) movea
+        77) blowup_n1_n1_n4
+)goal
+        2) observex_n1
+branching...
+Can't be false
+                5) observey_n0
+branching...
+Can't be false
+                        7) verifya_n1_n0_n0
+                        9) waitbeforelaunchd
+                        10) movea
+                        11) verifya_n1_n1_n0
+                        12) launchd_n11_n4_n3_d1
+                        13) moved_z_down_n3_n2
+                        14) movea
+                        15) observez_n1
+branching...
+Can't be false
+                                16) verifya_n1_n1_n1
+                                18) moved_y_down_n4_n3
+                                19) movea
+                                20) observez_n2
+branching...
+                                        22) verifya_n2_n1_n1
+                                        46) moved_y_down_n3_n2
+                                        47) movea
+                                        48) verifya_n3_n1_n1
+                                        49) moved_x_up_n2_n3
+                                        50) movea
+                                        51) verifya_n3_n1_n2
+                                        52) moved_y_down_n2_n1
+                                        53) movea
+                                        54) verifya_n4_n1_n2
+                                        55) moved_x_up_n3_n4
+                                        56) movea
+                                        57) verifya_n5_n1_n2
+                                        58) moved_x_up_n4_n5
+                                        59) movea
+                                        60) blowup_n5_n1_n3
+)goal
+                                        21) verifya_n1_n1_n2
+                                        36) moved_x_up_n11_n12
+                                        37) movea
+                                        38) verifya_n1_n2_n2
+                                        39) moved_x_down_n2_n1
+                                        40) movea
+                                        41) verifya_n1_n3_n2
+                                        42) moved_x_up_n12_n13
+                                        43) movea
+                                        44) blowup_n1_n3_n3
+)goal
