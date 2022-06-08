@@ -10,7 +10,7 @@ namespace PDDL
 {
     class Program
     {
-        public static string BASE_PATH = @"C:\Users\oded1\OneDrive\Desktop\code\Offline";
+        public static string BASE_PATH = @" C:\Users\oded1\OneDrive\Desktop\code\PDDL-OFFLINE";
         public static string Path;
         public static string ResultsFile = "Results.txt";
 #if DEBUG
@@ -986,9 +986,8 @@ namespace PDDL
             Debug.Listeners.Add(new TextWriterTraceListener(new StreamWriter("debug.log")));
             string sBenchmarkPath = BASE_PATH + @"\CLG_benchmarks\";
             Path = BASE_PATH + @"\PDDL\";
-            string domainName = "blocks3";
+            string domainName = "probabiltyBlocks3";
             Parser domainParser = new Parser();
-            
             Domain parsedDomain = domainParser.ParseDomain(String.Format(@"{0}\{1}\d.pddl", sBenchmarkPath, domainName));
             Problem parsedProblem = domainParser.ParseProblem(String.Format(@"{0}\{1}\p.pddl", sBenchmarkPath, domainName), parsedDomain);
             BFSSolver bFSSolver = new BFSSolver();
