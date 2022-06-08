@@ -394,10 +394,10 @@ namespace PDDL
         }
         public override string ToString()
         {
+            StringBuilder sb = new StringBuilder();
             foreach (Predicate p in Predicates)
-                if (p.Name == "at" && !p.Negation)
-                    return p.ToString();
-            return "";
+                sb.Append(p.ToString());
+            return sb.ToString();
         }
         public override int GetHashCode()
         {

@@ -67,6 +67,8 @@ namespace PDDL
             List<string> lActionNames = new List<string>();
 
             sCurrent = sStart;
+            Debug.WriteLine(sCurrent.ToString());
+
             while (!p.IsGoalState(sCurrent))
             {
                 List<Action> lActionsWithReasoning = d.GroundAllActions(sCurrent.Predicates, false);
@@ -97,9 +99,12 @@ namespace PDDL
                 sNext = sCurrent.Apply(a);
                 if (sNext != null)
                 {
-                    foreach (Predicate pNew in sNext.Predicates)
-                        if (!sCurrent.Predicates.Contains(pNew))
-                            Debug.WriteLine(pNew);
+                    //foreach (Predicate pNew in sNext.Predicates)
+                    //    if (!sCurrent.Predicates.Contains(pNew))
+                    //        Debug.WriteLine(pNew);
+                   
+                    Debug.WriteLine(sNext.ToString());
+                   
 
                     if (!dParents.Keys.Contains(sNext))
                     {
