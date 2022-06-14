@@ -401,7 +401,7 @@ namespace PDDL
         }
         public override int GetHashCode()
         {
-            return ToString().GetHashCode();
+            return ID;
         }
         public KnowledgeState CreateKnowledgeState()
         {
