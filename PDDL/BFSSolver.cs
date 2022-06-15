@@ -120,6 +120,106 @@ namespace PDDL
         }
 
 
+        public List<Action> ProbabiliryManualSolve(Problem p, Domain d)
+        {
+            State sStart = p.GetInitialBelief().ChooseState(true);
+            State sCurrent = null, sNext = null;
+            Dictionary<State, Action> dMapStateToGeneratingAction = new Dictionary<State, Action>();
+            dMapStateToGeneratingAction[sStart] = null;
+            Dictionary<State, State> dParents = new Dictionary<State, State>();
+            dParents[sStart] = null;
+            int cProcessed = 0;
+            List<string> lActionNames = new List<string>();
+
+            sCurrent = sStart;
+            Debug.WriteLine(sCurrent.ToString());
+
+            while (!p.IsGoalState(sCurrent))
+            {
+                List<Action> lActionsWithReasoning = d.GroundAllActions(sCurrent.Predicates, false);
+                int cReasoning = 0;
+                List<Action> lActions = new List<Action>();
+                foreach (Action ar in lActionsWithReasoning)
+                {
+                    if (ar.Name.ToLower().Contains("refute") || ar.Name.ToLower().Contains("merge"))
+                    {
+                        cReasoning++;
+                        sCurrent = sCurrent.Apply(ar);
+                    }
+                    else
+                    {
+                        lActions.Add(ar);
+                    }
+                }
+                Debug.WriteLine("Available actions (reasoning" + cReasoning + "):");
+                for (int i = 0; i < lActions.Count; i++)
+                {
+                    Debug.WriteLine(i + ") " + lActions[i].Name);
+                }
+                Debug.Write("Choose action number (-1 to quit): ");
+                int iAction = int.Parse(Console.ReadLine());
+                if (iAction < 0)
+                    return null;
+                Action a = lActions[iAction];
+
+                Dictionary<State,double> dPossibleResultStates= GetProbabilityResults(sCurrent, a);
+                for(int i = 0; i < dPossibleResultStates.Count; i++)
+                {
+                    Debug.WriteLine("{0}) probability {1}%: {2}", i, dPossibleResultStates.ElementAt(i).Value * (double)100, dPossibleResultStates.ElementAt(i).Key.ToString());
+                }
+
+                Debug.Write("Choose probability action number to apply (-1 to quit): ");
+                int iProbabilityAction = int.Parse(Console.ReadLine());
+                if (iProbabilityAction < 0)
+                    return null;
+
+                sNext = dPossibleResultStates.ElementAt(iProbabilityAction).Key;
+                if (sNext != null)
+                {
+                    //foreach (Predicate pNew in sNext.Predicates)
+                    //    if (!sCurrent.Predicates.Contains(pNew))
+                    //        Debug.WriteLine(pNew);
+
+                    Debug.WriteLine(sNext.ToString());
+
+
+                    if (!dParents.Keys.Contains(sNext))
+                    {
+                        dParents[sNext] = sCurrent;
+                        dMapStateToGeneratingAction[sNext] = a;
+                    }
+
+                    sCurrent = sNext;
+                }
+                cProcessed++;
+            }
+            return GeneratePlan(sCurrent, null, dParents, dMapStateToGeneratingAction);
+        }
+
+        private static Dictionary<State, double> GetProbabilityResults(State sCurrent, Action a)
+        {
+            Dictionary<State, double> dOptionalNextStates = new Dictionary<State, double>();
+            Formula aFormula = a.Effects;
+            if (aFormula is ProbabilisticFormula)
+            {
+                ProbabilisticFormula aProbabilisticFormula = (ProbabilisticFormula)aFormula;
+                double dCurrentProb = 1;
+                for (int i = 0; i < aProbabilisticFormula.Options.Count; i++)
+                {
+                    dCurrentProb -= aProbabilisticFormula.Probabilities.ElementAt(i);
+                    Action deterministicAction = a.Clone();
+                    deterministicAction.SetEffects(aProbabilisticFormula.Options.ElementAt(i));
+                    State sCurrentAfterAction = sCurrent.Apply(deterministicAction);
+                    dOptionalNextStates[sCurrentAfterAction] = aProbabilisticFormula.Probabilities.ElementAt(i);
+                    // Debug.WriteLine("{0}) probability {1}%: {2}", i, aProbabilisticFormula.Probabilities.ElementAt(i) * 100, sCurrentAfterAction.ToString());
+                }
+                dOptionalNextStates[sCurrent] = dCurrentProb;
+                // Debug.WriteLine("{0}) probability {1}%: {2}", aProbabilisticFormula.Options.Count, dCurrentProb * 100, sCurrent.ToString());
+            }
+
+            return dOptionalNextStates;
+        }
+
         public List<Action> RadnomSolve(Problem p, Domain d)
         {
             State sStart = p.GetInitialBelief().ChooseState(true);
