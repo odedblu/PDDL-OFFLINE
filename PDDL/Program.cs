@@ -990,16 +990,16 @@ namespace PDDL
             Parser domainParser = new Parser();
             Domain parsedDomain = domainParser.ParseDomain(String.Format(@"{0}\{1}\d.pddl", sBenchmarkPath, domainName));
             Problem parsedProblem = domainParser.ParseProblem(String.Format(@"{0}\{1}\p.pddl", sBenchmarkPath, domainName), parsedDomain);
-            BFSSolver bFSSolver = new BFSSolver();
-            List<Action> plan =  bFSSolver.ProbabiliryManualSolve(parsedProblem, parsedDomain);
-            foreach (Action action in plan)
-            {
-                if(action != null) { 
-                Console.Out.WriteLine(action.Name);
-                }
-            }
+            //BFSSolver bFSSolver = new BFSSolver();
+            //List<Action> plan =  bFSSolver.ProbabiliryManualSolve(parsedProblem, parsedDomain);
+            //foreach (Action action in plan)
+            //{
+            //    if(action != null) { 
+            //    Console.Out.WriteLine(action.Name);
+            //    }
+            //}
 
-            Console.ReadKey();            
+            //Console.ReadKey();
         }
 
     }

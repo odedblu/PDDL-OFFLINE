@@ -401,7 +401,15 @@ namespace PDDL
         }
         public override int GetHashCode()
         {
-            return ID;
+            List<string> PredicateStrings = new List<string>();
+            foreach(Predicate p in Predicates)
+            {
+                string s = p.ToString();
+                PredicateStrings.Add(s);
+            }
+            PredicateStrings = PredicateStrings.OrderBy(q => q).ToList();
+            string StateString = String.Join(",", PredicateStrings);
+            return StateString.GetHashCode();
         }
         public KnowledgeState CreateKnowledgeState()
         {
