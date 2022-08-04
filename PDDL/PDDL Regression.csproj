@@ -93,6 +93,7 @@
     <Compile Include="PartiallySpecifiedState.cs" />
     <Compile Include="Planner.cs" />
     <Compile Include="Policy.cs" />
+    <Compile Include="PomcpNode.cs" />
     <Compile Include="Predicate.cs" />
     <Compile Include="PredicateFormula.cs" />
     <Compile Include="PredicateListComparer.cs" />
