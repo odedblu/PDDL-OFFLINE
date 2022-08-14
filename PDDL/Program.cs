@@ -990,6 +990,13 @@ namespace PDDL
             Parser domainParser = new Parser();
             Domain parsedDomain = domainParser.ParseDomain(String.Format(@"{0}\{1}\d.pddl", sBenchmarkPath, domainName));
             Problem parsedProblem = domainParser.ParseProblem(String.Format(@"{0}\{1}\p.pddl", sBenchmarkPath, domainName), parsedDomain);
+
+            IRolloutPolicy rolloutPolicy = new RandomRolloutPolicy();
+            State sStart = parsedProblem.GetInitialBelief().ChooseState(true);
+            sStart.GroundAllActions();
+            Console.Out.WriteLine(rolloutPolicy.ChooseAction(sStart));
+
+
             //BFSSolver bFSSolver = new BFSSolver();
             //List<Action> plan =  bFSSolver.ProbabiliryManualSolve(parsedProblem, parsedDomain);
             //foreach (Action action in plan)
@@ -999,7 +1006,7 @@ namespace PDDL
             //    }
             //}
 
-            //Console.ReadKey();
+            Console.ReadKey();
         }
 
     }
