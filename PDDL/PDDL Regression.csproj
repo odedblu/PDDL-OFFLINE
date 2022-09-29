@@ -49,10 +49,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Action.cs" />
+    <Compile Include="ActionPomcpNode.cs" />
     <Compile Include="Argument.cs" />
     <Compile Include="Battleship.cs" />
     <Compile Include="BeliefState.cs" />
-    <Compile Include="BelifeParticle.cs" />
+    <Compile Include="BelifeParticles.cs" />
     <Compile Include="BFSSolver.cs" />
     <Compile Include="Box2Domain.cs" />
     <Compile Include="BoxDomain.cs" />
@@ -83,6 +84,7 @@
     <Compile Include="MABlocksWorld.cs" />
     <Compile Include="MasterMind.cs" />
     <Compile Include="MineSweeper.cs" />
+    <Compile Include="ObservationPomcpNode.cs" />
     <Compile Include="Omelette.cs" />
     <Compile Include="OnlineSimulator.cs" />
     <Compile Include="Parameter.cs" />

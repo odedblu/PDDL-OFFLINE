@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace PDDL
 {
-    internal class BelifeParticle
+    internal class BelifeParticles
     {
-        private Dictionary<State, int> ViewedStates;
+        private Dictionary<PartiallySpecifiedState, int> ViewedStates;
         private int BelifeSize;
 
-        public BelifeParticle()
+        public BelifeParticles()
         {
-            this.ViewedStates = new Dictionary<State, int>();
+            this.ViewedStates = new Dictionary<PartiallySpecifiedState, int>();
             this.BelifeSize = 0;
         }
 
@@ -31,8 +31,8 @@ namespace PDDL
         /// <summary>
         /// Add state to the belife particle.
         /// </summary>
-        /// <param name="s"> State to add to belife particle. </param>
-        public void AddState(State s)
+        /// <param name="s"> PartiallySpecifiedState to add to belife particle. </param>
+        public void AddState(PartiallySpecifiedState s)
         {
             if (this.ViewedStates.ContainsKey(s))
             {
@@ -50,15 +50,14 @@ namespace PDDL
         /// Get random state from the belife particle, if the belife particle is empty, return null.
         /// </summary>
         /// <returns> Chosen state from the belife particle. </returns>
-        public State GetRandomState()
+        public PartiallySpecifiedState GetRandomState()
         {
             double cummlativeProbability = 0;
-            List<Tuple<double, State>> StateProbabilities = new List<Tuple<double, State>>();
-            foreach (KeyValuePair<State, int> stateFrequency in this.ViewedStates)
+            List<Tuple<double, PartiallySpecifiedState>> StateProbabilities = new List<Tuple<double, PartiallySpecifiedState>>();
+            foreach (KeyValuePair<PartiallySpecifiedState, int> stateFrequency in this.ViewedStates)
             {
-                // do something with entry.Value or entry.Key
                 double StateProbability = (double)stateFrequency.Value / (double)this.BelifeSize;
-                StateProbabilities.Add(new Tuple<double, State>(cummlativeProbability + StateProbability, stateFrequency.Key));
+                StateProbabilities.Add(new Tuple<double, PartiallySpecifiedState>(cummlativeProbability + StateProbability, stateFrequency.Key));
                 cummlativeProbability += StateProbability;
             }
             Random random = new Random();

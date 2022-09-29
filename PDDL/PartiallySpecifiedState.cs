@@ -1027,26 +1027,14 @@ namespace PDDL
         {
             if (m_sToString == null)
             {
-                m_sToString = "";
+                m_sToString = "Observed Predicates: ";
+                List<string> ObservedPredicatesStrings = new List<string>();
                 foreach (Predicate p in Observed)
                 {
-                    if (p.Name == "at" && !p.Negation)
-                    {
-                        m_sToString = p.ToString();
-                        break;
-                    }
-                    if (p.Name == "controlling" && !p.Negation)
-                    {
-                        m_sToString += p.ToString();
-                    }
+                    ObservedPredicatesStrings.Add(p.ToString());
                 }
-                if (m_sToString == null)
-                {
-                    if (Predecessor != null && Predecessor.ToString() != "")
-                        m_sToString = Predecessor.m_sToString;
-                    else
-                        m_sToString = "";
-                }
+                ObservedPredicatesStrings.Sort();
+                m_sToString += ObservedPredicatesStrings.ToString();
             }
             return m_sToString;
         }
