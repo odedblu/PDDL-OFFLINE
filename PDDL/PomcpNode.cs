@@ -12,7 +12,6 @@ namespace PDDL
         public List<PomcpNode> Childs;
         public int VisitedCount;
         public double Value;
-        public BelifeParticles ParticleFilter;
 
 
         public int ChildrenSize()

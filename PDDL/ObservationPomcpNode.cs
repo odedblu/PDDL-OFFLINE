@@ -8,6 +8,9 @@ namespace PDDL
 {
     internal class ObservationPomcpNode : PomcpNode
     {
+
+        public BelifeParticles ParticleFilter;
+
         public ObservationPomcpNode()
         {
             Parent = null;
