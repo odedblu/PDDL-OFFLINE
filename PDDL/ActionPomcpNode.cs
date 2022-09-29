@@ -16,5 +16,14 @@ namespace PDDL
             Value = 0;
             ParticleFilter = null;
         }
+
+        public ActionPomcpNode(ObservationPomcpNode ObservationParentNode)
+        {
+            Parent = ObservationParentNode;
+            Childs = new List<PomcpNode>();
+            VisitedCount = 0;
+            Value = 0;
+            ParticleFilter = null;
+        }
     }
 }
