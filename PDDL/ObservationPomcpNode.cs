@@ -36,5 +36,12 @@ namespace PDDL
         {
             return actionSelectPolicy.SelectBestAction(this);
         }
+
+
+        public void AddActionPomcpNode(ActionPomcpNode actionPomcpNode)
+        {
+            int actionHash = actionPomcpNode.Action.GetHashCode();
+            Childs.Add(actionHash, actionPomcpNode);
+        }
     }
 }
