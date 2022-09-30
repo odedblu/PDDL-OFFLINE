@@ -8,20 +8,25 @@ namespace PDDL
 {
     internal class ActionPomcpNode : PomcpNode
     {
-        public ActionPomcpNode()
+
+        public Action Action { get; set; }  
+
+        public ActionPomcpNode(Action action)
         {
             Parent = null;
-            Childs = new List<PomcpNode>();
+            Childs = new Dictionary<int, PomcpNode>();
             VisitedCount = 0;
             Value = 0;
+            Action = action;
         }
 
-        public ActionPomcpNode(ObservationPomcpNode ObservationParentNode)
+        public ActionPomcpNode(ObservationPomcpNode ObservationParentNode, Action action)
         {
             Parent = ObservationParentNode;
-            Childs = new List<PomcpNode>();
+            Childs = new Dictionary<int, PomcpNode>();
             VisitedCount = 0;
             Value = 0;
+            Action = action;
         }
 
         public void AddObservationChilds(List<Predicate> Observations)

@@ -72,6 +72,7 @@
     <Compile Include="HeuristicFunction.cs" />
     <Compile Include="HSPHeuristic.cs" />
     <Compile Include="CatchInvaders.cs" />
+    <Compile Include="IActionSelectPolicy.cs" />
     <Compile Include="KnowledgeAction.cs" />
     <Compile Include="KnowledgeDomain.cs" />
     <Compile Include="KnowGivenPredicate.cs" />
@@ -83,6 +84,7 @@
     <Compile Include="Literal.cs" />
     <Compile Include="MABlocksWorld.cs" />
     <Compile Include="MasterMind.cs" />
+    <Compile Include="MaxAvarageValueActionSelectPolicy.cs" />
     <Compile Include="MineSweeper.cs" />
     <Compile Include="ObservationPomcpNode.cs" />
     <Compile Include="Omelette.cs" />
@@ -112,6 +114,7 @@
     <Compile Include="SDRPlanner.cs" />
     <Compile Include="State.cs" />
     <Compile Include="StringExpression.cs" />
+    <Compile Include="UCBValueActionSelectPolicy.cs" />
     <Compile Include="WumpusDomain.cs" />
   </ItemGroup>
   <ItemGroup>

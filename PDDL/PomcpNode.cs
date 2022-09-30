@@ -9,7 +9,7 @@ namespace PDDL
     internal abstract class PomcpNode
     {
         public PomcpNode Parent;
-        public List<PomcpNode> Childs;
+        public Dictionary<int, PomcpNode> Childs;
         public int VisitedCount;
         public double Value;
 

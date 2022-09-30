@@ -10,21 +10,26 @@ namespace PDDL
     {
         public Action SelectBestAction(PomcpNode SelectionNode)
         {
-            Dictionary<Action, PomcpNode> Childrens = SelectionNode.Childs;
+            Dictionary<int, PomcpNode> Childrens = SelectionNode.Childs;
             if(Childrens.Count == 0)
             {
                 throw new ArgumentException("Childrens is empty, could not select best action.");
             }
             double MaxAvarageValue = Double.MinValue;
             Action BestAction = null;
-
-            foreach(KeyValuePair<Action , PomcpNode> kvp in Childrens)
+            foreach(KeyValuePair<int , PomcpNode> kvp in Childrens)
             {
+                PomcpNode Children = kvp.Value;
+
+                if (!(Children is ActionPomcpNode))
+                {
+                    throw new ArgumentException("Try to select best action on observation pomcp node.");
+                }
                 double ChildrenAvarageValue = (double)kvp.Value.Value / (double)kvp.Value.VisitedCount;
                 if (MaxAvarageValue < ChildrenAvarageValue)
                 {
                     MaxAvarageValue = ChildrenAvarageValue;
-                    BestAction = kvp.Key;
+                    BestAction = ((ActionPomcpNode)Children).Action;
                 }
             }
 

@@ -15,7 +15,7 @@ namespace PDDL
         public ObservationPomcpNode()
         {
             Parent = null;
-            Childs = new List<PomcpNode>();
+            Childs = new Dictionary<int, PomcpNode>();
             VisitedCount = 0;
             Value = 0;
             ParticleFilter = new BelifeParticles();
@@ -25,7 +25,7 @@ namespace PDDL
         public ObservationPomcpNode(ActionPomcpNode ActionParentNode, List<Predicate> Observed)
         {
             Parent = ActionParentNode;
-            Childs = new List<PomcpNode>();
+            Childs = new Dictionary<int, PomcpNode>();
             VisitedCount = 0;
             Value = 0;
             ParticleFilter = new BelifeParticles();
