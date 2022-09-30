@@ -23,9 +23,6 @@ namespace PDDL
         {
             return ChildrenSize() == 0;
         }
-
-        public abstract
-
         
     }
 }

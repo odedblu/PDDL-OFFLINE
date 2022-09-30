@@ -10,6 +10,7 @@ namespace PDDL
     {
 
         public BelifeParticles ParticleFilter;
+        public List<Predicate> ObservedPredicates;
 
         public ObservationPomcpNode()
         {
@@ -18,15 +19,17 @@ namespace PDDL
             VisitedCount = 0;
             Value = 0;
             ParticleFilter = new BelifeParticles();
+            ObservedPredicates = null;
         }
 
-        public ObservationPomcpNode(ActionPomcpNode ActionParentNode)
+        public ObservationPomcpNode(ActionPomcpNode ActionParentNode, List<Predicate> Observed)
         {
             Parent = ActionParentNode;
             Childs = new List<PomcpNode>();
             VisitedCount = 0;
             Value = 0;
             ParticleFilter = new BelifeParticles();
+            ObservedPredicates = Observed;
         }
     }
 }
