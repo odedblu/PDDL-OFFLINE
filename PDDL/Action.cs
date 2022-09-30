@@ -3588,7 +3588,7 @@ namespace PDDL
         }
         public override int GetHashCode()
         {
-            return Name.GetHashCode();
+            return this.ToString().GetHashCode();
         }
 
         public Action ReplaceNonDeterministicEffectsWithOptions(List<string> lAlwaysKnown)
