@@ -32,7 +32,18 @@ namespace PDDL
         public void AddObservationChilds(List<Predicate> Observations)
         {
             ObservationPomcpNode observationPomcpNode = new ObservationPomcpNode(this, Observations);
-            Childs.Add(observationPomcpNode);
+            int ObservationsHash = GetObservationsHash(Observations);
+            Childs.Add(ObservationsHash, observationPomcpNode);
+        }
+
+        public int GetObservationsHash(List<Predicate> Observations)
+        {
+            int resultHash = 0;
+            foreach (Predicate predicate in Observations)
+            {
+                resultHash = resultHash ^ predicate.GetHashCode();
+            }
+            return resultHash;
         }
     }
 }
