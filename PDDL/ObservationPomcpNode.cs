@@ -31,5 +31,10 @@ namespace PDDL
             ParticleFilter = new BelifeParticles();
             ObservedPredicates = Observed;
         }
+
+        public Action GetBestAction(IActionSelectPolicy actionSelectPolicy)
+        {
+            return actionSelectPolicy.SelectBestAction(this);
+        }
     }
 }
