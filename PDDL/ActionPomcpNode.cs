@@ -23,5 +23,11 @@ namespace PDDL
             VisitedCount = 0;
             Value = 0;
         }
+
+        public void AddObservationChilds(List<Predicate> Observations)
+        {
+            ObservationPomcpNode observationPomcpNode = new ObservationPomcpNode(this, Observations);
+            Childs.Add(observationPomcpNode);
+        }
     }
 }
