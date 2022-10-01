@@ -133,7 +133,7 @@ namespace PDDL
             m_sPredecessor = null;
             m_lObserved = new HashSet<Predicate>(bs.Observed);
             AvailableActions = new List<Action>();
-            UnderlyingEnvironmentState = bs.UnderlyingEnvironmentState;
+            UnderlyingEnvironmentState = bs.ChooseState(true);
             m_bsInitialBelief = bs;
             ChildCount = 0;
 
@@ -1563,6 +1563,12 @@ namespace PDDL
             if (lSimilar.Count == 0)
                 return null;
             return lSimilar.First();
+        }
+
+
+        public virtual void GroundAllActions()
+        {
+            AvailableActions = Problem.Domain.GroundAllActions(m_lObserved, true);
         }
 
 
