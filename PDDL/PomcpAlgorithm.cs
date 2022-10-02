@@ -33,7 +33,22 @@ namespace PDDL
 
         public Action Search()
         {
-            throw new NotImplementedException();
+            PartiallySpecifiedState StartState;
+            BelifeParticles RootBelifeParticles = Root.ParticleFilter;
+            for(int SimulationIndex = 0; SimulationIndex < SimulationsThreshold; SimulationIndex++)
+            {
+                if (RootBelifeParticles.Size() == 0)
+                {
+                    StartState = new PartiallySpecifiedState(Problem.GetInitialBelief());
+                }
+                else
+                {
+                    StartState = RootBelifeParticles.GetRandomState();
+                }
+                Simulate(StartState, Root, 0);
+            }
+            Action BestCurrentAction = ActionSelectPolicy.SelectBestAction(Root);
+            return BestCurrentAction;
         }
 
         public void Simulate(PartiallySpecifiedState state, PomcpNode CurrentRoot, int currentDepth)
