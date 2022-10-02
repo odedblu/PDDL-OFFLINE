@@ -33,15 +33,23 @@ namespace PDDL
                 {
                     throw new ArgumentException("Try to select best action on observation pomcp node.");
                 }
-                double ChildrenUCBScore = Children.Value + C * Math.Sqrt(Math.Log(SelectionNode.VisitedCount) / (double)Children.VisitedCount);
+                double ChildrenUCBScore;
+                if (Children.VisitedCount == 0)
+                {
+                    ChildrenUCBScore = 0;
+                }
+                else
+                {
+                    ChildrenUCBScore = Children.Value + C * Math.Sqrt(Math.Log(SelectionNode.VisitedCount) / (double)Children.VisitedCount);
+                }
                 if (MaxUCBValue < ChildrenUCBScore)
                 {
                     MaxUCBValue = ChildrenUCBScore;
                     BestAction = ((ActionPomcpNode)Children).Action;
                 }
             }
-
             return BestAction;
+
         }
     }
 }

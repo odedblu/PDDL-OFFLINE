@@ -9,7 +9,6 @@ namespace PDDL
     internal class PomcpAlgorithm
     {
         public double DiscountFactor { get; set; }
-        public double UCBExplorationFactor { get; set; }   
         public double DepthThreshold { get; set; }
         public int SimulationsThreshold { get; set; }
         public Problem Problem { get; set; }
@@ -17,12 +16,11 @@ namespace PDDL
         public IActionSelectPolicy ActionSelectPolicy { get; set; }
         public IRolloutPolicy RolloutPolicy { get; set; }  
 
-        public PomcpAlgorithm(double discountFactor, double uCBExplorationFactor, double depthThreshold, 
+        public PomcpAlgorithm(double discountFactor, double depthThreshold, 
                               int simulationsThreshold, Problem problem, ObservationPomcpNode root,
                               IActionSelectPolicy actionSelectPolicy, IRolloutPolicy rolloutPolicy)
         {
             DiscountFactor = discountFactor;
-            UCBExplorationFactor = uCBExplorationFactor;
             DepthThreshold = depthThreshold;
             SimulationsThreshold = simulationsThreshold;
             Problem = problem;
@@ -51,9 +49,41 @@ namespace PDDL
             return BestCurrentAction;
         }
 
-        public void Simulate(PartiallySpecifiedState state, PomcpNode CurrentRoot, int currentDepth)
+        public double Simulate(PartiallySpecifiedState state, PomcpNode CurrentRoot, int currentDepth)
         {
-            throw new NotImplementedException();
+            if ((Math.Pow(DiscountFactor, (double)currentDepth) < DepthThreshold || DiscountFactor == 0) && currentDepth != 0)
+            {
+                return 0;
+            }
+
+            if (CurrentRoot.IsLeaf())
+            {
+                state.GroundAllActions();
+                foreach(Action action in state.AvailableActions)
+                {
+                    ActionPomcpNode actionPomcpNode = new ActionPomcpNode((ObservationPomcpNode)CurrentRoot, action);
+                    ((ObservationPomcpNode)CurrentRoot).AddActionPomcpNode(actionPomcpNode);
+                }
+                CurrentRoot.VisitedCount++;
+                return Rollout(state, currentDepth);
+            }
+
+            double CummulativeReward = 0;
+            Action NextAction = ActionSelectPolicy.SelectBestAction(CurrentRoot);
+            ActionPomcpNode NextActionPomcpNode = (ActionPomcpNode)(CurrentRoot.Childs[NextAction.GetHashCode()]);
+
+            // Execute Action on state.
+            PartiallySpecifiedState NextState = state.Apply(NextAction, out Formula observation);
+            double Reward = GetReward(NextState);
+            ObservationPomcpNode NextObservationPomcpNode = new ObservationPomcpNode(NextActionPomcpNode, observation.GetAllPredicates().ToList());
+            CummulativeReward += Reward + DiscountFactor * Simulate(NextState, NextObservationPomcpNode, currentDepth + 1);
+
+            // Back propagate.
+            ((ObservationPomcpNode)CurrentRoot).ParticleFilter.AddState(state);
+            CurrentRoot.VisitedCount++;
+            NextActionPomcpNode.VisitedCount++;
+            NextActionPomcpNode.Value += (CummulativeReward - NextActionPomcpNode.Value) / NextActionPomcpNode.VisitedCount++;
+            return CummulativeReward;
         }
 
         public double Rollout(PartiallySpecifiedState state, int currentDepth)
