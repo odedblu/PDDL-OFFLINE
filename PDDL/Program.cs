@@ -5,12 +5,14 @@ using System.Text;
 using System.Diagnostics;
 using System.IO;
 using System.Threading;
+using System.Text.Json;
+
 
 namespace PDDL
 {
     class Program
     {
-        public static string BASE_PATH = @" C:\Users\oded1\OneDrive\Desktop\code\PDDL-OFFLINE";
+        public static string BASE_PATH = @"C:\Users\odedblu\source\repos\PDDL-OFFLINE";
         public static string Path;
         public static string ResultsFile = "Results.txt";
 #if DEBUG
@@ -982,19 +984,31 @@ namespace PDDL
 
         static void Main(string[] args)
         {
+            
             Debug.Listeners.Add(new TextWriterTraceListener(Console.Out));
             Debug.Listeners.Add(new TextWriterTraceListener(new StreamWriter("debug.log")));
             string sBenchmarkPath = BASE_PATH + @"\CLG_benchmarks\";
             Path = BASE_PATH + @"\PDDL\";
-            string domainName = "probabiltyBlocks3";
+            string domainName = "Blocks3";
             Parser domainParser = new Parser();
             Domain parsedDomain = domainParser.ParseDomain(String.Format(@"{0}\{1}\d.pddl", sBenchmarkPath, domainName));
             Problem parsedProblem = domainParser.ParseProblem(String.Format(@"{0}\{1}\p.pddl", sBenchmarkPath, domainName), parsedDomain);
 
-            IRolloutPolicy rolloutPolicy = new RandomRolloutPolicy();
-            State sStart = parsedProblem.GetInitialBelief().ChooseState(true);
-            sStart.GroundAllActions();
-            Console.Out.WriteLine(rolloutPolicy.ChooseAction(sStart));
+            IRolloutPolicy RolloutPolicy = new RandomRolloutPolicy();
+            IActionSelectPolicy ActionSelectPolicy = new UCBValueActionSelectPolicy(20.0);
+            IActionSelectPolicy FinalActionSelectPolicy = new MaxValueActionSelectPolicy();
+
+            ObservationPomcpNode root = new ObservationPomcpNode();
+            PomcpAlgorithm pomcpAlgorithm = new PomcpAlgorithm(0.95,0.0001,25000,parsedProblem,root,FinalActionSelectPolicy,ActionSelectPolicy,RolloutPolicy);
+            PartiallySpecifiedState sStart = new PartiallySpecifiedState(parsedProblem.GetInitialBelief());
+            pomcpAlgorithm.Search();
+            List<Action> plan = pomcpAlgorithm.FindPlan(sStart);
+            foreach (Action action in plan)
+            {
+                Console.WriteLine(action);
+            }
+
+
 
 
             //BFSSolver bFSSolver = new BFSSolver();

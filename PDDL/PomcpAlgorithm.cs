@@ -14,11 +14,12 @@ namespace PDDL
         public Problem Problem { get; set; }
         public ObservationPomcpNode Root { get; set; }
         public IActionSelectPolicy ActionSelectPolicy { get; set; }
+        public IActionSelectPolicy FinalActionSelectPolicy { get; set; }
         public IRolloutPolicy RolloutPolicy { get; set; }  
 
         public PomcpAlgorithm(double discountFactor, double depthThreshold, 
-                              int simulationsThreshold, Problem problem, ObservationPomcpNode root,
-                              IActionSelectPolicy actionSelectPolicy, IRolloutPolicy rolloutPolicy)
+                              int simulationsThreshold, Problem problem, ObservationPomcpNode root, 
+                              IActionSelectPolicy finalActionSelectPolicy, IActionSelectPolicy actionSelectPolicy, IRolloutPolicy rolloutPolicy)
         {
             DiscountFactor = discountFactor;
             DepthThreshold = depthThreshold;
@@ -26,13 +27,14 @@ namespace PDDL
             Problem = problem;
             Root = root;
             ActionSelectPolicy = actionSelectPolicy;
+            FinalActionSelectPolicy = finalActionSelectPolicy;
             RolloutPolicy = rolloutPolicy;
         }
 
         public Action Search()
         {
-            PartiallySpecifiedState StartState;
             BelifeParticles RootBelifeParticles = Root.ParticleFilter;
+            PartiallySpecifiedState StartState;
             for(int SimulationIndex = 0; SimulationIndex < SimulationsThreshold; SimulationIndex++)
             {
                 if (RootBelifeParticles.Size() == 0)
@@ -45,7 +47,7 @@ namespace PDDL
                 }
                 Simulate(StartState, Root, 0);
             }
-            Action BestCurrentAction = ActionSelectPolicy.SelectBestAction(Root);
+            Action BestCurrentAction = FinalActionSelectPolicy.SelectBestAction(Root);
             return BestCurrentAction;
         }
 
@@ -75,7 +77,13 @@ namespace PDDL
             // Execute Action on state.
             PartiallySpecifiedState NextState = state.Apply(NextAction, out Formula observation);
             double Reward = GetReward(NextState);
-            ObservationPomcpNode NextObservationPomcpNode = new ObservationPomcpNode(NextActionPomcpNode, observation.GetAllPredicates().ToList());
+            // Handle actions without observation.
+            List<Predicate> PredicatsObservation = new List<Predicate>();
+            if(observation != null)
+            {
+                PredicatsObservation = observation.GetAllPredicates().ToList();
+            }
+            ObservationPomcpNode NextObservationPomcpNode = NextActionPomcpNode.AddObservationChilds(PredicatsObservation);
             CummulativeReward += Reward + DiscountFactor * Simulate(NextState, NextObservationPomcpNode, currentDepth + 1);
 
             // Back propagate.
@@ -107,6 +115,27 @@ namespace PDDL
                 return 100.0;
             }
             return -1.0;
+        }
+
+        public List<Action> FindPlan(PartiallySpecifiedState StartState)
+        {
+            List<Action> Plan = new List<Action>();
+            PartiallySpecifiedState CurrentState = StartState.Clone();
+            while (!CurrentState.IsGoalState())
+            {
+                Action NextAction = Search();
+                CurrentState = CurrentState.Apply(NextAction, out Formula observation);
+                Plan.Add(NextAction);
+                List<Predicate> PredicatsObservation = new List<Predicate>();
+                if (observation != null)
+                {
+                    PredicatsObservation = observation.GetAllPredicates().ToList();
+                }
+                PomcpNode NextActionPomcpNode = Root.Childs[NextAction.GetHashCode()];
+                PomcpNode NewObservationPomcpNode = NextActionPomcpNode.Childs[((ActionPomcpNode)NextActionPomcpNode).GetObservationsHash(PredicatsObservation)];
+                Root = (ObservationPomcpNode)NewObservationPomcpNode;
+            }
+            return Plan;
         }
     }
 }

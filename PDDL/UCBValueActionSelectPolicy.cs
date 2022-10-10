@@ -36,7 +36,7 @@ namespace PDDL
                 double ChildrenUCBScore;
                 if (Children.VisitedCount == 0)
                 {
-                    ChildrenUCBScore = 0;
+                    ChildrenUCBScore = double.MaxValue;
                 }
                 else
                 {

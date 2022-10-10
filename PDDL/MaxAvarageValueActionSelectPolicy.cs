@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PDDL
 {
-    internal class MaxAvarageValueActionSelectPolicy : IActionSelectPolicy
+    internal class MaxValueActionSelectPolicy : IActionSelectPolicy
     {
         public Action SelectBestAction(PomcpNode SelectionNode)
         {
@@ -15,7 +15,7 @@ namespace PDDL
             {
                 throw new ArgumentException("Childrens is empty, could not select best action.");
             }
-            double MaxAvarageValue = Double.MinValue;
+            double MaxValue = Double.MinValue;
             Action BestAction = null;
             foreach(KeyValuePair<int , PomcpNode> kvp in Childrens)
             {
@@ -25,10 +25,10 @@ namespace PDDL
                 {
                     throw new ArgumentException("Try to select best action on observation pomcp node.");
                 }
-                double ChildrenAvarageValue = (double)kvp.Value.Value / (double)kvp.Value.VisitedCount;
-                if (MaxAvarageValue < ChildrenAvarageValue)
+                double ChildrenValue = kvp.Value.Value;
+                if (MaxValue < ChildrenValue)
                 {
-                    MaxAvarageValue = ChildrenAvarageValue;
+                    MaxValue = ChildrenValue;
                     BestAction = ((ActionPomcpNode)Children).Action;
                 }
             }
