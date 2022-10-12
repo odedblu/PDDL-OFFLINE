@@ -57,7 +57,7 @@ namespace PDDL
         }
         public override sealed int GetHashCode()
         {
-            return m_iType * 100 + m_iName;
+            return m_iType + m_iName;
         }
         public override sealed bool Equals(object obj)
         {

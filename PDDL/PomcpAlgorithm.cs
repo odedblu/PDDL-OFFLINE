@@ -35,8 +35,29 @@ namespace PDDL
         {
             BelifeParticles RootBelifeParticles = Root.ParticleFilter;
             PartiallySpecifiedState StartState;
-            for(int SimulationIndex = 0; SimulationIndex < SimulationsThreshold; SimulationIndex++)
+            Action BestCurrentAction;
+            for (int SimulationIndex = 0; SimulationIndex < SimulationsThreshold; SimulationIndex++)
             {
+                foreach (KeyValuePair<int, PomcpNode> ActionChilds in Root.Childs)
+                {
+                    ActionPomcpNode actionPomcpNode = (ActionPomcpNode)ActionChilds.Value;
+                    if(actionPomcpNode.Value > 0)
+                    {
+                        BestCurrentAction = FinalActionSelectPolicy.SelectBestAction(Root);
+                        return BestCurrentAction;
+                    }
+                }
+                if (SimulationIndex % 1000 == 0 && SimulationIndex != 0)
+                {
+                    Console.WriteLine(SimulationIndex);
+                    /*foreach (KeyValuePair<int, PomcpNode>  ActionChilds in Root.Childs)
+                    {
+                        ActionPomcpNode actionPomcpNode = (ActionPomcpNode)ActionChilds.Value;
+                        Console.WriteLine(actionPomcpNode.Action);
+                        Console.WriteLine(Math.Round(actionPomcpNode.Value, 2));
+                        Console.WriteLine("------------------");
+                    }*/
+                }
                 if (RootBelifeParticles.Size() == 0)
                 {
                     StartState = new PartiallySpecifiedState(Problem.GetInitialBelief());
@@ -47,7 +68,7 @@ namespace PDDL
                 }
                 Simulate(StartState, Root, 0);
             }
-            Action BestCurrentAction = FinalActionSelectPolicy.SelectBestAction(Root);
+            BestCurrentAction = FinalActionSelectPolicy.SelectBestAction(Root);
             return BestCurrentAction;
         }
 
