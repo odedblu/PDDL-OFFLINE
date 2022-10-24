@@ -439,7 +439,7 @@ namespace PDDL
             return IsApplicable(a);
         }
 
-        private bool IsApplicable(Action a)
+        public bool IsApplicable(Action a)
         {
             if (a.Preconditions == null)
                 return true;
