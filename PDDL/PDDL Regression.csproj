@@ -93,6 +93,7 @@
     <Compile Include="MineSweeper.cs" />
     <Compile Include="ObservationPomcpNode.cs" />
     <Compile Include="Omelette.cs" />
+    <Compile Include="OneGoalPredicateAddRolloutPolicy.cs" />
     <Compile Include="OnlineSimulator.cs" />
     <Compile Include="Parameter.cs" />
     <Compile Include="ParametrizedAction.cs" />
