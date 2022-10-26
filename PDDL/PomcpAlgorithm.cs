@@ -136,12 +136,10 @@ namespace PDDL
             {
                 return 0;
             }
-            double CummulativeReward = 0;
             Action RolloutAction = RolloutPolicy.ChooseAction(state);
             PartiallySpecifiedState NextState = state.Apply(RolloutAction, out Formula observation);
             double Reward = GetReward(NextState);
-            CummulativeReward += Reward + DiscountFactor * Rollout(NextState, currentDepth + 1);
-            return CummulativeReward;
+            return Reward + DiscountFactor * Rollout(NextState, currentDepth + 1);
         }
 
         private double GetReward(PartiallySpecifiedState state)
