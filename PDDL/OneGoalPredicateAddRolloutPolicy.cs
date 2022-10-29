@@ -17,12 +17,15 @@ namespace PDDL
             foreach (Action action in s.AvailableActions)
             {
                 int ActionGoalPredicatesCount = 0;
-                if (action.Effects == null) continue;
-                HashSet<Predicate> ActionEffects = action.Effects.GetAllPredicates();
-                foreach (Predicate GoalPredicate in GoalPredicates)
+                if (action.Effects != null)
                 {
-                    if (ActionEffects.Contains(GoalPredicate)){
-                        ActionGoalPredicatesCount++;
+                    HashSet<Predicate> ActionEffects = action.Effects.GetAllPredicates();
+                    foreach (Predicate GoalPredicate in GoalPredicates)
+                    {
+                        if (ActionEffects.Contains(GoalPredicate))
+                        {
+                            ActionGoalPredicatesCount++;
+                        }
                     }
                 }
                 ActionScores.Add(action, ActionGoalPredicatesCount);
@@ -39,11 +42,11 @@ namespace PDDL
             int SelectedIndex;
             if (BestActionsCount != 0)
             {
-                SelectedIndex = random.Next(0, PossibleActions.Count());
+                SelectedIndex = random.Next(0, BestActionsCount);
                 return PossibleActions.ElementAt(SelectedIndex);
             }
-            SelectedIndex = random.Next(0, s.AvailableActions.Count());
-            return s.AvailableActions.ElementAt(SelectedIndex);
+            SelectedIndex = random.Next(0, ActionScores.Count());
+            return ActionScores.ElementAt(SelectedIndex).Key;
         }
     }
 }

@@ -449,13 +449,7 @@ namespace PDDL
                 return true;
             if (fReduced.IsFalse(m_lObserved))
                 return false;
-            Formula fNegatePreconditions = fReduced.Negate();
-            if (ConsistentWith(fNegatePreconditions, true))
-            {
-                return false;
-            }
-            AddObserved(a.Preconditions);
-            return true;
+            return false;
         }
 
         public PartiallySpecifiedState Apply(string sActionName, out Formula fObserve)
@@ -644,12 +638,14 @@ namespace PDDL
                 if (ReviseInitialBelief(fObserve))
                     bsNew.PropogateObservedPredicates();
                  * */
+                /*
                 HashSet<int> hsModified = m_bsInitialBelief.ReviseInitialBelief(fObserve, this);
                 if (hsModified.Count > 0)
                 {
                     if (!SDRPlanner.OptimizeMemoryConsumption)
                         bsNew.PropogateObservedPredicates();
                 }
+                */
                 
             }
 

@@ -29,7 +29,8 @@ namespace PDDL
             VisitedCount = 0;
             Value = 0;
             ParticleFilter = new BelifeParticles();
-            ObservedPredicates = Observed;
+            ObservedPredicates = new List<Predicate>(); 
+            foreach (Predicate Predicate in Observed) ObservedPredicates.Add(Predicate);
         }
 
         public Action GetBestAction(IActionSelectPolicy actionSelectPolicy)
