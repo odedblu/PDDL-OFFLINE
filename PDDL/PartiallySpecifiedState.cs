@@ -568,13 +568,20 @@ namespace PDDL
 
             DateTime dtStart = DateTime.Now;
 
-            Action a = aOrg.ApplyObserved(m_lObserved);
+            Action a = aOrg.Clone();
 
             //no need to check pre during propogation - they were already confirmed the first time
             if (!bPropogateOnly && a.Preconditions != null && !IsApplicable(a))
                 return null;
 
-            a.ComputeRegressions();
+
+
+            //a.ComputeRegressions();
+            CompoundFormula cfAndChoices = null;
+            if (!bPropogateOnly && a.ContainsNonDeterministicEffect)
+            {
+                a = a.RemoveNonDeterminism(Time, out cfAndChoices);
+            }
 
             tsPre += DateTime.Now - dtStart;
             dtStart = DateTime.Now;
@@ -583,11 +590,7 @@ namespace PDDL
             if (!bPropogateOnly && UnderlyingEnvironmentState != null)
                 sNew = UnderlyingEnvironmentState.Apply(a);
 
-            CompoundFormula cfAndChoices = null;
-            if (!bPropogateOnly && a.ContainsNonDeterministicEffect)
-            {
-                a = a.RemoveNonDeterminism(Time, out cfAndChoices);
-            }
+           
 
             PartiallySpecifiedState bsNew = new PartiallySpecifiedState(this, a);
             if (sNew != null)

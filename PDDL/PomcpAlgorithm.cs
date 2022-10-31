@@ -144,10 +144,14 @@ namespace PDDL
 
         private double GetReward(PartiallySpecifiedState state)
         {
-            if (state == null) return Double.MinValue;
-            if (state.IsGoalState())
+            //if (state == null) return Double.MinValue;
+            if (state != null && state.IsGoalState())
             {
                 return 100.0;
+            }
+            else
+            {
+                if (state == null) return -100.0;
             }
             return -1.0;
         }

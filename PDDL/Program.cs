@@ -12,7 +12,7 @@ namespace PDDL
 {
     class Program
     {
-        public static string BASE_PATH = @"C:\Users\odedblu\source\repos\PDDL-OFFLINE";
+        public static string BASE_PATH = @"C:\Users\oded1\OneDrive\Desktop\code\PDDL-OFFLINE";
         public static string Path;
         public static string ResultsFile = "Results.txt";
 #if DEBUG
@@ -1001,7 +1001,7 @@ namespace PDDL
             IActionSelectPolicy FinalActionSelectPolicy = new MaxValueActionSelectPolicy();
 
             ObservationPomcpNode root = new ObservationPomcpNode();
-            PomcpAlgorithm pomcpAlgorithm = new PomcpAlgorithm(0.95,0.6,10000,parsedProblem,root,FinalActionSelectPolicy,ActionSelectPolicy,RolloutPolicy);
+            PomcpAlgorithm pomcpAlgorithm = new PomcpAlgorithm(0.95,0.5,3001,parsedProblem,root,FinalActionSelectPolicy,ActionSelectPolicy,RolloutPolicy);
             List<Action> plan = pomcpAlgorithm.FindPlan();
             foreach (Action action in plan)
             {

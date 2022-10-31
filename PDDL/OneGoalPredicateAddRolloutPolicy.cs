@@ -16,6 +16,7 @@ namespace PDDL
             int MaxActionGoalPredicatesCount = 0;
             foreach (Action action in s.AvailableActions)
             {
+                if (!s.IsApplicable(action)) continue;
                 int ActionGoalPredicatesCount = 0;
                 if (action.Effects != null)
                 {

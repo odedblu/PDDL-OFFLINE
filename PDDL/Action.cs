@@ -3730,7 +3730,7 @@ namespace PDDL
             if (aTag.Preconditions != null)
                 aTag.Preconditions = Preconditions;
             //aTag.Preconditions = Preconditions.Reduce(lKnown);
-
+            /*
             if (m_mRegressions != null)
             {
                 //aTag.m_mRegressions = m_mRegressions;
@@ -3741,6 +3741,7 @@ namespace PDDL
                     aTag.m_mRegressions[p] = m_mRegressions[p].Reduce(lKnown);
                 
             }
+            */
             return aTag;
         }
         public Action RemoveNonDeterminism(int iActionIndex, out CompoundFormula cfAndChoices)
@@ -3748,6 +3749,29 @@ namespace PDDL
             Action aNew = Clone();
             int cChoices = 0;
             cfAndChoices = new CompoundFormula("and");
+            if (Effects is ProbabilisticFormula)
+            {
+                // Select one of the probability effects.
+                ProbabilisticFormula probabilisticEffects = (ProbabilisticFormula)Effects;
+                double cummulativeProbability = 0;
+                double selectedEffectProbability = RandomGenerator.NextDouble();
+                for(int i = 0; i < probabilisticEffects.Probabilities.Count; i++)
+                {
+                    if(selectedEffectProbability < cummulativeProbability + probabilisticEffects.Probabilities[i])
+                    {
+                        Effects = (CompoundFormula)(probabilisticEffects.Options[i]);
+                        return this.RemoveNonDeterminism(iActionIndex, out cfAndChoices);
+                    }
+                    else
+                    {
+                        cummulativeProbability += probabilisticEffects.Probabilities[i];
+                    }
+                }
+                aNew.Effects = null;
+                cfAndChoices = null;
+                return aNew;
+            }
+            
             CompoundFormula cfEffects = ((CompoundFormula)Effects).RemoveNonDeterminism(iActionIndex, ref cChoices, cfAndChoices);
             aNew.Effects = cfEffects;
             return aNew;
