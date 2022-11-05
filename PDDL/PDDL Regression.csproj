@@ -74,6 +74,7 @@
     <Compile Include="Formula.cs" />
     <Compile Include="ForwardSearchPlanner.cs" />
     <Compile Include="GroundedPredicate.cs" />
+    <Compile Include="HAddRolloutPolicy.cs" />
     <Compile Include="HeuristicFunction.cs" />
     <Compile Include="HSPHeuristic.cs" />
     <Compile Include="CatchInvaders.cs" />
