@@ -8,6 +8,6 @@ namespace PDDL
 {
     internal interface IRolloutPolicy
     {
-        Action ChooseAction(PartiallySpecifiedState s);
+        Action ChooseAction(State s);
     }
 }
