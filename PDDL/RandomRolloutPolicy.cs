@@ -8,7 +8,7 @@ namespace PDDL
 {
     internal class RandomRolloutPolicy : IRolloutPolicy
     {
-        public Action ChooseAction(PartiallySpecifiedState s)
+        public Action ChooseAction(State s)
         {
             Random random = new Random();
             s.GroundAllActions();
