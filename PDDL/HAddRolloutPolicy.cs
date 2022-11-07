@@ -9,23 +9,32 @@ namespace PDDL
 {
     internal class HAddRolloutPolicy : IRolloutPolicy
     {
-        public Action ChooseAction(PartiallySpecifiedState s)
+        public Action ChooseAction(State s)
         {
-            Dictionary<Predicate, int> GoalPredicatesScores = new Dictionary<Predicate, int>();
+            Dictionary<Action, int> ActionsScores = new Dictionary<Action, int>();
             HashSet<Predicate> GoalPredicates = s.Problem.Goal.GetAllPredicates();
+            
             s.GroundAllActions();
             foreach(Action action in s.AvailableActions)
             {
-                HashSet<Predicate> startPredicates = new HashSet<Predicate>(s.Observed).UnionWith(action.Effects.GetAllPredicates());
-                Dictionary<Predicate, int> ActionPredicatesScores = GetGoalPredicatesHaddLevel(GoalPredicates, , s.Problem.Domain);
-
+                HashSet<Predicate> StatePredicates = new HashSet<Predicate>(s.Predicates);
+                StatePredicates.UnionWith(action.Effects.GetAllPredicates());
+                Dictionary<Predicate, int> ActionPredicatesScores = GetGoalPredicatesHaddLevel(GoalPredicates, StatePredicates, s.Problem.Domain);
+                int hAddSum = ActionPredicatesScores.Sum(x => x.Value);
+                ActionsScores.Add(action, hAddSum);
             }
-            
 
-
-
-
-            throw new NotImplementedException(); // Remove when done implementing this rollout policy.
+            Action BestAction = null;
+            int BestActionScore = int.MaxValue;
+            foreach(KeyValuePair<Action,int> kvp in ActionsScores)
+            {
+                if(kvp.Value < BestActionScore)
+                {
+                    BestAction = kvp.Key;
+                    BestActionScore = kvp.Value;
+                }
+            }
+            return BestAction;
         }
 
         private Dictionary<Predicate,int> GetGoalPredicatesHaddLevel(HashSet<Predicate> GoalPredicates, HashSet<Predicate> StartPredicates, Domain domain)
@@ -64,12 +73,15 @@ namespace PDDL
                 if(IsApplicableAction(StartPredicates, action))
                 {
                     HashSet<Predicate> influences = new HashSet<Predicate>();
+                    // In case we want observation will also effect the hAdd value.
+                    /*
                     HashSet<Predicate> observedPredicates = action.Observe.GetAllPredicates();
                     if (observedPredicates != null) 
                     {
                         influences.UnionWith(observedPredicates);
                         foreach (Predicate predicate in observedPredicates) influences.Add(predicate.Negate());
                     } 
+                    */
                     HashSet<Predicate> effectPredicates = action.Effects.GetAllPredicates();
                     if(effectPredicates != null) influences.UnionWith(effectPredicates);
 
