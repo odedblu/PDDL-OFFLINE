@@ -8,7 +8,7 @@ namespace PDDL
 {
     internal class GoalPredicateAddRolloutPolicy : IRolloutPolicy
     {
-        public Action ChooseAction(PartiallySpecifiedState s)
+        public Action ChooseAction(State s)
         {
             Dictionary<Action, int> ActionScores = new Dictionary<Action, int>();
             HashSet<Predicate> GoalPredicates = s.Problem.Goal.GetAllPredicates();
@@ -16,7 +16,7 @@ namespace PDDL
             int MaxActionGoalPredicatesCount = 0;
             foreach (Action action in s.AvailableActions)
             {
-                if (!s.IsApplicable(action)) continue;
+                if (!action.Preconditions.IsTrue(s.Predicates)) continue;
                 int ActionGoalPredicatesCount = 0;
                 if (action.Effects != null)
                 {
