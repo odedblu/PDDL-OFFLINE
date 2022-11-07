@@ -18,9 +18,18 @@ namespace PDDL
             foreach(Action action in s.AvailableActions)
             {
                 HashSet<Predicate> StatePredicates = new HashSet<Predicate>(s.Predicates);
-                StatePredicates.UnionWith(action.Effects.GetAllPredicates());
+                if(action.Effects != null) StatePredicates.UnionWith(action.Effects.GetAllPredicates());
                 Dictionary<Predicate, int> ActionPredicatesScores = GetGoalPredicatesHaddLevel(GoalPredicates, StatePredicates, s.Problem.Domain);
-                int hAddSum = ActionPredicatesScores.Sum(x => x.Value);
+                int hAddSum;
+                try
+                {
+                    hAddSum = ActionPredicatesScores.Sum(x => x.Value);
+                }
+                catch (OverflowException ex)
+                {
+                    hAddSum = int.MaxValue;
+                }
+                
                 ActionsScores.Add(action, hAddSum);
             }
 
@@ -33,6 +42,12 @@ namespace PDDL
                     BestAction = kvp.Key;
                     BestActionScore = kvp.Value;
                 }
+            }
+            if(BestAction == null)
+            {
+                Random rnd = new Random();
+                int selectedIndex = rnd.Next(ActionsScores.Count());
+                BestAction = ActionsScores.ElementAt(selectedIndex).Key;
             }
             return BestAction;
         }
@@ -51,7 +66,8 @@ namespace PDDL
             {
                 foreach (Predicate goalPredicate in GoalPredicates)
                 {
-                    if(nextLayerPredicats.Contains(goalPredicate)) GoalPredicatesHadd.Add(goalPredicate, currentLevel + 1);
+                    if (GoalPredicatesHadd.ContainsKey(goalPredicate)) continue;
+                    if (nextLayerPredicats.Contains(goalPredicate)) GoalPredicatesHadd.Add(goalPredicate, currentLevel + 1);
                 }
                 StartPredicates = nextLayerPredicats;
                 actions = domain.GroundAllActions(StartPredicates, true);
@@ -60,7 +76,7 @@ namespace PDDL
             }
             foreach (Predicate goalPredicate in GoalPredicates)
             {
-                if (GoalPredicatesHadd.ContainsKey(goalPredicate)) GoalPredicatesHadd.Add(goalPredicate, int.MaxValue);
+                if (!GoalPredicatesHadd.ContainsKey(goalPredicate)) GoalPredicatesHadd.Add(goalPredicate, int.MaxValue);
             }
             return GoalPredicatesHadd;
         }
@@ -82,7 +98,12 @@ namespace PDDL
                         foreach (Predicate predicate in observedPredicates) influences.Add(predicate.Negate());
                     } 
                     */
-                    HashSet<Predicate> effectPredicates = action.Effects.GetAllPredicates();
+                    HashSet<Predicate> effectPredicates = new HashSet<Predicate>();
+                    if (action.Effects != null)
+                    {
+                        effectPredicates = action.Effects.GetAllPredicates();
+                    }
+                    
                     if(effectPredicates != null) influences.UnionWith(effectPredicates);
 
                     foreach (Predicate influencePredicate in influences)
@@ -99,6 +120,7 @@ namespace PDDL
 
         private bool IsApplicableAction(HashSet<Predicate> KnownPredicates, Action action)
         {
+            if (action.Preconditions == null) return true;
             foreach(Predicate preconditionPredicate in action.Preconditions.GetAllPredicates())
             {
                 if (!KnownPredicates.Contains(preconditionPredicate))

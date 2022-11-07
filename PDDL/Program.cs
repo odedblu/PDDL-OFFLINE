@@ -995,13 +995,14 @@ namespace PDDL
             Problem parsedProblem = domainParser.ParseProblem(String.Format(@"{0}\{1}\p.pddl", sBenchmarkPath, domainName), parsedDomain);
 
             //IRolloutPolicy RolloutPolicy = new RandomRolloutPolicy();
-            IRolloutPolicy RolloutPolicy = new GoalPredicateAddRolloutPolicy();
+            //IRolloutPolicy RolloutPolicy = new GoalPredicateAddRolloutPolicy();
+            IRolloutPolicy RolloutPolicy = new HAddRolloutPolicy();
 
             IActionSelectPolicy ActionSelectPolicy = new UCBValueActionSelectPolicy(20.0);
             IActionSelectPolicy FinalActionSelectPolicy = new MaxValueActionSelectPolicy();
 
             ObservationPomcpNode root = new ObservationPomcpNode();
-            PomcpAlgorithm pomcpAlgorithm = new PomcpAlgorithm(0.95,0.5,3001,parsedProblem,root,FinalActionSelectPolicy,ActionSelectPolicy,RolloutPolicy);
+            PomcpAlgorithm pomcpAlgorithm = new PomcpAlgorithm(0.95,0.5,50,parsedProblem,root,FinalActionSelectPolicy,ActionSelectPolicy,RolloutPolicy);
             List<Action> plan = pomcpAlgorithm.FindPlan();
             foreach (Action action in plan)
             {
