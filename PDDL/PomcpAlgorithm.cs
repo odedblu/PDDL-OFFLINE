@@ -31,25 +31,14 @@ namespace PDDL
             RolloutPolicy = rolloutPolicy;
         }
 
-        public Tuple<PartiallySpecifiedState,Action> Search()
+        public Tuple<State, Action> Search()
         {
             BelifeParticles RootBelifeParticles = Root.ParticleFilter;
-            PartiallySpecifiedState StartState = null;
+            State StartState = null;
             Action BestCurrentAction = null;
-            Tuple<PartiallySpecifiedState, Action> SearchResult;
+            Tuple<State, Action> SearchResult;
             for (int SimulationIndex = 0; SimulationIndex < SimulationsThreshold; SimulationIndex++)
             {
-                /*
-                foreach (KeyValuePair<int, PomcpNode> ActionChilds in Root.Childs)
-                {
-                    ActionPomcpNode actionPomcpNode = (ActionPomcpNode)ActionChilds.Value;
-                    if(StartState != null && actionPomcpNode.Value > 0)
-                    {
-                        BestCurrentAction = FinalActionSelectPolicy.SelectBestAction(Root);
-                        return SearchResult = new Tuple<PartiallySpecifiedState, Action>(StartState, BestCurrentAction);
-                    }
-                }
-                */
                 if (SimulationIndex % 1000 == 0 && SimulationIndex != 0)
                 {
                     Console.WriteLine(SimulationIndex);
@@ -63,7 +52,7 @@ namespace PDDL
                 }
                 if (RootBelifeParticles.Size() == 0)
                 {
-                    StartState = new PartiallySpecifiedState(Problem.GetInitialBelief());
+                    StartState = new State(Problem.GetInitialBelief().ChooseState(true));
                 }
                 else
                 {
@@ -72,11 +61,11 @@ namespace PDDL
                 Simulate(StartState, Root, 0);
             }
             BestCurrentAction = FinalActionSelectPolicy.SelectBestAction(Root);
-            SearchResult = new Tuple<PartiallySpecifiedState, Action>(StartState, BestCurrentAction);
+            SearchResult = new Tuple<State, Action>(StartState, BestCurrentAction);
             return SearchResult;
         }
 
-        public double Simulate(PartiallySpecifiedState state, PomcpNode CurrentRoot, int currentDepth)
+        public double Simulate(State state, PomcpNode CurrentRoot, int currentDepth)
         {
             if ((Math.Pow(DiscountFactor, (double)currentDepth) < DepthThreshold || DiscountFactor == 0) && currentDepth != 0)
             {
@@ -88,7 +77,8 @@ namespace PDDL
                 state.GroundAllActions();
                 foreach(Action action in state.AvailableActions)
                 {
-                    if (state.IsApplicable(action))
+
+                    if (action.Preconditions != null && action.Preconditions.IsTrue(state.Predicates))
                     {
                         ActionPomcpNode actionPomcpNode = new ActionPomcpNode((ObservationPomcpNode)CurrentRoot, action);
                         ((ObservationPomcpNode)CurrentRoot).AddActionPomcpNode(actionPomcpNode);
@@ -103,7 +93,12 @@ namespace PDDL
             ActionPomcpNode NextActionPomcpNode = (ActionPomcpNode)(CurrentRoot.Childs[NextAction.GetHashCode()]);
 
             // Execute Action on state.
-            PartiallySpecifiedState NextState = state.Apply(NextAction, out Formula observation);
+            State NextState = state.Apply(NextAction);
+            Formula observation = null;
+            if(NextAction.Observe != null)
+            {
+                observation = NextState.Observe(NextAction.Observe);
+            }            
             double Reward = GetReward(NextState);
             // Handle actions without observation.
             List<Predicate> PredicatsObservation = new List<Predicate>();
@@ -130,22 +125,22 @@ namespace PDDL
             return CummulativeReward;
         }
 
-        public double Rollout(PartiallySpecifiedState state, int currentDepth)
+        public double Rollout(State state, int currentDepth)
         {
             if((Math.Pow(DiscountFactor, (double)currentDepth) < DepthThreshold || DiscountFactor == 0) && currentDepth != 0)
             {
                 return 0;
             }
             Action RolloutAction = RolloutPolicy.ChooseAction(state);
-            PartiallySpecifiedState NextState = state.Apply(RolloutAction, out Formula observation);
+            State NextState = state.Apply(RolloutAction);
             double Reward = GetReward(NextState);
             return Reward + DiscountFactor * Rollout(NextState, currentDepth + 1);
         }
 
-        private double GetReward(PartiallySpecifiedState state)
+        private double GetReward(State state)
         {
             //if (state == null) return Double.MinValue;
-            if (state != null && state.IsGoalState())
+            if (state != null && Problem.IsGoalState(state))
             {
                 return 100.0;
             }
@@ -159,13 +154,18 @@ namespace PDDL
         public List<Action> FindPlan()
         {
             List<Action> Plan = new List<Action>();
-            PartiallySpecifiedState CurrentState = null;
-            while (CurrentState == null || !CurrentState.IsGoalState())
+            State CurrentState = null;
+            while (CurrentState == null || !Problem.IsGoalState(CurrentState))
             {
-                Tuple<PartiallySpecifiedState, Action> SearchResult = Search();
+                Tuple<State, Action> SearchResult = Search();
                 CurrentState = SearchResult.Item1;  
                 Action NextAction = SearchResult.Item2;
-                CurrentState = CurrentState.Apply(NextAction, out Formula observation);
+                CurrentState = CurrentState.Apply(NextAction);
+                Formula observation = null;
+                if (NextAction.Observe != null)
+                {
+                    observation = CurrentState.Observe(NextAction.Observe);
+                }
                 Plan.Add(NextAction);
                 List<Predicate> PredicatsObservation = new List<Predicate>();
                 if (observation != null)
