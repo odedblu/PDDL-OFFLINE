@@ -1002,7 +1002,7 @@ namespace PDDL
             IActionSelectPolicy FinalActionSelectPolicy = new MaxValueActionSelectPolicy();
 
             ObservationPomcpNode root = new ObservationPomcpNode();
-            PomcpAlgorithm pomcpAlgorithm = new PomcpAlgorithm(0.95,0.5,50,parsedProblem,root,FinalActionSelectPolicy,ActionSelectPolicy,RolloutPolicy);
+            PomcpAlgorithm pomcpAlgorithm = new PomcpAlgorithm(0.95,0.3,500,parsedProblem,root,FinalActionSelectPolicy,ActionSelectPolicy,RolloutPolicy);
             List<Action> plan = pomcpAlgorithm.FindPlan();
             foreach (Action action in plan)
             {

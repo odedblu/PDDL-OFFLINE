@@ -9,8 +9,19 @@ namespace PDDL
 {
     internal class HAddRolloutPolicy : IRolloutPolicy
     {
+        public Dictionary<State, Action> ResultCache { get; set; }
+        public Dictionary<HashSet<Predicate>, List<Action>> DomainAvailableActionsCache { get; set; }
+
+        public HAddRolloutPolicy()
+        {
+            ResultCache = new Dictionary<State, Action>();
+            DomainAvailableActionsCache = new Dictionary<HashSet<Predicate>, List<Action>>(HashSet<Predicate>.CreateSetComparer());
+        }
+
         public Action ChooseAction(State s)
         {
+            if(ResultCache.ContainsKey(s)) return ResultCache[s];
+
             Dictionary<Action, int> ActionsScores = new Dictionary<Action, int>();
             HashSet<Predicate> GoalPredicates = s.Problem.Goal.GetAllPredicates();
             
@@ -49,13 +60,14 @@ namespace PDDL
                 int selectedIndex = rnd.Next(ActionsScores.Count());
                 BestAction = ActionsScores.ElementAt(selectedIndex).Key;
             }
+            ResultCache.Add(s, BestAction);
             return BestAction;
         }
 
         private Dictionary<Predicate,int> GetGoalPredicatesHaddLevel(HashSet<Predicate> GoalPredicates, HashSet<Predicate> StartPredicates, Domain domain)
         {
             Dictionary<Predicate,int> GoalPredicatesHadd = new Dictionary<Predicate,int>();
-            List<Action> actions = domain.GroundAllActions(StartPredicates, true);
+            List<Action> actions = GetCachedAvailableActions(domain, StartPredicates);
             int currentLevel = 0;
             foreach (Predicate goalPredicate in GoalPredicates)
             {
@@ -70,7 +82,7 @@ namespace PDDL
                     if (nextLayerPredicats.Contains(goalPredicate)) GoalPredicatesHadd.Add(goalPredicate, currentLevel + 1);
                 }
                 StartPredicates = nextLayerPredicats;
-                actions = domain.GroundAllActions(StartPredicates, true);
+                actions = GetCachedAvailableActions(domain, StartPredicates);
                 nextLayerPredicats = GetNextLevelHaddPredicates(StartPredicates, actions);
                 currentLevel++;
             }
@@ -129,6 +141,19 @@ namespace PDDL
                 }
             }
             return true;
+        }
+
+        private List<Action> GetCachedAvailableActions(Domain domain, HashSet<Predicate> availablePredicates)
+        {
+            if (DomainAvailableActionsCache.ContainsKey(availablePredicates)) { 
+                return DomainAvailableActionsCache[availablePredicates]; 
+            }
+            else
+            {
+                List<Action> availableActions = domain.GroundAllActions(availablePredicates, false);
+                DomainAvailableActionsCache.Add(availablePredicates, availableActions);
+                return availableActions;
+            }
         }
 
         

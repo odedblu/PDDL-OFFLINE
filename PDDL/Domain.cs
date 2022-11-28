@@ -1999,9 +1999,11 @@ namespace PDDL
             List<Action> lGrounded, IEnumerable<Predicate> lPredicates, bool bContainsNegations, bool bCheckConsistency)
         {
             Formula fGroundedPreconditions = null;
-            List<Predicate> lPre = new List<Predicate>();
+            List<Predicate> lPre;
             if (pa.Preconditions != null)
                 lPre = new List<Predicate>(pa.Preconditions.GetAllPredicates());
+            else
+                lPre = new List<Predicate>();
             List<Dictionary<string, Constant>> lBindings = FindValidBindings(lToBind, lPre, lPredicates, bContainsNegations);
             foreach (var dBindings in lBindings) 
             {
