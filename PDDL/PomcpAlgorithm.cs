@@ -150,7 +150,7 @@ namespace PDDL
             }
             return -1.0;
         }
-
+        /*
         public List<Action> FindPlan()
         {
             List<Action> Plan = new List<Action>();
@@ -176,6 +176,35 @@ namespace PDDL
                 PomcpNode NewObservationPomcpNode = NextActionPomcpNode.Childs[((ActionPomcpNode)NextActionPomcpNode).GetObservationsHash(PredicatsObservation)];
                 Root = (ObservationPomcpNode)NewObservationPomcpNode;
             }
+            return Plan;
+        }
+        */
+        public List<Action> FindPlan()
+        {
+            List<Action> Plan = new List<Action>();
+            Search();
+            State CurrentState = Problem.GetInitialBelief().ChooseState(true);
+            CurrentState.GroundAllActions();
+            while (!Problem.IsGoalState(CurrentState))
+            {
+                Action bestValidAction = null;
+                double bestScore = Double.MinValue;
+                foreach (PomcpNode pn in Root.Childs.Values)
+                {
+                    ActionPomcpNode actionNode = pn as ActionPomcpNode;
+                    if (pn.Value > bestScore && CurrentState.AvailableActions.Contains(actionNode.Action))
+                    {
+                        bestValidAction = actionNode.Action;
+                        bestScore = pn.Value;
+                    }
+
+                }
+
+                CurrentState = CurrentState.Apply(bestValidAction);
+                CurrentState.GroundAllActions();
+                Plan.Add(bestValidAction);
+            }
+
             return Plan;
         }
     }
