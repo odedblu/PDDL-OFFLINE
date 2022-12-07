@@ -9,18 +9,16 @@ namespace PDDL
 {
     internal class HAddRolloutPolicy : IRolloutPolicy
     {
-        public Dictionary<State, Action> ResultCache { get; set; }
         public Dictionary<HashSet<Predicate>, List<Action>> DomainAvailableActionsCache { get; set; }
-
+        public Dictionary<Tuple<int, int>, HashSet<Predicate>> NextLevelHAddCache { get; set; }
         public HAddRolloutPolicy()
         {
-            ResultCache = new Dictionary<State, Action>();
             DomainAvailableActionsCache = new Dictionary<HashSet<Predicate>, List<Action>>(HashSet<Predicate>.CreateSetComparer());
+            NextLevelHAddCache = new Dictionary<Tuple<int, int>, HashSet<Predicate>>();
         }
 
         public Action ChooseAction(State s)
         {
-            if(ResultCache.ContainsKey(s)) return ResultCache[s];
 
             Dictionary<Action, int> ActionsScores = new Dictionary<Action, int>();
             HashSet<Predicate> GoalPredicates = s.Problem.Goal.GetAllPredicates();
@@ -43,24 +41,35 @@ namespace PDDL
                 
                 ActionsScores.Add(action, hAddSum);
             }
-
-            Action BestAction = null;
             int BestActionScore = int.MaxValue;
             foreach(KeyValuePair<Action,int> kvp in ActionsScores)
             {
                 if(kvp.Value < BestActionScore)
                 {
-                    BestAction = kvp.Key;
                     BestActionScore = kvp.Value;
                 }
             }
-            if(BestAction == null)
+            HashSet<Action> bestActions = new HashSet<Action>();
+            foreach (KeyValuePair<Action, int> kvp in ActionsScores)
             {
-                Random rnd = new Random();
+                if (kvp.Value == BestActionScore)
+                {
+                    bestActions.Add(kvp.Key);
+                }
+            }
+            Random rnd = new Random();
+            Action BestAction = null;
+
+            if (bestActions.Count == 0)
+            {
                 int selectedIndex = rnd.Next(ActionsScores.Count());
                 BestAction = ActionsScores.ElementAt(selectedIndex).Key;
             }
-            ResultCache.Add(s, BestAction);
+            else
+            {
+                int selectedIndex = rnd.Next(bestActions.Count());
+                BestAction = bestActions.ElementAt(selectedIndex);
+            }
             return BestAction;
         }
 
@@ -95,6 +104,8 @@ namespace PDDL
 
         private HashSet<Predicate> GetNextLevelHaddPredicates(HashSet<Predicate> StartPredicates, List<Action> AvailableActions)
         {
+            Tuple<int, int> CacheKey = new Tuple<int, int>(GetEnumarbleHashCode(StartPredicates), GetEnumarbleHashCode(AvailableActions));
+            if(NextLevelHAddCache.ContainsKey(CacheKey)) return NextLevelHAddCache[CacheKey];
             HashSet<Predicate> NextLevelPredicates = new HashSet<Predicate>(StartPredicates);
             foreach(Action action in AvailableActions)
             {
@@ -127,6 +138,7 @@ namespace PDDL
                     }
                 }
             }
+            NextLevelHAddCache[CacheKey] = NextLevelPredicates;
             return NextLevelPredicates;
         }
 
@@ -156,6 +168,14 @@ namespace PDDL
             }
         }
 
-        
+        private int GetEnumarbleHashCode<T>(IEnumerable<T> values)
+        {
+            int hash = 19;
+            foreach (var subObject in values)
+            {
+                hash = hash * 31 + subObject.GetHashCode();
+            }
+            return hash;
+        }
     }
 }

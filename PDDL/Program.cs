@@ -989,7 +989,7 @@ namespace PDDL
             Debug.Listeners.Add(new TextWriterTraceListener(new StreamWriter("debug.log")));
             string sBenchmarkPath = BASE_PATH + @"\CLG_benchmarks\";
             Path = BASE_PATH + @"\PDDL\";
-            string domainName = "Blocks3";
+            string domainName = "localize3";
             Parser domainParser = new Parser();
             Domain parsedDomain = domainParser.ParseDomain(String.Format(@"{0}\{1}\d.pddl", sBenchmarkPath, domainName));
             Problem parsedProblem = domainParser.ParseProblem(String.Format(@"{0}\{1}\p.pddl", sBenchmarkPath, domainName), parsedDomain);
@@ -998,12 +998,12 @@ namespace PDDL
             //IRolloutPolicy RolloutPolicy = new GoalPredicateAddRolloutPolicy();
             IRolloutPolicy RolloutPolicy = new HAddRolloutPolicy();
 
-            IActionSelectPolicy ActionSelectPolicy = new UCBValueActionSelectPolicy(20.0);
+            IActionSelectPolicy ActionSelectPolicy = new UCBValueActionSelectPolicy(200.0);
             IActionSelectPolicy FinalActionSelectPolicy = new MaxValueActionSelectPolicy();
 
             ObservationPomcpNode root = new ObservationPomcpNode();
-            PomcpAlgorithm pomcpAlgorithm = new PomcpAlgorithm(0.95,0.1,10000,parsedProblem,root,FinalActionSelectPolicy,ActionSelectPolicy,RolloutPolicy);
-            List<Action> plan = pomcpAlgorithm.FindPlan();
+            PomcpAlgorithm pomcpAlgorithm = new PomcpAlgorithm(0.95,0.05,3001,parsedProblem,root,FinalActionSelectPolicy,ActionSelectPolicy,RolloutPolicy);
+             List<Action> plan = pomcpAlgorithm.FindPlan();
             foreach (Action action in plan)
             {
                 Console.WriteLine(action.Name);

@@ -921,7 +921,7 @@ namespace PDDL
                     while (lAssignment == null)
                     {
                         //Debug.Write(".");
-                        lAssignment = ChooseHiddenPredicates(m_lHiddenFormulas, true);
+                        lAssignment = ChooseHiddenPredicates(m_lHiddenFormulas, false); // to start the same every time or not.
                     }
                     Debug.WriteLine("");
                     foreach (Predicate p in lAssignment)

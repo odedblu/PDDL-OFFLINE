@@ -31,7 +31,7 @@ namespace PDDL
             RolloutPolicy = rolloutPolicy;
         }
 
-        public Tuple<State, Action> Search()
+        public Tuple<State, Action> Search(bool print_action_layer_values=false)
         {
             BelifeParticles RootBelifeParticles = Root.ParticleFilter;
             State StartState = null;
@@ -60,6 +60,7 @@ namespace PDDL
                 }
                 Simulate(StartState, Root, 0);
             }
+            if(print_action_layer_values) PrintActionLayer(Root);
             BestCurrentAction = FinalActionSelectPolicy.SelectBestAction(Root);
             SearchResult = new Tuple<State, Action>(StartState, BestCurrentAction);
             return SearchResult;
@@ -78,7 +79,7 @@ namespace PDDL
                 foreach(Action action in state.AvailableActions)
                 {
 
-                    if (action.Preconditions != null && action.Preconditions.IsTrue(state.Predicates))
+                    if (action.Preconditions == null || (action.Preconditions != null && action.Preconditions.IsTrue(state.Predicates)))
                     {
                         ActionPomcpNode actionPomcpNode = new ActionPomcpNode((ObservationPomcpNode)CurrentRoot, action);
                         ((ObservationPomcpNode)CurrentRoot).AddActionPomcpNode(actionPomcpNode);
@@ -142,7 +143,7 @@ namespace PDDL
             //if (state == null) return Double.MinValue;
             if (state != null && Problem.IsGoalState(state))
             {
-                return 100.0;
+                return 10.0;
             }
             else
             {
@@ -182,30 +183,58 @@ namespace PDDL
         public List<Action> FindPlan()
         {
             List<Action> Plan = new List<Action>();
-            Search();
             State CurrentState = Problem.GetInitialBelief().ChooseState(true);
+            Console.WriteLine(CurrentState);
             CurrentState.GroundAllActions();
             while (!Problem.IsGoalState(CurrentState))
             {
+                Search(true);
                 Action bestValidAction = null;
                 double bestScore = Double.MinValue;
+                ActionPomcpNode bestActionNode = null;
                 foreach (PomcpNode pn in Root.Childs.Values)
                 {
                     ActionPomcpNode actionNode = pn as ActionPomcpNode;
+                    
                     if (pn.Value > bestScore && CurrentState.AvailableActions.Contains(actionNode.Action))
                     {
                         bestValidAction = actionNode.Action;
                         bestScore = pn.Value;
+                        bestActionNode = actionNode;
                     }
 
                 }
 
                 CurrentState = CurrentState.Apply(bestValidAction);
+
+                Formula observation = null;
+                if (bestValidAction.Observe != null)
+                {
+                    observation = CurrentState.Observe(bestValidAction.Observe);
+                }
+                List<Predicate> PredicatsObservation = new List<Predicate>();
+                if (observation != null)
+                {
+                    PredicatsObservation = observation.GetAllPredicates().ToList();
+                }
+                
                 CurrentState.GroundAllActions();
                 Plan.Add(bestValidAction);
+                ObservationPomcpNode NextObservationPomcpNode = bestActionNode.Childs[bestActionNode.GetObservationsHash(PredicatsObservation)] as ObservationPomcpNode;
+                Root = NextObservationPomcpNode;
             }
 
             return Plan;
+        }
+
+
+        private void PrintActionLayer(PomcpNode RootNode)
+        {
+            foreach(PomcpNode child in Root.Childs.Values)
+            {
+                ActionPomcpNode actionChild = child as ActionPomcpNode;
+                Console.WriteLine($"Action: {actionChild.Action.Name}, Value: {actionChild.Value}, Visits: {actionChild.VisitedCount}.");
+            }
         }
     }
 }
