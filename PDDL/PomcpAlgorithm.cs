@@ -183,10 +183,11 @@ namespace PDDL
         public List<Action> FindPlan()
         {
             List<Action> Plan = new List<Action>();
-            State CurrentState = Problem.GetInitialBelief().ChooseState(true);
-            Console.WriteLine(CurrentState);
+            // State CurrentState = Problem.GetInitialBelief().ChooseState(true);
+            PartiallySpecifiedState CurrentState = new PartiallySpecifiedState(Problem.GetInitialBelief());
+            Console.WriteLine(string.Join(",", CurrentState.Observed));
             CurrentState.GroundAllActions();
-            while (!Problem.IsGoalState(CurrentState))
+            while (!Problem.IsGoalState(CurrentState.UnderlyingEnvironmentState))
             {
                 Search(true);
                 Action bestValidAction = null;
@@ -194,6 +195,7 @@ namespace PDDL
                 ActionPomcpNode bestActionNode = null;
                 foreach (PomcpNode pn in Root.Childs.Values)
                 {
+
                     ActionPomcpNode actionNode = pn as ActionPomcpNode;
                     
                     if (pn.Value > bestScore && CurrentState.AvailableActions.Contains(actionNode.Action))
@@ -204,14 +206,8 @@ namespace PDDL
                     }
 
                 }
-
-                CurrentState = CurrentState.Apply(bestValidAction);
-
-                Formula observation = null;
-                if (bestValidAction.Observe != null)
-                {
-                    observation = CurrentState.Observe(bestValidAction.Observe);
-                }
+                Formula observation;
+                CurrentState = CurrentState.Apply(bestValidAction, out observation);
                 List<Predicate> PredicatsObservation = new List<Predicate>();
                 if (observation != null)
                 {
