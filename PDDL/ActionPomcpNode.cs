@@ -29,13 +29,13 @@ namespace PDDL
             Action = action;
         }
 
-        public ObservationPomcpNode AddObservationChilds(List<Predicate> Observations)
+        public ObservationPomcpNode AddObservationChilds(List<Predicate> Observations, PartiallySpecifiedState partiallySpecifiedState)
         {
             if (Childs.ContainsKey(GetObservationsHash(Observations)))
             {
                 return (ObservationPomcpNode)Childs[GetObservationsHash(Observations)];
             }
-            ObservationPomcpNode observationPomcpNode = new ObservationPomcpNode(this, Observations);
+            ObservationPomcpNode observationPomcpNode = new ObservationPomcpNode(this, Observations, partiallySpecifiedState);
             int ObservationsHash = GetObservationsHash(Observations);
             Childs.Add(ObservationsHash, observationPomcpNode);
             return observationPomcpNode;

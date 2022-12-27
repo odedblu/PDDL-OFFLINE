@@ -11,8 +11,9 @@ namespace PDDL
 
         public BelifeParticles ParticleFilter;
         public List<Predicate> ObservedPredicates;
+        public PartiallySpecifiedState PartiallySpecifiedState;
 
-        public ObservationPomcpNode()
+        public ObservationPomcpNode(PartiallySpecifiedState partiallySpecifiedState)
         {
             Parent = null;
             Childs = new Dictionary<int, PomcpNode>();
@@ -20,9 +21,10 @@ namespace PDDL
             Value = 0;
             ParticleFilter = new BelifeParticles();
             ObservedPredicates = null;
+            PartiallySpecifiedState = partiallySpecifiedState;
         }
 
-        public ObservationPomcpNode(ActionPomcpNode ActionParentNode, List<Predicate> Observed)
+        public ObservationPomcpNode(ActionPomcpNode ActionParentNode, List<Predicate> Observed, PartiallySpecifiedState partiallySpecifiedState)
         {
             Parent = ActionParentNode;
             Childs = new Dictionary<int, PomcpNode>();
@@ -31,6 +33,7 @@ namespace PDDL
             ParticleFilter = new BelifeParticles();
             ObservedPredicates = new List<Predicate>(); 
             foreach (Predicate Predicate in Observed) ObservedPredicates.Add(Predicate);
+            PartiallySpecifiedState = partiallySpecifiedState;
         }
 
 

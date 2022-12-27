@@ -1105,7 +1105,7 @@ namespace PDDL
             return WriteTaggedDomainAndProblem(sDomainFile, sProblemFile, cfGoal, new List<Action>(), out cTags, out msModels);
         }
 
-        private State GetCurrentState(List<Predicate> lPredicates)
+        public State GetCurrentState()
         {
             State s = new State(Problem);
             foreach (Predicate p in Observed)
