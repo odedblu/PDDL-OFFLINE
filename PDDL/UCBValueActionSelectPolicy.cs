@@ -16,7 +16,7 @@ namespace PDDL
             this.C = C;
         }
 
-        public Action SelectBestAction(PomcpNode SelectionNode)
+        public Action SelectBestAction(PomcpNode SelectionNode, State CurrentState)
         {
             Dictionary<int, PomcpNode> Childrens = SelectionNode.Childs;
             if (Childrens.Count == 0)
@@ -42,7 +42,7 @@ namespace PDDL
                 {
                     ChildrenUCBScore = Children.Value + C * Math.Sqrt(Math.Log(SelectionNode.VisitedCount) / (double)Children.VisitedCount);
                 }
-                if (MaxUCBValue < ChildrenUCBScore)
+                if (MaxUCBValue < ChildrenUCBScore && CurrentState.AvailableActions.Contains(((ActionPomcpNode)Children).Action))
                 {
                     MaxUCBValue = ChildrenUCBScore;
                     BestAction = ((ActionPomcpNode)Children).Action;

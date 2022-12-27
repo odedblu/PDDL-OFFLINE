@@ -50,5 +50,10 @@ namespace PDDL
             }
             return resultHash;
         }
+
+        public string ToString()
+        {
+            return Action.Name;
+        }
     }
 }

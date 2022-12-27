@@ -1041,5 +1041,41 @@ namespace PDDL
                 }
             }
         }
+
+        private List<Predicate> m_lSATVariables = new List<Predicate>();
+        private Dictionary<Predicate, int> m_dSATVariables = new Dictionary<Predicate, int>();
+        public int GetPredicateIndex(Predicate p)
+        {
+            bool bNegate = p.Negation;
+            if (bNegate)
+                p = p.Negate();
+            if (!m_dSATVariables.ContainsKey(p))
+            {
+                m_dSATVariables[p] = m_dSATVariables.Count + 1;
+                m_lSATVariables.Add(p);
+            }
+            int idx = m_dSATVariables[p];
+            return idx;
+        }
+
+        public Predicate GetPredicateByIndex(int idx)
+        {
+            if (idx >= 0 && idx < m_lSATVariables.Count)
+                return m_lSATVariables[idx];
+            return null;
+        }
+
+        public string GetPredicateString(Predicate p)
+        {
+            int idx = GetPredicateIndex(p);
+            if (p.Negation)
+                return "-" + idx;
+            return "" + idx;
+        }
+
+        public int GetSATVariablesCount()
+        {
+            return m_dSATVariables.Count;
+        }
     }
 }

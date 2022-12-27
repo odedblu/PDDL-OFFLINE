@@ -8,7 +8,7 @@ namespace PDDL
 {
     internal class MaxValueActionSelectPolicy : IActionSelectPolicy
     {
-        public Action SelectBestAction(PomcpNode SelectionNode)
+        public Action SelectBestAction(PomcpNode SelectionNode, State CurrentState)
         {
             Dictionary<int, PomcpNode> Childrens = SelectionNode.Childs;
             if(Childrens.Count == 0)

@@ -33,16 +33,16 @@ namespace PDDL
             foreach (Predicate Predicate in Observed) ObservedPredicates.Add(Predicate);
         }
 
-        public Action GetBestAction(IActionSelectPolicy actionSelectPolicy)
-        {
-            return actionSelectPolicy.SelectBestAction(this);
-        }
-
 
         public void AddActionPomcpNode(ActionPomcpNode actionPomcpNode)
         {
             int actionHash = actionPomcpNode.Action.GetHashCode();
-            Childs.Add(actionHash, actionPomcpNode);
+            if(!Childs.ContainsKey(actionHash)) Childs.Add(actionHash, actionPomcpNode);
+        }
+
+        public string ToString()
+        {
+            return string.Join(", ", ObservedPredicates);
         }
     }
 }

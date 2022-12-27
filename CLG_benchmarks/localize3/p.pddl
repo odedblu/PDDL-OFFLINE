@@ -9,10 +9,10 @@
       (at p1-2) 
       (at p3-2) 
       (at p1-3)
-      (at p3-3)
+	  (at p3-3)
       (at p3-1)
       (at p1-1) )
 
   )
  )
-    (:goal  (at p3-3)))
+    (:goal  (at p2-3)))

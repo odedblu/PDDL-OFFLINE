@@ -12,7 +12,7 @@ namespace PDDL
 {
     class Program
     {
-        public static string BASE_PATH = @"C:\Users\oded1\OneDrive\Desktop\code\PDDL-OFFLINE";
+        public static string BASE_PATH = @"C:\Users\odedblu\source\repos\PDDL-OFFLINE";
         public static string Path;
         public static string ResultsFile = "Results.txt";
 #if DEBUG
@@ -984,7 +984,14 @@ namespace PDDL
 
         static void Main(string[] args)
         {
-            
+
+            // Run constants
+            double EXPLORATION_FACTOR_UCB = 550.0;
+            double DISCOUNT_FACTOR = 0.99;
+            double DEPTH_THRESHOLD = 0.7;
+            int SIMULATIONS = 10001;
+
+
             Debug.Listeners.Add(new TextWriterTraceListener(Console.Out));
             Debug.Listeners.Add(new TextWriterTraceListener(new StreamWriter("debug.log")));
             string sBenchmarkPath = BASE_PATH + @"\CLG_benchmarks\";
@@ -998,12 +1005,12 @@ namespace PDDL
             //IRolloutPolicy RolloutPolicy = new GoalPredicateAddRolloutPolicy();
             IRolloutPolicy RolloutPolicy = new HAddRolloutPolicy();
 
-            IActionSelectPolicy ActionSelectPolicy = new UCBValueActionSelectPolicy(200.0);
+            IActionSelectPolicy ActionSelectPolicy = new UCBValueActionSelectPolicy(EXPLORATION_FACTOR_UCB);
             IActionSelectPolicy FinalActionSelectPolicy = new MaxValueActionSelectPolicy();
 
             ObservationPomcpNode root = new ObservationPomcpNode();
-            PomcpAlgorithm pomcpAlgorithm = new PomcpAlgorithm(0.95,0.3,10001,parsedProblem,root,FinalActionSelectPolicy,ActionSelectPolicy,RolloutPolicy);
-             List<Action> plan = pomcpAlgorithm.FindPlan();
+            PomcpAlgorithm pomcpAlgorithm = new PomcpAlgorithm(DISCOUNT_FACTOR, DEPTH_THRESHOLD, SIMULATIONS, parsedProblem,root,FinalActionSelectPolicy,ActionSelectPolicy,RolloutPolicy);
+             List<Action> plan = pomcpAlgorithm.FindPlan(true);
             foreach (Action action in plan)
             {
                 Console.WriteLine(action.Name);

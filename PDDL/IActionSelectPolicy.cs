@@ -8,6 +8,6 @@ namespace PDDL
 {
     internal interface IActionSelectPolicy
     {
-        Action SelectBestAction(PomcpNode SelectionNode); 
+        Action SelectBestAction(PomcpNode SelectionNode, State CurrentState); 
     }
 }

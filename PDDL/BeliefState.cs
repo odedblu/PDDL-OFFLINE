@@ -5,7 +5,7 @@ using System.Text;
 using System.Diagnostics;
 using System.IO;
 //using Microsoft.Z3;
-//using Microsoft.SolverFoundation.Solvers;
+using Microsoft.SolverFoundation.Solvers;
 //using Microsoft.SolverFoundation.Services;
 //using Gurobi;
 //using Microsoft.SolverFoundation.Solvers;
@@ -876,41 +876,7 @@ namespace PDDL
         public State ChooseState(bool bRemoveNegativePredicates)
         {
             State s = new State(Problem);
-            if (Problem.Domain.Name == "mines4")
-            {
-                string[] a = new string[]{
-                         "(obs0-at p1-1)",
-                        "(obs0-at p2-1)",
-                        "(obs2-at p3-1)",
-                        "(mine-at p4-1)",
-                        "(obs1-at p4-1)",
-                        "(obs2-at p1-2)",
-                        "(obs2-at p2-2)",
-                        "(obs3-at p3-2)",
-                        "(mine-at p4-2)",
-                        "(obs1-at p4-2)",
-                        "(mine-at p1-3)",
-                        "(obs1-at p1-3)",
-                        "(mine-at p2-3)",
-                        "(obs1-at p2-3)",
-                        "(obs2-at p3-3)",
-                        "(obs1-at p4-3)",
-                        "(obs2-at p1-4)",
-                        "(obs2-at p2-4)",
-                        "(obs1-at p3-4)",
-                        "(obs0-at p4-4)"};
-                foreach (GroundedPredicate p in m_lObserved)
-                    s.AddPredicate(p);
-                foreach (string str in a)
-                {
-                    string[] a1 = str.Replace("(","").Replace(")","").Split(' ');
-                    GroundedPredicate gp = new GroundedPredicate(a1[0]);
-                    gp.AddConstant(new Constant("pos", a1[1]));
-                    s.AddPredicate(gp);
-                }
-
-            }
-            else if (SDRPlanner.SimulationStartState == null || UnderlyingEnvironmentState != null)
+            if (SDRPlanner.SimulationStartState == null || UnderlyingEnvironmentState != null)
             {
                 if (Problem.Name.Contains("Large"))
                     s = ChooseStateForLargeDomains();
@@ -923,7 +889,6 @@ namespace PDDL
                         //Debug.Write(".");
                         lAssignment = ChooseHiddenPredicates(m_lHiddenFormulas, false); // to start the same every time or not.
                     }
-                    Debug.WriteLine("");
                     foreach (Predicate p in lAssignment)
                     {
                         s.AddPredicate(p);
@@ -1458,11 +1423,10 @@ namespace PDDL
                     lCanonicalOneofPredicates.Add(pCanonical);
 
             }
-            if (!SDRPlanner.ComputeCompletePlanTree)
-            {
-                lCanonicalPredicates = Permute(lCanonicalPredicates);
-                lCanonicalOneofPredicates = Permute(lCanonicalOneofPredicates);
-            }
+            
+            lCanonicalPredicates = Permute(lCanonicalPredicates);
+            lCanonicalOneofPredicates = Permute(lCanonicalOneofPredicates);
+            
             List<Predicate> lToAssign = new List<Predicate>();
             foreach (Predicate p in lCanonicalOneofPredicates)
                 if (!lToAssign.Contains(p))
@@ -1680,9 +1644,8 @@ namespace PDDL
                 return lAssignment;//BUGBUG - does not work - need to check why!!
             Predicate pCurrent = lUnknown.First();
             lUnknown.Remove(pCurrent);
-            if (!SDRPlanner.ComputeCompletePlanTree)
-                if (RandomGenerator.NextDouble() < 0.5)
-                    pCurrent = pCurrent.Negate();
+            if (RandomGenerator.NextDouble() < 0.5)
+                pCurrent = pCurrent.Negate();
             List<Predicate> lNewHidden = new List<Predicate>(lUnknown);
             List<Predicate> lNewAssignment = new List<Predicate>(lAssignment);
             List<CompoundFormula> lReduced = AddAssignment(lHidden, lNewAssignment, lNewHidden, pCurrent);
@@ -2637,13 +2600,16 @@ namespace PDDL
         public List<List<Predicate>> RunSatSolver(List<Formula> lFormulas, int cAttempts, List<Predicate> lProblematicTag)
         {
             HashSet<Predicate> lPartialAssignment = new HashSet<Predicate>();
+
+
             if (!ApplyUnitPropogation(lFormulas, lPartialAssignment))
                 return new List<List<Predicate>>();
-            bool bAllNull  = true;
+            bool bAllNull = true;
 
-            File.Delete(Problem.Domain.Path + "solution.sat");
-            File.Delete(Problem.Domain.Path + "problem.sat");
-            File.Delete(Problem.Domain.Path + "problem.sat.debug");
+
+            if (cAttempts > 1)
+                Debug.WriteLine("*");
+
             DateTime dtStart = DateTime.Now;
             List<List<Predicate>> lAssignments = new List<List<Predicate>>();
 
@@ -2655,231 +2621,192 @@ namespace PDDL
                 lAssignments.Add(new List<Predicate>(lPartialAssignment));
                 return lAssignments;
             }
-            
+
+
+
             List<Predicate> lAssignment = lProblematicTag;
-            while (cAttempts > 0)
+
+            if (lAssignment != null)
             {
-                if (lAssignment != null)
+                CompoundFormula cfOr = new CompoundFormula("or");
+                foreach (Predicate pAssigned in lAssignment)
+                    cfOr.AddOperand(pAssigned.Negate());
+                lFormulas.Add(cfOr);
+            }
+
+            List<List<int>> lIntCluases = GetCNFClauses(lFormulas);
+            HashSet<int> lParticipatingVariables = new HashSet<int>();
+            foreach (List<int> lClause in lIntCluases)
+            {
+                foreach (int i in lClause)
                 {
-                    CompoundFormula cfOr = new CompoundFormula("or");
-                    foreach (Predicate pAssigned in lAssignment)
-                        cfOr.AddOperand(pAssigned.Negate());
-                    lFormulas.Add(cfOr);
+                    if (i != 0)
+                        lParticipatingVariables.Add(Math.Abs(i));
                 }
-                
-                StreamWriter sw = new StreamWriter(Problem.Domain.Path + "problem.sat");
-                HashSet<int> lParticipatingVariables = WriteCNF(lFormulas, sw);
-                sw.Close();
-                
+            }
 
 
-                foreach (Process pFF in Process.GetProcessesByName("MiniSat.exe"))
+
+            ConstraintSystem solver = ConstraintSystem.CreateSolver();
+            Dictionary<int, CspTerm> dVariables = new Dictionary<int, CspTerm>();
+            foreach (int idx in lParticipatingVariables)
+                dVariables[idx] = solver.CreateBoolean("v" + idx);
+            foreach (List<int> lClause in lIntCluases)
+            {
+                List<CspTerm> lTerms = new List<CspTerm>();
+                foreach (int v in lClause)
                 {
-                    if (pFF.ProcessName.ToLower().Contains("MiniSat.exe"))
-                        pFF.Kill();
-                }
-                Process p = new Process();
-                p.StartInfo.WorkingDirectory = Problem.Domain.Path;
-                p.StartInfo.FileName = Program.BASE_PATH + @"\Planners\" + "MiniSat.exe";
-                p.StartInfo.Arguments = Problem.Domain.Path + "problem.sat " + Problem.Domain.Path + "solution.sat";
-                p.StartInfo.UseShellExecute = false;
-                p.StartInfo.RedirectStandardOutput = true;
-                p.StartInfo.RedirectStandardInput = false;
-                p.StartInfo.RedirectStandardError = true;
-
-                //p.OutputDataReceived += new DataReceivedEventHandler(OutputHandler);
-                m_sFFOutput = "";
-
-                DateTime dtBeforeMiniSat = DateTime.Now;
-                p.Start();
-
-                //p.BeginOutputReadLine();
-                /*
-                msProblem.Position = 0;
-                BinaryReader srModels = new BinaryReader(msProblem);
-
-                while (srModels.PeekChar() >= 0)
-                    p.StandardInput.BaseStream.WriteByte(srModels.ReadByte());
-                p.StandardInput.BaseStream.WriteByte(0);
-                
-                char[] aChars = GetCNF(lFormulas);
-                foreach (char c in aChars)
-                {
-                    p.StandardInput.Write(c);
-                    if (c == (char)0)
-                        break;
-                }*/
-                //WriteCNF(lFormulas, p.StandardInput);
-
-                //iSize += p.StandardInput.BaseStream.Length / 1000;
-
-                //p.StandardInput.Close();
-
-                if (!p.WaitForExit(1000 * 60 * 2))//2 minutes max
-                {
-                    p.Kill();
-                    return null;
-                }
-                tsTotalRunMiniSat += DateTime.Now - dtBeforeMiniSat;
-
-                try
-                {
-                    StreamReader sr = new StreamReader(Problem.Domain.Path + "solution.sat");
-                    //StreamReader sr = p.StandardOutput;
-                    m_sFFOutput = sr.ReadToEnd();
-                    sr.Close();
-
-                    if (m_sFFOutput.Contains("UNSAT"))
-                        break;
-                    else
+                    int idx = Math.Abs(v);
+                    if (idx != 0)
                     {
-                        if (m_sFFOutput.StartsWith("SAT"))
-                            m_sFFOutput = m_sFFOutput.Substring(4);
-
-                        lAssignment = new List<Predicate>(lPartialAssignment);
-                        foreach (string sVariable in m_sFFOutput.Split(' '))
-                        {
-                            bool bNegate = false;
-                            int idx = int.Parse(sVariable);
-                            if (idx < 0)
-                            {
-                                idx *= -1;
-                                bNegate = true;
-                            }
-                            if (lParticipatingVariables.Contains(idx))
-                            {
-                                Predicate pAssigned = m_lSATVariables[idx - 1];
-                                if (bNegate)
-                                    pAssigned = pAssigned.Negate();
-                                lAssignment.Add(pAssigned);
-                            
-                            }
-                        }
-
-                        lAssignments.Add(lAssignment);
+                        CspTerm var = dVariables[idx];
+                        if (v > 0)
+                            lTerms.Add(var);
+                        else
+                            lTerms.Add(solver.Not(var));
                     }
-                    cAttempts--;
+
                 }
-                catch (Exception e)
+                CspTerm tOr = solver.Or(lTerms.ToArray());
+                solver.AddConstraints(tOr);
+            }
+            ConstraintSolverSolution solution = solver.Solve();
+
+            if (solution.HasFoundSolution)
+            {
+                List<Predicate> lSolution = new List<Predicate>();
+
+                foreach (KeyValuePair<int, CspTerm> p in dVariables)
                 {
-                    Console.WriteLine("BUGBUG");
+                    int idx = p.Key - 1;
+                    if (idx < Problem.GetSATVariablesCount())
+                    {
+                        Predicate pAssigned = Problem.GetPredicateByIndex(idx);
+                        int value = (int)solution[p.Value];
+                        if (value == 0)
+                            lSolution.Add(pAssigned.Negate());
+                        else
+                            lSolution.Add(pAssigned);
+                    }
                 }
+
+
+
+                lAssignments.Add(lSolution);
             }
             tsTotalRunSatSolver += DateTime.Now - dtStart;
             cRuns++;
 
-            //if (cRuns % 10 == 0)
-            //    Console.WriteLine("\n" + cRuns + ")" + tsTotalRunSatSolver.TotalSeconds / cRuns + ", " + tsTotalRunMiniSat.TotalSeconds / cRuns + ", " + iSize / cRuns);
 
             return lAssignments;
         }
 
 
-            /*
-        public List<List<Predicate>> RunSatSolver(List<Formula> lFormulas, int cAttempts, List<Predicate> lProblematicTag)
+        /*
+    public List<List<Predicate>> RunSatSolver(List<Formula> lFormulas, int cAttempts, List<Predicate> lProblematicTag)
+    {
+
+        ConstraintSystem s1 = ConstraintSystem.CreateSolver();
+        SolverContext context = SolverContext.GetContext();
+        Model model = context.CreateModel();
+
+        Decision d1 = new Decision(Microsoft.SolverFoundation.Services.Domain.Boolean, "v1");
+        Decision d2 = new Decision(Microsoft.SolverFoundation.Services.Domain.Boolean, "v2");
+        Decision d3 = new Decision(Microsoft.SolverFoundation.Services.Domain.Boolean, "v3");
+        Decision d4 = new Decision(Microsoft.SolverFoundation.Services.Domain.Boolean, "v4");
+
+        model.AddDecisions(d1, d2, d3, d4);
+
+        model.AddConstraint("c12", d1 != d2);
+        model.AddConstraint("c13", d1 != d3);
+        model.AddConstraint("c14", d1 != d4);
+        model.AddConstraint("c23", d2 != d3);
+        model.AddConstraint("c24", d2 != d4);
+        model.AddConstraint("c34", d3 != d4);
+
+        model.AddConstraint("c1234", d1 + d2 + d3 + d4 == 1);
+
+
+        Solution solution2 = context.Solve();
+        Console.WriteLine(d1);
+        Console.WriteLine(d2);
+        Console.WriteLine(d3);
+        Console.WriteLine(d4);
+        SolverContext context = SolverContext.GetContext();
+        Model model = context.CreateModel();
+        Dictionary<int,Decision> dDecisionVariables = new Dictionary<int,Decision>();
+        int iForumla = 0;
+        foreach (Formula f in lFormulas)
         {
-
-            ConstraintSystem s1 = ConstraintSystem.CreateSolver();
-            SolverContext context = SolverContext.GetContext();
-            Model model = context.CreateModel();
-
-            Decision d1 = new Decision(Microsoft.SolverFoundation.Services.Domain.Boolean, "v1");
-            Decision d2 = new Decision(Microsoft.SolverFoundation.Services.Domain.Boolean, "v2");
-            Decision d3 = new Decision(Microsoft.SolverFoundation.Services.Domain.Boolean, "v3");
-            Decision d4 = new Decision(Microsoft.SolverFoundation.Services.Domain.Boolean, "v4");
-
-            model.AddDecisions(d1, d2, d3, d4);
-
-            model.AddConstraint("c12", d1 != d2);
-            model.AddConstraint("c13", d1 != d3);
-            model.AddConstraint("c14", d1 != d4);
-            model.AddConstraint("c23", d2 != d3);
-            model.AddConstraint("c24", d2 != d4);
-            model.AddConstraint("c34", d3 != d4);
-
-            model.AddConstraint("c1234", d1 + d2 + d3 + d4 == 1);
-
-            
-            Solution solution2 = context.Solve();
-            Console.WriteLine(d1);
-            Console.WriteLine(d2);
-            Console.WriteLine(d3);
-            Console.WriteLine(d4);
-            SolverContext context = SolverContext.GetContext();
-            Model model = context.CreateModel();
-            Dictionary<int,Decision> dDecisionVariables = new Dictionary<int,Decision>();
-            int iForumla = 0;
-            foreach (Formula f in lFormulas)
+            if (f == null)
+                continue;
+            if (f is PredicateFormula)
             {
-                if (f == null)
-                    continue;
-                if (f is PredicateFormula)
+                Predicate p = ((PredicateFormula)f).Predicate;
+                int idx = GetPredicateIndex(p);
+                Decision d = null;
+                if (!dDecisionVariables.TryGetValue(idx, out d))
                 {
-                    Predicate p = ((PredicateFormula)f).Predicate;
-                    int idx = GetPredicateIndex(p);
-                    Decision d = null;
-                    if (!dDecisionVariables.TryGetValue(idx, out d))
-                    {
-                        d = new Decision(Microsoft.SolverFoundation.Services.Domain.Boolean, "V" + idx);
-                        dDecisionVariables[idx] = d;
-                        model.AddDecision(d);
-                    }
-                    model.AddConstraints("c" + iForumla, d == 1);
+                    d = new Decision(Microsoft.SolverFoundation.Services.Domain.Boolean, "V" + idx);
+                    dDecisionVariables[idx] = d;
+                    model.AddDecision(d);
+                }
+                model.AddConstraints("c" + iForumla, d == 1);
+            }
+            else
+            {
+                CompoundFormula cf = (CompoundFormula)f;
+                if (cf.IsSimpleFormula())
+                {
+                    Term t = GetClause(cf, model, dDecisionVariables);
+
+                    model.AddConstraints("c" + iForumla, t);
                 }
                 else
                 {
-                    CompoundFormula cf = (CompoundFormula)f;
-                    if (cf.IsSimpleFormula())
+                    CompoundFormula cfAnd = cf.ToCNF();
+                    int iSubFormula = 0;
+                    foreach (CompoundFormula cfSub in cfAnd.Operands)
                     {
-                        Term t = GetClause(cf, model, dDecisionVariables);
+                        Term t = GetClause(cfSub, model, dDecisionVariables);
 
-                        model.AddConstraints("c" + iForumla, t);
+                        model.AddConstraints("c" + iForumla + "." + iSubFormula, t);
+
                     }
-                    else
-                    {
-                        CompoundFormula cfAnd = cf.ToCNF();
-                        int iSubFormula = 0;
-                        foreach (CompoundFormula cfSub in cfAnd.Operands)
-                        {
-                            Term t = GetClause(cfSub, model, dDecisionVariables);
-
-                            model.AddConstraints("c" + iForumla + "." + iSubFormula, t);
-
-                        }
-                    }
-
-                    iForumla++;
                 }
+
+                iForumla++;
             }
-
-            //Solution sol = context.Solve(new ConstraintProgrammingDirective());
-            Solution sol = context.Solve();
-            List<List<Predicate>> lAssignments = new List<List<Predicate>>();
-            while (sol.Quality != SolverQuality.Infeasible)
-            {
-                
-                List<Predicate> lAssignment = new List<Predicate>();
-                foreach (Decision d in dDecisionVariables.Values)
-                {
-                    bool bNegate = false;
-                    int idx = int.Parse(d.Name.Substring(1));
-                    int val = (int)d.ToDouble();
-                    if (val == 0)
-                    {
-                        bNegate = true;
-                    }
-                    Predicate pAssigned = m_lSATVariables[idx - 1];
-                    if (bNegate)
-                        pAssigned = pAssigned.Negate();
-                    lAssignment.Add(pAssigned);
-
-                }
-                lAssignments.Add(lAssignment);
-                cAttempts--;
-            }
-
-            return lAssignments;
         }
+
+        //Solution sol = context.Solve(new ConstraintProgrammingDirective());
+        Solution sol = context.Solve();
+        List<List<Predicate>> lAssignments = new List<List<Predicate>>();
+        while (sol.Quality != SolverQuality.Infeasible)
+        {
+
+            List<Predicate> lAssignment = new List<Predicate>();
+            foreach (Decision d in dDecisionVariables.Values)
+            {
+                bool bNegate = false;
+                int idx = int.Parse(d.Name.Substring(1));
+                int val = (int)d.ToDouble();
+                if (val == 0)
+                {
+                    bNegate = true;
+                }
+                Predicate pAssigned = m_lSATVariables[idx - 1];
+                if (bNegate)
+                    pAssigned = pAssigned.Negate();
+                lAssignment.Add(pAssigned);
+
+            }
+            lAssignments.Add(lAssignment);
+            cAttempts--;
+        }
+
+        return lAssignments;
+    }
 
 */
         /*
