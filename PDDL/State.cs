@@ -11,7 +11,7 @@ namespace PDDL
         public IEnumerable<Predicate> Predicates { get { return m_lPredicates; } }
         protected HashSet<Predicate> m_lPredicates;
         public List<Action> AvailableActions { get; protected set; }
-        private State m_sPredecessor;
+        public State m_sPredecessor;
         public bool MaintainNegations { get; private set; }
         public Problem Problem { get; private set; }
         public int ID { get; private set; }

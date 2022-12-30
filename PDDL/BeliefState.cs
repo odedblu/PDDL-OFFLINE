@@ -122,6 +122,246 @@ namespace PDDL
             ID = bsCOUNT;
         }
 
+        public bool ConsistentWith(Formula fOriginal, bool bCheckingActionPreconditions)
+        {
+
+            Formula f = fOriginal.Reduce(Observed);
+            if (f.IsFalse(Observed))
+                return false;
+            if (f.IsTrue(Observed))
+                return true;
+
+            bool bValid = true;
+
+            CompoundFormula cf = null;
+            List<PredicateFormula> lPredicates = new List<PredicateFormula>();
+            List<CompoundFormula> lFormulas = new List<CompoundFormula>();
+            if (f is PredicateFormula)
+            {
+                lPredicates.Add((PredicateFormula)f);
+            }
+            else
+            {
+                cf = (CompoundFormula)f;
+                CompoundFormula cfCNF = (CompoundFormula)cf.ToCNF();
+                if (cfCNF.Operator == "and")
+                {
+                    foreach (Formula fSub in cfCNF.Operands)
+                    {
+                        if (fSub is PredicateFormula)
+                            lPredicates.Add((PredicateFormula)fSub);
+                        else
+                            lFormulas.Add((CompoundFormula)fSub);
+                    }
+                }
+                else
+                    lFormulas.Add(cfCNF);
+
+            }
+
+            //if we got a grounded predicate, whose value is not unknown, and its value is false, then it is inconsistent with the current state
+            if (lPredicates.Count > 0)
+            {
+                foreach (PredicateFormula pf in lPredicates)
+                {
+                    GroundedPredicate gp = (GroundedPredicate)pf.Predicate;
+                    bool bKnown = true;
+                    if (m_dMapPredicatesToFormulas.ContainsKey((GroundedPredicate)gp.Canonical()))
+                    {
+                        foreach (int idx in m_dMapPredicatesToFormulas[(GroundedPredicate)gp.Canonical()])
+                        {
+                            if (m_lHiddenFormulas[idx] != null)
+                            {
+                                bKnown = false;
+                                break;
+                            }
+                        }
+                    }
+                    if (bKnown)
+                    {
+                        if (!m_lObserved.Contains(gp) && !gp.Negation)
+                        {
+                            return false;
+                        }
+                    }
+                }
+            }
+
+            if (lFormulas.Count == 0)
+            {
+                HashSet<Predicate> lAssignment = new HashSet<Predicate>();
+                List<Formula> lHidden = new List<Formula>();
+                foreach (Formula fHidden in m_lHiddenFormulas)
+                    //if(fHidden != null)
+                    lHidden.Add(fHidden);
+                foreach (PredicateFormula pf in lPredicates)
+                {
+                    lHidden.Add(pf);
+                }
+                bValid = ApplyUnitPropogation(lHidden, lAssignment);
+                if (bValid && MaintainProblematicTag && bCheckingActionPreconditions)
+                {
+                    m_lProblematicTag = new List<Predicate>();
+                    foreach (Predicate p in lAssignment)
+                        m_lProblematicTag.Add(p);
+                }
+
+            }
+            else
+            {
+                if (lPredicates.Count > 0)
+                {
+                    HashSet<int> lIndexes = new HashSet<int>();
+                    List<Predicate> lKnown = new List<Predicate>();
+                    foreach (PredicateFormula pf in lPredicates)
+                    {
+                        if (m_dMapPredicatesToFormulas.ContainsKey((GroundedPredicate)pf.Predicate.Canonical()))
+                        {
+                            lKnown.Add(pf.Predicate);
+                            foreach (int idx in m_dMapPredicatesToFormulas[(GroundedPredicate)pf.Predicate.Canonical()])
+                                lIndexes.Add(idx);
+                        }
+                    }
+                    foreach (int idx in lIndexes)
+                    {
+                        if (m_lHiddenFormulas[idx] != null && m_lHiddenFormulas[idx].IsFalse(lKnown))
+                            bValid = false;
+                    }
+                }
+                else
+                {
+                    if (lFormulas.Count > 0)
+                    {
+                        List<Formula> lHidden = new List<Formula>(m_lHiddenFormulas);
+                        lHidden.AddRange(lFormulas);
+                        lHidden.AddRange(lPredicates);
+                        List<List<Predicate>> lConsistentAssignments = RunSatSolver(lHidden, 1);
+                        bValid = lConsistentAssignments.Count > 0;
+                        if (MaintainProblematicTag && bCheckingActionPreconditions)
+                            m_lProblematicTag = null;
+                        if (bValid)
+                        {
+                            if (MaintainProblematicTag && bCheckingActionPreconditions)
+                            {
+                                m_lProblematicTag = lConsistentAssignments[0];
+                            }
+                        }
+                        else
+                        {
+                            //we have just discovered something that is inconsistent with the initial belief, so we can add its negation to the initial belief
+                            AddReasoningFormula(f.Negate(), new HashSet<int>());
+                        }
+                        //MaintainProblematicTag = false;
+
+                    }
+                }
+            }
+            if (false)//for debugging the ongoing reduction of hidden formulas given observations - here I use the original formulas + the observed
+            {
+                List<Formula> lHidden = new List<Formula>(m_lOriginalHiddenFormulas);
+                foreach (GroundedPredicate gp in Observed)
+                    lHidden.Add(new PredicateFormula(gp));
+                lHidden.AddRange(lPredicates);
+                List<List<Predicate>> lConsistentAssignments = RunSatSolver(lHidden, 1);
+                bValid = lConsistentAssignments.Count > 0;
+                if (MaintainProblematicTag)
+                    m_lProblematicTag = null;
+                if (bValid)
+                {
+                    if (MaintainProblematicTag && bCheckingActionPreconditions)
+                    {
+                        m_lProblematicTag = lConsistentAssignments[0];
+                        /*
+                        foreach (CompoundFormula cfHidden in m_lOriginalHiddenFormulas)
+                        {
+                            if (cfHidden.ToString().Contains("obs1-at p2_1"))
+                                    Debug.WriteLine("*");
+                            Formula fReduced = cfHidden.Reduce(m_lProblematicTag);
+                            if (fReduced is PredicateFormula)
+                            {
+                                PredicateFormula pf = (PredicateFormula)fReduced;
+                                if (pf.Predicate.Name == "P_FALSE")
+                                    Debug.WriteLine("*");
+                                else if (pf.Predicate.Name != "P_TRUE" && !pf.Predicate.Negation)
+                                    Debug.WriteLine(pf);
+                                 
+                            }
+                        }
+                         * */
+                    }
+                }
+                //MaintainProblematicTag = false;
+                //return lConsistentAssignments.Count > 0;
+            }
+
+            if (MaintainProblematicTag && bCheckingActionPreconditions && bValid)
+            {
+                //filter the problematic tag
+                List<Predicate> lFiltered = new List<Predicate>();
+                Formula fCurrent = fOriginal, fReduced = null;
+                foreach (Predicate p in m_lProblematicTag)
+                {
+                    List<Predicate> lAssignment = new List<Predicate>();
+                    lAssignment.Add(p);
+                    fReduced = fCurrent.Reduce(lAssignment);
+                    if (!fReduced.Equals(fCurrent))
+                        lFiltered.Add(p);
+                    if (fReduced.IsTrue(null))
+                    {
+                        break;
+                    }
+                    fCurrent = fReduced;
+                }
+                m_lProblematicTag = lFiltered;
+                MaintainProblematicTag = false;
+            }
+            return bValid;
+        }
+        public bool AddObserved(Predicate p)
+        {
+            bool bNew = false;
+            if (p.Name == Domain.TRUE_PREDICATE)
+                return false;
+            Debug.Assert(p.Name != Domain.FALSE_PREDICATE, "Adding P_FALSE");
+
+#if DEBUG
+            if (UnderlyingEnvironmentState != null && 
+                ((p.Negation == false && !UnderlyingEnvironmentState.Contains(p)) || 
+                (p.Negation == true && UnderlyingEnvironmentState.Contains(p.Negate()))))
+                Console.WriteLine("Adding a predicate that doesn't exist");
+#endif 
+
+            Unknown.Remove(p.Canonical());
+            if (!m_lObserved.Contains(p))
+            {
+                Predicate pNegate = p.Negate();
+                if(m_lObserved.Contains(pNegate))
+                    m_lObserved.Remove(pNegate);
+                bNew = true;
+            }
+            m_lObserved.Add(p);
+            return bNew;
+        }
+
+
+        public bool ConsistentWith(Predicate p)
+        {
+
+            List<Predicate> lKnown = new List<Predicate>(Observed);
+            lKnown.Add(p);
+            Formula fReduced = m_cfCNFHiddenState.Reduce(lKnown);
+            if (fReduced.IsFalse(lKnown))
+                return false;
+            return true;
+            /*
+            List<Predicate> lKnown = new List<Predicate>();
+            lKnown.Add(p);
+            if (m_cfCNFHiddenState.IsFalse(lKnown))
+                return false;
+            return true;*/
+        }
+
+
         public bool ConsistentWith(Predicate p, bool bConsiderHiddenState)
         {
             foreach (Predicate pState in Observed)
@@ -164,148 +404,7 @@ namespace PDDL
             return true;
         }
 
-        public bool ConsistentWith(State s)
-        {
-            foreach (Predicate pState in s.Predicates)
-            {
-                if (!ConsistentWith(pState, false))
-                    return false;
-            }
-            return true;
-        }
 
-        public bool ConsistentWith(Formula fOriginal)
-        {
-            /*
-            CompoundFormula cfCNF = (CompoundFormula)m_cfCNFHiddenState.Clone();
-            cfCNF.AddOperand(f);
-            cfCNF = cfCNF.ToCNF();
-            if (cfCNF.IsFalse(Observed))
-            {
-                MaintainProblematicTag = false;
-                return false;
-            }
-             * */
-            Formula f = fOriginal.Reduce(Observed);
-            if (f.ToString().Contains(Domain.FALSE_PREDICATE))
-                return false;
-            if (f.ToString().Contains(Domain.TRUE_PREDICATE))
-                return true;
-            CompoundFormula cf = null;
-            List<PredicateFormula> lPredicates = new List<PredicateFormula>();
-            List<CompoundFormula> lFormulas = new List<CompoundFormula>();
-            if (f is PredicateFormula)
-            {
-                lPredicates.Add((PredicateFormula)f);
-            }
-            else
-            {
-                cf = (CompoundFormula)f;
-                CompoundFormula cfCNF = (CompoundFormula)cf.ToCNF();
-                if (cfCNF.Operator == "and")
-                {
-                    foreach (Formula fSub in cfCNF.Operands)
-                    {
-                        if (fSub is PredicateFormula)
-                            lPredicates.Add((PredicateFormula)fSub);
-                        else
-                            lFormulas.Add((CompoundFormula)fSub);
-                    }
-                }
-                else
-                    lFormulas.Add(cfCNF);
-
-            }
-
-            if (lPredicates.Count > 0)
-            {
-                HashSet<int> lIndexes = new HashSet<int>();
-                List<Predicate> lKnown = new List<Predicate>();
-                foreach (PredicateFormula pf in lPredicates)
-                {
-                    if (m_dMapPredicatesToFormulas.ContainsKey((GroundedPredicate)pf.Predicate.Canonical()))
-                    {
-                        lKnown.Add(pf.Predicate);
-                        foreach (int idx in m_dMapPredicatesToFormulas[(GroundedPredicate)pf.Predicate.Canonical()])
-                            lIndexes.Add(idx);
-                    }
-                }
-                foreach (int idx in lIndexes)
-                {
-                    if (m_lHiddenFormulas[idx] != null && m_lHiddenFormulas[idx].IsFalse(lKnown))
-                        return false;
-                }
-                
-            }            
-            if(true)
-            {
-                List<Formula> lHidden = new List<Formula>(m_lHiddenFormulas);
-                lHidden.AddRange(lFormulas);
-                lHidden.AddRange(lPredicates);
-                List<List<Predicate>> lConsistentAssignments = RunSatSolver(lHidden, 1);
-                if (MaintainProblematicTag)
-                    m_lProblematicTag = null;
-                if (lConsistentAssignments.Count > 0)
-                {
-                    if (MaintainProblematicTag)
-                    {
-                        m_lProblematicTag = lConsistentAssignments[0];
-                    }
-                }
-                else
-                {
-                    //we have just discovered something that is inconsistent with the initial belief, so we can add its negation to the initial belief
-                    AddReasoningFormula(f.Negate(), new HashSet<int>());
-                }
-                MaintainProblematicTag = false;
-                return lConsistentAssignments.Count > 0;
-            }
-            if (false)//for debugging the ongoing reduction of hidden formulas given observations - here I use the original formulas + the observed
-            {
-                List<Formula> lHidden = new List<Formula>(m_lOriginalHiddenFormulas);
-                foreach (GroundedPredicate gp in Observed)
-                    lHidden.Add(new PredicateFormula(gp));
-                lHidden.AddRange(lPredicates);
-                List<List<Predicate>> lConsistentAssignments = RunSatSolver(lHidden, 1);
-                if (MaintainProblematicTag)
-                    m_lProblematicTag = null;
-                if (lConsistentAssignments.Count > 0)
-                {
-                    if (MaintainProblematicTag)
-                    {
-                        m_lProblematicTag = lConsistentAssignments[0];
-                    }
-                }
-                MaintainProblematicTag = false;
-                return lConsistentAssignments.Count > 0;
-            }
-            return true;
-        }
-        public bool AddObserved(Predicate p)
-        {
-            bool bNew = false;
-            if (p.Name == Domain.TRUE_PREDICATE)
-                return false;
-            Debug.Assert(p.Name != Domain.FALSE_PREDICATE, "Adding P_FALSE");
-
-#if DEBUG
-            if (UnderlyingEnvironmentState != null && 
-                ((p.Negation == false && !UnderlyingEnvironmentState.Contains(p)) || 
-                (p.Negation == true && UnderlyingEnvironmentState.Contains(p.Negate()))))
-                Console.WriteLine("Adding a predicate that doesn't exist");
-#endif 
-
-            Unknown.Remove(p.Canonical());
-            if (!m_lObserved.Contains(p))
-            {
-                Predicate pNegate = p.Negate();
-                if(m_lObserved.Contains(pNegate))
-                    m_lObserved.Remove(pNegate);
-                bNew = true;
-            }
-            m_lObserved.Add(p);
-            return bNew;
-        }
         public void AddObserved(Formula f)
         {
             if (f is PredicateFormula)
@@ -1438,6 +1537,7 @@ namespace PDDL
             List<Predicate> lInitialAssignment = new List<Predicate>();
             if (bCheatUsingAt)
                 CheatUsingAtPredicate(lToAssign, lInitialAssignment);
+            RandomGenerator.Init();
 
             //ApplySimpleOneOfs(lOneOfs, lInitialAssignment, lCanonicalPredicates);
 
@@ -3263,22 +3363,6 @@ namespace PDDL
         }
          * */
 
-        public bool ConsistentWith(Predicate p)
-        {
-
-            List<Predicate> lKnown = new List<Predicate>(Observed);
-            lKnown.Add(p);
-            Formula fReduced = m_cfCNFHiddenState.Reduce(lKnown);
-            if (fReduced.IsFalse(lKnown))
-                return false;
-            return true;
-            /*
-            List<Predicate> lKnown = new List<Predicate>();
-            lKnown.Add(p);
-            if (m_cfCNFHiddenState.IsFalse(lKnown))
-                return false;
-            return true;*/
-        }
 
         int count_revisions = 0;
         public HashSet<int> ReviseInitialBelief(Formula fObserve, PartiallySpecifiedState pssLast)

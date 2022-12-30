@@ -3,4 +3,6 @@
 
 (oneof (good r1) (not (good r1)))
 
+(oneof (good r2) (not (good r2)))
 
+(or (good r0) (good r1) (good r2))

@@ -986,17 +986,17 @@ namespace PDDL
         {
 
             // Run constants
-            double EXPLORATION_FACTOR_UCB = 550.0;
+            double EXPLORATION_FACTOR_UCB = 300.0;
             double DISCOUNT_FACTOR = 0.95;
-            double DEPTH_THRESHOLD = 0.6;
-            int SIMULATIONS = 10001;
+            double DEPTH_THRESHOLD = 0.8;
+            int SIMULATIONS = 1000;
 
 
             Debug.Listeners.Add(new TextWriterTraceListener(Console.Out));
             Debug.Listeners.Add(new TextWriterTraceListener(new StreamWriter("debug.log")));
             string sBenchmarkPath = BASE_PATH + @"\CLG_benchmarks\";
             Path = BASE_PATH + @"\PDDL\";
-            string domainName = "localize3";
+            string domainName = "RockSample4-3";
             Parser domainParser = new Parser();
             Domain parsedDomain = domainParser.ParseDomain(String.Format(@"{0}\{1}\d.pddl", sBenchmarkPath, domainName));
             Problem parsedProblem = domainParser.ParseProblem(String.Format(@"{0}\{1}\p.pddl", sBenchmarkPath, domainName), parsedDomain);

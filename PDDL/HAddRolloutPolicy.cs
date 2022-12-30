@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -11,59 +12,75 @@ namespace PDDL
     {
         public Dictionary<HashSet<Predicate>, List<Action>> DomainAvailableActionsCache { get; set; }
         public Dictionary<Tuple<int, int>, HashSet<Predicate>> NextLevelHAddCache { get; set; }
+
+        public Dictionary<State, HashSet<Action>> StateResultCache { get; set; }
         public HAddRolloutPolicy()
         {
             DomainAvailableActionsCache = new Dictionary<HashSet<Predicate>, List<Action>>(HashSet<Predicate>.CreateSetComparer());
             NextLevelHAddCache = new Dictionary<Tuple<int, int>, HashSet<Predicate>>();
+            StateResultCache = new Dictionary<State, HashSet<Action>>();
         }
 
         public Action ChooseAction(State s)
         {
-
-            Dictionary<Action, int> ActionsScores = new Dictionary<Action, int>();
-            HashSet<Predicate> GoalPredicates = s.Problem.Goal.GetAllPredicates();
-            
-            s.GroundAllActions();
-            foreach(Action action in s.AvailableActions)
-            {
-                HashSet<Predicate> StatePredicates = new HashSet<Predicate>(s.Predicates);
-                if(action.Effects != null) StatePredicates.UnionWith(action.Effects.GetAllPredicates());
-                Dictionary<Predicate, int> ActionPredicatesScores = GetGoalPredicatesHaddLevel(GoalPredicates, StatePredicates, s.Problem.Domain);
-                int hAddSum;
-                try
-                {
-                    hAddSum = ActionPredicatesScores.Sum(x => x.Value);
-                }
-                catch (OverflowException ex)
-                {
-                    hAddSum = int.MaxValue;
-                }
-                
-                ActionsScores.Add(action, hAddSum);
-            }
-            int BestActionScore = int.MaxValue;
-            foreach(KeyValuePair<Action,int> kvp in ActionsScores)
-            {
-                if(kvp.Value < BestActionScore)
-                {
-                    BestActionScore = kvp.Value;
-                }
-            }
             HashSet<Action> bestActions = new HashSet<Action>();
-            foreach (KeyValuePair<Action, int> kvp in ActionsScores)
+            if (!StateResultCache.ContainsKey(s))
             {
-                if (kvp.Value == BestActionScore)
+                Dictionary<Action, int> ActionsScores = new Dictionary<Action, int>();
+                HashSet<Predicate> GoalPredicates = s.Problem.Goal.GetAllPredicates();
+
+                s.GroundAllActions();
+                foreach (Action action in s.AvailableActions)
                 {
-                    bestActions.Add(kvp.Key);
+                    HashSet<Predicate> StatePredicates = new HashSet<Predicate>(s.Predicates);
+                    if (action.Effects != null) StatePredicates.UnionWith(action.Effects.GetAllPredicates());
+                    /*if (action.Observe != null) 
+                    {
+                        StatePredicates.UnionWith(action.Observe.GetAllPredicates());
+                        StatePredicates.UnionWith(action.Observe.Negate().GetAllPredicates());
+                    }*/
+                    Dictionary<Predicate, int> ActionPredicatesScores = GetGoalPredicatesHaddLevel(GoalPredicates, StatePredicates, s.Problem.Domain);
+                    int hAddSum;
+                    try
+                    {
+                        hAddSum = ActionPredicatesScores.Sum(x => x.Value);
+                    }
+                    catch (OverflowException ex)
+                    {
+                        hAddSum = int.MaxValue;
+                    }
+
+                    ActionsScores.Add(action, hAddSum);
                 }
+                int BestActionScore = int.MaxValue;
+                foreach (KeyValuePair<Action, int> kvp in ActionsScores)
+                {
+                    if (kvp.Value < BestActionScore)
+                    {
+                        BestActionScore = kvp.Value;
+                    }
+                }
+                foreach (KeyValuePair<Action, int> kvp in ActionsScores)
+                {
+                    if (kvp.Value == BestActionScore)
+                    {
+                        bestActions.Add(kvp.Key);
+                    }
+                }
+                StateResultCache[s] = bestActions;
             }
+            else
+            {
+                bestActions = StateResultCache[s];
+            }
+
             Random rnd = new Random();
             Action BestAction = null;
 
             if (bestActions.Count == 0)
             {
-                int selectedIndex = rnd.Next(ActionsScores.Count());
-                BestAction = ActionsScores.ElementAt(selectedIndex).Key;
+                int selectedIndex = rnd.Next(s.AvailableActions.Count());
+                BestAction = s.AvailableActions.ElementAt(selectedIndex);
             }
             else
             {

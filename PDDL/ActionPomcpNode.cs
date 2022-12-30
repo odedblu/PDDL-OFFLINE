@@ -41,7 +41,7 @@ namespace PDDL
             return observationPomcpNode;
         }
 
-        public int GetObservationsHash(List<Predicate> Observations)
+        public static int GetObservationsHash(List<Predicate> Observations)
         {
             int resultHash = 0;
             foreach (Predicate predicate in Observations)
@@ -53,7 +53,7 @@ namespace PDDL
 
         public string ToString()
         {
-            return Action.Name;
+            return $"{Action.Name} | V={Value} | VC={VisitedCount}";
         }
     }
 }

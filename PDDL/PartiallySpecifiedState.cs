@@ -22,7 +22,7 @@ namespace PDDL
             {
                 return m_fObservation;
             }
-            private set
+            set
             {
                 m_fObservation = value;
                 if(m_fObservation != null)
@@ -133,6 +133,10 @@ namespace PDDL
             m_sPredecessor = null;
             m_lObserved = new HashSet<Predicate>(bs.Observed);
             AvailableActions = new List<Action>();
+            bs.ChooseState(true);
+            bs.ChooseState(true);
+            bs.ChooseState(true);
+            bs.ChooseState(true);
             UnderlyingEnvironmentState = bs.ChooseState(true);
             m_bsInitialBelief = bs;
             ChildCount = 0;
@@ -317,7 +321,7 @@ namespace PDDL
                 return true;
             if (fReduced.IsFalse(null))
                 return false;
-            return m_bsInitialBelief.ConsistentWith(fReduced);
+            return m_bsInitialBelief.ConsistentWith(fReduced, bCheckingActionPreconditions);
             //m_bsInitialBelief.ApplyReasoning();
 
         }
@@ -517,32 +521,37 @@ namespace PDDL
 
                 if (ConsistentWith(bsTrue.GeneratingObservation, false))
                 {
-                    HashSet<int> hsModifiedTrue = bsTrue.m_bsInitialBelief.ReviseInitialBelief(bsTrue.GeneratingObservation, bsTrue);
+                    /*HashSet<int> hsModifiedTrue = bsTrue.m_bsInitialBelief.ReviseInitialBelief(bsTrue.GeneratingObservation, bsTrue);
                     if (hsModifiedTrue.Count > 0)
                     {
                         bsTrue.PropogateObservedPredicates();
-                    }
+                    }*/
                     bsTrue.AddObserved(a.Observe);
                     psTrueState = bsTrue;
                     ChildCount++;
                 }
                 else
-                    psTrueState = null;
+                {
+                    bsTrue.AddObserved(a.Observe);
+                    psTrueState = bsTrue;
+                }
 
                 if (ConsistentWith(bsFalse.GeneratingObservation, false))
                 {
-                    HashSet<int> hsModifiedFalse = bsFalse.m_bsInitialBelief.ReviseInitialBelief(bsFalse.GeneratingObservation, bsFalse);
+                    /*HashSet<int> hsModifiedFalse = bsFalse.m_bsInitialBelief.ReviseInitialBelief(bsFalse.GeneratingObservation, bsFalse);
                     if (hsModifiedFalse.Count > 0)
                     {
                         bsFalse.PropogateObservedPredicates();
-                    }
+                    }*/
                     bsFalse.AddObserved(a.Observe.Negate());
-
                     psFalseState = bsFalse;
                     ChildCount++;
                 }
                 else
-                    psFalseState = null;
+                {
+                    bsFalse.AddObserved(a.Observe.Negate());
+                    psFalseState = bsFalse;
+                }
             }
             else
                 psTrueState = bsNew;
@@ -658,7 +667,7 @@ namespace PDDL
             if (bsNew != null && cfAndChoices != null)
                 m_bsInitialBelief.AddInitialStateFormula(cfAndChoices);
 
-            if (!bPropogateOnly && bsNew.Time != sNew.Time)
+            if (!bPropogateOnly && sNew != null && bsNew.Time != sNew.Time)
                 Debug.WriteLine("BUGBUG");
 
             return bsNew;
@@ -1067,7 +1076,7 @@ namespace PDDL
                 pssCurrent = pssCurrent.Predecessor;
 
             }
-            return !m_bsInitialBelief.ConsistentWith(fCurrent);
+            return !m_bsInitialBelief.ConsistentWith(fCurrent, false);
         }
 
         private bool m_bGoalStateChecked = false;
