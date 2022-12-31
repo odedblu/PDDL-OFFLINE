@@ -212,10 +212,12 @@ namespace PDDL
         {
             List<Action> Plan = new List<Action>();
             // State CurrentState = Problem.GetInitialBelief().ChooseState(true);
-            PartiallySpecifiedState CurrentState = Root.PartiallySpecifiedState;
+            PartiallySpecifiedState CurrentState = Root.PartiallySpecifiedState.Clone();
+            Console.WriteLine(CurrentState.UnderlyingEnvironmentState);
             if(verbose) Console.WriteLine(string.Join(",", CurrentState.Observed.Where(predicate => !predicate.Negation)));
             CurrentState.GroundAllActions();
-            while (!CurrentState.IsGoalState())
+            //while (!CurrentState.IsGoalState())
+            while (!Problem.IsGoalState(CurrentState.UnderlyingEnvironmentState))
             {
                 Search(verbose);
                 Action bestValidAction = null;
@@ -249,15 +251,15 @@ namespace PDDL
                     PredicatsObservation = observation.GetAllPredicates().ToList();
                 }
 
-                CurrentState.GroundAllActions();
                 Plan.Add(bestValidAction);
-                
+                Formula UnusedObservation;
+                CurrentState = CurrentState.Apply(bestValidAction, out UnusedObservation);
+                CurrentState.GroundAllActions();
 
                 ObservationPomcpNode NextObservationPomcpNode = GetNextObservationNode(Root, bestValidAction, PredicatsObservation);
                 UnrelevantPomcpNodeDestructor(Root, bestValidAction, PredicatsObservation); // Remove all action childs that not relevant.
                 Root = NextObservationPomcpNode;
-                Root.PartiallySpecifiedState.UnderlyingEnvironmentState = (Root.Parent.Parent as ObservationPomcpNode).PartiallySpecifiedState.UnderlyingEnvironmentState.Apply(bestValidAction);
-                CurrentState = Root.PartiallySpecifiedState;
+                Root.PartiallySpecifiedState = CurrentState.Clone();
 
                 if (verbose)
                 {

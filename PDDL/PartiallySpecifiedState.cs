@@ -605,9 +605,9 @@ namespace PDDL
             if (sNew != null)
             {
                 bsNew.UnderlyingEnvironmentState = sNew;
-                if (!bPropogateOnly && bsNew.Time != sNew.Time)
+                /*if (!bPropogateOnly && bsNew.Time != sNew.Time)
                     Debug.WriteLine("BUGBUG");
-
+                */
             }
 
             if (a.Effects != null)
@@ -650,14 +650,13 @@ namespace PDDL
                 if (ReviseInitialBelief(fObserve))
                     bsNew.PropogateObservedPredicates();
                  * */
-                /*
-                HashSet<int> hsModified = m_bsInitialBelief.ReviseInitialBelief(fObserve, this);
+                
+                /*HashSet<int> hsModified = m_bsInitialBelief.ReviseInitialBelief(fObserve, this);
                 if (hsModified.Count > 0)
                 {
-                    if (!SDRPlanner.OptimizeMemoryConsumption)
                         bsNew.PropogateObservedPredicates();
-                }
-                */
+                }*/
+                
                 
             }
 
@@ -667,9 +666,9 @@ namespace PDDL
             if (bsNew != null && cfAndChoices != null)
                 m_bsInitialBelief.AddInitialStateFormula(cfAndChoices);
 
-            if (!bPropogateOnly && sNew != null && bsNew.Time != sNew.Time)
+            /*if (!bPropogateOnly && sNew != null && bsNew.Time != sNew.Time)
                 Debug.WriteLine("BUGBUG");
-
+            */
             return bsNew;
         }
 
