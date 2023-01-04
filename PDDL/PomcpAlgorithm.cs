@@ -19,10 +19,12 @@ namespace PDDL
         public IActionSelectPolicy FinalActionSelectPolicy { get; set; }
         public IRolloutPolicy RolloutPolicy { get; set; }  
 
+        public Func<State, Problem, double> RewardFunction { get; set; }
+
 
         public PomcpAlgorithm(double discountFactor, double depthThreshold, 
-                              int simulationsThreshold, Problem problem, ObservationPomcpNode root, 
-                              IActionSelectPolicy finalActionSelectPolicy, IActionSelectPolicy actionSelectPolicy, IRolloutPolicy rolloutPolicy)
+                              int simulationsThreshold, Problem problem, ObservationPomcpNode root,
+                              IActionSelectPolicy finalActionSelectPolicy, IActionSelectPolicy actionSelectPolicy, IRolloutPolicy rolloutPolicy, Func<State, Problem, double> rewardFunction)
         {
             DiscountFactor = discountFactor;
             DepthThreshold = depthThreshold;
@@ -32,6 +34,7 @@ namespace PDDL
             ActionSelectPolicy = actionSelectPolicy;
             FinalActionSelectPolicy = finalActionSelectPolicy;
             RolloutPolicy = rolloutPolicy;
+            RewardFunction = rewardFunction;
         }
 
         public void Search(bool verbose=false)
@@ -126,7 +129,7 @@ namespace PDDL
                 // Set the currents to their predicessors.
                 Current = Current.Parent.Parent as ObservationPomcpNode; // Set the current to be the previous observation pomcp node.
                 CurrentState = CurrentState.m_sPredecessor;
-                CummulativeReward = GetReward(CurrentState) + DiscountFactor * CummulativeReward;
+                CummulativeReward = RewardFunction(CurrentState, Problem) + DiscountFactor * CummulativeReward;
             }
             Current.VisitedCount++;
         }
@@ -189,24 +192,11 @@ namespace PDDL
             }
             Action RolloutAction = RolloutPolicy.ChooseAction(state);
             State NextState = state.Apply(RolloutAction);
-            double Reward = GetReward(NextState);
+            double Reward = RewardFunction(NextState, Problem);
             if (Reward > 0) return Reward;
             return Reward + DiscountFactor * Rollout(NextState, currentDepth + 1);
         }
 
-        private double GetReward(State state)
-        {
-            //if (state == null) return Double.MinValue;
-            if (state != null && Problem.IsGoalState(state))
-            {
-                return 10.0;
-            }
-            else
-            {
-                if (state == null) return -100.0;
-            }
-            return -1.0;
-        }
        
         public List<Action> FindPlan(bool verbose=false)
         {
@@ -216,8 +206,8 @@ namespace PDDL
             Console.WriteLine(CurrentState.UnderlyingEnvironmentState);
             if(verbose) Console.WriteLine(string.Join(",", CurrentState.Observed.Where(predicate => !predicate.Negation)));
             CurrentState.GroundAllActions();
-            //while (!CurrentState.IsGoalState())
-            while (!Problem.IsGoalState(CurrentState.UnderlyingEnvironmentState))
+            //while (!Problem.IsGoalState(CurrentState.UnderlyingEnvironmentState))
+            while (!CurrentState.IsGoalState())
             {
                 Search(verbose);
                 Action bestValidAction = null;
@@ -236,24 +226,30 @@ namespace PDDL
                     }
 
                 }
+
+                Formula UnusedObservation;
+                PartiallySpecifiedState NextPartiallyState = CurrentState.Apply(bestValidAction, out UnusedObservation);
+
                 Formula observation = null;
-                if (bestValidAction.Observe != null && bestValidAction.Observe.IsTrue(CurrentState.UnderlyingEnvironmentState.Predicates))
+                if (bestValidAction.Observe != null)
                 {
-                    observation = bestValidAction.Observe;
-                }
-                else if (bestValidAction.Observe != null)
-                {
-                    observation = bestValidAction.Observe.Negate();
+                     observation = CurrentState.UnderlyingEnvironmentState.Observe(bestValidAction.Observe);
+
                 }
                 List<Predicate> PredicatsObservation = new List<Predicate>();
                 if (observation != null)
                 {
                     PredicatsObservation = observation.GetAllPredicates().ToList();
+                    // Revise belife state
+                    HashSet<int> hsModified = CurrentState.m_bsInitialBelief.ReviseInitialBelief(observation, CurrentState);
+                    if (hsModified.Count > 0)
+                    {
+                        NextPartiallyState.PropogateObservedPredicates();
+                    }
                 }
 
                 Plan.Add(bestValidAction);
-                Formula UnusedObservation;
-                CurrentState = CurrentState.Apply(bestValidAction, out UnusedObservation);
+                CurrentState = NextPartiallyState;
                 CurrentState.GroundAllActions();
 
                 ObservationPomcpNode NextObservationPomcpNode = GetNextObservationNode(Root, bestValidAction, PredicatsObservation);

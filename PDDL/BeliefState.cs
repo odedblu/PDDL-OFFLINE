@@ -3416,8 +3416,8 @@ namespace PDDL
 
                     //dt = DateTime.Now;
                     //must be after the regression so as not to make everything already known
-                    if (!SDRPlanner.OptimizeMemoryConsumption)
-                        hsNew.UnionWith(pssCurrent.AddObserved(fCurrent));
+                    //if (!SDRPlanner.OptimizeMemoryConsumption)
+                    hsNew.UnionWith(pssCurrent.AddObserved(fCurrent));
                     //ts2 += DateTime.Now - dt;
                     //pssCurrent.AddObserved(fToRegress); //Not sure that this is valid!
 
@@ -3473,8 +3473,8 @@ namespace PDDL
             if (lLearned.Count > 0)
             {
                 //HashSet<Predicate> lLearned = pssCurrent.ApplyReasoning(); not needed since we got the learned predicates from the belief update
-                if (!SDRPlanner.ComputeCompletePlanTree)
-                    pssCurrent.AddObserved(lLearned);
+                //if (!SDRPlanner.ComputeCompletePlanTree)
+                pssCurrent.AddObserved(lLearned);
                 dtAfterReasoning = DateTime.Now;
                 if (bTrueRegression)
                 {

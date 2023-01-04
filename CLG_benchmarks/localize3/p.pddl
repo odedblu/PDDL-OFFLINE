@@ -5,15 +5,15 @@
     (and
      (oneof
       (at p2-1)
-	  (at p2-3)
       (at p1-2) 
+      (at p2-3)
       (at p3-2) 
       (at p1-3)
-	  (at p3-3)
+      (at p3-3)
       (at p3-1)
       (at p1-1) )
 
   )
  )
-    (:goal  (and (at p2-3) (ok)))
+    (:goal (and (at p3-3) (ok) ))
 )

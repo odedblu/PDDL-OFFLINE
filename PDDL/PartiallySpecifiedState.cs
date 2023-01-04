@@ -656,6 +656,8 @@ namespace PDDL
                 {
                         bsNew.PropogateObservedPredicates();
                 }*/
+
+
                 
                 
             }
