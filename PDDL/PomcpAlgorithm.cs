@@ -229,6 +229,7 @@ namespace PDDL
 
                 Formula UnusedObservation;
                 PartiallySpecifiedState NextPartiallyState = CurrentState.Apply(bestValidAction, out UnusedObservation);
+                NextPartiallyState.m_bsInitialBelief = CurrentState.m_bsInitialBelief;
 
                 Formula observation = null;
                 if (bestValidAction.Observe != null)

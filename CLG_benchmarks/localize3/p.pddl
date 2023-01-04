@@ -15,5 +15,5 @@
 
   )
  )
-    (:goal (and (at p3-3) (ok) ))
+    (:goal (at p3-3))
 )
