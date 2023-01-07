@@ -23,7 +23,7 @@ namespace PDDL
 
         public ExecutionData Data{get; private set;}
 
-        public static bool OptimizeMemoryConsumption = true;
+        public static bool OptimizeMemoryConsumption = false;
         public static bool ComputeCompletePlanTree = true;
         public static TimeSpan PlannerTimeout = new TimeSpan(0, 2, 0);
         public static bool WriteAllKVariations = false;

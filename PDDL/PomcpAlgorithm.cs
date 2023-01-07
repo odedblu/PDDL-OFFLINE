@@ -107,7 +107,10 @@ namespace PDDL
                 CurrentState.GroundAllActions();
 
                 // Add the next state to the Observation pomcp node's particle filter.
-                Current.ParticleFilter.AddState(CurrentState);
+                if(Current.Parent.Parent.Parent == null)
+                {
+                    Current.ParticleFilter.AddState(CurrentState);
+                }
             }
 
             // Expand node.
@@ -146,7 +149,7 @@ namespace PDDL
         {
             Node.VisitedCount++;
             PartiallySpecifiedState NodePartialyState = Node.PartiallySpecifiedState;
-            if (NodePartialyState.AvailableActions.Count == 0) NodePartialyState.GroundAllActions();
+            NodePartialyState.GroundAllActions();
             foreach (Action action in NodePartialyState.AvailableActions)
             {
                 if (NodePartialyState.IsApplicable(action))
@@ -254,9 +257,21 @@ namespace PDDL
                 CurrentState.GroundAllActions();
 
                 ObservationPomcpNode NextObservationPomcpNode = GetNextObservationNode(Root, bestValidAction, PredicatsObservation);
-                UnrelevantPomcpNodeDestructor(Root, bestValidAction, PredicatsObservation); // Remove all action childs that not relevant.
+
+                // Update paritcle filter of next observation node. (beside the first one which is empty).
+                if(Root.Parent != null)
+                {
+                    NextObservationPomcpNode.ParticleFilter = Root.ParticleFilter.Apply(bestValidAction);
+                    Console.WriteLine(NextObservationPomcpNode.ParticleFilter.Size());
+                }
+
+                // Remove all action childs that not relevant.
+                UnrelevantPomcpNodeDestructor(Root, bestValidAction, PredicatsObservation);
+
+                // Update Root.
                 Root = NextObservationPomcpNode;
                 Root.PartiallySpecifiedState = CurrentState.Clone();
+                UnrelevantPomcpNodeDestructor(Root, bestValidAction, PredicatsObservation);
 
                 if (verbose)
                 {
@@ -274,10 +289,11 @@ namespace PDDL
             List<int> toRemoveChilds = new List<int>();
             foreach(KeyValuePair<int, PomcpNode> kvp in Node.Childs)
             {
-                if(kvp.Key != bestValidAction.GetHashCode())
+                /*if(kvp.Key != bestValidAction.GetHashCode())
                 {
                     toRemoveChilds.Add(kvp.Key);
-                }
+                }*/
+                toRemoveChilds.Add(kvp.Key); // check theory here delete if not working
             }
             foreach(int key in toRemoveChilds)
             {
@@ -311,5 +327,6 @@ namespace PDDL
             }
             Console.Write("] {0}%", progress);
         }
+
     }
 }

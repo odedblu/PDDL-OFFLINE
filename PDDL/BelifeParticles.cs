@@ -70,5 +70,24 @@ namespace PDDL
             return null;
         }
 
+        public BelifeParticles Apply(Action a)
+        {
+            // Init the return value.
+            BelifeParticles NextBelifePatricel = new BelifeParticles();
+
+
+            // Foreach particle apply the action and update the new belife particle to have the same frequency.
+            foreach (KeyValuePair<State, int> stateFrequency in this.ViewedStates)
+            {
+                State NextState = stateFrequency.Key.Apply(a);
+                if(NextState != null)
+                {
+                    NextBelifePatricel.ViewedStates[NextState] = stateFrequency.Value;
+                    NextBelifePatricel.BelifeSize += stateFrequency.Value;
+                }
+            }
+            return NextBelifePatricel;
+        }
+
     }
 }
