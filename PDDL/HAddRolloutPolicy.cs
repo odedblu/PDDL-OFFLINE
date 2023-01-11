@@ -33,7 +33,21 @@ namespace PDDL
                 foreach (Action action in s.AvailableActions)
                 {
                     HashSet<Predicate> StatePredicates = new HashSet<Predicate>(s.Predicates);
-                    if (action.Effects != null) StatePredicates.UnionWith(action.Effects.GetAllPredicates());
+                    if (action.Effects != null) 
+                    {
+
+                        if (action.HasConditionalEffects)
+                        {
+                            State NextState = s.Apply(action);
+                            StatePredicates = new HashSet<Predicate>(NextState.Predicates);
+                        }
+                        else
+                        {
+                            StatePredicates.UnionWith(action.Effects.GetAllPredicates());
+                        }
+                        
+                    }
+                    
                     /*if (action.Observe != null) 
                     {
                         StatePredicates.UnionWith(action.Observe.GetAllPredicates());
@@ -141,7 +155,15 @@ namespace PDDL
                     HashSet<Predicate> effectPredicates = new HashSet<Predicate>();
                     if (action.Effects != null)
                     {
-                        effectPredicates = action.Effects.GetAllPredicates();
+                        if (action.HasConditionalEffects)
+                        {
+                            effectPredicates = GetConditionalEffects(StartPredicates, action);
+                        }
+                        else
+                        {
+                            effectPredicates = action.Effects.GetAllPredicates();
+                        }
+                        
                     }
                     
                     if(effectPredicates != null) influences.UnionWith(effectPredicates);
@@ -193,6 +215,20 @@ namespace PDDL
                 hash = hash * 31 + subObject.GetHashCode();
             }
             return hash;
+        }
+
+        private HashSet<Predicate> GetConditionalEffects(HashSet<Predicate> StatePredicates, Action a)
+        {
+            HashSet<Predicate> conditionalEffects = new HashSet<Predicate>();
+            List<Action> CondtionalSplitedActions = a.SplitConditionalEffects(out CompoundFormula f);
+            foreach (Action CondtionalSplitedAction in CondtionalSplitedActions)
+            {
+                if (CondtionalSplitedAction.Preconditions.RemoveNegations().IsTrue(StatePredicates, false))
+                {
+                    conditionalEffects.UnionWith(CondtionalSplitedAction.Effects.GetAllPredicates());
+                }
+            }
+            return conditionalEffects;
         }
     }
 }

@@ -12,7 +12,7 @@ namespace PDDL
 {
     class Program
     {
-        public static string BASE_PATH = @"C:\Users\odedblu\source\repos\PDDL-OFFLINE";
+        public static string BASE_PATH = @"C:\Users\oded1\OneDrive\Desktop\code\PDDL-OFFLINE";
         public static string Path;
         public static string ResultsFile = "Results.txt";
 #if DEBUG
@@ -988,15 +988,15 @@ namespace PDDL
             // Run constants
             double EXPLORATION_FACTOR_UCB = 300.0;
             double DISCOUNT_FACTOR = 0.95;
-            double DEPTH_THRESHOLD = 0.6;
-            int SIMULATIONS = 1000;
+            double DEPTH_THRESHOLD = 0.8;
+            int SIMULATIONS = 2500;
 
 
             Debug.Listeners.Add(new TextWriterTraceListener(Console.Out));
             Debug.Listeners.Add(new TextWriterTraceListener(new StreamWriter("debug.log")));
             string sBenchmarkPath = BASE_PATH + @"\CLG_benchmarks\";
             Path = BASE_PATH + @"\PDDL\";
-            string domainName = "blocks3";
+            string domainName = "localize3";
             Parser domainParser = new Parser();
             Domain parsedDomain = domainParser.ParseDomain(String.Format(@"{0}\{1}\d.pddl", sBenchmarkPath, domainName));
             Problem parsedProblem = domainParser.ParseProblem(String.Format(@"{0}\{1}\p.pddl", sBenchmarkPath, domainName), parsedDomain);

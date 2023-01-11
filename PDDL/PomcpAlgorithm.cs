@@ -102,6 +102,13 @@ namespace PDDL
                 Current = GetNextObservationNode(Current,NextAction,PredicatsObservation);
                 CurrentDepth += 1;
 
+                // Check we havent met the maximal depth
+                if ((Math.Pow(DiscountFactor, (double)CurrentDepth) < DepthThreshold || DiscountFactor == 0) && CurrentDepth != 0)
+                {
+                    return;
+                }
+
+
                 // Apply action on CurrentState.
                 CurrentState = CurrentState.Apply(NextAction);
                 CurrentState.GroundAllActions();
@@ -271,7 +278,7 @@ namespace PDDL
                 // Update Root.
                 Root = NextObservationPomcpNode;
                 Root.PartiallySpecifiedState = CurrentState.Clone();
-                UnrelevantPomcpNodeDestructor(Root, bestValidAction, PredicatsObservation);
+                UnrelevantPomcpNodeDestructor(Root, bestValidAction, PredicatsObservation); // replace with observed propagtion.
 
                 if (verbose)
                 {
