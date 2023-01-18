@@ -422,7 +422,7 @@ namespace PDDL
         public virtual PartiallySpecifiedState Clone()
         {
             PartiallySpecifiedState bsClone = new PartiallySpecifiedState(this);
-            bsClone.m_bsInitialBelief = new BeliefState(m_bsInitialBelief);
+            //bsClone.m_bsInitialBelief = new BeliefState(m_bsInitialBelief);
             /*
             PartiallySpecifiedState bsTemp = bsClone;
             while (bsTemp.m_sPredecessor != null)

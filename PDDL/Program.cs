@@ -988,8 +988,8 @@ namespace PDDL
             // Run constants
             double EXPLORATION_FACTOR_UCB = 300.0;
             double DISCOUNT_FACTOR = 0.95;
-            double DEPTH_THRESHOLD = 0.8;
-            int SIMULATIONS = 2500;
+            double DEPTH_THRESHOLD = 0.6;
+            int SIMULATIONS = 25000;
 
 
             Debug.Listeners.Add(new TextWriterTraceListener(Console.Out));
@@ -1009,7 +1009,7 @@ namespace PDDL
             IActionSelectPolicy FinalActionSelectPolicy = new MaxValueActionSelectPolicy();
 
             ObservationPomcpNode root = new ObservationPomcpNode(new PartiallySpecifiedState(parsedProblem.GetInitialBelief()));
-            PomcpAlgorithm pomcpAlgorithm = new PomcpAlgorithm(DISCOUNT_FACTOR, DEPTH_THRESHOLD, SIMULATIONS, parsedProblem,root,FinalActionSelectPolicy,ActionSelectPolicy,RolloutPolicy, RewardFunctions.GeneralReward);
+            PomcpAlgorithm pomcpAlgorithm = new PomcpAlgorithm(DISCOUNT_FACTOR, DEPTH_THRESHOLD, SIMULATIONS, parsedProblem,root,FinalActionSelectPolicy,ActionSelectPolicy,RolloutPolicy, RewardFunctions.LocalizeReward);
             List<Action> plan = pomcpAlgorithm.FindPlan(true);
             foreach (Action action in plan)
             {

@@ -19,12 +19,12 @@ namespace PDDL
         public IActionSelectPolicy FinalActionSelectPolicy { get; set; }
         public IRolloutPolicy RolloutPolicy { get; set; }  
 
-        public Func<State, Problem, double> RewardFunction { get; set; }
+        public Func<State, Problem, Action, double> RewardFunction { get; set; }
 
 
         public PomcpAlgorithm(double discountFactor, double depthThreshold, 
                               int simulationsThreshold, Problem problem, ObservationPomcpNode root,
-                              IActionSelectPolicy finalActionSelectPolicy, IActionSelectPolicy actionSelectPolicy, IRolloutPolicy rolloutPolicy, Func<State, Problem, double> rewardFunction)
+                              IActionSelectPolicy finalActionSelectPolicy, IActionSelectPolicy actionSelectPolicy, IRolloutPolicy rolloutPolicy, Func<State, Problem,Action, double> rewardFunction)
         {
             DiscountFactor = discountFactor;
             DepthThreshold = depthThreshold;
@@ -70,7 +70,7 @@ namespace PDDL
             else
             {
                 // Sample a fully observable state from the pomcp node's particle filter.
-                SampledState = Node.ParticleFilter.GetRandomState();
+                SampledState = Node.PartiallySpecifiedState.m_bsInitialBelief.ChooseState(true);//Node.ParticleFilter.GetRandomState();
             }
             SampledState.GroundAllActions();
             // Running through the tree, until getting to a leaf pomcp node.
@@ -139,7 +139,7 @@ namespace PDDL
                 // Set the currents to their predicessors.
                 Current = Current.Parent.Parent as ObservationPomcpNode; // Set the current to be the previous observation pomcp node.
                 CurrentState = CurrentState.m_sPredecessor;
-                CummulativeReward = RewardFunction(CurrentState, Problem) + DiscountFactor * CummulativeReward;
+                CummulativeReward = RewardFunction(CurrentState, Problem, CurrentState.GeneratingAction) + DiscountFactor * CummulativeReward;
             }
             Current.VisitedCount++;
         }
@@ -202,7 +202,7 @@ namespace PDDL
             }
             Action RolloutAction = RolloutPolicy.ChooseAction(state);
             State NextState = state.Apply(RolloutAction);
-            double Reward = RewardFunction(NextState, Problem);
+            double Reward = RewardFunction(NextState, Problem, RolloutAction);
             if (Reward > 0) return Reward;
             return Reward + DiscountFactor * Rollout(NextState, currentDepth + 1);
         }
