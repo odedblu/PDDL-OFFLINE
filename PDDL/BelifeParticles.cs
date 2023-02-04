@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -8,7 +9,7 @@ namespace PDDL
 {
     internal class BelifeParticles
     {
-        private Dictionary<State, int> ViewedStates;
+        public Dictionary<State, int> ViewedStates;
         private int BelifeSize;
 
         public BelifeParticles()
@@ -70,7 +71,7 @@ namespace PDDL
             return null;
         }
 
-        public BelifeParticles Apply(Action a)
+        public BelifeParticles Apply(Action a, Formula observationPredicats)
         {
             // Init the return value.
             BelifeParticles NextBelifePatricel = new BelifeParticles();
@@ -82,12 +83,33 @@ namespace PDDL
                 State NextState = stateFrequency.Key.Apply(a);
                 if(NextState != null)
                 {
-                    NextBelifePatricel.ViewedStates[NextState] = stateFrequency.Value;
-                    NextBelifePatricel.BelifeSize += stateFrequency.Value;
+                    if(a.Observe != null)
+                    {
+
+                        if(GetObservationAsList(observationPredicats).All(observedPredicate => observationPredicats.IsTrue(NextState.Predicates, false))){
+                            NextBelifePatricel.ViewedStates[NextState] = stateFrequency.Value;
+                            NextBelifePatricel.BelifeSize += stateFrequency.Value;
+                        }
+                    }
+                    else
+                    {
+                        NextBelifePatricel.ViewedStates[NextState] = stateFrequency.Value;
+                        NextBelifePatricel.BelifeSize += stateFrequency.Value;
+                    }
                 }
             }
             return NextBelifePatricel;
         }
 
+
+        private List<Predicate> GetObservationAsList(Formula observationPredicates)
+        {
+            List<Predicate> PredicatsObservation = new List<Predicate>();
+            if (observationPredicates != null)
+            {
+                PredicatsObservation = observationPredicates.GetAllPredicates().ToList();
+            }
+            return PredicatsObservation;
+        }
     }
 }

@@ -40,6 +40,16 @@ namespace PDDL
         public void Search(bool verbose=false)
         {
             if (verbose) Console.WriteLine("Simulating...");
+
+            // Initial Root particle filter.
+            if(Root.ParticleFilter.Size() == 0)
+            {
+                for(int i = 0; i < 2000; i++)
+                {
+                    Root.ParticleFilter.AddState(Root.PartiallySpecifiedState.m_bsInitialBelief.ChooseState(true));
+                }
+            }
+
             for (int SimulationIndex = 0; SimulationIndex < SimulationsThreshold; SimulationIndex++)
             {
                 if (verbose && SimulationIndex % 100 == 0)
@@ -70,7 +80,7 @@ namespace PDDL
             else
             {
                 // Sample a fully observable state from the pomcp node's particle filter.
-                SampledState = Node.PartiallySpecifiedState.m_bsInitialBelief.ChooseState(true);//Node.ParticleFilter.GetRandomState();
+                SampledState = Node.ParticleFilter.GetRandomState();
             }
             SampledState.GroundAllActions();
             // Running through the tree, until getting to a leaf pomcp node.
@@ -114,17 +124,17 @@ namespace PDDL
                 CurrentState.GroundAllActions();
 
                 // Add the next state to the Observation pomcp node's particle filter.
-                if(Current.Parent.Parent.Parent == null)
+                /*if(Current.Parent.Parent.Parent == null)
                 {
                     Current.ParticleFilter.AddState(CurrentState);
-                }
+                }*/
             }
 
             // Expand node.
             ExpandNode(Current);
 
             // Finished run inside the tree, now do rollout.
-            double Reward = Rollout(CurrentState, CurrentDepth);
+            double Reward = MultipleRollouts(Current.ParticleFilter, CurrentDepth, 10);
             double CummulativeReward = Reward;
 
             // Start back propogation phase.
@@ -139,9 +149,9 @@ namespace PDDL
                 // Set the currents to their predicessors.
                 Current = Current.Parent.Parent as ObservationPomcpNode; // Set the current to be the previous observation pomcp node.
                 CurrentState = CurrentState.m_sPredecessor;
-                CummulativeReward = RewardFunction(CurrentState, Problem, CurrentState.GeneratingAction) + DiscountFactor * CummulativeReward;
+                CummulativeReward = DiscountFactor * CummulativeReward;// RewardFunction(CurrentState, Problem, CurrentState.GeneratingAction) + DiscountFactor * CummulativeReward;
             }
-            Current.VisitedCount++;
+             Current.VisitedCount++;
         }
 
         // Get the next observation pomcp node by action and observation.
@@ -178,22 +188,41 @@ namespace PDDL
                         FalseChild.GeneratingObservation = action.Observe.Negate();
                         TrueChild.AddObserved(action.Observe);
                         FalseChild.AddObserved(action.Observe.Negate());
+
+                        // Create the particle filters
+                        BelifeParticles PositiveNextParticleFilter = Node.ParticleFilter.Apply(action, action.Observe);
+                        BelifeParticles NegetiveNextParticleFilter = Node.ParticleFilter.Apply(action, action.Observe.Negate());
+
+
                         // Add the observations nodes to action pomcp node's childs.
-                        actionPomcpNode.AddObservationChilds(TrueChild.GeneratingObservation.GetAllPredicates().ToList(), TrueChild);
-                        actionPomcpNode.AddObservationChilds(FalseChild.GeneratingObservation.GetAllPredicates().ToList(), FalseChild);
+                        actionPomcpNode.AddObservationChilds(TrueChild.GeneratingObservation.GetAllPredicates().ToList(), TrueChild, PositiveNextParticleFilter);
+                        actionPomcpNode.AddObservationChilds(FalseChild.GeneratingObservation.GetAllPredicates().ToList(), FalseChild, NegetiveNextParticleFilter);
                     }
                     else
                     {
                         List<Predicate> PredicatsObservation = new List<Predicate>();
                         PartiallySpecifiedState NextState = Node.PartiallySpecifiedState.Apply(action, out observation);
-                        actionPomcpNode.AddObservationChilds(PredicatsObservation, NextState);
+                        BelifeParticles NextParticleFilter = Node.ParticleFilter.Apply(action, observation);
+                        actionPomcpNode.AddObservationChilds(PredicatsObservation, NextState, NextParticleFilter);
                     }
 
                 }
             }
         }
 
-        
+        public double MultipleRollouts(BelifeParticles possiboleStates, int currentDepth, int numberOfRepets)
+        {
+            double totalScore = 0;
+            foreach(State s in possiboleStates.ViewedStates.Keys)
+            {
+                for(int i = 0; i < numberOfRepets; i++)
+                {
+                    totalScore += Rollout(s, currentDepth);
+                }
+            }
+            return totalScore / (possiboleStates.ViewedStates.Count() * numberOfRepets);
+        }
+
         public double Rollout(State state, int currentDepth)
         {
             if((Math.Pow(DiscountFactor, (double)currentDepth) < DepthThreshold || DiscountFactor == 0) && currentDepth != 0)
@@ -268,7 +297,7 @@ namespace PDDL
                 // Update paritcle filter of next observation node. (beside the first one which is empty).
                 if(Root.Parent != null)
                 {
-                    NextObservationPomcpNode.ParticleFilter = Root.ParticleFilter.Apply(bestValidAction);
+                    NextObservationPomcpNode.ParticleFilter = Root.ParticleFilter.Apply(bestValidAction, observation);
                     Console.WriteLine(NextObservationPomcpNode.ParticleFilter.Size());
                 }
 

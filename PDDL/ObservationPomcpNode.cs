@@ -24,13 +24,13 @@ namespace PDDL
             PartiallySpecifiedState = partiallySpecifiedState;
         }
 
-        public ObservationPomcpNode(ActionPomcpNode ActionParentNode, List<Predicate> Observed, PartiallySpecifiedState partiallySpecifiedState)
+        public ObservationPomcpNode(ActionPomcpNode ActionParentNode, List<Predicate> Observed, PartiallySpecifiedState partiallySpecifiedState, BelifeParticles particleFilter)
         {
             Parent = ActionParentNode;
             Childs = new Dictionary<int, PomcpNode>();
             VisitedCount = 0;
             Value = 0;
-            ParticleFilter = new BelifeParticles();
+            ParticleFilter = particleFilter;
             ObservedPredicates = new List<Predicate>(); 
             foreach (Predicate Predicate in Observed) ObservedPredicates.Add(Predicate);
             PartiallySpecifiedState = partiallySpecifiedState;

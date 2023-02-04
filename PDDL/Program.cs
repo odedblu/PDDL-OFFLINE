@@ -12,7 +12,7 @@ namespace PDDL
 {
     class Program
     {
-        public static string BASE_PATH = @"C:\Users\oded1\OneDrive\Desktop\code\PDDL-OFFLINE";
+        public static string BASE_PATH = @"C:\Users\odedblu\source\repos\PDDL-OFFLINE";
         public static string Path;
         public static string ResultsFile = "Results.txt";
 #if DEBUG
@@ -986,10 +986,10 @@ namespace PDDL
         {
 
             // Run constants
-            double EXPLORATION_FACTOR_UCB = 300.0;
+            double EXPLORATION_FACTOR_UCB = 10.0;
             double DISCOUNT_FACTOR = 0.95;
-            double DEPTH_THRESHOLD = 0.6;
-            int SIMULATIONS = 25000;
+            double DEPTH_THRESHOLD = 0.4;
+            int SIMULATIONS = 1000;
 
 
             Debug.Listeners.Add(new TextWriterTraceListener(Console.Out));
@@ -1009,7 +1009,7 @@ namespace PDDL
             IActionSelectPolicy FinalActionSelectPolicy = new MaxValueActionSelectPolicy();
 
             ObservationPomcpNode root = new ObservationPomcpNode(new PartiallySpecifiedState(parsedProblem.GetInitialBelief()));
-            PomcpAlgorithm pomcpAlgorithm = new PomcpAlgorithm(DISCOUNT_FACTOR, DEPTH_THRESHOLD, SIMULATIONS, parsedProblem,root,FinalActionSelectPolicy,ActionSelectPolicy,RolloutPolicy, RewardFunctions.LocalizeReward);
+            PomcpAlgorithm pomcpAlgorithm = new PomcpAlgorithm(DISCOUNT_FACTOR, DEPTH_THRESHOLD, SIMULATIONS, parsedProblem,root,FinalActionSelectPolicy,ActionSelectPolicy,RolloutPolicy, RewardFunctions.GeneralReward);
             List<Action> plan = pomcpAlgorithm.FindPlan(true);
             foreach (Action action in plan)
             {
