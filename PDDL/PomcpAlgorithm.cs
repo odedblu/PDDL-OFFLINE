@@ -24,7 +24,9 @@ namespace PDDL
 
         public PomcpAlgorithm(double discountFactor, double depthThreshold, 
                               int simulationsThreshold, Problem problem, ObservationPomcpNode root,
-                              IActionSelectPolicy finalActionSelectPolicy, IActionSelectPolicy actionSelectPolicy, IRolloutPolicy rolloutPolicy, Func<State, Problem,Action, double> rewardFunction)
+                              IActionSelectPolicy finalActionSelectPolicy, IActionSelectPolicy actionSelectPolicy, IRolloutPolicy rolloutPolicy, 
+                              Func<State, Problem,Action, double> rewardFunction,
+                              bool ExactBelifeStateRepresentation=false)
         {
             DiscountFactor = discountFactor;
             DepthThreshold = depthThreshold;

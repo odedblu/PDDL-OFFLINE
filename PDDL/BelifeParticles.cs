@@ -111,5 +111,19 @@ namespace PDDL
             }
             return PredicatsObservation;
         }
+
+        public bool IsApplicable(Action a)
+        {
+            if (a.Preconditions == null)
+                return true;
+            bool result = true;
+            foreach(State s in ViewedStates.Keys)
+            {
+                if (a.Preconditions.IsFalse(s.Predicates))
+                    return false;
+            }
+            
+            return result;
+        }
     }
 }

@@ -1537,7 +1537,7 @@ namespace PDDL
             List<Predicate> lInitialAssignment = new List<Predicate>();
             if (bCheatUsingAt)
                 CheatUsingAtPredicate(lToAssign, lInitialAssignment);
-            RandomGenerator.Init();
+            //RandomGenerator.Init();
 
             //ApplySimpleOneOfs(lOneOfs, lInitialAssignment, lCanonicalPredicates);
 
