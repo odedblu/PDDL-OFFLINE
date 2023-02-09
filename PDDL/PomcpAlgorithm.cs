@@ -140,7 +140,7 @@ namespace PDDL
             double CummulativeReward = Reward;
 
             // Start back propogation phase.
-            while (Current != Node)
+            while (Current != Node && !Double.IsNaN(Reward))
             {
                 // Increase the action pomcp node's visited count.
                 Current.Parent.VisitedCount++;
@@ -171,7 +171,7 @@ namespace PDDL
             NodePartialyState.GroundAllActions();
             foreach (Action action in NodePartialyState.AvailableActions)
             {
-                if (NodePartialyState.IsApplicable(action))
+                if (NodePartialyState.IsApplicable(action) && Node.ParticleFilter.IsApplicable(action))
                 {
                     // Create the action node.
                     ActionPomcpNode actionPomcpNode = new ActionPomcpNode(Node, action);
@@ -214,6 +214,7 @@ namespace PDDL
 
         public double MultipleRollouts(BelifeParticles possiboleStates, int currentDepth, int numberOfRepets)
         {
+            if (possiboleStates.Size() == 0) return Double.NaN;
             double totalScore = 0;
             foreach(State s in possiboleStates.ViewedStates.Keys)
             {

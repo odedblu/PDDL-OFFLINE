@@ -114,6 +114,7 @@ namespace PDDL
 
         public bool IsApplicable(Action a)
         {
+            if(Size() == 0) return false;
             if (a.Preconditions == null)
                 return true;
             bool result = true;

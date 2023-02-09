@@ -988,7 +988,7 @@ namespace PDDL
             // Run constants
             double EXPLORATION_FACTOR_UCB = 15.0;
             double DISCOUNT_FACTOR = 0.95;
-            double DEPTH_THRESHOLD = 0.7;
+            double DEPTH_THRESHOLD = 0.85;
             int SIMULATIONS = 1000;
 
 
@@ -996,7 +996,7 @@ namespace PDDL
             Debug.Listeners.Add(new TextWriterTraceListener(new StreamWriter("debug.log")));
             string sBenchmarkPath = BASE_PATH + @"\CLG_benchmarks\";
             Path = BASE_PATH + @"\PDDL\";
-            string domainName = "blocks3";
+            string domainName = "Blocks3";
             Parser domainParser = new Parser();
             Domain parsedDomain = domainParser.ParseDomain(String.Format(@"{0}\{1}\d.pddl", sBenchmarkPath, domainName));
             Problem parsedProblem = domainParser.ParseProblem(String.Format(@"{0}\{1}\p.pddl", sBenchmarkPath, domainName), parsedDomain);

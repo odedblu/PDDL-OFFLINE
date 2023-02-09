@@ -315,7 +315,7 @@ namespace PDDL
                 State s = this;
                 while (s != null)
                 {
-                    s.m_lPredicates.Add(pChoice);
+                    //s.m_lPredicates.Add(pChoice);
                     s = s.m_sPredecessor;
                 }
                 
