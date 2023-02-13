@@ -232,6 +232,11 @@ namespace PDDL
             {
                 return 0;
             }
+
+            // In case state is a goal state.
+            double CurrentStateReward = RewardFunction(state, Problem, state.GeneratingAction);
+            if (CurrentStateReward > 0) return CurrentStateReward;
+
             Action RolloutAction = RolloutPolicy.ChooseAction(state);
             State NextState = state.Apply(RolloutAction);
             double Reward = RewardFunction(NextState, Problem, RolloutAction);
