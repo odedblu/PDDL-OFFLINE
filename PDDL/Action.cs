@@ -3777,6 +3777,24 @@ namespace PDDL
             return aNew;
         }
 
+
+        public Action RemoveNonDeterminismByOptionIndex(int iOptionIndex)
+        {
+            Action aNew = Clone();
+            aNew.Effects = null;
+            if (Effects is ProbabilisticFormula)
+            {
+                // Case we staying in the same state.
+                if (iOptionIndex < 0) return aNew;
+
+                // Select one of the probability effects.
+                ProbabilisticFormula probabilisticEffects = (ProbabilisticFormula)Effects;
+                aNew.Effects = (CompoundFormula)(probabilisticEffects.Options[iOptionIndex]).Clone();
+                return aNew;
+            }
+            return aNew;
+        }
+
         private bool CompareFormulas(Formula f1, Formula f2)
         {
             if (f1 == null && f2 == null)

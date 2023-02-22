@@ -74,33 +74,62 @@ namespace PDDL
         public BelifeParticles Apply(Action a, Formula observationPredicats)
         {
             // Init the return value.
-            BelifeParticles NextBelifePatricel = new BelifeParticles();
+            BelifeParticles NextBelifePatricle = new BelifeParticles();
 
 
             // Foreach particle apply the action and update the new belife particle to have the same frequency.
             foreach (KeyValuePair<State, int> stateFrequency in this.ViewedStates)
             {
-                State NextState = stateFrequency.Key.Apply(a);
-                if(NextState != null)
+                // Handle Probabilty actions
+                if (a.Effects is ProbabilisticFormula)
                 {
-                    if(a.Observe != null)
+                    double UnchangeStateProbability = 1; // Calculate whats the probabilty of staying in the same state.
+                    ProbabilisticFormula probabilisticEffects = a.Effects as ProbabilisticFormula;
+                    for (int i = 0; i < probabilisticEffects.Probabilities.Count; i++)
                     {
+                        double ChosenEffectsProbability = probabilisticEffects.Probabilities[i];
+                        UnchangeStateProbability -= ChosenEffectsProbability;
+                        int ProbabilityEffectRatioCount = (int)(ChosenEffectsProbability * stateFrequency.Value);
+                        Action chosenAction = a.RemoveNonDeterminismByOptionIndex(i);
+                        UpdateNextParticle(chosenAction, observationPredicats, NextBelifePatricle, stateFrequency, ProbabilityEffectRatioCount);
 
-                        if(GetObservationAsList(observationPredicats).All(observedPredicate => observationPredicats.IsTrue(NextState.Predicates, false))){
-                            NextBelifePatricel.ViewedStates[NextState] = stateFrequency.Value;
-                            NextBelifePatricel.BelifeSize += stateFrequency.Value;
-                        }
                     }
-                    else
-                    {
-                        NextBelifePatricel.ViewedStates[NextState] = stateFrequency.Value;
-                        NextBelifePatricel.BelifeSize += stateFrequency.Value;
-                    }
+                    // Add to the praticle the case of staying in the same state.
+                    int UnchangedStateProbabilityEffectRatioCount = (int)(UnchangeStateProbability * stateFrequency.Value);
+                    Action stayAction = a.RemoveNonDeterminismByOptionIndex(-1);
+                    UpdateNextParticle(stayAction, observationPredicats, NextBelifePatricle, stateFrequency, UnchangedStateProbabilityEffectRatioCount);
                 }
+
+                else
+                {
+                    UpdateNextParticle(a, observationPredicats, NextBelifePatricle, stateFrequency, stateFrequency.Value);
+                }
+                
             }
-            return NextBelifePatricel;
+            return NextBelifePatricle;
         }
 
+        private void UpdateNextParticle(Action a, Formula observationPredicats, BelifeParticles NextBelifePatricle, KeyValuePair<State, int> stateFrequency, int ProbabilityEffectRatioCount)
+        {
+            State NewState = stateFrequency.Key.Apply(a);
+            if (NewState != null)
+            {
+                if (a.Observe != null)
+                {
+
+                    if (GetObservationAsList(observationPredicats).All(observedPredicate => observationPredicats.IsTrue(NewState.Predicates, false)))
+                    {
+                        NextBelifePatricle.ViewedStates[NewState] = ProbabilityEffectRatioCount;
+                        NextBelifePatricle.BelifeSize += ProbabilityEffectRatioCount;
+                    }
+                }
+                else
+                {
+                    NextBelifePatricle.ViewedStates[NewState] = ProbabilityEffectRatioCount;
+                    NextBelifePatricle.BelifeSize += ProbabilityEffectRatioCount;
+                }
+            }
+        }
 
         private List<Predicate> GetObservationAsList(Formula observationPredicates)
         {

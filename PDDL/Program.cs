@@ -988,7 +988,7 @@ namespace PDDL
             // Run constants
             double EXPLORATION_FACTOR_UCB = 15.0;
             double DISCOUNT_FACTOR = 0.95;
-            double DEPTH_THRESHOLD = 0.7;
+            double DEPTH_THRESHOLD = 0.6;
             int SIMULATIONS = 1000;
 
 
