@@ -83,6 +83,10 @@ namespace PDDL
             m_dMapPredicatesToFormulas = new Dictionary<GroundedPredicate, List<int>>();
             foreach (KeyValuePair<GroundedPredicate, List<int>> pair in sToCopy.m_dMapPredicatesToFormulas)
             {
+                
+                
+                
+                
                 m_dMapPredicatesToFormulas[pair.Key] = new List<int>();
                 foreach (int i in pair.Value)
                 {

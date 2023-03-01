@@ -10,12 +10,10 @@ namespace PDDL
     internal class BelifeParticles
     {
         public Dictionary<State, int> ViewedStates;
-        private int BelifeSize;
 
         public BelifeParticles()
         {
             this.ViewedStates = new Dictionary<State, int>();
-            this.BelifeSize = 0;
         }
 
 
@@ -25,7 +23,12 @@ namespace PDDL
         /// <returns> Size of the belife particle. </returns>
         public int Size()
         {
-            return this.BelifeSize;
+            int newParticleSize = 0;
+            foreach (KeyValuePair<State, int> stateFrequency in this.ViewedStates)
+            {
+                newParticleSize += stateFrequency.Value;
+            }
+            return newParticleSize;
         }
 
 
@@ -43,7 +46,6 @@ namespace PDDL
             {
                 this.ViewedStates[s] = 1;
             }
-            this.BelifeSize++;
         }
 
 
@@ -57,7 +59,7 @@ namespace PDDL
             List<Tuple<double, State>> StateProbabilities = new List<Tuple<double, State>>();
             foreach (KeyValuePair<State, int> stateFrequency in this.ViewedStates)
             {
-                double StateProbability = (double)stateFrequency.Value / (double)this.BelifeSize;
+                double StateProbability = (double)stateFrequency.Value / (double)this.Size();
                 StateProbabilities.Add(new Tuple<double, State>(cummlativeProbability + StateProbability, stateFrequency.Key));
                 cummlativeProbability += StateProbability;
             }
@@ -96,9 +98,13 @@ namespace PDDL
                     }
                     // Add to the praticle the case of staying in the same state.
                     int UnchangedStateProbabilityEffectRatioCount = (int)(UnchangeStateProbability * stateFrequency.Value);
-                    Action stayAction = a.RemoveNonDeterminismByOptionIndex(-1);
-                    UpdateNextParticle(stayAction, observationPredicats, NextBelifePatricle, stateFrequency, UnchangedStateProbabilityEffectRatioCount);
+                    if (UnchangedStateProbabilityEffectRatioCount > 0)
+                    {
+                        Action stayAction = a.RemoveNonDeterminismByOptionIndex(-1);
+                        UpdateNextParticle(stayAction, observationPredicats, NextBelifePatricle, stateFrequency, UnchangedStateProbabilityEffectRatioCount);
+                    }
                 }
+                    
 
                 else
                 {
@@ -106,6 +112,7 @@ namespace PDDL
                 }
                 
             }
+
             return NextBelifePatricle;
         }
 
@@ -119,14 +126,26 @@ namespace PDDL
 
                     if (GetObservationAsList(observationPredicats).All(observedPredicate => observationPredicats.IsTrue(NewState.Predicates, false)))
                     {
-                        NextBelifePatricle.ViewedStates[NewState] = ProbabilityEffectRatioCount;
-                        NextBelifePatricle.BelifeSize += ProbabilityEffectRatioCount;
+                        if (NextBelifePatricle.ViewedStates.ContainsKey(NewState))
+                        {
+                            NextBelifePatricle.ViewedStates[NewState] += ProbabilityEffectRatioCount;
+                        }
+                        else
+                        {
+                            NextBelifePatricle.ViewedStates[NewState] = ProbabilityEffectRatioCount;
+                        }
                     }
                 }
                 else
                 {
-                    NextBelifePatricle.ViewedStates[NewState] = ProbabilityEffectRatioCount;
-                    NextBelifePatricle.BelifeSize += ProbabilityEffectRatioCount;
+                    if (NextBelifePatricle.ViewedStates.ContainsKey(NewState))
+                    {
+                        NextBelifePatricle.ViewedStates[NewState] += ProbabilityEffectRatioCount;
+                    }
+                    else
+                    {
+                        NextBelifePatricle.ViewedStates[NewState] = ProbabilityEffectRatioCount;
+                    }
                 }
             }
         }
