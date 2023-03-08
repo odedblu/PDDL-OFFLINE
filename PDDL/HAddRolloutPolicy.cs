@@ -201,6 +201,7 @@ namespace PDDL
             }
             else
             {
+                DateTime s = DateTime.Now;
                 List<Action> availableActions = domain.GroundAllActions(availablePredicates, false);
                 DomainAvailableActionsCache.Add(availablePredicates, availableActions);
                 return availableActions;

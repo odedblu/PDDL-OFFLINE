@@ -9,6 +9,7 @@ namespace PDDL
     public class GroundedPredicate : Predicate
     {
         public List<Constant> Constants { get; protected set; }
+        protected static Dictionary<string, int> GroundedPredicatesCache = new Dictionary<string, int>();
 
         private GroundedPredicate m_gpNegation;
         public GroundedPredicate(string sName)
@@ -36,7 +37,20 @@ namespace PDDL
         {
             if (obj is GroundedPredicate)
             {
-                return GetHashCode() == obj.GetHashCode();
+                GroundedPredicate groundedPredicateObj = obj as GroundedPredicate;
+                int thisHashCode = m_iHashCode;
+                int objHashCode = groundedPredicateObj.m_iHashCode;
+                if (thisHashCode == 0)
+                {
+                    GetHashCode();
+                    thisHashCode = m_iHashCode;
+                }
+                if (objHashCode == 0)
+                {
+                    groundedPredicateObj.GetHashCode();
+                    objHashCode = groundedPredicateObj.m_iHashCode;
+                }
+                return thisHashCode == objHashCode;
             }
             return false;
         }
@@ -197,16 +211,26 @@ namespace PDDL
 
         protected override int ComputeHashCode()
         {
-            int iSum = 0;
-            foreach(Constant c in Constants)
+            if (GroundedPredicatesCache.ContainsKey(ToString()))
             {
-                iSum += c.GetHashCode();
-                iSum *= 100;
+                return GroundedPredicatesCache[ToString()];
             }
-            iSum += m_iName;
-            return iSum;
+
+            int iSum = 0;
+            unchecked
+            {
+                foreach (Constant c in Constants)
+                {
+                    iSum += c.GetHashCode();
+                    iSum *= 100;
+                }
+                iSum += m_iName;
+                GroundedPredicatesCache[ToString()] = iSum;
+                return iSum;
+            }
         }
 
 
+        
     }
 }

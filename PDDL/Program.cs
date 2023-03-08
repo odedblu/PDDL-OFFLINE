@@ -986,17 +986,17 @@ namespace PDDL
         {
 
             // Run constants
-            double EXPLORATION_FACTOR_UCB = 15.0;
+            double EXPLORATION_FACTOR_UCB = 5.0;
             double DISCOUNT_FACTOR = 0.95;
-            double DEPTH_THRESHOLD = 0.4;
-            int SIMULATIONS = 1000;
+            double DEPTH_THRESHOLD = 0.55;
+            int SIMULATIONS = 50;
 
 
             Debug.Listeners.Add(new TextWriterTraceListener(Console.Out));
             Debug.Listeners.Add(new TextWriterTraceListener(new StreamWriter("debug.log")));
             string sBenchmarkPath = BASE_PATH + @"\CLG_benchmarks\";
             Path = BASE_PATH + @"\PDDL\";
-            string domainName = "problocalize3";
+            string domainName = "blocks7";
             Parser domainParser = new Parser();
             Domain parsedDomain = domainParser.ParseDomain(String.Format(@"{0}\{1}\d.pddl", sBenchmarkPath, domainName));
             Problem parsedProblem = domainParser.ParseProblem(String.Format(@"{0}\{1}\p.pddl", sBenchmarkPath, domainName), parsedDomain);
@@ -1007,6 +1007,8 @@ namespace PDDL
 
             IActionSelectPolicy ActionSelectPolicy = new UCBValueActionSelectPolicy(EXPLORATION_FACTOR_UCB);
             IActionSelectPolicy FinalActionSelectPolicy = new MaxValueActionSelectPolicy();
+
+
 
             ObservationPomcpNode root = new ObservationPomcpNode(new PartiallySpecifiedState(parsedProblem.GetInitialBelief()));
             PomcpAlgorithm pomcpAlgorithm = new PomcpAlgorithm(DISCOUNT_FACTOR, DEPTH_THRESHOLD, SIMULATIONS, parsedProblem,root,FinalActionSelectPolicy,ActionSelectPolicy,RolloutPolicy, RewardFunctions.GeneralReward);

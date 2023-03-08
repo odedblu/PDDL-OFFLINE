@@ -2,9 +2,6 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
-using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PDDL
 {
@@ -136,7 +133,7 @@ namespace PDDL
             ExpandNode(Current);
 
             // Finished run inside the tree, now do rollout.
-            double Reward = MultipleRollouts(Current.ParticleFilter, CurrentDepth, 10);
+            double Reward = MultipleRollouts(Current.ParticleFilter, CurrentDepth, 3);
             double CummulativeReward = Reward;
 
             // Start back propogation phase.
@@ -371,6 +368,7 @@ namespace PDDL
             }
             Console.Write("] {0}%", progress);
         }
-
     }
+
+   
 }

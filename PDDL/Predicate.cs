@@ -10,7 +10,7 @@ namespace PDDL
         public bool Negation { get; set; }
         public static bool EnableToStringCaching = true;
         public static int PredicateCount { get; private set; }
-        private int m_iHashCode = 0;
+        protected int m_iHashCode = 0;
         private int m_iID;
 
         private static List<string> Names = new List<string>();
@@ -38,6 +38,8 @@ namespace PDDL
             Negation = bNegate;
             m_iID = PredicateCount++;
         }
+
+
 
         /*public Predicate(Predicate original)
         {
@@ -90,10 +92,11 @@ namespace PDDL
         {
             if (m_iHashCode == 0)
             {
-                m_iHashCode = ComputeHashCode() + 1;//offest of 1 to avoid 0 hash code (negtive means negations)
+                
+                m_iHashCode = ComputeHashCode() + 1; //offest of 1 to avoid 0 hash code (negtive means negations)
                 if (Negation)
                     m_iHashCode *= -1;
-            }
+            }      
             return m_iHashCode;
         }
 
