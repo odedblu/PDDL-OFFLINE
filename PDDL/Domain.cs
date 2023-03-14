@@ -62,7 +62,7 @@ namespace PDDL
             m_dAuxilaryPredicates = new Dictionary<Predicate, Predicate>();
             Functions = new List<string>();
             IsSimple = true;
-            GroundActionsCache = new Dictionary<Tuple<IEnumerable<Predicate>, bool>, List<Action>>();
+            GroundActionsCache = new Dictionary<int, List<Action>>();
 
         }
 
@@ -1767,12 +1767,13 @@ namespace PDDL
 
 
 
-        private Dictionary<Tuple<IEnumerable<Predicate>, bool>, List<Action>> GroundActionsCache { get; set; }
+        private Dictionary<int, List<Action>> GroundActionsCache { get; set; }
 
 
         public List<Action> GroundAllActions(IEnumerable<Predicate> lPredicates, bool bContainsNegations)
         {
-            Tuple<IEnumerable<Predicate>, bool> CacheKey = new Tuple<IEnumerable<Predicate>, bool>(lPredicates, bContainsNegations);
+            int CacheKey = lPredicates.GetHashCode() + bContainsNegations.GetHashCode();
+            //Tuple<IEnumerable<Predicate>, bool> CacheKey = new Tuple<IEnumerable<Predicate>, bool>(lPredicates, bContainsNegations);
             if (GroundActionsCache.ContainsKey(CacheKey))
             {
                 return GroundActionsCache[CacheKey];
