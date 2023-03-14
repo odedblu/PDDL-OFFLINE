@@ -3588,7 +3588,17 @@ namespace PDDL
         }
         public override int GetHashCode()
         {
-            return this.ToString().GetHashCode();
+            unchecked
+            {
+                int TotalHash = 17;
+                if(Preconditions != null) TotalHash += Preconditions.GetHashCode();
+                if (Effects != null) TotalHash += Effects.GetHashCode();
+                if (Observe != null) TotalHash += Observe.GetHashCode();
+                return TotalHash;
+
+            }
+
+            //return this.ToString().GetHashCode();
         }
 
         public Action ReplaceNonDeterministicEffectsWithOptions(List<string> lAlwaysKnown)
