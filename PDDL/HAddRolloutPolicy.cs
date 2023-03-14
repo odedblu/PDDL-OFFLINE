@@ -14,11 +14,15 @@ namespace PDDL
         public Dictionary<Tuple<int, int>, HashSet<Predicate>> NextLevelHAddCache { get; set; }
 
         public Dictionary<State, HashSet<Action>> StateResultCache { get; set; }
+
+        public Dictionary<int,bool> IsApplicableCache { get; set; }
+
         public HAddRolloutPolicy()
         {
             DomainAvailableActionsCache = new Dictionary<HashSet<Predicate>, List<Action>>(HashSet<Predicate>.CreateSetComparer());
             NextLevelHAddCache = new Dictionary<Tuple<int, int>, HashSet<Predicate>>();
             StateResultCache = new Dictionary<State, HashSet<Action>>();
+            IsApplicableCache = new Dictionary<int,bool>();
         }
 
         public Action ChooseAction(State s)
@@ -184,13 +188,20 @@ namespace PDDL
         private bool IsApplicableAction(HashSet<Predicate> KnownPredicates, Action action)
         {
             if (action.Preconditions == null) return true;
+
+            // Add cache
+            int CacheKey = KnownPredicates.GetHashCode() + action.GetHashCode();
+            if(IsApplicableCache.ContainsKey(CacheKey)) return IsApplicableCache[CacheKey];
+
             foreach(Predicate preconditionPredicate in action.Preconditions.GetAllPredicates())
             {
                 if (!KnownPredicates.Contains(preconditionPredicate))
                 {
+                    IsApplicableCache[CacheKey] = false;
                     return false;
                 }
             }
+            IsApplicableCache[CacheKey] = true;
             return true;
         }
 
