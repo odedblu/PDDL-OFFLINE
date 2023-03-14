@@ -153,9 +153,17 @@ namespace PDDL
         }
 
 
-
+        private static Dictionary<int, State> ApplyCache  = new Dictionary<int, State>();
         public State Apply(Action a)
         {
+            int CacheKey = this.GetHashCode() + a.GetHashCode();
+            if (ApplyCache.ContainsKey(CacheKey)) {
+                State returnState = ApplyCache[CacheKey].Clone();
+                returnState.m_sPredecessor = this;
+                returnState.Time = this.Time + 1;
+                returnState.MaintainNegations = this.MaintainNegations;
+                return returnState;
+            }
             //Debug.WriteLine("Executing " + a.Name);
             if (a is ParametrizedAction)
                 return null;
@@ -194,6 +202,7 @@ namespace PDDL
             if (sNew.Predicates.Contains(new GroundedPredicate(Domain.FALSE_PREDICATE)))
                 Debug.WriteLine("BUGBUG");
             sNew.GeneratingAction = a;
+            ApplyCache[CacheKey] = sNew;
             return sNew;
         }
         private void AddEffect(Predicate pEffect)
