@@ -148,7 +148,7 @@ namespace PDDL
                 // Set the currents to their predicessors.
                 Current = Current.Parent.Parent as ObservationPomcpNode; // Set the current to be the previous observation pomcp node.
                 CurrentState = CurrentState.m_sPredecessor;
-                CummulativeReward = DiscountFactor * CummulativeReward;// RewardFunction(CurrentState, Problem, CurrentState.GeneratingAction) + DiscountFactor * CummulativeReward;
+                CummulativeReward = RewardFunction(CurrentState, Problem, CurrentState.GeneratingAction) + DiscountFactor * CummulativeReward;// RewardFunction(CurrentState, Problem, CurrentState.GeneratingAction) + DiscountFactor * CummulativeReward;
             }
              Current.VisitedCount++;
         }
@@ -241,7 +241,21 @@ namespace PDDL
             return Reward + DiscountFactor * Rollout(NextState, currentDepth + 1);
         }
 
-       
+        public double ForRollout(State state, int currentDepth)
+        {
+            double Reward = 0;
+            while (!((Math.Pow(DiscountFactor, (double)currentDepth) < DepthThreshold || DiscountFactor == 0) && currentDepth != 0))
+            {
+                Action RolloutAction = RolloutPolicy.ChooseAction(state);
+                State NextState = state.Apply(RolloutAction);
+                Reward += Math.Pow(DiscountFactor, currentDepth) * RewardFunction(NextState, Problem, RolloutAction);
+                currentDepth += 1;
+            }
+            return Reward;
+        }
+
+
+
         public List<Action> FindPlan(bool verbose=false)
         {
             List<Action> Plan = new List<Action>();
