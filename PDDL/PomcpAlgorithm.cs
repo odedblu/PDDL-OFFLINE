@@ -225,6 +225,7 @@ namespace PDDL
 
         public double Rollout(State state, int currentDepth)
         {
+            if (state == null) return -1;
             if((Math.Pow(DiscountFactor, (double)currentDepth) < DepthThreshold || DiscountFactor == 0) && currentDepth != 0)
             {
                 return 0;
