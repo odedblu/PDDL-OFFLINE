@@ -114,6 +114,7 @@ namespace PDDL
                 // Check we havent met the maximal depth
                 if ((Math.Pow(DiscountFactor, (double)CurrentDepth) < DepthThreshold || DiscountFactor == 0) && CurrentDepth != 0)
                 {
+                    //Console.WriteLine("Got max depth on search");
                     return;
                 }
 
@@ -133,7 +134,7 @@ namespace PDDL
             ExpandNode(Current);
 
             // Finished run inside the tree, now do rollout.
-            double Reward = MultipleRollouts(Current.ParticleFilter, CurrentDepth, 3);
+            double Reward = MultipleRollouts(Current.ParticleFilter, CurrentDepth, 10);
             double CummulativeReward = Reward;
 
             // Start back propogation phase.
@@ -148,7 +149,11 @@ namespace PDDL
                 // Set the currents to their predicessors.
                 Current = Current.Parent.Parent as ObservationPomcpNode; // Set the current to be the previous observation pomcp node.
                 CurrentState = CurrentState.m_sPredecessor;
-                CummulativeReward = RewardFunction(CurrentState, Problem, CurrentState.GeneratingAction) + DiscountFactor * CummulativeReward;// RewardFunction(CurrentState, Problem, CurrentState.GeneratingAction) + DiscountFactor * CummulativeReward;
+                CurrentDepth -= 1;
+                double CurrentReward = RewardFunction(CurrentState, Problem, CurrentState.GeneratingAction);
+                CummulativeReward = Math.Pow(DiscountFactor, CurrentDepth) * CurrentReward + CummulativeReward;// RewardFunction(CurrentState, Problem, CurrentState.GeneratingAction) + DiscountFactor * CummulativeReward;
+                
+                
             }
              Current.VisitedCount++;
         }
@@ -217,7 +222,8 @@ namespace PDDL
             {
                 for(int i = 0; i < numberOfRepets; i++)
                 {
-                    totalScore += Rollout(s, currentDepth);
+                    //Console.WriteLine($"Rollout={Rollout(s, currentDepth)}, ForRollout={ForRollout(s, currentDepth)}");
+                    totalScore += ForRollout(s, currentDepth);
                 }
             }
             return totalScore / (possiboleStates.ViewedStates.Count() * numberOfRepets);
@@ -244,13 +250,24 @@ namespace PDDL
 
         public double ForRollout(State state, int currentDepth)
         {
+            State CurrentState = state;
+            if (CurrentState == null) return -1;
+
+            double StartStateReward = RewardFunction(CurrentState, Problem, CurrentState.GeneratingAction);
+            if (StartStateReward == 0) return StartStateReward * Math.Pow(DiscountFactor, currentDepth);
+
             double Reward = 0;
             while (!((Math.Pow(DiscountFactor, (double)currentDepth) < DepthThreshold || DiscountFactor == 0) && currentDepth != 0))
             {
-                Action RolloutAction = RolloutPolicy.ChooseAction(state);
-                State NextState = state.Apply(RolloutAction);
-                Reward += Math.Pow(DiscountFactor, currentDepth) * RewardFunction(NextState, Problem, RolloutAction);
+                Action RolloutAction = RolloutPolicy.ChooseAction(CurrentState);
+                State NextState = CurrentState.Apply(RolloutAction);
+                double CurrentReward = RewardFunction(NextState, Problem, RolloutAction);
+                Reward += Math.Pow(DiscountFactor, currentDepth) * CurrentReward;
+                if (CurrentReward == 0) { 
+                    break; 
+                }
                 currentDepth += 1;
+                CurrentState = NextState;
             }
             return Reward;
         }

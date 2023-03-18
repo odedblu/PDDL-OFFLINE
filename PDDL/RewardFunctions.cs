@@ -13,7 +13,7 @@ namespace PDDL
             //if (state == null) return Double.MinValue;
             if (state != null && p.IsGoalState(state))
             {
-                return 10.0;
+                return 0.0;
             }
             else
             {
