@@ -13,27 +13,19 @@ namespace PDDL
             //if (state == null) return Double.MinValue;
             if (state != null && p.IsGoalState(state))
             {
-                return 0.0;
+                return 5.0;
             }
             else
             {
-                if (state == null) return -100.0;
+                if (state == null)
+                {
+                    return -100.0;
+                }
             }
             return -1.0;
         }
 
-        public static double LocalizeReward(State state, Problem p, Action preAction)
-        {
-            if (state != null && p.IsGoalState(state) && preAction!= null && preAction.Name.Contains("move"))
-            {
-                return 10.0;
-            }
-            else
-            {
-                if (state == null) return -100.0;
-            }
-            return -1.0;
-        }
+  
 
     }
 }

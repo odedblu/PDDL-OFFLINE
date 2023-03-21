@@ -122,19 +122,13 @@ namespace PDDL
                 // Apply action on CurrentState.
                 CurrentState = CurrentState.Apply(NextAction);
                 CurrentState.GroundAllActions();
-
-                // Add the next state to the Observation pomcp node's particle filter.
-                /*if(Current.Parent.Parent.Parent == null)
-                {
-                    Current.ParticleFilter.AddState(CurrentState);
-                }*/
             }
 
             // Expand node.
             ExpandNode(Current);
 
             // Finished run inside the tree, now do rollout.
-            double Reward = MultipleRollouts(Current.ParticleFilter, CurrentDepth, 10);
+            double Reward = MultipleRollouts(Current.ParticleFilter, CurrentDepth, 1);
             double CummulativeReward = Reward;
 
             // Start back propogation phase.
@@ -173,42 +167,52 @@ namespace PDDL
             NodePartialyState.GroundAllActions();
             foreach (Action action in NodePartialyState.AvailableActions)
             {
-                if (NodePartialyState.IsApplicable(action) && Node.ParticleFilter.IsApplicable(action))
+                if (NodePartialyState.IsApplicable(action) && Node.ParticleFilter.IsApplicable(action) && )
                 {
-                    // Create the action node.
-                    ActionPomcpNode actionPomcpNode = new ActionPomcpNode(Node, action);
-
-                    // Add the action node to the Node childs.
-                    Node.AddActionPomcpNode(actionPomcpNode);
-
-                    Formula observation;
-                    if (action.Observe != null)
+                    // Add action with effects to tree
+                    if(action.Effects != null)
                     {
-                        // Create all observation nodes for this action node.
-                        PartiallySpecifiedState bsNew = new PartiallySpecifiedState(Node.PartiallySpecifiedState, action);
-                        PartiallySpecifiedState TrueChild = bsNew.Clone();
-                        PartiallySpecifiedState FalseChild = bsNew.Clone();
-                        TrueChild.GeneratingObservation = action.Observe;
-                        FalseChild.GeneratingObservation = action.Observe.Negate();
-                        TrueChild.AddObserved(action.Observe);
-                        FalseChild.AddObserved(action.Observe.Negate());
+                        // Create the action node.
+                        ActionPomcpNode actionPomcpNode = new ActionPomcpNode(Node, action);
 
-                        // Create the particle filters
-                        BelifeParticles PositiveNextParticleFilter = Node.ParticleFilter.Apply(action, action.Observe);
-                        BelifeParticles NegetiveNextParticleFilter = Node.ParticleFilter.Apply(action, action.Observe.Negate());
+                        // Add the action node to the Node childs.
+                        Node.AddActionPomcpNode(actionPomcpNode);
+
+                        Formula observation;
+                        if (action.Observe != null)
+                        {
+                            // Create all observation nodes for this action node.
+                            PartiallySpecifiedState bsNew = new PartiallySpecifiedState(Node.PartiallySpecifiedState, action);
+                            PartiallySpecifiedState TrueChild = bsNew.Clone();
+                            PartiallySpecifiedState FalseChild = bsNew.Clone();
+                            TrueChild.GeneratingObservation = action.Observe;
+                            FalseChild.GeneratingObservation = action.Observe.Negate();
+                            TrueChild.AddObserved(action.Observe);
+                            FalseChild.AddObserved(action.Observe.Negate());
+
+                            // Create the particle filters
+                            BelifeParticles PositiveNextParticleFilter = Node.ParticleFilter.Apply(action, action.Observe);
+                            BelifeParticles NegetiveNextParticleFilter = Node.ParticleFilter.Apply(action, action.Observe.Negate());
 
 
-                        // Add the observations nodes to action pomcp node's childs.
-                        actionPomcpNode.AddObservationChilds(TrueChild.GeneratingObservation.GetAllPredicates().ToList(), TrueChild, PositiveNextParticleFilter);
-                        actionPomcpNode.AddObservationChilds(FalseChild.GeneratingObservation.GetAllPredicates().ToList(), FalseChild, NegetiveNextParticleFilter);
+                            // Add the observations nodes to action pomcp node's childs.
+                            actionPomcpNode.AddObservationChilds(TrueChild.GeneratingObservation.GetAllPredicates().ToList(), TrueChild, PositiveNextParticleFilter);
+                            actionPomcpNode.AddObservationChilds(FalseChild.GeneratingObservation.GetAllPredicates().ToList(), FalseChild, NegetiveNextParticleFilter);
+                        }
+                        else
+                        {
+                            List<Predicate> PredicatsObservation = new List<Predicate>();
+                            PartiallySpecifiedState NextState = Node.PartiallySpecifiedState.Apply(action, out observation);
+                            BelifeParticles NextParticleFilter = Node.ParticleFilter.Apply(action, observation);
+                            actionPomcpNode.AddObservationChilds(PredicatsObservation, NextState, NextParticleFilter);
+                        }
                     }
-                    else
+                    if(action.Effects == null && action.Observe != null)
                     {
-                        List<Predicate> PredicatsObservation = new List<Predicate>();
-                        PartiallySpecifiedState NextState = Node.PartiallySpecifiedState.Apply(action, out observation);
-                        BelifeParticles NextParticleFilter = Node.ParticleFilter.Apply(action, observation);
-                        actionPomcpNode.AddObservationChilds(PredicatsObservation, NextState, NextParticleFilter);
+
                     }
+
+                   
 
                 }
             }
@@ -254,19 +258,24 @@ namespace PDDL
             if (CurrentState == null) return -1;
 
             double StartStateReward = RewardFunction(CurrentState, Problem, CurrentState.GeneratingAction);
-            if (StartStateReward == 0) return StartStateReward * Math.Pow(DiscountFactor, currentDepth);
+            if (StartStateReward > 0) return StartStateReward * Math.Pow(DiscountFactor, currentDepth);
 
-            double Reward = 0;
+            double Reward = StartStateReward * Math.Pow(DiscountFactor, currentDepth);
+            currentDepth += 1;
+
             while (!((Math.Pow(DiscountFactor, (double)currentDepth) < DepthThreshold || DiscountFactor == 0) && currentDepth != 0))
             {
+                
                 Action RolloutAction = RolloutPolicy.ChooseAction(CurrentState);
                 State NextState = CurrentState.Apply(RolloutAction);
+               
                 double CurrentReward = RewardFunction(NextState, Problem, RolloutAction);
                 Reward += Math.Pow(DiscountFactor, currentDepth) * CurrentReward;
-                if (CurrentReward == 0) { 
+                if (CurrentReward > 0) { 
                     break; 
                 }
                 currentDepth += 1;
+                State prevState = CurrentState;
                 CurrentState = NextState;
             }
             return Reward;
@@ -335,7 +344,6 @@ namespace PDDL
                 if(Root.Parent != null)
                 {
                     NextObservationPomcpNode.ParticleFilter = Root.ParticleFilter.Apply(bestValidAction, observation);
-                    Console.WriteLine(NextObservationPomcpNode.ParticleFilter.Size());
                 }
 
                 // Remove all action childs that not relevant.

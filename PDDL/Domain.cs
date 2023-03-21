@@ -1772,14 +1772,14 @@ namespace PDDL
 
         public List<Action> GroundAllActions(IEnumerable<Predicate> lPredicates, bool bContainsNegations)
         {
-            int CacheKey = lPredicates.GetHashCode() + bContainsNegations.GetHashCode();
+            /*int CacheKey = lPredicates.GetHashCode() + bContainsNegations.GetHashCode();
             //Tuple<IEnumerable<Predicate>, bool> CacheKey = new Tuple<IEnumerable<Predicate>, bool>(lPredicates, bContainsNegations);
             if (GroundActionsCache.ContainsKey(CacheKey))
             {
                 return GroundActionsCache[CacheKey];
-            }
+            }*/
             List<Action> result = GroundAllActions(Actions, lPredicates, bContainsNegations, true);
-            GroundActionsCache.Add(CacheKey, result);
+            //GroundActionsCache.Add(CacheKey, result);
             return result;
         }
 

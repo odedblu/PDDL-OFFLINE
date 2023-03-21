@@ -11,7 +11,7 @@ namespace PDDL
         public Action ChooseAction(State s)
         {
             Random random = new Random();
-            s.GroundAllActions();
+            if(s.AvailableActions.Count() == 0)  s.GroundAllActions();
             List<Action> PossibleActions = s.AvailableActions;
             int SelectedIndex = random.Next(PossibleActions.Count);
             return PossibleActions[SelectedIndex];

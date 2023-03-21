@@ -123,7 +123,7 @@ namespace PDDL
             {
                 if (a.Observe != null)
                 {
-
+                    // TODO: Add here the probability observations, for each possible observation run this with the relative ratio.
                     if (GetObservationAsList(observationPredicats).All(observedPredicate => observationPredicats.IsTrue(NewState.Predicates, false)))
                     {
                         if (NextBelifePatricle.ViewedStates.ContainsKey(NewState))
