@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using static System.Collections.Specialized.BitVector32;
+using System.Xml.Linq;
 
 namespace PDDL
 {
@@ -43,11 +45,12 @@ namespace PDDL
             // Initial Root particle filter.
             if(Root.ParticleFilter.Size() == 0)
             {
-                for(int i = 0; i < 2000; i++)
+                for(int i = 0; i < 500; i++)
                 {
                     Root.ParticleFilter.AddState(Root.PartiallySpecifiedState.m_bsInitialBelief.ChooseState(true));
                 }
             }
+            
 
             for (int SimulationIndex = 0; SimulationIndex < SimulationsThreshold; SimulationIndex++)
             {
@@ -165,52 +168,61 @@ namespace PDDL
             Node.VisitedCount++;
             PartiallySpecifiedState NodePartialyState = Node.PartiallySpecifiedState;
             NodePartialyState.GroundAllActions();
+
+            //Apply all observe actions here.
             foreach (Action action in NodePartialyState.AvailableActions)
             {
-                if (NodePartialyState.IsApplicable(action) && Node.ParticleFilter.IsApplicable(action) && )
+                if (action.Effects == null)
                 {
-                    // Add action with effects to tree
-                    if(action.Effects != null)
+                    NodePartialyState = NodePartialyState.Apply(action, out Formula o);
+                    Node.ParticleFilter = Node.ParticleFilter.Apply(action, o);
+                }
+            }
+            // ReGroud all actions.
+            NodePartialyState.GroundAllActions();
+            Node.PartiallySpecifiedState = NodePartialyState;
+            // Add all effect actions to childs
+            foreach (Action action in NodePartialyState.AvailableActions)
+            {
+                if (action.Effects == null) continue;
+                if (NodePartialyState.IsApplicable(action) && Node.ParticleFilter.IsApplicable(action))
+                {
+                   
+                    // Create the action node.
+                    ActionPomcpNode actionPomcpNode = new ActionPomcpNode(Node, action);
+
+                    // Add the action node to the Node childs.
+                    Node.AddActionPomcpNode(actionPomcpNode);
+
+                    Formula observation;
+                    if (action.Observe != null)
                     {
-                        // Create the action node.
-                        ActionPomcpNode actionPomcpNode = new ActionPomcpNode(Node, action);
+                        // Create all observation nodes for this action node.
+                        PartiallySpecifiedState bsNew = new PartiallySpecifiedState(Node.PartiallySpecifiedState, action);
+                        PartiallySpecifiedState TrueChild = bsNew.Clone();
+                        PartiallySpecifiedState FalseChild = bsNew.Clone();
+                        TrueChild.GeneratingObservation = action.Observe;
+                        FalseChild.GeneratingObservation = action.Observe.Negate();
+                        TrueChild.AddObserved(action.Observe);
+                        FalseChild.AddObserved(action.Observe.Negate());
 
-                        // Add the action node to the Node childs.
-                        Node.AddActionPomcpNode(actionPomcpNode);
-
-                        Formula observation;
-                        if (action.Observe != null)
-                        {
-                            // Create all observation nodes for this action node.
-                            PartiallySpecifiedState bsNew = new PartiallySpecifiedState(Node.PartiallySpecifiedState, action);
-                            PartiallySpecifiedState TrueChild = bsNew.Clone();
-                            PartiallySpecifiedState FalseChild = bsNew.Clone();
-                            TrueChild.GeneratingObservation = action.Observe;
-                            FalseChild.GeneratingObservation = action.Observe.Negate();
-                            TrueChild.AddObserved(action.Observe);
-                            FalseChild.AddObserved(action.Observe.Negate());
-
-                            // Create the particle filters
-                            BelifeParticles PositiveNextParticleFilter = Node.ParticleFilter.Apply(action, action.Observe);
-                            BelifeParticles NegetiveNextParticleFilter = Node.ParticleFilter.Apply(action, action.Observe.Negate());
+                        // Create the particle filters
+                        BelifeParticles PositiveNextParticleFilter = Node.ParticleFilter.Apply(action, action.Observe);
+                        BelifeParticles NegetiveNextParticleFilter = Node.ParticleFilter.Apply(action, action.Observe.Negate());
 
 
-                            // Add the observations nodes to action pomcp node's childs.
-                            actionPomcpNode.AddObservationChilds(TrueChild.GeneratingObservation.GetAllPredicates().ToList(), TrueChild, PositiveNextParticleFilter);
-                            actionPomcpNode.AddObservationChilds(FalseChild.GeneratingObservation.GetAllPredicates().ToList(), FalseChild, NegetiveNextParticleFilter);
-                        }
-                        else
-                        {
-                            List<Predicate> PredicatsObservation = new List<Predicate>();
-                            PartiallySpecifiedState NextState = Node.PartiallySpecifiedState.Apply(action, out observation);
-                            BelifeParticles NextParticleFilter = Node.ParticleFilter.Apply(action, observation);
-                            actionPomcpNode.AddObservationChilds(PredicatsObservation, NextState, NextParticleFilter);
-                        }
+                        // Add the observations nodes to action pomcp node's childs.
+                        actionPomcpNode.AddObservationChilds(TrueChild.GeneratingObservation.GetAllPredicates().ToList(), TrueChild, PositiveNextParticleFilter);
+                        actionPomcpNode.AddObservationChilds(FalseChild.GeneratingObservation.GetAllPredicates().ToList(), FalseChild, NegetiveNextParticleFilter);
                     }
-                    if(action.Effects == null && action.Observe != null)
+                    else
                     {
-
+                        List<Predicate> PredicatsObservation = new List<Predicate>();
+                        PartiallySpecifiedState NextState = Node.PartiallySpecifiedState.Apply(action, out observation);
+                        BelifeParticles NextParticleFilter = Node.ParticleFilter.Apply(action, observation);
+                        actionPomcpNode.AddObservationChilds(PredicatsObservation, NextState, NextParticleFilter);
                     }
+                    
 
                    
 
@@ -294,6 +306,29 @@ namespace PDDL
             //while (!Problem.IsGoalState(CurrentState.UnderlyingEnvironmentState))
             while (!CurrentState.IsGoalState())
             {
+                // Apply all observe actions.
+                foreach (Action a in CurrentState.AvailableActions)
+                {
+                    PartiallySpecifiedState observationPSS;
+                    if (a.Effects == null)
+                    {
+                        observationPSS = CurrentState.Apply(a, out Formula o);
+                        observationPSS.m_bsInitialBelief = CurrentState.m_bsInitialBelief;
+                        if (o != null)
+                        {
+                            // Revise belife state
+                            HashSet<int> hsModified = CurrentState.m_bsInitialBelief.ReviseInitialBelief(o, CurrentState);
+                            if (hsModified.Count > 0)
+                            {
+                                observationPSS.PropogateObservedPredicates();
+                            }
+
+                        }
+                        CurrentState = observationPSS;
+                    }
+                }
+                CurrentState.GroundAllActions();
+
                 Search(verbose);
                 Action bestValidAction = null;
                 double bestScore = Double.MinValue;
@@ -311,6 +346,8 @@ namespace PDDL
                     }
 
                 }
+
+                
 
                 Formula UnusedObservation;
                 PartiallySpecifiedState NextPartiallyState = CurrentState.Apply(bestValidAction, out UnusedObservation);

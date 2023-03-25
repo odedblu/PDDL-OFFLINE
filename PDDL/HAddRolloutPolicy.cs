@@ -43,7 +43,8 @@ namespace PDDL
                         if (action.HasConditionalEffects)
                         {
                             State NextState = s.Apply(action);
-                            StatePredicates = new HashSet<Predicate>(NextState.Predicates);
+                            //StatePredicates = new HashSet<Predicate>(NextState.Predicates);
+                            StatePredicates.UnionWith(NextState.Predicates);
                         }
                         else
                         {
@@ -139,8 +140,8 @@ namespace PDDL
 
         private HashSet<Predicate> GetNextLevelHaddPredicates(HashSet<Predicate> StartPredicates, List<Action> AvailableActions)
         {
-            Tuple<int, int> CacheKey = new Tuple<int, int>(GetEnumarbleHashCode(StartPredicates), GetEnumarbleHashCode(AvailableActions));
-            if(NextLevelHAddCache.ContainsKey(CacheKey)) return NextLevelHAddCache[CacheKey];
+            //Tuple<int, int> CacheKey = new Tuple<int, int>(GetEnumarbleHashCode(StartPredicates), GetEnumarbleHashCode(AvailableActions));
+            //if(NextLevelHAddCache.ContainsKey(CacheKey)) return NextLevelHAddCache[CacheKey];
             HashSet<Predicate> NextLevelPredicates = new HashSet<Predicate>(StartPredicates);
             foreach(Action action in AvailableActions)
             {
@@ -181,7 +182,7 @@ namespace PDDL
                     }
                 }
             }
-            NextLevelHAddCache[CacheKey] = NextLevelPredicates;
+            //NextLevelHAddCache[CacheKey] = NextLevelPredicates;
             return NextLevelPredicates;
         }
 
