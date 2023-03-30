@@ -35,6 +35,8 @@ namespace PDDL
         public const string FALSE_VALUE = "V_FALSE";
         public const string TRUE_PREDICATE = "P_TRUE";
         public const string FALSE_PREDICATE = "P_FALSE";
+        public const string DELIMITER_CHAR = "_";
+
 
         public const int TIME_STEPS = 0;
         public const int MAX_OPTIONS = 3;
@@ -2290,43 +2292,73 @@ namespace PDDL
             }
             else
             {
-                Formula fGroundedPreconditions = null;
-                if (pa.Preconditions != null)
+                if (lToBind.Count > dBindings.Keys.Count)
                 {
-                    fGroundedPreconditions = pa.Preconditions.Ground(dBindings);
-                }
-                string sName = pa.Name;
-                foreach (Parameter p in pa.Parameters)
-                    sName += "_" + dBindings[p.Name].Name;
-                Action aGrounded = new Action(sName);
-                aGrounded.Preconditions = fGroundedPreconditions;
-                bool bInvalidEffects = false;
-                if (pa.Effects != null)
-                {
-                    aGrounded.SetEffects(pa.Effects.Ground(dBindings));
-                    HashSet<Predicate> lApplicableEffects = aGrounded.GetApplicableEffects(lGroundedPredicates, false).GetAllPredicates();
-                    //foreach (GroundedPredicate gp in aGrounded.Effects.GetAllPredicates())
-                    foreach (GroundedPredicate gp in lApplicableEffects)
+                    foreach (Parameter p in lToBind)
                     {
-                        if (gp.Name == Domain.FALSE_PREDICATE)
-                            bInvalidEffects = true;
-                        if (!gp.Negation)
+                        if (!dBindings.ContainsKey(p.Name))
                         {
-                            if (!dNewPredicates.ContainsKey(gp.Name))
-                                dNewPredicates[gp.Name] = new HashSet<GroundedPredicate>();
-                            dNewPredicates[gp.Name].Add(gp);
+                            foreach (Constant c in Constants)
+                            {
+                                if (c.Type == p.Type)
+                                {
+                                    Dictionary<string, Constant> dNewBindings = new Dictionary<string, Constant>(dBindings);
+                                    dNewBindings[p.Name] = c;
+                                    GroundAction(pa, dPredicates, lOptionalPreconditions, lToBind, dNewBindings, lPredicatesToBind, dPredicateBindings, lGrounded, dNewPredicates, lGroundedPredicates);
+                                }
+                            }
                         }
                     }
                 }
-                if (!bInvalidEffects)
+                else
                 {
+                    Formula fGroundedPreconditions = null;
+                    if (pa.Preconditions != null)
+                    {
+                        fGroundedPreconditions = pa.Preconditions.Ground(dBindings);
+                    }
+                    string sName = pa.Name;
+                    foreach (Parameter p in pa.Parameters)
+                        sName += DELIMITER_CHAR + dBindings[p.Name].Name;
+                    Action aGrounded = new Action(sName);
+                    aGrounded.Preconditions = fGroundedPreconditions;
+                    bool bValidEffects = true;
+                    if (pa.Effects != null)
+                    {
+                        aGrounded.SetEffects(pa.Effects.Ground(dBindings));
+                        bValidEffects = ProcessEffects(aGrounded, dNewPredicates, lGroundedPredicates);
 
-                    if (pa.Observe != null)
-                        aGrounded.Observe = pa.Observe.Ground(dBindings);
-                    lGrounded.Add(aGrounded);
+                    }
+                    if (bValidEffects)
+                    {
+
+                        if (pa.Observe != null)
+                            aGrounded.Observe = pa.Observe.Ground(dBindings);
+                        lGrounded.Add(aGrounded);
+                    }
                 }
 
             }
+        }
+
+
+        private bool ProcessEffects(Action a, Dictionary<string, HashSet<GroundedPredicate>> dNewPredicates, HashSet<Predicate> lGroundedPredicates)
+        {
+            if (a.Effects == null)
+                return true;
+            HashSet<Predicate> lApplicableEffects = a.GetApplicableEffects(lGroundedPredicates, false).GetAllPredicates();
+            foreach (GroundedPredicate gp in lApplicableEffects)
+            {
+                if (gp.Name == FALSE_PREDICATE)
+                    return false;
+                if (!gp.Negation)
+                {
+                    if (!dNewPredicates.ContainsKey(gp.Name))
+                        dNewPredicates[gp.Name] = new HashSet<GroundedPredicate>();
+                    dNewPredicates[gp.Name].Add(gp);
+                }
+            }
+            return true;
         }
 
         private bool ConsistentBindings(Dictionary<string, Constant> d1, Dictionary<string, Constant> d2)

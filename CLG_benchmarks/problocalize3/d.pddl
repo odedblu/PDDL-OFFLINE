@@ -22,12 +22,12 @@
 
    (:action move-up
      :precondition (and (ok) (free-up))
-     :effect (probabilistic 0.5 (and (and (not (ok)) 
+     :effect (probabilistic 0.8 (and (and (not (ok)) 
        				(when (and  (at p1-1)) (and (at p1-2) (not (at  p1-1))))
        				(when (and  (at p3-1)) (and (at p3-2) (not (at  p3-1))))
        				(when (and  (at p1-2)) (and (at p1-3) (not (at  p1-2))))
       				(when (and  (at p3-2)) (and (at p3-3) (not (at  p3-2))))))
-			    0.5 (and (and (not (ok)) 
+			    0.2 (and (and (not (ok)) 
        				(when (and  (at p1-2)) (and (at p1-1) (not (at  p1-2))))
       				(when (and  (at p3-2)) (and (at p3-1) (not (at  p3-2))))
        				(when (and  (at p1-3)) (and (at p1-2) (not (at  p1-3))))

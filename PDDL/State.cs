@@ -10,7 +10,7 @@ namespace PDDL
     {
         public IEnumerable<Predicate> Predicates { get { return m_lPredicates; } }
         protected HashSet<Predicate> m_lPredicates;
-        public List<Action> AvailableActions { get; protected set; }
+        public List<Action> AvailableActions { get; set; }
         public State m_sPredecessor;
         public bool MaintainNegations { get; private set; }
         public Problem Problem { get; private set; }
@@ -410,6 +410,21 @@ namespace PDDL
         }
         public override int GetHashCode()
         {
+            unchecked
+            {
+                int hash = 17;
+                foreach (Predicate p in Predicates)
+                {
+                    hash *= p.GetHashCode();
+                }
+
+                return hash;
+            }
+            
+        }
+
+        /*public override int GetHashCode()
+        {
             List<string> PredicateStrings = new List<string>();
             foreach(Predicate p in Predicates)
             {
@@ -419,7 +434,7 @@ namespace PDDL
             PredicateStrings = PredicateStrings.OrderBy(q => q).ToList();
             string StateString = String.Join(",", PredicateStrings);
             return StateString.GetHashCode();
-        }
+        }*/
         public KnowledgeState CreateKnowledgeState()
         {
             KnowledgeState kState = new KnowledgeState(Problem);

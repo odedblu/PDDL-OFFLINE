@@ -279,6 +279,7 @@ namespace PDDL
             {
                 
                 Action RolloutAction = RolloutPolicy.ChooseAction(CurrentState);
+                if (RolloutAction == null) return Double.MinValue;
                 State NextState = CurrentState.Apply(RolloutAction);
                
                 double CurrentReward = RewardFunction(NextState, Problem, RolloutAction);
