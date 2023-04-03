@@ -31,7 +31,7 @@
  - pos 
     )
    (:init
- 
+    (and
  (at p1-3)
      (adj p1-1 p2-1)
      (adj p2-1 p1-1)
@@ -154,19 +154,6 @@
      (adj p5-4 p5-5)
      (adj p5-5 p5-4)
 
-(unknown (opened p2-1))
-(unknown (opened p2-2))
-(unknown (opened p2-3))
-(unknown (opened p2-4))
-(unknown (opened p2-5))
-(unknown (opened p4-1))
-(unknown (opened p4-2))
-(unknown (opened p4-3))
-(unknown (opened p4-4))
-(unknown (opened p4-5))
-
-
-	 (unknown (key-at p1-5))
 
         (opened p1-1)
         (opened p1-2)
@@ -186,7 +173,6 @@
         (opened p3-4)
         (opened p3-5)
      (oneof
-		(all-locked p4)
         (opened p4-1)
         (opened p4-2)
         (opened p4-3)
@@ -199,7 +185,7 @@
         (opened p5-4)
         (opened p5-5)
 
-    
+    )
     )
     (:goal (and (at p5-3))
 ))

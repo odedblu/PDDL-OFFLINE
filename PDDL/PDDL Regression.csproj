@@ -82,6 +82,7 @@
     <Compile Include="Domain.cs" />
     <Compile Include="Doors.cs" />
     <Compile Include="EfficientFormula.cs" />
+    <Compile Include="Evaluation.cs" />
     <Compile Include="Expression.cs" />
     <Compile Include="Formula.cs" />
     <Compile Include="ForwardSearchPlanner.cs" />
