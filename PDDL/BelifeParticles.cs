@@ -91,7 +91,7 @@ namespace PDDL
                     {
                         double ChosenEffectsProbability = probabilisticEffects.Probabilities[i];
                         UnchangeStateProbability -= ChosenEffectsProbability;
-                        int ProbabilityEffectRatioCount = (int)(ChosenEffectsProbability * stateFrequency.Value);
+                        int ProbabilityEffectRatioCount = (int)(ChosenEffectsProbability * stateFrequency.Value) + 1;
                         Action chosenAction = a.RemoveNonDeterminismByOptionIndex(i);
                         UpdateNextParticle(chosenAction, observationPredicats, NextBelifePatricle, stateFrequency, ProbabilityEffectRatioCount);
 
@@ -168,7 +168,10 @@ namespace PDDL
             bool result = true;
             foreach(State s in ViewedStates.Keys)
             {
-                if (a.Preconditions.IsFalse(s.Predicates))
+                /*if (a.Preconditions.IsFalse(s.Predicates))
+                    return false;
+                */
+                if (s.Apply(a) == null)
                     return false;
             }
             

@@ -45,7 +45,7 @@ namespace PDDL
             // Initial Root particle filter.
             if(Root.ParticleFilter.Size() == 0)
             {
-                for(int i = 0; i < 500; i++)
+                for(int i = 0; i < 2000; i++)
                 {
                     Root.ParticleFilter.AddState(Root.PartiallySpecifiedState.m_bsInitialBelief.ChooseState(true));
                 }
@@ -131,7 +131,7 @@ namespace PDDL
             ExpandNode(Current);
 
             // Finished run inside the tree, now do rollout.
-            double Reward = MultipleRollouts(Current.ParticleFilter, CurrentDepth, 1);
+            double Reward = MultipleRollouts(Current.ParticleFilter, CurrentDepth, 5);
             double CummulativeReward = Reward;
 
             // Start back propogation phase.
@@ -232,7 +232,7 @@ namespace PDDL
 
         public double MultipleRollouts(BelifeParticles possiboleStates, int currentDepth, int numberOfRepets)
         {
-            if (possiboleStates.Size() == 0) return Double.NaN;
+            if (possiboleStates.ViewedStates.Count() == 0) return Double.NaN;
             double totalScore = 0;
             foreach(State s in possiboleStates.ViewedStates.Keys)
             {
@@ -325,6 +325,7 @@ namespace PDDL
                             }
 
                         }
+                        Root.ParticleFilter = Root.ParticleFilter.Apply(a, o);
                         CurrentState = observationPSS;
                     }
                 }
